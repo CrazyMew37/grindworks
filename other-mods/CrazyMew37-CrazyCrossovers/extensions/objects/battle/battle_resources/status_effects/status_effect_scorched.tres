@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://fqdondbo0glm"]
+
+[ext_resource type="Texture2D" uid="uid://dgpi0x2rxifl2" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/fireflower.png" id="1_ks454"]
+[ext_resource type="Script" uid="uid://dj1ggcsqs1i2g" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/battle/battle_resources/status_effects/status_effect_scorched.gd" id="2_qyi3n"]
+
+[resource]
+script = ExtResource("2_qyi3n")
+quality = 1
+rounds = 3
+icon = ExtResource("1_ks454")
+icon_scale = 0.8
+description = ""
+id = 3705

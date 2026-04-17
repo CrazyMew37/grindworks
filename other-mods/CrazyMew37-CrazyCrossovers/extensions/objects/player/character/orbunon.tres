@@ -1,0 +1,67 @@
+[gd_resource type="Resource" script_class="PlayerCharacter" load_steps=19 format=3 uid="uid://be2wbsv0mlehx"]
+
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="1_ex4qr"]
+[ext_resource type="Script" uid="uid://o2fe7ud1faj6" path="res://objects/battle/battle_resources/stats.gd" id="2_4le4g"]
+[ext_resource type="Script" uid="uid://c8kas2j4io1jh" path="res://objects/toon/clothing/toon_bottoms.gd" id="3_pb3xg"]
+[ext_resource type="Texture2D" uid="uid://ugrsb3nsmlt4" path="res://models/toon/textures/clothes/shorts/desat_shorts_1_5.png" id="4_4le4g"]
+[ext_resource type="Script" uid="uid://yg7gxug4rab" path="res://objects/toon/toon_dna.gd" id="5_i77u6"]
+[ext_resource type="Script" uid="uid://dfqwh4jmdy0iw" path="res://objects/toon/clothing/toon_shirt.gd" id="6_3b5jn"]
+[ext_resource type="Texture2D" uid="uid://dag4lwcjmcn3c" path="res://models/toon/textures/clothes/shirts/desat_shirt_22.png" id="7_4le4g"]
+[ext_resource type="Texture2D" uid="uid://dh7dyokcfyw43" path="res://models/toon/textures/clothes/shirts/desat_sleeve_1.png" id="8_3qpsw"]
+[ext_resource type="Resource" uid="uid://tyi7ukxtvcgc" path="res://objects/battle/battle_resources/gag_loadouts/loadouts/standard_loadout.tres" id="9_rjm02"]
+[ext_resource type="Script" uid="uid://ts8xpgftpmty" path="res://objects/player/character.gd" id="10_6lvas"]
+[ext_resource type="Resource" uid="uid://dj6rnwbpaogue" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/resources/character_items/microgame_cartridge_orbulon.tres" id="11_ex4qr"]
+[ext_resource type="Resource" uid="uid://ru0peyelcrcv" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/resources/character_items/goggles_orbulon.tres" id="13_4le4g"]
+[ext_resource type="Resource" uid="uid://djij80h8jh7yd" path="res://objects/items/resources/accessories/glasses/star_glasses.tres" id="13_pb3xg"]
+[ext_resource type="Resource" uid="uid://b2kdn7jbtxq00" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/resources/character_items/orbunon_setup.tres" id="14_4le4g"]
+
+[sub_resource type="Resource" id="Resource_jj61k"]
+script = ExtResource("2_4le4g")
+damage = 0.8
+defense = 1.15
+speed = 1.05
+
+[sub_resource type="Resource" id="Resource_ugrs1"]
+script = ExtResource("3_pb3xg")
+texture = ExtResource("4_4le4g")
+
+[sub_resource type="Resource" id="Resource_2lryd"]
+script = ExtResource("6_3b5jn")
+shirt_texture = ExtResource("7_4le4g")
+sleeve_texture = ExtResource("8_3qpsw")
+
+[sub_resource type="Resource" id="Resource_ax4gq"]
+script = ExtResource("5_i77u6")
+body_type = 2
+leg_type = 2
+species = 8
+eyelashes = false
+shirt = SubResource("Resource_2lryd")
+bottoms = SubResource("Resource_ugrs1")
+
+[resource]
+script = ExtResource("10_6lvas")
+character_name = "Orbunon"
+character_summary = "Laff starts higher than usual
+Starts with Microgame Cartridge
+Starts with Star Glasses and Goggles
+Goggles and Microgame Cartridge are untradeable
++1 Gag regen, -2 gag cost"
+character_blurb = "This alien Toon is here to conquer the world and play some wacky Microgames! The first place he plans to take over is this building."
+dna = SubResource("Resource_ax4gq")
+gag_loadout = ExtResource("9_rjm02")
+starting_laff = 36
+starting_items = Array[ExtResource("1_ex4qr")]([ExtResource("11_ex4qr"), ExtResource("13_pb3xg"), ExtResource("13_4le4g"), ExtResource("14_4le4g")])
+base_stats = SubResource("Resource_jj61k")
+starting_gags = Dictionary[String, int]({
+"Drop": 1,
+"Lure": 1,
+"Sound": 1,
+"Squirt": 1,
+"Throw": 1,
+"Trap": 1
+})
+additional_stats = Dictionary[String, Variant]({
+"gag_discount": 0,
+"luck": 1.1
+})

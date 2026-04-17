@@ -1,0 +1,86 @@
+[gd_scene load_steps=11 format=3 uid="uid://bofgngqfow3qu"]
+
+[ext_resource type="PackedScene" uid="uid://cu152iitwfet2" path="res://objects/modules/cgc/base_rooms/cgc_finale_room.tscn" id="1_0l6vd"]
+[ext_resource type="Script" uid="uid://w3aoyrjnhajp" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/modules/cgc/arle_boss_directory.gd" id="2_ml4gq"]
+[ext_resource type="PackedScene" uid="uid://direah3lbjuu5" path="res://objects/battle/battle_node/battle_node.tscn" id="3_2am7m"]
+[ext_resource type="Script" uid="uid://dgt7p7amxoena" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/battle/battle_resources/misc_movies/arle_intro_movie.gd" id="4_4jjx1"]
+[ext_resource type="AudioStream" uid="uid://5x432uglcjr7" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/audio/music/arle_boss_theme.ogg" id="4_ml4gq"]
+[ext_resource type="PackedScene" uid="uid://dflwjcy6fj0av" path="res://objects/cog/cog.tscn" id="6_fm0jn"]
+[ext_resource type="Resource" uid="uid://bquwiegf3e53r" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/cog/presets/arle_nadja.tres" id="7_ml4gq"]
+[ext_resource type="Resource" uid="uid://bdxp6twov44ax" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/cog/presets/carbuncle.tres" id="8_xmnh2"]
+
+[sub_resource type="Resource" id="Resource_ml4gq"]
+script = ExtResource("4_4jjx1")
+skippable = true
+override_music = ExtResource("4_ml4gq")
+metadata/_custom_type_script = "uid://dgt7p7amxoena"
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6ws4t"]
+size = Vector3(16.0215, 3.93054, 10.3685)
+
+[node name="cgc_kart_boarding_room" instance=ExtResource("1_0l6vd")]
+
+[node name="BossDirectory" type="Node3D" parent="." index="22"]
+unique_name_in_owner = true
+script = ExtResource("2_ml4gq")
+
+[node name="BattleNode" parent="BossDirectory" index="0" node_paths=PackedStringArray("cogs") instance=ExtResource("3_2am7m")]
+unique_name_in_owner = true
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.540187, 0, 0)
+tags = Array[int]([0, 2])
+cogs = [NodePath("ArleNadja"), NodePath("Carbuncle")]
+override_intro = SubResource("Resource_ml4gq")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BossDirectory/BattleNode" index="3"]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.273437, 2.00091, 3.87165)
+shape = SubResource("BoxShape3D_6ws4t")
+
+[node name="ArleNadja" parent="BossDirectory/BattleNode" index="4" instance=ExtResource("6_fm0jn")]
+unique_name_in_owner = true
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -1, 0, 0)
+level_range_offset = 1
+dna = ExtResource("7_ml4gq")
+skelecog_chance = 0
+
+[node name="Carbuncle" parent="BossDirectory/BattleNode" index="5" instance=ExtResource("6_fm0jn")]
+unique_name_in_owner = true
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 1, 0, 0)
+level_range_offset = -2
+dna = ExtResource("8_xmnh2")
+skelecog_chance = 0
+
+[node name="CameraAngles" type="Node3D" parent="." index="23"]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.540187, 0, 0)
+
+[node name="IntroCam" type="Camera3D" parent="CameraAngles" index="0"]
+unique_name_in_owner = true
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 2.58, 0)
+fov = 52.0
+
+[node name="MoleFocus" type="Camera3D" parent="CameraAngles" index="1"]
+unique_name_in_owner = true
+transform = Transform3D(0.25881907, 0.33036608, -0.90767336, 0, 0.9396926, 0.34202012, 0.9659258, -0.08852133, 0.24321038, -5.175, 4, 1.5)
+fov = 52.0
+
+[node name="StompCam" type="Camera3D" parent="CameraAngles" index="2"]
+unique_name_in_owner = true
+transform = Transform3D(0.9396926, 0, 0.34202012, 0, 1, 0, -0.34202012, 0, 0.9396926, -5.205, 1.28, 3.67)
+fov = 52.0
+
+[node name="CharPositions" type="Node3D" parent="." index="24"]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.540187, 0, 0)
+
+[node name="WalkInPos" type="Node3D" parent="CharPositions" index="0"]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 0)
+
+[node name="StompPos" type="Node3D" parent="CharPositions" index="1"]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.5, 0, 0)
+
+[node name="FlyAwayPos" type="Node3D" parent="CharPositions" index="2"]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.5921, 3.74627, 0)

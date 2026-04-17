@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://c48jba8ytnto4"]
+
+[ext_resource type="PackedScene" uid="uid://cu6u74w72k115" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/accessories/tetrominos.glb" id="1_c14pr"]
+
+[node name="monarch_butterfly" type="Node3D"]
+
+[node name="tetrominos" parent="." instance=ExtResource("1_c14pr")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, -0.23, 0)

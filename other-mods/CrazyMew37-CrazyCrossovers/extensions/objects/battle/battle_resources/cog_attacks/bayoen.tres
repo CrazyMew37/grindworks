@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://bhqitjauuo466"]
+
+[ext_resource type="Script" uid="uid://baxtak0fyhmlc" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/battle/battle_resources/cog_attacks/bayoen.gd" id="1_lalbi"]
+
+[resource]
+script = ExtResource("1_lalbi")
+accuracy = 90
+damage = 5
+attack_lines = Array[String](["Better grab an umbrella, its raining Garbage Puyo!", "I'm way better at chaining than you.", "I'll mend your heart!", "Fireball! Ice Storm! Mind Blast! Judgement! Bayoen!", "Aren't I a cutie?"])
+action_name = "Bayoen"
+metadata/_custom_type_script = "uid://bb27him60xtnk"

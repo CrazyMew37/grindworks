@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Item" load_steps=6 format=3 uid="uid://bmi7n3me36h0g"]
+
+[ext_resource type="Texture2D" uid="uid://2mb1sns5g68q" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/TetrominoesItem.png" id="1_81j3x"]
+[ext_resource type="Script" uid="uid://la8ovbbahkpi" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/item_tetrominoes.gd" id="2_81j3x"]
+[ext_resource type="PackedScene" uid="uid://c48jba8ytnto4" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/tetrominoes.tscn" id="3_81j3x"]
+[ext_resource type="AudioStream" uid="uid://nl7mj84kb03j" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/audio/sfx/tetrispiece.ogg" id="4_g2vl7"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="5_p23ri"]
+
+[resource]
+script = ExtResource("5_p23ri")
+qualitoon = 3
+ui_cam_offset = 0.15
+item_name = "Tetrominoes"
+item_description = "A jumble of help!"
+big_description = "One of seven tetrominos will be picked per round, which will boost a random gag (including Toon-Up) by +20%."
+model = ExtResource("3_81j3x")
+pickup_sfx = ExtResource("4_g2vl7")
+item_script = ExtResource("2_81j3x")
+icon = ExtResource("1_81j3x")
+shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)
+force_show_shop_category = true

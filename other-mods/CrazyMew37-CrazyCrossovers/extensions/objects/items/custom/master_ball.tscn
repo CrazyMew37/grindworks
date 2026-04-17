@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://bbinf42kac0qt"]
+
+[ext_resource type="PackedScene" uid="uid://bm68hjlvve1o3" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/accessories/masterball.glb" id="1_r8hmb"]
+
+[node name="monarch_butterfly" type="Node3D"]
+
+[node name="masterball" parent="." instance=ExtResource("1_r8hmb")]
+transform = Transform3D(-1.0927847e-08, 0, -0.25, 0, 0.25, 0, 0.25, 0, -1.0927847e-08, 0, -0.15038896, 0)
+
+[node name="hitbox1" type="Node3D" parent="masterball"]
+transform = Transform3D(-1.7484555e-07, 0, 4, 0, 4, 0, -4, 0, -1.7484555e-07, 0.60345006, 1.1955038, 0.5679774)
+
+[node name="hitbox2" type="Node3D" parent="masterball"]
+transform = Transform3D(-1.7484555e-07, 0, 4, 0, 4, 0, -4, 0, -1.7484555e-07, -0.6124424, 1.1955038, -0.5679774)

@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Item" load_steps=5 format=3 uid="uid://b0bdk86umu8ct"]
+
+[ext_resource type="Texture2D" uid="uid://cpru2oemnny5p" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/appleringo.png" id="1_xt5wf"]
+[ext_resource type="Script" uid="uid://b1sd8cmcaiueh" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/item_apple.gd" id="2_xt5wf"]
+[ext_resource type="PackedScene" uid="uid://cn754rp2s522l" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/apple.tscn" id="3_ak3ar"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="5_yf7mt"]
+
+[resource]
+script = ExtResource("5_yf7mt")
+qualitoon = 2
+ui_cam_offset = 0.15
+item_name = "Apple"
+item_description = "Solved it!"
+big_description = "- 10% Drop damage
++ 10% Aftershock damage
+(Aftershock damage caps at 80% with Endless Nerfs on)"
+model = ExtResource("3_ak3ar")
+stats_add = {
+"gag_boost:Drop": -0.1
+}
+item_script = ExtResource("2_xt5wf")
+icon = ExtResource("1_xt5wf")
+shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)
+force_show_shop_category = true

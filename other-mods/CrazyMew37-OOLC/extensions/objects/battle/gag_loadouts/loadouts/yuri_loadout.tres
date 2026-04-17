@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="GagLoadout" load_steps=6 format=3 uid="uid://cpstjon3lr0gx"]
+
+[ext_resource type="Script" uid="uid://b6b6pfoqyolr" path="res://objects/battle/battle_resources/gag_loadouts/track.gd" id="1_vp2yh"]
+[ext_resource type="Resource" uid="uid://5dld88ul3rb5" path="res://objects/battle/battle_resources/gag_loadouts/gag_tracks/trap.tres" id="3_ysyln"]
+[ext_resource type="Resource" uid="uid://dqldfsmn7g606" path="res://objects/battle/battle_resources/gag_loadouts/gag_tracks/lure.tres" id="4_dwgv3"]
+[ext_resource type="Resource" uid="uid://lf7h5xkbt2op" path="res://objects/battle/battle_resources/gag_loadouts/gag_tracks/drop.tres" id="4_lwy1p"]
+[ext_resource type="Script" uid="uid://ckypnf7t805p3" path="res://objects/battle/battle_resources/gag_loadouts/gag_loadout.gd" id="6_b7ejl"]
+
+[resource]
+script = ExtResource("6_b7ejl")
+loadout = Array[ExtResource("1_vp2yh")]([ExtResource("4_lwy1p"), ExtResource("3_ysyln"), ExtResource("4_dwgv3")])

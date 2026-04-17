@@ -1,0 +1,445 @@
+[gd_resource type="Resource" script_class="GagLoadout" load_steps=137 format=3 uid="uid://cyuwpnlrx5x0p"]
+
+[ext_resource type="Script" uid="uid://b6b6pfoqyolr" path="res://objects/battle/battle_resources/gag_loadouts/track.gd" id="1_ra2qt"]
+[ext_resource type="Script" uid="uid://cwnjrxjvy5kc3" path="res://objects/battle/battle_resources/toon_attacks/toon_attack.gd" id="2_6kuoe"]
+[ext_resource type="Texture2D" uid="uid://b8m26tjpxrgid" path="res://ui_assets/battle/gags/inventory_squirt_flower.png" id="3_4ndtl"]
+[ext_resource type="Script" uid="uid://dko4gmutb8gfs" path="res://objects/battle/battle_resources/toon_attacks/squirt_flower.gd" id="4_rjgvj"]
+[ext_resource type="Texture2D" uid="uid://cgteesdi0svcp" path="res://ui_assets/battle/gags/inventory_glass_of_water.png" id="5_iuv3f"]
+[ext_resource type="Script" uid="uid://20vwxjtg6q45" path="res://objects/battle/battle_resources/toon_attacks/water_glass.gd" id="6_r8olx"]
+[ext_resource type="Texture2D" uid="uid://h6jqac2vi0hb" path="res://ui_assets/battle/gags/inventory_water_gun.png" id="7_xtk7b"]
+[ext_resource type="Script" uid="uid://dcf30lcach2kf" path="res://objects/battle/battle_resources/toon_attacks/squirt_gun.gd" id="8_dkv5g"]
+[ext_resource type="Script" uid="uid://ckypnf7t805p3" path="res://objects/battle/battle_resources/gag_loadouts/gag_loadout.gd" id="8_xyojd"]
+[ext_resource type="Texture2D" uid="uid://br65lhmxanr63" path="res://ui_assets/battle/gags/inventory_seltzer_bottle.png" id="9_0o17d"]
+[ext_resource type="Script" uid="uid://bhbpv6eeiwsoj" path="res://objects/battle/battle_resources/toon_attacks/seltzer_bottle.gd" id="10_68gjq"]
+[ext_resource type="Texture2D" uid="uid://raehjcuwardu" path="res://ui_assets/battle/gags/inventory_firehose.png" id="11_y8jbi"]
+[ext_resource type="Script" uid="uid://cmhxdqjvd1726" path="res://objects/battle/battle_resources/toon_attacks/fire_hose.gd" id="12_hhnoy"]
+[ext_resource type="Texture2D" uid="uid://d3s8uol0n1834" path="res://ui_assets/battle/gags/inventory_bannana_peel.png" id="13_3mrh7"]
+[ext_resource type="PackedScene" uid="uid://dha1jvcr7co3d" path="res://models/props/gags/banana_peel/banana_peel.tscn" id="14_lp17e"]
+[ext_resource type="Script" uid="uid://cgs0v0f7jhwsc" path="res://objects/battle/battle_resources/toon_attacks/trap_toss.gd" id="15_3wh2e"]
+[ext_resource type="AudioStream" uid="uid://ckic65w7wfr7l" path="res://audio/sfx/battle/gags/trap/TL_banana.ogg" id="16_bgpar"]
+[ext_resource type="Texture2D" uid="uid://c4vottciuoo6o" path="res://ui_assets/battle/gags/inventory_rake.png" id="17_tb66b"]
+[ext_resource type="PackedScene" uid="uid://cavvmjdli6ww1" path="res://models/props/gags/rake/rake.tscn" id="18_qwsr5"]
+[ext_resource type="AudioStream" uid="uid://mj7vdx8oi0dm" path="res://audio/sfx/battle/gags/trap/TL_rake_throw_only.ogg" id="19_8kxlh"]
+[ext_resource type="Texture2D" uid="uid://c312k6k81b08" path="res://ui_assets/battle/gags/inventory_marbles.png" id="20_f0iuq"]
+[ext_resource type="PackedScene" uid="uid://bx4qgugxa0mos" path="res://models/props/gags/marbles/marbles.tscn" id="21_2rp61"]
+[ext_resource type="AudioStream" uid="uid://cgfiap65t8c7o" path="res://audio/sfx/battle/gags/trap/TL_marbles.ogg" id="22_dmbu0"]
+[ext_resource type="Texture2D" uid="uid://b738dk1seameu" path="res://ui_assets/battle/gags/inventory_quicksand_icon.png" id="23_qsy3f"]
+[ext_resource type="PackedScene" uid="uid://bsjwo3t3pgtyw" path="res://models/props/gags/quicksand/quicksand.glb" id="24_xto7y"]
+[ext_resource type="Script" uid="uid://cadbacipbjc11" path="res://objects/battle/battle_resources/toon_attacks/trap_fall.gd" id="25_ak2ry"]
+[ext_resource type="AudioStream" uid="uid://bxcb1bvyobtls" path="res://audio/sfx/battle/gags/trap/TL_quicksand.ogg" id="26_j5d0e"]
+[ext_resource type="Texture2D" uid="uid://dllr28f4s08g" path="res://ui_assets/battle/gags/inventory_trapdoor.png" id="27_cexo1"]
+[ext_resource type="PackedScene" uid="uid://54b8v4xqohhn" path="res://models/props/gags/trapdoor/trapdoor.glb" id="28_l021c"]
+[ext_resource type="AudioStream" uid="uid://bq1wtlespqeec" path="res://audio/sfx/battle/gags/trap/TL_trap_door.ogg" id="29_pve73"]
+[ext_resource type="Texture2D" uid="uid://0y0we63o3mb8" path="res://ui_assets/battle/gags/inventory_1dollarbill.png" id="30_3tv16"]
+[ext_resource type="Script" uid="uid://gpeto6dx1eja" path="res://objects/battle/battle_resources/status_effects/lured.gd" id="31_jy8lv"]
+[ext_resource type="Script" uid="uid://td2akjfqd0r3" path="res://objects/battle/battle_resources/toon_attacks/lure_fish.gd" id="32_hffif"]
+[ext_resource type="Texture2D" uid="uid://fydnwdcn422y" path="res://ui_assets/battle/gags/inventory_small_magnet.png" id="33_co7k3"]
+[ext_resource type="Script" uid="uid://cseo0ntw14rkk" path="res://objects/battle/battle_resources/toon_attacks/lure_group.gd" id="34_dn4dg"]
+[ext_resource type="AudioStream" uid="uid://uh2gtpwij832" path="res://audio/sfx/battle/gags/lure/TL_small_magnet.ogg" id="35_umxcu"]
+[ext_resource type="Texture2D" uid="uid://d2w1gqvkuqair" path="res://ui_assets/battle/gags/inventory_5dollarbill.png" id="36_oj5s0"]
+[ext_resource type="Material" uid="uid://c6k1h8avpta45" path="res://models/props/gags/fishing_rod/dollar_bill_5.tres" id="37_48frb"]
+[ext_resource type="Texture2D" uid="uid://b7b444pvm24pb" path="res://ui_assets/battle/gags/inventory_big_magnet.png" id="38_31kas"]
+[ext_resource type="AudioStream" uid="uid://b63m273mnsnin" path="res://audio/sfx/battle/gags/lure/TL_large_magnet.ogg" id="39_o4fha"]
+[ext_resource type="Texture2D" uid="uid://dgxng3jvlh473" path="res://ui_assets/battle/gags/inventory_10dollarbill2.png" id="40_skk6h"]
+[ext_resource type="Material" uid="uid://4pjn47k3ssbd" path="res://models/props/gags/fishing_rod/dollar_bill_10.tres" id="41_h1176"]
+[ext_resource type="Texture2D" uid="uid://b42plu52oeyaq" path="res://ui_assets/battle/gags/inventory_bikehorn.png" id="42_utx7b"]
+[ext_resource type="PackedScene" uid="uid://ctpd48nalncug" path="res://models/props/gags/bike_horn/bike_horn.tscn" id="43_ktaj4"]
+[ext_resource type="Script" uid="uid://c7rpfrvobx8rf" path="res://objects/battle/battle_resources/toon_attacks/gag_sound.gd" id="44_llfd6"]
+[ext_resource type="AudioStream" uid="uid://2juxx4rstg62" path="res://audio/sfx/battle/gags/sound/AA_sound_bikehorn.ogg" id="45_x547r"]
+[ext_resource type="AudioStream" uid="uid://bav2i3kvvbiqc" path="res://audio/sfx/battle/gags/sound/MG_tag_1.ogg" id="46_x78rk"]
+[ext_resource type="Texture2D" uid="uid://dlpwdg5qa3cuo" path="res://ui_assets/battle/gags/inventory_whistle.png" id="47_keceh"]
+[ext_resource type="PackedScene" uid="uid://it2qq8y17ofu" path="res://models/props/gags/whistle/whistle.tscn" id="48_af2xa"]
+[ext_resource type="AudioStream" uid="uid://v37rahjv8tsf" path="res://audio/sfx/battle/gags/sound/AA_sound_whistle.ogg" id="49_3plje"]
+[ext_resource type="AudioStream" uid="uid://dopl2o1rv7ww0" path="res://audio/sfx/battle/gags/sound/LB_receive_evidence.ogg" id="50_5hp2n"]
+[ext_resource type="Texture2D" uid="uid://b3w7npbkc8fod" path="res://ui_assets/battle/gags/inventory_bugle.png" id="51_hi2iv"]
+[ext_resource type="PackedScene" uid="uid://2p6r48esch8k" path="res://models/props/gags/bugle/bugle.tscn" id="52_5ytxi"]
+[ext_resource type="AudioStream" uid="uid://qkkn3wwjof" path="res://audio/sfx/battle/gags/sound/AA_sound_bugle.ogg" id="53_oq73e"]
+[ext_resource type="AudioStream" uid="uid://cl3ynyl2nshg2" path="res://audio/sfx/battle/gags/sound/m_match_trumpet.ogg" id="54_aepey"]
+[ext_resource type="Texture2D" uid="uid://b6fgd8mo03x7e" path="res://ui_assets/battle/gags/inventory_aoogah.png" id="55_ox8bn"]
+[ext_resource type="PackedScene" uid="uid://clb5aeit6u56k" path="res://models/props/gags/aoogah/aoogah.tscn" id="56_v74fa"]
+[ext_resource type="AudioStream" uid="uid://ur6jb4ibpc4w" path="res://audio/sfx/battle/gags/sound/AA_sound_aoogah.ogg" id="57_tp6nw"]
+[ext_resource type="AudioStream" uid="uid://s5dcxjy2p7c1" path="res://audio/sfx/battle/gags/trap/TL_step_on_rake.ogg" id="58_k78lb"]
+[ext_resource type="Texture2D" uid="uid://gk2n47vnr3qd" path="res://ui_assets/battle/gags/inventory_elephant.png" id="59_lgi16"]
+[ext_resource type="PackedScene" uid="uid://bec6xrbnsppvu" path="res://models/props/gags/elephant_trunk/elephant_trunk.tscn" id="60_d3imt"]
+[ext_resource type="AudioStream" uid="uid://6vlq57anbp5d" path="res://audio/sfx/battle/gags/sound/AA_sound_elephant.ogg" id="61_1otgr"]
+[ext_resource type="AudioStream" uid="uid://b6dqkw3abota0" path="res://audio/sfx/battle/gags/sound/toonbldg_grow.ogg" id="62_pbrt5"]
+[ext_resource type="Texture2D" uid="uid://b02dgcnkrbbtx" path="res://ui_assets/battle/gags/inventory_tart.png" id="63_v60cx"]
+[ext_resource type="PackedScene" uid="uid://dj268hnb7rr26" path="res://models/props/gags/pie/pie.glb" id="64_5qq7i"]
+[ext_resource type="Script" uid="uid://dbdc7jnq3xams" path="res://objects/battle/battle_resources/toon_attacks/gag_throw.gd" id="65_b8g43"]
+[ext_resource type="AudioStream" uid="uid://q717j7rpl4ue" path="res://audio/sfx/battle/gags/throw/AA_tart_only.ogg" id="66_v5jtf"]
+[ext_resource type="Texture2D" uid="uid://cs8h6tvalsx8l" path="res://ui_assets/battle/gags/inventory_fruit_pie_slice.png" id="67_na7qe"]
+[ext_resource type="PackedScene" uid="uid://rc0827dqbtyk" path="res://models/props/gags/fruit_slice/fruit_slice.glb" id="68_bkck4"]
+[ext_resource type="Texture2D" uid="uid://bxp6c7raxg5ic" path="res://ui_assets/battle/gags/inventory_cream_pie_slice.png" id="69_2ecst"]
+[ext_resource type="PackedScene" uid="uid://b0mkdwaiua3ye" path="res://models/props/gags/cream_slice/cream_slice.glb" id="70_oxbuf"]
+[ext_resource type="Texture2D" uid="uid://bqis01vyse0vq" path="res://ui_assets/battle/gags/inventory_fruitpie.png" id="71_x0ky0"]
+[ext_resource type="Texture2D" uid="uid://d2eh7ur04xhve" path="res://ui_assets/battle/gags/inventory_creampie.png" id="72_p4xf3"]
+[ext_resource type="Texture2D" uid="uid://b58goas1dfh35" path="res://ui_assets/battle/gags/inventory_flower_pot.png" id="73_l8u0v"]
+[ext_resource type="PackedScene" uid="uid://b83bdoxnutfks" path="res://models/props/gags/flower_pot/flower_pot.tscn" id="74_0bcyq"]
+[ext_resource type="Script" uid="uid://dehi0sbejfe52" path="res://objects/battle/battle_resources/toon_attacks/drop_small.gd" id="75_iaa5a"]
+[ext_resource type="AudioStream" uid="uid://dhp8y3qd2amis" path="res://audio/sfx/battle/gags/drop/AA_drop_flowerpot.ogg" id="76_n26dt"]
+[ext_resource type="AudioStream" uid="uid://blyhe56l6dfkn" path="res://audio/sfx/battle/gags/drop/AA_drop_flowerpot_miss.ogg" id="77_bptme"]
+[ext_resource type="Texture2D" uid="uid://b0ur80pn0rlga" path="res://ui_assets/battle/gags/inventory_sandbag.png" id="78_mh56y"]
+[ext_resource type="PackedScene" uid="uid://bqcn6woo6faw3" path="res://models/props/gags/sandbag/sandbag.tscn" id="79_vie5o"]
+[ext_resource type="AudioStream" uid="uid://daregunub3lk2" path="res://audio/sfx/battle/gags/drop/AA_drop_sandbag.ogg" id="80_2omp8"]
+[ext_resource type="AudioStream" uid="uid://d216a4hd3dteb" path="res://audio/sfx/battle/gags/drop/AA_drop_sandbag_miss.ogg" id="81_5uiva"]
+[ext_resource type="Texture2D" uid="uid://dqtqf65k6nxi8" path="res://ui_assets/battle/gags/inventory_anvil.png" id="82_idyg6"]
+[ext_resource type="PackedScene" uid="uid://bbrcfwwkp3uhk" path="res://models/props/gags/anvil/anvil.tscn" id="83_gfa1r"]
+[ext_resource type="AudioStream" uid="uid://omjhv7l4ctpi" path="res://audio/sfx/battle/gags/drop/AA_drop_anvil.ogg" id="84_02rhm"]
+[ext_resource type="AudioStream" uid="uid://bj15l5kuxgkny" path="res://audio/sfx/battle/gags/drop/AA_drop_anvil_miss.ogg" id="85_048qj"]
+[ext_resource type="Texture2D" uid="uid://d12bdaxn4rm1e" path="res://ui_assets/battle/gags/inventory_weight.png" id="86_yopq3"]
+[ext_resource type="PackedScene" uid="uid://b0iui2nh3h4wb" path="res://models/props/gags/big_weight/big_weight.tscn" id="87_e337d"]
+[ext_resource type="Script" uid="uid://bacdlj4c328s6" path="res://objects/battle/battle_resources/toon_attacks/drop_big.gd" id="88_6ajg5"]
+[ext_resource type="AudioStream" uid="uid://bgx8rpo052x5q" path="res://audio/sfx/battle/gags/drop/AA_drop_bigweight.ogg" id="89_geuya"]
+[ext_resource type="AudioStream" uid="uid://ddj4or7ioqguv" path="res://audio/sfx/battle/gags/drop/AA_drop_bigweight_miss.ogg" id="90_7dtsg"]
+[ext_resource type="Texture2D" uid="uid://d3lgtwpp1y4ev" path="res://ui_assets/battle/gags/inventory_safe_box.png" id="91_y130e"]
+[ext_resource type="PackedScene" uid="uid://cueenmir23h2" path="res://models/props/gags/safe/safe.tscn" id="92_3ewiq"]
+[ext_resource type="AudioStream" uid="uid://cuvfjvbbukbm3" path="res://audio/sfx/battle/gags/drop/AA_drop_safe.ogg" id="93_1i0i7"]
+[ext_resource type="AudioStream" uid="uid://cytnpbt1lx7kn" path="res://audio/sfx/battle/gags/drop/AA_drop_safe_miss.ogg" id="94_0124m"]
+
+[sub_resource type="Resource" id="Resource_jd3vv"]
+script = ExtResource("44_llfd6")
+model = ExtResource("43_ktaj4")
+position = Vector3(0.995, 0.114, -1.444)
+rotation = Vector3(0, 149.9, 0)
+scale = Vector3(0.625, 0.625, 0.625)
+sfx_windup = ExtResource("46_x78rk")
+sfx_blast = ExtResource("45_x547r")
+icon = ExtResource("42_utx7b")
+damage = 6
+target_type = 7
+action_name = "Bike Horn"
+
+[sub_resource type="Resource" id="Resource_1lrld"]
+script = ExtResource("44_llfd6")
+model = ExtResource("48_af2xa")
+position = Vector3(1.084, 0.254, -1.617)
+rotation = Vector3(-26.8, -172.9, 91)
+scale = Vector3(0.145, 0.145, 0.145)
+anim_delay = 2.4
+sfx_windup = ExtResource("50_5hp2n")
+sfx_blast = ExtResource("49_3plje")
+icon = ExtResource("47_keceh")
+damage = 12
+target_type = 7
+action_name = "Whistle"
+
+[sub_resource type="Resource" id="Resource_hif7k"]
+script = ExtResource("44_llfd6")
+model = ExtResource("52_5ytxi")
+position = Vector3(1.676, -0.28, -2.665)
+rotation = Vector3(11.8, 142.8, 110)
+scale = Vector3(0.7, 0.7, 0.7)
+sfx_windup = ExtResource("54_aepey")
+sfx_blast = ExtResource("53_oq73e")
+icon = ExtResource("51_hi2iv")
+damage = 20
+target_type = 7
+action_name = "Bugle"
+
+[sub_resource type="Resource" id="Resource_bh76t"]
+script = ExtResource("44_llfd6")
+model = ExtResource("56_v74fa")
+position = Vector3(1.552, -0.055, -2.513)
+rotation = Vector3(-5.2, -28.2, -28)
+scale = Vector3(0.525, 0.525, 0.525)
+sfx_windup = ExtResource("58_k78lb")
+sfx_blast = ExtResource("57_tp6nw")
+icon = ExtResource("55_ox8bn")
+damage = 34
+target_type = 7
+action_name = "Aoogah"
+
+[sub_resource type="Resource" id="Resource_nrnmj"]
+script = ExtResource("44_llfd6")
+model = ExtResource("60_d3imt")
+position = Vector3(1.156, 0.099, -1.468)
+rotation = Vector3(16.7, 139.4, 90)
+scale = Vector3(0.325, 0.325, 0.325)
+sfx_windup = ExtResource("62_pbrt5")
+sfx_blast = ExtResource("61_1otgr")
+icon = ExtResource("59_lgi16")
+damage = 56
+target_type = 7
+action_name = "Elephant Trunk"
+
+[sub_resource type="Resource" id="Resource_4ndtl"]
+script = ExtResource("1_ra2qt")
+track_name = "Sound"
+track_color = Color(0.309804, 0.388235, 0.835294, 1)
+gags = Array[ExtResource("2_6kuoe")]([SubResource("Resource_jd3vv"), SubResource("Resource_1lrld"), SubResource("Resource_hif7k"), SubResource("Resource_bh76t"), SubResource("Resource_nrnmj")])
+
+[sub_resource type="Resource" id="Resource_73lf0"]
+script = ExtResource("15_3wh2e")
+model = ExtResource("14_lp17e")
+toss_sfx = ExtResource("16_bgpar")
+icon = ExtResource("13_3mrh7")
+damage = 20
+action_name = "Banana Peel"
+
+[sub_resource type="Resource" id="Resource_dut7k"]
+script = ExtResource("15_3wh2e")
+model = ExtResource("18_qwsr5")
+animation = 1
+toss_sfx = ExtResource("19_8kxlh")
+icon = ExtResource("17_tb66b")
+damage = 30
+action_name = "Rake"
+
+[sub_resource type="Resource" id="Resource_f0nrw"]
+script = ExtResource("15_3wh2e")
+model = ExtResource("21_2rp61")
+toss_time = 0.01
+toss_sfx = ExtResource("22_dmbu0")
+icon = ExtResource("20_f0iuq")
+damage = 56
+action_name = "Marbles"
+
+[sub_resource type="Resource" id="Resource_nxdef"]
+script = ExtResource("25_ak2ry")
+model = ExtResource("24_xto7y")
+sfx = ExtResource("26_j5d0e")
+icon = ExtResource("23_qsy3f")
+damage = 70
+action_name = "Quicksand"
+
+[sub_resource type="Resource" id="Resource_w688w"]
+script = ExtResource("25_ak2ry")
+model = ExtResource("28_l021c")
+sfx = ExtResource("29_pve73")
+trap_type = 1
+icon = ExtResource("27_cexo1")
+damage = 110
+action_name = "Trap Door"
+
+[sub_resource type="Resource" id="Resource_6kuoe"]
+script = ExtResource("1_ra2qt")
+track_type = 1
+track_name = "Trap"
+track_color = Color(0.988235, 0.992157, 0.333333, 1)
+gags = Array[ExtResource("2_6kuoe")]([SubResource("Resource_73lf0"), SubResource("Resource_dut7k"), SubResource("Resource_f0nrw"), SubResource("Resource_nxdef"), SubResource("Resource_w688w")])
+
+[sub_resource type="Resource" id="Resource_voata"]
+script = ExtResource("31_jy8lv")
+quality = 1
+id = 2
+
+[sub_resource type="Resource" id="Resource_c2yol"]
+script = ExtResource("32_hffif")
+lure_effect = SubResource("Resource_voata")
+icon = ExtResource("30_3tv16")
+action_name = "1 Dollar Bill"
+
+[sub_resource type="Resource" id="Resource_orvgm"]
+script = ExtResource("31_jy8lv")
+lure_type = 1
+damage_nerf = -0.5
+quality = 1
+id = 2
+
+[sub_resource type="Resource" id="Resource_1ai11"]
+script = ExtResource("34_dn4dg")
+sfx = ExtResource("35_umxcu")
+lure_effect = SubResource("Resource_orvgm")
+icon = ExtResource("33_co7k3")
+target_type = 7
+action_name = "Small Magnet"
+
+[sub_resource type="Resource" id="Resource_4kntx"]
+script = ExtResource("31_jy8lv")
+knockback_effect = 30
+quality = 1
+id = 2
+
+[sub_resource type="Resource" id="Resource_ufcuq"]
+script = ExtResource("32_hffif")
+override_mat = ExtResource("37_48frb")
+lure_effect = SubResource("Resource_4kntx")
+icon = ExtResource("36_oj5s0")
+action_name = "5 Dollar Bill"
+
+[sub_resource type="Resource" id="Resource_e3sel"]
+script = ExtResource("31_jy8lv")
+lure_type = 1
+knockback_effect = 30
+damage_nerf = -0.75
+quality = 1
+id = 2
+
+[sub_resource type="Resource" id="Resource_tjb7b"]
+script = ExtResource("34_dn4dg")
+sfx = ExtResource("39_o4fha")
+lure_effect = SubResource("Resource_e3sel")
+icon = ExtResource("38_31kas")
+target_type = 7
+action_name = "Big Magnet"
+
+[sub_resource type="Resource" id="Resource_37cp3"]
+script = ExtResource("31_jy8lv")
+knockback_effect = 60
+quality = 1
+id = 2
+
+[sub_resource type="Resource" id="Resource_qe7sj"]
+script = ExtResource("32_hffif")
+override_mat = ExtResource("41_h1176")
+lure_effect = SubResource("Resource_37cp3")
+icon = ExtResource("40_skk6h")
+action_name = "10 Dollar Bill"
+
+[sub_resource type="Resource" id="Resource_6amja"]
+script = ExtResource("1_ra2qt")
+track_type = 1
+track_name = "Lure"
+track_color = Color(0.282353, 0.623529, 0.247059, 1)
+gags = Array[ExtResource("2_6kuoe")]([SubResource("Resource_c2yol"), SubResource("Resource_1ai11"), SubResource("Resource_ufcuq"), SubResource("Resource_tjb7b"), SubResource("Resource_qe7sj")])
+
+[sub_resource type="Resource" id="Resource_cf3iq"]
+script = ExtResource("65_b8g43")
+model = ExtResource("64_5qq7i")
+scale = 0.5
+splat_color = Color(0.207843, 0.196078, 0.592157, 1)
+splat_sfx = ExtResource("66_v5jtf")
+icon = ExtResource("63_v60cx")
+damage = 7
+action_name = "Cupcake"
+
+[sub_resource type="Resource" id="Resource_uxcic"]
+script = ExtResource("65_b8g43")
+model = ExtResource("68_bkck4")
+splat_color = Color(0.207843, 0.196078, 0.592157, 1)
+splat_sfx = ExtResource("66_v5jtf")
+icon = ExtResource("67_na7qe")
+damage = 14
+action_name = "Fruit Pie Slice"
+
+[sub_resource type="Resource" id="Resource_auxgd"]
+script = ExtResource("65_b8g43")
+model = ExtResource("70_oxbuf")
+splat_color = Color(1, 1, 0, 1)
+splat_sfx = ExtResource("66_v5jtf")
+icon = ExtResource("69_2ecst")
+damage = 24
+action_name = "Cream Pie Slice"
+
+[sub_resource type="Resource" id="Resource_7vpdx"]
+script = ExtResource("65_b8g43")
+model = ExtResource("64_5qq7i")
+scale = 0.75
+splat_color = Color(0.207843, 0.196078, 0.592157, 1)
+splat_sfx = ExtResource("66_v5jtf")
+icon = ExtResource("71_x0ky0")
+damage = 40
+action_name = "Whole Fruit Pie"
+
+[sub_resource type="Resource" id="Resource_f3d0w"]
+script = ExtResource("65_b8g43")
+model = ExtResource("64_5qq7i")
+scale = 0.9
+splat_color = Color(1, 1, 0, 1)
+splat_sfx = ExtResource("66_v5jtf")
+icon = ExtResource("72_p4xf3")
+damage = 60
+action_name = "Whole Cream Pie"
+
+[sub_resource type="Resource" id="Resource_ab81p"]
+script = ExtResource("1_ra2qt")
+track_name = "Throw"
+track_color = Color(0.929412, 0.541176, 0.258824, 1)
+gags = Array[ExtResource("2_6kuoe")]([SubResource("Resource_cf3iq"), SubResource("Resource_uxcic"), SubResource("Resource_auxgd"), SubResource("Resource_7vpdx"), SubResource("Resource_f3d0w")])
+
+[sub_resource type="Resource" id="Resource_kig6x"]
+script = ExtResource("4_rjgvj")
+icon = ExtResource("3_4ndtl")
+damage = 5
+action_name = "Squirting Flower"
+
+[sub_resource type="Resource" id="Resource_teoux"]
+script = ExtResource("6_r8olx")
+icon = ExtResource("5_iuv3f")
+damage = 10
+action_name = "Glass of Water"
+
+[sub_resource type="Resource" id="Resource_0fqpw"]
+script = ExtResource("8_dkv5g")
+icon = ExtResource("7_xtk7b")
+damage = 18
+action_name = "Squirt Gun"
+
+[sub_resource type="Resource" id="Resource_we2gn"]
+script = ExtResource("10_68gjq")
+icon = ExtResource("9_0o17d")
+damage = 30
+action_name = "Seltzer Bottle"
+
+[sub_resource type="Resource" id="Resource_qj0t3"]
+script = ExtResource("12_hhnoy")
+icon = ExtResource("11_y8jbi")
+damage = 45
+action_name = "Fire Hose"
+
+[sub_resource type="Resource" id="Resource_xvc7a"]
+script = ExtResource("1_ra2qt")
+track_type = 1
+track_name = "Squirt"
+track_color = Color(0.968627, 0.2, 0.721569, 1)
+gags = Array[ExtResource("2_6kuoe")]([SubResource("Resource_kig6x"), SubResource("Resource_teoux"), SubResource("Resource_0fqpw"), SubResource("Resource_we2gn"), SubResource("Resource_qj0t3")])
+
+[sub_resource type="Resource" id="Resource_bdyje"]
+script = ExtResource("75_iaa5a")
+model = ExtResource("74_0bcyq")
+shadow_scale = 1.25
+sfx_hit = ExtResource("76_n26dt")
+sfx_miss = ExtResource("77_bptme")
+icon = ExtResource("73_l8u0v")
+damage = 8
+action_name = "Flower Pot"
+
+[sub_resource type="Resource" id="Resource_0vh8a"]
+script = ExtResource("75_iaa5a")
+model = ExtResource("79_vie5o")
+shadow_scale = 1.25
+sfx_hit = ExtResource("80_2omp8")
+sfx_miss = ExtResource("81_5uiva")
+icon = ExtResource("78_mh56y")
+damage = 14
+action_name = "Sandbag"
+
+[sub_resource type="Resource" id="Resource_ye2tp"]
+script = ExtResource("75_iaa5a")
+model = ExtResource("83_gfa1r")
+shadow_scale = 1.5
+sfx_hit = ExtResource("84_02rhm")
+sfx_miss = ExtResource("85_048qj")
+icon = ExtResource("82_idyg6")
+damage = 20
+action_name = "Anvil"
+
+[sub_resource type="Resource" id="Resource_7r1t1"]
+script = ExtResource("88_6ajg5")
+model = ExtResource("87_e337d")
+shadow_scale = 2.0
+sfx_hit = ExtResource("89_geuya")
+sfx_miss = ExtResource("90_7dtsg")
+icon = ExtResource("86_yopq3")
+damage = 36
+action_name = "Big Weight"
+
+[sub_resource type="Resource" id="Resource_ctukw"]
+script = ExtResource("88_6ajg5")
+model = ExtResource("92_3ewiq")
+shadow_scale = 3.0
+sfx_hit = ExtResource("93_1i0i7")
+sfx_miss = ExtResource("94_0124m")
+icon = ExtResource("91_y130e")
+damage = 56
+action_name = "Safe"
+
+[sub_resource type="Resource" id="Resource_divqi"]
+script = ExtResource("1_ra2qt")
+track_name = "Drop"
+track_color = Color(0.207843, 0.956863, 1, 1)
+gags = Array[ExtResource("2_6kuoe")]([SubResource("Resource_bdyje"), SubResource("Resource_0vh8a"), SubResource("Resource_ye2tp"), SubResource("Resource_7r1t1"), SubResource("Resource_ctukw")])
+
+[resource]
+script = ExtResource("8_xyojd")
+loadout = Array[ExtResource("1_ra2qt")]([SubResource("Resource_4ndtl"), SubResource("Resource_6kuoe"), SubResource("Resource_6amja"), SubResource("Resource_ab81p"), SubResource("Resource_xvc7a"), SubResource("Resource_divqi")])

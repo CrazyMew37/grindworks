@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="Item" load_steps=6 format=3 uid="uid://cj7nq2rnmadbh"]
+
+[ext_resource type="Texture2D" uid="uid://cid4jfjbkxsrn" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/pvzsun.png" id="1_anq14"]
+[ext_resource type="PackedScene" uid="uid://chdckk24ibqgx" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/sun.tscn" id="2_anq14"]
+[ext_resource type="Script" uid="uid://brt8bxm7mbche" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/item_sun.gd" id="2_kvolr"]
+[ext_resource type="AudioStream" uid="uid://iwlp7otpojt6" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/audio/sfx/PvZSun.ogg" id="3_anq14"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="3_kvolr"]
+
+[resource]
+script = ExtResource("3_kvolr")
+tags = Array[int]([0])
+qualitoon = 3
+rarity = 5
+ui_cam_offset = 0.15
+item_name = "Sun"
+item_description = "Greater power for greater costs"
+big_description = "Increases point regeneration of all Gag tracks by 1
+Increases the point costs of gags by 1"
+model = ExtResource("2_anq14")
+pickup_sfx = ExtResource("3_anq14")
+stats_add = {
+"gag_discount": -1
+}
+item_script = ExtResource("2_kvolr")
+icon = ExtResource("1_anq14")
+shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)
+force_show_shop_category = true

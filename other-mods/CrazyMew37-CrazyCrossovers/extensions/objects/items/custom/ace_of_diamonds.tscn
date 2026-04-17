@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dqjtjlun0c1xw"]
+
+[ext_resource type="PackedScene" uid="uid://rw7fbb6sy5ml" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/accessories/aceofdiamondsgw.glb" id="1_kfcnm"]
+
+[node name="monarch_butterfly" type="Node3D"]
+
+[node name="aceofdiamondsgw" parent="." instance=ExtResource("1_kfcnm")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0.015, -0.15, 0)

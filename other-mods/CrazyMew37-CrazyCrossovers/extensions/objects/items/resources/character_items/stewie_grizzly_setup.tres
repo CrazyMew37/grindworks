@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://cypsuc26s0i4t"]
+
+[ext_resource type="Script" uid="uid://dcme1hhc66gtv" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/resources/character_items/item_stewie_grizzly_setup.gd" id="1_hqgny"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="2_cd6at"]
+
+[resource]
+script = ExtResource("2_cd6at")
+item_script = ExtResource("1_hqgny")
+metadata/_custom_type_script = "uid://combwqypom1ru"

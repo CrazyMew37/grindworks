@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="CogDNA" load_steps=7 format=3 uid="uid://cvratyk7nf4j2"]
+
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_0fpk3"]
+[ext_resource type="Resource" uid="uid://c1b3yowqrw87s" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/battle/battle_resources/cog_attacks/hit_the_books.tres" id="2_bj2ji"]
+[ext_resource type="Resource" uid="uid://erbbarg5bxm8" path="res://objects/battle/battle_resources/cog_attacks/resources/rolodex.tres" id="3_0fpk3"]
+[ext_resource type="Resource" uid="uid://c31yj6hc78hh3" path="res://objects/battle/battle_resources/cog_attacks/resources/eviction_notice.tres" id="4_bj2ji"]
+[ext_resource type="Resource" uid="uid://305avsq3iu30" path="res://objects/battle/battle_resources/cog_attacks/resources/power_tie.tres" id="5_rl6lo"]
+[ext_resource type="Script" uid="uid://yc46vrmyfql1" path="res://objects/cog/cog_dna.gd" id="6_w7l16"]
+
+[resource]
+script = ExtResource("6_w7l16")
+department = 2
+custom_blazer_tex = "res://models/cogs/textures/slender/blazer.png"
+custom_arm_tex = "res://models/cogs/textures/slender/sleeve.png"
+custom_leg_tex = "res://models/cogs/textures/slender/leg.png"
+cog_name = "Yuri"
+head = "res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/cogs/heads/plane.glb"
+head_scale = Vector3(1.5, 1.5, 1.5)
+scale = 5.4
+head_textures = PackedStringArray("res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/cogs/heads/yurihead.png")
+hand_color = Color(0.99215686, 0.90588236, 0.8392157, 1)
+custom_nametag_height = 11.0
+attacks = Array[ExtResource("1_0fpk3")]([ExtResource("2_bj2ji"), ExtResource("3_0fpk3"), ExtResource("4_bj2ji"), ExtResource("5_rl6lo")])
+level_high = 20
+is_admin = true
+battle_phrases = Array[String](["Sorry, but you don't make the cut.", "I'm... really sorry for this.", "I bet you don't even read, do you?"])
+external_assets = {
+&"head_model": "",
+&"head_textures": []
+}

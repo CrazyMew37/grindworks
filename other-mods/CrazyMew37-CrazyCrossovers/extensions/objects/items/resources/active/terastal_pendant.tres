@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="ItemActive" load_steps=6 format=3 uid="uid://dxr15kuk7cqlr"]
+
+[ext_resource type="Texture2D" uid="uid://d2fu8ix2j7uhp" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/terastalpendant.png" id="1_nvk0p"]
+[ext_resource type="Script" uid="uid://b631d5ay2xu3p" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/item_terastal_pendant.gd" id="2_nvk0p"]
+[ext_resource type="PackedScene" uid="uid://ds3540pi1bvwk" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/terastal_pendant.tscn" id="3_wnyj4"]
+[ext_resource type="AudioStream" uid="uid://uqmxyetxbo4d" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/audio/sfx/terapagoscry.ogg" id="4_8iqdu"]
+[ext_resource type="Script" uid="uid://5uwfsntxdag6" path="res://objects/items/classes/item_active.gd" id="5_7uy7d"]
+
+[resource]
+script = ExtResource("5_7uy7d")
+active_type = 2
+charge_count = 5
+current_charge = 5
+qualitoon = 4
+ui_cam_offset = 0.15
+item_name = "Terastal Pendant"
+item_description = "Watch out for any explorers..."
+big_description = "+ 5% effectiveness to a random gag track upon use."
+model = ExtResource("3_wnyj4")
+pickup_sfx = ExtResource("4_8iqdu")
+item_script = ExtResource("2_nvk0p")
+icon = ExtResource("1_nvk0p")
+shop_category_title = "Pocket Prank"
+shop_category_color = Color(0.929412, 0.262745, 0.278431, 1)
+force_show_shop_category = true
+metadata/_custom_type_script = "uid://5uwfsntxdag6"

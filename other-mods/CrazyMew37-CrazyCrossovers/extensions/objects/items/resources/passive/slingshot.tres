@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Item" load_steps=5 format=3 uid="uid://wof601gcn0uf"]
+
+[ext_resource type="Texture2D" uid="uid://dxt8n11pew13c" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/slingshot.png" id="1_e7bsw"]
+[ext_resource type="PackedScene" uid="uid://cqur5id0568qb" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/slingshot.tscn" id="2_e7bsw"]
+[ext_resource type="AudioStream" uid="uid://do1ubqpovq3x8" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/audio/sfx/abslingshot.ogg" id="3_h1idt"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="4_pwsjk"]
+
+[resource]
+script = ExtResource("4_pwsjk")
+qualitoon = 2
+ui_cam_offset = 0.15
+item_name = "Slingshot"
+item_description = "Ready... FIRE!"
+big_description = "+ 15% Throw damage
+- 15% Lure damage"
+model = ExtResource("2_e7bsw")
+pickup_sfx = ExtResource("3_h1idt")
+stats_add = {
+"gag_boost:Lure": -0.15,
+"gag_boost:Throw": 0.15
+}
+icon = ExtResource("1_e7bsw")
+shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)
+force_show_shop_category = true

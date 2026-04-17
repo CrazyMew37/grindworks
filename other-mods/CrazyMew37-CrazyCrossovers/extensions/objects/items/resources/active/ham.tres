@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="ItemActive" load_steps=6 format=3 uid="uid://cifeyo5ajugr0"]
+
+[ext_resource type="Texture2D" uid="uid://llcu83cxrcnf" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/hamlarva.png" id="1_tqlxe"]
+[ext_resource type="Script" uid="uid://bei6h3fglxnkj" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/item_ham.gd" id="2_tqlxe"]
+[ext_resource type="PackedScene" uid="uid://bnof05djg4ka7" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/ham.tscn" id="3_osnmk"]
+[ext_resource type="AudioStream" uid="uid://7ma308jln3fn" path="res://audio/sfx/items/big_chomp.ogg" id="4_kaxng"]
+[ext_resource type="Script" uid="uid://5uwfsntxdag6" path="res://objects/items/classes/item_active.gd" id="5_at1tb"]
+
+[resource]
+script = ExtResource("5_at1tb")
+active_type = 3
+charge_count = 9
+current_charge = 9
+qualitoon = 2
+ui_cam_offset = 0.15
+item_name = "Ham"
+item_description = "Don't let any bugs steal it!"
+big_description = "Heals your entire laff, but at the cost of -6% in Damage, Defense, Evasiveness, Luck, and Speed."
+model = ExtResource("3_osnmk")
+pickup_sfx = ExtResource("4_kaxng")
+item_script = ExtResource("2_tqlxe")
+icon = ExtResource("1_tqlxe")
+shop_category_title = "Pocket Prank"
+shop_category_color = Color(0.929412, 0.262745, 0.278431, 1)
+force_show_shop_category = true
+metadata/_custom_type_script = "uid://5uwfsntxdag6"

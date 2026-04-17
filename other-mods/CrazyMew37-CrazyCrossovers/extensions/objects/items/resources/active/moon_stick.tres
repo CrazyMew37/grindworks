@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="ItemActive" load_steps=6 format=3 uid="uid://6b7mheaqeseh"]
+
+[ext_resource type="Texture2D" uid="uid://dmp5ljdux6iuk" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/moonstick.png" id="1_66a7q"]
+[ext_resource type="Script" uid="uid://ci8tdmm6j6mmr" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/item_moon_stick.gd" id="2_66a7q"]
+[ext_resource type="PackedScene" uid="uid://bgagq3kjdj2it" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/moon_stick.tscn" id="3_e3bf6"]
+[ext_resource type="AudioStream" uid="uid://8vjo40mj15u4" path="res://audio/sfx/items/SZ_MM_fanfare.ogg" id="4_e3bf6"]
+[ext_resource type="Script" uid="uid://5uwfsntxdag6" path="res://objects/items/classes/item_active.gd" id="4_f068q"]
+
+[resource]
+script = ExtResource("4_f068q")
+active_type = 2
+charge_count = 8
+current_charge = 8
+qualitoon = 4
+ui_cam_offset = 0.15
+item_name = "Moon Stick"
+item_description = "In the name of the Moon..."
+big_description = "Cog levels in the room will be decreased by half of their current level, rounded up."
+model = ExtResource("3_e3bf6")
+pickup_sfx = ExtResource("4_e3bf6")
+item_script = ExtResource("2_66a7q")
+icon = ExtResource("1_66a7q")
+shop_category_title = "Pocket Prank"
+shop_category_color = Color(0.929412, 0.262745, 0.278431, 1)
+force_show_shop_category = true
+metadata/_custom_type_script = "uid://5uwfsntxdag6"

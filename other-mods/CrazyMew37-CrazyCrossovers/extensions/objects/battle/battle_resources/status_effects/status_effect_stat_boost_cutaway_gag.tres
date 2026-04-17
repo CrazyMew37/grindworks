@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="StatBoostCutawayGag" load_steps=3 format=3 uid="uid://day35x07mjotn"]
+
+[ext_resource type="Texture2D" uid="uid://d3lgtwpp1y4ev" path="res://ui_assets/battle/gags/inventory_safe_box.png" id="1_htlic"]
+[ext_resource type="Script" uid="uid://co3rinlnta240" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/battle/battle_resources/status_effects/stat_boost_cutaway_gag.gd" id="2_htlic"]
+
+[resource]
+script = ExtResource("2_htlic")
+boost = 0.2
+quality = 0
+rounds = 0
+icon = ExtResource("1_htlic")
+id = 3725

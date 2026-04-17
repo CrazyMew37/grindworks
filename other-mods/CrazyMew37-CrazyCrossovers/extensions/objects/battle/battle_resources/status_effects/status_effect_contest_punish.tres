@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://be1dlwtr4gk64"]
+
+[ext_resource type="Texture2D" uid="uid://daul36nwra8x2" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/tntblock.png" id="1_r11p4"]
+[ext_resource type="Script" uid="uid://vgby00x5sger" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/battle/battle_resources/status_effects/status_effect_contest_punish.gd" id="2_r11p4"]
+
+[resource]
+script = ExtResource("2_r11p4")
+instant_effect = false
+quality = 1
+rounds = 0
+icon = ExtResource("1_r11p4")
+icon_scale = 0.9
+description = "AW, SERIOUSLY?"
+status_name = "Contest Punish"
+id = 3719

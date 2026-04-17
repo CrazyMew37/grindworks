@@ -1,0 +1,34 @@
+{
+	"dependencies": [],
+	"description": "Gives more colors to the cog's HP lights.",
+	"extra": {
+		"godot": {
+			"authors": [
+				"CrazyMew37"
+			],
+			"compatible_game_version": [
+				"1.2.5",
+				"1.2.6",
+				"1.2.7"
+			],
+			"compatible_mod_loader_version": [
+				"7.0.0"
+			],
+			"config_schema": {
+
+			},
+			"description_rich": "",
+			"image": null,
+			"incompatibilities": [
+				"CrazyMew37-ClashHealthLights"
+			],
+			"load_before": [],
+			"optional_dependencies": [],
+			"tags": []
+		}
+	},
+	"name": "BetterHealthLights",
+	"namespace": "CrazyMew37",
+	"version_number": "1.1.1",
+	"website_url": "https://github.com/exampleauthor/examplemod"
+}

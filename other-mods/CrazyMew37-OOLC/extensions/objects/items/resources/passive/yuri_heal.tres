@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://dg7yw4xyii8kd"]
+
+[ext_resource type="Script" uid="uid://c417wagetowy4" path="res://mods-unpacked/CrazyMew37-OOLC/extensions/objects/items/resources/passive/yuri_heal.gd" id="1_wgl88"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="2_bthlv"]
+
+[resource]
+script = ExtResource("2_bthlv")
+qualitoon = 4
+item_name = "Yuri Heal"
+big_description = "Unique to Yooki."
+item_script = ExtResource("1_wgl88")
+shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)

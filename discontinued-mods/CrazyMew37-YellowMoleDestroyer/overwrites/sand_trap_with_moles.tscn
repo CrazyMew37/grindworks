@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://bqqqlw0qx1m2t"]
+
+[ext_resource type="PackedScene" uid="uid://f6p3f57tkk11" path="res://objects/obstacles/sandtrap/sandtrap.tscn" id="1_mpeks"]
+[ext_resource type="Shader" uid="uid://3bv5mj5bjsjm" path="res://objects/obstacles/sandtrap/sandtrap.tres" id="2_ak47n"]
+[ext_resource type="Texture2D" uid="uid://b3rk7oancky20" path="res://objects/obstacles/sandtrap/sandtrap.png" id="3_iqxe6"]
+[ext_resource type="Script" uid="uid://bw4t3oauiboii" path="res://mods-unpacked/CrazyMew37-YellowMoleDestroyer/overwrites/sand_trap_with_moles.gd" id="4_mpeks"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_md4hg"]
+frequency = 0.0205
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_n5d0c"]
+noise = SubResource("FastNoiseLite_md4hg")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ak47n"]
+resource_local_to_scene = true
+render_priority = 1
+shader = ExtResource("2_ak47n")
+shader_parameter/ColorParameter = Color(0, 0, 0, 1)
+shader_parameter/uv_scale = Vector2(0.41753653, 0.4240882)
+shader_parameter/ImageTexture = ExtResource("3_iqxe6")
+shader_parameter/NoiseTexture = SubResource("NoiseTexture2D_n5d0c")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_iqxe6"]
+resource_local_to_scene = true
+material = SubResource("ShaderMaterial_ak47n")
+size = Vector2(1, 1)
+
+[node name="SandTrap" unique_id=183508737 instance=ExtResource("1_mpeks")]
+mesh = SubResource("PlaneMesh_iqxe6")
+script = ExtResource("4_mpeks")
+mole_count_range = Vector2i(3, 5)
+mole_scale = Vector3(1, 1, 1)
+size = Vector2(1, 1)
+
+[node name="Moles" type="Node3D" parent="." index="1" unique_id=382671279]
+unique_name_in_owner = true

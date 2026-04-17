@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://cc5dube8pv622"]
+
+[ext_resource type="Script" uid="uid://bs6gj3okk128g" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/battle/battle_resources/status_effects/boss_logic_mr_krabs.gd" id="1_mepa8"]
+
+[resource]
+script = ExtResource("1_mepa8")
+rounds = -1
+visible = false
+description = "Mr. Krabs logic"
+status_name = "Mr. Krabs logic"
+id = 3704

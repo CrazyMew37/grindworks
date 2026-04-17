@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Item" load_steps=6 format=3 uid="uid://bmfncipfvp20i"]
+
+[ext_resource type="Texture2D" uid="uid://c243gp2gb3jm7" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/wellimacupcake.png" id="1_x83wd"]
+[ext_resource type="Script" uid="uid://cxw8wdv0t0opk" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/item_mr_cupcake.gd" id="2_x83wd"]
+[ext_resource type="PackedScene" uid="uid://1y7hwch30uok" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/mr_cupcake.tscn" id="3_i7tnr"]
+[ext_resource type="AudioStream" uid="uid://7ickfklewl5y" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/audio/sfx/wellimacupcake.ogg" id="4_x83wd"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="5_b7kdd"]
+
+[resource]
+script = ExtResource("5_b7kdd")
+qualitoon = 3
+rarity = 5
+ui_cam_offset = 0.15
+item_name = "Mr. Cupcake"
+item_description = "Well he's a cupcake!"
+big_description = "Fully heals your laff at the start of every floor."
+model = ExtResource("3_i7tnr")
+pickup_sfx = ExtResource("4_x83wd")
+item_script = ExtResource("2_x83wd")
+icon = ExtResource("1_x83wd")
+shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)
+force_show_shop_category = true

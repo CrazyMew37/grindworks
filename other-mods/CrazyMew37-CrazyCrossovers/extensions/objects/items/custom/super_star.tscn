@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://54r0f2ut2a6w"]
+
+[ext_resource type="PackedScene" uid="uid://bjuve584tdaf0" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/accessories/superstar.glb" id="1_r4msg"]
+
+[node name="monarch_butterfly" type="Node3D"]
+
+[node name="superstar" parent="." instance=ExtResource("1_r4msg")]
+transform = Transform3D(-1.0927847e-08, 0, -0.25, 0, 0.25, 0, 0.25, 0, -1.0927847e-08, 0, -0.18, 0)

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Item" load_steps=4 format=3 uid="uid://bd8fyvhh7syp5"]
+
+[ext_resource type="Texture2D" uid="uid://bl31jb0cg30y0" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/airycrown.png" id="1_mhcfq"]
+[ext_resource type="PackedScene" uid="uid://b7rb0m80ig8li" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/airy_crown.tscn" id="2_ablq8"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="3_yaod7"]
+
+[resource]
+script = ExtResource("3_yaod7")
+qualitoon = 1
+ui_cam_offset = 0.15
+item_name = "Airy Crown"
+item_description = "In your element."
+big_description = "+ 8% Evasiveness
+- 4% Speed"
+model = ExtResource("2_ablq8")
+stats_add = {
+"evasiveness": 0.08,
+"speed": -0.04
+}
+icon = ExtResource("1_mhcfq")
+shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)
+force_show_shop_category = true

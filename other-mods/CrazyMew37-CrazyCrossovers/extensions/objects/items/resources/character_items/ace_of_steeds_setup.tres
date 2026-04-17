@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://ybouw2arm3uf"]
+
+[ext_resource type="Script" uid="uid://wpgnrlffy38m" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/resources/character_items/item_ace_of_steeds_setup.gd" id="1_cbc65"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="2_llv01"]
+
+[resource]
+script = ExtResource("2_llv01")
+item_script = ExtResource("1_cbc65")
+metadata/_custom_type_script = "uid://combwqypom1ru"

@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="StatusLured" load_steps=2 format=3 uid="uid://c60jas6ngssdp"]
+
+[ext_resource type="Script" uid="uid://cq4en77575s78" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/battle/battle_resources/status_effects/stunned.gd" id="1_chpk6"]
+
+[resource]
+script = ExtResource("1_chpk6")
+quality = 1
+id = 3714

@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="ItemActive" load_steps=6 format=3 uid="uid://evnlfv2usjql"]
+
+[ext_resource type="Texture2D" uid="uid://dpxo4hn2py7cg" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/pacifier.png" id="1_86wk1"]
+[ext_resource type="Script" uid="uid://tw186ocqjtyx" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/item_pacifier.gd" id="2_86wk1"]
+[ext_resource type="PackedScene" uid="uid://8g38u712qaes" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/pacifier.tscn" id="3_5kcts"]
+[ext_resource type="AudioStream" uid="uid://d3s6v3wmsa8rf" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/audio/sfx/maggiesuck.ogg" id="4_86wk1"]
+[ext_resource type="Script" uid="uid://5uwfsntxdag6" path="res://objects/items/classes/item_active.gd" id="5_suk3x"]
+
+[resource]
+script = ExtResource("5_suk3x")
+active_type = 1
+charge_count = 5
+current_charge = 5
+qualitoon = 2
+ui_cam_offset = 0.15
+item_name = "Pacifier"
+item_description = "Those cogs are babies!"
+big_description = "Decreases all cog's damage and defense by 35% for two rounds."
+model = ExtResource("3_5kcts")
+pickup_sfx = ExtResource("4_86wk1")
+item_script = ExtResource("2_86wk1")
+icon = ExtResource("1_86wk1")
+shop_category_title = "Pocket Prank"
+shop_category_color = Color(0.929412, 0.262745, 0.278431, 1)
+force_show_shop_category = true
+metadata/_custom_type_script = "uid://5uwfsntxdag6"

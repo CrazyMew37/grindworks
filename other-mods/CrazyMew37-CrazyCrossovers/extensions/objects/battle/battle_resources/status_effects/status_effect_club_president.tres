@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://bt7ymucddmceq"]
+
+[ext_resource type="Texture2D" uid="uid://ditctmgipplxb" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/battle/statuses/clubpresidentstatus.png" id="1_w6vf6"]
+[ext_resource type="Script" uid="uid://bsdtilqqp332q" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/battle/battle_resources/status_effects/status_effect_club_president.gd" id="2_c6won"]
+
+[resource]
+script = ExtResource("2_c6won")
+quality = 0
+rounds = -1
+icon = ExtResource("1_w6vf6")
+description = "Defeat the other cogs to decrease this cog's defense.
+This cog's attack will go up the less cogs there are."
+status_name = "Club President"
+id = 3708
+metadata/_custom_type_script = "uid://df7irk63ikx4k"

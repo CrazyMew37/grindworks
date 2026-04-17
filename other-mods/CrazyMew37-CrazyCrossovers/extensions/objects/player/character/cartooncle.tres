@@ -1,0 +1,75 @@
+[gd_resource type="Resource" script_class="PlayerCharacter" load_steps=22 format=3 uid="uid://b2ubrdij8yx6x"]
+
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="1_n4t8l"]
+[ext_resource type="Script" uid="uid://o2fe7ud1faj6" path="res://objects/battle/battle_resources/stats.gd" id="2_ft2c1"]
+[ext_resource type="Script" uid="uid://c8kas2j4io1jh" path="res://objects/toon/clothing/toon_bottoms.gd" id="3_jhdyt"]
+[ext_resource type="Texture2D" uid="uid://ugrsb3nsmlt4" path="res://models/toon/textures/clothes/shorts/desat_shorts_1_5.png" id="4_n4t8l"]
+[ext_resource type="Script" uid="uid://yg7gxug4rab" path="res://objects/toon/toon_dna.gd" id="5_me2bp"]
+[ext_resource type="Script" uid="uid://dfqwh4jmdy0iw" path="res://objects/toon/clothing/toon_shirt.gd" id="6_l5hor"]
+[ext_resource type="Texture2D" uid="uid://dsikqlc2iiid4" path="res://models/toon/textures/clothes/shirts/desat_shirt_1_4.png" id="7_ft2c1"]
+[ext_resource type="Texture2D" uid="uid://dh7dyokcfyw43" path="res://models/toon/textures/clothes/shirts/desat_sleeve_1.png" id="8_jhdyt"]
+[ext_resource type="Resource" uid="uid://tyi7ukxtvcgc" path="res://objects/battle/battle_resources/gag_loadouts/loadouts/standard_loadout.tres" id="9_gscmr"]
+[ext_resource type="Script" uid="uid://ts8xpgftpmty" path="res://objects/player/character.gd" id="10_yfvkm"]
+[ext_resource type="Resource" uid="uid://dl78ys2yepeoa" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/resources/passive/red_puyo.tres" id="11_me2bp"]
+[ext_resource type="Resource" uid="uid://dm6qqh4qusr46" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/resources/passive/blue_puyo.tres" id="12_l5hor"]
+[ext_resource type="Resource" uid="uid://dgt6w10xuv3em" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/resources/passive/green_puyo.tres" id="13_p0yxs"]
+[ext_resource type="Resource" uid="uid://b50vvmod5h2w3" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/resources/passive/yellow_puyo.tres" id="14_k55jf"]
+[ext_resource type="Resource" uid="uid://ce8nlg2w08wef" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/resources/passive/purple_puyo.tres" id="15_gscmr"]
+[ext_resource type="Resource" uid="uid://b0ghw33kag844" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/resources/character_items/garbage_puyo_carbuncle.tres" id="16_me2bp"]
+[ext_resource type="Resource" uid="uid://cc0q87e8ts4x6" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/resources/character_items/cartooncle_setup.tres" id="17_l5hor"]
+
+[sub_resource type="Resource" id="Resource_jj61k"]
+script = ExtResource("2_ft2c1")
+damage = 0.9
+defense = 0.9
+evasiveness = 0.9
+speed = 1.1
+
+[sub_resource type="Resource" id="Resource_ugrs1"]
+script = ExtResource("3_jhdyt")
+texture = ExtResource("4_n4t8l")
+base_color = Color(0.99607843, 0.8980392, 0.31764707, 1)
+
+[sub_resource type="Resource" id="Resource_2lryd"]
+script = ExtResource("6_l5hor")
+shirt_texture = ExtResource("7_ft2c1")
+sleeve_texture = ExtResource("8_jhdyt")
+base_color = Color(0.99607843, 0.8980392, 0.31764707, 1)
+sleeve_color = Color(0.99607843, 0.8980392, 0.31764707, 1)
+
+[sub_resource type="Resource" id="Resource_ax4gq"]
+script = ExtResource("5_me2bp")
+species = 8
+head_index = 1
+eyelashes = false
+head_color = Color(0.99607843, 0.8980392, 0.31764707, 1)
+torso_color = Color(0.99607843, 0.8980392, 0.31764707, 1)
+leg_color = Color(0.99607843, 0.8980392, 0.31764707, 1)
+shirt = SubResource("Resource_2lryd")
+bottoms = SubResource("Resource_ugrs1")
+
+[resource]
+script = ExtResource("10_yfvkm")
+character_name = "Cartooncle"
+character_summary = "Starts with Red, Yellow, Green, Blue, and Purple Puyo
+Starts with an untradeable Garbage Puyo
+Only starts with Drop
+Crits are weak, but increases thanks to Yellow Puyo"
+character_blurb = "A rabbit with a bottomless appetite for curry. He heard this building is serving some for today's lunch special."
+dna = SubResource("Resource_ax4gq")
+gag_loadout = ExtResource("9_gscmr")
+starting_laff = 30
+starting_items = Array[ExtResource("1_n4t8l")]([ExtResource("11_me2bp"), ExtResource("12_l5hor"), ExtResource("13_p0yxs"), ExtResource("14_k55jf"), ExtResource("15_gscmr"), ExtResource("16_me2bp"), ExtResource("17_l5hor")])
+base_stats = SubResource("Resource_jj61k")
+starting_gags = Dictionary[String, int]({
+"Drop": 1,
+"Lure": 0,
+"Sound": 0,
+"Squirt": 0,
+"Throw": 0,
+"Trap": 0
+})
+additional_stats = Dictionary[String, Variant]({
+"crit_mult": 1.1,
+"luck": 1.0
+})

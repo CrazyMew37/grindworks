@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="ItemActive" load_steps=6 format=3 uid="uid://b5by7lx5ws8o6"]
+
+[ext_resource type="Texture2D" uid="uid://digstb8npxoph" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/ultra_ball.png" id="1_hhkvc"]
+[ext_resource type="Script" uid="uid://bnjk827xas6eu" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/item_ultra_ball.gd" id="2_hhkvc"]
+[ext_resource type="PackedScene" uid="uid://f2ao6yuy1epv" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/ultra_ball.tscn" id="3_yjsxq"]
+[ext_resource type="AudioStream" uid="uid://cbmigslfmehjq" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/audio/sfx/pokemonitem.ogg" id="4_f6540"]
+[ext_resource type="Script" uid="uid://5uwfsntxdag6" path="res://objects/items/classes/item_active.gd" id="5_vg8kp"]
+
+[resource]
+script = ExtResource("5_vg8kp")
+active_type = 2
+charge_count = 9
+qualitoon = 3
+rarity = 5
+ui_cam_offset = 0.15
+item_name = "Ultra Ball"
+item_description = "Release some ultra good stuff!"
+big_description = "Releases a random item from a golden chest."
+model = ExtResource("3_yjsxq")
+pickup_sfx = ExtResource("4_f6540")
+item_script = ExtResource("2_hhkvc")
+icon = ExtResource("1_hhkvc")
+shop_category_title = "Pocket Prank"
+shop_category_color = Color(0.929412, 0.262745, 0.278431, 1)
+force_show_shop_category = true
+metadata/_custom_type_script = "uid://5uwfsntxdag6"

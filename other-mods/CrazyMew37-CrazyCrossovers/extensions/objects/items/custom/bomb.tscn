@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://c6pmyohdc7gsn"]
+
+[ext_resource type="PackedScene" uid="uid://by28d6jkkvts8" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/accessories/bomb.glb" id="1_atlfs"]
+
+[node name="monarch_butterfly" type="Node3D"]
+
+[node name="bomb" parent="." instance=ExtResource("1_atlfs")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, -0.21, 0)

@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="CogDNA" load_steps=6 format=3 uid="uid://bgti1yakdfugx"]
+
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_0lvrr"]
+[ext_resource type="Resource" uid="uid://c3gg5tsci6aye" path="res://objects/battle/battle_resources/cog_attacks/resources/hang_up.tres" id="3_2kvlk"]
+[ext_resource type="Resource" uid="uid://dxpqtt8gh5brv" path="res://objects/battle/battle_resources/cog_attacks/resources/finger_wag.tres" id="4_hj5d4"]
+[ext_resource type="Resource" uid="uid://c27ek2anjbx88" path="res://objects/battle/battle_resources/cog_attacks/resources/pound_key.tres" id="4_lbjdc"]
+[ext_resource type="Script" uid="uid://yc46vrmyfql1" path="res://objects/cog/cog_dna.gd" id="6_6j2nn"]
+
+[resource]
+script = ExtResource("6_6j2nn")
+suit = 2
+custom_blazer_tex = "res://models/cogs/textures/slender/blazer.png"
+custom_arm_tex = "res://models/cogs/textures/slender/sleeve.png"
+custom_leg_tex = "res://models/cogs/textures/slender/leg.png"
+cog_name = "Bonnie"
+head = "res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/cogs/heads/bonniegrindworks.glb"
+scale = 6.3
+head_textures = PackedStringArray("res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/cogs/heads/bonniegrindworks_Char_Tex_Bonnie_BaseColor.png", "res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/cogs/heads/bonniegrindworks_Char_Tex_Endoskeleton_BaseColor.png", "res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/cogs/heads/bonniegrindworks_Char_Tex_EYE_Bonnie_BaseColor.png")
+hand_color = Color(0.2509804, 0.30980393, 0.5294118, 1)
+custom_nametag_height = 8.5
+can_speak = false
+attacks = Array[ExtResource("1_0lvrr")]([ExtResource("3_2kvlk"), ExtResource("4_lbjdc"), ExtResource("4_hj5d4")])
+level_high = 20
+baked_status_effects = PackedStringArray("res://objects/battle/battle_resources/status_effects/resources/attentive.tres", "res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/battle/battle_resources/status_effects/status_effect_door_camp.tres")
+is_admin = true
+health_mod = 2.0
+battle_phrases = Array[String](["Bonnie's my name!", "Let's rock, Toon!", "It's time fowa your end!"])
+external_assets = {
+&"head_model": "",
+&"head_textures": []
+}

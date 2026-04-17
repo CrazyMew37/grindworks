@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://jumlllycfck4"]
+
+[ext_resource type="PackedScene" uid="uid://bqket1yxytylf" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/accessories/keyblade.glb" id="1_bc8d1"]
+
+[node name="monarch_butterfly" type="Node3D"]
+
+[node name="keyblade" parent="." instance=ExtResource("1_bc8d1")]
+transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, 0, -0.4, 0)

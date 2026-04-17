@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://cc186j15fknm5"]
+
+[ext_resource type="Script" uid="uid://c3fkpt8c1v3vd" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/battle/battle_resources/status_effects/boss_logic_announcer.gd" id="1_qc1gt"]
+
+[resource]
+script = ExtResource("1_qc1gt")
+rounds = -1
+visible = false
+description = "Announcer logic"
+status_name = "Announcer logic"
+id = 3717

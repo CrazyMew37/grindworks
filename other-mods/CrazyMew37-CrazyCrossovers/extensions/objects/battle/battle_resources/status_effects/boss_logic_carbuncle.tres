@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://blje3c3bwsw1w"]
+
+[ext_resource type="Script" uid="uid://jigp0cx47cj2" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/battle/battle_resources/status_effects/boss_logic_carbuncle.gd" id="1_g3dae"]
+
+[resource]
+script = ExtResource("1_g3dae")
+rounds = -1
+visible = false
+description = "Carbuncle logic"
+status_name = "Carbuncle logic"
+id = 3711

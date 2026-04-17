@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://dnx1sgjmwktj1"]
+
+[ext_resource type="Script" uid="uid://r504g3ttjol2" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/battle/battle_resources/status_effects/boss_logic_bowser.gd" id="1_tbbrc"]
+
+[resource]
+script = ExtResource("1_tbbrc")
+rounds = -1
+visible = false
+description = "Bowser logic"
+status_name = "Bowser logic"
+id = 3716

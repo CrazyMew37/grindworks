@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cm02tc1m875xw"
+path="res://.godot/imported/Latin Industries.mp3-5090f27b724c08cf2750f334e558e99d.mp3str"
+
+[deps]
+
+source_file="res://other-mods/CrazyMew37-KevinMacLeodSoundpack/music/Latin Industries.mp3"
+dest_files=["res://.godot/imported/Latin Industries.mp3-5090f27b724c08cf2750f334e558e99d.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

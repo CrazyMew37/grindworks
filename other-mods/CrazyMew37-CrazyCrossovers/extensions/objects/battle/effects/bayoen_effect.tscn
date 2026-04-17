@@ -1,0 +1,43 @@
+[gd_scene load_steps=7 format=3 uid="uid://dbftolo3of74w"]
+
+[ext_resource type="Texture2D" uid="uid://b1vjvn313in36" path="res://objects/items/custom/treasure/flower.png" id="1_0h7wu"]
+
+[sub_resource type="Curve" id="Curve_4rs3h"]
+_limits = [0.0, 100.0, 0.0, 1.0]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_5v1v3"]
+curve = SubResource("Curve_4rs3h")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_gx2gh"]
+particle_flag_rotate_y = true
+emission_shape_scale = Vector3(2, 0, 1)
+emission_shape = 3
+emission_box_extents = Vector3(1, 1, 1)
+direction = Vector3(0, 0, 13.065)
+spread = 0.0
+flatness = 1.0
+initial_velocity_min = 0.3
+initial_velocity_max = 7.6
+gravity = Vector3(0, 0, 0)
+damping_curve = SubResource("CurveTexture_5v1v3")
+scale_min = 0.1
+scale_max = 0.1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xhion"]
+transparency = 1
+cull_mode = 2
+albedo_texture = ExtResource("1_0h7wu")
+billboard_mode = 1
+billboard_keep_scale = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_om8ry"]
+material = SubResource("StandardMaterial3D_xhion")
+orientation = 2
+
+[node name="GPUParticles3D" type="GPUParticles3D"]
+amount = 30
+randomness = 1.0
+process_material = SubResource("ParticleProcessMaterial_gx2gh")
+draw_pass_1 = SubResource("PlaneMesh_om8ry")

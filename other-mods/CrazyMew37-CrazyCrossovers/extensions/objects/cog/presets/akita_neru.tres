@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="CogDNA" load_steps=9 format=3 uid="uid://dfebui68w41r7"]
+
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_ojk4l"]
+[ext_resource type="Resource" uid="uid://l385j58744f6" path="res://objects/battle/battle_resources/cog_attacks/resources/restraining_order.tres" id="2_ojk4l"]
+[ext_resource type="Resource" uid="uid://c31yj6hc78hh3" path="res://objects/battle/battle_resources/cog_attacks/resources/eviction_notice.tres" id="3_bopu8"]
+[ext_resource type="Resource" uid="uid://by0leo7nlf311" path="res://objects/battle/battle_resources/cog_attacks/resources/heckle.tres" id="4_jsh1b"]
+[ext_resource type="Resource" uid="uid://erbbarg5bxm8" path="res://objects/battle/battle_resources/cog_attacks/resources/rolodex.tres" id="5_im6js"]
+[ext_resource type="Resource" uid="uid://c3gg5tsci6aye" path="res://objects/battle/battle_resources/cog_attacks/resources/hang_up.tres" id="6_00q84"]
+[ext_resource type="Resource" uid="uid://c27ek2anjbx88" path="res://objects/battle/battle_resources/cog_attacks/resources/pound_key.tres" id="7_jsh1b"]
+[ext_resource type="Script" uid="uid://yc46vrmyfql1" path="res://objects/cog/cog_dna.gd" id="8_yyxt2"]
+
+[resource]
+script = ExtResource("8_yyxt2")
+suit = 1
+custom_blazer_tex = "res://models/cogs/textures/slender/blazer.png"
+custom_arm_tex = "res://models/cogs/textures/slender/sleeve.png"
+custom_leg_tex = "res://models/cogs/textures/slender/leg.png"
+cog_name = "Akita Neru"
+head = "res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/cogs/heads/nerugrindworks.glb"
+scale = 5.0
+head_textures = PackedStringArray("res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/cogs/heads/nerugrindworks_face.png", "res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/cogs/heads/nerugrindworks_head.png")
+hand_color = Color(1, 0.9254902, 0.8666667, 1)
+custom_nametag_height = 8.5
+attacks = Array[ExtResource("1_ojk4l")]([ExtResource("2_ojk4l"), ExtResource("3_bopu8"), ExtResource("4_jsh1b"), ExtResource("5_im6js"), ExtResource("6_00q84"), ExtResource("7_jsh1b")])
+level_high = 20
+baked_status_effects = PackedStringArray("res://objects/battle/battle_resources/status_effects/resources/attentive.tres", "res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/battle/battle_resources/status_effects/status_effect_toon_out.tres")
+is_admin = true
+health_mod = 1.5
+battle_phrases = Array[String](["I'm gonna have to report you to corporate, Toon.", "I'll hang up this call right now.", "You're a real baka."])
+external_assets = {
+&"head_model": "",
+&"head_textures": []
+}

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Item" load_steps=5 format=3 uid="uid://dk1rfhpu1iu8r"]
+
+[ext_resource type="Texture2D" uid="uid://bhuiolq87f4gs" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/snowball.png" id="1_v5g71"]
+[ext_resource type="Script" uid="uid://cctdxpnych8l4" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/item_snowball.gd" id="2_v5g71"]
+[ext_resource type="PackedScene" uid="uid://cv0di1hutbs1x" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/snowball.tscn" id="3_v5g71"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="4_24k3o"]
+
+[resource]
+script = ExtResource("4_24k3o")
+qualitoon = 1
+rarity = 3
+ui_cam_offset = 0.15
+item_name = "Snowball"
+item_description = "Chilling attacks!"
+big_description = "Cogs have a 5% chance to get stunned whenever they're damaged.
+Chance scales with luck."
+model = ExtResource("3_v5g71")
+item_script = ExtResource("2_v5g71")
+icon = ExtResource("1_v5g71")
+shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)
+force_show_shop_category = true

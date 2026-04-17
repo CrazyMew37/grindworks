@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="CogDNA" load_steps=8 format=3 uid="uid://cwyeltjmtimjd"]
+
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_54gce"]
+[ext_resource type="Resource" uid="uid://dc3wprcrjg58t" path="res://objects/battle/battle_resources/cog_attacks/resources/audit.tres" id="2_ms2fg"]
+[ext_resource type="Resource" uid="uid://dwkmwkdn3ws4k" path="res://objects/battle/battle_resources/cog_attacks/resources/evil_eye.tres" id="3_54gce"]
+[ext_resource type="Resource" uid="uid://sey860nn14jg" path="res://objects/battle/battle_resources/cog_attacks/resources/pick_pocket.tres" id="4_ms2fg"]
+[ext_resource type="Resource" uid="uid://dxpqtt8gh5brv" path="res://objects/battle/battle_resources/cog_attacks/resources/finger_wag.tres" id="5_loyuv"]
+[ext_resource type="Resource" uid="uid://6hjcsu17tt4g" path="res://objects/battle/battle_resources/cog_attacks/resources/brain_storm.tres" id="6_4jyw3"]
+[ext_resource type="Script" uid="uid://yc46vrmyfql1" path="res://objects/cog/cog_dna.gd" id="8_iho54"]
+
+[resource]
+script = ExtResource("8_iho54")
+department = 1
+suit = 2
+custom_blazer_tex = "res://models/cogs/textures/slender/blazer.png"
+custom_arm_tex = "res://models/cogs/textures/slender/sleeve.png"
+custom_leg_tex = "res://models/cogs/textures/slender/leg.png"
+cog_name = "Mr. Krabs"
+name_plural = "Mr. Krabses"
+head = "res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/cogs/heads/mrkrabsgrindworks.glb"
+scale = 4.85
+head_textures = PackedStringArray("res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/cogs/heads/mrkrabsgrindworks_krabs.png")
+hand_color = Color(1, 0.078431375, 0.1254902, 1)
+custom_nametag_height = 9.5
+attacks = Array[ExtResource("1_54gce")]([ExtResource("2_ms2fg"), ExtResource("3_54gce"), ExtResource("4_ms2fg"), ExtResource("5_loyuv"), ExtResource("6_4jyw3")])
+level_high = 20
+baked_status_effects = PackedStringArray("res://objects/battle/battle_resources/status_effects/resources/attentive.tres", "res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/battle/battle_resources/status_effects/boss_logic_mr_krabs.tres")
+is_admin = true
+health_mod = 2.0
+battle_phrases = Array[String](["Arghargharghargh!", "Hello, I like money!", "Argh, these claws aren't just for attracting mates!"])
+external_assets = {
+&"head_model": "",
+&"head_textures": []
+}

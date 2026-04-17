@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://cwlf7j815qrix"]
+
+[ext_resource type="Script" uid="uid://dd2yq038tfh4q" path="res://mods-unpacked/CrazyMew37-PartnerToons/partnertoon/roaming_toon/toon_item.gd" id="1_8m2ui"]
+[ext_resource type="PackedScene" uid="uid://ceev82smb0abo" path="res://mods-unpacked/CrazyMew37-PartnerToons/partnertoon/roaming_toon/roaming_toon.tscn" id="2_8m2ui"]
+
+[node name="Doodle" type="Node3D"]
+script = ExtResource("1_8m2ui")
+
+[node name="RoamingToon" parent="." instance=ExtResource("2_8m2ui")]

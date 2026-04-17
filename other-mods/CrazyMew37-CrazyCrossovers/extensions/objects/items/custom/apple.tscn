@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cn754rp2s522l"]
+
+[ext_resource type="PackedScene" uid="uid://c12kwxdmr3a06" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/accessories/appleringo.glb" id="1_ty2y8"]
+
+[node name="monarch_butterfly" type="Node3D"]
+
+[node name="appleringo" parent="." instance=ExtResource("1_ty2y8")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, -0.12, 0)

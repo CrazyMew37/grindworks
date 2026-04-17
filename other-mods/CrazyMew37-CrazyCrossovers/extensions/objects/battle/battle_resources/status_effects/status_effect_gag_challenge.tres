@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://c4ubrd0vwn0dr"]
+
+[ext_resource type="Texture2D" uid="uid://byjjgpjxr2sag" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/battle/statuses/gagcontest.png" id="1_ivnrm"]
+[ext_resource type="Script" uid="uid://vbex4ckysro3" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/battle/battle_resources/status_effects/status_effect_gag_challenge.gd" id="2_ivnrm"]
+
+[resource]
+script = ExtResource("2_ivnrm")
+quality = 1
+rounds = 0
+icon = ExtResource("1_ivnrm")
+status_name = "Gag Challenge"
+id = 3718

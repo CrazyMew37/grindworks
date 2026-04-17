@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Item" load_steps=5 format=3 uid="uid://cwmnyckug81js"]
+
+[ext_resource type="Texture2D" uid="uid://dnbleij5s8aqc" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/aceofheartsicon.png" id="1_e2qsu"]
+[ext_resource type="Script" uid="uid://dwrche3x8dbqe" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/item_ace_of_hearts.gd" id="2_e2qsu"]
+[ext_resource type="PackedScene" uid="uid://uk3umtrv81sj" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/ace_of_hearts.tscn" id="3_7w74p"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="4_7jbjk"]
+
+[resource]
+script = ExtResource("4_7jbjk")
+qualitoon = 1
+ui_cam_offset = 0.15
+item_name = "Ace of Hearts"
+item_description = "The ace in the hole!"
+big_description = "0.65x-1.35x evasiveness every round"
+model = ExtResource("3_7w74p")
+item_script = ExtResource("2_e2qsu")
+icon = ExtResource("1_e2qsu")
+shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)
+force_show_shop_category = true

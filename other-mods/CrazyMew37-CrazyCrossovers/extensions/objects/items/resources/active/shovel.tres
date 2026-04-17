@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="ItemActive" load_steps=6 format=3 uid="uid://h4tw4yjknru4"]
+
+[ext_resource type="Texture2D" uid="uid://kfgq24xuqwd5" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/shovel.png" id="1_of8g4"]
+[ext_resource type="Script" uid="uid://cnbvvxbbwg2fn" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/item_shovel.gd" id="2_of8g4"]
+[ext_resource type="PackedScene" uid="uid://blhwbm83pixjy" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/shovel.tscn" id="3_5yd55"]
+[ext_resource type="Script" uid="uid://5uwfsntxdag6" path="res://objects/items/classes/item_active.gd" id="4_3h5m0"]
+[ext_resource type="AudioStream" uid="uid://drn5cxhlau473" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/audio/sfx/Shovel.ogg" id="4_jc883"]
+
+[resource]
+script = ExtResource("4_3h5m0")
+active_type = 2
+charge_count = 8
+current_charge = 8
+qualitoon = 4
+ui_cam_offset = 0.15
+item_name = "Shovel"
+item_description = "Uproot those cogs!"
+big_description = "Generates a Pink Slip when used."
+model = ExtResource("3_5yd55")
+pickup_sfx = ExtResource("4_jc883")
+item_script = ExtResource("2_of8g4")
+icon = ExtResource("1_of8g4")
+shop_category_title = "Pocket Prank"
+shop_category_color = Color(0.929412, 0.262745, 0.278431, 1)
+force_show_shop_category = true
+metadata/_custom_type_script = "uid://5uwfsntxdag6"

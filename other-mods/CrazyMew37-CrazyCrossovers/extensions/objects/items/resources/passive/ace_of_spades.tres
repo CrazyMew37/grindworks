@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Item" load_steps=5 format=3 uid="uid://dlnys0ynxmkvv"]
+
+[ext_resource type="Texture2D" uid="uid://da7u5skt0x1qm" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/aceofspadesicon.png" id="1_rgh0c"]
+[ext_resource type="Script" uid="uid://dkjn6j2427vj2" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/item_ace_of_spades.gd" id="2_2h6tn"]
+[ext_resource type="PackedScene" uid="uid://bpea7dv3vto36" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/ace_of_spades.tscn" id="3_rgh0c"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="5_rs23d"]
+
+[resource]
+script = ExtResource("5_rs23d")
+qualitoon = 1
+ui_cam_offset = 0.15
+item_name = "Ace of Spades"
+item_description = "Trump those cogs!"
+big_description = "0.65x-1.35x damage every round"
+model = ExtResource("3_rgh0c")
+item_script = ExtResource("2_2h6tn")
+icon = ExtResource("1_rgh0c")
+shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)
+force_show_shop_category = true

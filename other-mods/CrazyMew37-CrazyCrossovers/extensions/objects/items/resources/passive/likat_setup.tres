@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://bu6jxihurqvhw"]
+
+[ext_resource type="Script" uid="uid://dyjyajvm413n0" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/item_likat_setup.gd" id="1_882es"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="2_w8ojd"]
+
+[resource]
+script = ExtResource("2_w8ojd")
+item_script = ExtResource("1_882es")
+shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)
+metadata/_custom_type_script = "uid://combwqypom1ru"

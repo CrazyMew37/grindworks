@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://dvnvct8jgd1qf"]
+
+[ext_resource type="Script" uid="uid://bep6bdhbngwud" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/item_sailor_moonkey_setup.gd" id="1_u0sfr"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="2_75cp2"]
+
+[resource]
+script = ExtResource("2_75cp2")
+item_script = ExtResource("1_u0sfr")
+shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)
+metadata/_custom_type_script = "uid://combwqypom1ru"

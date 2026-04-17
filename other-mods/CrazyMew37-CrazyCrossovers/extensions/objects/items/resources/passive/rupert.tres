@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Item" load_steps=5 format=3 uid="uid://cuu14iu55orjm"]
+
+[ext_resource type="Texture2D" uid="uid://dniba2lp7oh7k" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/rupert.png" id="1_h60yx"]
+[ext_resource type="Script" uid="uid://dauu8esudryh6" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/item_rupert.gd" id="2_h60yx"]
+[ext_resource type="PackedScene" uid="uid://x8l6c4hagf6h" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/rupert.tscn" id="3_uhpju"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="5_trvle"]
+
+[resource]
+script = ExtResource("5_trvle")
+rarity = 3
+ui_cam_offset = 0.15
+item_name = "Rupert"
+item_description = "Your hubris will be your downfall"
+big_description = "+ 1% Damage and Luck at the end of every round
+- 1% Defense and Evasiveness at the end of every round
+(These stat changes are permanent)"
+model = ExtResource("3_uhpju")
+item_script = ExtResource("2_h60yx")
+icon = ExtResource("1_h60yx")
+shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)
+force_show_shop_category = true

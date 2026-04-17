@@ -1,0 +1,71 @@
+[gd_scene load_steps=12 format=3 uid="uid://c07qb6min1vjk"]
+
+[ext_resource type="FontFile" uid="uid://cup2yr5w7or1l" path="res://fonts/Minnie.TTF" id="1_yflx1"]
+[ext_resource type="FontFile" uid="uid://815gwlftl5ik" path="res://fonts/impress-bt.ttf" id="2_ur6ie"]
+[ext_resource type="PackedScene" uid="uid://b0d1er4oqiqcn" path="res://objects/general_ui/general_button/general_button.tscn" id="3_tbus3"]
+[ext_resource type="Shader" uid="uid://ryrnfqn0ixe5" path="res://scenes/title_screen/hue_shift.gdshader" id="4_dfalr"]
+[ext_resource type="Texture2D" uid="uid://ddcktpjy3gdew" path="res://ui_assets/misc/uiAccessoryDelete_up.png" id="5_408ne"]
+[ext_resource type="Texture2D" uid="uid://b7ri5sq021cvo" path="res://ui_assets/misc/uiAccessoryDelete_down.png" id="6_d3y5f"]
+[ext_resource type="Texture2D" uid="uid://dn8vndd37lqom" path="res://ui_assets/misc/uiAccessoryDelete_rollover.png" id="7_ah3gx"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_0uktb"]
+font = ExtResource("1_yflx1")
+font_size = 30
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_n41hl"]
+font = ExtResource("2_ur6ie")
+font_size = 20
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vnbpc"]
+shader = ExtResource("4_dfalr")
+shader_parameter/Shift_Hue = 0.585
+shader_parameter/alpha = 1.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_xxrhd"]
+font = ExtResource("2_ur6ie")
+font_size = 18
+
+[node name="VBoxContainer" type="VBoxContainer"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VideoSettings" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="VideoSettings"]
+layout_mode = 2
+text = "Crazy Crossovers"
+label_settings = SubResource("LabelSettings_0uktb")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="EndlessNerfsSetting" type="HBoxContainer" parent="VideoSettings"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VideoSettings/EndlessNerfsSetting"]
+layout_mode = 2
+text = "Endless Item Nerfs
+(For Endless Mod):"
+label_settings = SubResource("LabelSettings_n41hl")
+
+[node name="EndlessNerfsButton" parent="VideoSettings/EndlessNerfsSetting" instance=ExtResource("3_tbus3")]
+unique_name_in_owner = true
+material = SubResource("ShaderMaterial_vnbpc")
+custom_minimum_size = Vector2(160, 60)
+layout_mode = 2
+size_flags_horizontal = 10
+size_flags_vertical = 4
+texture_normal = ExtResource("5_408ne")
+texture_pressed = ExtResource("6_d3y5f")
+texture_hover = ExtResource("7_ah3gx")
+texture_disabled = ExtResource("6_d3y5f")
+text = "On"
+font_size = 18.0
+
+[node name="Label" parent="VideoSettings/EndlessNerfsSetting/EndlessNerfsButton" index="0"]
+text = "On"
+label_settings = SubResource("LabelSettings_xxrhd")
+
+[editable path="VideoSettings/EndlessNerfsSetting/EndlessNerfsButton"]

@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="ItemActive" load_steps=6 format=3 uid="uid://kfmgkx5g2a0c"]
+
+[ext_resource type="Texture2D" uid="uid://qjh66cnydt3q" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/slingscope.png" id="1_31bjy"]
+[ext_resource type="Script" uid="uid://cfgcxvy1yr1j7" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/item_sling_scope.gd" id="2_31bjy"]
+[ext_resource type="PackedScene" uid="uid://b6dq8000mp01t" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/sling_scope.tscn" id="3_w8nxi"]
+[ext_resource type="AudioStream" uid="uid://do1ubqpovq3x8" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/audio/sfx/abslingshot.ogg" id="4_31bjy"]
+[ext_resource type="Script" uid="uid://5uwfsntxdag6" path="res://objects/items/classes/item_active.gd" id="5_iy3if"]
+
+[resource]
+script = ExtResource("5_iy3if")
+active_type = 1
+charge_count = 4
+current_charge = 4
+qualitoon = 2
+ui_cam_offset = 0.15
+item_name = "Sling Scope"
+item_description = "Precisely on target"
+big_description = "Provides the following stat boosts for three rounds:
++ 25% Crit damage multiplier
++ 15% Luck"
+model = ExtResource("3_w8nxi")
+pickup_sfx = ExtResource("4_31bjy")
+item_script = ExtResource("2_31bjy")
+icon = ExtResource("1_31bjy")
+shop_category_title = "Pocket Prank"
+shop_category_color = Color(0.929412, 0.262745, 0.278431, 1)
+force_show_shop_category = true
+metadata/_custom_type_script = "uid://5uwfsntxdag6"

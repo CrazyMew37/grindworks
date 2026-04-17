@@ -1,0 +1,72 @@
+[gd_resource type="Resource" script_class="PlayerCharacter" load_steps=21 format=3 uid="uid://ce0lbh7307qur"]
+
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="1_tewxq"]
+[ext_resource type="Script" uid="uid://o2fe7ud1faj6" path="res://objects/battle/battle_resources/stats.gd" id="2_jw0he"]
+[ext_resource type="Script" uid="uid://c8kas2j4io1jh" path="res://objects/toon/clothing/toon_bottoms.gd" id="3_4176d"]
+[ext_resource type="Texture2D" uid="uid://bwbe11pfn3to0" path="res://models/toon/textures/clothes/skirts/desat_skirt_1_4.png" id="4_7kixl"]
+[ext_resource type="Script" uid="uid://yg7gxug4rab" path="res://objects/toon/toon_dna.gd" id="5_u0avv"]
+[ext_resource type="Script" uid="uid://dfqwh4jmdy0iw" path="res://objects/toon/clothing/toon_shirt.gd" id="6_y6oo7"]
+[ext_resource type="Texture2D" uid="uid://dag4lwcjmcn3c" path="res://models/toon/textures/clothes/shirts/desat_shirt_22.png" id="7_odvk5"]
+[ext_resource type="Texture2D" uid="uid://cdawen500xuqx" path="res://models/toon/textures/clothes/shirts/desat_sleeve_4.png" id="8_3t8d4"]
+[ext_resource type="Resource" uid="uid://tyi7ukxtvcgc" path="res://objects/battle/battle_resources/gag_loadouts/loadouts/standard_loadout.tres" id="9_0m6am"]
+[ext_resource type="Script" uid="uid://ts8xpgftpmty" path="res://objects/player/character.gd" id="10_bk26c"]
+[ext_resource type="Resource" uid="uid://xg2roxatdl4g" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/resources/character_items/ace_of_spades_steeds.tres" id="11_tewxq"]
+[ext_resource type="Resource" uid="uid://cvuqmyior7itw" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/resources/character_items/ace_of_hearts_steeds.tres" id="12_jw0he"]
+[ext_resource type="Resource" uid="uid://dtiunkopfpn5q" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/resources/character_items/ace_of_diamonds_steeds.tres" id="13_4176d"]
+[ext_resource type="Resource" uid="uid://88ijlwrsrxlx" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/resources/character_items/ace_of_clubs_steeds.tres" id="14_7kixl"]
+[ext_resource type="Resource" uid="uid://ca25j75xttg4p" path="res://objects/items/resources/active/moneybags_coin.tres" id="15_dbjbu"]
+[ext_resource type="Resource" uid="uid://ybouw2arm3uf" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/resources/character_items/ace_of_steeds_setup.tres" id="16_jw0he"]
+
+[sub_resource type="Resource" id="Resource_jj61k"]
+script = ExtResource("2_jw0he")
+defense = 1.2
+evasiveness = 1.3
+speed = 1.07
+
+[sub_resource type="Resource" id="Resource_ugrs1"]
+script = ExtResource("3_4176d")
+texture = ExtResource("4_7kixl")
+base_color = Color(0.29803923, 0.29803923, 0.34901962, 1)
+
+[sub_resource type="Resource" id="Resource_2lryd"]
+script = ExtResource("6_y6oo7")
+shirt_texture = ExtResource("7_odvk5")
+sleeve_texture = ExtResource("8_3t8d4")
+base_color = Color(0.29803923, 0.29803923, 0.34901962, 1)
+sleeve_color = Color(0.29803923, 0.29803923, 0.34901962, 1)
+
+[sub_resource type="Resource" id="Resource_ax4gq"]
+script = ExtResource("5_u0avv")
+body_type = 2
+leg_type = 2
+species = 4
+skirt = true
+head_color = Color(0.69803923, 0.69803923, 0.8, 1)
+torso_color = Color(0.69803923, 0.69803923, 0.8, 1)
+leg_color = Color(0.69803923, 0.69803923, 0.8, 1)
+shirt = SubResource("Resource_2lryd")
+bottoms = SubResource("Resource_ugrs1")
+
+[resource]
+script = ExtResource("10_bk26c")
+character_name = "Ace of Steeds"
+character_summary = "Starts with Ace of Spades, Hearts, Diamonds & Clubs
+The four ace card items are untradeable
+Starts with Moneybags Coin"
+character_blurb = "An anxious, yet vigilant mage who is determined to stop the cogs (especially the Cashbots) from rigging the odds in their favor."
+dna = SubResource("Resource_ax4gq")
+gag_loadout = ExtResource("9_0m6am")
+starting_laff = 30
+starting_items = Array[ExtResource("1_tewxq")]([ExtResource("11_tewxq"), ExtResource("12_jw0he"), ExtResource("13_4176d"), ExtResource("14_7kixl"), ExtResource("15_dbjbu"), ExtResource("16_jw0he")])
+base_stats = SubResource("Resource_jj61k")
+starting_gags = Dictionary[String, int]({
+"Drop": 1,
+"Lure": 2,
+"Sound": 0,
+"Squirt": 0,
+"Throw": 0,
+"Trap": 0
+})
+additional_stats = Dictionary[String, Variant]({
+"luck": 1.1
+})

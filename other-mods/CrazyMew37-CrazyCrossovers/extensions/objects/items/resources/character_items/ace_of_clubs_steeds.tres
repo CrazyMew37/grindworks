@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Item" load_steps=5 format=3 uid="uid://88ijlwrsrxlx"]
+
+[ext_resource type="Texture2D" uid="uid://bqnkdtsf2e3v0" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/aceofclubsicon.png" id="1_uid8j"]
+[ext_resource type="Script" uid="uid://cuynuviub4h6k" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/item_ace_of_clubs.gd" id="2_mdav5"]
+[ext_resource type="PackedScene" uid="uid://b61oauyf36lnk" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/ace_of_clubs.tscn" id="3_72j3e"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="4_d3o1f"]
+
+[resource]
+script = ExtResource("4_d3o1f")
+tags = Array[int]([1])
+qualitoon = 1
+ui_cam_offset = 0.15
+item_name = "Ace of Clubs (Untradeable)"
+item_description = "Feeling lucky?"
+big_description = "0.65x-1.35x luck every round"
+model = ExtResource("3_72j3e")
+item_script = ExtResource("2_mdav5")
+icon = ExtResource("1_uid8j")
+shop_category_title = "Untradeable Item"
+shop_category_color = Color(0.24780053, 0.5370987, 0.3491902, 1)
+force_show_shop_category = true

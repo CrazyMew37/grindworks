@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Item" load_steps=5 format=3 uid="uid://cxpgtsw50t5s3"]
+
+[ext_resource type="Script" uid="uid://dhdth6b0ef0oq" path="res://mods-unpacked/CrazyMew37-PartnerToons/partnertoon/roaming_toon/toon_script.gd" id="1_1jhtr"]
+[ext_resource type="PackedScene" uid="uid://cwlf7j815qrix" path="res://mods-unpacked/CrazyMew37-PartnerToons/partnertoon/toon_item.tscn" id="2_tjv6w"]
+[ext_resource type="AudioStream" uid="uid://dchmgklf0w1dr" path="res://audio/sfx/items/doodle_pickup.ogg" id="3_wolti"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="4_yo50o"]
+
+[resource]
+script = ExtResource("4_yo50o")
+qualitoon = 4
+evergreen = true
+realtime = true
+item_name = "Partner Toon"
+item_description = "SOS!"
+big_description = "-Attacks cogs with Throw, Squirt, or Drop, often prioritizing stronger threats."
+model = ExtResource("2_tjv6w")
+pickup_sfx = ExtResource("3_wolti")
+item_script = ExtResource("1_1jhtr")
+shop_category_title = "Special Item"
+shop_category_color = Color(0.60162, 0.201089, 1, 1)
+force_show_shop_category = true
+custom_shop_price = 45

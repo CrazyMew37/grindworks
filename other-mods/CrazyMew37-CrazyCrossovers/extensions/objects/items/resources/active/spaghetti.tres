@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="ItemActive" load_steps=6 format=3 uid="uid://d28hxm5e1uxdx"]
+
+[ext_resource type="Texture2D" uid="uid://dulqenixndoek" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/spaghetti.png" id="1_uig07"]
+[ext_resource type="Script" uid="uid://kuplj8fachii" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/item_spaghetti.gd" id="2_uig07"]
+[ext_resource type="PackedScene" uid="uid://dy672yg1jq7c6" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/spaghetti.tscn" id="3_fjq3f"]
+[ext_resource type="AudioStream" uid="uid://7ma308jln3fn" path="res://audio/sfx/items/big_chomp.ogg" id="4_6mpm5"]
+[ext_resource type="Script" uid="uid://5uwfsntxdag6" path="res://objects/items/classes/item_active.gd" id="5_dq53w"]
+
+[resource]
+script = ExtResource("5_dq53w")
+active_type = 3
+charge_count = 6
+current_charge = 6
+qualitoon = 2
+ui_cam_offset = 0.15
+item_name = "Spaghetti"
+item_description = "Ahhh, ravioli!"
+big_description = "Heals 50% your max laff.
+Applies the following stat nerfs for two rounds (if you're in a battle):
+- 15% Damage
+- 15% Defense
+- 15% Evasiveness
+- 15% Luck"
+model = ExtResource("3_fjq3f")
+pickup_sfx = ExtResource("4_6mpm5")
+item_script = ExtResource("2_uig07")
+icon = ExtResource("1_uig07")
+shop_category_title = "Pocket Prank"
+shop_category_color = Color(0.929412, 0.262745, 0.278431, 1)
+force_show_shop_category = true
+metadata/_custom_type_script = "uid://5uwfsntxdag6"

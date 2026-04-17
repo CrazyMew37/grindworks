@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="CogDNA" load_steps=9 format=3 uid="uid://bfshsbd0pw2t8"]
+
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_edp2s"]
+[ext_resource type="Resource" uid="uid://c1b3yowqrw87s" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/battle/battle_resources/cog_attacks/hit_the_books.tres" id="2_u1886"]
+[ext_resource type="Resource" uid="uid://qk4f4h40o5u1" path="res://objects/battle/battle_resources/cog_attacks/resources/guilt_trip.tres" id="4_axm86"]
+[ext_resource type="Resource" uid="uid://berwbvcnp521g" path="res://objects/battle/battle_resources/cog_attacks/resources/pink_slip.tres" id="5_sq8hm"]
+[ext_resource type="Resource" uid="uid://6hjcsu17tt4g" path="res://objects/battle/battle_resources/cog_attacks/resources/brain_storm.tres" id="6_4uvan"]
+[ext_resource type="Resource" uid="uid://wwf1notai2f8" path="res://objects/battle/battle_resources/cog_attacks/resources/power_trip.tres" id="6_wek5e"]
+[ext_resource type="Resource" uid="uid://c31yj6hc78hh3" path="res://objects/battle/battle_resources/cog_attacks/resources/eviction_notice.tres" id="7_4uvan"]
+[ext_resource type="Script" uid="uid://yc46vrmyfql1" path="res://objects/cog/cog_dna.gd" id="7_lu2o1"]
+
+[resource]
+script = ExtResource("7_lu2o1")
+department = 2
+custom_blazer_tex = "res://models/cogs/textures/slender/blazer.png"
+custom_arm_tex = "res://models/cogs/textures/slender/sleeve.png"
+custom_leg_tex = "res://models/cogs/textures/slender/leg.png"
+cog_name = "Monika"
+head = "res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/cogs/heads/plane.glb"
+head_scale = Vector3(2, 2, 2)
+scale = 5.25
+head_textures = PackedStringArray("res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/cogs/heads/monikahead.png")
+hand_color = Color(0.9843137, 0.89411765, 0.7882353, 1)
+custom_nametag_height = 11.5
+attacks = Array[ExtResource("1_edp2s")]([ExtResource("2_u1886"), ExtResource("6_4uvan"), ExtResource("4_axm86"), ExtResource("5_sq8hm"), ExtResource("6_wek5e"), ExtResource("7_4uvan")])
+level_high = 20
+baked_status_effects = PackedStringArray("res://objects/battle/battle_resources/status_effects/resources/attentive.tres", "res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/battle/battle_resources/status_effects/status_effect_club_president.tres", "res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/battle/battle_resources/status_effects/boss_logic_monika.tres")
+is_admin = true
+health_mod = 2.0
+battle_phrases = Array[String](["Wanted to be with me more?", "This game's code feels very different...", "This Toontown game seems interesting..."])
+external_assets = {
+&"head_model": "",
+&"head_textures": []
+}

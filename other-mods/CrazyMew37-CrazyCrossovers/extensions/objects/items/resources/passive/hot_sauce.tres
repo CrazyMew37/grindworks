@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="Item" load_steps=5 format=3 uid="uid://e0rn4jnw2spf"]
+
+[ext_resource type="Texture2D" uid="uid://bvanety8jhrtv" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/hotsauce.png" id="1_0fefq"]
+[ext_resource type="PackedScene" uid="uid://cqtm3blllg7gy" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/hot_sauce.tscn" id="2_0fefq"]
+[ext_resource type="AudioStream" uid="uid://dorgypf6phq2b" path="res://audio/sfx/battle/cogs/attacks/SA_hot_air.ogg" id="3_xpqc2"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="4_ndphm"]
+
+[resource]
+script = ExtResource("4_ndphm")
+qualitoon = 1
+ui_cam_offset = 0.15
+item_name = "Hot Sauce"
+item_description = "Hot! HOT! HOOOOOT!!!"
+big_description = "+ 3% Damage
++ 21% Speed
+-  8 Max Laff"
+model = ExtResource("2_0fefq")
+pickup_sfx = ExtResource("3_xpqc2")
+stats_add = {
+"damage": 0.03,
+"hp": -8,
+"max_hp": -8,
+"speed": 0.21
+}
+icon = ExtResource("1_0fefq")
+shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)
+force_show_shop_category = true

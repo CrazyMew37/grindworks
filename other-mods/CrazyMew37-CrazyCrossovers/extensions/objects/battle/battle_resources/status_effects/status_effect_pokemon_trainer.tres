@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://16ui5xxdoqg2"]
+
+[ext_resource type="Texture2D" uid="uid://c06esjl84unma" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/battle/statuses/pokemontrainerstatus.png" id="1_ojs0y"]
+[ext_resource type="Script" uid="uid://2nqc6ljnhxp0" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/battle/battle_resources/status_effects/status_effect_pokemon_trainer.gd" id="2_ojs0y"]
+
+[resource]
+script = ExtResource("2_ojs0y")
+quality = 0
+rounds = -1
+icon = ExtResource("1_ojs0y")
+description = "This cog is immune to every gag.
+Defeat the other cogs to deal aftershock damage!"
+status_name = "Pokemon Trainer"
+id = 3721
+metadata/_custom_type_script = "uid://df7irk63ikx4k"

@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="CogDNA" load_steps=7 format=3 uid="uid://bdejj7xq758ua"]
+
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_he6tr"]
+[ext_resource type="Resource" uid="uid://c1b3yowqrw87s" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/battle/battle_resources/cog_attacks/hit_the_books.tres" id="2_8wfjg"]
+[ext_resource type="Resource" uid="uid://c3gg5tsci6aye" path="res://objects/battle/battle_resources/cog_attacks/resources/hang_up.tres" id="3_6iocr"]
+[ext_resource type="Resource" uid="uid://sey860nn14jg" path="res://objects/battle/battle_resources/cog_attacks/resources/pick_pocket.tres" id="4_pxh2u"]
+[ext_resource type="Resource" uid="uid://c24yy1wqmg24o" path="res://objects/battle/battle_resources/cog_attacks/resources/razzle_dazzle.tres" id="5_he6tr"]
+[ext_resource type="Script" uid="uid://yc46vrmyfql1" path="res://objects/cog/cog_dna.gd" id="8_vr4qf"]
+
+[resource]
+script = ExtResource("8_vr4qf")
+department = 2
+custom_blazer_tex = "res://models/cogs/textures/slender/blazer.png"
+custom_arm_tex = "res://models/cogs/textures/slender/sleeve.png"
+custom_leg_tex = "res://models/cogs/textures/slender/leg.png"
+cog_name = "Sayori"
+head = "res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/cogs/heads/plane.glb"
+head_scale = Vector3(1.45, 1.45, 1.45)
+scale = 5.15
+head_textures = PackedStringArray("res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/cogs/heads/sayorihead.png")
+hand_color = Color(1, 0.9372549, 0.8352941, 1)
+custom_nametag_height = 11.0
+attacks = Array[ExtResource("1_he6tr")]([ExtResource("2_8wfjg"), ExtResource("3_6iocr"), ExtResource("4_pxh2u"), ExtResource("5_he6tr")])
+level_high = 20
+is_admin = true
+health_mod = 1.25
+battle_phrases = Array[String](["Please stop hanging around here!", "The most important thing is having fun!", "My friends are wonderful people... And you want to take them away from me!"])
+external_assets = {
+&"head_model": "",
+&"head_textures": []
+}

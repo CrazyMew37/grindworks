@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://3rspfo5ay58u"]
+
+[ext_resource type="Script" uid="uid://bo0amctj1gqqu" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/battle/battle_resources/status_effects/boss_logic_monika.gd" id="1_jabax"]
+
+[resource]
+script = ExtResource("1_jabax")
+rounds = -1
+visible = false
+description = "Monika Logic"
+status_name = "Mr. Krabs logic"
+id = 3707

@@ -1,0 +1,44 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://bndpf3huqqp2i"]
+
+[sub_resource type="GDScript" id="GDScript_0bmmd"]
+script/source = "extends CogAttack
+
+
+func action():
+	# Setup
+	var hit := manager.roll_for_accuracy(self)
+	var target : Player = targets[0]
+	user.face_position(target.global_position)
+	var tween := manager.create_tween()
+	manager.s_focus_char.emit(user)
+	tween.tween_callback(user.set_animation.bind('effort'))
+	
+	# barp -cm37
+	AudioManager.play_sound(load('res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/audio/sfx/cog_attacks/miku-alarm.ogg'))
+	await manager.sleep(2.2)
+	manager.s_focus_char.emit(target)
+	
+	# Base toon anim on whether target was hit
+	if hit:
+		target.set_animation('cringe')
+	else:
+		target.set_animation('duck')
+	
+	# Affect target, or don't
+	if hit:
+		manager.affect_target(target, damage)
+	else:
+		manager.battle_text(target,\"MISSED\")
+
+	tween.kill()
+	
+	await manager.barrier(user.animator.animation_finished, 6.0)
+	
+	await manager.check_pulses(targets)
+"
+
+[resource]
+script = SubResource("GDScript_0bmmd")
+damage = 3
+attack_lines = Array[String](["Sing with me, Toon!", "La la la lah!", "Come on, my voice isn't THAT bad.", "This is my performance for Toontown's Got Talent.", "I'll tune out your gags with my voice.", "Come on now, don't be glad. I'll sing and say you should be sad!", "Let me show you how well I do at karaoke.", "You don't have a quarter of the singing talent as I do.", "Time for a musical number!", "I can be far, far louder than your sound gags."])
+action_name = "Serenade"

@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="CogDNA" load_steps=7 format=3 uid="uid://c0ijjj1sq768b"]
+
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_qfgjc"]
+[ext_resource type="Resource" uid="uid://by0leo7nlf311" path="res://objects/battle/battle_resources/cog_attacks/resources/heckle.tres" id="2_qfgjc"]
+[ext_resource type="Resource" uid="uid://bruosr4c0bash" path="res://objects/battle/battle_resources/cog_attacks/resources/clip_on_tie.tres" id="3_5hbbt"]
+[ext_resource type="Resource" uid="uid://cltphjfp4x2rk" path="res://objects/battle/battle_resources/cog_attacks/resources/half_windsor.tres" id="4_fpnjv"]
+[ext_resource type="Resource" uid="uid://305avsq3iu30" path="res://objects/battle/battle_resources/cog_attacks/resources/power_tie.tres" id="5_5gtw0"]
+[ext_resource type="Script" uid="uid://yc46vrmyfql1" path="res://objects/cog/cog_dna.gd" id="6_qjmrf"]
+
+[resource]
+script = ExtResource("6_qjmrf")
+department = 3
+suit = 1
+custom_blazer_tex = "res://models/cogs/textures/slender/blazer.png"
+custom_arm_tex = "res://models/cogs/textures/slender/sleeve.png"
+custom_leg_tex = "res://models/cogs/textures/slender/leg.png"
+cog_name = "Ash Ketchum"
+head = "res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/cogs/heads/ashgrindworks.glb"
+head_scale = Vector3(0.95, 0.95, 0.95)
+scale = 4.85
+head_textures = PackedStringArray("res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/cogs/heads/ashgrindworks_ch0264_00_satoshi_co.png", "res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/cogs/heads/ashgrindworks_ch0264_00_satoshi_co.png", "res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/cogs/heads/ashgrindworks_ch0264_00_satoshi_face_co.png", "res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/cogs/heads/ashgrindworks_ch0264_00_satoshi_co.png", "res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/cogs/heads/ashgrindworks_ch0264_00_satoshi_co.png")
+hand_color = Color(0.9843137, 0.7254902, 0.5568628, 1)
+custom_nametag_height = 9.0
+attacks = Array[ExtResource("1_qfgjc")]([ExtResource("2_qfgjc"), ExtResource("3_5hbbt"), ExtResource("4_fpnjv"), ExtResource("5_5gtw0")])
+level_high = 20
+baked_status_effects = PackedStringArray("res://objects/battle/battle_resources/status_effects/resources/attentive.tres", "res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/battle/battle_resources/status_effects/status_effect_pokemon_trainer.tres")
+is_admin = true
+health_mod = 2.0
+battle_phrases = Array[String](["Pikachu, use thunderbolt!", "Another Pokemon to add to my team!", "I'm gonna catch you!"])
+external_assets = {
+&"head_model": "",
+&"head_textures": []
+}

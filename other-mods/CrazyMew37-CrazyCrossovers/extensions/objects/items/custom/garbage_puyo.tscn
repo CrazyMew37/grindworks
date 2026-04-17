@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://05p3el2wr1ci"]
+
+[ext_resource type="PackedScene" uid="uid://dtytqlu3dl231" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/accessories/garbagepuyo.glb" id="1_qisep"]
+
+[node name="monarch_butterfly" type="Node3D"]
+
+[node name="garbagepuyo" parent="." instance=ExtResource("1_qisep")]
+transform = Transform3D(-1.3113417e-08, 0, -0.3, 0, 0.3, 0, 0.3, 0, -1.3113417e-08, 0, -0.18, 0)

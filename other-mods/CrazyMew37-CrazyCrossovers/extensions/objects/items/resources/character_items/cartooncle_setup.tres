@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://cc0q87e8ts4x6"]
+
+[ext_resource type="Script" uid="uid://bx34xfnrx5ckp" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/resources/character_items/item_cartooncle_setup.gd" id="1_60vpk"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="2_8sway"]
+
+[resource]
+script = ExtResource("2_8sway")
+item_script = ExtResource("1_60vpk")
+metadata/_custom_type_script = "uid://combwqypom1ru"

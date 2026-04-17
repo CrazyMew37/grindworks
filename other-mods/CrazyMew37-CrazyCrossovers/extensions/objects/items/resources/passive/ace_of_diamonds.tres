@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Item" load_steps=5 format=3 uid="uid://d4dbg3o2tgq0x"]
+
+[ext_resource type="Texture2D" uid="uid://dv1waw4pfuvre" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/aceofdiamondsicon.png" id="1_x5yuc"]
+[ext_resource type="Script" uid="uid://557v01sse5in" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/item_ace_of_diamonds.gd" id="2_a4k7e"]
+[ext_resource type="PackedScene" uid="uid://dqjtjlun0c1xw" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/ace_of_diamonds.tscn" id="3_pg714"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="4_pw778"]
+
+[resource]
+script = ExtResource("4_pw778")
+qualitoon = 1
+ui_cam_offset = 0.15
+item_name = "Ace of Diamonds"
+item_description = "Is it a high card or a low card?"
+big_description = "0.65x-1.35x defense every round"
+model = ExtResource("3_pg714")
+item_script = ExtResource("2_a4k7e")
+icon = ExtResource("1_x5yuc")
+shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)
+force_show_shop_category = true

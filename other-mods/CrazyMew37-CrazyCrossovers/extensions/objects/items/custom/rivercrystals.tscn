@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckug3wvfxc6f5"]
+
+[ext_resource type="PackedScene" uid="uid://baieme2qhs24b" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/accessories/rivercrystals.glb" id="1_5f6ep"]
+
+[node name="monarch_butterfly" type="Node3D"]
+
+[node name="rivercrystals" parent="." instance=ExtResource("1_5f6ep")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, -0.15, 0)

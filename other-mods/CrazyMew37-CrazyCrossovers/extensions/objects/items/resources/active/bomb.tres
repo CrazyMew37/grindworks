@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="ItemActive" load_steps=6 format=3 uid="uid://dr357im54ss4c"]
+
+[ext_resource type="Texture2D" uid="uid://dopae2en57nht" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/bomb.png" id="1_lijoa"]
+[ext_resource type="Script" uid="uid://b26s046gp22py" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/item_bomb.gd" id="2_lijoa"]
+[ext_resource type="PackedScene" uid="uid://c6pmyohdc7gsn" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/bomb.tscn" id="3_lijoa"]
+[ext_resource type="AudioStream" uid="uid://b6fgn0i8wr1pk" path="res://audio/sfx/battle/gags/trap/TL_dynamite.ogg" id="4_ayvkm"]
+[ext_resource type="Script" uid="uid://5uwfsntxdag6" path="res://objects/items/classes/item_active.gd" id="5_i0yvn"]
+
+[resource]
+script = ExtResource("5_i0yvn")
+active_type = 1
+qualitoon = 2
+ui_cam_offset = 0.15
+item_name = "Bomb"
+item_description = "You're gonna blow!"
+big_description = "Spend 20% of your max HP for a 1-round 20% damage boost."
+model = ExtResource("3_lijoa")
+pickup_sfx = ExtResource("4_ayvkm")
+item_script = ExtResource("2_lijoa")
+icon = ExtResource("1_lijoa")
+shop_category_title = "Pocket Prank"
+shop_category_color = Color(0.929412, 0.262745, 0.278431, 1)
+force_show_shop_category = true
+metadata/_custom_type_script = "uid://5uwfsntxdag6"

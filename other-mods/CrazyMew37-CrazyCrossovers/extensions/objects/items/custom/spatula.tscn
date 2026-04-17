@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://xv60gygynud1"]
+
+[ext_resource type="PackedScene" uid="uid://n7c3lociqhgt" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/accessories/spatula.glb" id="1_tsjrb"]
+
+[node name="monarch_butterfly" type="Node3D"]
+
+[node name="spatula" parent="." instance=ExtResource("1_tsjrb")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, -0.27, 0)

@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="Item" load_steps=6 format=3 uid="uid://c7m2n5vtistga"]
+
+[ext_resource type="Texture2D" uid="uid://buah0e4pbixb2" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/microgamecartridge.png" id="1_krj8m"]
+[ext_resource type="Script" uid="uid://bgks7haaji1nb" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/item_microgame.gd" id="2_krj8m"]
+[ext_resource type="PackedScene" uid="uid://ddndc8t4wdp3a" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/microgame_cartridge.tscn" id="3_wrcat"]
+[ext_resource type="AudioStream" uid="uid://cxwqbcqxi7ypg" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/audio/sfx/wariowin.ogg" id="4_e118k"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="5_mo3qt"]
+
+[resource]
+script = ExtResource("5_mo3qt")
+rarity = 5
+ui_cam_offset = 0.15
+item_name = "Microgame Cartridge"
+item_description = "WarioWare's finest!"
+big_description = "- 1 Gag Cost
++ 1 Gag Regen
+Applies a 10-second timer. A random gag type must be used every round. Succeeding will increase its damage by 2x.
+Failure will damage you 15% of your laff."
+model = ExtResource("3_wrcat")
+pickup_sfx = ExtResource("4_e118k")
+stats_add = {
+"gag_discount": 1
+}
+item_script = ExtResource("2_krj8m")
+icon = ExtResource("1_krj8m")
+shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)
+force_show_shop_category = true

@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="Item" load_steps=5 format=3 uid="uid://b0ghw33kag844"]
+
+[ext_resource type="Texture2D" uid="uid://cgmicnjt3mogq" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/garbagepuyo.png" id="1_fked0"]
+[ext_resource type="PackedScene" uid="uid://05p3el2wr1ci" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/garbage_puyo.tscn" id="2_u0ows"]
+[ext_resource type="AudioStream" uid="uid://e11yvyxs1uxb" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/audio/sfx/puyocrush.ogg" id="3_fliu8"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="4_l3hkd"]
+
+[resource]
+script = ExtResource("4_l3hkd")
+tags = Array[int]([1])
+qualitoon = 2
+rarity = 4
+ui_cam_offset = 0.15
+item_name = "Garbage Puyo (Untradeable)"
+item_description = "Drop lots of powerful stuff!"
+big_description = "+ 20% Drop damage
++ 1 Aftershock round
+- 10% Every other gag damage"
+model = ExtResource("2_u0ows")
+pickup_sfx = ExtResource("3_fliu8")
+stats_add = {
+"drop_aftershock_round_boost": 1,
+"gag_boost:Drop": 0.2,
+"gag_boost:Lure": -0.1,
+"gag_boost:Sound": -0.1,
+"gag_boost:Squirt": -0.1,
+"gag_boost:Throw": -0.1,
+"gag_boost:Trap": -0.1
+}
+icon = ExtResource("1_fked0")
+shop_category_title = "Untradeable Item"
+shop_category_color = Color(0.24780053, 0.5370987, 0.3491902, 1)
+force_show_shop_category = true

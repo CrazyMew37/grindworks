@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="CogDNA" load_steps=7 format=3 uid="uid://b5rbglbjeynxk"]
+
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_da142"]
+[ext_resource type="Resource" uid="uid://c1b3yowqrw87s" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/battle/battle_resources/cog_attacks/hit_the_books.tres" id="2_3wqtm"]
+[ext_resource type="Resource" uid="uid://dxpqtt8gh5brv" path="res://objects/battle/battle_resources/cog_attacks/resources/finger_wag.tres" id="3_da142"]
+[ext_resource type="Resource" uid="uid://dwkmwkdn3ws4k" path="res://objects/battle/battle_resources/cog_attacks/resources/evil_eye.tres" id="4_3wqtm"]
+[ext_resource type="Resource" uid="uid://c24yy1wqmg24o" path="res://objects/battle/battle_resources/cog_attacks/resources/razzle_dazzle.tres" id="5_v1ykw"]
+[ext_resource type="Script" uid="uid://yc46vrmyfql1" path="res://objects/cog/cog_dna.gd" id="6_4dnio"]
+
+[resource]
+script = ExtResource("6_4dnio")
+department = 2
+custom_blazer_tex = "res://models/cogs/textures/slender/blazer.png"
+custom_arm_tex = "res://models/cogs/textures/slender/sleeve.png"
+custom_leg_tex = "res://models/cogs/textures/slender/leg.png"
+cog_name = "Natsuki"
+head = "res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/cogs/heads/plane.glb"
+head_scale = Vector3(1.6, 1.6, 1.6)
+scale = 4.9
+head_textures = PackedStringArray("res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/cogs/heads/natsukihead.png")
+hand_color = Color(0.99215686, 0.90588236, 0.8392157, 1)
+custom_nametag_height = 11.0
+attacks = Array[ExtResource("1_da142")]([ExtResource("2_3wqtm"), ExtResource("3_da142"), ExtResource("4_3wqtm"), ExtResource("5_v1ykw")])
+level_high = 20
+is_admin = true
+health_mod = 0.75
+battle_phrases = Array[String](["I'll beat you in a snap.", "Way to kill the atmosphere.", "Manga is literature!"])
+external_assets = {
+&"head_model": "",
+&"head_textures": []
+}

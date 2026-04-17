@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="ItemActive" load_steps=6 format=3 uid="uid://deavuam2dpk4f"]
+
+[ext_resource type="Texture2D" uid="uid://c12ai2uljwhvd" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/krustydoll.png" id="1_gqqg4"]
+[ext_resource type="Script" uid="uid://c7ayr1370xkn1" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/item_krusty_doll.gd" id="2_gqqg4"]
+[ext_resource type="PackedScene" uid="uid://dvmw0cpdile66" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/krusty_doll.tscn" id="3_6b36p"]
+[ext_resource type="AudioStream" uid="uid://cjwuyrt4rhnao" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/audio/sfx/krusty-laugh.ogg" id="4_xhc8r"]
+[ext_resource type="Script" uid="uid://5uwfsntxdag6" path="res://objects/items/classes/item_active.gd" id="5_p0yxq"]
+
+[resource]
+script = ExtResource("5_p0yxq")
+active_type = 1
+charge_count = 2
+current_charge = 2
+ui_cam_offset = 0.15
+item_name = "Krusty Doll"
+item_description = "Make sure it's not set to evil!"
+big_description = "5% chance to instalkill every cog in the battle
+25% chance to reduce your laff by 35%
+70% chance to do nothing
+(Chances scale with luck)"
+model = ExtResource("3_6b36p")
+pickup_sfx = ExtResource("4_xhc8r")
+item_script = ExtResource("2_gqqg4")
+icon = ExtResource("1_gqqg4")
+shop_category_title = "Pocket Prank"
+shop_category_color = Color(0.929412, 0.262745, 0.278431, 1)
+force_show_shop_category = true
+metadata/_custom_type_script = "uid://5uwfsntxdag6"

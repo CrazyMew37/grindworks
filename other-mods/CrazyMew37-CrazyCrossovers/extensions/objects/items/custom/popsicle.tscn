@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cb1nolv2fl6hj"]
+
+[ext_resource type="PackedScene" uid="uid://sqkirmd0l12k" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/accessories/popsicle.glb" id="1_vbhgn"]
+
+[node name="monarch_butterfly" type="Node3D"]
+
+[node name="popsicle" parent="." instance=ExtResource("1_vbhgn")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, -0.18, 0)

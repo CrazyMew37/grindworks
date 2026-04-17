@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://mxdykja3cksa"]
+
+[ext_resource type="Texture2D" uid="uid://bnqdmif5xc6fb" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/battle/statuses/targetcontest.png" id="1_bjw43"]
+[ext_resource type="Script" uid="uid://dtk5w6ua0rudm" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/battle/battle_resources/status_effects/status_effect_target_challenge.gd" id="2_bjw43"]
+
+[resource]
+script = ExtResource("2_bjw43")
+quality = 0
+rounds = 0
+icon = ExtResource("1_bjw43")
+description = "Not targetting this cog will result in -25% Defense."
+status_name = "Target Challenge"
+id = 3720

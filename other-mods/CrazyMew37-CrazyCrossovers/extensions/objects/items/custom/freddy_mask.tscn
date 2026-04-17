@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cmwsxk440fasc"]
+
+[ext_resource type="PackedScene" uid="uid://qyv3vv0v6iky" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/accessories/freddymask.glb" id="1_s0cl7"]
+
+[node name="monarch_butterfly" type="Node3D"]
+
+[node name="freddymask" parent="." instance=ExtResource("1_s0cl7")]
+transform = Transform3D(-1.3113417e-08, 0, -0.3, 0, 0.3, 0, 0.3, 0, -1.3113417e-08, 0, -0.21, -0.01)

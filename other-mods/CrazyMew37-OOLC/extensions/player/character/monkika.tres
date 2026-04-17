@@ -1,0 +1,71 @@
+[gd_resource type="Resource" script_class="PlayerCharacter" load_steps=17 format=3 uid="uid://blcnmxeb7b2ix"]
+
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="1_bqje3"]
+[ext_resource type="Script" uid="uid://o2fe7ud1faj6" path="res://objects/battle/battle_resources/stats.gd" id="2_nnc0n"]
+[ext_resource type="Script" uid="uid://c8kas2j4io1jh" path="res://objects/toon/clothing/toon_bottoms.gd" id="3_4dhgl"]
+[ext_resource type="Texture2D" uid="uid://bwbe11pfn3to0" path="res://models/toon/textures/clothes/skirts/desat_skirt_1_4.png" id="4_bttct"]
+[ext_resource type="Script" uid="uid://yg7gxug4rab" path="res://objects/toon/toon_dna.gd" id="5_ikg0i"]
+[ext_resource type="Script" uid="uid://dfqwh4jmdy0iw" path="res://objects/toon/clothing/toon_shirt.gd" id="6_gvije"]
+[ext_resource type="Texture2D" uid="uid://dfsy48n8cjj2i" path="res://models/toon/textures/clothes/shirts/desat_shirt_3_1.png" id="7_bqje3"]
+[ext_resource type="Texture2D" uid="uid://du51wgsc7p3by" path="res://models/toon/textures/clothes/shirts/desat_sleeve_15.png" id="8_400f2"]
+[ext_resource type="Resource" uid="uid://cyuwpnlrx5x0p" path="res://mods-unpacked/CrazyMew37-OOLC/extensions/objects/battle/gag_loadouts/loadouts/monika_loadout.tres" id="9_nnc0n"]
+[ext_resource type="Script" uid="uid://ts8xpgftpmty" path="res://objects/player/character.gd" id="10_rnwt5"]
+[ext_resource type="Resource" uid="uid://cfa02jl4ow8cm" path="res://objects/items/resources/active/recycle_bin.tres" id="11_4dhgl"]
+[ext_resource type="Resource" uid="uid://4vc3u3t7tqqk" path="res://mods-unpacked/CrazyMew37-OOLC/extensions/objects/items/resources/passive/monika_pink_slip.tres" id="12_bttct"]
+
+[sub_resource type="Resource" id="Resource_jj61k"]
+script = ExtResource("2_nnc0n")
+damage = 1.1
+speed = 1.05
+
+[sub_resource type="Resource" id="Resource_ugrs1"]
+script = ExtResource("3_4dhgl")
+texture = ExtResource("4_bttct")
+base_color = Color(0.28627452, 0.32941177, 0.7254902, 1)
+
+[sub_resource type="Resource" id="Resource_2lryd"]
+script = ExtResource("6_gvije")
+shirt_texture = ExtResource("7_bqje3")
+sleeve_texture = ExtResource("8_400f2")
+base_color = Color(0.69803923, 0.69803923, 0.8, 1)
+sleeve_color = Color(0.69803923, 0.69803923, 0.8, 1)
+
+[sub_resource type="Resource" id="Resource_ax4gq"]
+script = ExtResource("5_ikg0i")
+body_type = 1
+leg_type = 2
+species = 5
+skirt = true
+head_color = Color(0.83137256, 0.49803922, 0.29803923, 1)
+torso_color = Color(0.83137256, 0.49803922, 0.29803923, 1)
+leg_color = Color(0.83137256, 0.49803922, 0.29803923, 1)
+shirt = SubResource("Resource_2lryd")
+bottoms = SubResource("Resource_ugrs1")
+
+[resource]
+script = ExtResource("10_rnwt5")
+character_name = "Monkika"
+character_summary = "Gags cap at level 5
+Gag Order: Sound, Trap, Lure, Throw, Squirt, Drop
+Starts with Recycle Bin
+Gets a pink slip every floor
++1 Toon-Up Rounds & +1 Anomalies"
+character_blurb = "You should know me, I'm the Literature Club's president! I'm happy you put me in this game. Let's beat those cogs together!"
+dna = SubResource("Resource_ax4gq")
+gag_loadout = ExtResource("9_nnc0n")
+starting_laff = 30
+starting_items = Array[ExtResource("1_bqje3")]([ExtResource("11_4dhgl"), ExtResource("12_bttct")])
+base_stats = SubResource("Resource_jj61k")
+starting_gags = Dictionary[String, int]({
+"Drop": 1,
+"Lure": 1,
+"Sound": 1,
+"Squirt": 1,
+"Throw": 1,
+"Trap": 1
+})
+additional_stats = Dictionary[String, Variant]({
+"anomaly_boost": 1,
+"luck": 1.05,
+"toonup_round_boost": 1
+})

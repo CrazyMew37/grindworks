@@ -1,0 +1,92 @@
+[gd_scene load_steps=11 format=3 uid="uid://dupu1mjdgyaeo"]
+
+[ext_resource type="PackedScene" uid="uid://cu152iitwfet2" path="res://objects/modules/cgc/base_rooms/cgc_finale_room.tscn" id="1_ja636"]
+[ext_resource type="Script" uid="uid://wnj4j4evw0cp" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/modules/cgc/ash_boss_directory.gd" id="2_b0e20"]
+[ext_resource type="PackedScene" uid="uid://direah3lbjuu5" path="res://objects/battle/battle_node/battle_node.tscn" id="3_mbkrv"]
+[ext_resource type="AudioStream" uid="uid://bdle05kjuftm6" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/audio/music/ash_boss_theme.ogg" id="4_ja636"]
+[ext_resource type="Script" uid="uid://ch4neer8bbbai" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/battle/battle_resources/misc_movies/ash_intro_movie.gd" id="4_ulvx1"]
+[ext_resource type="PackedScene" uid="uid://dflwjcy6fj0av" path="res://objects/cog/cog.tscn" id="6_e43qu"]
+[ext_resource type="Resource" uid="uid://o7wxphly6yqp" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/cog/presets/pikachu.tres" id="7_ja636"]
+[ext_resource type="Resource" uid="uid://c0ijjj1sq768b" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/cog/presets/ash_ketchum.tres" id="8_uu0tn"]
+
+[sub_resource type="Resource" id="Resource_ja636"]
+script = ExtResource("4_ulvx1")
+skippable = true
+override_music = ExtResource("4_ja636")
+metadata/_custom_type_script = "uid://ch4neer8bbbai"
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6ws4t"]
+size = Vector3(16.0215, 3.93054, 10.3685)
+
+[node name="cgc_kart_boarding_room" instance=ExtResource("1_ja636")]
+
+[node name="BossDirectory" type="Node3D" parent="." index="22"]
+unique_name_in_owner = true
+script = ExtResource("2_b0e20")
+
+[node name="BattleNode" parent="BossDirectory" index="0" node_paths=PackedStringArray("cogs", "focus_cog") instance=ExtResource("3_mbkrv")]
+unique_name_in_owner = true
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.540187, 0, 0)
+tags = Array[int]([0, 2])
+cogs = [NodePath("Pikachu"), NodePath("AshKetchum"), NodePath("Cog")]
+focus_cog = NodePath("AshKetchum")
+override_intro = SubResource("Resource_ja636")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BossDirectory/BattleNode" index="3"]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.273437, 2.00091, 3.87165)
+shape = SubResource("BoxShape3D_6ws4t")
+
+[node name="Pikachu" parent="BossDirectory/BattleNode" index="4" instance=ExtResource("6_e43qu")]
+unique_name_in_owner = true
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -2.5, 0, 0)
+level_range_offset = 1
+dna = ExtResource("7_ja636")
+skelecog_chance = 0
+
+[node name="AshKetchum" parent="BossDirectory/BattleNode" index="5" instance=ExtResource("6_e43qu")]
+unique_name_in_owner = true
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+level_range_offset = 2
+dna = ExtResource("8_uu0tn")
+skelecog_chance = 0
+
+[node name="Cog" parent="BossDirectory/BattleNode" index="6" instance=ExtResource("6_e43qu")]
+unique_name_in_owner = true
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 2.5, 0, 0)
+skelecog_chance = 0
+
+[node name="CameraAngles" type="Node3D" parent="." index="23"]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.540187, 0, 0)
+
+[node name="IntroCam" type="Camera3D" parent="CameraAngles" index="0"]
+unique_name_in_owner = true
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 2.58, 0)
+fov = 52.0
+
+[node name="MoleFocus" type="Camera3D" parent="CameraAngles" index="1"]
+unique_name_in_owner = true
+transform = Transform3D(-0.57357645, 0.4698463, -0.67101, 0, 0.81915206, 0.57357645, 0.819152, 0.32898995, -0.46984634, -5, 5.5, -4)
+fov = 52.0
+
+[node name="StompCam" type="Camera3D" parent="CameraAngles" index="2"]
+unique_name_in_owner = true
+transform = Transform3D(-0.93969256, -0.1710101, 0.29619816, 0, 0.8660254, 0.49999997, -0.34202018, 0.4698463, -0.8137976, -5.205, 4, -3.67)
+fov = 52.0
+
+[node name="CharPositions" type="Node3D" parent="." index="24"]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.540187, 0, 0)
+
+[node name="WalkInPos" type="Node3D" parent="CharPositions" index="0"]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 0)
+
+[node name="StompPos" type="Node3D" parent="CharPositions" index="1"]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.5, 0, 0)
+
+[node name="FlyAwayPos" type="Node3D" parent="CharPositions" index="2"]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.5921, 3.74627, 0)

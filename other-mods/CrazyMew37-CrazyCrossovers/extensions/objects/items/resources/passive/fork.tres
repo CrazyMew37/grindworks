@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Item" load_steps=5 format=3 uid="uid://cywpwyp3oe75v"]
+
+[ext_resource type="Texture2D" uid="uid://be0qkwsyw8mdc" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/forkbfdi.png" id="1_ro3t7"]
+[ext_resource type="Script" uid="uid://dai0s7sise7i7" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/item_fork.gd" id="2_ro3t7"]
+[ext_resource type="PackedScene" uid="uid://bidgcsqi3uad6" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/fork.tscn" id="3_jyet6"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="4_dmdt7"]
+
+[resource]
+script = ExtResource("4_dmdt7")
+qualitoon = 3
+ui_cam_offset = 0.15
+item_name = "Fork"
+item_description = "Better get some fork repellent!"
+big_description = "Cogs who damage you will be dealt back their damage."
+model = ExtResource("3_jyet6")
+item_script = ExtResource("2_ro3t7")
+icon = ExtResource("1_ro3t7")
+shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)
+force_show_shop_category = true

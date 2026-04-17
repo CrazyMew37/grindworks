@@ -1,0 +1,70 @@
+[gd_resource type="Resource" script_class="PlayerCharacter" load_steps=17 format=3 uid="uid://dhk5jva8hnwms"]
+
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="1_rb1g6"]
+[ext_resource type="Script" uid="uid://o2fe7ud1faj6" path="res://objects/battle/battle_resources/stats.gd" id="2_e5o2i"]
+[ext_resource type="Script" uid="uid://c8kas2j4io1jh" path="res://objects/toon/clothing/toon_bottoms.gd" id="3_8kwcs"]
+[ext_resource type="Texture2D" uid="uid://bwbe11pfn3to0" path="res://models/toon/textures/clothes/skirts/desat_skirt_1_4.png" id="4_yypnw"]
+[ext_resource type="Script" uid="uid://yg7gxug4rab" path="res://objects/toon/toon_dna.gd" id="5_my543"]
+[ext_resource type="Script" uid="uid://dfqwh4jmdy0iw" path="res://objects/toon/clothing/toon_shirt.gd" id="6_pwj8p"]
+[ext_resource type="Texture2D" uid="uid://dfsy48n8cjj2i" path="res://models/toon/textures/clothes/shirts/desat_shirt_3_1.png" id="7_3w7v0"]
+[ext_resource type="Texture2D" uid="uid://du51wgsc7p3by" path="res://models/toon/textures/clothes/shirts/desat_sleeve_15.png" id="8_3b6an"]
+[ext_resource type="Resource" uid="uid://cpstjon3lr0gx" path="res://mods-unpacked/CrazyMew37-OOLC/extensions/objects/battle/gag_loadouts/loadouts/yuri_loadout.tres" id="9_rb1g6"]
+[ext_resource type="Script" uid="uid://ts8xpgftpmty" path="res://objects/player/character.gd" id="10_1bvs7"]
+[ext_resource type="Resource" uid="uid://dvlis7mm2c6qn" path="res://objects/items/resources/active/book_of_laws.tres" id="11_e5o2i"]
+[ext_resource type="Resource" uid="uid://dg7yw4xyii8kd" path="res://mods-unpacked/CrazyMew37-OOLC/extensions/objects/items/resources/passive/yuri_heal.tres" id="12_rb1g6"]
+
+[sub_resource type="Resource" id="Resource_jj61k"]
+script = ExtResource("2_e5o2i")
+damage = 0.95
+defense = 1.3
+evasiveness = 0.95
+speed = 0.9
+
+[sub_resource type="Resource" id="Resource_ugrs1"]
+script = ExtResource("3_8kwcs")
+texture = ExtResource("4_yypnw")
+base_color = Color(0.28627452, 0.32941177, 0.7254902, 1)
+
+[sub_resource type="Resource" id="Resource_2lryd"]
+script = ExtResource("6_pwj8p")
+shirt_texture = ExtResource("7_3w7v0")
+sleeve_texture = ExtResource("8_3b6an")
+base_color = Color(0.69803923, 0.69803923, 0.8, 1)
+sleeve_color = Color(0.69803923, 0.69803923, 0.8, 1)
+
+[sub_resource type="Resource" id="Resource_ax4gq"]
+script = ExtResource("5_my543")
+body_type = 2
+leg_type = 2
+species = 5
+skirt = true
+head_color = Color(0.54509807, 0.28235295, 0.7490196, 1)
+torso_color = Color(0.54509807, 0.28235295, 0.7490196, 1)
+leg_color = Color(0.54509807, 0.28235295, 0.7490196, 1)
+shirt = SubResource("Resource_2lryd")
+bottoms = SubResource("Resource_ugrs1")
+
+[resource]
+script = ExtResource("10_1bvs7")
+character_name = "Yooki"
+character_summary = "Throwless, Squirtless, & Soundless
+Gag Order: Drop, Trap, Lure
+Heals from defeated cogs to compensate
+Starts with Book of Laws
+Aftershock and Dollar Bill lures last an extra round"
+character_blurb = "While she's quite shy, she has a big interest in books. Though sometimes, she can take her obessions too seriously."
+dna = SubResource("Resource_ax4gq")
+gag_loadout = ExtResource("9_rb1g6")
+starting_laff = 30
+starting_items = Array[ExtResource("1_rb1g6")]([ExtResource("11_e5o2i"), ExtResource("12_rb1g6")])
+base_stats = SubResource("Resource_jj61k")
+starting_gags = Dictionary[String, int]({
+"Drop": 1,
+"Lure": 1,
+"Trap": 1
+})
+additional_stats = Dictionary[String, Variant]({
+"drop_aftershock_round_boost": 1,
+"luck": 1.1,
+"lure_fish_round_boost": 1
+})

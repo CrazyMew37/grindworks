@@ -1,0 +1,106 @@
+[gd_scene load_steps=15 format=3 uid="uid://nksyahbaxjhn"]
+
+[ext_resource type="PackedScene" uid="uid://deucmesgg6wq5" path="res://objects/modules/office/base_rooms/office_hexagon_room.tscn" id="1_ycp4o"]
+[ext_resource type="Script" uid="uid://bu64q3uobn3fo" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/modules/office/ddlc_boss_directory.gd" id="2_7swwn"]
+[ext_resource type="PackedScene" uid="uid://bqo1n7rw85igy" path="res://objects/interactables/elevators/elevator_law.tscn" id="3_t148u"]
+[ext_resource type="PackedScene" uid="uid://direah3lbjuu5" path="res://objects/battle/battle_node/battle_node.tscn" id="3_vwkht"]
+[ext_resource type="AudioStream" uid="uid://d1h8j8qjomw84" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/audio/music/ddlc_boss_theme.ogg" id="4_7swwn"]
+[ext_resource type="Script" uid="uid://d3fm84ie1jyv6" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/battle/battle_resources/misc_movies/ddlc_intro_movie.gd" id="4_7wuuw"]
+[ext_resource type="PackedScene" uid="uid://dflwjcy6fj0av" path="res://objects/cog/cog.tscn" id="6_5qadq"]
+[ext_resource type="Resource" uid="uid://bfshsbd0pw2t8" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/cog/presets/monika.tres" id="7_ay2qw"]
+[ext_resource type="Resource" uid="uid://cvratyk7nf4j2" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/cog/presets/yuri.tres" id="8_5qadq"]
+[ext_resource type="Resource" uid="uid://bdejj7xq758ua" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/cog/presets/sayori.tres" id="9_2ulia"]
+[ext_resource type="Resource" uid="uid://b5rbglbjeynxk" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/cog/presets/natsuki.tres" id="10_ue0ex"]
+
+[sub_resource type="Resource" id="Resource_7swwn"]
+script = ExtResource("4_7wuuw")
+skippable = true
+override_music = ExtResource("4_7swwn")
+metadata/_custom_type_script = "uid://d3fm84ie1jyv6"
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sxl33"]
+size = Vector3(16.9333, 9.30786, 18.732233)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_h8v3m"]
+size = Vector3(17.5469, 31.5276, 21.1702)
+
+[node name="office_hexagon_room" instance=ExtResource("1_ycp4o")]
+
+[node name="FirstCam" type="Camera3D" parent="." index="18"]
+unique_name_in_owner = true
+transform = Transform3D(-0.7071067, 0.122787796, -0.69636416, 0, 0.98480767, 0.17364816, 0.7071067, 0.122787796, -0.69636416, -2.5, 2, 6)
+fov = 60.0
+
+[node name="SecondCam" type="Camera3D" parent="." index="19"]
+unique_name_in_owner = true
+transform = Transform3D(-0.9659258, -0.10938168, 0.23456977, 0, 0.9063077, 0.42261824, -0.25881913, 0.40821788, -0.875426, 2.5, 5, -5.5)
+fov = 60.0
+
+[node name="MonikaBoss" type="Node3D" parent="." index="20"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.153, 1.643)
+script = ExtResource("2_7swwn")
+
+[node name="BattleNode" parent="MonikaBoss" index="0" node_paths=PackedStringArray("cogs") instance=ExtResource("3_vwkht")]
+tags = Array[int]([0, 2])
+cogs = [NodePath("Monika"), NodePath("Sayori"), NodePath("Yuri"), NodePath("Natsuki")]
+override_intro = SubResource("Resource_7swwn")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MonikaBoss/BattleNode" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.70569, -1.3824234)
+shape = SubResource("BoxShape3D_sxl33")
+
+[node name="Monika" parent="MonikaBoss/BattleNode" index="3" instance=ExtResource("6_5qadq")]
+unique_name_in_owner = true
+transform = Transform3D(-0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, -0.70710677, -2.5, 0, 1.5)
+level_range_offset = 2
+use_floor_pool = false
+dna = ExtResource("7_ay2qw")
+skelecog_chance = 0
+
+[node name="Yuri" parent="MonikaBoss/BattleNode" index="5" instance=ExtResource("6_5qadq")]
+unique_name_in_owner = true
+transform = Transform3D(0.70710677, 0, -0.70710677, 0, 1, 0, 0.70710677, 0, 0.70710677, 1.5, 0, -2.5)
+level_range_offset = -2
+use_floor_pool = false
+dna = ExtResource("8_5qadq")
+skelecog_chance = 0
+
+[node name="Sayori" parent="MonikaBoss/BattleNode" index="6" instance=ExtResource("6_5qadq")]
+unique_name_in_owner = true
+transform = Transform3D(0.70710677, 0, -0.70710677, 0, 1, 0, 0.70710677, 0, 0.70710677, -0.5, 0, -4.5)
+level_range_offset = -2
+use_floor_pool = false
+dna = ExtResource("9_2ulia")
+skelecog_chance = 0
+
+[node name="Natsuki" parent="MonikaBoss/BattleNode" index="7" instance=ExtResource("6_5qadq")]
+unique_name_in_owner = true
+transform = Transform3D(0.70710677, 0, -0.70710677, 0, 1, 0, 0.70710677, 0, 0.70710677, 3.5, 0, -0.5)
+level_range_offset = -2
+use_floor_pool = false
+dna = ExtResource("10_ue0ex")
+skelecog_chance = 0
+
+[node name="RoomArea" type="Area3D" parent="." index="21"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoomArea" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 15.2638, -0.0435791)
+shape = SubResource("BoxShape3D_h8v3m")
+
+[node name="CharPositions" type="Node3D" parent="." index="22"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.14708567, 0, 0)
+
+[node name="StartPos" type="Node3D" parent="CharPositions" index="0"]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 0, 9.5)
+
+[node name="WalkInPos" type="Node3D" parent="CharPositions" index="1"]
+unique_name_in_owner = true
+transform = Transform3D(-0.97999424, 0.19902585, 0, -0.19902585, -0.97999424, 0, 0, 0, 1, -0.25, 0, 8)
+
+[node name="elevator_law" parent="." index="23" instance=ExtResource("3_t148u")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -0.10906279, -0.13367665, -11.179272)
+opened = false
+run_player_check = false
+
+[connection signal="s_battle_ending" from="MonikaBoss/BattleNode" to="elevator_law" method="open"]

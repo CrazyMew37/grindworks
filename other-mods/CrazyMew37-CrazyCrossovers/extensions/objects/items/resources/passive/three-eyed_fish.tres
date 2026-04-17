@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Item" load_steps=6 format=3 uid="uid://1j8wj0ffgw5k"]
+
+[ext_resource type="Texture2D" uid="uid://ch5b7ngddr15m" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/threeeyedfish.png" id="1_h6qrs"]
+[ext_resource type="Script" uid="uid://corfc2c228t08" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/item_three-eyed_fish.gd" id="2_h6qrs"]
+[ext_resource type="PackedScene" uid="uid://bxhglbgbkxc77" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/three-eyed_fish.tscn" id="3_2johe"]
+[ext_resource type="AudioStream" uid="uid://hgwtecn17iui" path="res://audio/sfx/battle/gags/sound/SZ_DD_foghorn.ogg" id="4_h6qrs"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="5_wcbqd"]
+
+[resource]
+script = ExtResource("5_wcbqd")
+qualitoon = 2
+ui_cam_offset = 0.15
+item_name = "Three-Eyed Fish"
+item_description = "This thing has to be radioactive..."
+big_description = "+ 15% to your lowest stat
+- 15% to your highest stat"
+model = ExtResource("3_2johe")
+pickup_sfx = ExtResource("4_h6qrs")
+item_script = ExtResource("2_h6qrs")
+icon = ExtResource("1_h6qrs")
+shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)
+force_show_shop_category = true

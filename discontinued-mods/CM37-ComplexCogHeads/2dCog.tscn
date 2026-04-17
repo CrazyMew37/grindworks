@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://crv13152jydbu"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_sd8lk"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_173sh"]
+transparency = 1
+albedo_color = Color(1, 1, 1, 0)
+
+[sub_resource type="GDScript" id="GDScript_173sh"]
+resource_name = "CogInvsibleMaker"
+script/source = "extends MeshInstance3D
+
+@onready var area = %Area3D
+
+func _ready():
+	area.body_entered.connect(_on_body_entered)
+	area.body_exited.connect(_on_body_exited)
+
+func _on_body_entered(body):
+	if body is Cog:
+		body.body.arms.visible = false
+		body.body.hands.visible = false
+		body.body.legs.visible = false
+		body.body.torso.visible = false
+		body.body.health_bone.visible = false
+		body.body.wrists_and_shoes.visible = false
+		print(\"Cog Made Invisible!\")
+
+func _on_body_exited(body):
+	if body is Cog:
+		body.body.arms.visible = true
+		body.body.hands.visible = true
+		body.body.legs.visible = true
+		body.body.torso.visible = true
+		body.body.health_bone.visible = true
+		body.body.wrists_and_shoes.visible = true
+		print(\"Cog Made Visible!\")
+"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sd8lk"]
+transparency = 1
+cull_mode = 2
+billboard_mode = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_sd8lk"]
+material = SubResource("StandardMaterial3D_sd8lk")
+center_offset = Vector3(0, 0.5, 0)
+orientation = 2
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_173sh"]
+
+[node name="Node3D" type="Node3D" unique_id=425309341]
+
+[node name="Node3D" type="Node3D" parent="." unique_id=1515833176]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Node3D" unique_id=633441720]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+mesh = SubResource("BoxMesh_sd8lk")
+surface_material_override/0 = SubResource("StandardMaterial3D_173sh")
+script = SubResource("GDScript_173sh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Node3D/MeshInstance3D" unique_id=155735784]
+mesh = SubResource("PlaneMesh_sd8lk")
+
+[node name="Area3D" type="Area3D" parent="Node3D/MeshInstance3D" unique_id=1705174105]
+unique_name_in_owner = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/MeshInstance3D/Area3D" unique_id=764283151]
+shape = SubResource("BoxShape3D_173sh")

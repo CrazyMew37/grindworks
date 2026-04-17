@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Item" load_steps=6 format=3 uid="uid://c4b4cgrygfhox"]
+
+[ext_resource type="Texture2D" uid="uid://cil0jyf77nu68" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/goldenring.png" id="1_lm4tk"]
+[ext_resource type="Script" uid="uid://cd3l6usyjsgv4" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/item_gold_ring.gd" id="2_n87l5"]
+[ext_resource type="PackedScene" uid="uid://brj7lur5ri6k4" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/gold_ring.tscn" id="3_3xgla"]
+[ext_resource type="AudioStream" uid="uid://ch0ie0ja027tc" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/audio/sfx/sonicring.ogg" id="4_0lwnc"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="5_np0o0"]
+
+[resource]
+script = ExtResource("5_np0o0")
+tags = Array[int]([2])
+qualitoon = 4
+ui_cam_offset = 0.15
+item_name = "Gold Ring"
+item_description = "Your wealth is your health"
+big_description = "Every 5 Jellybeans in your bank gives:
++ 1 Max Laff
+(Caps at 100 Laff/500 Jellybeans if Endless Nerfs are on)"
+model = ExtResource("3_3xgla")
+pickup_sfx = ExtResource("4_0lwnc")
+item_script = ExtResource("2_n87l5")
+icon = ExtResource("1_lm4tk")
+shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)
+force_show_shop_category = true

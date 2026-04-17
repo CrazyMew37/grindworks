@@ -1,0 +1,61 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://cpbdshr27b5qq"]
+
+[sub_resource type="GDScript" id="GDScript_hja35"]
+script/source = "extends CogAttack
+
+const TRIP_EFFECT := preload(\"res://models/props/cog_props/stun_stars/stun_stars.tscn\")
+
+
+func action() -> void:
+	# Variable setup
+	var player : Player = targets[0]
+	var cog : Cog = user
+	var hit := manager.roll_for_accuracy(self)
+	var trip := TRIP_EFFECT.instantiate()
+	cog.add_child(trip)
+	
+	# Movie Start
+	var movie := manager.create_tween()
+	
+	# Focus Cog
+	movie.tween_callback(battle_node.focus_character.bind(cog))
+	movie.tween_property(trip,'scale', Vector3(0.35,0.35,0.35), 0.05)
+	movie.tween_callback(cog.set_animation.bind('magic1'))
+	movie.tween_interval(0.5)
+	
+	
+	# Move to player focus and switch effects
+	movie.tween_callback(set_camera_angle.bind('SIDE_RIGHT'))
+	movie.tween_callback(trip.set_position.bind(Vector3(0.0, 0.5, 2.33)))
+	
+	# Move trip effect
+	var destination := player.toon.to_global(player.toon.position + Vector3(0.0, 0.5, 0.0))
+	movie.tween_property(trip, 'global_position', destination, 0.75)
+	
+	# Set player anim to jump if dodged
+	if not hit:
+		AudioManager.play_sound(load('res://audio/sfx/items/firework_distance_02.ogg'))
+		movie.parallel().tween_callback(player.set_animation.bind('jump-back-right'))
+		movie.parallel().tween_callback(manager.battle_text.bind(player, \"MISSED\"))
+	else:
+		AudioManager.play_sound(load('res://audio/sfx/items/firework_distance_02.ogg'))
+		movie.parallel().tween_callback(manager.affect_target.bind(player, damage)).set_delay(0.5)
+		movie.parallel().tween_callback(player.set_animation.bind('slip-backward')).set_delay(0.5)
+	
+	
+	movie.tween_callback(trip.queue_free)
+	
+	movie.tween_interval(3.0)
+	
+	await movie.finished
+	movie.kill()
+	
+	await manager.check_pulses(targets)
+"
+
+[resource]
+script = SubResource("GDScript_hja35")
+damage = 5
+attack_lines = Array[String](["How does this work? It's magic!", "I cast thy spell to defeat you!", "Let me enchant you.", "If you can break physics, then I can too.", "Don't get distracted by my sparkles.", "I wish for you to disappear!", "This is truly a magical moment.", "This will go down in fairy tales.", "My wish is your command.", "Supreme... Magic Blast!"])
+action_name = "Magic Blast"
+metadata/_custom_type_script = "uid://bb27him60xtnk"

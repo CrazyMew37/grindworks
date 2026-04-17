@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cfmutb8tr7dna"]
+
+[ext_resource type="PackedScene" uid="uid://cww8gqtn3jnuo" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/accessories/15pipdie.glb" id="1_5m16l"]
+
+[node name="monarch_butterfly" type="Node3D"]
+
+[node name="15pipdie" parent="." instance=ExtResource("1_5m16l")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, -0.12, 0)

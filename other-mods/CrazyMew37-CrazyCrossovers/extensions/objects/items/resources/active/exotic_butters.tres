@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ItemActive" load_steps=5 format=3 uid="uid://cjro7i7td3yn8"]
+
+[ext_resource type="Texture2D" uid="uid://tbu42c1o8prs" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/exoticbutters.png" id="1_em2q0"]
+[ext_resource type="Script" uid="uid://7664luiytx5e" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/item_exotic_butters.gd" id="2_em2q0"]
+[ext_resource type="PackedScene" uid="uid://dy85owpd2e1ir" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/exotic_butters.tscn" id="3_aemg4"]
+[ext_resource type="Script" uid="uid://5uwfsntxdag6" path="res://objects/items/classes/item_active.gd" id="5_nfrxv"]
+
+[resource]
+script = ExtResource("5_nfrxv")
+active_type = 3
+charge_count = 20
+ui_cam_offset = 0.15
+item_name = "Exotic Butters"
+item_description = "Exotic butters."
+big_description = "Exotic butters."
+model = ExtResource("3_aemg4")
+item_script = ExtResource("2_em2q0")
+icon = ExtResource("1_em2q0")
+shop_category_title = "Exotic Butters"
+shop_category_color = Color(0.9188354, 0.8175375, 0.3719217, 1)
+force_show_shop_category = true
+metadata/_custom_type_script = "uid://5uwfsntxdag6"

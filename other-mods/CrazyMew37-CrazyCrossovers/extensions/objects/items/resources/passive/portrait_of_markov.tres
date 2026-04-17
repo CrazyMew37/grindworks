@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Item" load_steps=4 format=3 uid="uid://blxwhl2nrh1gr"]
+
+[ext_resource type="Texture2D" uid="uid://t0ly2r84fkd4" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/portraitofmarkov.png" id="1_m7pj8"]
+[ext_resource type="PackedScene" uid="uid://8h2wi3bqdtl8" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/portrait_of_markov.tscn" id="2_m7pj8"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="4_lybe4"]
+
+[resource]
+script = ExtResource("4_lybe4")
+qualitoon = 1
+ui_cam_offset = 0.15
+item_name = "Portrait of Markov"
+item_description = "An interesting read"
+big_description = "+ 25% Defense
+- 10% Evasiveness
+- 5% Damage"
+model = ExtResource("2_m7pj8")
+stats_add = {
+"damage": -0.05,
+"defense": 0.25,
+"evasiveness": -0.1
+}
+icon = ExtResource("1_m7pj8")
+shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)
+force_show_shop_category = true

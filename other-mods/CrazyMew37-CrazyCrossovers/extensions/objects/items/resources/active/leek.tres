@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="ItemActive" load_steps=5 format=3 uid="uid://d0yo5el576jf7"]
+
+[ext_resource type="Texture2D" uid="uid://dnf0n8nl5ia37" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/leek.png" id="1_c5fda"]
+[ext_resource type="Script" uid="uid://d1b6x2lxiy4aj" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/item_leek.gd" id="2_c5fda"]
+[ext_resource type="PackedScene" uid="uid://c8cpt1m40wpky" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/leek.tscn" id="3_cy1yg"]
+[ext_resource type="Script" uid="uid://5uwfsntxdag6" path="res://objects/items/classes/item_active.gd" id="5_3nlva"]
+
+[resource]
+script = ExtResource("5_3nlva")
+active_type = 1
+charge_count = 4
+current_charge = 4
+qualitoon = 2
+ui_cam_offset = 0.15
+item_name = "Leek"
+item_description = "Isn't this actually a spring onion?"
+big_description = "Deals aftershock damage to every cog for four rounds. Damage is equal to four times their level."
+model = ExtResource("3_cy1yg")
+item_script = ExtResource("2_c5fda")
+icon = ExtResource("1_c5fda")
+shop_category_title = "Pocket Prank"
+shop_category_color = Color(0.929412, 0.262745, 0.278431, 1)
+force_show_shop_category = true
+metadata/_custom_type_script = "uid://5uwfsntxdag6"

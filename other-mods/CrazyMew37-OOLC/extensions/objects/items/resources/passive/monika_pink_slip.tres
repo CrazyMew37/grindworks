@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://4vc3u3t7tqqk"]
+
+[ext_resource type="Script" uid="uid://cqm3pvfu6ipxm" path="res://mods-unpacked/CrazyMew37-OOLC/extensions/objects/items/resources/passive/monika_pink_slip.gd" id="1_jcvub"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="2_w3l04"]
+
+[resource]
+script = ExtResource("2_w3l04")
+qualitoon = 4
+item_name = "Monika Pink Slip"
+big_description = "Unique to Monkika"
+item_script = ExtResource("1_jcvub")
+shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)

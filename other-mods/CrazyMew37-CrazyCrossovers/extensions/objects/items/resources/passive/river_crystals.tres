@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="Item" load_steps=5 format=3 uid="uid://d34oipbcqjfxk"]
+
+[ext_resource type="Texture2D" uid="uid://da7acgt2smlkx" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/rivercrystals.png" id="1_fg0rb"]
+[ext_resource type="Script" uid="uid://clqiib5tu047h" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/item_river_crystals.gd" id="2_04agq"]
+[ext_resource type="PackedScene" uid="uid://ckug3wvfxc6f5" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/rivercrystals.tscn" id="3_q8w7w"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="5_4y4a5"]
+
+[resource]
+script = ExtResource("5_4y4a5")
+qualitoon = 2
+ui_cam_offset = 0.15
+item_name = "River Crystals"
+item_description = "A resonating voice"
+big_description = "+ 15% Sound damage
+- 15% Sound splash damage"
+model = ExtResource("3_q8w7w")
+stats_add = {
+"gag_boost:Sound": 0.15
+}
+item_script = ExtResource("2_04agq")
+icon = ExtResource("1_fg0rb")
+shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)
+force_show_shop_category = true

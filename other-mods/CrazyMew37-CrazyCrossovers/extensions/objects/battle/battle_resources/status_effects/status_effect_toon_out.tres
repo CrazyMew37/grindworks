@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://dsq0h0yk3n6l4"]
+
+[ext_resource type="Texture2D" uid="uid://d3noq0ptqna5y" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/battle/statuses/triplebakatoonout.png" id="1_xt4ut"]
+[ext_resource type="Script" uid="uid://c67ns6rpypskd" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/battle/battle_resources/status_effects/status_effect_toon_out.gd" id="2_rduyb"]
+
+[resource]
+script = ExtResource("2_rduyb")
+quality = 0
+rounds = -1
+icon = ExtResource("1_xt4ut")
+description = "Gains a +10% Defense Boost every time they take damage.
+Current Defense Boost: +0%"
+status_name = "Toon Out"
+id = 3703
+metadata/_custom_type_script = "uid://df7irk63ikx4k"

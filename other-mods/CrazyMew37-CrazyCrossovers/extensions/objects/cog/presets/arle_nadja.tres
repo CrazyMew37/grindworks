@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="CogDNA" load_steps=7 format=3 uid="uid://bquwiegf3e53r"]
+
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_d3hjt"]
+[ext_resource type="Resource" uid="uid://bhqitjauuo466" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/battle/battle_resources/cog_attacks/bayoen.tres" id="2_pomni"]
+[ext_resource type="Resource" uid="uid://dqr10ayre5g85" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/battle/battle_resources/cog_attacks/fireball.tres" id="3_28hvr"]
+[ext_resource type="Resource" uid="uid://6hjcsu17tt4g" path="res://objects/battle/battle_resources/cog_attacks/resources/brain_storm.tres" id="3_g03vw"]
+[ext_resource type="Resource" uid="uid://b4kaq7rjifwfc" path="res://objects/battle/battle_resources/cog_attacks/resources/liquidate.tres" id="5_d3hjt"]
+[ext_resource type="Script" uid="uid://yc46vrmyfql1" path="res://objects/cog/cog_dna.gd" id="8_olhw7"]
+
+[resource]
+script = ExtResource("8_olhw7")
+department = 3
+custom_blazer_tex = "res://models/cogs/textures/slender/blazer.png"
+custom_arm_tex = "res://models/cogs/textures/slender/sleeve.png"
+custom_leg_tex = "res://models/cogs/textures/slender/leg.png"
+cog_name = "Arle Nadja"
+head = "res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/cogs/heads/arlegrindworks.glb"
+head_scale = Vector3(1.2, 1.2, 1.2)
+scale = 5.25
+head_textures = PackedStringArray("res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/cogs/heads/arlegrindworks_arl_body_D.png")
+hand_color = Color(1, 0.827451, 0.6313726, 1)
+custom_nametag_height = 11.0
+attacks = Array[ExtResource("1_d3hjt")]([ExtResource("2_pomni"), ExtResource("3_28hvr"), ExtResource("3_g03vw"), ExtResource("5_d3hjt")])
+level_high = 20
+baked_status_effects = PackedStringArray("res://objects/battle/battle_resources/status_effects/resources/attentive.tres", "res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/battle/battle_resources/status_effects/status_effect_chaining.tres")
+is_admin = true
+health_mod = 3.0
+battle_phrases = Array[String](["After this, I'm getting curry!", "It's time for a Puyo Puyo battle!", "Prepare for my Bayoen, Toon!"])
+external_assets = {
+&"head_model": "",
+&"head_textures": []
+}

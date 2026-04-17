@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="Item" load_steps=5 format=3 uid="uid://c75dowb6v4rbm"]
+
+[ext_resource type="Texture2D" uid="uid://dvwxcjcjaqw4i" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/kendama.png" id="1_sgiun"]
+[ext_resource type="Script" uid="uid://dbgtk4ouxmsyq" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/item_kendama.gd" id="2_c0y25"]
+[ext_resource type="PackedScene" uid="uid://beltwro0h0jhu" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/kendama.tscn" id="3_4f7oq"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="4_t6k0l"]
+
+[resource]
+script = ExtResource("4_t6k0l")
+qualitoon = 3
+ui_cam_offset = 0.15
+item_name = "Kendama"
+item_description = "Swingin'!"
+big_description = "+ 20% Drop damage
+- 10% Aftershock damage"
+model = ExtResource("3_4f7oq")
+stats_add = {
+"gag_boost:Drop": 0.2
+}
+item_script = ExtResource("2_c0y25")
+icon = ExtResource("1_sgiun")
+shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)
+force_show_shop_category = true

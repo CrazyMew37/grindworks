@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="ItemActive" load_steps=6 format=3 uid="uid://bwdeted388wrw"]
+
+[ext_resource type="Texture2D" uid="uid://bwa8yh6swom40" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/keyblade.png" id="1_4rej3"]
+[ext_resource type="Script" uid="uid://dur4wcx2ybhtm" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/item_keyblade.gd" id="2_4rej3"]
+[ext_resource type="PackedScene" uid="uid://jumlllycfck4" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/keyblade.tscn" id="3_wu7hn"]
+[ext_resource type="AudioStream" uid="uid://8vjo40mj15u4" path="res://audio/sfx/items/SZ_MM_fanfare.ogg" id="4_ek84c"]
+[ext_resource type="Script" uid="uid://5uwfsntxdag6" path="res://objects/items/classes/item_active.gd" id="5_ug8ca"]
+
+[resource]
+script = ExtResource("5_ug8ca")
+active_type = 2
+charge_count = 9
+current_charge = 9
+qualitoon = 4
+rarity = 6
+ui_cam_offset = 0.15
+item_name = "Keyblade"
+item_description = "Lock out the Heartless!"
+big_description = "Upgrades every chest in the room. (Bronze Chests become Silver Chests, Silver Chests become Gold Chests, and Gold Chests become Special Chests)"
+model = ExtResource("3_wu7hn")
+pickup_sfx = ExtResource("4_ek84c")
+item_script = ExtResource("2_4rej3")
+icon = ExtResource("1_4rej3")
+shop_category_title = "Pocket Prank"
+shop_category_color = Color(0.929412, 0.262745, 0.278431, 1)
+force_show_shop_category = true
+metadata/_custom_type_script = "uid://5uwfsntxdag6"

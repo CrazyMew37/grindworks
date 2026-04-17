@@ -1,0 +1,35 @@
+{
+	"dependencies": [],
+	"description": "Replaces the game's OST with that of the Content Pack Nightlife.",
+	"extra": {
+		"godot": {
+			"authors": [
+				"CrazyMew37"
+			],
+			"compatible_game_version": [
+				"1.1.1",
+				"1.1.2",
+				"1.1.3"
+			],
+			"compatible_mod_loader_version": [
+				"7.0.0"
+			],
+			"config_schema": {
+
+			},
+			"description_rich": "",
+			"image": null,
+			"incompatibilities": [],
+			"load_before": [],
+			"optional_dependencies": [],
+			"tags": [
+				"Music",
+				"Nightlife"
+			]
+		}
+	},
+	"name": "NightlifeSoundpack",
+	"namespace": "CrazyMew37",
+	"version_number": "1.0.1",
+	"website_url": "https://github.com/exampleauthor/examplemod"
+}

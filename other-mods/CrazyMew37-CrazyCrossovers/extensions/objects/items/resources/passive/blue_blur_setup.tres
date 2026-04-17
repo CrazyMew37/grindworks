@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://wnsrdl6yofd2"]
+
+[ext_resource type="Script" uid="uid://c36wb4hpsebqf" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/item_blue_blur_setup.gd" id="1_i4x2l"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="2_0oy4y"]
+
+[resource]
+script = ExtResource("2_0oy4y")
+item_script = ExtResource("1_i4x2l")
+shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)
+metadata/_custom_type_script = "uid://combwqypom1ru"

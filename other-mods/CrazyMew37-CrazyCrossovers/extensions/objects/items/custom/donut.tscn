@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://du8dtwqk4dwam"]
+
+[ext_resource type="PackedScene" uid="uid://d1ad55k0bxv2c" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/accessories/donut.glb" id="1_webtg"]
+
+[node name="monarch_butterfly" type="Node3D"]
+
+[node name="donut" parent="." instance=ExtResource("1_webtg")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, -0.15, 0)

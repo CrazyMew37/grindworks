@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://0k4qc1gapn4q"
+path="res://.godot/imported/Scheming Weasel slower.mp3-762964bc30886555f96993ad22a66f09.mp3str"
+
+[deps]
+
+source_file="res://other-mods/CrazyMew37-KevinMacLeodSoundpack/music/Scheming Weasel slower.mp3"
+dest_files=["res://.godot/imported/Scheming Weasel slower.mp3-762964bc30886555f96993ad22a66f09.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

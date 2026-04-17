@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="Item" load_steps=4 format=3 uid="uid://mildgiob4s2o"]
+
+[ext_resource type="Texture2D" uid="uid://dv8pvucvkmxnu" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/kelpshake.png" id="1_d6cwd"]
+[ext_resource type="PackedScene" uid="uid://b1ox20xng7yko" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/kelp_shake.tscn" id="2_8uuf6"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="4_fedyo"]
+
+[resource]
+script = ExtResource("4_fedyo")
+qualitoon = 1
+ui_cam_offset = 0.15
+item_name = "Kelp Shake"
+item_description = "What's in this drink?"
+big_description = "+ 4 Max Laff
++ 8% Defense
+- 4% Damage"
+model = ExtResource("2_8uuf6")
+stats_add = {
+"damage": -0.04,
+"defense": 0.08,
+"hp": 4,
+"max_hp": 4
+}
+icon = ExtResource("1_d6cwd")
+shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)
+force_show_shop_category = true

@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="CogDNA" load_steps=8 format=3 uid="uid://cm78hnwxx47yo"]
+
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_ouofb"]
+[ext_resource type="Resource" uid="uid://dwkmwkdn3ws4k" path="res://objects/battle/battle_resources/cog_attacks/resources/evil_eye.tres" id="2_855hb"]
+[ext_resource type="Resource" uid="uid://sey860nn14jg" path="res://objects/battle/battle_resources/cog_attacks/resources/pick_pocket.tres" id="3_855hb"]
+[ext_resource type="Resource" uid="uid://c27ek2anjbx88" path="res://objects/battle/battle_resources/cog_attacks/resources/pound_key.tres" id="4_mqmtn"]
+[ext_resource type="Resource" uid="uid://wwf1notai2f8" path="res://objects/battle/battle_resources/cog_attacks/resources/power_trip.tres" id="5_f4owp"]
+[ext_resource type="Script" uid="uid://yc46vrmyfql1" path="res://objects/cog/cog_dna.gd" id="6_kmtra"]
+[ext_resource type="Resource" uid="uid://dqr10ayre5g85" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/battle/battle_resources/cog_attacks/fireball.tres" id="6_mqmtn"]
+
+[resource]
+script = ExtResource("6_kmtra")
+department = 1
+suit = 2
+custom_blazer_tex = "res://models/cogs/textures/slender/blazer.png"
+custom_arm_tex = "res://models/cogs/textures/slender/sleeve.png"
+custom_leg_tex = "res://models/cogs/textures/slender/leg.png"
+cog_name = "Bowser"
+head = "res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/cogs/heads/bowsergrindworks.glb"
+scale = 7.6
+head_textures = PackedStringArray("res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/cogs/heads/bowsergrindworks_g000m001.png", "res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/cogs/heads/bowsergrindworks_S3_g000m100.png")
+hand_color = Color(0.9843137, 0.72156864, 0.03137255, 1)
+custom_nametag_height = 7.0
+attacks = Array[ExtResource("1_ouofb")]([ExtResource("2_855hb"), ExtResource("3_855hb"), ExtResource("4_mqmtn"), ExtResource("5_f4owp"), ExtResource("6_mqmtn")])
+level_high = 20
+baked_status_effects = PackedStringArray("res://objects/battle/battle_resources/status_effects/resources/attentive.tres", "res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/battle/battle_resources/status_effects/boss_logic_bowser.tres")
+is_admin = true
+health_mod = 2.0
+battle_phrases = Array[String](["Showtime!", "Bwahaha!", "Prepare to get destroyed, Toon!"])
+external_assets = {
+&"head_model": "",
+&"head_textures": []
+}

@@ -1,0 +1,90 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://c1b3yowqrw87s"]
+
+[ext_resource type="PackedScene" uid="uid://chehnymhm3svv" path="res://models/props/facility_objects/da_office/law_book/lawbook.tscn" id="1_en45x"]
+
+[sub_resource type="GDScript" id="GDScript_i60kj"]
+script/source = "extends CogAttack
+
+# Config
+@export var prop : PackedScene
+@export var wait_time := 3.2
+@export var custom_method : String
+
+# Locals
+var held_prop : Node3D
+var hit: bool
+
+func action():
+	hit = manager.roll_for_accuracy(self)
+	user.face_position(targets[0].global_position)
+	# Hold the prop
+	if prop: 
+		held_prop = prop.instantiate()
+	user.body.right_hand_bone.add_child(held_prop)
+	user.set_animation('throw-paper')
+	
+	
+	if has_method(custom_method):
+		await Callable(self,custom_method).call()
+	
+	if is_instance_valid(held_prop):
+		held_prop.queue_free()
+
+
+func hit_the_books() -> void:
+	held_prop.position = Vector3(0, 0, -0.4)
+	held_prop.rotation_degrees = Vector3(-90, 0, 0)
+	
+	var player : Player = targets[0]
+	battle_node.focus_character(user)
+	
+	if not hit:
+		var stagger := 0.2
+		await manager.sleep(wait_time - stagger)
+		player.set_animation('jump')
+		await manager.sleep(stagger)
+	else:
+		await manager.sleep(wait_time)
+	
+	held_prop.reparent(battle_node)
+	held_prop.global_position.y = player.global_position.y + 1.5
+	held_prop.look_at(player.global_position)
+	
+	var forward_vec := held_prop.global_transform.basis.z.normalized()
+	var distance := -held_prop.global_position.distance_to(player.global_position)
+
+	if not hit:
+		distance -= 2.0
+	
+	var destination := held_prop.global_position + (forward_vec*distance)
+	
+	
+	var throw_tween : Tween = held_prop.create_tween()
+	throw_tween.tween_property(held_prop,'global_position', destination, 0.6)
+	throw_tween.finished.connect(
+		func():
+			throw_tween.kill()
+			held_prop.queue_free()
+			if hit:
+				AudioManager.play_sound(load('res://audio/sfx/battle/gags/drop/AA_drop_safe_miss.ogg'))
+				player.set_animation(\"slip-backward\")
+				manager.affect_target(player, damage)
+	)
+	
+	battle_node.focus_character(player)
+	
+	if not hit:
+		manager.battle_text(player, \"MISSED\")
+	
+	await manager.barrier(player.animator.animation_finished, 3.0)
+	await manager.check_pulses(targets)
+"
+
+[resource]
+script = SubResource("GDScript_i60kj")
+prop = ExtResource("1_en45x")
+custom_method = "hit_the_books"
+damage = 4
+attack_lines = Array[String](["I bet you don't even know basic multiplication.", "You need to learn your manners.", "This is going to smart.", "Let me educate you.", "Do your homework, Toon.", "How much have you read in the past decade?", "This book's lexicon is bound to go over your head.", "Time to pound some knowledge into your skull.", "It's time to learn your lesson.", "Don't fall asleep on me."])
+action_name = "Hit the Books"
+metadata/_custom_type_script = "uid://itkxki65d0v7"

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cvkt2oaw8jq32"
+path="res://.godot/imported/Batty McFaddin - Slower.mp3-92bc7bd7c0865656d074acfde18b9c0b.mp3str"
+
+[deps]
+
+source_file="res://other-mods/CrazyMew37-KevinMacLeodSoundpack/music/Batty McFaddin - Slower.mp3"
+dest_files=["res://.godot/imported/Batty McFaddin - Slower.mp3-92bc7bd7c0865656d074acfde18b9c0b.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bdy7ceuqf55kc"]
+
+[ext_resource type="PackedScene" uid="uid://is1uenf6xcr1" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/accessories/bluepuyo.glb" id="1_ucyh4"]
+
+[node name="monarch_butterfly" type="Node3D"]
+
+[node name="bluepuyo" parent="." instance=ExtResource("1_ucyh4")]
+transform = Transform3D(-1.3113417e-08, 0, -0.3, 0, 0.3, 0, 0.3, 0, -1.3113417e-08, 0, -0.18, 0)

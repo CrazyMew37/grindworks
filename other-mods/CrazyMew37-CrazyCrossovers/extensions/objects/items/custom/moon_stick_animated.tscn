@@ -1,0 +1,68 @@
+[gd_scene load_steps=7 format=3 uid="uid://dbj5mwndaftup"]
+
+[ext_resource type="PackedScene" uid="uid://bbrcfwwkp3uhk" path="res://models/props/gags/anvil/anvil.tscn" id="1_lsflw"]
+[ext_resource type="PackedScene" uid="uid://c1o3q1hgrjs0y" path="res://models/props/toon_props/toy_hammer/toyHammer.glb" id="2_3r72d"]
+[ext_resource type="Texture2D" uid="uid://dmp5ljdux6iuk" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/moonstick.png" id="3_lsflw"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1bshu"]
+transparency = 1
+cull_mode = 2
+albedo_texture = ExtResource("3_lsflw")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_wra8v"]
+_surfaces = [{
+"aabb": AABB(-1, 0, -1, 2, 1e-05, 2),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 1, 0, 2, 0, 0, 0, 3, 0, 1, 0),
+"name": "Material",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(0, 0, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_3r72d"]
+resource_name = "bouncecheck_Plane"
+_surfaces = [{
+"aabb": AABB(-1, 0, -1, 2, 1e-05, 2),
+"attribute_data": PackedByteArray(0, 0, 0, 0, 255, 255, 255, 255, 0, 0, 255, 255, 255, 255, 0, 0),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 1, 0, 2, 0, 0, 0, 3, 0, 1, 0),
+"material": SubResource("StandardMaterial3D_1bshu"),
+"name": "Material",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(0, 0, 0, 0, 255, 255, 84, 213, 255, 255, 0, 0, 0, 0, 84, 213, 255, 255, 0, 0, 255, 255, 84, 213, 0, 0, 0, 0, 0, 0, 84, 213, 84, 213, 170, 42, 84, 213, 170, 42, 84, 213, 170, 42, 84, 213, 170, 42)
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_wra8v")
+
+[node name="anvil2" instance=ExtResource("1_lsflw")]
+
+[node name="Skeleton3D" parent="anvil" index="0"]
+bones/0/rotation = Quaternion(-0.4976882, 0.50230116, -0.50230116, 0.4976882)
+
+[node name="anvil_uv" parent="anvil/Skeleton3D" index="0"]
+visible = false
+
+[node name="BoneAttachment3D" type="BoneAttachment3D" parent="anvil/Skeleton3D" index="1"]
+transform = Transform3D(-0.009225845, 0, 0.99995744, -0.99995744, 0, -0.009225816, 0, -1, 0, 0, 0, -0.788475)
+bone_name = "anvil_uv"
+bone_idx = 1
+
+[node name="toyHammer2" parent="anvil/Skeleton3D/BoneAttachment3D" index="0" instance=ExtResource("2_3r72d")]
+transform = Transform3D(77.88, 0, 0, 0, 77.88, 0, 0, 0, 77.88, 0, 0, 0)
+
+[node name="planething" type="MeshInstance3D" parent="anvil/Skeleton3D/BoneAttachment3D/toyHammer2" index="0"]
+transform = Transform3D(-0.0024003857, 0.59999925, -0.00020898879, 1.4772611, 0.0009601397, 0.25948393, 0.26017767, 8.3989464e-05, -1.473324, -0.101046585, 0.94009787, -0.23656496)
+mesh = SubResource("ArrayMesh_3r72d")
+skeleton = NodePath("")
+
+[node name="toyHammer" parent="anvil/Skeleton3D/BoneAttachment3D/toyHammer2" index="1"]
+transform = Transform3D(0, 0, 0, 0, 0, 0, 0, 0, 0, 0.0260749, 1.11997, -2.82618)
+
+[editable path="anvil/Skeleton3D/BoneAttachment3D/toyHammer2"]

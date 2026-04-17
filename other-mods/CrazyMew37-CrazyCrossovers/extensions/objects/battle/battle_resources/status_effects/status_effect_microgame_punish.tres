@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="StatEffectAftershockBomb" load_steps=3 format=3 uid="uid://3x3jdqwk6rx6"]
+
+[ext_resource type="Texture2D" uid="uid://daul36nwra8x2" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/tntblock.png" id="1_mcd2c"]
+[ext_resource type="Script" uid="uid://c4yylxpj2sa3d" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/battle/battle_resources/status_effects/status_effect_microgame_punish.gd" id="2_v2obm"]
+
+[resource]
+script = ExtResource("2_v2obm")
+instant_effect = false
+quality = 1
+rounds = 0
+icon = ExtResource("1_mcd2c")
+icon_scale = 0.9
+description = "This is punishment for failing your Microgame! >:("
+status_name = "Microgame Punish"
+id = 3713

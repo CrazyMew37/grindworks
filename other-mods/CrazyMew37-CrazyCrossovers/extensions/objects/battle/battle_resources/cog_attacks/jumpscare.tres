@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://biq1hya0blcjd"]
+
+[ext_resource type="Script" uid="uid://du4cwevfv17ds" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/battle/battle_resources/cog_attacks/jumpscare.gd" id="1_fojtp"]
+
+[resource]
+script = ExtResource("1_fojtp")
+accuracy = 90
+damage = 5
+summary = "You didn't keep this cog in check!"
+attack_lines = Array[String](["BOOOO!!!", "RAAAAAAH!!!", "GAAAAAAH!!!"])
+action_name = "Jumpscare"
+action_tags = Array[int]([0])

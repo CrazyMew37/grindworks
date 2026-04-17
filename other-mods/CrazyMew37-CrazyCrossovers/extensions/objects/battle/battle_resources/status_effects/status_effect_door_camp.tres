@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://us0r4lh68tmx"]
+
+[ext_resource type="Texture2D" uid="uid://b4bm07daucah0" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/battle/statuses/doorcamp.png" id="1_7re1p"]
+[ext_resource type="Script" uid="uid://ykiajxenu7x6" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/battle/battle_resources/status_effects/status_effect_door_camp.gd" id="2_7re1p"]
+
+[resource]
+script = ExtResource("2_7re1p")
+quality = 0
+rounds = -1
+icon = ExtResource("1_7re1p")
+description = "Target and damage this cog or else they will attack twice and gain a +25% damage boost!"
+status_name = "Door Camp"
+id = 3715

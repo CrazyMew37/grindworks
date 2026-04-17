@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Item" load_steps=6 format=3 uid="uid://b4vjqai1lxjwd"]
+
+[ext_resource type="Texture2D" uid="uid://b5bjsfc0h6f4c" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/spatula.png" id="1_66ycg"]
+[ext_resource type="Script" uid="uid://cl2dq56p67u70" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/item_spatula.gd" id="2_66ycg"]
+[ext_resource type="PackedScene" uid="uid://xv60gygynud1" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/spatula.tscn" id="3_ef5of"]
+[ext_resource type="AudioStream" uid="uid://drn5cxhlau473" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/audio/sfx/Shovel.ogg" id="4_66ycg"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="5_s43wd"]
+
+[resource]
+script = ExtResource("5_s43wd")
+qualitoon = 2
+ui_cam_offset = 0.15
+item_name = "Spatula"
+item_description = "Flip your stats!"
+big_description = "+ 10% to your highest stat
+- 10% to your lowest stat"
+model = ExtResource("3_ef5of")
+pickup_sfx = ExtResource("4_66ycg")
+item_script = ExtResource("2_66ycg")
+icon = ExtResource("1_66ycg")
+shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)
+force_show_shop_category = true

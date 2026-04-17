@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cqur5id0568qb"]
+
+[ext_resource type="PackedScene" uid="uid://61auja0gxagu" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/accessories/slingshot.glb" id="1_moa2m"]
+
+[node name="monarch_butterfly" type="Node3D"]
+
+[node name="slingshot" parent="." instance=ExtResource("1_moa2m")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, -0.24, 0)

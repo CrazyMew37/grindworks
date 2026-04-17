@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Item" load_steps=5 format=3 uid="uid://cag8pn2sb4l3y"]
+
+[ext_resource type="Texture2D" uid="uid://b5iyo33plkuku" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/donutitem.png" id="1_6f517"]
+[ext_resource type="PackedScene" uid="uid://du8dtwqk4dwam" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/donut.tscn" id="2_gtdhi"]
+[ext_resource type="AudioStream" uid="uid://vhy7mvrl02pb" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/audio/sfx/homerdonut.ogg" id="3_6x6kl"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="3_gtdhi"]
+
+[resource]
+script = ExtResource("3_gtdhi")
+qualitoon = 1
+ui_cam_offset = 0.15
+item_name = "Donut"
+item_description = "Mmm... Donuts!"
+big_description = "+ 10% Speed
+- 5% Evasiveness"
+model = ExtResource("2_gtdhi")
+pickup_sfx = ExtResource("3_6x6kl")
+stats_add = {
+"evasiveness": -0.05,
+"speed": 0.1
+}
+icon = ExtResource("1_6f517")
+shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)
+force_show_shop_category = true

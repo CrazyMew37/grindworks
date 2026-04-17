@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="ItemActive" load_steps=6 format=3 uid="uid://c4e3ebpybdocr"]
+
+[ext_resource type="Texture2D" uid="uid://b67jo0uw185xg" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/hyperpotion.png" id="1_r7d53"]
+[ext_resource type="Script" uid="uid://d1o75an0odt1a" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/item_hyper_potion.gd" id="2_pkew3"]
+[ext_resource type="PackedScene" uid="uid://cni0sn0j1t2mv" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/hyper_potion.tscn" id="3_lshcg"]
+[ext_resource type="AudioStream" uid="uid://cbmigslfmehjq" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/audio/sfx/pokemonitem.ogg" id="4_0lvm7"]
+[ext_resource type="Script" uid="uid://5uwfsntxdag6" path="res://objects/items/classes/item_active.gd" id="5_w5dym"]
+
+[resource]
+script = ExtResource("5_w5dym")
+active_type = 3
+one_time_use = true
+tags = Array[int]([2])
+qualitoon = 3
+rarity = 5
+evergreen = true
+ui_cam_offset = 0.15
+item_name = "Hyper Potion"
+item_description = "Hyper happiness!"
+big_description = "Heals 70 laff. (one-time-use)"
+model = ExtResource("3_lshcg")
+pickup_sfx = ExtResource("4_0lvm7")
+item_script = ExtResource("2_pkew3")
+icon = ExtResource("1_r7d53")
+shop_category_title = "Pocket Prank"
+shop_category_color = Color(0.929412, 0.262745, 0.278431, 1)
+force_show_shop_category = true
+metadata/_custom_type_script = "uid://5uwfsntxdag6"

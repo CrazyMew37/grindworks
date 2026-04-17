@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="StatBoostCard" load_steps=2 format=3 uid="uid://ceerhofcsmvje"]
+
+[ext_resource type="Script" uid="uid://b1h35ha3bfucw" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/battle/battle_resources/status_effects/stat_boost_card.gd" id="1_vcyll"]
+
+[resource]
+script = ExtResource("1_vcyll")
+id = 3723

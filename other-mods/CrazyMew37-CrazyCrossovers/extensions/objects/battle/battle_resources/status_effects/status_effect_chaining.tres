@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://b16npxpuo6uhe"]
+
+[ext_resource type="Texture2D" uid="uid://dqcpyhpturr4l" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/battle/statuses/chainingcheat.png" id="1_vmc37"]
+[ext_resource type="Script" uid="uid://dalx846kibjkb" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/battle/battle_resources/status_effects/status_effect_chaining.gd" id="2_vmc37"]
+
+[resource]
+script = ExtResource("2_vmc37")
+quality = 0
+rounds = -1
+icon = ExtResource("1_vmc37")
+description = "Gains +1 move at the end of every round.
+Current extra round count: 0"
+status_name = "Chaining"
+id = 3710
+metadata/_custom_type_script = "uid://df7irk63ikx4k"

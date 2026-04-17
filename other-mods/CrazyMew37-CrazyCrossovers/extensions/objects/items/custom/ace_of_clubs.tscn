@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b61oauyf36lnk"]
+
+[ext_resource type="PackedScene" uid="uid://dmmcmhqnk50cr" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/accessories/aceofclubsgw.glb" id="1_ood8p"]
+
+[node name="monarch_butterfly" type="Node3D"]
+
+[node name="aceofclubsgw" parent="." instance=ExtResource("1_ood8p")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0.015, -0.15, 0)

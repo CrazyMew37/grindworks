@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="StatBoostPuyo" load_steps=2 format=3 uid="uid://cpqwdjmkkyd2a"]
+
+[ext_resource type="Script" uid="uid://doyw15gwhy1bc" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/battle/battle_resources/status_effects/puyo_stat_boost.gd" id="1_f3bnf"]
+
+[resource]
+script = ExtResource("1_f3bnf")
+icon_scale = 0.8
+id = 3706

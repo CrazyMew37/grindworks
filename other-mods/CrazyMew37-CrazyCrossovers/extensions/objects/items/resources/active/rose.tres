@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="ItemActive" load_steps=5 format=3 uid="uid://dgduroiyj4m6q"]
+
+[ext_resource type="Texture2D" uid="uid://bf47ipeksyngr" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/rose.png" id="1_ci32j"]
+[ext_resource type="Script" uid="uid://b3ctml2ttwm75" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/item_rose.gd" id="2_ci32j"]
+[ext_resource type="PackedScene" uid="uid://co3207v4ro27k" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/rose.tscn" id="3_1bf2o"]
+[ext_resource type="Script" uid="uid://5uwfsntxdag6" path="res://objects/items/classes/item_active.gd" id="4_m75hb"]
+
+[resource]
+script = ExtResource("4_m75hb")
+active_type = 1
+charge_count = 2
+current_charge = 2
+qualitoon = 2
+ui_cam_offset = 0.15
+item_name = "Rose"
+item_description = "Now you'll need a tuxedo!"
+big_description = "Stuns a random cog for three rounds."
+model = ExtResource("3_1bf2o")
+item_script = ExtResource("2_ci32j")
+icon = ExtResource("1_ci32j")
+shop_category_title = "Pocket Prank"
+shop_category_color = Color(0.929412, 0.262745, 0.278431, 1)
+force_show_shop_category = true
+metadata/_custom_type_script = "uid://5uwfsntxdag6"

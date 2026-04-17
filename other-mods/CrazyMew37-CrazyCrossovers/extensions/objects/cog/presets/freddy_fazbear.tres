@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="CogDNA" load_steps=7 format=3 uid="uid://bfqh8met74m3h"]
+
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_a6345"]
+[ext_resource type="Resource" uid="uid://bruosr4c0bash" path="res://objects/battle/battle_resources/cog_attacks/resources/clip_on_tie.tres" id="2_kmp3y"]
+[ext_resource type="Resource" uid="uid://dwkmwkdn3ws4k" path="res://objects/battle/battle_resources/cog_attacks/resources/evil_eye.tres" id="2_u5dmy"]
+[ext_resource type="Resource" uid="uid://c3gg5tsci6aye" path="res://objects/battle/battle_resources/cog_attacks/resources/hang_up.tres" id="3_ut74p"]
+[ext_resource type="Resource" uid="uid://c27ek2anjbx88" path="res://objects/battle/battle_resources/cog_attacks/resources/pound_key.tres" id="4_0kwly"]
+[ext_resource type="Script" uid="uid://yc46vrmyfql1" path="res://objects/cog/cog_dna.gd" id="8_4hekv"]
+
+[resource]
+script = ExtResource("8_4hekv")
+suit = 2
+custom_blazer_tex = "res://models/cogs/textures/slender/blazer.png"
+custom_arm_tex = "res://models/cogs/textures/slender/sleeve.png"
+custom_leg_tex = "res://models/cogs/textures/slender/leg.png"
+cog_name = "Freddy Fazbear"
+head = "res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/cogs/heads/freddygrindworks.glb"
+scale = 6.6
+head_textures = PackedStringArray("res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/cogs/heads/freddygrindworks_Body-Color.png", "res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/cogs/heads/freddygrindworks_Endoskeleton-Color.png", "res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/cogs/heads/freddygrindworks_Eye-Color.png")
+hand_color = Color(0.41960785, 0.28627452, 0.16078432, 1)
+custom_nametag_height = 7.5
+can_speak = false
+attacks = Array[ExtResource("1_a6345")]([ExtResource("2_u5dmy"), ExtResource("3_ut74p"), ExtResource("4_0kwly"), ExtResource("2_kmp3y")])
+level_high = 20
+baked_status_effects = PackedStringArray("res://objects/battle/battle_resources/status_effects/resources/attentive.tres", "res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/battle/battle_resources/status_effects/status_effect_door_camp.tres")
+is_admin = true
+health_mod = 3.0
+battle_phrases = Array[String](["When you wake up, just remember: Friends are forever.", "Are you ready for Freddy?", "Round and round we go...Where we're going, Nobody knows!"])
+external_assets = {
+&"head_model": "",
+&"head_textures": []
+}

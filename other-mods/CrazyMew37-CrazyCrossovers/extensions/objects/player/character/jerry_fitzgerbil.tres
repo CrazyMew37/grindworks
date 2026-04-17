@@ -1,0 +1,70 @@
+[gd_resource type="Resource" script_class="PlayerCharacter" load_steps=16 format=3 uid="uid://d1px16ijme3ii"]
+
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="1_3ortv"]
+[ext_resource type="Script" uid="uid://o2fe7ud1faj6" path="res://objects/battle/battle_resources/stats.gd" id="2_pvpb0"]
+[ext_resource type="Script" uid="uid://c8kas2j4io1jh" path="res://objects/toon/clothing/toon_bottoms.gd" id="3_omtms"]
+[ext_resource type="Texture2D" uid="uid://v0n7tknvy2jk" path="res://models/toon/textures/clothes/shorts/desat_shorts_10_2.png" id="4_3ortv"]
+[ext_resource type="Script" uid="uid://yg7gxug4rab" path="res://objects/toon/toon_dna.gd" id="5_fkocs"]
+[ext_resource type="Script" uid="uid://dfqwh4jmdy0iw" path="res://objects/toon/clothing/toon_shirt.gd" id="6_yp20v"]
+[ext_resource type="Texture2D" uid="uid://ds50fd26knqlk" path="res://models/toon/textures/clothes/shirts/desat_shirt_11.png" id="7_pvpb0"]
+[ext_resource type="Texture2D" uid="uid://du51wgsc7p3by" path="res://models/toon/textures/clothes/shirts/desat_sleeve_15.png" id="8_c667h"]
+[ext_resource type="Resource" uid="uid://tyi7ukxtvcgc" path="res://objects/battle/battle_resources/gag_loadouts/loadouts/standard_loadout.tres" id="9_emat5"]
+[ext_resource type="Script" uid="uid://ts8xpgftpmty" path="res://objects/player/character.gd" id="10_sn2sh"]
+[ext_resource type="Resource" uid="uid://3argc25m4ln8" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/resources/active/freddy_mask.tres" id="11_c667h"]
+
+[sub_resource type="Resource" id="Resource_jj61k"]
+script = ExtResource("2_pvpb0")
+defense = 0.75
+evasiveness = 1.35
+speed = 1.1
+max_hp = 21
+hp = 21
+
+[sub_resource type="Resource" id="Resource_ugrs1"]
+script = ExtResource("3_omtms")
+texture = ExtResource("4_3ortv")
+base_color = Color(0.29803923, 0.29803923, 0.34901962, 1)
+
+[sub_resource type="Resource" id="Resource_2lryd"]
+script = ExtResource("6_yp20v")
+shirt_texture = ExtResource("7_pvpb0")
+sleeve_texture = ExtResource("8_c667h")
+base_color = Color(0.28627452, 0.32941177, 0.7254902, 1)
+sleeve_color = Color(0.28627452, 0.32941177, 0.7254902, 1)
+
+[sub_resource type="Resource" id="Resource_ax4gq"]
+script = ExtResource("5_fkocs")
+body_type = 1
+leg_type = 1
+species = 6
+eyelashes = false
+head_color = Color(0.5686275, 0.44705883, 0.16078432, 1)
+torso_color = Color(0.5686275, 0.44705883, 0.16078432, 1)
+leg_color = Color(0.5686275, 0.44705883, 0.16078432, 1)
+shirt = SubResource("Resource_2lryd")
+bottoms = SubResource("Resource_ugrs1")
+
+[resource]
+script = ExtResource("10_sn2sh")
+character_name = "Jerry Fitzgerbil"
+character_summary = "Starts with Freddy Mask
+Laff starts lower than usual
+Laff boosts go up by 1 less than usual"
+character_blurb = "A nightguard who works at Piccolo's Pizza. Due to his new summer job, he now must spend Five Nights at the Grindworks."
+dna = SubResource("Resource_ax4gq")
+gag_loadout = ExtResource("9_emat5")
+starting_laff = 21
+starting_items = Array[ExtResource("1_3ortv")]([ExtResource("11_c667h")])
+base_stats = SubResource("Resource_jj61k")
+starting_gags = Dictionary[String, int]({
+"Drop": 0,
+"Lure": 2,
+"Sound": 0,
+"Squirt": 0,
+"Throw": 1,
+"Trap": 0
+})
+additional_stats = Dictionary[String, Variant]({
+"laff_boost_boost": -1,
+"luck": 1.1
+})

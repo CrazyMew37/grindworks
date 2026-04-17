@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://cbakik4iwptbs"]
+
+[ext_resource type="PackedScene" uid="uid://bbrcfwwkp3uhk" path="res://models/props/gags/anvil/anvil.tscn" id="1_e1ivl"]
+[ext_resource type="PackedScene" uid="uid://c1o3q1hgrjs0y" path="res://models/props/toon_props/toy_hammer/toyHammer.glb" id="2_3tnpu"]
+[ext_resource type="PackedScene" uid="uid://co3207v4ro27k" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/rose.tscn" id="3_e1ivl"]
+
+[node name="anvil2" instance=ExtResource("1_e1ivl")]
+
+[node name="Skeleton3D" parent="anvil" index="0"]
+bones/0/rotation = Quaternion(-0.4976882, 0.50230116, -0.50230116, 0.4976882)
+
+[node name="anvil_uv" parent="anvil/Skeleton3D" index="0"]
+visible = false
+
+[node name="BoneAttachment3D" type="BoneAttachment3D" parent="anvil/Skeleton3D" index="1"]
+transform = Transform3D(-0.009225845, 0, 0.99995744, -0.99995744, 0, -0.009225816, 0, -1, 0, 0, 0, -0.788475)
+bone_name = "anvil_uv"
+bone_idx = 1
+
+[node name="toyHammer2" parent="anvil/Skeleton3D/BoneAttachment3D" index="0" instance=ExtResource("2_3tnpu")]
+transform = Transform3D(77.88, 0, 0, 0, 77.88, 0, 0, 0, 77.88, 0, 0, 0)
+
+[node name="monarch_butterfly" parent="anvil/Skeleton3D/BoneAttachment3D/toyHammer2" index="0" instance=ExtResource("3_e1ivl")]
+transform = Transform3D(5.999606, -0.06716826, 0.014809327, 0.03702399, 4.242479, 4.24264, -0.057966515, -4.24227, 4.2426147, -0.1011485, 1.0026771, -0.22551896)
+
+[node name="toyHammer" parent="anvil/Skeleton3D/BoneAttachment3D/toyHammer2" index="1"]
+transform = Transform3D(0, 0, 0, 0, 0, 0, 0, 0, 0, 0.0260749, 1.11997, -2.82618)
+
+[editable path="anvil/Skeleton3D/BoneAttachment3D/toyHammer2"]

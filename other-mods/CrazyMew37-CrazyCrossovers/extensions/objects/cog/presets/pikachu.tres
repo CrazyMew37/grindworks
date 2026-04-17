@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="CogDNA" load_steps=5 format=3 uid="uid://o7wxphly6yqp"]
+
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_m6fgi"]
+[ext_resource type="Resource" uid="uid://6hjcsu17tt4g" path="res://objects/battle/battle_resources/cog_attacks/resources/brain_storm.tres" id="2_hu8pr"]
+[ext_resource type="Resource" uid="uid://c27ek2anjbx88" path="res://objects/battle/battle_resources/cog_attacks/resources/pound_key.tres" id="3_m6fgi"]
+[ext_resource type="Script" uid="uid://yc46vrmyfql1" path="res://objects/cog/cog_dna.gd" id="5_pep3g"]
+
+[resource]
+script = ExtResource("5_pep3g")
+department = 3
+suit = 2
+custom_blazer_tex = "res://models/cogs/textures/slender/blazer.png"
+custom_arm_tex = "res://models/cogs/textures/slender/sleeve.png"
+custom_leg_tex = "res://models/cogs/textures/slender/leg.png"
+cog_name = "Pikachu"
+head = "res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/cogs/heads/pikachugrindworks.glb"
+scale = 2.5
+head_textures = PackedStringArray("res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/cogs/heads/pikachugrindworks_pm0025_00_BodyA1.png", "res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/cogs/heads/pikachugrindworks_pm0025_00_BodyB1.png", "res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/cogs/heads/pikachugrindworks_pm0025_00_Eye1.png", "res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/cogs/heads/pikachugrindworks_pm0025_00_Mouth1.png")
+hand_color = Color(0.9372549, 0.85490197, 0.46666667, 1)
+custom_nametag_height = 8.5
+can_speak = false
+attacks = Array[ExtResource("1_m6fgi")]([ExtResource("2_hu8pr"), ExtResource("3_m6fgi")])
+level_high = 20
+baked_status_effects = PackedStringArray("res://objects/battle/battle_resources/status_effects/resources/attentive.tres")
+is_admin = true
+health_mod = 1.5
+battle_phrases = Array[String](["Pikachu!", "Pika pika!", "Pika piii!"])
+external_assets = {
+&"head_model": "",
+&"head_textures": []
+}

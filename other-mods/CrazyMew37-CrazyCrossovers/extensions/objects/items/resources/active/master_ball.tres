@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="ItemActive" load_steps=6 format=3 uid="uid://dyipy7bd3udmb"]
+
+[ext_resource type="Texture2D" uid="uid://blii82ci0iokn" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/ui_assets/player_ui/pocket_prank_icons/master_ball.png" id="1_watnv"]
+[ext_resource type="Script" uid="uid://bdy1wbyyxsmtb" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/item_master_ball.gd" id="2_gx87t"]
+[ext_resource type="PackedScene" uid="uid://bbinf42kac0qt" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/objects/items/custom/master_ball.tscn" id="3_fic1f"]
+[ext_resource type="AudioStream" uid="uid://cbmigslfmehjq" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/audio/sfx/pokemonitem.ogg" id="4_y17fi"]
+[ext_resource type="Script" uid="uid://5uwfsntxdag6" path="res://objects/items/classes/item_active.gd" id="5_clws4"]
+
+[resource]
+script = ExtResource("5_clws4")
+active_type = 2
+charge_count = 12
+qualitoon = 4
+rarity = 6
+ui_cam_offset = 0.15
+item_name = "Master Ball"
+item_description = "Legendary items lie within!"
+big_description = "Releases a random item from a special chest."
+model = ExtResource("3_fic1f")
+pickup_sfx = ExtResource("4_y17fi")
+item_script = ExtResource("2_gx87t")
+icon = ExtResource("1_watnv")
+shop_category_title = "Pocket Prank"
+shop_category_color = Color(0.929412, 0.262745, 0.278431, 1)
+force_show_shop_category = true
+metadata/_custom_type_script = "uid://5uwfsntxdag6"

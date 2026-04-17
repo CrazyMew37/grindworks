@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cwmnsik8j70od"]
+
+[ext_resource type="PackedScene" uid="uid://citvrduiqawtm" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/accessories/krabbypatty.glb" id="1_s6avh"]
+
+[node name="monarch_butterfly" type="Node3D"]
+
+[node name="krabbypatty" parent="." instance=ExtResource("1_s6avh")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, -0.14, 0)
