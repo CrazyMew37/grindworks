@@ -73,8 +73,6 @@ func try_stomp() -> void:
 			await Task.delay(0.35)
 			%CogGears.emitting = false
 		Mole.NORMAL:
-			if not Util.get_player().get_collision_layer_value(Globals.HAZARD_COLLISION_LAYER):
-				return
 			AudioManager.play_sound(SFX_SURPRISE)
 			mole_surprised.show()
 			mole_norm.hide()
