@@ -7,7 +7,7 @@
 script = ExtResource("2_imu3d")
 signal_source = 1
 signal_name = "s_surprise_rolled"
-achievement_name = "Surprise!"
-achievement_summary = "Surpriiiiiise! You're lucky enough to get this Achievement!"
+achievement_name = "SURPRISE!"
+achievement_summary = "SURPRISE! You're lucky enough to get this achievement! (1 in 25k chance every in-game second)"
 achievement_index = 52
 achievement_icon = ExtResource("1_w4nh7")

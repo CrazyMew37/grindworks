@@ -38,9 +38,12 @@ func _process(delta: float) -> void:
 		ScoreTally.modify_score(ScoreTally.ChannelTimeBonus, -1)
 		if current_second >= 18000:
 			Globals.s_pilot_cap_time.emit()
-		if randi_range(1,100000) == 100000:
+		var roll_chance := randi_range(1,25000)
+		if roll_chance == 25000:
 			Globals.s_surprise_rolled.emit()
 			print("SURPRISE! :D")
+		else:
+			print(roll_chance)
 
 static func get_time_string(timef: float) -> String:
 	var time_string := "%s:%s:%s"
