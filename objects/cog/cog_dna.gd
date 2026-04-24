@@ -41,6 +41,7 @@ enum SuitType {
 @export var custom_nametag_height := 0.0
 @export var custom_nametag_suffix := ""
 @export var can_speak := true
+@export var suit_visible := true
 
 @export var attacks: Array[CogAttack]
 @export var level_low := 1
@@ -218,6 +219,7 @@ const ATTRIBUTE_LIST : Array[String] = [
 	"battle_phrases",
 	"external_assets",
 	"can_speak",
+	"suit_visible",
 ]
 const PATH_ATTRIBUTE_LIST : Array[String] = [
 	"custom_blazer_tex",

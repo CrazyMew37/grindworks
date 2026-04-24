@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="SignalAchievement" format=3 uid="uid://bir1feg2k0218"]
+
+[ext_resource type="Texture2D" uid="uid://dv8dk344an2q2" path="res://ui_assets/achievements/icon_achievement_endless_50.png" id="1_2rcae"]
+[ext_resource type="Script" uid="uid://bu0ypaddtve76" path="res://objects/save_file/achievements/signal_achievement.gd" id="2_x4pju"]
+
+[resource]
+script = ExtResource("2_x4pju")
+signal_source = 1
+signal_name = "s_floor_50_beat"
+achievement_name = "Dividend Aristocrat"
+achievement_summary = "Complete Floor 50."
+achievement_index = 45
+achievement_icon = ExtResource("1_2rcae")
+metadata/_custom_type_script = "uid://bu0ypaddtve76"

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="AchievementQuota" format=3 uid="uid://kqsp27h2xwhe"]
+
+[ext_resource type="Texture2D" uid="uid://b2ta00e0ljltx" path="res://ui_assets/achievements/icon_achievement_franz.png" id="1_cwyre"]
+[ext_resource type="Script" uid="uid://bma611yu4pdu8" path="res://objects/save_file/achievements/quota_achievement.gd" id="2_n41w7"]
+
+[resource]
+script = ExtResource("2_n41w7")
+progress_value = "boss_cogs_defeated"
+quota = 50
+signal_source = 2
+signal_name = "s_boss_died"
+achievement_name = "Do You Even Lift?"
+achievement_summary = "Unlocked Franz Neckvein."
+hint = "Preform some hostile takeovers."
+achievement_index = 50
+achievement_icon = ExtResource("1_cwyre")

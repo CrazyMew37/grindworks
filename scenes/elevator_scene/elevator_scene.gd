@@ -2,7 +2,7 @@ extends Node3D
 class_name ElevatorScene
 
 var FINAL_FLOOR_VARIANT: FloorVariant
-const ALT_FLOOR_CHANCE := 0.15
+const ALT_FLOOR_CHANCE := 0.2
 
 
 @onready var player_pos := $PlayerPosition
@@ -49,11 +49,32 @@ func _ready():
 	AudioManager.stop_music()
 	AudioManager.set_default_music(load('res://audio/music/beta_installer.ogg'))
 	
-	if Util.floor_number % 5 == 0:
+	if Util.floor_number > 4 && Util.floor_number % 5 == 0:
 		ItemService.seen_items.clear()
 	
 	if Util.floor_number > 5:
 		ScoreTally.modify_score(ScoreTally.ChannelTimeBonus, 900)
+		ScoreTally.modify_score(ScoreTally.ChannelEndless, (ScoreTally.ENDLESS_BONUS * Util.floor_number))
+	
+	# cheevo schenanigans
+	if Util.floor_number >= 10:
+		Globals.s_floor_10_beat.emit()
+	if Util.floor_number >= 15:
+		Globals.s_floor_15_bumpy.emit()
+	if Util.floor_number >= 20:
+		Globals.s_floor_20_beat.emit()
+	if Util.floor_number >= 25:
+		Globals.s_floor_25_beat.emit()
+	if Util.floor_number >= 35:
+		Globals.s_floor_35_beat.emit()
+	if Util.floor_number >= 50:
+		Globals.s_floor_50_beat.emit()
+	if Util.floor_number >= 65:
+		Globals.s_floor_65_beat.emit()
+	if Util.floor_number >= 75:
+		Globals.s_floor_75_beat.emit()
+	if Util.floor_number >= 100:
+		Globals.s_floor_100_beat.emit()
 	
 	# Save progress at every elevator scene
 	await Task.delay(0.1)
@@ -85,9 +106,8 @@ func start_game_floor(floor_var : FloorVariant) -> void:
 
 ## Selects 3 random floors to give to the player
 func get_next_floors() -> void:
-	if Util.floor_number > 4 && Util.floor_number & 5 == 0:
+	if Util.floor_number > 4 && Util.floor_number % 5 == 0:
 		final_boss_time_baby()
-		return
 	var floor_variants := Globals.FLOOR_VARIANTS
 	var taken_items: Array[String] = []
 	for i in 3:

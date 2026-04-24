@@ -41,7 +41,7 @@ _subresources={
 "materials": {
 "BQ_Fireplace_1": {
 "use_external/enabled": true,
-"use_external/fallback_path": "res://models/facilities/cgc/materials/slate.tres",
+"use_external/fallback_path": "res://objects/props/cgc/wall_plane_mat_top.tres",
 "use_external/path": "uid://cliv41wabcywl"
 },
 "Hedge": {

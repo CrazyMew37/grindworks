@@ -42,7 +42,7 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_4h1x7")
 
-[node name="panel" instance=ExtResource("1_mdjqb")]
+[node name="panel" unique_id=410107683 instance=ExtResource("1_mdjqb")]
 
 [node name="panel" parent="." index="0"]
 transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)

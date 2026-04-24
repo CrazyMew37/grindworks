@@ -37,162 +37,162 @@ _data = {
 }
 point_count = 3
 
-[node name="OfficePuzzleRoomButtons" instance=ExtResource("1_2ybtt")]
+[node name="OfficePuzzleRoomButtons" unique_id=2146795663 instance=ExtResource("1_2ybtt")]
 script = ExtResource("2_da5ke")
 
 [node name="Lights" parent="Z04a_ALL/Z04/lobby/room/geometry_lobby" index="4"]
 visible = false
 
-[node name="Props" type="Node3D" parent="." index="6"]
+[node name="Props" type="Node3D" parent="." index="6" unique_id=745005897]
 
-[node name="BookShelves" type="Node3D" parent="Props" index="0"]
+[node name="BookShelves" type="Node3D" parent="Props" index="0" unique_id=693023558]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 2.66349, 0, -16.9572)
 
-[node name="ExitShelves" type="Node3D" parent="Props/BookShelves" index="0"]
+[node name="ExitShelves" type="Node3D" parent="Props/BookShelves" index="0" unique_id=1328102966]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -1.33175, 0, 8.47861)
 
-[node name="ShelfRight" parent="Props/BookShelves/ExitShelves" index="0" instance=ExtResource("2_n2axc")]
+[node name="ShelfRight" parent="Props/BookShelves/ExitShelves" index="0" unique_id=2020781701 instance=ExtResource("2_n2axc")]
 unique_name_in_owner = true
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 2.663, 0.01, -16.957)
 
-[node name="ShelfRight" parent="Props/BookShelves/ExitShelves/ShelfRight" index="2" instance=ExtResource("2_n2axc")]
+[node name="ShelfRight" parent="Props/BookShelves/ExitShelves/ShelfRight" index="2" unique_id=1779763131 instance=ExtResource("2_n2axc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.91943, 0)
 
-[node name="ShelfLeft" parent="Props/BookShelves/ExitShelves" index="1" instance=ExtResource("2_n2axc")]
+[node name="ShelfLeft" parent="Props/BookShelves/ExitShelves" index="1" unique_id=373255145 instance=ExtResource("2_n2axc")]
 unique_name_in_owner = true
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -2.833, 0.01, -16.957)
 
-[node name="ShelfLeft" parent="Props/BookShelves/ExitShelves/ShelfLeft" index="2" instance=ExtResource("2_n2axc")]
+[node name="ShelfLeft" parent="Props/BookShelves/ExitShelves/ShelfLeft" index="2" unique_id=1692961383 instance=ExtResource("2_n2axc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.919, 0)
 
-[node name="law_bookshelf3" parent="Props/BookShelves/ExitShelves" index="2" instance=ExtResource("2_n2axc")]
+[node name="law_bookshelf3" parent="Props/BookShelves/ExitShelves" index="2" unique_id=1672963735 instance=ExtResource("2_n2axc")]
 transform = Transform3D(-8.74228e-08, 0, -2, 0, 2, 0, 2, 0, -8.74228e-08, -5.067, 0.01, -20.087)
 
-[node name="law_bookshelf4" parent="Props/BookShelves/ExitShelves" index="3" instance=ExtResource("2_n2axc")]
+[node name="law_bookshelf4" parent="Props/BookShelves/ExitShelves" index="3" unique_id=1335214217 instance=ExtResource("2_n2axc")]
 transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, 4.808, 0.01, -20.087)
 
-[node name="law_bookshelf5" parent="Props/BookShelves/ExitShelves" index="4" instance=ExtResource("2_n2axc")]
+[node name="law_bookshelf5" parent="Props/BookShelves/ExitShelves" index="4" unique_id=1865684229 instance=ExtResource("2_n2axc")]
 transform = Transform3D(-8.74228e-08, 0, -2, 0, 2, 0, 2, 0, -8.74228e-08, -5.06651, 3.903, -20.0872)
 
-[node name="law_bookshelf6" parent="Props/BookShelves/ExitShelves" index="5" instance=ExtResource("2_n2axc")]
+[node name="law_bookshelf6" parent="Props/BookShelves/ExitShelves" index="5" unique_id=1728561222 instance=ExtResource("2_n2axc")]
 transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, 4.80814, 3.903, -20.0865)
 
-[node name="law_bookshelf3" parent="Props/BookShelves" index="1" instance=ExtResource("2_n2axc")]
+[node name="law_bookshelf3" parent="Props/BookShelves" index="1" unique_id=1600008240 instance=ExtResource("2_n2axc")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4.06196, 0.00156999, 16.204)
 
-[node name="law_bookshelf4" parent="Props/BookShelves" index="2" instance=ExtResource("2_n2axc")]
+[node name="law_bookshelf4" parent="Props/BookShelves" index="2" unique_id=522152239 instance=ExtResource("2_n2axc")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4.06196, 0.00156999, 13.4928)
 
-[node name="law_bookshelf5" parent="Props/BookShelves" index="3" instance=ExtResource("2_n2axc")]
+[node name="law_bookshelf5" parent="Props/BookShelves" index="3" unique_id=239987879 instance=ExtResource("2_n2axc")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4.06196, 0.00156999, 10.7925)
 
-[node name="law_bookshelf6" parent="Props/BookShelves" index="4" instance=ExtResource("2_n2axc")]
+[node name="law_bookshelf6" parent="Props/BookShelves" index="4" unique_id=1976195000 instance=ExtResource("2_n2axc")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4.06196, 0.00156999, 8.08117)
 
-[node name="law_bookshelf7" parent="Props/BookShelves" index="5" instance=ExtResource("2_n2axc")]
+[node name="law_bookshelf7" parent="Props/BookShelves" index="5" unique_id=1434152141 instance=ExtResource("2_n2axc")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4.06196, 0.00156999, 5.33841)
 
-[node name="law_bookshelf8" parent="Props/BookShelves" index="6" instance=ExtResource("2_n2axc")]
+[node name="law_bookshelf8" parent="Props/BookShelves" index="6" unique_id=1174921 instance=ExtResource("2_n2axc")]
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 1.35668, 0.00156999, 5.35879)
 
-[node name="law_bookshelf9" parent="Props/BookShelves" index="7" instance=ExtResource("2_n2axc")]
+[node name="law_bookshelf9" parent="Props/BookShelves" index="7" unique_id=154939649 instance=ExtResource("2_n2axc")]
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 1.35668, 0.00156999, 8.07007)
 
-[node name="law_bookshelf10" parent="Props/BookShelves" index="8" instance=ExtResource("2_n2axc")]
+[node name="law_bookshelf10" parent="Props/BookShelves" index="8" unique_id=836775454 instance=ExtResource("2_n2axc")]
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 1.35668, 0.00156999, 10.7704)
 
-[node name="law_bookshelf11" parent="Props/BookShelves" index="9" instance=ExtResource("2_n2axc")]
+[node name="law_bookshelf11" parent="Props/BookShelves" index="9" unique_id=858305110 instance=ExtResource("2_n2axc")]
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 1.35668, 0.00156999, 13.4816)
 
-[node name="law_bookshelf12" parent="Props/BookShelves" index="10" instance=ExtResource("2_n2axc")]
+[node name="law_bookshelf12" parent="Props/BookShelves" index="10" unique_id=1424790425 instance=ExtResource("2_n2axc")]
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 1.35668, 0.00156999, 16.2244)
 
-[node name="law_bookshelf13" parent="Props/BookShelves" index="11" instance=ExtResource("2_n2axc")]
+[node name="law_bookshelf13" parent="Props/BookShelves" index="11" unique_id=1313348715 instance=ExtResource("2_n2axc")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4.06196, 1.87882, 16.204)
 
-[node name="law_bookshelf14" parent="Props/BookShelves" index="12" instance=ExtResource("2_n2axc")]
+[node name="law_bookshelf14" parent="Props/BookShelves" index="12" unique_id=1817108113 instance=ExtResource("2_n2axc")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4.06196, 1.87882, 13.4928)
 
-[node name="law_bookshelf15" parent="Props/BookShelves" index="13" instance=ExtResource("2_n2axc")]
+[node name="law_bookshelf15" parent="Props/BookShelves" index="13" unique_id=650892988 instance=ExtResource("2_n2axc")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4.06196, 1.87882, 10.7925)
 
-[node name="law_bookshelf16" parent="Props/BookShelves" index="14" instance=ExtResource("2_n2axc")]
+[node name="law_bookshelf16" parent="Props/BookShelves" index="14" unique_id=555647009 instance=ExtResource("2_n2axc")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4.06196, 1.87882, 8.08117)
 
-[node name="law_bookshelf24" parent="Props/BookShelves" index="15" instance=ExtResource("2_n2axc")]
+[node name="law_bookshelf24" parent="Props/BookShelves" index="15" unique_id=2144688620 instance=ExtResource("2_n2axc")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4.06196, 1.87882, 8.08117)
 
-[node name="law_bookshelf19" parent="Props/BookShelves" index="16" instance=ExtResource("2_n2axc")]
+[node name="law_bookshelf19" parent="Props/BookShelves" index="16" unique_id=1753423247 instance=ExtResource("2_n2axc")]
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 1.35668, 1.87882, 8.07007)
 
-[node name="law_bookshelf20" parent="Props/BookShelves" index="17" instance=ExtResource("2_n2axc")]
+[node name="law_bookshelf20" parent="Props/BookShelves" index="17" unique_id=885769456 instance=ExtResource("2_n2axc")]
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 1.35668, 1.87882, 10.7704)
 
-[node name="law_bookshelf21" parent="Props/BookShelves" index="18" instance=ExtResource("2_n2axc")]
+[node name="law_bookshelf21" parent="Props/BookShelves" index="18" unique_id=1931890755 instance=ExtResource("2_n2axc")]
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 1.35668, 1.87882, 13.4816)
 
-[node name="law_bookshelf22" parent="Props/BookShelves" index="19" instance=ExtResource("2_n2axc")]
+[node name="law_bookshelf22" parent="Props/BookShelves" index="19" unique_id=756967891 instance=ExtResource("2_n2axc")]
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 1.35668, 1.87882, 16.2244)
 
-[node name="law_bookshelf17" parent="Props/BookShelves" index="20" instance=ExtResource("2_n2axc")]
+[node name="law_bookshelf17" parent="Props/BookShelves" index="20" unique_id=575228672 instance=ExtResource("2_n2axc")]
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 8.53351, 0.00156999, 5.89466)
 
-[node name="law_bookshelf18" parent="Props/BookShelves" index="21" instance=ExtResource("2_n2axc")]
+[node name="law_bookshelf18" parent="Props/BookShelves" index="21" unique_id=1496503882 instance=ExtResource("2_n2axc")]
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 8.53351, 0.00156999, 8.59496)
 
-[node name="law_bookshelf23" parent="Props/BookShelves" index="22" instance=ExtResource("2_n2axc")]
+[node name="law_bookshelf23" parent="Props/BookShelves" index="22" unique_id=1723237802 instance=ExtResource("2_n2axc")]
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 1.35668, 1.87882, 5.40757)
 
-[node name="Partitions" type="Node3D" parent="Props" index="1"]
+[node name="Partitions" type="Node3D" parent="Props" index="1" unique_id=1170952712]
 
-[node name="partition" parent="Props/Partitions" index="0" instance=ExtResource("4_sqxq4")]
+[node name="partition" parent="Props/Partitions" index="0" unique_id=2110324342 instance=ExtResource("4_sqxq4")]
 transform = Transform3D(-2.21, 3.4729e-07, -1.51805e-14, 0, -1.00536e-07, -2.3, -3.33701e-07, -2.3, 1.00536e-07, -0.06, 4.052, 18.318)
 
 [node name="Partition_A_Shadow" parent="Props/Partitions/partition/PartitionA/Panel" index="1"]
 visible = false
 
-[node name="partition2" parent="Props/Partitions" index="1" instance=ExtResource("4_sqxq4")]
+[node name="partition2" parent="Props/Partitions" index="1" unique_id=1247622976 instance=ExtResource("4_sqxq4")]
 transform = Transform3D(-2.21, 3.4729e-07, -1.51805e-14, 0, -1.00536e-07, -2.3, -3.33701e-07, -2.3, 1.00536e-07, -0.06, 4.052, 8.90423)
 
 [node name="Partition_A_Shadow" parent="Props/Partitions/partition2/PartitionA/Panel" index="1"]
 visible = false
 
-[node name="partition3" parent="Props/Partitions" index="2" instance=ExtResource("4_sqxq4")]
+[node name="partition3" parent="Props/Partitions" index="2" unique_id=1140038881 instance=ExtResource("4_sqxq4")]
 transform = Transform3D(-2.21, 3.05767e-07, -1.51805e-14, 0, -8.85156e-08, -2.3, -3.33701e-07, -2.025, 1.00536e-07, -0.06, 4.052, -0.44384)
 
 [node name="Partition_A_Shadow" parent="Props/Partitions/partition3/PartitionA/Panel" index="1"]
 visible = false
 
-[node name="partition4" parent="Props/Partitions" index="3" instance=ExtResource("4_sqxq4")]
+[node name="partition4" parent="Props/Partitions" index="3" unique_id=1856537591 instance=ExtResource("4_sqxq4")]
 transform = Transform3D(2.3, -6.35731e-10, 7.50295e-15, 0, -4.37114e-10, -2.7, 1.46218e-07, 0.01, -1.18021e-07, -0.06, 4.052, 18.1615)
 
 [node name="Partition_A_Shadow" parent="Props/Partitions/partition4/PartitionA/Panel" index="1"]
 visible = false
 
-[node name="potted_plant" parent="Props" index="2" instance=ExtResource("5_13lqp")]
+[node name="potted_plant" parent="Props" index="2" unique_id=1035657985 instance=ExtResource("5_13lqp")]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -7.09225, 0, -21.7387)
 
-[node name="potted_plant2" parent="Props" index="3" instance=ExtResource("5_13lqp")]
+[node name="potted_plant2" parent="Props" index="3" unique_id=181846042 instance=ExtResource("5_13lqp")]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 6.71109, 0, -21.7387)
 
-[node name="couch" parent="Props" index="4" instance=ExtResource("9_jolga")]
+[node name="couch" parent="Props" index="4" unique_id=421482226 instance=ExtResource("9_jolga")]
 transform = Transform3D(0.0104937, 0, -1.24996, 0, 1.25, 0, 1.24996, 0, 0.0104937, -6.763, 0.01, -3.747)
 
-[node name="cardboard_box" parent="Props" index="5" instance=ExtResource("10_pakhv")]
+[node name="cardboard_box" parent="Props" index="5" unique_id=1040704460 instance=ExtResource("10_pakhv")]
 transform = Transform3D(1.25, 0, 0, 0, 1.25, 0, 0, 0, 1.25, -5.697, 0.01, -10.242)
 
-[node name="paper_twist_stacks" parent="Props/cardboard_box" index="1" instance=ExtResource("8_yagrr")]
+[node name="paper_twist_stacks" parent="Props/cardboard_box" index="1" unique_id=58130044 instance=ExtResource("8_yagrr")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.428023, 1.67317, 0.555266)
 
-[node name="cardboard_box2" parent="Props" index="6" instance=ExtResource("10_pakhv")]
+[node name="cardboard_box2" parent="Props" index="6" unique_id=1733007602 instance=ExtResource("10_pakhv")]
 transform = Transform3D(0.749997, 0, -0.00219912, 0, 0.75, 0, 0.00219912, 0, 0.749997, -5.687, 0.01, -12.316)
 
-[node name="Goons" type="Node3D" parent="." index="7"]
+[node name="Goons" type="Node3D" parent="." index="7" unique_id=1530201366]
 
-[node name="PuzzleOrigin" type="Node3D" parent="." index="8"]
+[node name="PuzzleOrigin" type="Node3D" parent="." index="8" unique_id=1758685556]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -12.975)
 
-[node name="ButtonPuzzle" type="Node3D" parent="PuzzleOrigin" index="0"]
+[node name="ButtonPuzzle" type="Node3D" parent="PuzzleOrigin" index="0" unique_id=1603259648]
 unique_name_in_owner = true
 transform = Transform3D(-1.9, 0, -1.66103e-07, 0, 1.9, 0, 1.66103e-07, 0, -1.9, 2.634, 0, -0.794)
 script = ExtResource("4_h11t0")
@@ -202,73 +202,73 @@ beam_origin = Vector3(0, 4.67, 0)
 lose_type = 2
 explosion_damage = 0
 
-[node name="Buttons" type="Node3D" parent="PuzzleOrigin" index="1"]
+[node name="Buttons" type="Node3D" parent="PuzzleOrigin" index="1" unique_id=1184144767]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.603673, 0, 2.23145)
 
-[node name="ButtonRed" parent="PuzzleOrigin/Buttons" index="0" instance=ExtResource("6_u4pq0")]
+[node name="ButtonRed" parent="PuzzleOrigin/Buttons" index="0" unique_id=1511262947 instance=ExtResource("6_u4pq0")]
 transform = Transform3D(-1.425, 0, -1.24577e-07, 0, 1.425, 0, 1.24577e-07, 0, -1.425, -8.72329, 2.38419e-07, 21.8434)
 retract_time = 2.0
 
-[node name="ButtonYellow" parent="PuzzleOrigin/Buttons" index="1" instance=ExtResource("6_u4pq0")]
+[node name="ButtonYellow" parent="PuzzleOrigin/Buttons" index="1" unique_id=1925285658 instance=ExtResource("6_u4pq0")]
 transform = Transform3D(-1.425, 0, -1.24577e-07, 0, 1.425, 0, 1.24577e-07, 0, -1.425, -0.53502, 4.40252, 26.817)
 up_color = Color(1, 1, 0, 1)
 retract_time = 2.0
 
-[node name="ButtonBlue" parent="PuzzleOrigin/Buttons" index="2" instance=ExtResource("6_u4pq0")]
+[node name="ButtonBlue" parent="PuzzleOrigin/Buttons" index="2" unique_id=1582153749 instance=ExtResource("6_u4pq0")]
 transform = Transform3D(-1.425, 0, -1.24577e-07, 0, 1.425, 0, 1.24577e-07, 0, -1.425, 11.7813, 0, 17.6155)
 up_color = Color(0.301961, 0.301961, 1, 1)
 retract_time = 2.0
 
-[node name="PuzzleCam" type="Camera3D" parent="PuzzleOrigin" index="2"]
+[node name="PuzzleCam" type="Camera3D" parent="PuzzleOrigin" index="2" unique_id=1721587550]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.01, 2.145)
 fov = 52.0
 
-[node name="ButtonPlacements" type="Node3D" parent="PuzzleOrigin" index="3"]
+[node name="ButtonPlacements" type="Node3D" parent="PuzzleOrigin" index="3" unique_id=985256315]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.603673, 0, 2.23145)
 
-[node name="Placement1" type="Node3D" parent="PuzzleOrigin/ButtonPlacements" index="0"]
+[node name="Placement1" type="Node3D" parent="PuzzleOrigin/ButtonPlacements" index="0" unique_id=1686392197]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.72329, 2.38419e-07, 21.8434)
 
-[node name="Placement2" type="Node3D" parent="PuzzleOrigin/ButtonPlacements" index="1"]
+[node name="Placement2" type="Node3D" parent="PuzzleOrigin/ButtonPlacements" index="1" unique_id=1125087217]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.53502, 4.40252, 26.817)
 
-[node name="Placement3" type="Node3D" parent="PuzzleOrigin/ButtonPlacements" index="2"]
+[node name="Placement3" type="Node3D" parent="PuzzleOrigin/ButtonPlacements" index="2" unique_id=339654175]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.7813, 0, 17.6155)
 
-[node name="ObstacleGavels" type="Node3D" parent="." index="9"]
+[node name="ObstacleGavels" type="Node3D" parent="." index="9" unique_id=1334892248]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.5118, 0, -0.790262)
 
-[node name="GavelObstacle" parent="ObstacleGavels" index="0" instance=ExtResource("12_cq52s")]
+[node name="GavelObstacle" parent="ObstacleGavels" index="0" unique_id=115441884 instance=ExtResource("12_cq52s")]
 transform = Transform3D(1.31754, 0, 1.50469, 0, 2, 0, -1.50469, 0, 1.31754, -3.02996, 4.76837e-07, -8.92075)
 speed = 2.0
 
-[node name="GavelObstacle2" parent="ObstacleGavels" index="1" instance=ExtResource("12_cq52s")]
+[node name="GavelObstacle2" parent="ObstacleGavels" index="1" unique_id=1550882812 instance=ExtResource("12_cq52s")]
 transform = Transform3D(-1.61382, 0, -1.18135, 0, 2, 0, 1.18135, 0, -1.61382, 6.95185, -9.53674e-07, 1.58356)
 speed = 2.0
 delay = 1.33
 
-[node name="GavelObstacle3" parent="ObstacleGavels" index="2" instance=ExtResource("12_cq52s")]
+[node name="GavelObstacle3" parent="ObstacleGavels" index="2" unique_id=724218408 instance=ExtResource("12_cq52s")]
 transform = Transform3D(-8.74228e-08, 0, -2, 0, 2, 0, 2, 0, -8.74228e-08, -0.313445, 1.43051e-06, -0.707844)
 speed = 2.0
 delay = 0.66
 
-[node name="GavelObstacle4" parent="ObstacleGavels" index="3" instance=ExtResource("12_cq52s")]
+[node name="GavelObstacle4" parent="ObstacleGavels" index="3" unique_id=727866139 instance=ExtResource("12_cq52s")]
 transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, -0.328341, 9.53674e-07, 2.55203)
 speed = 2.0
 delay = 2.0
 
-[node name="GavelObstacle5" parent="ObstacleGavels" index="4" instance=ExtResource("12_cq52s")]
+[node name="GavelObstacle5" parent="ObstacleGavels" index="4" unique_id=1346316517 instance=ExtResource("12_cq52s")]
 transform = Transform3D(-1.195, 0, -1.60374, 0, 2, 0, 1.60374, 0, -1.195, 1.27501, -4.76837e-07, 8.07133)
 speed = 2.0
 delay = 2.66
 
-[node name="LaserPuzzle" type="Node3D" parent="." index="10"]
+[node name="LaserPuzzle" type="Node3D" parent="." index="10" unique_id=1951924386]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.7889, 0, -2.34602)
 
-[node name="LawbotSkullBounce" type="Node3D" parent="LaserPuzzle" index="0" node_paths=PackedStringArray("lose_battle")]
+[node name="LawbotSkullBounce" type="Node3D" parent="LaserPuzzle" index="0" unique_id=619573994 node_paths=PackedStringArray("lose_battle")]
 unique_name_in_owner = true
 transform = Transform3D(1.9, 0, 0, 0, 1.9, 0, 0, 0, 1.9, -8.943, 0, -7.35)
 script = ExtResource("13_6wyo6")
@@ -279,7 +279,7 @@ beam_origin = Vector3(0, 5.14, 0)
 lose_battle = NodePath("../BattleNode")
 explosion_damage = 0
 
-[node name="BattleNode" parent="LaserPuzzle" index="1" node_paths=PackedStringArray("cogs") instance=ExtResource("14_qksww")]
+[node name="BattleNode" parent="LaserPuzzle" index="1" unique_id=314831438 node_paths=PackedStringArray("cogs") instance=ExtResource("14_qksww")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.31152, 0, 1.16323)
 visible = false
 tags = Array[int]([1, 2])
@@ -287,51 +287,51 @@ cogs = [NodePath("Cog"), NodePath("Cog2"), NodePath("Cog3")]
 override_intro = SubResource("Resource_5vlwh")
 item_pool = null
 
-[node name="Cog" parent="LaserPuzzle/BattleNode" index="3" instance=ExtResource("15_xmp38")]
+[node name="Cog" parent="LaserPuzzle/BattleNode" index="3" unique_id=881422654 instance=ExtResource("15_xmp38")]
 transform = Transform3D(0.144114, 0, 0.989561, 0, 1, 0, -0.989561, 0, 0.144114, -3.88438, 0, 0.342433)
 skelecog = true
 virtual_cog = true
 
-[node name="Cog2" parent="LaserPuzzle/BattleNode" index="4" instance=ExtResource("15_xmp38")]
+[node name="Cog2" parent="LaserPuzzle/BattleNode" index="4" unique_id=412401685 instance=ExtResource("15_xmp38")]
 transform = Transform3D(-0.159847, 0, -0.987142, 0, 1, 0, 0.987142, 0, -0.159847, 2.13063, 0, -3.77463)
 skelecog = true
 virtual_cog = true
 
-[node name="Cog3" parent="LaserPuzzle/BattleNode" index="5" instance=ExtResource("15_xmp38")]
+[node name="Cog3" parent="LaserPuzzle/BattleNode" index="5" unique_id=78693759 instance=ExtResource("15_xmp38")]
 transform = Transform3D(0.756333, 0, 0.654187, 0, 1, 0, -0.654187, 0, 0.756333, 1.68219, 0, 4.11621)
 skelecog = true
 virtual_cog = true
 
-[node name="SpotlightObstacle" type="Node3D" parent="." index="11"]
+[node name="SpotlightObstacle" type="Node3D" parent="." index="11" unique_id=992278575]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.99738, 0)
 
-[node name="Spotlight" parent="SpotlightObstacle" index="0" node_paths=PackedStringArray("light_path") instance=ExtResource("14_v3dpk")]
+[node name="Spotlight" parent="SpotlightObstacle" index="0" unique_id=923776464 node_paths=PackedStringArray("light_path") instance=ExtResource("14_v3dpk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.56425, 8.63707, -1.38754)
 light_path = NodePath("Path3D")
 
-[node name="Path3D" type="Path3D" parent="SpotlightObstacle/Spotlight" index="6"]
+[node name="Path3D" type="Path3D" parent="SpotlightObstacle/Spotlight" index="6" unique_id=1451177899]
 curve = SubResource("Curve3D_0dvft")
 
-[node name="Spotlight2" parent="SpotlightObstacle" index="1" node_paths=PackedStringArray("light_path") instance=ExtResource("14_v3dpk")]
+[node name="Spotlight2" parent="SpotlightObstacle" index="1" unique_id=1196813305 node_paths=PackedStringArray("light_path") instance=ExtResource("14_v3dpk")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.32404, 4.60468, 11.7933)
 light_path = NodePath("Path3D")
 
-[node name="Path3D" type="Path3D" parent="SpotlightObstacle/Spotlight2" index="6"]
+[node name="Path3D" type="Path3D" parent="SpotlightObstacle/Spotlight2" index="6" unique_id=47315405]
 curve = SubResource("Curve3D_veor2")
 
-[node name="Treasure" type="Node3D" parent="." index="12"]
+[node name="Treasure" type="Node3D" parent="." index="12" unique_id=1754668604]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -21.5465)
 
-[node name="treasure_chest" parent="Treasure" index="0" instance=ExtResource("17_ai4cd")]
+[node name="treasure_chest" parent="Treasure" index="0" unique_id=1336652163 instance=ExtResource("17_ai4cd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.36889, 0, -0.291237)
 item_pool = ExtResource("18_awjot")
 
-[node name="treasure_chest2" parent="Treasure" index="1" instance=ExtResource("17_ai4cd")]
+[node name="treasure_chest2" parent="Treasure" index="1" unique_id=30847935 instance=ExtResource("17_ai4cd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.06481, 0, -0.291237)
 override_replacement_rolls = true
 item_pool = ExtResource("18_awjot")
 
-[node name="PrankCharger" type="Node" parent="." index="13" node_paths=PackedStringArray("signals")]
+[node name="PrankCharger" type="Node" parent="." index="13" unique_id=1916771682 node_paths=PackedStringArray("signals")]
 script = ExtResource("19_2np8l")
 signals = {
 NodePath(".."): "s_door_unlocked"

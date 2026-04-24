@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://c6hv0e7cfbksd"]
+
+[ext_resource type="PackedScene" uid="uid://braufviy14t8b" path="res://models/props/cog_props/rubber_stamp/rubber_stamp.glb" id="1_nqia0"]
+
+[node name="stamp_pad" type="Node3D" unique_id=1274986406]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 0, 0)
+
+[node name="rubber_stamp2" parent="." unique_id=114181937 instance=ExtResource("1_nqia0")]
+transform = Transform3D(0.13, 0, 0, 0, -5.6824803e-09, 0.13, 0, -0.13, -5.6824803e-09, 0.06697317, 0.16, -0.04)

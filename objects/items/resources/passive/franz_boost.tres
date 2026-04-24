@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://bp4kgcoy1sr5q"]
+
+[ext_resource type="Script" uid="uid://dc1qlrq1wokrr" path="res://objects/items/custom/item_franz_boost.gd" id="1_pkbiv"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="2_ie06x"]
+
+[resource]
+script = ExtResource("2_ie06x")
+item_name = "Franz Setup"
+item_script = ExtResource("1_pkbiv")
+shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)
+metadata/_custom_type_script = "uid://combwqypom1ru"

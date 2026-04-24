@@ -736,6 +736,8 @@ func finder_player_stepped_on(panel: PuzzlePanel) -> void:
 		finder_current_row = get_panel_coords(panel).y
 		s_finder_row_reached.emit(finder_current_row)
 	
+	# if we won the game normally, don't check for full clear
+	if not phase == BossPhase.SKULLFINDER: return
 	# Check for full clear
 	for pnl in get_all_panels():
 		if pnl.panel_shape == PuzzlePanel.PanelShape.SQUARE:

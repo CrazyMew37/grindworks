@@ -93,289 +93,289 @@
 [ext_resource type="PackedScene" uid="uid://i3nhmwxwps3u" path="res://models/accessories/hats/witch_hat/tt_m_chr_avt_acc_hat_witch.glb" id="92_nln1o"]
 [ext_resource type="PackedScene" uid="uid://cptq800nj8gtv" path="res://models/accessories/hats/wizard_hat/tt_m_chr_avt_acc_hat_wizard.glb" id="93_jkn4m"]
 
-[node name="AccessoryTest" type="Node3D"]
+[node name="AccessoryTest" type="Node3D" unique_id=186515606]
 
-[node name="Hats" type="Node3D" parent="."]
+[node name="Hats" type="Node3D" parent="." unique_id=761678518]
 
-[node name="tt_m_chr_avt_acc_hat_spiderAntennaThingy" parent="Hats" instance=ExtResource("46_j5u3s")]
+[node name="tt_m_chr_avt_acc_hat_spiderAntennaThingy" parent="Hats" unique_id=2068796234 instance=ExtResource("46_j5u3s")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_anvil" parent="Hats" instance=ExtResource("47_pommq")]
+[node name="tt_m_chr_avt_acc_hat_anvil" parent="Hats" unique_id=78901406 instance=ExtResource("47_pommq")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_robinHoodHat" parent="Hats" instance=ExtResource("48_qckpl")]
+[node name="tt_m_chr_avt_acc_hat_robinHoodHat" parent="Hats" unique_id=1732441837 instance=ExtResource("48_qckpl")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_bandana" parent="Hats" instance=ExtResource("49_bwsgw")]
+[node name="tt_m_chr_avt_acc_hat_bandana" parent="Hats" unique_id=987476577 instance=ExtResource("49_bwsgw")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_band" parent="Hats" instance=ExtResource("50_ombro")]
+[node name="tt_m_chr_avt_acc_hat_band" parent="Hats" unique_id=1511677244 instance=ExtResource("50_ombro")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_baseball" parent="Hats" instance=ExtResource("51_2iipd")]
+[node name="tt_m_chr_avt_acc_hat_baseball" parent="Hats" unique_id=322880445 instance=ExtResource("51_2iipd")]
 
-[node name="tt_m_chr_avt_acc_hat_beeHiveHairdo" parent="Hats" instance=ExtResource("52_amxau")]
+[node name="tt_m_chr_avt_acc_hat_beeHiveHairdo" parent="Hats" unique_id=1765655955 instance=ExtResource("52_amxau")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_birdNest" parent="Hats" instance=ExtResource("53_fuhi1")]
+[node name="tt_m_chr_avt_acc_hat_birdNest" parent="Hats" unique_id=1218062512 instance=ExtResource("53_fuhi1")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_bowler" parent="Hats" instance=ExtResource("54_c375n")]
+[node name="tt_m_chr_avt_acc_hat_bowler" parent="Hats" unique_id=1168661154 instance=ExtResource("54_c375n")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_chefsHat" parent="Hats" instance=ExtResource("55_re6vt")]
+[node name="tt_m_chr_avt_acc_hat_chefsHat" parent="Hats" unique_id=619404611 instance=ExtResource("55_re6vt")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_mickeysBandConductorHat" parent="Hats" instance=ExtResource("56_11goh")]
+[node name="tt_m_chr_avt_acc_hat_mickeysBandConductorHat" parent="Hats" unique_id=527885115 instance=ExtResource("56_11goh")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_cowboyHat" parent="Hats" instance=ExtResource("58_a0hnq")]
+[node name="tt_m_chr_avt_acc_hat_cowboyHat" parent="Hats" unique_id=815736971 instance=ExtResource("58_a0hnq")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_crown" parent="Hats" instance=ExtResource("59_hajmd")]
+[node name="tt_m_chr_avt_acc_hat_crown" parent="Hats" unique_id=41546402 instance=ExtResource("59_hajmd")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_detective" parent="Hats" instance=ExtResource("60_nfpo6")]
+[node name="tt_m_chr_avt_acc_hat_detective" parent="Hats" unique_id=383593571 instance=ExtResource("60_nfpo6")]
 visible = false
 
-[node name="fedora" parent="Hats" instance=ExtResource("61_fvtp0")]
+[node name="fedora" parent="Hats" unique_id=487661122 instance=ExtResource("61_fvtp0")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_fez" parent="Hats" instance=ExtResource("62_rbowi")]
+[node name="tt_m_chr_avt_acc_hat_fez" parent="Hats" unique_id=1321353479 instance=ExtResource("62_rbowi")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_firefighterHelmet" parent="Hats" instance=ExtResource("63_fqrqp")]
+[node name="tt_m_chr_avt_acc_hat_firefighterHelmet" parent="Hats" unique_id=598405181 instance=ExtResource("63_fqrqp")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_fishingHat" parent="Hats" instance=ExtResource("64_8wejc")]
+[node name="tt_m_chr_avt_acc_hat_fishingHat" parent="Hats" unique_id=324485634 instance=ExtResource("64_8wejc")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_flowerPot" parent="Hats" instance=ExtResource("65_vq7bf")]
+[node name="tt_m_chr_avt_acc_hat_flowerPot" parent="Hats" unique_id=1911704645 instance=ExtResource("65_vq7bf")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_foilPyramid2" parent="Hats" instance=ExtResource("66_rih0n")]
+[node name="tt_m_chr_avt_acc_hat_foilPyramid2" parent="Hats" unique_id=1085627986 instance=ExtResource("66_rih0n")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_carmenMirandaFruitHat" parent="Hats" instance=ExtResource("67_sah6x")]
+[node name="tt_m_chr_avt_acc_hat_carmenMirandaFruitHat" parent="Hats" unique_id=348875628 instance=ExtResource("67_sah6x")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_golfHat" parent="Hats" instance=ExtResource("68_dvulx")]
+[node name="tt_m_chr_avt_acc_hat_golfHat" parent="Hats" unique_id=1526681311 instance=ExtResource("68_dvulx")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_minersHardhatWithLight2" parent="Hats" instance=ExtResource("69_gmyco")]
+[node name="tt_m_chr_avt_acc_hat_minersHardhatWithLight2" parent="Hats" unique_id=659494032 instance=ExtResource("69_gmyco")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_heart" parent="Hats" instance=ExtResource("70_77ak1")]
+[node name="tt_m_chr_avt_acc_hat_heart" parent="Hats" unique_id=368390352 instance=ExtResource("70_77ak1")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_jugheadHat" parent="Hats" instance=ExtResource("71_q3uvb")]
+[node name="tt_m_chr_avt_acc_hat_jugheadHat" parent="Hats" unique_id=1659393158 instance=ExtResource("71_q3uvb")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_napoleonHat2" parent="Hats" instance=ExtResource("72_5f0g6")]
+[node name="tt_m_chr_avt_acc_hat_napoleonHat2" parent="Hats" unique_id=644869070 instance=ExtResource("72_5f0g6")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_partyHat" parent="Hats" instance=ExtResource("73_s5gb7")]
+[node name="tt_m_chr_avt_acc_hat_partyHat" parent="Hats" unique_id=1243773075 instance=ExtResource("73_s5gb7")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_pilotsCap" parent="Hats" instance=ExtResource("74_g3bhj")]
+[node name="tt_m_chr_avt_acc_hat_pilotsCap" parent="Hats" unique_id=124763292 instance=ExtResource("74_g3bhj")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_ribbon" parent="Hats" instance=ExtResource("75_25r8o")]
+[node name="tt_m_chr_avt_acc_hat_ribbon" parent="Hats" unique_id=827022032 instance=ExtResource("75_25r8o")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_pirateHat" parent="Hats" instance=ExtResource("76_7dadf")]
+[node name="tt_m_chr_avt_acc_hat_pirateHat" parent="Hats" unique_id=945730868 instance=ExtResource("76_7dadf")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_policeHat" parent="Hats" instance=ExtResource("77_d1ga0")]
+[node name="tt_m_chr_avt_acc_hat_policeHat" parent="Hats" unique_id=211668913 instance=ExtResource("77_d1ga0")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_pompadorHairdo" parent="Hats" instance=ExtResource("78_us4w0")]
+[node name="tt_m_chr_avt_acc_hat_pompadorHairdo" parent="Hats" unique_id=1223701968 instance=ExtResource("78_us4w0")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_princess" parent="Hats" instance=ExtResource("79_i7u03")]
+[node name="tt_m_chr_avt_acc_hat_princess" parent="Hats" unique_id=2020921573 instance=ExtResource("79_i7u03")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_propellerHat" parent="Hats" instance=ExtResource("80_b4pco")]
+[node name="tt_m_chr_avt_acc_hat_propellerHat" parent="Hats" unique_id=1761527170 instance=ExtResource("80_b4pco")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_rainbowAfroWig2" parent="Hats" instance=ExtResource("81_pvbu7")]
+[node name="tt_m_chr_avt_acc_hat_rainbowAfroWig2" parent="Hats" unique_id=690638984 instance=ExtResource("81_pvbu7")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_romanHelmet" parent="Hats" instance=ExtResource("82_ao34d")]
+[node name="tt_m_chr_avt_acc_hat_romanHelmet" parent="Hats" unique_id=862405905 instance=ExtResource("82_ao34d")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_safari" parent="Hats" instance=ExtResource("83_wulvn")]
+[node name="tt_m_chr_avt_acc_hat_safari" parent="Hats" unique_id=1340872024 instance=ExtResource("83_wulvn")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_sailorHat2" parent="Hats" instance=ExtResource("84_u8s1a")]
+[node name="tt_m_chr_avt_acc_hat_sailorHat2" parent="Hats" unique_id=1581006010 instance=ExtResource("84_u8s1a")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_sandbag" parent="Hats" instance=ExtResource("85_vu1ce")]
+[node name="tt_m_chr_avt_acc_hat_sandbag" parent="Hats" unique_id=112266972 instance=ExtResource("85_vu1ce")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_tiara" parent="Hats" instance=ExtResource("86_e2f4o")]
+[node name="tt_m_chr_avt_acc_hat_tiara" parent="Hats" unique_id=2096175646 instance=ExtResource("86_e2f4o")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_dinosaur" parent="Hats" instance=ExtResource("87_j8o0d")]
+[node name="tt_m_chr_avt_acc_hat_dinosaur" parent="Hats" unique_id=1526109688 instance=ExtResource("87_j8o0d")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_topHat" parent="Hats" instance=ExtResource("88_fxuyj")]
+[node name="tt_m_chr_avt_acc_hat_topHat" parent="Hats" unique_id=1859443827 instance=ExtResource("88_fxuyj")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_vikingHelmet" parent="Hats" instance=ExtResource("89_nrw58")]
+[node name="tt_m_chr_avt_acc_hat_vikingHelmet" parent="Hats" unique_id=711351736 instance=ExtResource("89_nrw58")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_weight" parent="Hats" instance=ExtResource("90_0f7cg")]
+[node name="tt_m_chr_avt_acc_hat_weight" parent="Hats" unique_id=2104539541 instance=ExtResource("90_0f7cg")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_winter" parent="Hats" instance=ExtResource("91_lrihl")]
+[node name="tt_m_chr_avt_acc_hat_winter" parent="Hats" unique_id=842374558 instance=ExtResource("91_lrihl")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_witch" parent="Hats" instance=ExtResource("92_nln1o")]
+[node name="tt_m_chr_avt_acc_hat_witch" parent="Hats" unique_id=25442456 instance=ExtResource("92_nln1o")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_hat_wizard" parent="Hats" instance=ExtResource("93_jkn4m")]
+[node name="tt_m_chr_avt_acc_hat_wizard" parent="Hats" unique_id=689122153 instance=ExtResource("93_jkn4m")]
 visible = false
 
-[node name="Glasses" type="Node3D" parent="."]
+[node name="Glasses" type="Node3D" parent="." unique_id=449469076]
 visible = false
 
-[node name="tt_m_chr_avt_acc_msk_3dGlasses" parent="Glasses" instance=ExtResource("26_wp7ia")]
+[node name="tt_m_chr_avt_acc_msk_3dGlasses" parent="Glasses" unique_id=345005126 instance=ExtResource("26_wp7ia")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000139236, -0.0132494, -0.000120163)
 visible = false
 
-[node name="tt_m_chr_avt_acc_msk_alienGlasses" parent="Glasses" instance=ExtResource("27_v53kn")]
+[node name="tt_m_chr_avt_acc_msk_alienGlasses" parent="Glasses" unique_id=378604240 instance=ExtResource("27_v53kn")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_msk_aviator" parent="Glasses" instance=ExtResource("28_5flwa")]
+[node name="tt_m_chr_avt_acc_msk_aviator" parent="Glasses" unique_id=1753380047 instance=ExtResource("28_5flwa")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_msk_catEyeGlasses" parent="Glasses" instance=ExtResource("29_gvd4l")]
+[node name="tt_m_chr_avt_acc_msk_catEyeGlasses" parent="Glasses" unique_id=368909888 instance=ExtResource("29_gvd4l")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_msk_jackieOShades" parent="Glasses" instance=ExtResource("30_ruvok")]
+[node name="tt_m_chr_avt_acc_msk_jackieOShades" parent="Glasses" unique_id=1093390564 instance=ExtResource("30_ruvok")]
 visible = false
 
-[node name="dork_glasses" parent="Glasses" instance=ExtResource("31_4q31e")]
+[node name="dork_glasses" parent="Glasses" unique_id=2070179918 instance=ExtResource("31_4q31e")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_msk_eyepatch" parent="Glasses" instance=ExtResource("32_tyvbo")]
+[node name="tt_m_chr_avt_acc_msk_eyepatch" parent="Glasses" unique_id=1409872866 instance=ExtResource("32_tyvbo")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_msk_goggles2" parent="Glasses" instance=ExtResource("33_fysy1")]
+[node name="tt_m_chr_avt_acc_msk_goggles2" parent="Glasses" unique_id=768182331 instance=ExtResource("33_fysy1")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_msk_grouchoMarxEyebrow" parent="Glasses" instance=ExtResource("34_stjwa")]
+[node name="tt_m_chr_avt_acc_msk_grouchoMarxEyebrow" parent="Glasses" unique_id=418183873 instance=ExtResource("34_stjwa")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_msk_heartGlasses" parent="Glasses" instance=ExtResource("35_80c67")]
+[node name="tt_m_chr_avt_acc_msk_heartGlasses" parent="Glasses" unique_id=2138784770 instance=ExtResource("35_80c67")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_msk_insectEyeGlasses2" parent="Glasses" instance=ExtResource("36_318w2")]
+[node name="tt_m_chr_avt_acc_msk_insectEyeGlasses2" parent="Glasses" unique_id=1982239249 instance=ExtResource("36_318w2")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_msk_masqueradeTypeMask" parent="Glasses" instance=ExtResource("37_14fs3")]
+[node name="tt_m_chr_avt_acc_msk_masqueradeTypeMask" parent="Glasses" unique_id=738016480 instance=ExtResource("37_14fs3")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_msk_miniblinds" parent="Glasses" instance=ExtResource("38_6vomr")]
+[node name="tt_m_chr_avt_acc_msk_miniblinds" parent="Glasses" unique_id=362500973 instance=ExtResource("38_6vomr")]
 visible = false
 
-[node name="monocole" parent="Glasses" instance=ExtResource("39_x4v6d")]
+[node name="monocole" parent="Glasses" unique_id=1905663299 instance=ExtResource("39_x4v6d")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_msk_narrowGlasses" parent="Glasses" instance=ExtResource("40_573qj")]
+[node name="tt_m_chr_avt_acc_msk_narrowGlasses" parent="Glasses" unique_id=1658378276 instance=ExtResource("40_573qj")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_msk_roundGlasses" parent="Glasses" instance=ExtResource("41_mglen")]
+[node name="tt_m_chr_avt_acc_msk_roundGlasses" parent="Glasses" unique_id=279596551 instance=ExtResource("41_mglen")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_msk_scubaMask" parent="Glasses" instance=ExtResource("42_mpghb")]
+[node name="tt_m_chr_avt_acc_msk_scubaMask" parent="Glasses" unique_id=294736739 instance=ExtResource("42_mpghb")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_msk_mouthGlasses" parent="Glasses" instance=ExtResource("43_vdgh6")]
+[node name="tt_m_chr_avt_acc_msk_mouthGlasses" parent="Glasses" unique_id=218029007 instance=ExtResource("43_vdgh6")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_msk_squareRims" parent="Glasses" instance=ExtResource("44_d2v2u")]
+[node name="tt_m_chr_avt_acc_msk_squareRims" parent="Glasses" unique_id=636337495 instance=ExtResource("44_d2v2u")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_msk_starGlasses" parent="Glasses" instance=ExtResource("45_i3h6d")]
+[node name="tt_m_chr_avt_acc_msk_starGlasses" parent="Glasses" unique_id=586059233 instance=ExtResource("45_i3h6d")]
 visible = false
 
-[node name="Backpacks" type="Node3D" parent="."]
+[node name="Backpacks" type="Node3D" parent="." unique_id=2008930517]
 visible = false
 
-[node name="tt_m_chr_avt_acc_pac_airplane" parent="Backpacks" instance=ExtResource("1_t3x62")]
+[node name="tt_m_chr_avt_acc_pac_airplane" parent="Backpacks" unique_id=19883437 instance=ExtResource("1_t3x62")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_pac_angelWings" parent="Backpacks" instance=ExtResource("2_w3e4r")]
+[node name="tt_m_chr_avt_acc_pac_angelWings" parent="Backpacks" unique_id=929600234 instance=ExtResource("2_w3e4r")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_pac_batWings" parent="Backpacks" instance=ExtResource("3_otex8")]
+[node name="tt_m_chr_avt_acc_pac_batWings" parent="Backpacks" unique_id=527401937 instance=ExtResource("3_otex8")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_pac_beeWings" parent="Backpacks" instance=ExtResource("4_1vabf")]
+[node name="tt_m_chr_avt_acc_pac_beeWings" parent="Backpacks" unique_id=287577672 instance=ExtResource("4_1vabf")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_pac_birdWings2" parent="Backpacks" instance=ExtResource("5_1o70s")]
+[node name="tt_m_chr_avt_acc_pac_birdWings2" parent="Backpacks" unique_id=363966 instance=ExtResource("5_1o70s")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_pac_butterflyWings" parent="Backpacks" instance=ExtResource("6_6nsps")]
+[node name="tt_m_chr_avt_acc_pac_butterflyWings" parent="Backpacks" unique_id=995845978 instance=ExtResource("6_6nsps")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_pac_flunky" parent="Backpacks" instance=ExtResource("7_qlsij")]
+[node name="tt_m_chr_avt_acc_pac_flunky" parent="Backpacks" unique_id=1682922768 instance=ExtResource("7_qlsij")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_pac_dinosaurTail" parent="Backpacks" instance=ExtResource("8_sbc1p")]
+[node name="tt_m_chr_avt_acc_pac_dinosaurTail" parent="Backpacks" unique_id=1690899204 instance=ExtResource("8_sbc1p")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_pac_dragonFlyWings" parent="Backpacks" instance=ExtResource("9_7f27k")]
+[node name="tt_m_chr_avt_acc_pac_dragonFlyWings" parent="Backpacks" unique_id=1953694680 instance=ExtResource("9_7f27k")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_pac_dragonWing2" parent="Backpacks" instance=ExtResource("10_q6ikv")]
+[node name="tt_m_chr_avt_acc_pac_dragonWing2" parent="Backpacks" unique_id=2130367201 instance=ExtResource("10_q6ikv")]
 visible = false
 
-[node name="gag_pack" parent="Backpacks" instance=ExtResource("11_dsklx")]
+[node name="gag_pack" parent="Backpacks" unique_id=1212397335 instance=ExtResource("11_dsklx")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_pac_band" parent="Backpacks" instance=ExtResource("12_riajm")]
+[node name="tt_m_chr_avt_acc_pac_band" parent="Backpacks" unique_id=1613093315 instance=ExtResource("12_riajm")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_pac_jetPack" parent="Backpacks" instance=ExtResource("13_utlda")]
+[node name="tt_m_chr_avt_acc_pac_jetPack" parent="Backpacks" unique_id=1482250188 instance=ExtResource("13_utlda")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_pac_butterflyWings2" parent="Backpacks" instance=ExtResource("14_txwjp")]
+[node name="tt_m_chr_avt_acc_pac_butterflyWings2" parent="Backpacks" unique_id=1210032258 instance=ExtResource("14_txwjp")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_pac_scubaTank" parent="Backpacks" instance=ExtResource("15_1njfr")]
+[node name="tt_m_chr_avt_acc_pac_scubaTank" parent="Backpacks" unique_id=386617580 instance=ExtResource("15_1njfr")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_pac_sharkFin" parent="Backpacks" instance=ExtResource("16_wxki1")]
+[node name="tt_m_chr_avt_acc_pac_sharkFin" parent="Backpacks" unique_id=1698391529 instance=ExtResource("16_wxki1")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_pac_spiderLegs" parent="Backpacks" instance=ExtResource("17_44iv7")]
+[node name="tt_m_chr_avt_acc_pac_spiderLegs" parent="Backpacks" unique_id=1350860520 instance=ExtResource("17_44iv7")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_pac_backpack" parent="Backpacks" instance=ExtResource("18_kl1cq")]
+[node name="tt_m_chr_avt_acc_pac_backpack" parent="Backpacks" unique_id=487488661 instance=ExtResource("18_kl1cq")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_pac_stuffedAnimalBackpackA" parent="Backpacks" instance=ExtResource("19_10pxy")]
+[node name="tt_m_chr_avt_acc_pac_stuffedAnimalBackpackA" parent="Backpacks" unique_id=490829256 instance=ExtResource("19_10pxy")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_pac_stuffedAnimalBackpackCat" parent="Backpacks" instance=ExtResource("20_kb2ae")]
+[node name="tt_m_chr_avt_acc_pac_stuffedAnimalBackpackCat" parent="Backpacks" unique_id=1812464310 instance=ExtResource("20_kb2ae")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_pac_stuffedAnimalBackpackDog" parent="Backpacks" instance=ExtResource("21_ds0la")]
+[node name="tt_m_chr_avt_acc_pac_stuffedAnimalBackpackDog" parent="Backpacks" unique_id=1721822772 instance=ExtResource("21_ds0la")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_pac_supertoonCape" parent="Backpacks" instance=ExtResource("22_16oco")]
+[node name="tt_m_chr_avt_acc_pac_supertoonCape" parent="Backpacks" unique_id=884932674 instance=ExtResource("22_16oco")]
 visible = false
 
-[node name="tt_m_chr_avt_acc_pac_backpackWithToys" parent="Backpacks" instance=ExtResource("23_7yqys")]
+[node name="tt_m_chr_avt_acc_pac_backpackWithToys" parent="Backpacks" unique_id=718622479 instance=ExtResource("23_7yqys")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00155449, -0.0196342, -0.021215)
 visible = false
 
-[node name="tt_m_chr_avt_acc_pac_vampireCape" parent="Backpacks" instance=ExtResource("24_20kbk")]
+[node name="tt_m_chr_avt_acc_pac_vampireCape" parent="Backpacks" unique_id=201847729 instance=ExtResource("24_20kbk")]
 visible = false
 
-[node name="sword" parent="Backpacks" instance=ExtResource("25_q24wy")]
+[node name="sword" parent="Backpacks" unique_id=357549310 instance=ExtResource("25_q24wy")]
 visible = false

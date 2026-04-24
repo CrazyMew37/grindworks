@@ -14,3 +14,5 @@ enum PackMode {
 @export var final_mode := PackMode.ADD
 @export var special_mode := PackMode.ADD
 @export var one_time_mode := PackMode.ADD
+@export var background_music_mode := PackMode.ADD
+@export var battle_music_mode := PackMode.ADD

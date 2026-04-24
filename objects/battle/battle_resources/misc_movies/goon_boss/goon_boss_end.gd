@@ -11,7 +11,7 @@ func action() -> void:
 	var movie := manager.create_tween()
 	movie.tween_callback(goon.set_animation.bind('lose'))
 	movie.tween_callback(goon.play_sfx.bind(goon.SFX_ALERT))
-	movie.tween_method(goon.set_eye_color,goon.eye_mat.albedo_color,Color.DARK_RED,2.0)
+	movie.tween_method(goon.set_eye_color,goon.eye_mat.albedo_color,Color('660000'),2.0)
 	movie.parallel().tween_method(goon.audio_player.set_pitch_scale,0.85,3.0,3.0).set_delay(0.4)
 	movie.parallel().tween_property(battle_node.battle_cam,'position:z',-2.0,3.5).as_relative()
 	

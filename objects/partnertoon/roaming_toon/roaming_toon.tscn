@@ -1,0 +1,214 @@
+[gd_scene format=3 uid="uid://ceev82smb0abo"]
+
+[ext_resource type="Script" uid="uid://bxhxr20bg6u68" path="res://objects/partnertoon/roaming_toon/roaming_toon.gd" id="1_3cwcy"]
+[ext_resource type="Script" uid="uid://cwnjrxjvy5kc3" path="res://objects/battle/battle_resources/toon_attacks/toon_attack.gd" id="2_jr4fg"]
+[ext_resource type="Texture2D" uid="uid://b8tdy4qthmv3t" path="res://ui_assets/battle/gags/inventory_cake_1.png" id="3_21iox"]
+[ext_resource type="Texture2D" uid="uid://cs8h6tvalsx8l" path="res://ui_assets/battle/gags/inventory_fruit_pie_slice.png" id="3_smxxx"]
+[ext_resource type="PackedScene" uid="uid://rc0827dqbtyk" path="res://models/props/gags/fruit_slice/fruit_slice.glb" id="4_is5de"]
+[ext_resource type="Script" uid="uid://k1ehriaouhyn" path="res://objects/partnertoon/toon_actions/gag_throw_partner.gd" id="4_jr4fg"]
+[ext_resource type="PackedScene" uid="uid://dd75urtji65pw" path="res://models/props/gags/bday_cake/bday_cake.tscn" id="4_x8c37"]
+[ext_resource type="Script" uid="uid://bw6kskku6ti2n" path="res://objects/partnertoon/toon_actions/seltzer_bottle_partner.gd" id="4_xqe5t"]
+[ext_resource type="Script" uid="uid://b4vdpkye2drho" path="res://objects/partnertoon/toon_actions/drop_small_partner.gd" id="5_x62cm"]
+[ext_resource type="AudioStream" uid="uid://dfh8hagq1yfae" path="res://audio/sfx/battle/gags/throw/AA_throw_wedding_cake_cog.ogg" id="6_0sld4"]
+[ext_resource type="Script" uid="uid://c5jgldj1bqn42" path="res://objects/partnertoon/toon_actions/storm_cloud_partner.gd" id="6_aeaay"]
+[ext_resource type="AudioStream" uid="uid://q717j7rpl4ue" path="res://audio/sfx/battle/gags/throw/AA_tart_only.ogg" id="6_nd4k3"]
+[ext_resource type="Texture2D" uid="uid://br65lhmxanr63" path="res://ui_assets/battle/gags/inventory_seltzer_bottle.png" id="7_0sld4"]
+[ext_resource type="Texture2D" uid="uid://d2eh7ur04xhve" path="res://ui_assets/battle/gags/inventory_creampie.png" id="7_3u48s"]
+[ext_resource type="Texture2D" uid="uid://b8m26tjpxrgid" path="res://ui_assets/battle/gags/inventory_squirt_flower.png" id="7_x8c37"]
+[ext_resource type="Script" uid="uid://b7gtev18asiru" path="res://objects/partnertoon/toon_actions/squirt_flower_partner.gd" id="8_3u48s"]
+[ext_resource type="Script" uid="uid://d3knkuyiqa5df" path="res://objects/partnertoon/toon_actions/drop_big_partner.gd" id="8_glxnv"]
+[ext_resource type="PackedScene" uid="uid://dj268hnb7rr26" path="res://models/props/gags/pie/pie.glb" id="8_hxe1q"]
+[ext_resource type="PackedScene" uid="uid://cy4iox7mj5ei0" path="res://objects/toon/toon.tscn" id="8_o3ntu"]
+[ext_resource type="Texture2D" uid="uid://dqtqf65k6nxi8" path="res://ui_assets/battle/gags/inventory_anvil.png" id="9_0sld4"]
+[ext_resource type="PackedScene" uid="uid://bbrcfwwkp3uhk" path="res://models/props/gags/anvil/anvil.tscn" id="10_qjkpk"]
+[ext_resource type="Texture2D" uid="uid://d7gsim4q6a7k" path="res://ui_assets/battle/gags/inventory_storm_cloud.png" id="11_qjkpk"]
+[ext_resource type="AudioStream" uid="uid://omjhv7l4ctpi" path="res://audio/sfx/battle/gags/drop/AA_drop_anvil.ogg" id="12_5bfd2"]
+[ext_resource type="Texture2D" uid="uid://dchh2t3rdfm34" path="res://ui_assets/battle/gags/inventory_wedding.png" id="12_ccu2g"]
+[ext_resource type="AudioStream" uid="uid://csjxqnrh0pi1p" path="res://audio/sfx/battle/gags/throw/AA_throw_wedding_cake_miss.ogg" id="13_f1vgv"]
+[ext_resource type="AudioStream" uid="uid://bj15l5kuxgkny" path="res://audio/sfx/battle/gags/drop/AA_drop_anvil_miss.ogg" id="13_lfkqy"]
+[ext_resource type="Texture2D" uid="uid://b58goas1dfh35" path="res://ui_assets/battle/gags/inventory_flower_pot.png" id="13_ulch6"]
+[ext_resource type="PackedScene" uid="uid://b83bdoxnutfks" path="res://models/props/gags/flower_pot/flower_pot.tscn" id="14_1mui7"]
+[ext_resource type="PackedScene" uid="uid://co5xwy40e1sv5" path="res://models/props/gags/wedding_cake/wedding_cake.fbx" id="14_h0kte"]
+[ext_resource type="AudioStream" uid="uid://dp6taj5mnaa3e" path="res://audio/sfx/battle/gags/throw/AA_throw_wedding_cake.ogg" id="15_2dfjv"]
+[ext_resource type="AudioStream" uid="uid://dhp8y3qd2amis" path="res://audio/sfx/battle/gags/drop/AA_drop_flowerpot.ogg" id="16_657or"]
+[ext_resource type="AudioStream" uid="uid://blyhe56l6dfkn" path="res://audio/sfx/battle/gags/drop/AA_drop_flowerpot_miss.ogg" id="17_nrqf6"]
+[ext_resource type="Texture2D" uid="uid://h6jqac2vi0hb" path="res://ui_assets/battle/gags/inventory_water_gun.png" id="18_iuucj"]
+[ext_resource type="Script" uid="uid://ck75cwe2wpl5j" path="res://objects/partnertoon/toon_actions/squirt_gun_partner.gd" id="19_t0cci"]
+[ext_resource type="Texture2D" uid="uid://u70efnid5wvk" path="res://ui_assets/battle/gags/inventory_piano.png" id="22_1ajxl"]
+[ext_resource type="PackedScene" uid="uid://dag5hn213d5m" path="res://models/props/gags/piano/piano.tscn" id="23_66yh6"]
+[ext_resource type="AudioStream" uid="uid://cg7wh45vhpg8x" path="res://audio/sfx/battle/gags/drop/AA_drop_piano.ogg" id="25_lkyl1"]
+[ext_resource type="AudioStream" uid="uid://10qtggbu7xha" path="res://audio/sfx/battle/gags/drop/AA_drop_piano_miss.ogg" id="26_gcmxb"]
+[ext_resource type="Texture2D" uid="uid://d3lgtwpp1y4ev" path="res://ui_assets/battle/gags/inventory_safe_box.png" id="31_k2riy"]
+[ext_resource type="PackedScene" uid="uid://cueenmir23h2" path="res://models/props/gags/safe/safe.tscn" id="32_m2kyd"]
+[ext_resource type="AudioStream" uid="uid://cuvfjvbbukbm3" path="res://audio/sfx/battle/gags/drop/AA_drop_safe.ogg" id="34_iuucj"]
+[ext_resource type="AudioStream" uid="uid://cytnpbt1lx7kn" path="res://audio/sfx/battle/gags/drop/AA_drop_safe_miss.ogg" id="35_t0cci"]
+
+[sub_resource type="Resource" id="Resource_lfkqy"]
+script = ExtResource("4_jr4fg")
+model = ExtResource("4_is5de")
+splat_color = Color(0.207843, 0.196078, 0.592157, 1)
+splat_sfx = ExtResource("6_nd4k3")
+icon = ExtResource("3_smxxx")
+damage = 4
+target_type = 1
+action_name = "Fruit Pie Slice"
+metadata/_custom_type_script = "uid://k1ehriaouhyn"
+
+[sub_resource type="Resource" id="Resource_nd4k3"]
+script = ExtResource("4_jr4fg")
+model = ExtResource("8_hxe1q")
+scale = 0.9
+splat_color = Color(1, 1, 0, 1)
+splat_sfx = ExtResource("6_nd4k3")
+icon = ExtResource("7_3u48s")
+damage = 8
+target_type = 1
+action_name = "Whole Cream Pie"
+metadata/_custom_type_script = "uid://k1ehriaouhyn"
+
+[sub_resource type="Resource" id="Resource_iefws"]
+script = ExtResource("4_jr4fg")
+model = ExtResource("4_x8c37")
+splat_color = Color(1, 0.7058824, 1, 1)
+splat_sfx = ExtResource("6_0sld4")
+icon = ExtResource("3_21iox")
+damage = 12
+target_type = 1
+action_name = "Birthday Cake"
+metadata/_custom_type_script = "uid://k1ehriaouhyn"
+
+[sub_resource type="Resource" id="Resource_k2riy"]
+script = ExtResource("4_jr4fg")
+model = ExtResource("14_h0kte")
+scale = 4.54
+splat_color = Color(1, 0.454902, 1, 1)
+splat_sfx = ExtResource("6_0sld4")
+present_sfx = ExtResource("15_2dfjv")
+miss_sfx = ExtResource("13_f1vgv")
+icon = ExtResource("12_ccu2g")
+damage = 16
+target_type = 1
+action_name = "Wedding Cake"
+metadata/_custom_type_script = "uid://k1ehriaouhyn"
+
+[sub_resource type="Resource" id="Resource_hxe1q"]
+script = ExtResource("8_3u48s")
+icon = ExtResource("7_x8c37")
+damage = 2
+target_type = 1
+action_name = "Squirting Flower"
+metadata/_custom_type_script = "uid://b7gtev18asiru"
+
+[sub_resource type="Resource" id="Resource_pbx8t"]
+script = ExtResource("19_t0cci")
+icon = ExtResource("18_iuucj")
+damage = 4
+target_type = 1
+action_name = "Squirt Gun"
+metadata/_custom_type_script = "uid://ck75cwe2wpl5j"
+
+[sub_resource type="Resource" id="Resource_x8c37"]
+script = ExtResource("4_xqe5t")
+icon = ExtResource("7_0sld4")
+damage = 6
+target_type = 1
+action_name = "Seltzer Bottle"
+metadata/_custom_type_script = "uid://bw6kskku6ti2n"
+
+[sub_resource type="Resource" id="Resource_0sld4"]
+script = ExtResource("6_aeaay")
+icon = ExtResource("11_qjkpk")
+damage = 8
+target_type = 1
+action_name = "Storm Cloud"
+metadata/_custom_type_script = "uid://c5jgldj1bqn42"
+
+[sub_resource type="Resource" id="Resource_qjkpk"]
+script = ExtResource("5_x62cm")
+model = ExtResource("14_1mui7")
+shadow_scale = 1.25
+sfx_hit = ExtResource("16_657or")
+sfx_miss = ExtResource("17_nrqf6")
+icon = ExtResource("13_ulch6")
+damage = 3
+target_type = 1
+action_name = "Flower Pot"
+metadata/_custom_type_script = "uid://b4vdpkye2drho"
+
+[sub_resource type="Resource" id="Resource_3gbdu"]
+script = ExtResource("5_x62cm")
+model = ExtResource("10_qjkpk")
+shadow_scale = 1.5
+sfx_hit = ExtResource("12_5bfd2")
+sfx_miss = ExtResource("13_lfkqy")
+icon = ExtResource("9_0sld4")
+damage = 6
+target_type = 1
+action_name = "Anvil"
+metadata/_custom_type_script = "uid://b4vdpkye2drho"
+
+[sub_resource type="Resource" id="Resource_0aa7y"]
+script = ExtResource("8_glxnv")
+model = ExtResource("32_m2kyd")
+shadow_scale = 3.0
+sfx_hit = ExtResource("34_iuucj")
+sfx_miss = ExtResource("35_t0cci")
+icon = ExtResource("31_k2riy")
+damage = 9
+target_type = 1
+action_name = "Safe"
+metadata/_custom_type_script = "uid://d3knkuyiqa5df"
+
+[sub_resource type="Resource" id="Resource_5bfd2"]
+script = ExtResource("8_glxnv")
+model = ExtResource("23_66yh6")
+sfx_hit = ExtResource("25_lkyl1")
+sfx_miss = ExtResource("26_gcmxb")
+icon = ExtResource("22_1ajxl")
+damage = 12
+target_type = 1
+action_name = "Grand Piano"
+metadata/_custom_type_script = "uid://d3knkuyiqa5df"
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_wgjhf"]
+radius = 0.293
+height = 1.128
+
+[node name="RoamingToon" type="CharacterBody3D" unique_id=85069354]
+collision_layer = 0
+collision_mask = 5
+floor_snap_length = 1.0
+script = ExtResource("1_3cwcy")
+doodle_actions = Array[ExtResource("2_jr4fg")]([SubResource("Resource_lfkqy"), SubResource("Resource_nd4k3"), SubResource("Resource_iefws"), SubResource("Resource_k2riy"), SubResource("Resource_hxe1q"), SubResource("Resource_pbx8t"), SubResource("Resource_x8c37"), SubResource("Resource_0sld4"), SubResource("Resource_qjkpk"), SubResource("Resource_3gbdu"), SubResource("Resource_0aa7y"), SubResource("Resource_5bfd2")])
+
+[node name="Toon" parent="." unique_id=1136130066 instance=ExtResource("8_o3ntu")]
+unique_name_in_owner = true
+randomize_dna = true
+auto_build = true
+initial_anim = &"neutral"
+
+[node name="HolePlacement" type="Node3D" parent="Toon" unique_id=1857094650]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.025, 0.332002)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=233018347]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.564, 0)
+shape = SubResource("CapsuleShape3D_wgjhf")
+
+[node name="SFX" type="AudioStreamPlayer3D" parent="." unique_id=1326758243]
+bus = &"SFX"
+
+[node name="Head" type="Node3D" parent="." unique_id=1452748428]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.253629, 0)
+
+[node name="NavAgent" type="NavigationAgent3D" parent="." unique_id=1444659043]
+
+[node name="NavPauseTimer" type="Timer" parent="." unique_id=2125474299]
+one_shot = true
+
+[node name="Label" type="Label" parent="." unique_id=605544417]
+visible = false
+offset_right = 40.0
+offset_bottom = 23.0
+
+[connection signal="target_reached" from="NavAgent" to="." method="goal_reached"]
+[connection signal="timeout" from="NavPauseTimer" to="." method="nav_pause_finished"]

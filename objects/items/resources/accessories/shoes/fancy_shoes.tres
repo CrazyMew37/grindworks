@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="ItemShoe" format=3 uid="uid://cuec0646nsnlx"]
+
+[ext_resource type="Texture2D" uid="uid://1t80hc3pmmwu" path="res://objects/items/resources/accessories/shoes/icons/fancy_shoes.png" id="1_lj8d7"]
+[ext_resource type="Texture2D" uid="uid://dn72883cnvube" path="res://models/accessories/shoe_textures/shoes/tt_t_chr_avt_acc_sho_maryJaneShoesPurple.png" id="2_lj8d7"]
+[ext_resource type="Script" uid="uid://bb02y647us2n3" path="res://objects/items/classes/item_shoe.gd" id="3_w56o3"]
+
+[resource]
+script = ExtResource("3_w56o3")
+shoe_type = 2
+shoe_tex = ExtResource("2_lj8d7")
+long_leg_tex = ExtResource("2_lj8d7")
+qualitoon = 3
+world_y_offset = -0.1
+item_name = "Fancy Shoes"
+item_description = "Fancy-schmancy!"
+big_description = "+ 20% Lure knockback damage
+- 10% Sound damage"
+stats_add = {
+"gag_boost:Lure": 0.2,
+"gag_boost:Sound": -0.1
+}
+icon = ExtResource("1_lj8d7")
+metadata/_custom_type_script = "uid://bb02y647us2n3"

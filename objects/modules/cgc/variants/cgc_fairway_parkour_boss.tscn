@@ -767,7 +767,7 @@ expand_mode = 1
 
 [node name="FindLabel" type="Label" parent="MoleBossManager/MoleUI/Panel/MarginContainer/HBoxContainer" index="1" unique_id=1320012557]
 layout_mode = 2
-text = "Find the Cog Moles!"
+text = "Stomp on the moles!"
 label_settings = SubResource("LabelSettings_k2r3k")
 
 [node name="RemainingLabel" type="Label" parent="MoleBossManager/MoleUI/Panel" index="1" unique_id=1269148735]

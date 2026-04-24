@@ -372,13 +372,13 @@ func quick_heal(amount: int, allow_iframes := true) -> void:
 
 	stats.hp += amount
 	var diff := stats.hp - pre_hp
-	if diff == 0:
-		return
 	if sign(diff) == -1:
 		if controller.current_state.accepts_interaction() and allow_iframes:
 			do_invincibility_frames()
 			s_hurt_realtime.emit(diff)
 		Util.do_3d_text(self,str(diff))
+	elif diff == 0:
+		return
 	else:
 		Util.do_3d_text(self, "+" + str(diff), Color.GREEN, Color.DARK_GREEN)
 

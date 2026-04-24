@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="SignalAchievement" format=3 uid="uid://3ots1evffxa4"]
+
+[ext_resource type="Texture2D" uid="uid://b0qttbv1cbodx" path="res://ui_assets/achievements/icon_achievement_bumpy.png" id="1_axcks"]
+[ext_resource type="Script" uid="uid://bu0ypaddtve76" path="res://objects/save_file/achievements/signal_achievement.gd" id="2_hjoyb"]
+
+[resource]
+script = ExtResource("2_hjoyb")
+signal_source = 1
+signal_name = "s_floor_15_bumpy"
+achievement_name = "Jury Duty"
+achievement_summary = "Unlock Bumpy Bumblebehr."
+hint = "Get some overtime."
+achievement_index = 51
+achievement_icon = ExtResource("1_axcks")
+metadata/_custom_type_script = "uid://bu0ypaddtve76"

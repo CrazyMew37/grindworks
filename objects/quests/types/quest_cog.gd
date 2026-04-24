@@ -62,10 +62,10 @@ func randomize_objective() -> void:
 	var level_ranges := FloorVariant.LEVEL_RANGES
 	var floor_num: int = max(Util.floor_number, 0)
 	
-	var minimum_level: int = mini(0, level_ranges[floor_num][0] - 1)
-	var maximum_level: int = mini(7, level_ranges[floor_num][1] - 1)
+	var minimum_level: int = 0
+	var maximum_level: int = 0
 	
-	if Util.floor_number < 6:
+	if Util.floor_number < 5:
 		minimum_level = mini(0, level_ranges[floor_num][0] - 1)
 		maximum_level = mini(7, level_ranges[floor_num][1] - 1)
 	else:
@@ -87,7 +87,7 @@ func randomize_objective() -> void:
 				cog_pool = load('res://objects/cog/presets/pools/lawbot.tres')
 			CogDNA.CogDept.BOSS:
 				cog_pool = load('res://objects/cog/presets/pools/bossbot.tres')
-		if Util.floor_number < 6:
+		if Util.floor_number < 5:
 			specific_cog = cog_pool.cogs[RNG.channel(RNG.ChannelCogQuestTypes).randi_range(minimum_level, maximum_level)]
 		else:
 			specific_cog = cog_pool.cogs[RNG.channel(RNG.ChannelCogQuestTypes).randi_range(0, 7)]
@@ -108,9 +108,9 @@ func randomize_objective() -> void:
 		else:
 			min_level = RNG.channel(RNG.ChannelCogQuestTypes).randi_range(minimum_level, maximum_level)
 	
-	if min_level > 1 && Util.floor_number < 6:
+	if min_level > 1 && Util.floor_number < 5:
 		quotaf /= maxf(min_level/4.0,1.25)
-	elif min_level > 1 && Util.floor_number >= 6:
+	elif min_level > 1 && Util.floor_number >= 5:
 		quotaf /= 1.25
 	
 	quota = int(round(quotaf))

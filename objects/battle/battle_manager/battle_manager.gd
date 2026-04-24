@@ -365,7 +365,7 @@ func affect_target(target: Node3D, amount: float, ignore_current_action := false
 	target.stats.set(stat, pre_stat - amount)
 
 	# Damaging action
-	if not sign(target.stats.get(stat) - pre_stat) == 1:
+	if not (target.stats.get(stat) - pre_stat) > -1:
 		if target is Player:
 			string = str(target.stats.get(stat) - pre_stat)
 			if current_action and current_action.user and current_action.user is Cog:
@@ -389,6 +389,8 @@ func affect_target(target: Node3D, amount: float, ignore_current_action := false
 			string = str(-roundi(amount))
 			if current_action and current_action.user is Player:
 				BattleService.s_toon_didnt_crit.emit()
+			text_color = Color('ff0000')
+			outline_color = Color('7a0000')
 		if current_action and current_action.user is Player and target is Cog:
 			BattleService.s_toon_dealt_damage.emit(current_action, target, amount)
 	# Healing action
@@ -402,7 +404,7 @@ func affect_target(target: Node3D, amount: float, ignore_current_action := false
 	elif text_color:
 		battle_text(target, string, text_color, outline_color, raise_height)
 	else:
-		battle_text(target, string, Color('ff0000'), Color('7a0000'), raise_height)
+		battle_text(target, string, text_color, outline_color, raise_height)
 
 	# Play boost text if we have any stored on this action
 	if current_action and current_action.stored_boost_text:

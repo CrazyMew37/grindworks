@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="SignalAchievement" format=3 uid="uid://br5nyjyws2jja"]
+
+[ext_resource type="Texture2D" uid="uid://cayasx7842jnb" path="res://ui_assets/achievements/icon_achievement_endless_25.png" id="1_l4rp0"]
+[ext_resource type="Script" uid="uid://bu0ypaddtve76" path="res://objects/save_file/achievements/signal_achievement.gd" id="2_grp81"]
+
+[resource]
+script = ExtResource("2_grp81")
+signal_source = 1
+signal_name = "s_floor_25_beat"
+achievement_name = "Labourer"
+achievement_summary = "Complete Floor 25."
+achievement_index = 43
+achievement_icon = ExtResource("1_l4rp0")
+metadata/_custom_type_script = "uid://bu0ypaddtve76"

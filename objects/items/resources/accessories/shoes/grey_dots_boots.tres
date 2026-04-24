@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="ItemShoe" format=3 uid="uid://dakqrucne8kx4"]
+
+[ext_resource type="Texture2D" uid="uid://bamxphxb3ccxk" path="res://objects/items/resources/accessories/shoes/icons/grey_dots_boots.png" id="1_jsp7g"]
+[ext_resource type="Texture2D" uid="uid://b2rc3hi8liqf6" path="res://models/accessories/shoe_textures/boots/tt_t_chr_avt_acc_sho_fashionBootsGreyDotsLL.png" id="2_jsp7g"]
+[ext_resource type="Script" uid="uid://bb02y647us2n3" path="res://objects/items/classes/item_shoe.gd" id="4_7s3j0"]
+[ext_resource type="Texture2D" uid="uid://0etp0lv42cus" path="res://models/accessories/shoe_textures/boots/tt_t_chr_avt_acc_sho_fashionBootsGreyDots.png" id="4_tkw5s"]
+
+[resource]
+script = ExtResource("4_7s3j0")
+shoe_type = 3
+shoe_tex = ExtResource("4_tkw5s")
+long_leg_tex = ExtResource("2_jsp7g")
+qualitoon = 3
+world_y_offset = -0.2
+item_name = "Grey Dots Boots"
+item_description = "Connect the dots!"
+big_description = "+ 20% critical hit damage multiplier
+- 15% Luck"
+stats_add = {
+"crit_mult": 0.2,
+"luck": -0.15
+}
+icon = ExtResource("1_jsp7g")
+metadata/_custom_type_script = "uid://bb02y647us2n3"

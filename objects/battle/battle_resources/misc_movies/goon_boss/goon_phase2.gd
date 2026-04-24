@@ -36,7 +36,7 @@ func action() -> void:
 	var movie := manager.create_tween()
 	movie.tween_callback(battle_node.focus_cogs)
 	movie.tween_callback(goon.set_animation.bind('enraged'))
-	movie.tween_interval(1.4)
+	movie.tween_method(goon.set_eye_color,goon.eye_mat.albedo_color,Color('cc0099'),1.4)
 	movie.tween_callback(AudioManager.play_sound.bind(load("res://audio/sfx/misc/CHQ_SOS_cage_land.ogg")))
 	movie.tween_interval(0.1)
 	movie.tween_callback(AudioManager.play_sound.bind(SFX_SPARK))

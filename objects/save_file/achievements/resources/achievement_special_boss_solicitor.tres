@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="SignalAchievement" format=3 uid="uid://bd51wv80jy4tp"]
+
+[ext_resource type="Texture2D" uid="uid://cv43tljda5ud" path="res://ui_assets/achievements/icon_achievement_solicitor.png" id="1_6cu0n"]
+[ext_resource type="Script" uid="uid://bu0ypaddtve76" path="res://objects/save_file/achievements/signal_achievement.gd" id="2_i1oar"]
+
+[resource]
+script = ExtResource("2_i1oar")
+signal_source = 1
+signal_name = "s_solicitor_boss_defeated"
+achievement_name = "A Cold Draft"
+achievement_summary = "Defeat The Solicitor in The Frozen D.A. Office"
+achievement_index = 40
+achievement_icon = ExtResource("1_6cu0n")
+metadata/_custom_type_script = "uid://bu0ypaddtve76"

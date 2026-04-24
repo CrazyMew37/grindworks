@@ -4,7 +4,7 @@ class_name Cog
 signal s_dna_set
 
 ## Constants
-const VIRTUAL_COG_COLOR := Color('ff0000cc')
+var VIRTUAL_COG_COLOR := Color('ff0000cc')
 const COMMON_LEVEL_RANGE := Vector2i(1, 12)
 const QUEST_HELP_CHANCE := 20
 
@@ -71,6 +71,13 @@ var light_tween: Tween
 
 # Head position
 var head_node: Node3D
+
+# suit stuff
+var arms: MeshInstance3D
+var hands: MeshInstance3D
+var legs: MeshInstance3D
+var sleeve: MeshInstance3D
+var torso: MeshInstance3D
 
 # Battle values
 var lured := false
@@ -326,13 +333,29 @@ func construct_cog():
 	s_dna_set.emit()
 	
 	drop_shadow.reparent(body.shadow_bone)
+	
+	if not skelecog:
+		arms = body.arms
+		legs = body.legs
+		hands = body.hands
+		torso = body.torso
+		sleeve = body.wrists_and_shoes
+		if dna.suit_visible == false:
+			arms.visible = false
+			legs.visible = false
+			torso.visible = false
+			sleeve.visible = false
+			hands.visible = false
+			department_emblem.visible = false
+			hp_light.visible = false
 
 func animation_end(_anim):
 	set_animation('neutral')
 
 func battle_start():
 	department_emblem.hide()
-	hp_light.show()
+	if dna.suit_visible == true:
+		hp_light.show()
 
 func update_health_light():
 	var health_ratio: float = float(stats.hp) / float(stats.max_hp)
@@ -520,8 +543,22 @@ func lose():
 	if body.body_color != Color.WHITE:
 		lose_mod.set_color(body.body_color)
 	
+	if not skelecog:
+		arms = lose_mod.arms
+		legs = lose_mod.legs
+		hands = lose_mod.hands
+		torso = lose_mod.torso
+		sleeve = lose_mod.wrists_and_shoes
+		if dna.suit_visible == false:
+			arms.visible = false
+			legs.visible = false
+			torso.visible = false
+			sleeve.visible = false
+			hands.visible = false
+	
 	# Play explosion sound
 	await get_tree().create_timer(2.1).timeout
+	
 	
 	# Particles
 	var gear_part: GPUParticles3D = load("res://objects/battle/effects/cog_gears/cog_gears.tscn").instantiate()

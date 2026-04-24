@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="SignalAchievement" format=3 uid="uid://cqqlns5aobyir"]
+
+[ext_resource type="Texture2D" uid="uid://c3dqd2fqapuid" path="res://ui_assets/achievements/icon_achievement_endless_75.png" id="1_xw1ou"]
+[ext_resource type="Script" uid="uid://bu0ypaddtve76" path="res://objects/save_file/achievements/signal_achievement.gd" id="2_d0rxu"]
+
+[resource]
+script = ExtResource("2_d0rxu")
+signal_source = 1
+signal_name = "s_floor_75_beat"
+achievement_name = "Overworked"
+achievement_summary = "Complete Floor 75."
+achievement_index = 47
+achievement_icon = ExtResource("1_xw1ou")
+metadata/_custom_type_script = "uid://bu0ypaddtve76"

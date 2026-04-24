@@ -36,6 +36,11 @@ func _process(delta: float) -> void:
 	if not current_second == floori(time):
 		current_second = floori(time)
 		ScoreTally.modify_score(ScoreTally.ChannelTimeBonus, -1)
+		if current_second >= 18000:
+			Globals.s_pilot_cap_time.emit()
+		if randi_range(1,100000) == 100000:
+			Globals.s_surprise_rolled.emit()
+			print("SURPRISE! :D")
 
 static func get_time_string(timef: float) -> String:
 	var time_string := "%s:%s:%s"

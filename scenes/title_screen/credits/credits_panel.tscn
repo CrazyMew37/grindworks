@@ -849,12 +849,13 @@ offset_bottom = 190.5
 text = "Modfork by CrazyMew37.
 This verison is not affiliated with (nor supports)
 the following people, but will be credited for
-their work regardless:"
+their hard and talented work regardless:"
 label_settings = SubResource("LabelSettings_3ohx7")
 horizontal_alignment = 1
 
 [node name="CreditWindow" type="Control" parent="Panel" index="4" unique_id=709393941]
 layout_mode = 1
+anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5

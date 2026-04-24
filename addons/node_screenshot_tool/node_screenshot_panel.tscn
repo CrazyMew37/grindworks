@@ -22,31 +22,12 @@ corner_radius_bottom_left = 8
 shadow_color = Color(0, 0, 0, 0.15)
 shadow_offset = Vector2(0, 4)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nos6t"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wh4xx"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
 content_margin_bottom = 4.0
-bg_color = Color(0.2795, 0.379833, 0.43, 1)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(0.197666, 0.193745, 0.373945, 1)
-border_blend = true
-corner_radius_top_left = 8
-corner_radius_top_right = 8
-corner_radius_bottom_right = 8
-corner_radius_bottom_left = 8
-shadow_color = Color(0, 0, 0, 0.15)
-shadow_offset = Vector2(0, 4)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_67j0v"]
-content_margin_left = 4.0
-content_margin_top = 4.0
-content_margin_right = 4.0
-content_margin_bottom = 4.0
-bg_color = Color(9.62615e-08, 0.561133, 0.821708, 1)
+bg_color = Color(0, 0.372837, 0.553778, 1)
 border_width_left = 2
 border_width_top = 2
 border_width_right = 2
@@ -79,12 +60,31 @@ corner_radius_bottom_left = 8
 shadow_color = Color(0, 0, 0, 0.15)
 shadow_offset = Vector2(0, 4)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wh4xx"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_67j0v"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
 content_margin_bottom = 4.0
-bg_color = Color(0, 0.372837, 0.553778, 1)
+bg_color = Color(9.62615e-08, 0.561133, 0.821708, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.197666, 0.193745, 0.373945, 1)
+border_blend = true
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_color = Color(0, 0, 0, 0.15)
+shadow_offset = Vector2(0, 4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nos6t"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.2795, 0.379833, 0.43, 1)
 border_width_left = 2
 border_width_top = 2
 border_width_right = 2
@@ -109,7 +109,7 @@ outline_color = Color(0, 0, 0, 1)
 
 [sub_resource type="World3D" id="World3D_nyp6v"]
 
-[node name="Screenshot" type="Panel"]
+[node name="Screenshot" type="Panel" unique_id=1871343626]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -117,7 +117,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_g74om")
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1128004344]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -129,22 +129,23 @@ theme_override_constants/margin_top = 4
 theme_override_constants/margin_right = 4
 theme_override_constants/margin_bottom = 4
 
-[node name="Body" type="VBoxContainer" parent="MarginContainer"]
+[node name="Body" type="VBoxContainer" parent="MarginContainer" unique_id=1603925926]
 texture_filter = 1
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="TopRow" type="HBoxContainer" parent="MarginContainer/Body"]
+[node name="TopRow" type="HBoxContainer" parent="MarginContainer/Body" unique_id=764320979]
 custom_minimum_size = Vector2(0, 32)
 layout_mode = 2
 
-[node name="ResolutionButton" type="OptionButton" parent="MarginContainer/Body/TopRow"]
+[node name="ResolutionButton" type="OptionButton" parent="MarginContainer/Body/TopRow" unique_id=1212929836]
 unique_name_in_owner = true
 layout_mode = 2
 selected = 2
 item_count = 5
 popup/item_0/text = "64x64"
+popup/item_0/id = 0
 popup/item_1/text = "128x128"
 popup/item_1/id = 1
 popup/item_2/text = "256x256"
@@ -154,16 +155,17 @@ popup/item_3/id = 3
 popup/item_4/text = "1024x1024"
 popup/item_4/id = 4
 
-[node name="FOVLabel" type="Label" parent="MarginContainer/Body/TopRow"]
+[node name="FOVLabel" type="Label" parent="MarginContainer/Body/TopRow" unique_id=2066158982]
 layout_mode = 2
 text = "    FOV:"
 
-[node name="FOVButton" type="OptionButton" parent="MarginContainer/Body/TopRow"]
+[node name="FOVButton" type="OptionButton" parent="MarginContainer/Body/TopRow" unique_id=571727316]
 unique_name_in_owner = true
 layout_mode = 2
 selected = 0
 item_count = 5
 popup/item_0/text = "30"
+popup/item_0/id = 0
 popup/item_1/text = "40"
 popup/item_1/id = 1
 popup/item_2/text = "50"
@@ -173,11 +175,11 @@ popup/item_3/id = 3
 popup/item_4/text = "70"
 popup/item_4/id = 4
 
-[node name="Control" type="Control" parent="MarginContainer/Body/TopRow"]
+[node name="Control" type="Control" parent="MarginContainer/Body/TopRow" unique_id=2007697484]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="ScreenshotButton" type="Button" parent="MarginContainer/Body/TopRow/Control"]
+[node name="ScreenshotButton" type="Button" parent="MarginContainer/Body/TopRow/Control" unique_id=809463370]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 6
@@ -191,28 +193,28 @@ offset_bottom = 14.0
 grow_horizontal = 0
 grow_vertical = 2
 focus_mode = 0
-theme_override_colors/font_disabled_color = Color(0.171236, 0.167315, 0.292697, 1)
-theme_override_colors/font_hover_pressed_color = Color(0.185395, 0.181474, 0.336222, 1)
-theme_override_colors/font_hover_color = Color(0.204798, 0.200877, 0.395869, 1)
-theme_override_colors/font_pressed_color = Color(0.185395, 0.181474, 0.336222, 1)
-theme_override_colors/font_focus_color = Color(0.204798, 0.200877, 0.395869, 1)
 theme_override_colors/font_color = Color(0.197666, 0.193745, 0.373945, 1)
+theme_override_colors/font_focus_color = Color(0.204798, 0.200877, 0.395869, 1)
+theme_override_colors/font_pressed_color = Color(0.185395, 0.181474, 0.336222, 1)
+theme_override_colors/font_hover_color = Color(0.204798, 0.200877, 0.395869, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.185395, 0.181474, 0.336222, 1)
+theme_override_colors/font_disabled_color = Color(0.171236, 0.167315, 0.292697, 1)
 theme_override_font_sizes/font_size = 16
-theme_override_styles/focus = SubResource("StyleBoxFlat_xdgv7")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_nos6t")
-theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_67j0v")
-theme_override_styles/hover = SubResource("StyleBoxFlat_olwbw")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_wh4xx")
 theme_override_styles/normal = SubResource("StyleBoxFlat_xdgv7")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_wh4xx")
+theme_override_styles/hover = SubResource("StyleBoxFlat_olwbw")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_67j0v")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_nos6t")
+theme_override_styles/focus = SubResource("StyleBoxFlat_xdgv7")
 disabled = true
 text = "Screenshot!"
 
-[node name="ViewBackground" type="Panel" parent="MarginContainer/Body"]
+[node name="ViewBackground" type="Panel" parent="MarginContainer/Body" unique_id=610988603]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxFlat_nyp6v")
 
-[node name="ViewportTexture" type="TextureRect" parent="MarginContainer/Body/ViewBackground"]
+[node name="ViewportTexture" type="TextureRect" parent="MarginContainer/Body/ViewBackground" unique_id=205034829]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 15
@@ -225,7 +227,7 @@ texture = SubResource("ViewportTexture_nyp6v")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Crosshair" type="Control" parent="MarginContainer/Body/ViewBackground/ViewportTexture"]
+[node name="Crosshair" type="Control" parent="MarginContainer/Body/ViewBackground/ViewportTexture" unique_id=1581209468]
 unique_name_in_owner = true
 modulate = Color(1, 1, 1, 0.313726)
 layout_mode = 1
@@ -235,7 +237,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Vertical" type="ColorRect" parent="MarginContainer/Body/ViewBackground/ViewportTexture/Crosshair"]
+[node name="Vertical" type="ColorRect" parent="MarginContainer/Body/ViewBackground/ViewportTexture/Crosshair" unique_id=614559031]
 custom_minimum_size = Vector2(2, 0)
 layout_mode = 1
 anchors_preset = 13
@@ -245,7 +247,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Horizontal" type="ColorRect" parent="MarginContainer/Body/ViewBackground/ViewportTexture/Crosshair"]
+[node name="Horizontal" type="ColorRect" parent="MarginContainer/Body/ViewBackground/ViewportTexture/Crosshair" unique_id=2107421050]
 custom_minimum_size = Vector2(0, 2)
 layout_mode = 1
 anchors_preset = 14
@@ -255,7 +257,7 @@ anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="WarningLabel" type="Label" parent="MarginContainer/Body/ViewBackground"]
+[node name="WarningLabel" type="Label" parent="MarginContainer/Body/ViewBackground" unique_id=574945139]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 15
@@ -269,81 +271,81 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
-[node name="Sliders" type="HBoxContainer" parent="MarginContainer/Body"]
+[node name="Sliders" type="HBoxContainer" parent="MarginContainer/Body" unique_id=1731219698]
 custom_minimum_size = Vector2(0, 32)
 layout_mode = 2
 
-[node name="WidthContainer" type="PanelContainer" parent="MarginContainer/Body/Sliders"]
+[node name="WidthContainer" type="PanelContainer" parent="MarginContainer/Body/Sliders" unique_id=1897264168]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/Body/Sliders/WidthContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/Body/Sliders/WidthContainer" unique_id=553851592]
 layout_mode = 2
 
-[node name="Width" type="HSlider" parent="MarginContainer/Body/Sliders/WidthContainer/VBoxContainer"]
+[node name="Width" type="HSlider" parent="MarginContainer/Body/Sliders/WidthContainer/VBoxContainer" unique_id=988001126]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Label" type="Label" parent="MarginContainer/Body/Sliders/WidthContainer/VBoxContainer"]
+[node name="Label" type="Label" parent="MarginContainer/Body/Sliders/WidthContainer/VBoxContainer" unique_id=206509310]
 layout_mode = 2
 text = "Width"
 horizontal_alignment = 1
 
-[node name="HeightContainer" type="PanelContainer" parent="MarginContainer/Body/Sliders"]
+[node name="HeightContainer" type="PanelContainer" parent="MarginContainer/Body/Sliders" unique_id=1057242359]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/Body/Sliders/HeightContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/Body/Sliders/HeightContainer" unique_id=1271251864]
 layout_mode = 2
 
-[node name="Height" type="HSlider" parent="MarginContainer/Body/Sliders/HeightContainer/VBoxContainer"]
+[node name="Height" type="HSlider" parent="MarginContainer/Body/Sliders/HeightContainer/VBoxContainer" unique_id=1864823259]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Label" type="Label" parent="MarginContainer/Body/Sliders/HeightContainer/VBoxContainer"]
+[node name="Label" type="Label" parent="MarginContainer/Body/Sliders/HeightContainer/VBoxContainer" unique_id=899694780]
 layout_mode = 2
 text = "Height"
 horizontal_alignment = 1
 
-[node name="YawContainer" type="PanelContainer" parent="MarginContainer/Body/Sliders"]
+[node name="YawContainer" type="PanelContainer" parent="MarginContainer/Body/Sliders" unique_id=2147450514]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/Body/Sliders/YawContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/Body/Sliders/YawContainer" unique_id=1922890919]
 layout_mode = 2
 
-[node name="Yaw" type="HSlider" parent="MarginContainer/Body/Sliders/YawContainer/VBoxContainer"]
+[node name="Yaw" type="HSlider" parent="MarginContainer/Body/Sliders/YawContainer/VBoxContainer" unique_id=1360464559]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 max_value = 15.0
 
-[node name="Label" type="Label" parent="MarginContainer/Body/Sliders/YawContainer/VBoxContainer"]
+[node name="Label" type="Label" parent="MarginContainer/Body/Sliders/YawContainer/VBoxContainer" unique_id=1971634347]
 layout_mode = 2
 text = "Yaw"
 horizontal_alignment = 1
 
-[node name="PitchContainer" type="PanelContainer" parent="MarginContainer/Body/Sliders"]
+[node name="PitchContainer" type="PanelContainer" parent="MarginContainer/Body/Sliders" unique_id=1598455034]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/Body/Sliders/PitchContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/Body/Sliders/PitchContainer" unique_id=770013828]
 layout_mode = 2
 
-[node name="Pitch" type="HSlider" parent="MarginContainer/Body/Sliders/PitchContainer/VBoxContainer"]
+[node name="Pitch" type="HSlider" parent="MarginContainer/Body/Sliders/PitchContainer/VBoxContainer" unique_id=633836197]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 max_value = 15.0
 
-[node name="Label" type="Label" parent="MarginContainer/Body/Sliders/PitchContainer/VBoxContainer"]
+[node name="Label" type="Label" parent="MarginContainer/Body/Sliders/PitchContainer/VBoxContainer" unique_id=1201804531]
 layout_mode = 2
 text = "Pitch"
 horizontal_alignment = 1
 
-[node name="SubViewport" type="SubViewport" parent="."]
+[node name="SubViewport" type="SubViewport" parent="." unique_id=901417474]
 unique_name_in_owner = true
 own_world_3d = true
 world_3d = SubResource("World3D_nyp6v")
@@ -351,19 +353,19 @@ transparent_bg = true
 msaa_3d = 3
 size = Vector2i(256, 256)
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="SubViewport"]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="SubViewport" unique_id=1886313347]
 environment = ExtResource("2_n4ja1")
 
-[node name="CamRotater" type="Node3D" parent="SubViewport"]
+[node name="CamRotater" type="Node3D" parent="SubViewport" unique_id=1640142638]
 unique_name_in_owner = true
 
-[node name="Camera" type="Camera3D" parent="SubViewport/CamRotater"]
+[node name="Camera" type="Camera3D" parent="SubViewport/CamRotater" unique_id=67779557]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.20005)
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewport/CamRotater/Camera"]
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewport/CamRotater/Camera" unique_id=1519353272]
 transform = Transform3D(1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 0.842653, 0)
 visible = false
 
-[node name="NodeHolder" type="Node3D" parent="SubViewport"]
+[node name="NodeHolder" type="Node3D" parent="SubViewport" unique_id=948099693]
 unique_name_in_owner = true

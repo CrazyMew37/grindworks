@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="FloorVariant" format=3 uid="uid://bx3uv0mqovn6g"]
+
+[ext_resource type="Resource" uid="uid://b7svvigolg3sq" path="res://objects/cog/presets/pools/lawbot.tres" id="1_get1g"]
+[ext_resource type="Texture2D" uid="uid://8ayok0wdycnu" path="res://models/facilities/alt_icons/frozen_da_office_icon.png" id="2_05dpa"]
+[ext_resource type="Resource" uid="uid://qky6hxt0lyw2" path="res://scenes/game_floor/department_floors/rooms_law.tres" id="3_2xdqv"]
+[ext_resource type="Script" uid="uid://crokoehko7pnv" path="res://scenes/game_floor/floor_modifiers/scripts/misc/floor_mod_frozen.gd" id="4_bqp76"]
+[ext_resource type="Script" uid="uid://cxvrtrods5hgg" path="res://scenes/game_floor/floor_variants/floor_variant.gd" id="4_qxp87"]
+[ext_resource type="Script" uid="uid://l8rdy4xvy2jo" path="res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_white_out.gd" id="5_7le3v"]
+[ext_resource type="Script" uid="uid://ci1am4p7axbxy" path="res://objects/modules/facility_room.gd" id="6_05dpa"]
+[ext_resource type="Script" uid="uid://d3t1vepa4plp4" path="res://scenes/game_floor/floor_variants/room_pack.gd" id="7_xw81v"]
+
+[sub_resource type="Resource" id="Resource_3u4kf"]
+script = ExtResource("6_05dpa")
+room = "res://objects/modules/office/variants/office_ice_boss.tscn"
+metadata/_custom_type_script = "uid://ci1am4p7axbxy"
+
+[sub_resource type="Resource" id="Resource_m3x4y"]
+script = ExtResource("7_xw81v")
+final_mode = 1
+background_music_mode = 1
+battle_music_mode = 1
+final_rooms = Array[ExtResource("6_05dpa")]([SubResource("Resource_3u4kf")])
+background_music = PackedStringArray("res://audio/music/DA_Office_FROZEN.ogg")
+battle_music = "uid://cp7rkxjmjekua"
+metadata/_custom_type_script = "uid://d3t1vepa4plp4"
+
+[resource]
+script = ExtResource("4_qxp87")
+floor_type = ExtResource("3_2xdqv")
+floor_name = "Frozen D.A. Office"
+cog_pool = ExtResource("1_get1g")
+modifiers = Array[Script]([ExtResource("4_bqp76"), ExtResource("5_7le3v")])
+room_pack = SubResource("Resource_m3x4y")
+is_alt_floor = true
+floor_icons = Array[Texture2D]([ExtResource("2_05dpa")])
+room_count = 11

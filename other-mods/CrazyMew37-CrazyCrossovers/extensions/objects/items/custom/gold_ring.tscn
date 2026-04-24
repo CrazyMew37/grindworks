@@ -1,8 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://brj7lur5ri6k4"]
-
-[ext_resource type="PackedScene" uid="uid://3iof23nt5oa4" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/accessories/goldring.glb" id="1_15cbn"]
-
-[node name="monarch_butterfly" type="Node3D"]
-
-[node name="goldring" parent="." instance=ExtResource("1_15cbn")]
-transform = Transform3D(-8.742278e-09, 0, -0.2, 0, 0.2, 0, 0.2, 0, -8.742278e-09, 0, -0.18, 0)

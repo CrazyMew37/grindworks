@@ -11,6 +11,8 @@ enum Character {
 	MYSTERY,
 	PETE,
 	OLDMAN,
+	FRANZ,
+	BUMPY,
 }
 @export var character_id := Character.OTHER
 

@@ -19,11 +19,20 @@ static var achievement_order: Dictionary[String, Array] = {
 		ProgressFile.GameAchievement.DEFEAT_BOSSES_25,
 		ProgressFile.GameAchievement.DEFEAT_BOSSES_100,
 		ProgressFile.GameAchievement.DEFEAT_BOSSES_200,
+		ProgressFile.GameAchievement.BEAT_FLOOR_10,
+		ProgressFile.GameAchievement.BEAT_FLOOR_20,
+		ProgressFile.GameAchievement.BEAT_FLOOR_25,
+		ProgressFile.GameAchievement.BEAT_FLOOR_35,
+		ProgressFile.GameAchievement.BEAT_FLOOR_50,
+		ProgressFile.GameAchievement.BEAT_FLOOR_65,
+		ProgressFile.GameAchievement.BEAT_FLOOR_75,
+		ProgressFile.GameAchievement.BEAT_FLOOR_100,
 		
 		## Secret Bosses
 		ProgressFile.GameAchievement.DEFEAT_CLOWNS,
-		ProgressFile.GameAchievement.DEFEAT_SLENDER,
 		ProgressFile.GameAchievement.DEFEAT_LIQUIDATOR,
+		ProgressFile.GameAchievement.DEFEAT_SOLICITOR,
+		ProgressFile.GameAchievement.DEFEAT_SLENDER,
 		
 		## Progression
 		ProgressFile.GameAchievement.UNLOCK_PROXY_COGS,
@@ -35,6 +44,8 @@ static var achievement_order: Dictionary[String, Array] = {
 		ProgressFile.GameAchievement.UNLOCK_MOE,
 		ProgressFile.GameAchievement.UNLOCK_PETE,
 		ProgressFile.GameAchievement.UNLOCK_OLDMAN,
+		ProgressFile.GameAchievement.UNLOCK_FRANZ,
+		ProgressFile.GameAchievement.UNLOCK_BUMPY,
 		ProgressFile.GameAchievement.UNLOCK_RANDOM,
 		
 		## Deaths
@@ -45,12 +56,14 @@ static var achievement_order: Dictionary[String, Array] = {
 		## Easter Eggs
 		ProgressFile.GameAchievement.EASTER_EGG_EXPLORER,
 		ProgressFile.GameAchievement.EASTER_EGG_GEAR,
+		ProgressFile.GameAchievement.EASTER_EGG_SURPRISE,
 		
 		## Challenges
 		ProgressFile.GameAchievement.WIN_GAME_HOUR,
 		
 		## Misc.
 		ProgressFile.GameAchievement.DOODLE,
+		ProgressFile.GameAchievement.PARTNER_TOON,
 		ProgressFile.GameAchievement.FLIPPY_GETS_BUCKET,
 		ProgressFile.GameAchievement.MEET_STRANGER,
 		
@@ -62,6 +75,7 @@ static var achievement_order: Dictionary[String, Array] = {
 		ProgressFile.GameAchievement.UNLOCK_BIRD_WINGS,
 		ProgressFile.GameAchievement.UNLOCK_WEIRD_GLASSES,
 		ProgressFile.GameAchievement.UNLOCK_WINGTIPS,
+		ProgressFile.GameAchievement.UNLOCK_PILOT_CAP,
 		
 		## Passive Unlocks
 		ProgressFile.GameAchievement.UNLOCK_ROLODEX,
@@ -72,6 +86,8 @@ static var achievement_order: Dictionary[String, Array] = {
 		## Pocket Prank Unlocks
 		ProgressFile.GameAchievement.UNLOCK_LAW_BOOK,
 		ProgressFile.GameAchievement.UNLOCK_DAGGER,
+		ProgressFile.GameAchievement.UNLOCK_RUBBER_STAMP,
+		ProgressFile.GameAchievement.UNLOCK_PROPELLER,
 	],
 	
 }

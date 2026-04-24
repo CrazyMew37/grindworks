@@ -195,6 +195,8 @@ func inject_room_pack(dept_floor: DepartmentFloor, room_pack: RoomPack) -> void:
 		'pre_final_rooms': 'pre_final_mode',
 		'final_rooms': 'final_mode',
 		'one_time_rooms': 'one_time_mode',
+		'background_music': 'background_music_mode',
+		'battle_music': 'battle_music_mode',
 	}
 	for room_type in room_types.keys():
 		if room_pack.get(room_types[room_type]) == RoomPack.PackMode.REPLACE:

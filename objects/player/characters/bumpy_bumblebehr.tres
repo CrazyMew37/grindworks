@@ -1,0 +1,79 @@
+[gd_resource type="Resource" script_class="PlayerCharacter" format=3 uid="uid://ohtrus6v6whp"]
+
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="1_ofwwg"]
+[ext_resource type="Script" uid="uid://o2fe7ud1faj6" path="res://objects/battle/battle_resources/stats.gd" id="2_t1lnn"]
+[ext_resource type="Script" uid="uid://c8kas2j4io1jh" path="res://objects/toon/clothing/toon_bottoms.gd" id="3_l6uew"]
+[ext_resource type="Texture2D" uid="uid://bc47fggqh8gbp" path="res://models/toon/textures/clothes/shorts/desat_shorts_2.png" id="4_ymrpx"]
+[ext_resource type="Script" uid="uid://yg7gxug4rab" path="res://objects/toon/toon_dna.gd" id="5_ao7qx"]
+[ext_resource type="Script" uid="uid://dfqwh4jmdy0iw" path="res://objects/toon/clothing/toon_shirt.gd" id="6_khx1u"]
+[ext_resource type="Texture2D" uid="uid://dsikqlc2iiid4" path="res://models/toon/textures/clothes/shirts/desat_shirt_1_4.png" id="7_72pwe"]
+[ext_resource type="Texture2D" uid="uid://dh7dyokcfyw43" path="res://models/toon/textures/clothes/shirts/desat_sleeve_1.png" id="8_titwo"]
+[ext_resource type="Resource" uid="uid://tyi7ukxtvcgc" path="res://objects/battle/battle_resources/gag_loadouts/loadouts/standard_loadout.tres" id="9_8vryi"]
+[ext_resource type="Script" uid="uid://ts8xpgftpmty" path="res://objects/player/character.gd" id="10_ccy1u"]
+[ext_resource type="Resource" uid="uid://ca8romvopccaa" path="res://objects/items/resources/active/bumpy_phone.tres" id="11_ofwwg"]
+
+[sub_resource type="Resource" id="Resource_jj61k"]
+script = ExtResource("2_t1lnn")
+damage = 0.85
+defense = 0.95
+evasiveness = 0.95
+speed = 1.1
+max_turns = 2
+
+[sub_resource type="Resource" id="Resource_ugrs1"]
+script = ExtResource("3_l6uew")
+texture = ExtResource("4_ymrpx")
+base_color = Color(0.83137256, 0.49803922, 0.29803923, 1)
+
+[sub_resource type="Resource" id="Resource_2lryd"]
+script = ExtResource("6_khx1u")
+shirt_texture = ExtResource("7_72pwe")
+sleeve_texture = ExtResource("8_titwo")
+base_color = Color(0.99215686, 0.47843137, 0.16862746, 1)
+sleeve_color = Color(0.99215686, 0.47843137, 0.16862746, 1)
+
+[sub_resource type="Resource" id="Resource_ax4gq"]
+script = ExtResource("5_ao7qx")
+leg_type = 1
+species = 0
+head_index = 2
+eyelashes = false
+head_color = Color(0.5568628, 0.5882353, 0.8745098, 1)
+torso_color = Color(0.5568628, 0.5882353, 0.8745098, 1)
+leg_color = Color(0.5568628, 0.5882353, 0.8745098, 1)
+shirt = SubResource("Resource_2lryd")
+bottoms = SubResource("Resource_ugrs1")
+
+[resource]
+script = ExtResource("10_ccy1u")
+character_id = 10
+character_name = "Bumpy Bumblebehr"
+character_summary = "Can initially spawn a Partner Toon and a Doodle
+Can only have up to two turns
++1 Anomaly per floor
++25% Damage/Defense to Lawbots
+-25% Damage/Defense to Other Departments"
+character_blurb = "An infamous Toon to the Lawbots. With his extensive list of contacts, this defendant is sure to bring the cogs to justice!"
+dna = SubResource("Resource_ax4gq")
+gag_loadout = ExtResource("9_8vryi")
+starting_laff = 30
+starting_items = Array[ExtResource("1_ofwwg")]([ExtResource("11_ofwwg")])
+base_stats = SubResource("Resource_jj61k")
+starting_gags = Dictionary[String, int]({
+"Drop": 0,
+"Lure": 1,
+"Sound": 1,
+"Squirt": 0,
+"Throw": 0,
+"Trap": 1
+})
+additional_stats = Dictionary[String, Variant]({
+"anomaly_boost": 1,
+"bossbot_boost": 0.75,
+"cashbot_boost": 0.75,
+"lawbot_boost": 1.25,
+"luck": 1.05,
+"sellbot_boost": 0.75
+})
+override_index = 8
+achievement_index = 51

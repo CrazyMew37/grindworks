@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemShoe" format=3 uid="uid://dbh7jop30rcfe"]
+
+[ext_resource type="Texture2D" uid="uid://qx4is0haq6e0" path="res://objects/items/resources/accessories/shoes/icons/athletic_shoes.png" id="1_nb8m4"]
+[ext_resource type="Script" uid="uid://bv6lwbgh87hr8" path="res://objects/items/custom/mult_boots/item_athletic_shoes.gd" id="2_6dvjy"]
+[ext_resource type="Script" uid="uid://bb02y647us2n3" path="res://objects/items/classes/item_shoe.gd" id="2_nb8m4"]
+[ext_resource type="Texture2D" uid="uid://7ql2tq2gfce5" path="res://models/accessories/shoe_textures/shoes/tt_t_chr_avt_acc_sho_athleticYellow.png" id="4_fnvr4"]
+
+[resource]
+script = ExtResource("2_nb8m4")
+shoe_tex = ExtResource("4_fnvr4")
+qualitoon = 4
+rarity = 7
+item_name = "Athletic Shoes"
+item_description = "Run a marathon!"
+big_description = "x1.2 Speed multiplier"
+item_script = ExtResource("2_6dvjy")
+icon = ExtResource("1_nb8m4")
+metadata/_custom_type_script = "uid://bb02y647us2n3"

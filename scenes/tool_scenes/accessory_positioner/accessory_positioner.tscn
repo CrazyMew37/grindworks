@@ -35,17 +35,17 @@ font_color = Color(0, 0, 0, 1)
 ambient_light_source = 2
 ambient_light_color = Color(1, 1, 1, 1)
 
-[node name="AccessoryPositioner" type="Node3D"]
+[node name="AccessoryPositioner" type="Node3D" unique_id=1697679380]
 script = ExtResource("1_xjk6w")
 
-[node name="Toon" parent="." instance=ExtResource("1_7tb6h")]
+[node name="Toon" parent="." unique_id=1977832818 instance=ExtResource("1_7tb6h")]
 
-[node name="SpringArm3D" type="SpringArm3D" parent="Toon"]
+[node name="SpringArm3D" type="SpringArm3D" parent="Toon" unique_id=630917013]
 spring_length = 5.0
 
-[node name="Camera3D" type="Camera3D" parent="Toon/SpringArm3D"]
+[node name="Camera3D" type="Camera3D" parent="Toon/SpringArm3D" unique_id=321801673]
 
-[node name="GUI" type="Control" parent="."]
+[node name="GUI" type="Control" parent="." unique_id=433523973]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -54,7 +54,7 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
-[node name="EditDNA" type="TextureRect" parent="GUI"]
+[node name="EditDNA" type="TextureRect" parent="GUI" unique_id=1799264540]
 layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
@@ -68,7 +68,7 @@ texture = ExtResource("3_348fn")
 expand_mode = 1
 script = ExtResource("4_avykk")
 
-[node name="Title" type="Label" parent="GUI/EditDNA"]
+[node name="Title" type="Label" parent="GUI/EditDNA" unique_id=331150069]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -83,7 +83,7 @@ label_settings = SubResource("LabelSettings_3r4r1")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Options" type="VBoxContainer" parent="GUI/EditDNA"]
+[node name="Options" type="VBoxContainer" parent="GUI/EditDNA" unique_id=688906554]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -98,44 +98,44 @@ grow_horizontal = 2
 grow_vertical = 0
 mouse_filter = 2
 
-[node name="BodyType" type="HBoxContainer" parent="GUI/EditDNA/Options"]
+[node name="BodyType" type="HBoxContainer" parent="GUI/EditDNA/Options" unique_id=2053455989]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="GUI/EditDNA/Options/BodyType"]
+[node name="Label" type="Label" parent="GUI/EditDNA/Options/BodyType" unique_id=644882524]
 layout_mode = 2
 text = "Body Type: "
 label_settings = SubResource("LabelSettings_6252g")
 
-[node name="OptionButton" type="OptionButton" parent="GUI/EditDNA/Options/BodyType"]
+[node name="OptionButton" type="OptionButton" parent="GUI/EditDNA/Options/BodyType" unique_id=344908965]
 layout_mode = 2
 size_flags_horizontal = 10
 
-[node name="Species" type="HBoxContainer" parent="GUI/EditDNA/Options"]
+[node name="Species" type="HBoxContainer" parent="GUI/EditDNA/Options" unique_id=75926715]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="GUI/EditDNA/Options/Species"]
+[node name="Label" type="Label" parent="GUI/EditDNA/Options/Species" unique_id=1459374050]
 layout_mode = 2
 text = "Species: "
 label_settings = SubResource("LabelSettings_6252g")
 
-[node name="OptionButton" type="OptionButton" parent="GUI/EditDNA/Options/Species"]
+[node name="OptionButton" type="OptionButton" parent="GUI/EditDNA/Options/Species" unique_id=45650103]
 layout_mode = 2
 size_flags_horizontal = 10
 
-[node name="HeadIndex" type="HBoxContainer" parent="GUI/EditDNA/Options"]
+[node name="HeadIndex" type="HBoxContainer" parent="GUI/EditDNA/Options" unique_id=1545866182]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="GUI/EditDNA/Options/HeadIndex"]
+[node name="Label" type="Label" parent="GUI/EditDNA/Options/HeadIndex" unique_id=1037801104]
 layout_mode = 2
 text = "Head Index: "
 label_settings = SubResource("LabelSettings_6252g")
 
-[node name="ButtonLeft" type="Button" parent="GUI/EditDNA/Options/HeadIndex"]
+[node name="ButtonLeft" type="Button" parent="GUI/EditDNA/Options/HeadIndex" unique_id=1720563331]
 layout_mode = 2
 size_flags_horizontal = 10
 text = "<"
 
-[node name="Index" type="Label" parent="GUI/EditDNA/Options/HeadIndex"]
+[node name="Index" type="Label" parent="GUI/EditDNA/Options/HeadIndex" unique_id=654753387]
 custom_minimum_size = Vector2(20, 0)
 layout_mode = 2
 text = "0"
@@ -143,11 +143,11 @@ label_settings = SubResource("LabelSettings_203nh")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="ButtonRight" type="Button" parent="GUI/EditDNA/Options/HeadIndex"]
+[node name="ButtonRight" type="Button" parent="GUI/EditDNA/Options/HeadIndex" unique_id=473475140]
 layout_mode = 2
 text = ">"
 
-[node name="AccessoryPlacer" type="TextureRect" parent="GUI"]
+[node name="AccessoryPlacer" type="TextureRect" parent="GUI" unique_id=713509765]
 layout_mode = 1
 anchors_preset = 3
 anchor_left = 1.0
@@ -163,7 +163,7 @@ texture = ExtResource("3_348fn")
 expand_mode = 1
 script = ExtResource("6_nubce")
 
-[node name="Title" type="Label" parent="GUI/AccessoryPlacer"]
+[node name="Title" type="Label" parent="GUI/AccessoryPlacer" unique_id=873206246]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -176,7 +176,7 @@ grow_horizontal = 2
 text = "Accessory Placement"
 label_settings = SubResource("LabelSettings_gcaro")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="GUI/AccessoryPlacer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="GUI/AccessoryPlacer" unique_id=390593963]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -190,19 +190,19 @@ offset_bottom = -14.0
 grow_horizontal = 2
 grow_vertical = 0
 
-[node name="LoadButton" type="Button" parent="GUI/AccessoryPlacer/VBoxContainer"]
+[node name="LoadButton" type="Button" parent="GUI/AccessoryPlacer/VBoxContainer" unique_id=733457485]
 layout_mode = 2
 text = "Load Accessory"
 
-[node name="TransformType" type="HBoxContainer" parent="GUI/AccessoryPlacer/VBoxContainer"]
+[node name="TransformType" type="HBoxContainer" parent="GUI/AccessoryPlacer/VBoxContainer" unique_id=1133108354]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="GUI/AccessoryPlacer/VBoxContainer/TransformType"]
+[node name="Label" type="Label" parent="GUI/AccessoryPlacer/VBoxContainer/TransformType" unique_id=1810108674]
 layout_mode = 2
 text = "Transform: "
 label_settings = SubResource("LabelSettings_6252g")
 
-[node name="OptionButton" type="OptionButton" parent="GUI/AccessoryPlacer/VBoxContainer/TransformType"]
+[node name="OptionButton" type="OptionButton" parent="GUI/AccessoryPlacer/VBoxContainer/TransformType" unique_id=1867254621]
 layout_mode = 2
 size_flags_horizontal = 10
 selected = 0
@@ -214,21 +214,21 @@ popup/item_1/id = 1
 popup/item_2/text = "Scale"
 popup/item_2/id = 2
 
-[node name="AxisEditor" type="VBoxContainer" parent="GUI/AccessoryPlacer/VBoxContainer"]
+[node name="AxisEditor" type="VBoxContainer" parent="GUI/AccessoryPlacer/VBoxContainer" unique_id=1258500516]
 layout_mode = 2
 
-[node name="AxisLabel" type="Label" parent="GUI/AccessoryPlacer/VBoxContainer/AxisEditor"]
+[node name="AxisLabel" type="Label" parent="GUI/AccessoryPlacer/VBoxContainer/AxisEditor" unique_id=572672638]
 layout_mode = 2
 text = "X:"
 label_settings = SubResource("LabelSettings_21rej")
 
-[node name="Slider" type="HSlider" parent="GUI/AccessoryPlacer/VBoxContainer/AxisEditor"]
+[node name="Slider" type="HSlider" parent="GUI/AccessoryPlacer/VBoxContainer/AxisEditor" unique_id=1451622924]
 layout_mode = 2
 min_value = -1.0
 max_value = 1.0
 step = 0.01
 
-[node name="LineEdit" type="LineEdit" parent="GUI/AccessoryPlacer/VBoxContainer/AxisEditor"]
+[node name="LineEdit" type="LineEdit" parent="GUI/AccessoryPlacer/VBoxContainer/AxisEditor" unique_id=2012581188]
 layout_mode = 2
 focus_mode = 1
 theme_override_colors/font_color = Color(0, 0, 0, 1)
@@ -237,21 +237,21 @@ text = "0.0"
 alignment = 1
 flat = true
 
-[node name="AxisEditor2" type="VBoxContainer" parent="GUI/AccessoryPlacer/VBoxContainer"]
+[node name="AxisEditor2" type="VBoxContainer" parent="GUI/AccessoryPlacer/VBoxContainer" unique_id=905158946]
 layout_mode = 2
 
-[node name="AxisLabel" type="Label" parent="GUI/AccessoryPlacer/VBoxContainer/AxisEditor2"]
+[node name="AxisLabel" type="Label" parent="GUI/AccessoryPlacer/VBoxContainer/AxisEditor2" unique_id=1836187295]
 layout_mode = 2
 text = "Y:"
 label_settings = SubResource("LabelSettings_21rej")
 
-[node name="Slider" type="HSlider" parent="GUI/AccessoryPlacer/VBoxContainer/AxisEditor2"]
+[node name="Slider" type="HSlider" parent="GUI/AccessoryPlacer/VBoxContainer/AxisEditor2" unique_id=1902705168]
 layout_mode = 2
 min_value = -1.0
 max_value = 1.0
 step = 0.01
 
-[node name="LineEdit" type="LineEdit" parent="GUI/AccessoryPlacer/VBoxContainer/AxisEditor2"]
+[node name="LineEdit" type="LineEdit" parent="GUI/AccessoryPlacer/VBoxContainer/AxisEditor2" unique_id=203844661]
 layout_mode = 2
 focus_mode = 1
 theme_override_colors/font_color = Color(0, 0, 0, 1)
@@ -260,21 +260,21 @@ text = "0.0"
 alignment = 1
 flat = true
 
-[node name="AxisEditor3" type="VBoxContainer" parent="GUI/AccessoryPlacer/VBoxContainer"]
+[node name="AxisEditor3" type="VBoxContainer" parent="GUI/AccessoryPlacer/VBoxContainer" unique_id=1123904117]
 layout_mode = 2
 
-[node name="AxisLabel" type="Label" parent="GUI/AccessoryPlacer/VBoxContainer/AxisEditor3"]
+[node name="AxisLabel" type="Label" parent="GUI/AccessoryPlacer/VBoxContainer/AxisEditor3" unique_id=83991185]
 layout_mode = 2
 text = "Z:"
 label_settings = SubResource("LabelSettings_21rej")
 
-[node name="Slider" type="HSlider" parent="GUI/AccessoryPlacer/VBoxContainer/AxisEditor3"]
+[node name="Slider" type="HSlider" parent="GUI/AccessoryPlacer/VBoxContainer/AxisEditor3" unique_id=2048017149]
 layout_mode = 2
 min_value = -1.0
 max_value = 1.0
 step = 0.01
 
-[node name="LineEdit" type="LineEdit" parent="GUI/AccessoryPlacer/VBoxContainer/AxisEditor3"]
+[node name="LineEdit" type="LineEdit" parent="GUI/AccessoryPlacer/VBoxContainer/AxisEditor3" unique_id=1680819961]
 layout_mode = 2
 focus_mode = 1
 theme_override_colors/font_color = Color(0, 0, 0, 1)
@@ -283,11 +283,11 @@ text = "0.0"
 alignment = 1
 flat = true
 
-[node name="SaveButton" type="Button" parent="GUI/AccessoryPlacer/VBoxContainer"]
+[node name="SaveButton" type="Button" parent="GUI/AccessoryPlacer/VBoxContainer" unique_id=1057225490]
 layout_mode = 2
 text = "SAVE"
 
-[node name="AccessoryOpener" type="FileDialog" parent="GUI/AccessoryPlacer"]
+[node name="AccessoryOpener" type="FileDialog" parent="GUI/AccessoryPlacer" unique_id=1073880551]
 title = "Open a File"
 initial_position = 1
 size = Vector2i(348, 290)
@@ -295,7 +295,7 @@ ok_button_text = "Open"
 file_mode = 0
 root_subfolder = "objects/items/resources/accessories"
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1602142081]
 environment = SubResource("Environment_mmvdr")
 
 [connection signal="s_dna_changed" from="." to="GUI/AccessoryPlacer" method="on_dna_change"]

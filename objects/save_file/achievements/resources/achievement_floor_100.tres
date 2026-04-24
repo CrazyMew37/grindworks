@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="SignalAchievement" format=3 uid="uid://c2ui7rkef1hsq"]
+
+[ext_resource type="Texture2D" uid="uid://dq2qax61m5xe6" path="res://ui_assets/achievements/icon_achievement_endless_100.png" id="1_kiql8"]
+[ext_resource type="Script" uid="uid://bu0ypaddtve76" path="res://objects/save_file/achievements/signal_achievement.gd" id="2_shx2f"]
+
+[resource]
+script = ExtResource("2_shx2f")
+signal_source = 1
+signal_name = "s_floor_100_beat"
+achievement_name = "Dividend King"
+achievement_summary = "Complete Floor 100."
+achievement_index = 48
+achievement_icon = ExtResource("1_kiql8")
+metadata/_custom_type_script = "uid://bu0ypaddtve76"

@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="ItemShoe" format=3 uid="uid://leh5nh1l2xu0"]
+
+[ext_resource type="Texture2D" uid="uid://cl2gc3111qf0g" path="res://objects/items/resources/accessories/shoes/icons/sneakers.png" id="1_hy4s2"]
+[ext_resource type="Texture2D" uid="uid://dibtqnksk163v" path="res://models/accessories/shoe_textures/shoes/tt_t_chr_avt_acc_sho_converseStyleBlack.png" id="2_hy4s2"]
+[ext_resource type="Script" uid="uid://bb02y647us2n3" path="res://objects/items/classes/item_shoe.gd" id="3_t71id"]
+
+[resource]
+script = ExtResource("3_t71id")
+shoe_type = 2
+shoe_tex = ExtResource("2_hy4s2")
+long_leg_tex = ExtResource("2_hy4s2")
+qualitoon = 3
+world_y_offset = -0.1
+item_name = "Sneakers"
+item_description = "Kick down those cogs!"
+big_description = "+ 20% Throw damage
+-10% Trap damage"
+stats_add = {
+"gag_boost:Throw": 0.2,
+"gag_boost:Trap": -0.1
+}
+icon = ExtResource("1_hy4s2")
+metadata/_custom_type_script = "uid://bb02y647us2n3"

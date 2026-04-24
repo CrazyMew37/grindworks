@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ItemShoe" format=3 uid="uid://da21wutgsqsgl"]
+
+[ext_resource type="Texture2D" uid="uid://ojwbj5enp7qg" path="res://objects/items/resources/accessories/shoes/icons/rain_boots.png" id="1_6ykfc"]
+[ext_resource type="Script" uid="uid://catargsi1cnou" path="res://objects/items/custom/mult_boots/item_rain_boots.gd" id="2_6ykfc"]
+[ext_resource type="Texture2D" uid="uid://sllsovrfstb3" path="res://models/accessories/shoe_textures/boots/tt_t_chr_avt_acc_sho_rainBootsYellowLL.png" id="3_6ykfc"]
+[ext_resource type="Script" uid="uid://bb02y647us2n3" path="res://objects/items/classes/item_shoe.gd" id="4_5tcxs"]
+[ext_resource type="Texture2D" uid="uid://bwsfab2n477qa" path="res://models/accessories/shoe_textures/boots/tt_t_chr_avt_acc_sho_rainBootsYellow.png" id="5_aqk2k"]
+
+[resource]
+script = ExtResource("4_5tcxs")
+shoe_type = 3
+shoe_tex = ExtResource("5_aqk2k")
+long_leg_tex = ExtResource("3_6ykfc")
+qualitoon = 4
+rarity = 6
+world_y_offset = -0.2
+item_name = "Rain Boots"
+item_description = "Singing in the rain!"
+big_description = "x1.2 Luck multiplier"
+item_script = ExtResource("2_6ykfc")
+icon = ExtResource("1_6ykfc")
+metadata/_custom_type_script = "uid://bb02y647us2n3"

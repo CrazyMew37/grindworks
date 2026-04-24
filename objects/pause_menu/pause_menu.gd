@@ -80,7 +80,7 @@ func _ready() -> void:
 	seed_button.mouse_exited.connect(_stop_hover_seed_label)
 	seed_button.pressed.connect(_seed_label_clicked)
 	score_label.set_text("Score: %s" % str(ScoreTally.get_point_total(false)))
-	%VersionLabel.text = Globals.VERSION_NUMBER
+	%VersionLabel.text = "CrazyMew37 Edition"
 	
 	AudioManager.set_fx_music_lpfilter()
 	AudioManager.play_sound(SFX_OPEN)

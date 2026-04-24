@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="ReleaseNote" format=3 uid="uid://4cvahjkqxlme"]
+
+[ext_resource type="Script" uid="uid://d1j0hh6tsgy0r" path="res://scenes/title_screen/release_notes/release_note.gd" id="1_m1mx8"]
+
+[resource]
+script = ExtResource("1_m1mx8")
+release_version = "v1.3.0 (CM37E)"
+notes = "Hey! This is the initial release of the modfork, so I thought I might as well make a series of patch notes. This fork is meant to be a completed version of the game, as it was left a bit unfinished.
+[TITLE]Mods added
+A lot of mods were added, which gave the following effects:
+  The Haunted Cog Golf Course's fog is now decreased
+  The Battle UI has been slightly adjusted
+  Health lights have been changed
+  Cog Creator Plus implemented. Now you can tweak a lot more, including a groovy new way to turn off cog suits for 2D and 3D non-cog cogs!
+  Endless implemented. Enjoy the game forever!
+  Play Dead no longer takes forever
+  You can now restart the floor without losing your save if you die
+  Mole Stomp has been reworked. You can now stomp on Yellow Moles! Scores and Red Moles were adjusted to compensate.
+[TITLE] Exclusive Additions
+Added 2 new characters: Franz Neckvein and Bumpy Bumblebehr
+Added a new facility: The Frozen D.A. Office
+The Faulty Factory and Haunted Cog Golf Course now have different icons. They also have edited versions of their respective normal facilitie's music.
+Added Partner Toons! They act like doodles and help you by attacking cogs with gags.
+The Security Goon has been renamed to the 'Chief Security Goon'.
+  His eye is now red. And it will turn purple when he enters phase 2.
+More Battle Speeds have been added (From Endless, but added in a smaller amount)
+Added 13 new items (All but one are shoes), 16 new achievements (Half involving Endless), and 3 Pocket Pranks.
+Fixed a bug with the health colors
+[TITLE] End Note
+This may not be the perfect fork, but I hope I can at least leave the game on a high note. Cheers! <3"
+metadata/_custom_type_script = "uid://d1j0hh6tsgy0r"

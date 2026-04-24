@@ -4,6 +4,7 @@ class_name Toon
 @export var toon_dna: ToonDNA
 @export var randomize_dna := false
 @export var auto_build := false
+@export var add_accessories := false
 @export var initial_anim := &""
 
 ## Child References
@@ -121,7 +122,7 @@ func _ready() -> void:
 		toon_dna = ToonDNA.new()
 		toon_dna.randomize_dna()
 	if auto_build: construct_toon(toon_dna)
-	if randomize_dna:
+	if add_accessories:
 		apply_random_accessories()
 	if not initial_anim.is_empty():
 		set_animation(initial_anim)

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://cxpgtsw50t5s3"]
+
+[ext_resource type="Script" uid="uid://dhdth6b0ef0oq" path="res://objects/partnertoon/roaming_toon/toon_script.gd" id="1_q1m1f"]
+[ext_resource type="PackedScene" uid="uid://cwlf7j815qrix" path="res://objects/partnertoon/toon_item.tscn" id="2_xwtu6"]
+[ext_resource type="AudioStream" uid="uid://dchmgklf0w1dr" path="res://audio/sfx/items/doodle_pickup.ogg" id="3_26l4o"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="4_dm1ja"]
+
+[resource]
+script = ExtResource("4_dm1ja")
+qualitoon = 4
+evergreen = true
+realtime = true
+item_name = "Partner Toon"
+item_description = "SOS!"
+big_description = "-Attacks cogs with Throw, Squirt, or Drop, often prioritizing stronger threats."
+model = ExtResource("2_xwtu6")
+pickup_sfx = ExtResource("3_26l4o")
+item_script = ExtResource("1_q1m1f")
+shop_category_title = "Special Hire"
+shop_category_color = Color(0.60162, 0.201089, 1, 1)
+force_show_shop_category = true
+custom_shop_price = 45

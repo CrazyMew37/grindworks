@@ -32,7 +32,7 @@ font = ExtResource("2_a0dcy")
 font_size = 12
 font_color = Color(0.0430392, 0.0430391, 0.0430392, 1)
 
-[node name="PopupPanel" instance=ExtResource("1_mgr4m")]
+[node name="PopupPanel" unique_id=1133391550 instance=ExtResource("1_mgr4m")]
 offset_left = -407.0
 offset_top = -257.0
 offset_right = 407.0
@@ -65,7 +65,7 @@ visible = false
 [node name="CancelButton" parent="Panel" index="2"]
 font_size = 36.0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Panel" index="3"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel" index="3" unique_id=501868802]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -79,7 +79,7 @@ offset_bottom = 494.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="Panel" index="4"]
+[node name="MarginContainer" type="MarginContainer" parent="Panel" index="4" unique_id=1391884673]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -92,23 +92,23 @@ theme_override_constants/margin_top = 84
 theme_override_constants/margin_right = 48
 theme_override_constants/margin_bottom = 36
 
-[node name="ScrollContainer" type="ScrollContainer" parent="Panel/MarginContainer" index="0"]
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel/MarginContainer" index="0" unique_id=3714377]
 layout_mode = 2
 theme = ExtResource("3_7ndhd")
 horizontal_scroll_mode = 0
 
-[node name="SectionContainer" type="VBoxContainer" parent="Panel/MarginContainer/ScrollContainer" index="0"]
+[node name="SectionContainer" type="VBoxContainer" parent="Panel/MarginContainer/ScrollContainer" index="0" unique_id=1350093300]
 unique_name_in_owner = true
 layout_mode = 2
 alignment = 1
 
-[node name="AchievementContainer" type="GridContainer" parent="Panel/MarginContainer/ScrollContainer/SectionContainer" index="0"]
+[node name="AchievementContainer" type="GridContainer" parent="Panel/MarginContainer/ScrollContainer/SectionContainer" index="0" unique_id=1553690852]
 unique_name_in_owner = true
 visible = false
 layout_mode = 2
 columns = 4
 
-[node name="SectionHeader" type="Label" parent="Panel/MarginContainer/ScrollContainer/SectionContainer" index="1"]
+[node name="SectionHeader" type="Label" parent="Panel/MarginContainer/ScrollContainer/SectionContainer" index="1" unique_id=1934138363]
 unique_name_in_owner = true
 visible = false
 layout_mode = 2
@@ -116,7 +116,7 @@ label_settings = SubResource("LabelSettings_cslpm")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="AchievementTemplate" type="Control" parent="." index="2"]
+[node name="AchievementTemplate" type="Control" parent="." index="2" unique_id=2033772070]
 visible = false
 custom_minimum_size = Vector2(179, 220)
 anchors_preset = 0
@@ -124,7 +124,7 @@ offset_top = -32.0
 offset_right = 179.0
 offset_bottom = 188.0
 
-[node name="Panel" type="Panel" parent="AchievementTemplate" index="0"]
+[node name="Panel" type="Panel" parent="AchievementTemplate" index="0" unique_id=1014139730]
 visible = false
 layout_mode = 1
 anchors_preset = 15
@@ -133,7 +133,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Elements" type="Control" parent="AchievementTemplate" index="1"]
+[node name="Elements" type="Control" parent="AchievementTemplate" index="1" unique_id=9796827]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -141,7 +141,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Title" type="Label" parent="AchievementTemplate/Elements" index="0"]
+[node name="Title" type="Label" parent="AchievementTemplate/Elements" index="0" unique_id=1206720140]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -157,7 +157,7 @@ horizontal_alignment = 1
 vertical_alignment = 2
 autowrap_mode = 2
 
-[node name="Background" type="TextureRect" parent="AchievementTemplate/Elements" index="1"]
+[node name="Background" type="TextureRect" parent="AchievementTemplate/Elements" index="1" unique_id=177085342]
 visible = false
 custom_minimum_size = Vector2(128, 128)
 layout_mode = 1
@@ -177,7 +177,7 @@ texture = ExtResource("7_o3rua")
 expand_mode = 1
 stretch_mode = 4
 
-[node name="Icon" type="TextureRect" parent="AchievementTemplate/Elements" index="2"]
+[node name="Icon" type="TextureRect" parent="AchievementTemplate/Elements" index="2" unique_id=523579052]
 custom_minimum_size = Vector2(128, 128)
 layout_mode = 1
 anchors_preset = 8
@@ -197,7 +197,7 @@ texture = ExtResource("6_2b0he")
 expand_mode = 1
 stretch_mode = 4
 
-[node name="Summary" type="Label" parent="AchievementTemplate/Elements" index="3"]
+[node name="Summary" type="Label" parent="AchievementTemplate/Elements" index="3" unique_id=1796484020]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5

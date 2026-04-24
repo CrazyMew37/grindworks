@@ -40,10 +40,8 @@ _data = {
 &"spin": SubResource("Animation_ygtlm")
 }
 
-[node name="propeller2" instance=ExtResource("1_ejadm")]
+[node name="propeller2" unique_id=979849311 instance=ExtResource("1_ejadm")]
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="5"]
-libraries = {
-"": SubResource("AnimationLibrary_2co5g")
-}
-autoplay = "spin"
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="5" unique_id=1212385593]
+libraries/ = SubResource("AnimationLibrary_2co5g")
+autoplay = &"spin"

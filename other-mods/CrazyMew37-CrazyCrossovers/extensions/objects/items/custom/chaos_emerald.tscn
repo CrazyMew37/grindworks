@@ -1,8 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://q14rc2k5ltq"]
-
-[ext_resource type="PackedScene" uid="uid://bnkeugn2vusgs" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/accessories/chaosemerald.glb" id="1_o6j2b"]
-
-[node name="monarch_butterfly" type="Node3D"]
-
-[node name="chaosemerald" parent="." instance=ExtResource("1_o6j2b")]
-transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, -0.1, 0)

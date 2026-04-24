@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="ItemShoe" format=3 uid="uid://spil7crtg6rb"]
+
+[ext_resource type="Texture2D" uid="uid://crgbhfdmi0ais" path="res://objects/items/resources/accessories/shoes/icons/green_hearts_boots.png" id="1_ancy7"]
+[ext_resource type="Texture2D" uid="uid://6gx1gj7wj3xo" path="res://models/accessories/shoe_textures/boots/tt_t_chr_avt_acc_sho_fashionBootsGreenHeartsLL.png" id="2_ancy7"]
+[ext_resource type="Script" uid="uid://bb02y647us2n3" path="res://objects/items/classes/item_shoe.gd" id="3_cuu2t"]
+[ext_resource type="Texture2D" uid="uid://btle247cy7676" path="res://models/accessories/shoe_textures/boots/tt_t_chr_avt_acc_sho_fashionBootsGreenHearts.png" id="4_cuu2t"]
+
+[resource]
+script = ExtResource("3_cuu2t")
+shoe_type = 3
+shoe_tex = ExtResource("4_cuu2t")
+long_leg_tex = ExtResource("2_ancy7")
+qualitoon = 3
+world_y_offset = -0.2
+item_name = "Green Hearts Boots"
+item_description = "Love me, love me not."
+big_description = "+ 20% Trap damage
+- 10% Lure knockback damage"
+stats_add = {
+"gag_boost:Lure": -0.1,
+"gag_boost:Trap": 0.2
+}
+icon = ExtResource("1_ancy7")
+metadata/_custom_type_script = "uid://bb02y647us2n3"

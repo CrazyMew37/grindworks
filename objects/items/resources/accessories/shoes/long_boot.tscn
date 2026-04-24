@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://diqe4g48ssjl3"]
 
 [ext_resource type="Script" uid="uid://cocerctap73uk" path="res://objects/items/resources/accessories/shoes/shoe_model.gd" id="1_rdw0f"]
+[ext_resource type="Texture2D" uid="uid://bq42163jlyad3" path="res://models/accessories/shoe_textures/boots/tt_t_chr_avt_acc_sho_winterBootsPink.png" id="2_ajl1l"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lncwb"]
 resource_name = "tt_t_chr_avt_acc_sho_docMartinBootsGreenShader"
@@ -61,22 +62,23 @@ resource_local_to_scene = true
 resource_name = "tt_t_chr_avt_acc_sho_docMartinBootsGreenShader"
 vertex_color_use_as_albedo = true
 albedo_color = Color(0.906332, 0.906332, 0.906332, 0.8)
+albedo_texture = ExtResource("2_ajl1l")
 emission_enabled = true
 
 [sub_resource type="BoxMesh" id="BoxMesh_ma876"]
 size = Vector3(1.2, 0.085, 1.2)
 
-[node name="LongBoot" type="Node3D" node_paths=PackedStringArray("mesh")]
+[node name="LongBoot" type="Node3D" unique_id=1988634901 node_paths=PackedStringArray("mesh")]
 script = ExtResource("1_rdw0f")
 mesh = NodePath("Model")
 
-[node name="Model" type="MeshInstance3D" parent="."]
+[node name="Model" type="MeshInstance3D" parent="." unique_id=1943357286]
 transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
 mesh = SubResource("ArrayMesh_pi4ef")
 skin = SubResource("Skin_rdw0f")
 surface_material_override/0 = SubResource("StandardMaterial3D_rdw0f")
 
-[node name="UIHelper" type="MeshInstance3D" parent="."]
+[node name="UIHelper" type="MeshInstance3D" parent="." unique_id=1128412142]
 transform = Transform3D(-2.6226834e-08, 0, 0.6, 0, 0.6, 0, -0.6, 0, -2.6226834e-08, 0, 0.19424903, 0)
 visible = false
 mesh = SubResource("BoxMesh_ma876")

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="SignalAchievement" format=3 uid="uid://qrq7jnh6033h"]
+
+[ext_resource type="Texture2D" uid="uid://qtpn1km7gdtx" path="res://ui_assets/achievements/icon_achievement_endless_65.png" id="1_tm883"]
+[ext_resource type="Script" uid="uid://bu0ypaddtve76" path="res://objects/save_file/achievements/signal_achievement.gd" id="2_k8aoo"]
+
+[resource]
+script = ExtResource("2_k8aoo")
+signal_source = 1
+signal_name = "s_floor_65_beat"
+achievement_name = "Seniority"
+achievement_summary = "Complete Floor 65."
+achievement_index = 46
+achievement_icon = ExtResource("1_tm883")
+metadata/_custom_type_script = "uid://bu0ypaddtve76"

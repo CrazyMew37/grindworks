@@ -274,6 +274,7 @@ func do_end_cutscene() -> Tween:
 	# Do animation
 	movie.tween_callback(skull_dude.speak.bind("WARNING. WARNING. FIREWALL HAS BEEN DISENGAGED."))
 	movie.tween_callback(skull_dude.set_animation.bind('death'))
+	movie.tween_callback(AudioManager.set_clip.bind(12))
 	movie.tween_interval(3.0)
 	movie.tween_callback(skull_dude.speak.bind("IMPOSSIBLE OUTCOME REACHED."))
 	movie.tween_interval(3.0)

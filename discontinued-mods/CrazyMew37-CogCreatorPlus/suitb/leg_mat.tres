@@ -1,9 +1,0 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://c13pyppe5rjs"]
-
-[ext_resource type="Texture2D" uid="uid://biq0o7uvpbeo3" path="res://models/cogs/suitb/suitb_s_leg.png" id="1_8h3j1"]
-
-[resource]
-resource_name = "suitB_cvs_PICTURES_s_leg_picShader"
-cull_mode = 2
-albedo_texture = ExtResource("1_8h3j1")
-roughness = 0.552786

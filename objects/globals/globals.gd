@@ -1,6 +1,6 @@
 extends Node
 
-const VERSION_NUMBER := "CRAZYMEW37 EDITION V1.3.0"
+const VERSION_NUMBER := "v1.2.7"
 
 ## Holds any value you may want accessible globally and quickly
 
@@ -122,6 +122,8 @@ const TOON_UNLOCK_ORDER_PATHS := [
 var ADDITIONAL_TOON_PATHS := [
 	'res://objects/player/characters/professor_pete.tres',
 	'res://objects/player/characters/lil_oldman.tres',
+	'res://objects/player/characters/franz_neckvein.tres',
+	'res://objects/player/characters/bumpy_bumblebehr.tres',
 ]
 
 func fetch_toon_unlock_order() -> Array[PlayerCharacter]:
@@ -584,6 +586,20 @@ signal s_pocket_prank_used(prank: ItemActive)
 signal s_special_chest_opened(chest: TreasureChest)
 signal s_player_jumped
 signal s_paint_silo_victory
+
+signal s_solicitor_boss_defeated
+signal s_floor_10_beat
+signal s_floor_20_beat
+signal s_floor_25_beat
+signal s_floor_35_beat
+signal s_floor_50_beat
+signal s_floor_65_beat
+signal s_floor_75_beat
+signal s_floor_100_beat
+signal s_partner_toon_obtained
+signal s_surprise_rolled
+signal s_pilot_cap_time
+signal s_floor_15_bumpy
 
 func on_floor_start(game_floor: GameFloor) -> void:
 	if game_floor.floor_variant.is_alt_floor:

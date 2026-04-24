@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ItemShoe" format=3 uid="uid://c6bex58jis2y2"]
+
+[ext_resource type="Texture2D" uid="uid://m47wtdg3ga44" path="res://objects/items/resources/accessories/shoes/icons/blue_square_boots.png" id="1_4wkiv"]
+[ext_resource type="Script" uid="uid://5qitd26pm7dy" path="res://objects/items/custom/mult_boots/item_blue_square_boots.gd" id="2_4wkiv"]
+[ext_resource type="Texture2D" uid="uid://ct31i4ev32u6s" path="res://models/accessories/shoe_textures/boots/tt_t_chr_avt_acc_sho_fashionBootsBlueSquaresLL.png" id="3_4wkiv"]
+[ext_resource type="Script" uid="uid://bb02y647us2n3" path="res://objects/items/classes/item_shoe.gd" id="4_nro36"]
+[ext_resource type="Texture2D" uid="uid://cyfdrtf1eiukv" path="res://models/accessories/shoe_textures/boots/tt_t_chr_avt_acc_sho_fashionBootsBlueSquares.png" id="5_qld32"]
+
+[resource]
+script = ExtResource("4_nro36")
+shoe_type = 3
+shoe_tex = ExtResource("5_qld32")
+long_leg_tex = ExtResource("3_4wkiv")
+qualitoon = 4
+rarity = 6
+world_y_offset = -0.2
+item_name = "Blue Square Boots"
+item_description = "Sturdy and solid."
+big_description = "x1.2 Defense multiplier"
+item_script = ExtResource("2_4wkiv")
+icon = ExtResource("1_4wkiv")
+metadata/_custom_type_script = "uid://bb02y647us2n3"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="CharacterWinAchievement" format=3 uid="uid://c4lmwt2wft1hj"]
+
+[ext_resource type="Texture2D" uid="uid://mv8825m2we84" path="res://ui_assets/player_ui/pocket_prank_icons/propelloricon.png" id="1_t4pto"]
+[ext_resource type="Script" uid="uid://bly70o6230roo" path="res://objects/save_file/achievements/character_win_achievement.gd" id="2_2vs8b"]
+
+[resource]
+script = ExtResource("2_2vs8b")
+character_id = 10
+achievement_name = "Up, Up, and Away!"
+achievement_summary = "Unlocked Propeller."
+achievement_index = 55
+achievement_icon = ExtResource("1_t4pto")
+use_achievement_background = true
+custom_background_color = Color(0.92941177, 0.2627451, 0.2784314, 1)
+metadata/_custom_type_script = "uid://bly70o6230roo"

@@ -1100,7 +1100,7 @@ font = ExtResource("25_wmn5m")
 font_size = 36
 shadow_color = Color(0, 0, 0, 1)
 
-[node name="FactorySiloPaintBoss" node_paths=PackedStringArray("paint_streams", "paint") instance=ExtResource("1_kwh8e")]
+[node name="FactorySiloPaintBoss" unique_id=471365461 node_paths=PackedStringArray("paint_streams", "paint") instance=ExtResource("1_kwh8e")]
 script = ExtResource("2_7yupl")
 paint_streams = [NodePath("Model/faucet3/PaintStream"), NodePath("Model/faucet2/PaintStream"), NodePath("Model/faucet1/PaintStream")]
 paint_mat = SubResource("StandardMaterial3D_ebw32")
@@ -1124,75 +1124,75 @@ visible = false
 [node name="stairside5" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1/InteriorPlatforms1" index="4"]
 visible = false
 
-[node name="stairside9" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1/InteriorPlatforms1" index="5"]
+[node name="stairside9" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1/InteriorPlatforms1" index="5" unique_id=1695230204]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1052.23, -66.401, 5726.82)
 mesh = SubResource("ArrayMesh_gt0eg")
 skeleton = NodePath("")
 
-[node name="stairside10" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1/InteriorPlatforms1" index="6"]
+[node name="stairside10" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1/InteriorPlatforms1" index="6" unique_id=1276854191]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1052.23, -66.401, 5726.82)
 mesh = SubResource("ArrayMesh_ydoc5")
 skeleton = NodePath("")
 
-[node name="Walls4" type="Node3D" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1" index="8"]
+[node name="Walls4" type="Node3D" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1" index="8" unique_id=1095714800]
 transform = Transform3D(-1.001, 0, -5.96046e-08, 0, 1.001, 0, 5.96046e-08, 0, -1.001, 213.576, -1280.97, -502.738)
 
-[node name="GeometryTransformHelper1134" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1/Walls4" index="0"]
+[node name="GeometryTransformHelper1134" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1/Walls4" index="0" unique_id=2049861400]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.6164, -1103, 6207.12)
 mesh = SubResource("ArrayMesh_qvrsr")
 skeleton = NodePath("")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1/Walls4/GeometryTransformHelper1134" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1/Walls4/GeometryTransformHelper1134" index="0" unique_id=387137094]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1/Walls4/GeometryTransformHelper1134/StaticBody3D" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1/Walls4/GeometryTransformHelper1134/StaticBody3D" index="0" unique_id=356559683]
 shape = SubResource("ConcavePolygonShape3D_qcagg")
 
-[node name="PlatformCopy" type="Node3D" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1" index="9"]
+[node name="PlatformCopy" type="Node3D" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1" index="9" unique_id=380244096]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, 371.369, 0)
 
-[node name="BottemPlatformFloorCollsion2" type="Node3D" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1/PlatformCopy" index="0"]
+[node name="BottemPlatformFloorCollsion2" type="Node3D" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1/PlatformCopy" index="0" unique_id=845830688]
 transform = Transform3D(0.999969, 0, 0.00797266, 0, 1, 0, -0.00797266, 0, 0.999969, 418.043, -139.354, 3.76367)
 visible = false
 
-[node name="GeometryTransformHelper1136" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1/PlatformCopy/BottemPlatformFloorCollsion2" index="0"]
+[node name="GeometryTransformHelper1136" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1/PlatformCopy/BottemPlatformFloorCollsion2" index="0" unique_id=847488674]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1231.96, -1106.57, 5228.52)
 mesh = SubResource("ArrayMesh_423s5")
 skeleton = NodePath("")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1/PlatformCopy/BottemPlatformFloorCollsion2/GeometryTransformHelper1136" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1/PlatformCopy/BottemPlatformFloorCollsion2/GeometryTransformHelper1136" index="0" unique_id=242086971]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1/PlatformCopy/BottemPlatformFloorCollsion2/GeometryTransformHelper1136/StaticBody3D" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1/PlatformCopy/BottemPlatformFloorCollsion2/GeometryTransformHelper1136/StaticBody3D" index="0" unique_id=818659674]
 shape = SubResource("ConcavePolygonShape3D_i7lcl")
 
-[node name="BottemPlatform2" type="Node3D" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1/PlatformCopy" index="1"]
+[node name="BottemPlatform2" type="Node3D" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1/PlatformCopy" index="1" unique_id=655615658]
 transform = Transform3D(0.999969, 0, 0.00797266, 0, 1, 0, -0.00797266, 0, 0.999969, 418.045, -139.355, 3.76514)
 
-[node name="GeometryTransformHelper1777" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1/PlatformCopy/BottemPlatform2" index="0"]
+[node name="GeometryTransformHelper1777" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1/PlatformCopy/BottemPlatform2" index="0" unique_id=1304862294]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1231.96, -1106.57, 5228.52)
 mesh = SubResource("ArrayMesh_8e4ya")
 skeleton = NodePath("")
 
-[node name="PlatformCopy3" type="Node3D" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1" index="10"]
+[node name="PlatformCopy3" type="Node3D" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1" index="10" unique_id=664378809]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, 698.289, 0)
 
-[node name="BottemPlatformFloorCollsion2" type="Node3D" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1/PlatformCopy3" index="0"]
+[node name="BottemPlatformFloorCollsion2" type="Node3D" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1/PlatformCopy3" index="0" unique_id=135451682]
 transform = Transform3D(0.999969, 0, 0.00797266, 0, 1, 0, -0.00797266, 0, 0.999969, 418.043, -139.354, 3.76367)
 visible = false
 
-[node name="GeometryTransformHelper1136" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1/PlatformCopy3/BottemPlatformFloorCollsion2" index="0"]
+[node name="GeometryTransformHelper1136" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1/PlatformCopy3/BottemPlatformFloorCollsion2" index="0" unique_id=1945363389]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1231.96, -1106.57, 5228.52)
 mesh = SubResource("ArrayMesh_423s5")
 skeleton = NodePath("")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1/PlatformCopy3/BottemPlatformFloorCollsion2/GeometryTransformHelper1136" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1/PlatformCopy3/BottemPlatformFloorCollsion2/GeometryTransformHelper1136" index="0" unique_id=1015833087]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1/PlatformCopy3/BottemPlatformFloorCollsion2/GeometryTransformHelper1136/StaticBody3D" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1/PlatformCopy3/BottemPlatformFloorCollsion2/GeometryTransformHelper1136/StaticBody3D" index="0" unique_id=1576589138]
 shape = SubResource("ConcavePolygonShape3D_i7lcl")
 
-[node name="BottemPlatform2" type="Node3D" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1/PlatformCopy3" index="1"]
+[node name="BottemPlatform2" type="Node3D" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1/PlatformCopy3" index="1" unique_id=461770515]
 transform = Transform3D(0.999969, 0, 0.00797266, 0, 1, 0, -0.00797266, 0, 0.999969, 418.045, -139.355, 3.76514)
 
-[node name="GeometryTransformHelper1777" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1/PlatformCopy3/BottemPlatform2" index="0"]
+[node name="GeometryTransformHelper1777" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/geometry_bluesilo1/PlatformCopy3/BottemPlatform2" index="0" unique_id=1073869929]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1231.96, -1106.57, 5228.52)
 mesh = SubResource("ArrayMesh_8e4ya")
 skeleton = NodePath("")
@@ -1209,124 +1209,124 @@ shape = SubResource("ConcavePolygonShape3D_i7lcl")
 [node name="upperwalls" parent="Model/ZONE33/bluesilo/room29/collsion_bluesilo" index="4"]
 visible = true
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE33/bluesilo/room29/collsion_bluesilo/upperwalls" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE33/bluesilo/room29/collsion_bluesilo/upperwalls" index="0" unique_id=100664111]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE33/bluesilo/room29/collsion_bluesilo/upperwalls/StaticBody3D" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE33/bluesilo/room29/collsion_bluesilo/upperwalls/StaticBody3D" index="0" unique_id=1245417641]
 shape = SubResource("ConcavePolygonShape3D_ukknn")
 
-[node name="StaticBody3D2" type="StaticBody3D" parent="Model/ZONE33/bluesilo/room29/collsion_bluesilo/upperwalls" index="1"]
+[node name="StaticBody3D2" type="StaticBody3D" parent="Model/ZONE33/bluesilo/room29/collsion_bluesilo/upperwalls" index="1" unique_id=823308857]
 transform = Transform3D(34.6978, 0, 36.0009, 0, 50, 0, -36.0009, 0, 34.6978, 555.263, 1963.64, -6010.07)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE33/bluesilo/room29/collsion_bluesilo/upperwalls/StaticBody3D2" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE33/bluesilo/room29/collsion_bluesilo/upperwalls/StaticBody3D2" index="0" unique_id=607573627]
 transform = Transform3D(0.999178, 0, -0.0405328, 0, 0.999995, 0, 0.0405328, 0, 0.999178, 0.497215, 0.898769, 0.0487518)
 shape = SubResource("BoxShape3D_tbaxg")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE33/bluesilo/room29/collsion_bluesilo/ceiling20" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE33/bluesilo/room29/collsion_bluesilo/ceiling20" index="0" unique_id=613917656]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE33/bluesilo/room29/collsion_bluesilo/ceiling20/StaticBody3D" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE33/bluesilo/room29/collsion_bluesilo/ceiling20/StaticBody3D" index="0" unique_id=615797978]
 shape = SubResource("ConcavePolygonShape3D_cy0jy")
 
 [node name="BottemPlatformwallCollsion" parent="Model/ZONE33/bluesilo/room29/collsion_bluesilo" index="6"]
 visible = true
 
-[node name="Brick10" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1" index="2"]
+[node name="Brick10" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1" index="2" unique_id=1013732335]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, -13.7986, -1519.72, -2697.94)
 
-[node name="GeometryTransformHelper1140" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1/Brick10" index="0"]
+[node name="GeometryTransformHelper1140" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1/Brick10" index="0" unique_id=1623135096]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.2752, -588.65, 6204.9)
 
-[node name="Brick84" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1/Brick10" index="1"]
+[node name="Brick84" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1/Brick10" index="1" unique_id=1632270834]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -216.545, 1.64406e-05, 524.903)
 
-[node name="GeometryTransformHelper1778" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/props1/Brick10/Brick84" index="0"]
+[node name="GeometryTransformHelper1778" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/props1/Brick10/Brick84" index="0" unique_id=791231170]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 241.061, -588.65, 5682.81)
 mesh = SubResource("ArrayMesh_bugbv")
 skeleton = NodePath("")
 
-[node name="Brick14" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1/Brick10" index="2"]
+[node name="Brick14" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1/Brick10" index="2" unique_id=1136091286]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 225.228, 1.64406e-05, 527.015)
 
-[node name="GeometryTransformHelper1779" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/props1/Brick10/Brick14" index="0"]
+[node name="GeometryTransformHelper1779" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/props1/Brick10/Brick14" index="0" unique_id=40390471]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -197.953, -588.65, 5683.54)
 mesh = SubResource("ArrayMesh_u6wmk")
 skeleton = NodePath("")
 
-[node name="Brick25" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1/Brick10" index="3"]
+[node name="Brick25" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1/Brick10" index="3" unique_id=334062662]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 540.078, 1.64406e-05, 225.475)
 
-[node name="GeometryTransformHelper1780" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/props1/Brick10/Brick25" index="0"]
+[node name="GeometryTransformHelper1780" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/props1/Brick10/Brick25" index="0" unique_id=1661484850]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -496.96, -588.65, 5985.46)
 mesh = SubResource("ArrayMesh_v2omx")
 skeleton = NodePath("")
 
-[node name="Brick35" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1/Brick10" index="4"]
+[node name="Brick35" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1/Brick10" index="4" unique_id=440608483]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 543.827, 1.64406e-05, -218.369)
 
-[node name="GeometryTransformHelper1781" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/props1/Brick10/Brick35" index="0"]
+[node name="GeometryTransformHelper1781" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/props1/Brick10/Brick35" index="0" unique_id=565636878]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -500.995, -588.65, 6416.46)
 mesh = SubResource("ArrayMesh_1q6vi")
 skeleton = NodePath("")
 
-[node name="Brick44" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1/Brick10" index="5"]
+[node name="Brick44" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1/Brick10" index="5" unique_id=1195490058]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 239.026, 1.64406e-05, -529.24)
 
-[node name="GeometryTransformHelper1782" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/props1/Brick10/Brick44" index="0"]
+[node name="GeometryTransformHelper1782" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/props1/Brick10/Brick44" index="0" unique_id=1398755977]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -203.986, -588.65, 6723.62)
 mesh = SubResource("ArrayMesh_st551")
 skeleton = NodePath("")
 
-[node name="Brick54" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1/Brick10" index="6"]
+[node name="Brick54" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1/Brick10" index="6" unique_id=532776045]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -207.803, 1.64406e-05, -540.966)
 
-[node name="GeometryTransformHelper1783" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/props1/Brick10/Brick54" index="0"]
+[node name="GeometryTransformHelper1783" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/props1/Brick10/Brick54" index="0" unique_id=391455370]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 228.574, -588.65, 6728.91)
 mesh = SubResource("ArrayMesh_vwlr2")
 skeleton = NodePath("")
 
-[node name="Brick64" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1/Brick10" index="7"]
+[node name="Brick64" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1/Brick10" index="7" unique_id=1014991044]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -531.731, 1.64406e-05, -232.594)
 
-[node name="GeometryTransformHelper1784" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/props1/Brick10/Brick64" index="0"]
+[node name="GeometryTransformHelper1784" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/props1/Brick10/Brick64" index="0" unique_id=581187973]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 541.356, -588.65, 6432.51)
 mesh = SubResource("ArrayMesh_avhvo")
 skeleton = NodePath("")
 
-[node name="Brick74" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1/Brick10" index="8"]
+[node name="Brick74" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1/Brick10" index="8" unique_id=1496296079]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -520.836, 1.64406e-05, 221.322)
 
-[node name="GeometryTransformHelper1785" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/props1/Brick10/Brick74" index="0"]
+[node name="GeometryTransformHelper1785" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/props1/Brick10/Brick74" index="0" unique_id=409128974]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 538.555, -588.65, 5994.35)
 mesh = SubResource("ArrayMesh_rygat")
 skeleton = NodePath("")
 
-[node name="Edge93" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalDetail2/MetalStuts3/MetalStuts4" index="2"]
+[node name="Edge93" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalDetail2/MetalStuts3/MetalStuts4" index="2" unique_id=881850061]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 218.749, -1922.84, -510.707)
 
-[node name="GeometryTransformHelper1982" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalDetail2/MetalStuts3/MetalStuts4/Edge93" index="0"]
+[node name="GeometryTransformHelper1982" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalDetail2/MetalStuts3/MetalStuts4/Edge93" index="0" unique_id=817554159]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -202.289, -1470.24, 6718.08)
 mesh = SubResource("ArrayMesh_jgxga")
 skeleton = NodePath("")
 
-[node name="Edge94" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalDetail2/MetalStuts3/MetalStuts4" index="3"]
+[node name="Edge94" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalDetail2/MetalStuts3/MetalStuts4" index="3" unique_id=166060616]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 218.749, -2856.46, -510.707)
 
-[node name="GeometryTransformHelper1982" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalDetail2/MetalStuts3/MetalStuts4/Edge94" index="0"]
+[node name="GeometryTransformHelper1982" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalDetail2/MetalStuts3/MetalStuts4/Edge94" index="0" unique_id=2136536306]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -202.289, -1470.24, 6718.08)
 mesh = SubResource("ArrayMesh_jgxga")
 skeleton = NodePath("")
 
-[node name="BottemTrim5" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalDetail2" index="3"]
+[node name="BottemTrim5" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalDetail2" index="3" unique_id=4288521]
 transform = Transform3D(0.722516, 0, 0.736165, 0, 1.03149, 0, -0.736165, 0, 0.722516, -1.31982, -2114.58, -7.43701)
 
-[node name="GeometryTransformHelper1787" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalDetail2/BottemTrim5" index="0"]
+[node name="GeometryTransformHelper1787" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalDetail2/BottemTrim5" index="0" unique_id=101007764]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -993.315, -361.905, 5718.17)
 mesh = SubResource("ArrayMesh_1ehcd")
 skeleton = NodePath("")
 
-[node name="BottemTrim4" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalDetail2" index="4"]
+[node name="BottemTrim4" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalDetail2" index="4" unique_id=282905262]
 transform = Transform3D(0.722516, 0, 0.736165, 0, 1.03149, 0, -0.736165, 0, 0.722516, -1.31982, -1083.15, -7.43701)
 
-[node name="GeometryTransformHelper1787" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalDetail2/BottemTrim4" index="0"]
+[node name="GeometryTransformHelper1787" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalDetail2/BottemTrim4" index="0" unique_id=1585932410]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -993.315, -361.905, 5718.17)
 mesh = SubResource("ArrayMesh_1ehcd")
 skeleton = NodePath("")
@@ -1334,362 +1334,362 @@ skeleton = NodePath("")
 [node name="Logo2" parent="Model/ZONE33/bluesilo/room29/props1" index="6"]
 transform = Transform3D(-0.00101752, 0.000802101, 0.117935, 0.0139803, 0.117109, -0.000675862, -0.117107, 0.0139736, -0.00110539, -0.0532558, 1121.43, -2785.16)
 
-[node name="Edge113" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalStuts" index="2"]
+[node name="Edge113" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalStuts" index="2" unique_id=1718359800]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 510.285, -1800.41, 220.398)
 
-[node name="GeometryTransformHelper1788" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalStuts/Edge113" index="0"]
+[node name="GeometryTransformHelper1788" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalStuts/Edge113" index="0" unique_id=9935856]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -493.826, -1503.46, 5986.98)
 mesh = SubResource("ArrayMesh_yrevn")
 skeleton = NodePath("")
 
-[node name="Edge103" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalStuts" index="4"]
+[node name="Edge103" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalStuts" index="4" unique_id=264504625]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 515.688, -1812.71, -206.526)
 
-[node name="GeometryTransformHelper1789" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalStuts/Edge103" index="0"]
+[node name="GeometryTransformHelper1789" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalStuts/Edge103" index="0" unique_id=1519997097]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -499.227, -1503.46, 6413.9)
 mesh = SubResource("ArrayMesh_7cv3e")
 skeleton = NodePath("")
 
-[node name="Edge83" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalStuts" index="6"]
+[node name="Edge83" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalStuts" index="6" unique_id=106617909]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, -209.429, -1839.93, -514.66)
 
-[node name="GeometryTransformHelper1790" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalStuts/Edge83" index="0"]
+[node name="GeometryTransformHelper1790" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalStuts/Edge83" index="0" unique_id=297635041]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 225.89, -1469.13, 6722.03)
 mesh = SubResource("ArrayMesh_530p6")
 skeleton = NodePath("")
 
-[node name="Edge44" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalStuts" index="8"]
+[node name="Edge44" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalStuts" index="8" unique_id=802689634]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 206.602, -1785.76, 514.526)
 
-[node name="GeometryTransformHelper1791" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalStuts/Edge44" index="0"]
+[node name="GeometryTransformHelper1791" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalStuts/Edge44" index="0" unique_id=1425095346]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -190.142, -1503.46, 5692.85)
 mesh = SubResource("ArrayMesh_j1f6l")
 skeleton = NodePath("")
 
-[node name="Edge74" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalStuts" index="10"]
+[node name="Edge74" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalStuts" index="10" unique_id=1802580134]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, -510.784, -1811.3, -218.784)
 
-[node name="GeometryTransformHelper1792" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalStuts/Edge74" index="0"]
+[node name="GeometryTransformHelper1792" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalStuts/Edge74" index="0" unique_id=1652445947]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 527.244, -1503.46, 6426.16)
 mesh = SubResource("ArrayMesh_cfp0k")
 skeleton = NodePath("")
 
-[node name="Edge53" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalStuts" index="12"]
+[node name="Edge53" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalStuts" index="12" unique_id=1532067298]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, -220.37, -1812.61, 510.047)
 
-[node name="GeometryTransformHelper1793" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalStuts/Edge53" index="0"]
+[node name="GeometryTransformHelper1793" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalStuts/Edge53" index="0" unique_id=2122774397]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 236.83, -1503.46, 5697.33)
 mesh = SubResource("ArrayMesh_oxlit")
 skeleton = NodePath("")
 
-[node name="Edge64" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalStuts" index="14"]
+[node name="Edge64" type="Node3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalStuts" index="14" unique_id=1388037880]
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, -515.067, -1825.48, 207.2)
 
-[node name="GeometryTransformHelper1794" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalStuts/Edge64" index="0"]
+[node name="GeometryTransformHelper1794" type="MeshInstance3D" parent="Model/ZONE33/bluesilo/room29/props1/MetalStuts/Edge64" index="0" unique_id=1019846846]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 531.527, -1503.46, 6000.17)
 mesh = SubResource("ArrayMesh_h1jp8")
 skeleton = NodePath("")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE61/room3/elevator_blue/geometry2/roof2/GeometryTransformHelper1209" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE61/room3/elevator_blue/geometry2/roof2/GeometryTransformHelper1209" index="0" unique_id=1870436957]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE61/room3/elevator_blue/geometry2/roof2/GeometryTransformHelper1209/StaticBody3D" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE61/room3/elevator_blue/geometry2/roof2/GeometryTransformHelper1209/StaticBody3D" index="0" unique_id=184948349]
 shape = SubResource("ConcavePolygonShape3D_d4yaf")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE61/room3/elevator_blue/geometry2/Post110/GeometryTransformHelper1210" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE61/room3/elevator_blue/geometry2/Post110/GeometryTransformHelper1210" index="0" unique_id=805639987]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE61/room3/elevator_blue/geometry2/Post110/GeometryTransformHelper1210/StaticBody3D" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE61/room3/elevator_blue/geometry2/Post110/GeometryTransformHelper1210/StaticBody3D" index="0" unique_id=338293334]
 shape = SubResource("ConcavePolygonShape3D_cutkg")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE61/room3/elevator_blue/geometry2/Post28/GeometryTransformHelper1211" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE61/room3/elevator_blue/geometry2/Post28/GeometryTransformHelper1211" index="0" unique_id=830099586]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE61/room3/elevator_blue/geometry2/Post28/GeometryTransformHelper1211/StaticBody3D" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE61/room3/elevator_blue/geometry2/Post28/GeometryTransformHelper1211/StaticBody3D" index="0" unique_id=1292338886]
 shape = SubResource("ConcavePolygonShape3D_x4blt")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE61/room3/elevator_blue/geometry2/Post35/GeometryTransformHelper1212" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE61/room3/elevator_blue/geometry2/Post35/GeometryTransformHelper1212" index="0" unique_id=348300227]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE61/room3/elevator_blue/geometry2/Post35/GeometryTransformHelper1212/StaticBody3D" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE61/room3/elevator_blue/geometry2/Post35/GeometryTransformHelper1212/StaticBody3D" index="0" unique_id=230246279]
 shape = SubResource("ConcavePolygonShape3D_hi7fy")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE61/room3/elevator_blue/geometry2/Post44/GeometryTransformHelper1213" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE61/room3/elevator_blue/geometry2/Post44/GeometryTransformHelper1213" index="0" unique_id=502935776]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE61/room3/elevator_blue/geometry2/Post44/GeometryTransformHelper1213/StaticBody3D" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE61/room3/elevator_blue/geometry2/Post44/GeometryTransformHelper1213/StaticBody3D" index="0" unique_id=560822686]
 shape = SubResource("ConcavePolygonShape3D_wl5og")
 
-[node name="faucet1" type="Node3D" parent="Model" index="2"]
+[node name="faucet1" type="Node3D" parent="Model" index="2" unique_id=107666963]
 transform = Transform3D(-1.74833, 0.0763339, -1.5299e-07, 0.0763339, 1.74833, 0, 1.52844e-07, -6.67332e-09, -1.75, 1056.76, 1480.53, -5287.82)
 
-[node name="GeometryTransformHelper688" type="MeshInstance3D" parent="Model/faucet1" index="0"]
+[node name="GeometryTransformHelper688" type="MeshInstance3D" parent="Model/faucet1" index="0" unique_id=1751056731]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2220.6, -367.44, 2391.12)
 mesh = SubResource("ArrayMesh_ig2mm")
 skeleton = NodePath("")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Model/faucet1/GeometryTransformHelper688" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Model/faucet1/GeometryTransformHelper688" index="0" unique_id=1739609846]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/faucet1/GeometryTransformHelper688/StaticBody3D" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/faucet1/GeometryTransformHelper688/StaticBody3D" index="0" unique_id=1471554037]
 shape = SubResource("ConcavePolygonShape3D_fl7d4")
 
-[node name="PaintStream" type="Node3D" parent="Model/faucet1" index="1"]
+[node name="PaintStream" type="Node3D" parent="Model/faucet1" index="1" unique_id=607517865]
 transform = Transform3D(30.985, 0, -53.2736, 0, 0.01, 0, 53.6676, 0, 30.7575, -5.17517, -68.382, 69.2163)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Model/faucet1/PaintStream" index="0"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Model/faucet1/PaintStream" index="0" unique_id=948727066]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
 mesh = SubResource("CylinderMesh_610uq")
 skeleton = NodePath("../../../..")
 
-[node name="Area3D" type="Area3D" parent="Model/faucet1/PaintStream/MeshInstance3D" index="0"]
+[node name="Area3D" type="Area3D" parent="Model/faucet1/PaintStream/MeshInstance3D" index="0" unique_id=131421764]
 collision_mask = 4
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/faucet1/PaintStream/MeshInstance3D/Area3D" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/faucet1/PaintStream/MeshInstance3D/Area3D" index="0" unique_id=1765324126]
 transform = Transform3D(1, -3.23359e-13, 0, -5.35671e-06, 1, -4.66152e-05, 0, -2.46084e-13, 1, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_32wca")
 
-[node name="WaterSFX" type="AudioStreamPlayer3D" parent="Model/faucet1/PaintStream" index="1"]
+[node name="WaterSFX" type="AudioStreamPlayer3D" parent="Model/faucet1/PaintStream" index="1" unique_id=1212978289]
 transform = Transform3D(0.139713, 4.57127e-10, 0.24199, 7.62939e-06, 1731.61, 1.51507e-06, -0.24378, -3.9461e-10, 0.140746, -0.925533, 6838.2, -0.635452)
 stream = ExtResource("8_5031j")
 
-[node name="faucet2" type="Node3D" parent="Model" index="3"]
+[node name="faucet2" type="Node3D" parent="Model" index="3" unique_id=36973371]
 transform = Transform3D(-7.64221e-08, 3.33666e-09, -1.75, 0.0763339, 1.74833, 0, 1.74833, -0.0763339, -7.64949e-08, 1462.87, 1480.53, -5713.23)
 
-[node name="GeometryTransformHelper688" type="MeshInstance3D" parent="Model/faucet2" index="0"]
+[node name="GeometryTransformHelper688" type="MeshInstance3D" parent="Model/faucet2" index="0" unique_id=1684767532]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2206.01, -367.44, 2391.12)
 mesh = SubResource("ArrayMesh_ig2mm")
 skeleton = NodePath("")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Model/faucet2/GeometryTransformHelper688" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Model/faucet2/GeometryTransformHelper688" index="0" unique_id=1835446364]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/faucet2/GeometryTransformHelper688/StaticBody3D" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/faucet2/GeometryTransformHelper688/StaticBody3D" index="0" unique_id=1108442011]
 shape = SubResource("ConcavePolygonShape3D_fl7d4")
 
-[node name="PaintStream" type="Node3D" parent="Model/faucet2" index="1"]
+[node name="PaintStream" type="Node3D" parent="Model/faucet2" index="1" unique_id=1197022723]
 transform = Transform3D(30.985, 0, -53.2736, 0, 0.01, 0, 53.6676, 0, 30.7575, 10.0776, -68.3821, 69.2036)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Model/faucet2/PaintStream" index="0"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Model/faucet2/PaintStream" index="0" unique_id=1389697644]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
 mesh = SubResource("CylinderMesh_610uq")
 skeleton = NodePath("../../../..")
 
-[node name="Area3D" type="Area3D" parent="Model/faucet2/PaintStream/MeshInstance3D" index="0"]
+[node name="Area3D" type="Area3D" parent="Model/faucet2/PaintStream/MeshInstance3D" index="0" unique_id=609680304]
 collision_mask = 4
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/faucet2/PaintStream/MeshInstance3D/Area3D" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/faucet2/PaintStream/MeshInstance3D/Area3D" index="0" unique_id=107428814]
 transform = Transform3D(1, -3.23359e-13, 0, -5.35671e-06, 1, -4.66152e-05, 0, -2.46084e-13, 1, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_32wca")
 
-[node name="WaterSFX" type="AudioStreamPlayer3D" parent="Model/faucet2/PaintStream" index="1"]
+[node name="WaterSFX" type="AudioStreamPlayer3D" parent="Model/faucet2/PaintStream" index="1" unique_id=1463984398]
 transform = Transform3D(0.139713, 4.57127e-10, 0.24199, 7.62939e-06, 1731.61, 1.51507e-06, -0.24378, -3.9461e-10, 0.140746, -0.925533, 6838.2, -0.635452)
 stream = ExtResource("8_5031j")
 
-[node name="faucet3" type="Node3D" parent="Model" index="4"]
+[node name="faucet3" type="Node3D" parent="Model" index="4" unique_id=1347840646]
 transform = Transform3D(-7.64221e-08, 3.33666e-09, 1.75, 0.0763339, 1.74833, 0, -1.74833, 0.0763339, -7.64949e-08, 632.619, 1480.53, -5703.2)
 
-[node name="GeometryTransformHelper688" type="MeshInstance3D" parent="Model/faucet3" index="0"]
+[node name="GeometryTransformHelper688" type="MeshInstance3D" parent="Model/faucet3" index="0" unique_id=1386101598]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2211.82, -367.44, 2391.12)
 mesh = SubResource("ArrayMesh_ig2mm")
 skeleton = NodePath("")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Model/faucet3/GeometryTransformHelper688" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Model/faucet3/GeometryTransformHelper688" index="0" unique_id=1415154100]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/faucet3/GeometryTransformHelper688/StaticBody3D" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/faucet3/GeometryTransformHelper688/StaticBody3D" index="0" unique_id=179155013]
 shape = SubResource("ConcavePolygonShape3D_fl7d4")
 
-[node name="PaintStream" type="Node3D" parent="Model/faucet3" index="1"]
+[node name="PaintStream" type="Node3D" parent="Model/faucet3" index="1" unique_id=1660358906]
 transform = Transform3D(30.985, 0, -53.2736, 0, 0.01, 0, 53.6676, 0, 30.7575, 3.84375, -68.382, 69.1351)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Model/faucet3/PaintStream" index="0"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Model/faucet3/PaintStream" index="0" unique_id=504520307]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
 mesh = SubResource("CylinderMesh_610uq")
 skeleton = NodePath("../../../..")
 
-[node name="Area3D" type="Area3D" parent="Model/faucet3/PaintStream/MeshInstance3D" index="0"]
+[node name="Area3D" type="Area3D" parent="Model/faucet3/PaintStream/MeshInstance3D" index="0" unique_id=1188579539]
 collision_mask = 4
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/faucet3/PaintStream/MeshInstance3D/Area3D" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/faucet3/PaintStream/MeshInstance3D/Area3D" index="0" unique_id=1168484460]
 transform = Transform3D(1, -3.23359e-13, 0, -5.35671e-06, 1, -4.66152e-05, 0, -2.46084e-13, 1, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_32wca")
 
-[node name="WaterSFX" type="AudioStreamPlayer3D" parent="Model/faucet3/PaintStream" index="1"]
+[node name="WaterSFX" type="AudioStreamPlayer3D" parent="Model/faucet3/PaintStream" index="1" unique_id=12695629]
 transform = Transform3D(0.139713, 4.57127e-10, 0.24199, 7.62939e-06, 1731.61, 1.51507e-06, -0.24378, -3.9461e-10, 0.140746, -0.925533, 6838.2, -0.635452)
 stream = ExtResource("8_5031j")
 volume_db = 3.0
 max_db = 0.0
 
-[node name="RisingPaint" type="Node3D" parent="Model" index="5"]
+[node name="RisingPaint" type="Node3D" parent="Model" index="5" unique_id=1001267409]
 
-[node name="PartialPaint" type="MeshInstance3D" parent="Model/RisingPaint" index="0"]
+[node name="PartialPaint" type="MeshInstance3D" parent="Model/RisingPaint" index="0" unique_id=1572161600]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -2380.09, -92.903, -2547.6)
 mesh = SubResource("ArrayMesh_e31rk")
 skeleton = NodePath("")
 surface_material_override/0 = ExtResource("10_yd8qu")
 
-[node name="DeathBarrier" type="Node3D" parent="Model/RisingPaint" index="1"]
+[node name="DeathBarrier" type="Node3D" parent="Model/RisingPaint" index="1" unique_id=861977407]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1086.47, 18.781, -5719.2)
 
-[node name="sellbot_elevator" parent="." index="3" instance=ExtResource("4_6paxf")]
+[node name="sellbot_elevator" parent="." index="3" unique_id=2031366569 instance=ExtResource("4_6paxf")]
 transform = Transform3D(1.57685, 0, -1.57685, 0, 2.23, 0, 1.57685, 0, 1.57685, 37.9577, 62.8254, -191.793)
 floor_count = 5
 sync_to_floor = true
 scene_path = "res://scenes/elevator_scene/elevator_scene.tscn"
 
-[node name="CogDoor" parent="." index="4" instance=ExtResource("6_lx7g0")]
+[node name="CogDoor" parent="." index="4" unique_id=340988001 instance=ExtResource("6_lx7g0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.234, 12.226, -171.643)
 
-[node name="FaucetCam" type="Camera3D" parent="." index="5"]
+[node name="FaucetCam" type="Camera3D" parent="." index="5" unique_id=323454187]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 37.314, 43.375, -188.827)
 fov = 52.0
 
-[node name="PaintCam" type="Camera3D" parent="." index="6"]
+[node name="PaintCam" type="Camera3D" parent="." index="6" unique_id=818439353]
 transform = Transform3D(0.743145, -0.282787, 0.606438, 0, 0.906308, 0.422618, -0.669131, -0.314067, 0.673518, 44.5, 15.805, -177.052)
 fov = 52.0
 
-[node name="PlayerSpawn" type="Node3D" parent="." index="7"]
+[node name="PlayerSpawn" type="Node3D" parent="." index="7" unique_id=975431000]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.7985, 12.2631, -173.999)
 
-[node name="Platforms" type="Node3D" parent="." index="8"]
+[node name="Platforms" type="Node3D" parent="." index="8" unique_id=644660821]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.0912, 1.90735e-06, -188.086)
 
-[node name="BeginningCrates" type="Node3D" parent="Platforms" index="0"]
+[node name="BeginningCrates" type="Node3D" parent="Platforms" index="0" unique_id=1479044132]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.215, 0)
 
-[node name="crate_general" parent="Platforms/BeginningCrates" index="0" instance=ExtResource("13_mxhir")]
+[node name="crate_general" parent="Platforms/BeginningCrates" index="0" unique_id=707788188 instance=ExtResource("13_mxhir")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.708923, 14.0189, -14.6185)
 
-[node name="crate_general2" parent="Platforms/BeginningCrates" index="1" instance=ExtResource("13_mxhir")]
+[node name="crate_general2" parent="Platforms/BeginningCrates" index="1" unique_id=1541474371 instance=ExtResource("13_mxhir")]
 transform = Transform3D(1.4, 0, 0, 0, 1, 0, 0, 0, 2.5, -3.71506, 14.0189, -14.4383)
 
-[node name="crate_general3" parent="Platforms/BeginningCrates" index="2" instance=ExtResource("13_mxhir")]
+[node name="crate_general3" parent="Platforms/BeginningCrates" index="2" unique_id=637608929 instance=ExtResource("13_mxhir")]
 transform = Transform3D(1.4, 0, 0, 0, 1, 0, 0, 0, 2.5, 2.33519, 14.0189, -14.4383)
 
-[node name="MovingPlatforms" type="Node3D" parent="Platforms" index="1"]
+[node name="MovingPlatforms" type="Node3D" parent="Platforms" index="1" unique_id=1088871488]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 15.5797, 0)
 
-[node name="Plaform1" type="Node3D" parent="Platforms/MovingPlatforms" index="0"]
+[node name="Plaform1" type="Node3D" parent="Platforms/MovingPlatforms" index="0" unique_id=113440179]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.690762, 1.15802, -9.69864)
 
-[node name="Path3D" type="Path3D" parent="Platforms/MovingPlatforms/Plaform1" index="0"]
+[node name="Path3D" type="Path3D" parent="Platforms/MovingPlatforms/Plaform1" index="0" unique_id=348601892]
 curve = SubResource("Curve3D_ng43k")
 
-[node name="ElevatingPlatform" parent="Platforms/MovingPlatforms/Plaform1" index="1" node_paths=PackedStringArray("path") instance=ExtResource("14_j41po")]
+[node name="ElevatingPlatform" parent="Platforms/MovingPlatforms/Plaform1" index="1" unique_id=1175134265 node_paths=PackedStringArray("path") instance=ExtResource("14_j41po")]
 path = NodePath("../Path3D")
 speed = 2.0
 
-[node name="Plaform2" type="Node3D" parent="Platforms/MovingPlatforms" index="1"]
+[node name="Plaform2" type="Node3D" parent="Platforms/MovingPlatforms" index="1" unique_id=891706708]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.690762, 1.02651, 0.873352)
 
-[node name="Path3D" type="Path3D" parent="Platforms/MovingPlatforms/Plaform2" index="0"]
+[node name="Path3D" type="Path3D" parent="Platforms/MovingPlatforms/Plaform2" index="0" unique_id=1697200161]
 curve = SubResource("Curve3D_gflmi")
 
-[node name="ElevatingPlatform" parent="Platforms/MovingPlatforms/Plaform2" index="1" node_paths=PackedStringArray("path") instance=ExtResource("14_j41po")]
+[node name="ElevatingPlatform" parent="Platforms/MovingPlatforms/Plaform2" index="1" unique_id=1219457615 node_paths=PackedStringArray("path") instance=ExtResource("14_j41po")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7, 0)
 path = NodePath("../Path3D")
 speed = 2.0
 
-[node name="Plaform3" type="Node3D" parent="Platforms/MovingPlatforms" index="2"]
+[node name="Plaform3" type="Node3D" parent="Platforms/MovingPlatforms" index="2" unique_id=1813921297]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.98055, 7.81042, 0.842331)
 
-[node name="Path3D" type="Path3D" parent="Platforms/MovingPlatforms/Plaform3" index="0"]
+[node name="Path3D" type="Path3D" parent="Platforms/MovingPlatforms/Plaform3" index="0" unique_id=248314284]
 curve = SubResource("Curve3D_upte8")
 
-[node name="ElevatingPlatform" parent="Platforms/MovingPlatforms/Plaform3" index="1" node_paths=PackedStringArray("path") instance=ExtResource("14_j41po")]
+[node name="ElevatingPlatform" parent="Platforms/MovingPlatforms/Plaform3" index="1" unique_id=889748487 node_paths=PackedStringArray("path") instance=ExtResource("14_j41po")]
 path = NodePath("../Path3D")
 speed = 2.0
 
-[node name="ThirdFloorObstacles" type="Node3D" parent="Platforms" index="2"]
+[node name="ThirdFloorObstacles" type="Node3D" parent="Platforms" index="2" unique_id=385858269]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 25.2436, 0)
 
-[node name="crate_general" parent="Platforms/ThirdFloorObstacles" index="0" instance=ExtResource("13_mxhir")]
+[node name="crate_general" parent="Platforms/ThirdFloorObstacles" index="0" unique_id=1334566579 instance=ExtResource("13_mxhir")]
 transform = Transform3D(2.10095, 0, 1.77492, 0, 3.045, 0, -1.85094, 0, 2.01467, -9.6254, -0.716263, 10.4841)
 
-[node name="crate_general2" parent="Platforms/ThirdFloorObstacles" index="1" instance=ExtResource("13_mxhir")]
+[node name="crate_general2" parent="Platforms/ThirdFloorObstacles" index="1" unique_id=500791129 instance=ExtResource("13_mxhir")]
 transform = Transform3D(2.99985, 0, 0.0263844, 0, 1.85, 0, -0.0302111, 0, 2.61987, 3.52981, -0.68, 13.774)
 
-[node name="crate_general3" parent="Platforms/ThirdFloorObstacles" index="2" instance=ExtResource("13_mxhir")]
+[node name="crate_general3" parent="Platforms/ThirdFloorObstacles" index="2" unique_id=600534014 instance=ExtResource("13_mxhir")]
 transform = Transform3D(1.38897, 0, -0.0122966, 0, 0.934, 0, 0.00887272, 0, 1.92496, -0.825893, -0.679815, 14.2304)
 
-[node name="crate_general4" parent="Platforms/ThirdFloorObstacles" index="3" instance=ExtResource("13_mxhir")]
+[node name="crate_general4" parent="Platforms/ThirdFloorObstacles" index="3" unique_id=1542111219 instance=ExtResource("13_mxhir")]
 transform = Transform3D(2.91894, 0, -0.0230282, 0, 1.9, 0, 0.0186461, 0, 3.60493, 13.4838, -0.679815, -3.53192)
 
-[node name="Goon" type="Node3D" parent="Platforms/ThirdFloorObstacles" index="4"]
+[node name="Goon" type="Node3D" parent="Platforms/ThirdFloorObstacles" index="4" unique_id=1342389426]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.3363, -0.725279, 4.23961)
 
-[node name="goon" parent="Platforms/ThirdFloorObstacles/Goon" index="0" node_paths=PackedStringArray("path") instance=ExtResource("14_omkwr")]
+[node name="goon" parent="Platforms/ThirdFloorObstacles/Goon" index="0" unique_id=1373929768 node_paths=PackedStringArray("path") instance=ExtResource("14_omkwr")]
 transform = Transform3D(1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 0, 0, 0)
 path = NodePath("../Path3D")
 
-[node name="Path3D" type="Path3D" parent="Platforms/ThirdFloorObstacles/Goon" index="1"]
+[node name="Path3D" type="Path3D" parent="Platforms/ThirdFloorObstacles/Goon" index="1" unique_id=137519809]
 curve = SubResource("Curve3D_fwrq6")
 
-[node name="GoalPlatform" type="Node3D" parent="Platforms/ThirdFloorObstacles" index="5"]
+[node name="GoalPlatform" type="Node3D" parent="Platforms/ThirdFloorObstacles" index="5" unique_id=61393189]
 transform = Transform3D(0.703122, 0, 0.711069, 0, 1, 0, -0.711069, 0, 0.703122, -7.13892, 0.556068, -7.56342)
 
-[node name="Path3D" type="Path3D" parent="Platforms/ThirdFloorObstacles/GoalPlatform" index="0"]
+[node name="Path3D" type="Path3D" parent="Platforms/ThirdFloorObstacles/GoalPlatform" index="0" unique_id=1462853853]
 curve = SubResource("Curve3D_4t780")
 
-[node name="ElevatingPlatform" parent="Platforms/ThirdFloorObstacles/GoalPlatform" index="1" node_paths=PackedStringArray("path") instance=ExtResource("14_j41po")]
+[node name="ElevatingPlatform" parent="Platforms/ThirdFloorObstacles/GoalPlatform" index="1" unique_id=1962514024 node_paths=PackedStringArray("path") instance=ExtResource("14_j41po")]
 path = NodePath("../Path3D")
 speed = 3.0
 
-[node name="crate_general5" parent="Platforms/ThirdFloorObstacles" index="6" instance=ExtResource("13_mxhir")]
+[node name="crate_general5" parent="Platforms/ThirdFloorObstacles" index="6" unique_id=24178935 instance=ExtResource("13_mxhir")]
 transform = Transform3D(0.639125, 0, 1.40007, 0, 2, 0, -0.626534, 0, 1.42821, -11.3458, 0.807598, 6.71013)
 
-[node name="HiddenChest" parent="Platforms/ThirdFloorObstacles" index="7" instance=ExtResource("15_tvpod")]
+[node name="HiddenChest" parent="Platforms/ThirdFloorObstacles" index="7" unique_id=557768537 instance=ExtResource("15_tvpod")]
 unique_name_in_owner = true
 transform = Transform3D(-0.712038, 0, -0.702141, 0, 1, 0, 0.702141, 0, -0.712038, -12.4989, 0.817057, 8.52335)
 
-[node name="FinalButtonRush" type="Node3D" parent="Platforms" index="3"]
+[node name="FinalButtonRush" type="Node3D" parent="Platforms" index="3" unique_id=1634127258]
 
-[node name="CogButton" parent="Platforms/FinalButtonRush" index="0" instance=ExtResource("14_n7cgu")]
+[node name="CogButton" parent="Platforms/FinalButtonRush" index="0" unique_id=377571721 instance=ExtResource("14_n7cgu")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.293316, 36.8201, -14.8748)
 
-[node name="CogButton2" parent="Platforms/FinalButtonRush" index="1" instance=ExtResource("14_n7cgu")]
+[node name="CogButton2" parent="Platforms/FinalButtonRush" index="1" unique_id=542007215 instance=ExtResource("14_n7cgu")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.9173, 35.3067, -4.61034)
 
-[node name="CogButton3" parent="Platforms/FinalButtonRush" index="2" instance=ExtResource("14_n7cgu")]
+[node name="CogButton3" parent="Platforms/FinalButtonRush" index="2" unique_id=132716699 instance=ExtResource("14_n7cgu")]
 transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 8.25719, 35.3067, 10.0506)
 
-[node name="crate_general" parent="Platforms/FinalButtonRush" index="3" instance=ExtResource("13_mxhir")]
+[node name="crate_general" parent="Platforms/FinalButtonRush" index="3" unique_id=786809154 instance=ExtResource("13_mxhir")]
 transform = Transform3D(2.79877, 0, -0.0889987, 0, 3.045, 0, 0.0830655, 0, 2.99868, 13.4845, 35.307, -0.175735)
 
-[node name="ElevatorOrigin" type="Node3D" parent="Platforms" index="4"]
+[node name="ElevatorOrigin" type="Node3D" parent="Platforms" index="4" unique_id=804454868]
 unique_name_in_owner = true
 transform = Transform3D(0.716911, 0, 0.697165, 0, 1, 0, -0.697165, 0, 0.716911, 5.78284, 62.8357, 6.87267)
 
-[node name="FactoryElevator" parent="Platforms/ElevatorOrigin" index="0" instance=ExtResource("11_mwgg0")]
+[node name="FactoryElevator" parent="Platforms/ElevatorOrigin" index="0" unique_id=1938247107 instance=ExtResource("11_mwgg0")]
 unique_name_in_owner = true
 initial_y = -50.554
 rise_time = 3.0
 
-[node name="Activator" type="Area3D" parent="." index="9"]
+[node name="Activator" type="Area3D" parent="." index="9" unique_id=1482871381]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.2387, 13.1147, -172.588)
 collision_mask = 2
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Activator" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Activator" index="0" unique_id=929106231]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0758057, 1.13446, 0)
 shape = SubResource("BoxShape3D_n7lg2")
 
-[node name="PaintDamageTimer" type="Timer" parent="." index="10"]
+[node name="PaintDamageTimer" type="Timer" parent="." index="10" unique_id=2127628489]
 wait_time = 3.0
 one_shot = true
 
-[node name="ElevatorResetTimer" type="Timer" parent="." index="11"]
+[node name="ElevatorResetTimer" type="Timer" parent="." index="11" unique_id=1902385126]
 unique_name_in_owner = true
 wait_time = 3.0
 autostart = true
 
-[node name="BossChestGroup" parent="." index="12" instance=ExtResource("17_8jefi")]
+[node name="BossChestGroup" parent="." index="12" unique_id=41733062 instance=ExtResource("17_8jefi")]
 transform = Transform3D(0.700648, 0, 0.713507, 0, 1, 0, -0.713507, 0, 0.700648, 27.7066, 62.8328, -188.468)
 
-[node name="WinArea" type="Area3D" parent="." index="13"]
+[node name="WinArea" type="Area3D" parent="." index="13" unique_id=494154114]
 transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 40.8355, 63.5671, -181.305)
 collision_mask = 2
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="WinArea" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WinArea" index="0" unique_id=1510391278]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.153099, 2.23413, 0.0339813)
 shape = SubResource("BoxShape3D_kd26n")
 
-[node name="DebugPlayerPositionMarker" parent="." index="14" instance=ExtResource("23_pa8wx")]
+[node name="DebugPlayerPositionMarker" parent="." index="14" unique_id=1298042890 instance=ExtResource("23_pa8wx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.5461, 37.1165, -201.289)
 
-[node name="SkipButton" parent="." index="15" instance=ExtResource("24_ebw32")]
+[node name="SkipButton" parent="." index="15" unique_id=1603235102 instance=ExtResource("24_ebw32")]
 unique_name_in_owner = true
 visible = false
 anchors_preset = 3

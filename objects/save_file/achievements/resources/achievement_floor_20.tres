@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="SignalAchievement" format=3 uid="uid://dh0fogn30pmi6"]
+
+[ext_resource type="Texture2D" uid="uid://pt00wecg8fpm" path="res://ui_assets/achievements/icon_achievement_endless_20.png" id="1_wq78y"]
+[ext_resource type="Script" uid="uid://bu0ypaddtve76" path="res://objects/save_file/achievements/signal_achievement.gd" id="2_j7i0v"]
+
+[resource]
+script = ExtResource("2_j7i0v")
+signal_source = 1
+signal_name = "s_floor_20_beat"
+achievement_name = "Side Hustle"
+achievement_summary = "Complete Floor 20."
+achievement_index = 42
+achievement_icon = ExtResource("1_wq78y")
+metadata/_custom_type_script = "uid://bu0ypaddtve76"

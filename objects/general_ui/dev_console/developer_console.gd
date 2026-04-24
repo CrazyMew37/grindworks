@@ -10,7 +10,7 @@ var unpause_tree := false
 
 
 func _ready() -> void:
-	console_print("Toontown: The Grindworks %s" % Globals.VERSION_NUMBER)
+	console_print("Toontown: The Grindworks CrazyMew37 Edition")
 	input.grab_focus()
 
 func on_input_sent(text: String) -> void:
@@ -402,8 +402,8 @@ class GiveItemCommand extends Command:
 		return "player"
 	func run(args: Array) -> void:
 		var item_name: String = args[0]
-		if item_name == 'doodle':
-			error_custom("Cannot give the Doodle item, as it requires the model be spawned in. Try using the 'spawn item' command.")
+		if item_name == 'doodle' or item_name == 'partner toon':
+			error_custom("Cannot give this item, as it requires the model be spawned in. Try using the 'spawn item' command.")
 			return
 		var item_list: PackedStringArray = ItemService.pool_from_path("res://objects/items/pools/everything.tres").items
 		for path in item_list:

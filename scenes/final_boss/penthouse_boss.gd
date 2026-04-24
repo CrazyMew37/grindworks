@@ -57,23 +57,28 @@ func _ready() -> void:
 	set_caged_toon_dna(get_caged_toon_dna())
 	AudioManager.set_music(MUSIC_TRACK)
 	# Pick the first boss
-	boss_cog.level = ceili(((4) + (floori((Util.floor_number - 1.0) / 8.0) / 2.0)) * Util.floor_number)
 	var boss_choices := possible_bosses.duplicate(true)
 	if DEBUG_FORCE_BOSS_ONE != null and OS.is_debug_build() and WANT_DEBUG_BOSSES:
 		boss_one_choice = DEBUG_FORCE_BOSS_ONE
 	else:
 		boss_one_choice = RNG.channel(RNG.ChannelBaseSeed).pick_random(boss_choices)
+		boss_one_choice.level_high = ceili((4+(floori((Util.floor_number - 1) / 8.0) / 2.0)) * Util.floor_number)
+	boss_one_choice.level_low = ceili((4+(floori((Util.floor_number - 1) / 8.0) / 2.0)) * Util.floor_number)
 	boss_cog.set_dna(boss_one_choice)
 	boss_choices.erase(boss_one_choice)
 
 	# Pick the second boss
-	boss_cog_2.level = ceili(((4) + (floori((Util.floor_number - 1.0) / 8.0) / 2.0)) * Util.floor_number)
 	if DEBUG_FORCE_BOSS_TWO != null and OS.is_debug_build() and WANT_DEBUG_BOSSES:
 		boss_two_choice = DEBUG_FORCE_BOSS_TWO
 	else:
 		boss_two_choice = RNG.channel(RNG.ChannelBaseSeed).pick_random(boss_choices)
+		boss_two_choice.level_high = ceili((4+(floori((Util.floor_number - 1) / 8.0) / 2.0)) * Util.floor_number)
+	boss_two_choice.level_low = ceili((4+(floori((Util.floor_number - 1) / 8.0) / 2.0)) * Util.floor_number)
 	boss_cog_2.set_dna(boss_two_choice)
-
+	
+	boss_cog.level = ceili((4+(floori((Util.floor_number - 1) / 8.0) / 2.0)) * Util.floor_number)
+	boss_cog_2.level = ceili((4+(floori((Util.floor_number - 1) / 8.0) / 2.0)) * Util.floor_number)
+	
 	# Nerf their damage got damn!!!
 	boss_cog.stats.damage = 1.8
 	boss_cog_2.stats.damage = 1.8
@@ -191,7 +196,7 @@ func end_game() -> void:
 	
 
 func fill_elevator(cog_count: int, dna: CogDNA = null) -> Array[Cog]:
-	var COG_EXTENDED_RANGE = Vector2i(ceili((0.8 * (16 + (floori((Util.floor_number - 1.0) / 8.0) / 2.0))) * Util.floor_number) - (6.0 * floori((Util.floor_number + 5.0) / 10.0)), ceili((0.8 * (16 + (floori((Util.floor_number - 1.0) / 8.0) / 2.0))) * Util.floor_number))
+	var COG_EXTENDED_RANGE = Vector2i(ceili((0.8 * ((4) + (floori((Util.floor_number - 1.0) / 8.0) / 2.0))) * Util.floor_number) - (6.0 * floori((Util.floor_number + 5.0) / 10.0)), ceili((0.8 * ((4) + (floori((Util.floor_number - 1.0) / 8.0) / 2.0))) * Util.floor_number))
 	var roll_for_proxies : bool = SaveFileService.progress_file.proxies_unlocked and darkened_sky
 	var new_cogs: Array[Cog]
 	for i in cog_count:

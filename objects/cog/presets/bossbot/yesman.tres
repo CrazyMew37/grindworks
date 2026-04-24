@@ -8,7 +8,7 @@
 
 [resource]
 script = ExtResource("5_3koho")
-department = 4
+department = 3
 cog_name = "Yesman"
 name_plural = "Yesmen"
 name_prefix = "Yes"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="CharacterWinAchievement" format=3 uid="uid://cqcy6ni5pigk8"]
+
+[ext_resource type="Texture2D" uid="uid://clxecie2lltni" path="res://ui_assets/player_ui/pocket_prank_icons/rubberstampicon.png" id="1_dt0p1"]
+[ext_resource type="Script" uid="uid://bly70o6230roo" path="res://objects/save_file/achievements/character_win_achievement.gd" id="2_h6lns"]
+
+[resource]
+script = ExtResource("2_h6lns")
+character_id = 9
+achievement_name = "Stamp of Approval"
+achievement_summary = "Unlocked Rubber Stamp."
+achievement_index = 54
+achievement_icon = ExtResource("1_dt0p1")
+use_achievement_background = true
+custom_background_color = Color(0.92941177, 0.2627451, 0.2784314, 1)
+metadata/_custom_type_script = "uid://bly70o6230roo"

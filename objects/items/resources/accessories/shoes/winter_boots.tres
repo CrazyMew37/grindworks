@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="ItemShoe" format=3 uid="uid://c2fidgohcamnm"]
+
+[ext_resource type="Texture2D" uid="uid://ccn6dqol08xpp" path="res://objects/items/resources/accessories/shoes/icons/winter_boots.png" id="1_3spnr"]
+[ext_resource type="Texture2D" uid="uid://r2lx4sx4n70p" path="res://models/accessories/shoe_textures/boots/tt_t_chr_avt_acc_sho_winterBootsPinkLL.png" id="2_3spnr"]
+[ext_resource type="Script" uid="uid://bb02y647us2n3" path="res://objects/items/classes/item_shoe.gd" id="3_mi2b4"]
+[ext_resource type="Texture2D" uid="uid://bq42163jlyad3" path="res://models/accessories/shoe_textures/boots/tt_t_chr_avt_acc_sho_winterBootsPink.png" id="4_m0x0m"]
+
+[resource]
+script = ExtResource("3_mi2b4")
+shoe_type = 3
+shoe_tex = ExtResource("4_m0x0m")
+long_leg_tex = ExtResource("2_3spnr")
+qualitoon = 3
+world_y_offset = -0.2
+item_name = "Winter Boots"
+item_description = "Cogs? Snow problem!"
+big_description = "+ 20% Drop damage
+- 10% Squirt damage"
+stats_add = {
+"gag_boost:Drop": 0.2,
+"gag_boost:Squirt": -0.1
+}
+icon = ExtResource("1_3spnr")
+metadata/_custom_type_script = "uid://bb02y647us2n3"

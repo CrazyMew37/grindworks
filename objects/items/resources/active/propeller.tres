@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="ItemActive" format=3 uid="uid://bw52ytle3q1ag"]
+
+[ext_resource type="Texture2D" uid="uid://mv8825m2we84" path="res://ui_assets/player_ui/pocket_prank_icons/propelloricon.png" id="1_ttatj"]
+[ext_resource type="Script" uid="uid://dko11hss4bjay" path="res://objects/items/custom/item_propeller.gd" id="2_ttatj"]
+[ext_resource type="PackedScene" uid="uid://dkt5x3vk2hd24" path="res://objects/props/etc/propeller.tscn" id="3_2vilp"]
+[ext_resource type="AudioStream" uid="uid://noj2axu70xr1" path="res://audio/sfx/battle/cogs/misc/ENC_propeller_in.ogg" id="4_284gt"]
+[ext_resource type="Script" uid="uid://5uwfsntxdag6" path="res://objects/items/classes/item_active.gd" id="5_go73h"]
+
+[resource]
+script = ExtResource("5_go73h")
+active_type = 2
+charge_count = 1
+current_charge = 1
+custom_discharge_time = 8.0
+qualitoon = 2
+world_scale = 0.5
+item_name = "Propeller"
+item_description = "Up, up, and away!"
+big_description = "Gives the following effects for 8 seconds:
++ 20% Jump Height
++ 1 Mid-air jump"
+model = ExtResource("3_2vilp")
+pickup_sfx = ExtResource("4_284gt")
+item_script = ExtResource("2_ttatj")
+icon = ExtResource("1_ttatj")
+shop_category_title = "Pocket Prank"
+shop_category_color = Color(0.929412, 0.262745, 0.278431, 1)
+unlock_achievement = 55
+metadata/_custom_type_script = "uid://5uwfsntxdag6"

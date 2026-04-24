@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="ItemShoe" format=3 uid="uid://di4c3snqwxke5"]
+
+[ext_resource type="Texture2D" uid="uid://npyies57ff8f" path="res://objects/items/resources/accessories/shoes/icons/pirate_boots.png" id="1_yhbxw"]
+[ext_resource type="Texture2D" uid="uid://bhtqwhliiuc6m" path="res://models/accessories/shoe_textures/shoes/tt_t_chr_avt_acc_sho_pirate.png" id="2_yhbxw"]
+[ext_resource type="Script" uid="uid://bb02y647us2n3" path="res://objects/items/classes/item_shoe.gd" id="4_2c7n0"]
+
+[resource]
+script = ExtResource("4_2c7n0")
+shoe_type = 3
+shoe_tex = ExtResource("2_yhbxw")
+long_leg_tex = ExtResource("2_yhbxw")
+qualitoon = 3
+world_y_offset = -0.2
+item_name = "Pirate Shoes"
+item_description = "Those Cogs be walking the plank!"
+big_description = "+ 20% Squirt damage
+- 10% Throw damage"
+stats_add = {
+"gag_boost:Squirt": 0.2,
+"gag_boost:Throw": -0.1
+}
+icon = ExtResource("1_yhbxw")
+metadata/_custom_type_script = "uid://bb02y647us2n3"

@@ -16,6 +16,7 @@ const ChannelAnomalyBonus := &'Chaos Catalyst'
 const ChannelStrangerTrade := &'Dubious Dealer'
 const ChannelMoney := &'Money Maker'
 const ChannelQuests := &'Task Taker'
+const ChannelEndless := &'Overtime Overlord'
 
 # Controls the order that channels are displayed on the win screen
 var channel_hierarchy: Array[StringName] = [
@@ -27,6 +28,7 @@ var channel_hierarchy: Array[StringName] = [
 	ChannelQuests,
 	ChannelAnomalyBonus,
 	ChannelItemBonus,
+	ChannelEndless,
 	ChannelStrangerTrade,
 	ChannelMinMax,
 ]
@@ -60,6 +62,7 @@ const BEAN_BONUS := 5 # Bonus points per Jellybean collected
 const ANOMALY_BONUS := 120 # Bonus points per anomaly taken
 const ANOMALY_STACK_BONUS := 1.2 # Stacking bonus for anomaly combining
 const QUEST_BONUS := 175 # Bonus points per quest completed
+const ENDLESS_BONUS := 100 # Bonus points per every floor above 5. Scales per floor, so Floor 6 is 600 points, Floor 7 is 700, etc.
 #endregion
 
 func _ready() -> void:

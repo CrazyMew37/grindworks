@@ -7,7 +7,7 @@ signal s_game_win
 
 ## Constants
 const WAIT_TIME := Vector2(0.25,1.0)
-var MOLE_SCENE := load('res://mods-unpacked/CrazyMew37-YellowMoleDestroyer/overwrites/mole_hole_alt.tscn')
+var MOLE_SCENE := load('res://objects/interactables/mole_stomp/mole_hole_alt.tscn')
 const UI_SCENE := preload('res://objects/interactables/mole_stomp/mole_display.tscn')
 const MG_LOSE = preload("res://audio/sfx/misc/MG_lose.ogg")
 const INSTRUCTION_TEXT := "MOLE STOMP!\nStomp the red moles!"

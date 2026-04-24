@@ -86,57 +86,57 @@ shadow_color = Color(0, 0, 0, 1)
 [node name="OfficeHeadOfSecurityBoss" unique_id=174132829 instance=ExtResource("1_6t424")]
 script = ExtResource("2_gwvhn")
 
-[node name="AmbulanceChaserFrame" parent="." index="0" unique_id=622795060]
+[node name="AmbulanceChaserFrame" parent="." index="0" unique_id=59498501]
 material_overlay = SubResource("StandardMaterial3D_d65n6")
 
-[node name="BloodsuckerFrame" parent="." index="1" unique_id=2004609671]
+[node name="BloodsuckerFrame" parent="." index="1" unique_id=522368085]
 material_overlay = SubResource("StandardMaterial3D_d65n6")
 
-[node name="Bookshelves" parent="." index="2" unique_id=877212611]
+[node name="Bookshelves" parent="." index="2" unique_id=1674751067]
 material_overlay = SubResource("StandardMaterial3D_d65n6")
 
-[node name="Building" parent="." index="3" unique_id=644166514]
+[node name="Building" parent="." index="3" unique_id=1157525088]
 material_overlay = SubResource("StandardMaterial3D_d65n6")
 
-[node name="Connector" parent="." index="4" unique_id=2086186057]
+[node name="Connector" parent="." index="4" unique_id=1202913882]
 material_overlay = SubResource("StandardMaterial3D_d65n6")
 
-[node name="Floor" parent="." index="6" unique_id=2042049379]
+[node name="Floor" parent="." index="6" unique_id=1034442423]
 material_overlay = SubResource("StandardMaterial3D_d65n6")
 
-[node name="LB_LightPanel" parent="." index="7" unique_id=1862757902]
+[node name="LB_LightPanel" parent="." index="7" unique_id=1529906260]
 unique_name_in_owner = true
 transform = Transform3D(256.704, 0, 0, 0, -4.20739e-06, 100, 0, -96.2538, -4.37114e-06, -21.0055, 9.57381, 0.00722647)
 surface_material_override/0 = null
 surface_material_override/2 = SubResource("StandardMaterial3D_ftyqj")
 
-[node name="LB_PictureFrame" parent="." index="8" unique_id=1361519346]
+[node name="LB_PictureFrame" parent="." index="8" unique_id=1049822183]
 material_overlay = SubResource("StandardMaterial3D_d65n6")
 
-[node name="Screen" parent="." index="9" unique_id=241787782]
+[node name="Screen" parent="." index="9" unique_id=1585738463]
 unique_name_in_owner = true
 surface_material_override/0 = SubResource("StandardMaterial3D_qx1ei")
 
 [node name="EXIT" parent="." index="13"]
 visible = false
 
-[node name="Sofa" parent="." index="16" unique_id=1327772743]
+[node name="Sofa" parent="." index="16" unique_id=1378676245]
 material_overlay = SubResource("StandardMaterial3D_d65n6")
 
-[node name="Static" parent="." index="17" unique_id=1743201119]
+[node name="Static" parent="." index="17" unique_id=965494948]
 unique_name_in_owner = true
 surface_material_override/0 = SubResource("StandardMaterial3D_liuo2")
 
-[node name="TV" parent="." index="18" unique_id=1638164319]
+[node name="TV" parent="." index="18" unique_id=776900051]
 material_overlay = SubResource("StandardMaterial3D_d65n6")
 
-[node name="WindowShutters" parent="." index="19" unique_id=1515220535]
+[node name="WindowShutters" parent="." index="19" unique_id=988305908]
 material_overlay = SubResource("StandardMaterial3D_d65n6")
 
-[node name="WireHangers" parent="." index="20" unique_id=737301605]
+[node name="WireHangers" parent="." index="20" unique_id=549076336]
 material_overlay = SubResource("StandardMaterial3D_d65n6")
 
-[node name="Wires" parent="." index="21" unique_id=237939047]
+[node name="Wires" parent="." index="21" unique_id=103200749]
 material_overlay = SubResource("StandardMaterial3D_d65n6")
 
 [node name="Walls" type="Node3D" parent="." index="23" unique_id=1770749690]
@@ -177,10 +177,10 @@ unique_name_in_owner = true
 transform = Transform3D(-1.74846e-08, 0, 0.4, 0, 0.4, 0, -0.4, 0, -1.74846e-08, -21.1426, 0.293851, 0)
 opened = false
 
-[node name="GeometryTransformHelper7" parent="office_elevator/LBElevator1/Doors/left_door" parent_id_path=PackedInt32Array(640376949, 1247149068) index="0" unique_id=2107505788]
+[node name="GeometryTransformHelper7" parent="office_elevator/LBElevator1/Doors/left_door" parent_id_path=PackedInt32Array(640376949, 935099888) index="0" unique_id=467776274]
 material_overlay = SubResource("StandardMaterial3D_d65n6")
 
-[node name="GeometryTransformHelper8" parent="office_elevator/LBElevator1/Doors/right_door" parent_id_path=PackedInt32Array(640376949, 2089828085) index="0" unique_id=49467709]
+[node name="GeometryTransformHelper8" parent="office_elevator/LBElevator1/Doors/right_door" parent_id_path=PackedInt32Array(640376949, 2039899413) index="0" unique_id=1049955303]
 material_overlay = SubResource("StandardMaterial3D_d65n6")
 
 [node name="Puzzle" type="Node3D" parent="." index="26" unique_id=1516079012]

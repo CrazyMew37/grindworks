@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="ItemShoe" format=3 uid="uid://cbe5foqj4hefp"]
+
+[ext_resource type="Texture2D" uid="uid://cv23ymof1e6e3" path="res://objects/items/resources/accessories/shoes/icons/tennis_shoes.png" id="1_m1k2d"]
+[ext_resource type="Script" uid="uid://bb02y647us2n3" path="res://objects/items/classes/item_shoe.gd" id="2_md71e"]
+[ext_resource type="Texture2D" uid="uid://cmvr3v0mur8ow" path="res://models/accessories/shoe_textures/shoes/tt_t_chr_avt_acc_sho_tennisShoesViolet.png" id="3_m1k2d"]
+
+[resource]
+script = ExtResource("2_md71e")
+shoe_tex = ExtResource("3_m1k2d")
+qualitoon = 3
+item_name = "Tennis Shoes"
+item_description = "Rule the court!"
+big_description = "+ 20% Sound damage
+- 10% Drop damage"
+stats_add = {
+"gag_boost:Drop": -0.1,
+"gag_boost:Sound": 0.2
+}
+icon = ExtResource("1_m1k2d")
+metadata/_custom_type_script = "uid://bb02y647us2n3"

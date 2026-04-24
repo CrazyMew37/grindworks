@@ -155,6 +155,24 @@ enum GameAchievement {
 	UNLOCK_ROLODEX,
 	UNLOCK_WINGTIPS,
 	UNLOCK_RAINBOW_JELLYBEAN,
+	
+	# "1.3" Achivements
+	DEFEAT_SOLICITOR,
+	BEAT_FLOOR_10,
+	BEAT_FLOOR_20,
+	BEAT_FLOOR_25,
+	BEAT_FLOOR_35,
+	BEAT_FLOOR_50,
+	BEAT_FLOOR_65,
+	BEAT_FLOOR_75,
+	BEAT_FLOOR_100,
+	PARTNER_TOON,
+	UNLOCK_FRANZ,
+	UNLOCK_BUMPY,
+	EASTER_EGG_SURPRISE,
+	UNLOCK_PILOT_CAP,
+	UNLOCK_RUBBER_STAMP,
+	UNLOCK_PROPELLER,
 }
 
 const PATH := "res://objects/save_file/achievements/resources/"
@@ -199,6 +217,22 @@ const ACHIEVEMENT_RESOURCES := {
 	GameAchievement.UNLOCK_ROLODEX: PATH + "achievement_item_rolodex.tres",
 	GameAchievement.UNLOCK_WINGTIPS: PATH + "achievement_item_wingtips.tres",
 	GameAchievement.UNLOCK_RAINBOW_JELLYBEAN: PATH + "achievement_item_rainbow_jellybean.tres",
+	GameAchievement.DEFEAT_SOLICITOR: PATH + "achievement_special_boss_solicitor.tres",
+	GameAchievement.BEAT_FLOOR_10: PATH + "achievement_floor_10.tres",
+	GameAchievement.BEAT_FLOOR_20: PATH + "achievement_floor_20.tres",
+	GameAchievement.BEAT_FLOOR_25: PATH + "achievement_floor_25.tres",
+	GameAchievement.BEAT_FLOOR_35: PATH + "achievement_floor_35.tres",
+	GameAchievement.BEAT_FLOOR_50: PATH + "achievement_floor_50.tres",
+	GameAchievement.BEAT_FLOOR_65: PATH + "achievement_floor_65.tres",
+	GameAchievement.BEAT_FLOOR_75: PATH + "achievement_floor_75.tres",
+	GameAchievement.BEAT_FLOOR_100: PATH + "achievement_floor_100.tres",
+	GameAchievement.PARTNER_TOON: PATH + "achievement_partner_toon.tres",
+	GameAchievement.UNLOCK_FRANZ: PATH + "achievement_unlock_franz.tres",
+	GameAchievement.UNLOCK_BUMPY: PATH + "achievement_unlock_bumpy.tres",
+	GameAchievement.EASTER_EGG_SURPRISE: PATH + "achievement_easteregg_surprise.tres",
+	GameAchievement.UNLOCK_PILOT_CAP: PATH + "achievement_item_pilot_cap.tres",
+	GameAchievement.UNLOCK_RUBBER_STAMP: PATH + "achievement_item_rubber_stamp.tres",
+	GameAchievement.UNLOCK_PROPELLER: PATH + "achievement_item_propeller.tres",
 }
 
 @export var achievements_earned := {
@@ -242,6 +276,22 @@ const ACHIEVEMENT_RESOURCES := {
 	GameAchievement.UNLOCK_ROLODEX: false,
 	GameAchievement.UNLOCK_WINGTIPS: false,
 	GameAchievement.UNLOCK_RAINBOW_JELLYBEAN: false,
+	GameAchievement.DEFEAT_SOLICITOR: false,
+	GameAchievement.BEAT_FLOOR_10: false,
+	GameAchievement.BEAT_FLOOR_20: false,
+	GameAchievement.BEAT_FLOOR_25: false,
+	GameAchievement.BEAT_FLOOR_35: false,
+	GameAchievement.BEAT_FLOOR_50: false,
+	GameAchievement.BEAT_FLOOR_65: false,
+	GameAchievement.BEAT_FLOOR_75: false,
+	GameAchievement.BEAT_FLOOR_100: false,
+	GameAchievement.PARTNER_TOON: false,
+	GameAchievement.UNLOCK_FRANZ: false,
+	GameAchievement.UNLOCK_BUMPY: false,
+	GameAchievement.EASTER_EGG_SURPRISE: false,
+	GameAchievement.UNLOCK_PILOT_CAP: false,
+	GameAchievement.UNLOCK_RUBBER_STAMP: false,
+	GameAchievement.UNLOCK_PROPELLER: false,
 }
 
 var achievement_count: int:

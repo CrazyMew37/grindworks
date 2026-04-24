@@ -140,7 +140,7 @@ func populate_tabs() -> void:
 		char_tab.set_character(toon)
 		char_tab.s_clicked.connect(on_tab_clicked.bind(char_tab))
 		char_tab.selected = toon == character
-		Task.delay(0.1).connect(func(): if is_instance_valid(self): char_tab.h_offset = -char_tab.char_label.size.x / 2.5)
+		Task.delay(0.1).connect(func(): if is_instance_valid(self): char_tab.h_offset = -char_tab.char_label.size.x / 2)
 		if Globals.get_unlocked_toons().find(toon) == 0:
 			char_tab.selected = true
 			current_tab = char_tab

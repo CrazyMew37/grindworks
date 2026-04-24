@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="ItemActive" format=3 uid="uid://ca8romvopccaa"]
+
+[ext_resource type="Texture2D" uid="uid://70yxaolaemgt" path="res://ui_assets/player_ui/pocket_prank_icons/bumpyphone.png" id="1_r6ivw"]
+[ext_resource type="Script" uid="uid://b45f22wsv0mwg" path="res://objects/items/custom/item_bumpy_phone.gd" id="2_r6ivw"]
+[ext_resource type="PackedScene" uid="uid://bwhmbe0ohsryd" path="res://objects/items/resources/active/bumpy_phone.tscn" id="3_r6ivw"]
+[ext_resource type="Script" uid="uid://5uwfsntxdag6" path="res://objects/items/classes/item_active.gd" id="4_3nkea"]
+
+[resource]
+script = ExtResource("4_3nkea")
+active_type = 2
+charge_count = 1
+current_charge = 1
+one_time_use = true
+tags = Array[int]([4])
+qualitoon = 4
+item_name = "Bumpy Bumblebehr's Phone"
+item_description = "Phone a friend!"
+big_description = "Summons a Partner Toon and a Doodle (one-time-use)"
+model = ExtResource("3_r6ivw")
+item_script = ExtResource("2_r6ivw")
+icon = ExtResource("1_r6ivw")
+shop_category_title = "Pocket Prank"
+shop_category_color = Color(0.929412, 0.262745, 0.278431, 1)
+metadata/_custom_type_script = "uid://5uwfsntxdag6"

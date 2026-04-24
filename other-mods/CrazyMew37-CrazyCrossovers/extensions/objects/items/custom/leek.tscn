@@ -1,8 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://c8cpt1m40wpky"]
-
-[ext_resource type="PackedScene" uid="uid://xjcpvlm46amk" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/accessories/leek.glb" id="1_i8isk"]
-
-[node name="monarch_butterfly" type="Node3D"]
-
-[node name="leek" parent="." instance=ExtResource("1_i8isk")]
-transform = Transform3D(-0.25, 0, -2.1855694e-08, 0, 0.25, 0, 2.1855694e-08, 0, -0.25, 0.05, -0.3, -0.03)

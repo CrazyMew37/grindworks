@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="SignalAchievement" format=3 uid="uid://by1e37drtoahx"]
+
+[ext_resource type="Texture2D" uid="uid://v8k184rwwsj5" path="res://ui_assets/achievements/icon_achievement_egg.png" id="1_w4nh7"]
+[ext_resource type="Script" uid="uid://bu0ypaddtve76" path="res://objects/save_file/achievements/signal_achievement.gd" id="2_imu3d"]
+
+[resource]
+script = ExtResource("2_imu3d")
+signal_source = 1
+signal_name = "s_surprise_rolled"
+achievement_name = "Surprise!"
+achievement_summary = "Surpriiiiiise! You're lucky enough to get this Achievement!"
+achievement_index = 52
+achievement_icon = ExtResource("1_w4nh7")

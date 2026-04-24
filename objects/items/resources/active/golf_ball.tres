@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="ItemActive" format=3 uid="uid://lt2gai2yldpn"]
+
+[ext_resource type="Texture2D" uid="uid://b4a2hc104v2jw" path="res://ui_assets/player_ui/pocket_prank_icons/golfballicon.png" id="1_a5uro"]
+[ext_resource type="Script" uid="uid://deqh75swyhqga" path="res://objects/items/custom/item_golf_ball.gd" id="2_a5uro"]
+[ext_resource type="PackedScene" uid="uid://3m2s0be13ij7" path="res://models/props/facility_objects/cgc/golf_ball/golf_ball.fbx" id="3_a5uro"]
+[ext_resource type="AudioStream" uid="uid://vp8d5a6ameun" path="res://audio/sfx/battle/cogs/attacks/SA_tee_off.ogg" id="4_0uoi8"]
+[ext_resource type="Script" uid="uid://5uwfsntxdag6" path="res://objects/items/classes/item_active.gd" id="5_4ciij"]
+
+[resource]
+script = ExtResource("5_4ciij")
+active_type = 2
+charge_count = 3
+current_charge = 3
+qualitoon = 1
+world_scale = 1.5
+item_name = "Golf Ball"
+item_description = "FORE!"
+big_description = "Boosts your damage and defense against a random Cog Department by +5% on every use."
+model = ExtResource("3_a5uro")
+pickup_sfx = ExtResource("4_0uoi8")
+item_script = ExtResource("2_a5uro")
+icon = ExtResource("1_a5uro")
+shop_category_title = "Pocket Prank"
+shop_category_color = Color(0.929412, 0.262745, 0.278431, 1)
+metadata/_custom_type_script = "uid://5uwfsntxdag6"

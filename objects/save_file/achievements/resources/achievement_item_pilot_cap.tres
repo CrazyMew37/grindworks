@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="SignalAchievement" format=3 uid="uid://ckv7ept2a67n8"]
+
+[ext_resource type="Texture2D" uid="uid://ikudpwod8v1p" path="res://models/accessories/hats/pilot_cap/pilot_cap_picture.png" id="1_xpvme"]
+[ext_resource type="Script" uid="uid://bu0ypaddtve76" path="res://objects/save_file/achievements/signal_achievement.gd" id="2_doett"]
+
+[resource]
+script = ExtResource("2_doett")
+signal_source = 1
+signal_name = "s_pilot_cap_time"
+achievement_name = "Jet Lag"
+achievement_summary = "Unlocked Pilot Cap."
+hint = "Spend some extra time during your trip."
+achievement_index = 53
+achievement_icon = ExtResource("1_xpvme")
+use_achievement_background = true
+custom_background_color = Color(0.19607843, 0.5803922, 0.91764706, 1)

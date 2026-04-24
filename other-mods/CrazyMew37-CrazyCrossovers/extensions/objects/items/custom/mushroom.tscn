@@ -1,8 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://cfqaqdr4erf48"]
-
-[ext_resource type="PackedScene" uid="uid://b81l0yb3xcqik" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/models/accessories/mushroom.glb" id="1_xiw1i"]
-
-[node name="monarch_butterfly" type="Node3D"]
-
-[node name="mushroom" parent="." instance=ExtResource("1_xiw1i")]
-transform = Transform3D(-8.742278e-08, 0, -2, 0, 2, 0, 2, 0, -8.742278e-08, 0, -1.5, 0)

@@ -1,7 +1,7 @@
 extends BattleStartMovie
 class_name GoonBossIntro
 
-const GOON_EYE_COLOR := Color("ffff44")
+const GOON_EYE_COLOR := Color("ff3333")
 const SFX_LIGHT := preload("res://audio/sfx/objects/spotlight/LB_laser_beam_on_2.ogg")
 const SFX_SPARK := preload("res://audio/sfx/battle/cogs/misc/LB_sparks_1.ogg")
 
@@ -80,7 +80,7 @@ func play() -> Tween:
 	
 	var delay := 0.5
 	movie.parallel().tween_callback(AudioManager.play_sound.bind(SFX_SPARK)).set_delay(delay)
-	movie.parallel().tween_callback(focus_cog.speak.bind("Stop right there, Toon!")).set_delay(delay)
+	movie.parallel().tween_callback(focus_cog.speak.bind("Stop right there, Toon! The Chief Security Goon demands you to freeze!")).set_delay(delay)
 	for cog in battle_node.cogs:
 		movie.parallel().tween_callback(cog.show).set_delay(delay)
 		movie.parallel().tween_callback(cog.set_animation.bind('drop')).set_delay(delay)
@@ -88,7 +88,7 @@ func play() -> Tween:
 		delay += 0.2
 	
 	movie.tween_callback(player.set_animation.bind('neutral'))
-	movie.tween_interval(3.0)
+	movie.tween_interval(4.0)
 	movie.tween_callback(start_music)
 	movie.tween_callback(goon.set_animation.bind('neutral'))
 	return movie

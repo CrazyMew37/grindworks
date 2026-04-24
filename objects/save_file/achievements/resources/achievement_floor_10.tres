@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="SignalAchievement" format=3 uid="uid://ba1yw7p0hvg8d"]
+
+[ext_resource type="Texture2D" uid="uid://dmxaloil008ik" path="res://ui_assets/achievements/icon_achievement_endless_10.png" id="1_ijs2m"]
+[ext_resource type="Script" uid="uid://bu0ypaddtve76" path="res://objects/save_file/achievements/signal_achievement.gd" id="2_aeefw"]
+
+[resource]
+script = ExtResource("2_aeefw")
+signal_source = 1
+signal_name = "s_floor_10_beat"
+achievement_name = "Overtime"
+achievement_summary = "Complete Floor 10."
+achievement_index = 41
+achievement_icon = ExtResource("1_ijs2m")
+metadata/_custom_type_script = "uid://bu0ypaddtve76"

@@ -34,7 +34,17 @@ albedo_texture = ExtResource("6_jwf50")
 resource_local_to_scene = true
 material = SubResource("StandardMaterial3D_omjv0")
 
-[node name="molten_shop" instance=ExtResource("1_6d760")]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_30xdj"]
+resource_local_to_scene = true
+transparency = 1
+albedo_color = Color(1, 1, 1, 0.73333335)
+albedo_texture = ExtResource("6_jwf50")
+
+[sub_resource type="QuadMesh" id="QuadMesh_4ff6w"]
+resource_local_to_scene = true
+material = SubResource("StandardMaterial3D_30xdj")
+
+[node name="molten_shop" unique_id=978669743 instance=ExtResource("1_6d760")]
 script = ExtResource("2_3wd6a")
 red_chair_toon_phrases = Array[String](["No Cogs here, my friend. The coast is clear!", "If you're here for the sale on deck chairs, I just got the last one.", "Wait, don't move. You're keeping the sun outta my eyes.", "Jealous? Well, there's no room for you on here.", "Yoooo.", "Y'know, I actually know the Toon that painted that landscape.", "Zzz... HAH! I was faking it! You couldn't even tell."])
 blue_chair_toon_phrases = Array[String](["That pipe over there leads to the exit, but I really wouldn't go in there right now if I were you.", "How did we get here? Well... Wait, how DID we get here?", "My last water bottle melted and evaporated. At the same time.", "I've been stranded here for days.", "Got any Throw points? I'd green for a Birthday Cake right now...", "Be sure to stock up before heading out!"])
@@ -48,11 +58,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.011110306, 1.63692)
 [node name="ceiling" parent="." index="23"]
 surface_material_override/1 = SubResource("StandardMaterial3D_jwf50")
 
-[node name="NavigationRegion3D" type="NavigationRegion3D" parent="." index="24"]
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="." index="24" unique_id=1055357601]
 visible = false
 navigation_mesh = SubResource("NavigationMesh_3wd6a")
 
-[node name="BigPipeTransport" parent="." index="25" instance=ExtResource("2_d1snm")]
+[node name="BigPipeTransport" parent="." index="25" unique_id=676402518 instance=ExtResource("2_d1snm")]
 transform = Transform3D(-1.09278474e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -1.09278474e-07, 9.150896, 0.65549326, -12.2249975)
 
 [node name="BigPipe" parent="BigPipeTransport/Big_Pipe" index="0"]
@@ -68,49 +78,52 @@ transform = Transform3D(1.0000002, 0, 0, 0, 1.0000002, 0, 0, 0, 1.0000002, 0.026
 [node name="RunOutPos" parent="BigPipeTransport" index="3"]
 transform = Transform3D(1.0000004, 0, 0, 0, 1.0000004, 0, 0, 0, 1.0000004, -2.4299848, 0.10076594, -2.3841858e-07)
 
-[node name="ChairToon1" parent="." index="26" instance=ExtResource("3_57tae")]
+[node name="ChairToon1" parent="." index="26" unique_id=1722138602 instance=ExtResource("3_57tae")]
 unique_name_in_owner = true
 transform = Transform3D(0.60876137, 0, -0.79335326, 0, 1, 0, 0.79335326, 0, 0.60876137, 19.218565, 1.9567039, -2.424686)
 randomize_dna = true
 auto_build = true
+add_accessories = true
 initial_anim = &"sit"
 
-[node name="ChairToon2" parent="." index="27" instance=ExtResource("3_57tae")]
+[node name="ChairToon2" parent="." index="27" unique_id=453703121 instance=ExtResource("3_57tae")]
 unique_name_in_owner = true
 transform = Transform3D(-0.12245825, 0, -0.99247366, 0, 1, 0, 0.99247366, 0, -0.12245825, 22.298288, 1.9567037, 0.9270146)
 randomize_dna = true
 auto_build = true
+add_accessories = true
 initial_anim = &"sit"
 
-[node name="TowelToon" parent="." index="28" instance=ExtResource("3_57tae")]
+[node name="TowelToon" parent="." index="28" unique_id=1745943786 instance=ExtResource("3_57tae")]
 unique_name_in_owner = true
 transform = Transform3D(-0.3835862, 0, -0.9235052, 0, 1, 0, 0.9235052, 0, -0.3835862, 21.105112, 1.318319, 5.7107096)
 randomize_dna = true
 auto_build = true
+add_accessories = true
 
-[node name="Chair1Pos" type="Node3D" parent="." index="29"]
+[node name="Chair1Pos" type="Node3D" parent="." index="29" unique_id=1014867142]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1, 19.218565, 1.9567039, -2.424686)
 
-[node name="Chair2Pos" type="Node3D" parent="." index="30"]
+[node name="Chair2Pos" type="Node3D" parent="." index="30" unique_id=338033331]
 unique_name_in_owner = true
 transform = Transform3D(0.9682437, 0, -0.25000823, 0, 1, 0, 0.25000823, 0, 0.9682437, 22.298288, 1.9567037, 0.9270146)
 
-[node name="Interactions" type="Node3D" parent="." index="31"]
+[node name="Interactions" type="Node3D" parent="." index="31" unique_id=112360452]
 
-[node name="RedChairToon" type="Area3D" parent="Interactions" index="0"]
+[node name="RedChairToon" type="Area3D" parent="Interactions" index="0" unique_id=1412800460]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.218565, 1.9567039, -2.424686)
 collision_mask = 2
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Interactions/RedChairToon" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Interactions/RedChairToon" index="0" unique_id=785376376]
 transform = Transform3D(0.8660254, 0, -0.5, 0, 1, 0, 0.5, 0, 0.8660254, -0.058031082, 0, 0.109760284)
 shape = SubResource("SphereShape3D_3wd6a")
 
-[node name="BlueChairToon" type="Area3D" parent="Interactions" index="1"]
+[node name="BlueChairToon" type="Area3D" parent="Interactions" index="1" unique_id=2045396079]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.298288, 1.9567037, 0.9270146)
 collision_mask = 2
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Interactions/BlueChairToon" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Interactions/BlueChairToon" index="0" unique_id=1268197512]
 transform = Transform3D(0.8660254, 0, -0.5, 0, 1, 0, 0.5, 0, 0.8660254, -0.058031082, 0, 0.109760284)
 shape = SubResource("SphereShape3D_3wd6a")
 
@@ -118,12 +131,12 @@ shape = SubResource("SphereShape3D_3wd6a")
 mesh = SubResource("QuadMesh_mlos2")
 
 [node name="Mesh" parent="SquareDropShadow2" index="0"]
-mesh = SubResource("QuadMesh_mlos2")
+mesh = SubResource("QuadMesh_4ff6w")
 
-[node name="shelf4" parent="." index="38" instance=ExtResource("7_omjv0")]
+[node name="shelf4" parent="." index="38" unique_id=1093454484 instance=ExtResource("7_omjv0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.019069, 0, -5.6875625)
 
-[node name="shelf5" parent="." index="39" instance=ExtResource("7_omjv0")]
+[node name="shelf5" parent="." index="39" unique_id=1719319178 instance=ExtResource("7_omjv0")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -6.521523, 0, 5.9097943)
 
 [connection signal="s_pipe_connected" from="BigPipeTransport" to="." method="on_boss_finished"]

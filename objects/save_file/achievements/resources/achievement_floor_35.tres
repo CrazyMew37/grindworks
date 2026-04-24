@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="SignalAchievement" format=3 uid="uid://dmqui01hvcuns"]
+
+[ext_resource type="Texture2D" uid="uid://ctikyaigpynfc" path="res://ui_assets/achievements/icon_achievement_endless_35.png" id="1_phnqj"]
+[ext_resource type="Script" uid="uid://bu0ypaddtve76" path="res://objects/save_file/achievements/signal_achievement.gd" id="2_pcbco"]
+
+[resource]
+script = ExtResource("2_pcbco")
+signal_source = 1
+signal_name = "s_floor_35_beat"
+achievement_name = "Tenure"
+achievement_summary = "Complete Floor 35."
+achievement_index = 44
+achievement_icon = ExtResource("1_phnqj")
+metadata/_custom_type_script = "uid://bu0ypaddtve76"

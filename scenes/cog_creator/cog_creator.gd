@@ -634,6 +634,7 @@ func set_hand_color(color : Color) -> void:
 @onready var health_mod_slider : HSlider = $Menus/AtrributeSelectorsPart2/VBoxContainer/HealthModifier/HSlider
 @onready var health_mod_label : Label = $Menus/AtrributeSelectorsPart2/VBoxContainer/HealthModifier/Label
 @onready var speak_button : CheckBox = $Menus/AtrributeSelectorsPart2/VBoxContainer/SpeakToggle/CheckBox
+@onready var suit_button : CheckBox = $Menus/AtrributeSelectorsPart2/VBoxContainer/SuitToggle/CheckBox
 
 func _ready_attribute() -> void:
 	name_editor.set_text(cog.dna.cog_name)
@@ -651,6 +652,7 @@ func _ready_attribute() -> void:
 	suffix_editor.set_text(cog.dna.custom_nametag_suffix)
 	health_mod_slider.set_value(cog.dna.health_mod)
 	speak_button.set_pressed(cog.dna.can_speak)
+	suit_button.set_pressed(cog.dna.suit_visible)
 
 func set_cog_name(new_name : String) -> void:
 	cog.dna.cog_name = new_name
@@ -729,6 +731,13 @@ func speak_toggled(yes: bool) -> void:
 		cog.dna.can_speak = true
 	else:
 		cog.dna.can_speak = false
+	_refresh_cog()
+	
+func suit_toggled(yes: bool) -> void:
+	if yes:
+		cog.dna.suit_visible = true
+	else:
+		cog.dna.suit_visible = false
 	_refresh_cog()
 
 #endregion
