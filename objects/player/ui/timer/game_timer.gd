@@ -42,8 +42,6 @@ func _process(delta: float) -> void:
 		if roll_chance == 25000:
 			Globals.s_surprise_rolled.emit()
 			print("SURPRISE! :D")
-		else:
-			print(roll_chance)
 
 static func get_time_string(timef: float) -> String:
 	var time_string := "%s:%s:%s"
