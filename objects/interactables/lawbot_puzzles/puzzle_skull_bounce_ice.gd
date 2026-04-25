@@ -93,7 +93,7 @@ func lose_game_ice() -> void:
 		lose_battle.show()
 		lose_battle.player_entered(Util.get_player())
 		queue_free()
-	elif lose_type == LoseType.EXPLODE:
+	elif lose_type == LoseType.EXPLODE && Util.get_player().get_collision_layer_value(Globals.HAZARD_COLLISION_LAYER):
 		explode_player_ice()
 
 func explode_player_ice(iframe_time := 4.0) -> void:

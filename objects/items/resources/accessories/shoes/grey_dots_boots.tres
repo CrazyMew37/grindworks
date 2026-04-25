@@ -11,14 +11,15 @@ shoe_type = 3
 shoe_tex = ExtResource("4_tkw5s")
 long_leg_tex = ExtResource("2_jsp7g")
 qualitoon = 3
+rarity = 5
 world_y_offset = -0.2
 item_name = "Grey Dots Boots"
 item_description = "Connect the dots!"
 big_description = "+ 20% critical hit damage multiplier
-- 15% Luck"
+- 10% Luck"
 stats_add = {
 "crit_mult": 0.2,
-"luck": -0.15
+"luck": -0.1
 }
 icon = ExtResource("1_jsp7g")
 metadata/_custom_type_script = "uid://bb02y647us2n3"

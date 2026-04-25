@@ -61,33 +61,33 @@ func delete_chest(chest: TreasureChest) -> void:
 	chest.queue_free()
 "
 
-[node name="BigPuzzleRoom" instance=ExtResource("1_c305m")]
+[node name="BigPuzzleRoom" unique_id=858552009 instance=ExtResource("1_c305m")]
 script = ExtResource("2_xw74j")
 
-[node name="floor" parent="Z08_ALL/Z08/boiler_room/room/geometry_boiler_room" index="3"]
+[node name="floor" parent="Z08_ALL/Z08/boiler_room/room/geometry_boiler_room" parent_id_path=PackedInt32Array(189219834) index="3" unique_id=2073535366]
 surface_material_override/0 = SubResource("StandardMaterial3D_ukme4")
 
-[node name="GeometryTransformHelper7" parent="Z08_ALL/Z08/boiler_room/room/geometry_boiler_room/floor2" index="0"]
+[node name="GeometryTransformHelper7" parent="Z08_ALL/Z08/boiler_room/room/geometry_boiler_room/floor2" parent_id_path=PackedInt32Array(309545375) index="0" unique_id=1798451685]
 surface_material_override/0 = SubResource("StandardMaterial3D_1ugpq")
 
-[node name="Puzzle" type="Node3D" parent="." index="10"]
+[node name="Puzzle" type="Node3D" parent="." index="10" unique_id=794468109]
 
-[node name="CogButton" parent="Puzzle" index="0" node_paths=PackedStringArray("connected_objects") instance=ExtResource("7_q5d2e")]
+[node name="CogButton" parent="Puzzle" index="0" unique_id=1231307302 node_paths=PackedStringArray("connected_objects") instance=ExtResource("7_q5d2e")]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.39, 0, 0.61)
 connected_objects = [NodePath("../PuzzleOrigin")]
 up_color = Color(1, 1, 1, 1)
 
-[node name="PuzzleOrigin" type="Node3D" parent="Puzzle" index="1"]
+[node name="PuzzleOrigin" type="Node3D" parent="Puzzle" index="1" unique_id=1876004200]
 unique_name_in_owner = true
 transform = Transform3D(-8.30516e-08, 0, -1.9, 0, 1.9, 0, 1.9, 0, -8.30516e-08, 17.7192, 0.05, -7.905)
 
-[node name="RandomPuzzleBeamMarker" type="Marker3D" parent="Puzzle/PuzzleOrigin" index="0"]
+[node name="RandomPuzzleBeamMarker" type="Marker3D" parent="Puzzle/PuzzleOrigin" index="0" unique_id=2035540341]
 unique_name_in_owner = true
 transform = Transform3D(-2.3006e-08, 0, 0.526316, 0, 0.526316, 0, -0.526316, 0, -2.3006e-08, 3.71239, 4.96947, 9.3259)
 gizmo_extents = 1.0
 
-[node name="BattleNode" parent="Puzzle" index="2" node_paths=PackedStringArray("cogs", "focus_cog") instance=ExtResource("5_uum76")]
+[node name="BattleNode" parent="Puzzle" index="2" unique_id=1405353563 node_paths=PackedStringArray("cogs", "focus_cog") instance=ExtResource("5_uum76")]
 unique_name_in_owner = true
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8.52951, 0, 0.117605)
 visible = false
@@ -97,105 +97,105 @@ focus_cog = NodePath("Cog")
 override_intro = SubResource("Resource_g7soa")
 item_pool = null
 
-[node name="Cog" parent="Puzzle/BattleNode" index="2" instance=ExtResource("7_lb7p1")]
+[node name="Cog" parent="Puzzle/BattleNode" index="2" unique_id=1187256629 instance=ExtResource("7_lb7p1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.33227, 0, -0.646177)
 skelecog = true
 virtual_cog = true
 
-[node name="Cog2" parent="Puzzle/BattleNode" index="3" instance=ExtResource("7_lb7p1")]
+[node name="Cog2" parent="Puzzle/BattleNode" index="3" unique_id=1909122633 instance=ExtResource("7_lb7p1")]
 transform = Transform3D(-0.599429, 0, 0.800428, 0, 1, 0, -0.800428, 0, -0.599429, 0.737486, 0, -0.856627)
 skelecog = true
 virtual_cog = true
 
-[node name="Cog3" parent="Puzzle/BattleNode" index="4" instance=ExtResource("7_lb7p1")]
+[node name="Cog3" parent="Puzzle/BattleNode" index="4" unique_id=1857333458 instance=ExtResource("7_lb7p1")]
 transform = Transform3D(-0.237228, 0, -0.971454, 0, 1, 0, 0.971454, 0, -0.237228, -4.1492, 0, -2.36801)
 skelecog = true
 virtual_cog = true
 
-[node name="Cog4" parent="Puzzle/BattleNode" index="5" instance=ExtResource("7_lb7p1")]
+[node name="Cog4" parent="Puzzle/BattleNode" index="5" unique_id=206299860 instance=ExtResource("7_lb7p1")]
 transform = Transform3D(0.316378, 0, -0.948633, 0, 1, 0, 0.948633, 0, 0.316378, 2.8795, 0, -2.21154)
 skelecog = true
 virtual_cog = true
 
-[node name="Partitions" type="Node3D" parent="." index="11"]
+[node name="Partitions" type="Node3D" parent="." index="11" unique_id=1605473815]
 
-[node name="LeftSide" type="Node3D" parent="Partitions" index="0"]
+[node name="LeftSide" type="Node3D" parent="Partitions" index="0" unique_id=1460229645]
 transform = Transform3D(1, 0, 0, 0, 1.25, 0, 0, 0, 1, 4.9525, 0, 9.51199)
 
-[node name="partition" parent="Partitions/LeftSide" index="0" instance=ExtResource("12_s38sp")]
+[node name="partition" parent="Partitions/LeftSide" index="0" unique_id=1611647590 instance=ExtResource("12_s38sp")]
 
-[node name="partition2" parent="Partitions/LeftSide" index="1" instance=ExtResource("12_s38sp")]
+[node name="partition2" parent="Partitions/LeftSide" index="1" unique_id=1472330759 instance=ExtResource("12_s38sp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.70441, 0, 0)
 
-[node name="partition3" parent="Partitions/LeftSide" index="2" instance=ExtResource("12_s38sp")]
+[node name="partition3" parent="Partitions/LeftSide" index="2" unique_id=1465893356 instance=ExtResource("12_s38sp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.38695, 0, 0)
 
-[node name="partition4" parent="Partitions/LeftSide" index="3" instance=ExtResource("12_s38sp")]
+[node name="partition4" parent="Partitions/LeftSide" index="3" unique_id=860900866 instance=ExtResource("12_s38sp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.0918, 0, 0)
 
-[node name="partition5" parent="Partitions/LeftSide" index="4" instance=ExtResource("12_s38sp")]
+[node name="partition5" parent="Partitions/LeftSide" index="4" unique_id=409941272 instance=ExtResource("12_s38sp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.74761, 0, 0)
 
-[node name="partition6" parent="Partitions/LeftSide" index="5" instance=ExtResource("12_s38sp")]
+[node name="partition6" parent="Partitions/LeftSide" index="5" unique_id=1400380460 instance=ExtResource("12_s38sp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.8665, 0, 0)
 
-[node name="partition7" parent="Partitions/LeftSide" index="6" instance=ExtResource("12_s38sp")]
+[node name="partition7" parent="Partitions/LeftSide" index="6" unique_id=1074103038 instance=ExtResource("12_s38sp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.1621, 0, 0)
 
-[node name="partition8" parent="Partitions/LeftSide" index="7" instance=ExtResource("12_s38sp")]
+[node name="partition8" parent="Partitions/LeftSide" index="7" unique_id=1088943104 instance=ExtResource("12_s38sp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.47957, 0, 0)
 
-[node name="RightSide" type="Node3D" parent="Partitions" index="1"]
+[node name="RightSide" type="Node3D" parent="Partitions" index="1" unique_id=475198220]
 transform = Transform3D(1, 0, 0, 0, 1.25, 0, 0, 0, 1, 3.4659312, 0, -7.89796)
 
-[node name="partition" parent="Partitions/RightSide" index="0" instance=ExtResource("12_s38sp")]
+[node name="partition" parent="Partitions/RightSide" index="0" unique_id=1721282161 instance=ExtResource("12_s38sp")]
 
-[node name="partition2" parent="Partitions/RightSide" index="1" instance=ExtResource("12_s38sp")]
+[node name="partition2" parent="Partitions/RightSide" index="1" unique_id=2056897629 instance=ExtResource("12_s38sp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.70441, 0, 0)
 
-[node name="partition3" parent="Partitions/RightSide" index="2" instance=ExtResource("12_s38sp")]
+[node name="partition3" parent="Partitions/RightSide" index="2" unique_id=790327085 instance=ExtResource("12_s38sp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.38695, 0, 0)
 
-[node name="partition4" parent="Partitions/RightSide" index="3" instance=ExtResource("12_s38sp")]
+[node name="partition4" parent="Partitions/RightSide" index="3" unique_id=516409430 instance=ExtResource("12_s38sp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.0918, 0, 0)
 
-[node name="partition5" parent="Partitions/RightSide" index="4" instance=ExtResource("12_s38sp")]
+[node name="partition5" parent="Partitions/RightSide" index="4" unique_id=2023723475 instance=ExtResource("12_s38sp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.74761, 0, 0)
 
-[node name="partition7" parent="Partitions/RightSide" index="5" instance=ExtResource("12_s38sp")]
+[node name="partition7" parent="Partitions/RightSide" index="5" unique_id=1392859606 instance=ExtResource("12_s38sp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.1621, 0, 0)
 
-[node name="partition8" parent="Partitions/RightSide" index="6" instance=ExtResource("12_s38sp")]
+[node name="partition8" parent="Partitions/RightSide" index="6" unique_id=2061689759 instance=ExtResource("12_s38sp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.47957, 0, 0)
 
-[node name="Top" type="Node3D" parent="Partitions" index="2"]
+[node name="Top" type="Node3D" parent="Partitions" index="2" unique_id=260327491]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.364, 3.099, -13.836)
 
-[node name="partition" parent="Partitions/Top" index="0" instance=ExtResource("12_s38sp")]
+[node name="partition" parent="Partitions/Top" index="0" unique_id=645934012 instance=ExtResource("12_s38sp")]
 
-[node name="partition2" parent="Partitions/Top" index="1" instance=ExtResource("12_s38sp")]
+[node name="partition2" parent="Partitions/Top" index="1" unique_id=78827636 instance=ExtResource("12_s38sp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.70441, 0, 0)
 
-[node name="partition3" parent="Partitions/Top" index="2" instance=ExtResource("12_s38sp")]
+[node name="partition3" parent="Partitions/Top" index="2" unique_id=1806715996 instance=ExtResource("12_s38sp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.38695, 0, 0)
 
-[node name="partition4" parent="Partitions/Top" index="3" instance=ExtResource("12_s38sp")]
+[node name="partition4" parent="Partitions/Top" index="3" unique_id=224822745 instance=ExtResource("12_s38sp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.0918, 0, 0)
 
-[node name="partition5" parent="Partitions/Top" index="4" instance=ExtResource("12_s38sp")]
+[node name="partition5" parent="Partitions/Top" index="4" unique_id=1924668694 instance=ExtResource("12_s38sp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.74761, 0, 0)
 
-[node name="partition7" parent="Partitions/Top" index="5" instance=ExtResource("12_s38sp")]
+[node name="partition7" parent="Partitions/Top" index="5" unique_id=2022986050 instance=ExtResource("12_s38sp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.1621, 0, 0)
 
-[node name="partition8" parent="Partitions/Top" index="6" instance=ExtResource("12_s38sp")]
+[node name="partition8" parent="Partitions/Top" index="6" unique_id=1887332649 instance=ExtResource("12_s38sp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.47957, 0, 0)
 
-[node name="PuzzleTreasures" type="Node3D" parent="." index="12"]
+[node name="PuzzleTreasures" type="Node3D" parent="." index="12" unique_id=1744647270]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -11.3704)
 script = SubResource("GDScript_873pa")
 
-[node name="PuzzleRun" type="Node3D" parent="PuzzleTreasures" index="0"]
+[node name="PuzzleRun" type="Node3D" parent="PuzzleTreasures" index="0" unique_id=186895828]
 transform = Transform3D(-8.30516e-08, 0, 1.9, 0, 1.9, 0, -1.9, 0, -8.30516e-08, -13.581, 0.04, 3.306)
 script = ExtResource("9_nymlb")
 wait_time = 0.15
@@ -204,11 +204,11 @@ grid_height = 15
 beam_origin = Vector3(0, 4.6, 0)
 lose_type = 2
 
-[node name="TreasureRight" parent="PuzzleTreasures" index="1" instance=ExtResource("10_ce2fe")]
+[node name="TreasureRight" parent="PuzzleTreasures" index="1" unique_id=589427958 instance=ExtResource("10_ce2fe")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17.5167, 0, 0.33753)
 item_pool = ExtResource("8_tfo1h")
 
-[node name="PuzzleAvoidSkulls" type="Node3D" parent="PuzzleTreasures" index="2"]
+[node name="PuzzleAvoidSkulls" type="Node3D" parent="PuzzleTreasures" index="2" unique_id=1546140728]
 transform = Transform3D(-8.30516e-08, 0, 1.9, 0, 1.9, 0, -1.9, 0, -8.30516e-08, -16.041, 0.04, 24.973)
 script = ExtResource("11_eqt47")
 grid_width = 2
@@ -216,79 +216,79 @@ grid_height = 15
 beam_origin = Vector3(0, 5.3, 0)
 lose_type = 2
 
-[node name="TreasureLeft" parent="PuzzleTreasures" index="3" instance=ExtResource("10_ce2fe")]
+[node name="TreasureLeft" parent="PuzzleTreasures" index="3" unique_id=2109938216 instance=ExtResource("10_ce2fe")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17.517, 0.143, 22.896)
 item_pool = ExtResource("8_tfo1h")
 
-[node name="Props" type="Node3D" parent="." index="13"]
+[node name="Props" type="Node3D" parent="." index="13" unique_id=713833775]
 
-[node name="couch" parent="Props" index="0" instance=ExtResource("15_qr1bn")]
+[node name="couch" parent="Props" index="0" unique_id=1872174109 instance=ExtResource("15_qr1bn")]
 transform = Transform3D(-5.46392e-08, 0, -1.25, 0, 1.25, 0, 1.25, 0, -5.46392e-08, 20.9219, 0, 11.3211)
 
-[node name="lamp_big" parent="Props" index="1" instance=ExtResource("16_0lofk")]
+[node name="lamp_big" parent="Props" index="1" unique_id=1994536738 instance=ExtResource("16_0lofk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.1686, 0, 13.8035)
 
-[node name="lamp_big2" parent="Props" index="2" instance=ExtResource("16_0lofk")]
+[node name="lamp_big2" parent="Props" index="2" unique_id=808820087 instance=ExtResource("16_0lofk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.8831, 0, -13.0867)
 
-[node name="PortraitBackstabber" parent="Props" index="3" instance=ExtResource("17_186wd")]
+[node name="PortraitBackstabber" parent="Props" index="3" unique_id=255312569 instance=ExtResource("17_186wd")]
 transform = Transform3D(-6.55671e-08, 0, -1.5, 0, 1.5, 0, 1.5, 0, -6.55671e-08, -20.8204, 3.90507, 0)
 
-[node name="law_bookshelf" parent="Props" index="4" instance=ExtResource("18_vk3hr")]
+[node name="law_bookshelf" parent="Props" index="4" unique_id=1951461889 instance=ExtResource("18_vk3hr")]
 transform = Transform3D(-6.55671e-08, 0, 1.5, 0, 1.5, 0, -1.5, 0, -6.55671e-08, -20.6149, 0, 9.0797)
 
-[node name="law_bookshelf2" parent="Props" index="5" instance=ExtResource("18_vk3hr")]
+[node name="law_bookshelf2" parent="Props" index="5" unique_id=2229762 instance=ExtResource("18_vk3hr")]
 transform = Transform3D(-6.55671e-08, 0, 1.5, 0, 1.5, 0, -1.5, 0, -6.55671e-08, -20.6149, 0, 5.08451)
 
-[node name="law_bookshelf3" parent="Props" index="6" instance=ExtResource("18_vk3hr")]
+[node name="law_bookshelf3" parent="Props" index="6" unique_id=316268423 instance=ExtResource("18_vk3hr")]
 transform = Transform3D(-6.55671e-08, 0, 1.5, 0, 1.5, 0, -1.5, 0, -6.55671e-08, -20.6149, 0, 1.07054)
 
-[node name="law_bookshelf4" parent="Props" index="7" instance=ExtResource("18_vk3hr")]
+[node name="law_bookshelf4" parent="Props" index="7" unique_id=317239601 instance=ExtResource("18_vk3hr")]
 transform = Transform3D(-6.55671e-08, 0, 1.5, 0, 1.5, 0, -1.5, 0, -6.55671e-08, -20.6149, 0, -2.92656)
 
-[node name="law_bookshelf5" parent="Props" index="8" instance=ExtResource("18_vk3hr")]
+[node name="law_bookshelf5" parent="Props" index="8" unique_id=1851931048 instance=ExtResource("18_vk3hr")]
 transform = Transform3D(1.13131, 0, 0.984958, 0, 1.5, 0, -0.984958, 0, 1.13131, -13.788, 3.25, -19.611)
 
-[node name="law_bookshelf6" parent="Props" index="9" instance=ExtResource("18_vk3hr")]
+[node name="law_bookshelf6" parent="Props" index="9" unique_id=809857115 instance=ExtResource("18_vk3hr")]
 transform = Transform3D(1.13202, -0.009879, 0.984089, 0.0130898, 1.49994, 0, -0.984051, 0.00858769, 1.13206, -10.773, 3.27, -22.236)
 
-[node name="potted_plant" parent="Props" index="10" instance=ExtResource("19_clgcs")]
+[node name="potted_plant" parent="Props" index="10" unique_id=998760938 instance=ExtResource("19_clgcs")]
 transform = Transform3D(5.54349, 0, -5.76799, 0, 8, 0, 5.76799, 0, 5.54349, 19.2098, 0, -6.97855)
 
-[node name="potted_plant2" parent="Props" index="11" instance=ExtResource("19_clgcs")]
+[node name="potted_plant2" parent="Props" index="11" unique_id=1847035341 instance=ExtResource("19_clgcs")]
 transform = Transform3D(5.54349, 0, -5.76799, 0, 8, 0, 5.76799, 0, 5.54349, 20.53, 0.01, 8.484)
 
-[node name="da_crate" parent="Props" index="12" instance=ExtResource("20_361ij")]
+[node name="da_crate" parent="Props" index="12" unique_id=942037903 instance=ExtResource("20_361ij")]
 transform = Transform3D(1.60336, -0.00788877, -0.564955, 0, 1.69983, -0.0237357, 0.56501, 0.0223864, 1.6032, 13.7248, 3.2, -16.0477)
 
-[node name="da_crate2" parent="Props" index="13" instance=ExtResource("20_361ij")]
+[node name="da_crate2" parent="Props" index="13" unique_id=1632420506 instance=ExtResource("20_361ij")]
 transform = Transform3D(1.60336, -0.00788877, -0.564955, 0, 1.69983, -0.0237357, 0.56501, 0.0223864, 1.6032, 13.7122, 5.91653, -16.0119)
 visible = false
 
-[node name="desk" parent="Props" index="14" instance=ExtResource("21_a5uum")]
+[node name="desk" parent="Props" index="14" unique_id=1558880888 instance=ExtResource("21_a5uum")]
 transform = Transform3D(0.412154, 0, 1.1801, 0, 1.25, 0, -1.1801, 0, 0.412154, 11.644, 3.24302, -16.6727)
 
-[node name="lamp_small" parent="Props/desk" index="2" instance=ExtResource("22_2uox3")]
+[node name="lamp_small" parent="Props/desk" index="2" unique_id=522821023 instance=ExtResource("22_2uox3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.01649, 0.973984, 0.222244)
 
-[node name="chair" parent="Props/desk" index="3" instance=ExtResource("23_hfqgh")]
+[node name="chair" parent="Props/desk" index="3" unique_id=1345846450 instance=ExtResource("23_hfqgh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0873713, 0, -1.35911)
 
-[node name="Blocker" type="Node3D" parent="." index="14"]
+[node name="Blocker" type="Node3D" parent="." index="14" unique_id=1746196158]
 transform = Transform3D(0.995567, 0, 0.0940562, 0, 1, 0, -0.0940562, 0, 0.995567, 22.3826, 0, -3.23399)
 
-[node name="law_bookshelf" parent="Blocker" index="0" instance=ExtResource("18_vk3hr")]
+[node name="law_bookshelf" parent="Blocker" index="0" unique_id=682735421 instance=ExtResource("18_vk3hr")]
 unique_name_in_owner = true
 transform = Transform3D(-1.04308e-07, 0, -2.5, 0, 2.5, 0, 2.5, 0, -1.04308e-07, 0, 0, 7.854)
 
-[node name="Blocker2" type="Node3D" parent="." index="15"]
+[node name="Blocker2" type="Node3D" parent="." index="15" unique_id=741175296]
 transform = Transform3D(0.018098, 0, 0.999836, 0, 1, 0, -0.999836, 0, 0.018098, -0.491353, 2.98042, -28.5835)
 
-[node name="law_bookshelf2" parent="Blocker2" index="0" instance=ExtResource("18_vk3hr")]
+[node name="law_bookshelf2" parent="Blocker2" index="0" unique_id=832063509 instance=ExtResource("18_vk3hr")]
 unique_name_in_owner = true
 transform = Transform3D(-1.04308e-07, 0, -2.5, 0, 2.5, 0, 2.5, 0, -1.04308e-07, 0, 0, 7.854)
 
-[node name="DebugPlayerPositionMarker" parent="." index="16" instance=ExtResource("22_awmgu")]
+[node name="DebugPlayerPositionMarker" parent="." index="16" unique_id=993442057 instance=ExtResource("22_awmgu")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.5581, 0, -3.09012)
 
 [connection signal="s_battle_end" from="Puzzle/BattleNode" to="." method="unblock"]

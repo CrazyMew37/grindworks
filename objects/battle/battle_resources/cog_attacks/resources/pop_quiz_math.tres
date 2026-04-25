@@ -20,4 +20,4 @@ win_sfx = SubResource("Resource_slnuw")
 damage = 3
 summary = "Get ready!"
 attack_lines = Array[String](["Think fast!", "Let's put your intellect to the test."])
-action_name = "Pop Quiz"
+action_name = "Math Quiz"

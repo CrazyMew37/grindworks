@@ -1,6 +1,7 @@
 extends Node3D
 
 const MUSIC := "res://audio/music/encntr_skull_master.ogg"
+const MUSIC_FROZEN := "res://audio/music/encntr_skull_master_FROZEN.ogg"
 
 @onready var shelf: Node3D = %law_bookshelf
 @onready var shelf2: Node3D = %law_bookshelf2
@@ -10,7 +11,10 @@ const MUSIC := "res://audio/music/encntr_skull_master.ogg"
 
 func _ready() -> void:
 	setup_puzzle()
-	AudioManager.set_default_music(load('res://audio/music/DA_Office.ogg'))
+	if Util.floor_manager.floor_variant.is_alt_floor:
+		AudioManager.set_default_music(load('res://audio/music/DA_Office_FROZEN.ogg'))
+	else:
+		AudioManager.set_default_music(load('res://audio/music/DA_Office.ogg'))
 
 func setup_puzzle() -> void:
 	var new_puzzle := get_random_puzzle()
@@ -27,11 +31,18 @@ func setup_puzzle() -> void:
 		button.connect_to(new_puzzle)
 
 func block() -> void:
-	var block_tween := create_tween().set_trans(Tween.TRANS_QUAD).set_parallel()
-	block_tween.tween_callback(AudioManager.set_music.bind(load(MUSIC)))
-	block_tween.tween_property(shelf, 'position:z', 0.0, 0.5)
-	block_tween.tween_property(shelf2, 'position:z', 0.0, 0.5)
-	block_tween.finished.connect(block_tween.kill)
+	if Util.floor_manager.floor_variant.is_alt_floor:
+		var block_tween := create_tween().set_trans(Tween.TRANS_QUAD).set_parallel()
+		block_tween.tween_callback(AudioManager.set_music.bind(load(MUSIC_FROZEN)))
+		block_tween.tween_property(shelf, 'position:z', 0.0, 0.5)
+		block_tween.tween_property(shelf2, 'position:z', 0.0, 0.5)
+		block_tween.finished.connect(block_tween.kill)
+	else:
+		var block_tween := create_tween().set_trans(Tween.TRANS_QUAD).set_parallel()
+		block_tween.tween_callback(AudioManager.set_music.bind(load(MUSIC)))
+		block_tween.tween_property(shelf, 'position:z', 0.0, 0.5)
+		block_tween.tween_property(shelf2, 'position:z', 0.0, 0.5)
+		block_tween.finished.connect(block_tween.kill)
 
 func unblock() -> void:
 	var block_tween := create_tween().set_trans(Tween.TRANS_QUAD).set_parallel()

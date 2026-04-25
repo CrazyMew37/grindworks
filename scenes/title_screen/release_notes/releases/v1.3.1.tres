@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ReleaseNote" format=3 uid="uid://8m5nnlj4j8d0"]
+
+[ext_resource type="Script" uid="uid://d1j0hh6tsgy0r" path="res://scenes/title_screen/release_notes/release_note.gd" id="1_qqioi"]
+
+[resource]
+script = ExtResource("1_qqioi")
+release_version = "v1.3.1 (CM37E)"
+notes = "[TITLE]Cog Creator 
+  Added the ability to add 20 different fixed proxy effects to the Cog Creator (Only one of each, though.)
+  Renamed the math version of Pop Quiz to 'Math Quiz'.
+  All cog types now have a single list of attacks in the Cog Creator (Do note, however, that some attacks will not animate for some cog types)
+[TITLE]Balance Changes
+  Pilot Cap: Four Stars/Q6 -> Three Stars/Q5  
+  Grey Dots Boots: -15% Luck -> -10% Luck, Four Stars/Q4 -> Four Stars/Q5
+[TITLE]Bug Fixes
+  Fixed the skulls being able to unfairly damage you while stunned during the Solicitor Boss Battle
+  The Big Skull Room will now play different music depending on whether or not its in the Frozen or Normal D.A. Office."
+metadata/_custom_type_script = "uid://d1j0hh6tsgy0r"

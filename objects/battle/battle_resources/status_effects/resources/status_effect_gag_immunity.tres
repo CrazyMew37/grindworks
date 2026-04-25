@@ -6,4 +6,5 @@
 script = ExtResource("1_v53hh")
 quality = 0
 rounds = -1
+status_name = "Gag Immunity"
 id = 5

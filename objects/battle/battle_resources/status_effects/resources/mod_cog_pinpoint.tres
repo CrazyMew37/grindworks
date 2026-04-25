@@ -9,4 +9,5 @@ quality = 0
 rounds = -1
 icon = ExtResource("1_7mlav")
 description = "Perfect Accuracy, + 10% Damage"
+status_name = "Pinpoint"
 id = 8

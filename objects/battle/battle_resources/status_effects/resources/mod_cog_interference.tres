@@ -9,5 +9,6 @@ quality = 0
 rounds = -1
 icon = ExtResource("1_pptfy")
 description = "You receive -5% Damage for every Cog in the battle"
+status_name = "Interference"
 id = 44
 metadata/_custom_type_script = "uid://df7irk63ikx4k"

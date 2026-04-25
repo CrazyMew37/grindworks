@@ -5,10 +5,8 @@ const COG_HEAD_PATH := "res://models/cogs/heads/"
 const TITLE_SCENE := "res://scenes/title_screen/title_screen.tscn"
 
 @export var safe_cogs : CogPool
-@export var suit_a_attacks : Array[CogAttack] = []
-@export var suit_b_attacks : Array[CogAttack] = []
-@export var suit_c_attacks : Array[CogAttack] = []
-@export var suit_d_attacks : Array[CogAttack] = []
+@export var suit_attacks : Array[CogAttack] = []
+@export var status_effects : Array[StatusEffect] = []
 
 @onready var menus := $Menus.get_children()
 @onready var cog : Cog = $World3D/Cog
@@ -38,6 +36,7 @@ func _prepare_menus() -> void:
 	_ready_colors()
 	_ready_attribute()
 	_ready_attacks()
+	_ready_statuses()
 	_ready_phrases()
 
 func randomize_cog() -> void:
@@ -745,43 +744,24 @@ func suit_toggled(yes: bool) -> void:
 #region ATTACK SELECTION
 
 @onready var attack_template : HBoxContainer = $Menus/AttackPicker/CheckBoxContainer
-@onready var attack_container_a : VBoxContainer = $Menus/AttackPicker/MenuA/ScrollContainer/AttackContainer
-@onready var attack_container_b : VBoxContainer = $Menus/AttackPicker/MenuB/ScrollContainer/AttackContainer
-@onready var attack_container_c : VBoxContainer = $Menus/AttackPicker/MenuC/ScrollContainer/AttackContainer
-@onready var attack_master_list := [suit_a_attacks, suit_b_attacks, suit_c_attacks]
-@onready var all_attack_containers := [attack_container_a, attack_container_b, attack_container_c]
-
-
-var attack_menu_current : VBoxContainer:
-	get:
-		match cog.dna.suit:
-			CogDNA.SuitType.SUIT_A: return attack_container_a
-			CogDNA.SuitType.SUIT_B: return attack_container_b
-			CogDNA.SuitType.SUIT_C: return attack_container_c
-			_: return attack_container_b
+@onready var attack_container : VBoxContainer = $Menus/AttackPicker/Menu/ScrollContainer/AttackContainer
+@onready var attack_master_list := suit_attacks
 
 func _ready_attacks() -> void:
 	populate_attack_menus()
 	refresh_attacks()
-	show_correct_menu()
 	refresh_health_mod_label()
 
-func show_correct_menu() -> void:
-	for container in all_attack_containers:
-		container.get_parent().get_parent().visible = (container == attack_menu_current)
-
 func populate_attack_menus() -> void:
-	if attack_menu_current.get_child_count() == 0:
-		for list in attack_master_list:
-			for attack : CogAttack in list:
-				all_attack_containers[attack_master_list.find(list)].add_child(create_attack_element(attack))
+	if attack_container.get_child_count() == 0:
+		for attack : CogAttack in attack_master_list:
+			attack_container.add_child(create_attack_element(attack))
 
 func refresh_attacks() -> void:
-	for i in all_attack_containers.size():
-		var container : VBoxContainer = all_attack_containers[i]
-		for j in container.get_child_count():
-			var element : Control = container.get_child(j)
-			element.get_node('CheckBox').button_pressed = (attack_master_list[i][j] in cog.dna.attacks and container == attack_menu_current)
+	var container : VBoxContainer = attack_container
+	for j in container.get_child_count():
+		var element : Control = container.get_child(j)
+		element.get_node('CheckBox').button_pressed = (suit_attacks[j].resource_path in cog.dna.external_assets['attacks'])
 
 func create_attack_element(attack : CogAttack) -> HBoxContainer:
 	var element := attack_template.duplicate()
@@ -798,7 +778,6 @@ func attack_pressed(toggle : bool, attack : CogAttack) -> void:
 
 func reset_attacks(_index : int) -> void:
 	cog.dna.attacks.clear()
-	show_correct_menu()
 	refresh_attacks()
 	
 func set_hp_mod(new_health_mod : float) -> void:
@@ -808,6 +787,47 @@ func set_hp_mod(new_health_mod : float) -> void:
 func refresh_health_mod_label() -> void:
 	health_mod_label.set_text("Health Multiplier: %10.2f" % cog.dna.health_mod)
 	
+
+#endregion
+
+#region STATUS SELECTION
+
+@onready var status_template : HBoxContainer = $Menus/AttackPicker/CheckBoxContainer
+@onready var status_container : VBoxContainer = $Menus/StatusPicker/Menu/ScrollContainer/StatusContainer
+@onready var status_master_list := status_effects
+
+
+func _ready_statuses() -> void:
+	populate_status_menus()
+	refresh_statuses()
+
+func populate_status_menus() -> void:
+	if status_container.get_child_count() == 0:
+		for effect: StatusEffect in status_master_list:
+			status_container.add_child(create_status_element(effect))
+
+func create_status_element(status : StatusEffect) -> HBoxContainer:
+	var element := status_template.duplicate()
+	element.get_node('CheckBox').toggled.connect(status_pressed.bind(status))
+	element.get_node('Title').set_text(status.status_name)
+	element.show()
+	return element
+
+func refresh_statuses() -> void:
+	var container : VBoxContainer = status_container
+	for j in container.get_child_count():
+		var element : Control = container.get_child(j)
+		element.get_node('CheckBox').button_pressed = (status_effects[j].resource_path in cog.dna.external_assets['status_effects'])
+
+func status_pressed(toggle : bool, status : StatusEffect) -> void:
+	if toggle and not status.resource_path in cog.dna.external_assets['status_effects']:
+		cog.dna.external_assets['status_effects'].append(status.resource_path)
+	elif not toggle:
+		cog.dna.external_assets['status_effects'].erase(status.resource_path)
+	
+func reset_statuses(_index : int) -> void:
+	cog.dna.attacks.clear()
+	refresh_statuses()
 
 #endregion
 
