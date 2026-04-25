@@ -1,6 +1,5 @@
 extends Node3D
 
-const NAME_FILE := "res://objects/partnertoon/roaming_toon/partner_toon_names.txt"
 const FAKE_EVERGREEN_ENABLED := true
 const ITEM_PATH := 'res://objects/partnertoon/roaming_toon/partner_toon.tres'
 
@@ -30,11 +29,7 @@ func setup(item: Item):
 		#ItemService.seen_item(load(ITEM_PATH))
 
 func roll_for_name(item: Item) -> void:
-	var name_file := FileAccess.open(NAME_FILE,FileAccess.READ)
-	var names := name_file.get_as_text().split("\n")
-	names.remove_at(names.size() - 1)
-	var name_line := names[RNG.channel(RNG.ChannelDoodleNames).randi() % names.size()]
-	var new_name := name_line.split("*")[2]
+	var new_name := Globals.get_random_toon_name()
 	item.item_name = new_name
 	item.item_description = possible_descriptions[RNG.channel(RNG.ChannelDoodleDescriptions).randi() % possible_descriptions.size()]
 
