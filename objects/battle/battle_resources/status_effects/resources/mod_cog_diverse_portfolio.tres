@@ -8,6 +8,6 @@ script = ExtResource("1_jmpf3")
 quality = 0
 rounds = -1
 icon = ExtResource("1_ryehm")
-description = "+1 Move, 0.7x Damage multiplier"
+description = "+1 Move, 0.75x Damage multiplier"
 status_name = "Diverse Portfolio"
 id = 23

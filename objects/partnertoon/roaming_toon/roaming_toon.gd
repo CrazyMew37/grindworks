@@ -262,6 +262,7 @@ func get_attack() -> ToonAttack:
 		action.targets = [highest_level_cog]
 		var cogstat = BattleService.ongoing_battle.battle_stats[highest_level_cog]
 		action.damage = ((action.damage + (Util.floor_number + 1)) * (Util.floor_number + 1)) / cogstat.get_stat('defense')
+		action.special_action_exclude = true
 		return action
 	return null
 

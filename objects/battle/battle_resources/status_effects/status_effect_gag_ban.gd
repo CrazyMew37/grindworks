@@ -40,7 +40,7 @@ func round_started(actions: Array[BattleAction]) -> void:
 	clear_tweens()
 	for action in actions:
 		for gag in gags:
-			if gag.action_name == action.action_name:
+			if gag.action_name == action.action_name && action.special_action_exclude == false:
 				s_banned_gag_used.emit(action)
 
 func clear_tweens() -> void:
@@ -88,6 +88,6 @@ func create_tween(button: GagButton) -> Tween:
 func is_banned_gag_used(actions : Array[BattleAction]) -> bool:
 	for action in actions:
 		for gag in gags:
-			if gag.action_name == action.action_name:
+			if gag.action_name == action.action_name && action.special_action_exclude == false:
 				return true
 	return false

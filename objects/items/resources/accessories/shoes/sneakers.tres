@@ -12,12 +12,12 @@ long_leg_tex = ExtResource("2_hy4s2")
 qualitoon = 3
 world_y_offset = -0.1
 item_name = "Sneakers"
-item_description = "Kick down those cogs!"
-big_description = "+ 20% Throw damage
--10% Trap damage"
+item_description = "You sly dog!"
+big_description = "+ 20% Lure knockback damage
+- 10% Sound damage"
 stats_add = {
-"gag_boost:Throw": 0.2,
-"gag_boost:Trap": -0.1
+"gag_boost:Lure": 0.2,
+"gag_boost:Sound": -0.1
 }
 icon = ExtResource("1_hy4s2")
 metadata/_custom_type_script = "uid://bb02y647us2n3"

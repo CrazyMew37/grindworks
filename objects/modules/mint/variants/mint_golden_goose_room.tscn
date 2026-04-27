@@ -79,179 +79,179 @@ font = ExtResource("22_jkjqs")
 font_size = 36
 shadow_color = Color(0, 0, 0, 1)
 
-[node name="GoldenGooseRoom" instance=ExtResource("1_hnu3i")]
+[node name="GoldenGooseRoom" unique_id=1729087075 instance=ExtResource("1_hnu3i")]
 
-[node name="ceiling" parent="Z04a_ALL/Z04/lobby/room/geometry_lobby" index="2"]
+[node name="ceiling" parent="Z04a_ALL/Z04/lobby/room/geometry_lobby" parent_id_path=PackedInt32Array(644178235) index="2" unique_id=862278739]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 209.032, 272.48, -1045.16)
 
-[node name="GeometryTransformHelper11" parent="Z04a_ALL/Z04/lobby/room/geometry_lobby/ceiling/ceiling1" index="0"]
+[node name="GeometryTransformHelper11" parent="Z04a_ALL/Z04/lobby/room/geometry_lobby/ceiling/ceiling1" parent_id_path=PackedInt32Array(522556696) index="0" unique_id=1252128641]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -209.032, -64.1474, 1184.51)
 
-[node name="GeometryTransformHelper12" parent="Z04a_ALL/Z04/lobby/room/geometry_lobby/ceiling/Ceiling2" index="0"]
+[node name="GeometryTransformHelper12" parent="Z04a_ALL/Z04/lobby/room/geometry_lobby/ceiling/Ceiling2" parent_id_path=PackedInt32Array(488391939) index="0" unique_id=481540471]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -209.032, -140.325, 1184.51)
 
-[node name="walls" parent="Z04a_ALL/Z04/lobby/room/geometry_lobby" index="3"]
+[node name="walls" parent="Z04a_ALL/Z04/lobby/room/geometry_lobby" parent_id_path=PackedInt32Array(644178235) index="3" unique_id=621758709]
 transform = Transform3D(1, 0, 0, 0, 1.505, 0, 0, 0, 1, 209.032, 1040.9, -1045.16)
 
-[node name="GeometryTransformHelper13" parent="Z04a_ALL/Z04/lobby/room/geometry_lobby/Lights/Lights1" index="0"]
+[node name="GeometryTransformHelper13" parent="Z04a_ALL/Z04/lobby/room/geometry_lobby/Lights/Lights1" parent_id_path=PackedInt32Array(879449188) index="0" unique_id=2034325551]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -242.689, -261.94, 61.8321)
 visible = false
 
-[node name="GeometryTransformHelper14" parent="Z04a_ALL/Z04/lobby/room/geometry_lobby/Lights/Lights2" index="0"]
+[node name="GeometryTransformHelper14" parent="Z04a_ALL/Z04/lobby/room/geometry_lobby/Lights/Lights2" parent_id_path=PackedInt32Array(1164758326) index="0" unique_id=140518944]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -87.3129, -261.94, 61.8321)
 visible = false
 
-[node name="GeometryTransformHelper15" parent="Z04a_ALL/Z04/lobby/room/geometry_lobby/Lights/Lights4" index="0"]
+[node name="GeometryTransformHelper15" parent="Z04a_ALL/Z04/lobby/room/geometry_lobby/Lights/Lights4" parent_id_path=PackedInt32Array(345942134) index="0" unique_id=1437624782]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 77.1061, -261.94, 61.8321)
 visible = false
 
-[node name="GeometryTransformHelper16" parent="Z04a_ALL/Z04/lobby/room/geometry_lobby/Lights/Lights6" index="0"]
+[node name="GeometryTransformHelper16" parent="Z04a_ALL/Z04/lobby/room/geometry_lobby/Lights/Lights6" parent_id_path=PackedInt32Array(1219918529) index="0" unique_id=952552374]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 238.036, -261.94, 61.8321)
 visible = false
 
-[node name="ceiling2" parent="Z04a_ALL/Z04/lobby/room/collision_lobby" index="1"]
+[node name="ceiling2" parent="Z04a_ALL/Z04/lobby/room/collision_lobby" parent_id_path=PackedInt32Array(1052378455) index="1" unique_id=2081600280]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.86265e-05, 14.4493, 6.86646e-05)
 
 [node name="Navigation" parent="." index="5"]
 enabled = false
 
-[node name="Props" type="Node3D" parent="." index="6"]
+[node name="Props" type="Node3D" parent="." index="6" unique_id=1300182945]
 
-[node name="Shelves" type="Node3D" parent="Props" index="0"]
+[node name="Shelves" type="Node3D" parent="Props" index="0" unique_id=1382118589]
 
-[node name="shelf2" parent="Props/Shelves" index="0" instance=ExtResource("2_soc5q")]
+[node name="shelf2" parent="Props/Shelves" index="0" unique_id=1232245367 instance=ExtResource("2_soc5q")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.75573, 0, 16.241)
 
-[node name="shelf3" parent="Props/Shelves" index="1" instance=ExtResource("2_soc5q")]
+[node name="shelf3" parent="Props/Shelves" index="1" unique_id=1368245313 instance=ExtResource("2_soc5q")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.75573, 0, 12.0902)
 
-[node name="shelf4" parent="Props/Shelves" index="2" instance=ExtResource("2_soc5q")]
+[node name="shelf4" parent="Props/Shelves" index="2" unique_id=363921376 instance=ExtResource("2_soc5q")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.75573, 0, 7.93189)
 
-[node name="shelf5" parent="Props/Shelves" index="3" instance=ExtResource("2_soc5q")]
+[node name="shelf5" parent="Props/Shelves" index="3" unique_id=738921261 instance=ExtResource("2_soc5q")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.31646, 0, 4.81666)
 
-[node name="shelf6" parent="Props/Shelves" index="4" instance=ExtResource("2_soc5q")]
+[node name="shelf6" parent="Props/Shelves" index="4" unique_id=958971098 instance=ExtResource("2_soc5q")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.46728, 0, 4.81666)
 
-[node name="shelf7" parent="Props/Shelves" index="5" instance=ExtResource("2_soc5q")]
+[node name="shelf7" parent="Props/Shelves" index="5" unique_id=711636887 instance=ExtResource("2_soc5q")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -12.6256, 0, 4.81666)
 
-[node name="shelf8" parent="Props/Shelves" index="6" instance=ExtResource("2_soc5q")]
+[node name="shelf8" parent="Props/Shelves" index="6" unique_id=657714449 instance=ExtResource("2_soc5q")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -16.7848, 0, 4.81666)
 
-[node name="Shelves2" type="Node3D" parent="Props" index="1"]
+[node name="Shelves2" type="Node3D" parent="Props" index="1" unique_id=409737228]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2.09528, 0, -3.9528)
 
-[node name="shelf2" parent="Props/Shelves2" index="0" instance=ExtResource("2_soc5q")]
+[node name="shelf2" parent="Props/Shelves2" index="0" unique_id=373814635 instance=ExtResource("2_soc5q")]
 transform = Transform3D(-4.28372e-08, 0, 1, 0, 1, 0, -0.98, 0, -4.37114e-08, -2.74023, 0, 15.9853)
 
-[node name="shelf9" parent="Props/Shelves2" index="1" instance=ExtResource("2_soc5q")]
+[node name="shelf9" parent="Props/Shelves2" index="1" unique_id=928324435 instance=ExtResource("2_soc5q")]
 transform = Transform3D(-4.28372e-08, 0, 1, 0, 1, 0, -0.98, 0, -4.37114e-08, -2.74023, 0, 20.0542)
 
-[node name="shelf3" parent="Props/Shelves2" index="2" instance=ExtResource("2_soc5q")]
+[node name="shelf3" parent="Props/Shelves2" index="2" unique_id=2101777661 instance=ExtResource("2_soc5q")]
 transform = Transform3D(-4.28372e-08, 0, 1, 0, 1, 0, -0.98, 0, -4.37114e-08, -2.74023, 0, 11.9482)
 
-[node name="shelf4" parent="Props/Shelves2" index="3" instance=ExtResource("2_soc5q")]
+[node name="shelf4" parent="Props/Shelves2" index="3" unique_id=813911699 instance=ExtResource("2_soc5q")]
 transform = Transform3D(-4.28372e-08, 0, 1, 0, 1, 0, -0.98, 0, -4.37114e-08, -2.74023, 0, 7.91325)
 
-[node name="shelf5" parent="Props/Shelves2" index="4" instance=ExtResource("2_soc5q")]
+[node name="shelf5" parent="Props/Shelves2" index="4" unique_id=464862750 instance=ExtResource("2_soc5q")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.31646, 0, 4.81666)
 
-[node name="shelf6" parent="Props/Shelves2" index="5" instance=ExtResource("2_soc5q")]
+[node name="shelf6" parent="Props/Shelves2" index="5" unique_id=1926435270 instance=ExtResource("2_soc5q")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.46728, 0, 4.81666)
 
-[node name="shelf7" parent="Props/Shelves2" index="6" instance=ExtResource("2_soc5q")]
+[node name="shelf7" parent="Props/Shelves2" index="6" unique_id=1609227069 instance=ExtResource("2_soc5q")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -12.6256, 0, 4.81666)
 
-[node name="shelf8" parent="Props/Shelves2" index="7" instance=ExtResource("2_soc5q")]
+[node name="shelf8" parent="Props/Shelves2" index="7" unique_id=914022109 instance=ExtResource("2_soc5q")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -16.7848, 0, 4.81666)
 
-[node name="Shelves3" type="Node3D" parent="Props" index="2"]
+[node name="Shelves3" type="Node3D" parent="Props" index="2" unique_id=2126322832]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0.0939045, 0, -4.5352)
 
-[node name="shelf2" parent="Props/Shelves3" index="0" instance=ExtResource("2_soc5q")]
+[node name="shelf2" parent="Props/Shelves3" index="0" unique_id=1113928771 instance=ExtResource("2_soc5q")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.75573, 0, 16.241)
 
-[node name="shelf3" parent="Props/Shelves3" index="1" instance=ExtResource("2_soc5q")]
+[node name="shelf3" parent="Props/Shelves3" index="1" unique_id=1490318192 instance=ExtResource("2_soc5q")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.75573, 0, 12.0902)
 
-[node name="shelf4" parent="Props/Shelves3" index="2" instance=ExtResource("2_soc5q")]
+[node name="shelf4" parent="Props/Shelves3" index="2" unique_id=1786516779 instance=ExtResource("2_soc5q")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.75573, 0, 7.93189)
 
-[node name="shelf9" parent="Props/Shelves3" index="3" instance=ExtResource("2_soc5q")]
+[node name="shelf9" parent="Props/Shelves3" index="3" unique_id=1177059133 instance=ExtResource("2_soc5q")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.75573, 0, 3.75978)
 
-[node name="shelf5" parent="Props/Shelves3" index="4" instance=ExtResource("2_soc5q")]
+[node name="shelf5" parent="Props/Shelves3" index="4" unique_id=1546311983 instance=ExtResource("2_soc5q")]
 transform = Transform3D(-0.98, 0, -1.50996e-07, 0, 1, 0, 1.47976e-07, 0, -1, -5.80022, 0, 2.18158)
 
-[node name="shelf6" parent="Props/Shelves3" index="5" instance=ExtResource("2_soc5q")]
+[node name="shelf6" parent="Props/Shelves3" index="5" unique_id=1487231355 instance=ExtResource("2_soc5q")]
 transform = Transform3D(-0.98, 0, -1.50996e-07, 0, 1, 0, 1.47976e-07, 0, -1, -9.84036, 0, 2.18158)
 
-[node name="shelf7" parent="Props/Shelves3" index="6" instance=ExtResource("2_soc5q")]
+[node name="shelf7" parent="Props/Shelves3" index="6" unique_id=179075658 instance=ExtResource("2_soc5q")]
 transform = Transform3D(-0.98, 0, -1.50996e-07, 0, 1, 0, 1.47976e-07, 0, -1, -13.8691, 0, 2.18158)
 
-[node name="shelf8" parent="Props/Shelves3" index="7" instance=ExtResource("2_soc5q")]
+[node name="shelf8" parent="Props/Shelves3" index="7" unique_id=1092049593 instance=ExtResource("2_soc5q")]
 transform = Transform3D(-0.98, 0, -1.50996e-07, 0, 1, 0, 1.47976e-07, 0, -1, -17.8986, 0, 2.18157)
 
-[node name="Shelves4" type="Node3D" parent="Props" index="3"]
+[node name="Shelves4" type="Node3D" parent="Props" index="3" unique_id=1687435190]
 transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -2.00999, 0, -0.582399)
 
-[node name="shelf2" parent="Props/Shelves4" index="0" instance=ExtResource("2_soc5q")]
+[node name="shelf2" parent="Props/Shelves4" index="0" unique_id=1308198723 instance=ExtResource("2_soc5q")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5.35212, 0, 14.7189)
 
-[node name="shelf9" parent="Props/Shelves4" index="1" instance=ExtResource("2_soc5q")]
+[node name="shelf9" parent="Props/Shelves4" index="1" unique_id=909212906 instance=ExtResource("2_soc5q")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5.35212, 0, 18.915)
 
-[node name="shelf3" parent="Props/Shelves4" index="2" instance=ExtResource("2_soc5q")]
+[node name="shelf3" parent="Props/Shelves4" index="2" unique_id=157201667 instance=ExtResource("2_soc5q")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5.35212, 0, 10.5681)
 
-[node name="shelf4" parent="Props/Shelves4" index="3" instance=ExtResource("2_soc5q")]
+[node name="shelf4" parent="Props/Shelves4" index="3" unique_id=303238909 instance=ExtResource("2_soc5q")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5.35212, 0, 6.4098)
 
-[node name="shelf6" parent="Props/Shelves4" index="4" instance=ExtResource("2_soc5q")]
+[node name="shelf6" parent="Props/Shelves4" index="4" unique_id=2139613730 instance=ExtResource("2_soc5q")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.46728, 0, 4.81666)
 
-[node name="shelf7" parent="Props/Shelves4" index="5" instance=ExtResource("2_soc5q")]
+[node name="shelf7" parent="Props/Shelves4" index="5" unique_id=1968369908 instance=ExtResource("2_soc5q")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -12.6256, 0, 4.81666)
 
-[node name="shelf8" parent="Props/Shelves4" index="6" instance=ExtResource("2_soc5q")]
+[node name="shelf8" parent="Props/Shelves4" index="6" unique_id=1529352973 instance=ExtResource("2_soc5q")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -16.7848, 0, 4.81666)
 
-[node name="Crates" type="Node3D" parent="Props" index="4"]
+[node name="Crates" type="Node3D" parent="Props" index="4" unique_id=553934890]
 
-[node name="mint_crate" parent="Props/Crates" index="0" instance=ExtResource("3_0e6qa")]
+[node name="mint_crate" parent="Props/Crates" index="0" unique_id=1183395645 instance=ExtResource("3_0e6qa")]
 transform = Transform3D(4, 0, 0, 0, 3, 0, 0, 0, 4, -7.45258, 0, -11.4384)
 
-[node name="CrushCrate" parent="Props/Crates" index="1" instance=ExtResource("3_0e6qa")]
+[node name="CrushCrate" parent="Props/Crates" index="1" unique_id=1462783844 instance=ExtResource("3_0e6qa")]
 unique_name_in_owner = true
 transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 0.0871401, 0, -8.50644)
 
-[node name="mint_crate2" parent="Props/Crates" index="2" instance=ExtResource("3_0e6qa")]
+[node name="mint_crate2" parent="Props/Crates" index="2" unique_id=1969624622 instance=ExtResource("3_0e6qa")]
 transform = Transform3D(4, 0, 0, 0, 3, 0, 0, 0, 4, -7.45258, 0, 9.50635)
 
-[node name="mint_crate3" parent="Props/Crates" index="3" instance=ExtResource("3_0e6qa")]
+[node name="mint_crate3" parent="Props/Crates" index="3" unique_id=1236110300 instance=ExtResource("3_0e6qa")]
 transform = Transform3D(4, 0, 0, 0, 3, 0, 0, 0, 4, 7.55244, 0, 9.66953)
 
-[node name="mint_crate4" parent="Props/Crates" index="4" instance=ExtResource("3_0e6qa")]
+[node name="mint_crate4" parent="Props/Crates" index="4" unique_id=2114989122 instance=ExtResource("3_0e6qa")]
 transform = Transform3D(4, 0, 0, 0, 3, 0, 0, 0, 4, 7.55244, 0, -11.3962)
 
-[node name="gold_stack" parent="Props" index="5" instance=ExtResource("7_pv58p")]
+[node name="gold_stack" parent="Props" index="5" unique_id=2070852404 instance=ExtResource("7_pv58p")]
 transform = Transform3D(1.9, 0, 0, 0, 1.9, 0, 0, 0, 1.9, -7.37562, 4.99829, 9.71659)
 
-[node name="gold_stack2" parent="Props" index="6" instance=ExtResource("7_pv58p")]
+[node name="gold_stack2" parent="Props" index="6" unique_id=2123597362 instance=ExtResource("7_pv58p")]
 transform = Transform3D(1.9, 0, 0, 0, 1.9, 0, 0, 0, 1.9, 7.56655, 5.01585, 9.89189)
 
-[node name="gold_stack3" parent="Props" index="7" instance=ExtResource("7_pv58p")]
+[node name="gold_stack3" parent="Props" index="7" unique_id=597930163 instance=ExtResource("7_pv58p")]
 transform = Transform3D(-1.9, 0, 1.66103e-07, 0, 1.9, 0, -1.66103e-07, 0, -1.9, 7.56655, 5.01585, -11.2625)
 
-[node name="gold_stack4" parent="Props" index="8" instance=ExtResource("7_pv58p")]
+[node name="gold_stack4" parent="Props" index="8" unique_id=928038976 instance=ExtResource("7_pv58p")]
 transform = Transform3D(-1.9, 0, 1.66103e-07, 0, 1.9, 0, -1.66103e-07, 0, -1.9, -7.58048, 5.01585, -11.2625)
 
-[node name="mint_elevator" parent="." index="7" instance=ExtResource("3_ty680")]
+[node name="mint_elevator" parent="." index="7" unique_id=1493694676 instance=ExtResource("3_ty680")]
 transform = Transform3D(1, 0, -1.06581e-14, 0, 1.12, 0, 1.06581e-14, 0, 1, 0.0433266, 0.015527, -22.8332)
 
-[node name="CB1" parent="." index="8" instance=ExtResource("4_dm27t")]
+[node name="CB1" parent="." index="8" unique_id=1574121031 instance=ExtResource("4_dm27t")]
 unique_name_in_owner = true
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 0, 0, -3.57613)
 constant_linear_velocity = Vector3(0, 0, 0)
@@ -259,7 +259,7 @@ size = Vector3(1.7, 1, 13.6)
 platform_mat = SubResource("StandardMaterial3D_bn64l")
 speed = 0.0
 
-[node name="CB2" parent="." index="9" instance=ExtResource("4_dm27t")]
+[node name="CB2" parent="." index="9" unique_id=94385597 instance=ExtResource("4_dm27t")]
 unique_name_in_owner = true
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 1.65557)
 constant_linear_velocity = Vector3(0, 0, 0)
@@ -267,23 +267,24 @@ size = Vector3(1.7, 1, 13.6)
 platform_mat = SubResource("StandardMaterial3D_jkjqs")
 speed = 0.0
 
-[node name="BeginColl" type="Area3D" parent="." index="10"]
+[node name="BeginColl" type="Area3D" parent="." index="10" unique_id=1228561668]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10.1674)
 collision_layer = 0
 collision_mask = 2
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="BeginColl" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BeginColl" index="0" unique_id=1708176548]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.33158, 7.27812, -9.27134)
 shape = SubResource("BoxShape3D_2w4hs")
 
-[node name="Goose" parent="." index="11" instance=ExtResource("9_7uhhq")]
+[node name="Goose" parent="." index="11" unique_id=79258111 instance=ExtResource("9_7uhhq")]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.169494, 4.16322, -8.34171)
+level_range_offset = 2
 dna = ExtResource("10_obb3n")
 skelecog_chance = 0
 
-[node name="GooseStomper" parent="." index="12" node_paths=PackedStringArray("model", "collisions", "player_detection") instance=ExtResource("11_ai0uy")]
+[node name="GooseStomper" parent="." index="12" unique_id=2061227877 node_paths=PackedStringArray("model", "collisions", "player_detection") instance=ExtResource("11_ai0uy")]
 unique_name_in_owner = true
 transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 0.107261, 4.16505, -8.48923)
 automatic = false
@@ -293,44 +294,44 @@ player_detection = NodePath("stomper/PlayerDetection")
 raise_position = 0.8
 raise_time = 2.0
 
-[node name="stomper" parent="GooseStomper" index="0" instance=ExtResource("12_6hi6f")]
+[node name="stomper" parent="GooseStomper" index="0" unique_id=1753638446 instance=ExtResource("12_6hi6f")]
 
-[node name="square__stomper" parent="GooseStomper/stomper" index="0"]
+[node name="square__stomper" parent="GooseStomper/stomper" index="0" unique_id=21717009]
 transform = Transform3D(0.0328084, 0, 0, 0, -1.4341e-09, 0.0328084, 0, -0.0328084, -1.4341e-09, 0, 0, 0)
 
-[node name="head2" parent="GooseStomper/stomper/square__stomper/head" index="1"]
+[node name="head2" parent="GooseStomper/stomper/square__stomper/head" parent_id_path=PackedInt32Array(1753638446, 1578475206) index="1" unique_id=1308469585]
 transform = Transform3D(0.9, 0, 0, 0, 0.9, 4.44089e-15, 0, -6.39489e-15, 0.625, 0, 0, 2.89907)
 
-[node name="shaft" parent="GooseStomper/stomper/square__stomper/head" index="2"]
+[node name="shaft" parent="GooseStomper/stomper/square__stomper/head" parent_id_path=PackedInt32Array(1753638446, 1578475206) index="2" unique_id=417486818]
 transform = Transform3D(1, 0, 0, 0, 1, 5.68434e-14, 0, -1.06581e-14, 6.05, 0, 0, 6.00659)
 
-[node name="shaft_collisions" parent="GooseStomper/stomper/square__stomper/head/shaft" index="2"]
+[node name="shaft_collisions" parent="GooseStomper/stomper/square__stomper/head/shaft" index="2" unique_id=1055613967]
 visible = false
 
-[node name="head_collisions" parent="GooseStomper/stomper/square__stomper/head" index="3"]
+[node name="head_collisions" parent="GooseStomper/stomper/square__stomper/head" parent_id_path=PackedInt32Array(1753638446, 1578475206) index="3" unique_id=270612879]
 visible = false
 
-[node name="HeadCollision" type="StaticBody3D" parent="GooseStomper/stomper" index="1"]
+[node name="HeadCollision" type="StaticBody3D" parent="GooseStomper/stomper" index="1" unique_id=903832117]
 transform = Transform3D(0.0328084, 0, 0, 0, -1.4341e-09, 0.0328084, 0, -0.0328084, -1.4341e-09, 0, 0, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GooseStomper/stomper/HeadCollision" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GooseStomper/stomper/HeadCollision" index="0" unique_id=1593446627]
 shape = SubResource("ConcavePolygonShape3D_y4hh3")
 
-[node name="ShaftCollision" type="StaticBody3D" parent="GooseStomper/stomper" index="2"]
+[node name="ShaftCollision" type="StaticBody3D" parent="GooseStomper/stomper" index="2" unique_id=1357024433]
 transform = Transform3D(0.137931, 0, 0, 0, 0.137931, 0, 0, 0, 0.137931, 0, 0.718944, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GooseStomper/stomper/ShaftCollision" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GooseStomper/stomper/ShaftCollision" index="0" unique_id=632310024]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.722046, 0)
 shape = SubResource("CylinderShape3D_fbu62")
 
-[node name="PlayerDetection" type="Area3D" parent="GooseStomper/stomper" index="3"]
+[node name="PlayerDetection" type="Area3D" parent="GooseStomper/stomper" index="3" unique_id=1995729872]
 collision_mask = 2
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GooseStomper/stomper/PlayerDetection" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GooseStomper/stomper/PlayerDetection" index="0" unique_id=2137639197]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00112915, -0.00119627, 0.000608981)
 shape = SubResource("BoxShape3D_ewebg")
 
-[node name="EntranceStomper" parent="." index="13" node_paths=PackedStringArray("model", "collisions", "player_detection") instance=ExtResource("11_ai0uy")]
+[node name="EntranceStomper" parent="." index="13" unique_id=218645195 node_paths=PackedStringArray("model", "collisions", "player_detection") instance=ExtResource("11_ai0uy")]
 unique_name_in_owner = true
 transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 0.107, 0, 6.623)
 automatic = false
@@ -340,108 +341,108 @@ player_detection = NodePath("stomper/PlayerDetection")
 raise_position = 1.4
 raise_time = 2.0
 
-[node name="stomper" parent="EntranceStomper" index="0" instance=ExtResource("12_6hi6f")]
+[node name="stomper" parent="EntranceStomper" index="0" unique_id=1014473590 instance=ExtResource("12_6hi6f")]
 
-[node name="square__stomper" parent="EntranceStomper/stomper" index="0"]
+[node name="square__stomper" parent="EntranceStomper/stomper" index="0" unique_id=21717009]
 transform = Transform3D(0.0328084, 0, 0, 0, -1.4341e-09, 0.0328084, 0, -0.0328084, -1.4341e-09, 0, 0, 0)
 
-[node name="head2" parent="EntranceStomper/stomper/square__stomper/head" index="1"]
+[node name="head2" parent="EntranceStomper/stomper/square__stomper/head" parent_id_path=PackedInt32Array(1014473590, 1578475206) index="1" unique_id=1308469585]
 transform = Transform3D(0.9, 0, 0, 0, 0.9, 4.44089e-15, 0, -6.39489e-15, 0.625, 0, 0, 2.89907)
 
-[node name="shaft" parent="EntranceStomper/stomper/square__stomper/head" index="2"]
+[node name="shaft" parent="EntranceStomper/stomper/square__stomper/head" parent_id_path=PackedInt32Array(1014473590, 1578475206) index="2" unique_id=417486818]
 transform = Transform3D(1, 0, 0, 0, 1, 5.68434e-14, 0, -1.06581e-14, 6.05, 0, 0, 6.00659)
 
-[node name="shaft_collisions" parent="EntranceStomper/stomper/square__stomper/head/shaft" index="2"]
+[node name="shaft_collisions" parent="EntranceStomper/stomper/square__stomper/head/shaft" index="2" unique_id=1055613967]
 visible = false
 
-[node name="head_collisions" parent="EntranceStomper/stomper/square__stomper/head" index="3"]
+[node name="head_collisions" parent="EntranceStomper/stomper/square__stomper/head" parent_id_path=PackedInt32Array(1014473590, 1578475206) index="3" unique_id=270612879]
 visible = false
 
-[node name="HeadCollision" type="StaticBody3D" parent="EntranceStomper/stomper" index="1"]
+[node name="HeadCollision" type="StaticBody3D" parent="EntranceStomper/stomper" index="1" unique_id=1400787924]
 transform = Transform3D(0.0328084, 0, 0, 0, -1.4341e-09, 0.0328084, 0, -0.0328084, -1.4341e-09, 0, 0, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="EntranceStomper/stomper/HeadCollision" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EntranceStomper/stomper/HeadCollision" index="0" unique_id=755244869]
 shape = SubResource("ConcavePolygonShape3D_y4hh3")
 
-[node name="ShaftCollision" type="StaticBody3D" parent="EntranceStomper/stomper" index="2"]
+[node name="ShaftCollision" type="StaticBody3D" parent="EntranceStomper/stomper" index="2" unique_id=1904427340]
 transform = Transform3D(0.137931, 0, 0, 0, 0.137931, 0, 0, 0, 0.137931, 0, 0.718944, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="EntranceStomper/stomper/ShaftCollision" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EntranceStomper/stomper/ShaftCollision" index="0" unique_id=878936623]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.722046, 0)
 shape = SubResource("CylinderShape3D_fbu62")
 
-[node name="PlayerDetection" type="Area3D" parent="EntranceStomper/stomper" index="3"]
+[node name="PlayerDetection" type="Area3D" parent="EntranceStomper/stomper" index="3" unique_id=1373016643]
 collision_mask = 2
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="EntranceStomper/stomper/PlayerDetection" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EntranceStomper/stomper/PlayerDetection" index="0" unique_id=99626437]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00112915, -0.00119627, 0.000608981)
 shape = SubResource("BoxShape3D_ewebg")
 
-[node name="GooseManager" type="Node3D" parent="." index="14" node_paths=PackedStringArray("button_respawn_stompers")]
+[node name="GooseManager" type="Node3D" parent="." index="14" unique_id=481445241 node_paths=PackedStringArray("button_respawn_stompers")]
 script = ExtResource("12_huelx")
 button_respawn_stompers = [NodePath("../GameStompersUp/GameStomper1"), NodePath("../GameStompersUp/GameStomper5"), NodePath("../GameStompersDown/GameStomper1"), NodePath("../GameStompersDown/GameStomper5")]
 
-[node name="GooseCam" type="Camera3D" parent="." index="15"]
+[node name="GooseCam" type="Camera3D" parent="." index="15" unique_id=1011068432]
 unique_name_in_owner = true
 transform = Transform3D(0.986121, 0, -0.166029, 0, 1, 0, 0.166029, 0, 0.986121, -0.775546, 6.28368, -2.53681)
 
-[node name="SPAWNPOINT" type="Node3D" parent="." index="16"]
+[node name="SPAWNPOINT" type="Node3D" parent="." index="16" unique_id=1835054763]
 unique_name_in_owner = true
 transform = Transform3D(-0.965926, 0, 0.258819, 0, 1, 0, -0.258819, 0, -0.965926, 0, 0.134716, -0.987941)
 
-[node name="Fallers" type="Node3D" parent="." index="17"]
+[node name="Fallers" type="Node3D" parent="." index="17" unique_id=1040089870]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 21.1818, 0)
 
-[node name="cb_safe" parent="Fallers" index="0" instance=ExtResource("13_qq4kb")]
+[node name="cb_safe" parent="Fallers" index="0" unique_id=995497437 instance=ExtResource("13_qq4kb")]
 transform = Transform3D(-1.15, 0, -1.73645e-07, 0, 1.15, 0, 1.73645e-07, 0, -1.15, -1.08614, 0, 5.3218)
 
-[node name="cb_safe2" parent="Fallers" index="1" instance=ExtResource("13_qq4kb")]
+[node name="cb_safe2" parent="Fallers" index="1" unique_id=207301871 instance=ExtResource("13_qq4kb")]
 transform = Transform3D(-1.15, 0, -1.73645e-07, 0, 1.15, 0, 1.73645e-07, 0, -1.15, 1.06392, 0, 5.3218)
 
-[node name="BlockerCam" type="Camera3D" parent="." index="18"]
+[node name="BlockerCam" type="Camera3D" parent="." index="18" unique_id=2035222674]
 unique_name_in_owner = true
 transform = Transform3D(-4.11112e-08, -0.339756, 0.940514, -1.48512e-08, 0.940514, 0.339756, -1, 0, -4.37114e-08, 9.55334, 8.11383, -1.03214)
 
-[node name="ConveyorColl" type="StaticBody3D" parent="." index="19"]
+[node name="ConveyorColl" type="StaticBody3D" parent="." index="19" unique_id=1248894145]
 unique_name_in_owner = true
 
-[node name="Wall1" type="CollisionShape3D" parent="ConveyorColl" index="0"]
+[node name="Wall1" type="CollisionShape3D" parent="ConveyorColl" index="0" unique_id=1589925741]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.287987, 4.88364, -6.96662)
 shape = SubResource("BoxShape3D_qrvc2")
 
-[node name="Wall2" type="CollisionShape3D" parent="ConveyorColl" index="1"]
+[node name="Wall2" type="CollisionShape3D" parent="ConveyorColl" index="1" unique_id=935814667]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.287987, 7.33848, 4.97786)
 shape = SubResource("BoxShape3D_qrvc2")
 
-[node name="Wallfix" type="MeshInstance3D" parent="." index="20"]
+[node name="Wallfix" type="MeshInstance3D" parent="." index="20" unique_id=568268581]
 transform = Transform3D(-1, -8.74228e-08, 0, 8.74228e-08, -1, 0, 0, 0, 1, 0.0160833, 5.94228, -22.8648)
 mesh = SubResource("QuadMesh_e76dl")
 
-[node name="Wallfix2" type="MeshInstance3D" parent="." index="21"]
+[node name="Wallfix2" type="MeshInstance3D" parent="." index="21" unique_id=1129541450]
 transform = Transform3D(-1, -1.74846e-07, -8.74228e-08, -1.74846e-07, 1, -7.64274e-15, 8.74228e-08, 7.64274e-15, -1, 0.0160837, 5.94228, 18.2949)
 mesh = SubResource("QuadMesh_e76dl")
 
-[node name="Doorways" type="Node3D" parent="." index="22"]
+[node name="Doorways" type="Node3D" parent="." index="22" unique_id=462486715]
 
-[node name="door_frame" parent="Doorways" index="0" instance=ExtResource("15_kdm8w")]
+[node name="door_frame" parent="Doorways" index="0" unique_id=537785688 instance=ExtResource("15_kdm8w")]
 transform = Transform3D(-1.11027e-07, 0, 2.54, 0, 2.54, 0, -2.54, 0, -1.11027e-07, 20.6431, -5.22971, -0.942299)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Doorways/door_frame" index="9"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Doorways/door_frame" index="9" unique_id=321727839]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 2.30882, -0.0311489)
 mesh = SubResource("QuadMesh_xf3h3")
 
-[node name="door_frame2" parent="Doorways" index="1" instance=ExtResource("15_kdm8w")]
+[node name="door_frame2" parent="Doorways" index="1" unique_id=399701862 instance=ExtResource("15_kdm8w")]
 transform = Transform3D(-1.11027e-07, 0, -2.54, 0, 2.54, 0, 2.54, 0, -1.11027e-07, -20.6356, -5.22971, -0.942299)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Doorways/door_frame2" index="9"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Doorways/door_frame2" index="9" unique_id=1344919043]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 2.30882, -0.0311489)
 mesh = SubResource("QuadMesh_xf3h3")
 
-[node name="GameStompersUp" type="Node3D" parent="." index="23"]
+[node name="GameStompersUp" type="Node3D" parent="." index="23" unique_id=150811415]
 unique_name_in_owner = true
 
-[node name="GameStomper1" parent="GameStompersUp" index="0" node_paths=PackedStringArray("model", "collisions", "player_detection") instance=ExtResource("11_ai0uy")]
+[node name="GameStomper1" parent="GameStompersUp" index="0" unique_id=1379709548 node_paths=PackedStringArray("model", "collisions", "player_detection") instance=ExtResource("11_ai0uy")]
 transform = Transform3D(9.5, 0, 0, 0, 9.5, 0, 0, 0, 9.5, -16.2532, 0.157278, -3.57238)
 automatic = false
 model = NodePath("stomper")
@@ -450,52 +451,52 @@ player_detection = NodePath("stomper/PlayerDetection")
 raise_position = 1.1
 raise_time = 2.0
 
-[node name="stomper" parent="GameStompersUp/GameStomper1" index="0" instance=ExtResource("12_6hi6f")]
+[node name="stomper" parent="GameStompersUp/GameStomper1" index="0" unique_id=1632436297 instance=ExtResource("12_6hi6f")]
 
-[node name="square__stomper" parent="GameStompersUp/GameStomper1/stomper" index="0"]
+[node name="square__stomper" parent="GameStompersUp/GameStomper1/stomper" index="0" unique_id=21717009]
 transform = Transform3D(0.0328084, 0, 0, 0, -1.4341e-09, 0.0328084, 0, -0.0328084, -1.4341e-09, 0, 0, 0)
 
-[node name="head2" parent="GameStompersUp/GameStomper1/stomper/square__stomper/head" index="1"]
+[node name="head2" parent="GameStompersUp/GameStomper1/stomper/square__stomper/head" parent_id_path=PackedInt32Array(1632436297, 1578475206) index="1" unique_id=1308469585]
 transform = Transform3D(1.34, 0, 0, 0, 0.9, 4.44089e-15, 0, -6.39489e-15, 0.625, 0, 0, 2.89907)
 
-[node name="shaft" parent="GameStompersUp/GameStomper1/stomper/square__stomper/head" index="2"]
+[node name="shaft" parent="GameStompersUp/GameStomper1/stomper/square__stomper/head" parent_id_path=PackedInt32Array(1632436297, 1578475206) index="2" unique_id=417486818]
 transform = Transform3D(1, 0, 0, 0, 1, 5.68434e-14, 0, -1.06581e-14, 6.05, 0, 0, 6.00659)
 
-[node name="shaft_collisions" parent="GameStompersUp/GameStomper1/stomper/square__stomper/head/shaft" index="2"]
+[node name="shaft_collisions" parent="GameStompersUp/GameStomper1/stomper/square__stomper/head/shaft" index="2" unique_id=1055613967]
 visible = false
 
-[node name="head_collisions" parent="GameStompersUp/GameStomper1/stomper/square__stomper/head" index="3"]
+[node name="head_collisions" parent="GameStompersUp/GameStomper1/stomper/square__stomper/head" parent_id_path=PackedInt32Array(1632436297, 1578475206) index="3" unique_id=270612879]
 visible = false
 
-[node name="HeadCollision" type="StaticBody3D" parent="GameStompersUp/GameStomper1/stomper" index="1"]
+[node name="HeadCollision" type="StaticBody3D" parent="GameStompersUp/GameStomper1/stomper" index="1" unique_id=1568906712]
 transform = Transform3D(0.044, 0, 0, 0, -1.31134e-09, 0.021, 0, -0.03, -9.17939e-10, 0, 0, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersUp/GameStomper1/stomper/HeadCollision" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersUp/GameStomper1/stomper/HeadCollision" index="0" unique_id=1782624904]
 shape = SubResource("ConcavePolygonShape3D_y4hh3")
 
-[node name="ShaftCollision" type="StaticBody3D" parent="GameStompersUp/GameStomper1/stomper" index="2"]
+[node name="ShaftCollision" type="StaticBody3D" parent="GameStompersUp/GameStomper1/stomper" index="2" unique_id=1566073887]
 transform = Transform3D(0.137931, 0, 0, 0, 0.137931, 0, 0, 0, 0.137931, 0, 0.570041, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersUp/GameStomper1/stomper/ShaftCollision" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersUp/GameStomper1/stomper/ShaftCollision" index="0" unique_id=665155849]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.722046, 0)
 shape = SubResource("CylinderShape3D_fbu62")
 
-[node name="PlayerDetection" type="Area3D" parent="GameStompersUp/GameStomper1/stomper" index="3"]
+[node name="PlayerDetection" type="Area3D" parent="GameStompersUp/GameStomper1/stomper" index="3" unique_id=1732696449]
 collision_mask = 2
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersUp/GameStomper1/stomper/PlayerDetection" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersUp/GameStomper1/stomper/PlayerDetection" index="0" unique_id=1698041190]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00665581, 0.031176, 0.00204048)
 shape = SubResource("BoxShape3D_ewebg")
 
-[node name="ObjectDetection" type="Area3D" parent="GameStompersUp/GameStomper1/stomper" index="4"]
+[node name="ObjectDetection" type="Area3D" parent="GameStompersUp/GameStomper1/stomper" index="4" unique_id=1926493879]
 collision_layer = 32768
 collision_mask = 0
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersUp/GameStomper1/stomper/ObjectDetection" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersUp/GameStomper1/stomper/ObjectDetection" index="0" unique_id=2044959462]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00112915, -0.00119627, 0.000608981)
 shape = SubResource("BoxShape3D_ewebg")
 
-[node name="GameStomper2" parent="GameStompersUp" index="1" node_paths=PackedStringArray("model", "collisions", "player_detection") instance=ExtResource("11_ai0uy")]
+[node name="GameStomper2" parent="GameStompersUp" index="1" unique_id=1700894419 node_paths=PackedStringArray("model", "collisions", "player_detection") instance=ExtResource("11_ai0uy")]
 transform = Transform3D(9.5, 0, 0, 0, 9.5, 0, 0, 0, 9.5, -8.30441, 0.157278, -3.57238)
 automatic = false
 model = NodePath("stomper")
@@ -504,52 +505,52 @@ player_detection = NodePath("stomper/PlayerDetection")
 raise_position = 1.1
 raise_time = 2.0
 
-[node name="stomper" parent="GameStompersUp/GameStomper2" index="0" instance=ExtResource("12_6hi6f")]
+[node name="stomper" parent="GameStompersUp/GameStomper2" index="0" unique_id=88469783 instance=ExtResource("12_6hi6f")]
 
-[node name="square__stomper" parent="GameStompersUp/GameStomper2/stomper" index="0"]
+[node name="square__stomper" parent="GameStompersUp/GameStomper2/stomper" index="0" unique_id=21717009]
 transform = Transform3D(0.0328084, 0, 0, 0, -1.4341e-09, 0.0328084, 0, -0.0328084, -1.4341e-09, 0, 0, 0)
 
-[node name="head2" parent="GameStompersUp/GameStomper2/stomper/square__stomper/head" index="1"]
+[node name="head2" parent="GameStompersUp/GameStomper2/stomper/square__stomper/head" parent_id_path=PackedInt32Array(88469783, 1578475206) index="1" unique_id=1308469585]
 transform = Transform3D(1.34, 0, 0, 0, 0.9, 4.44089e-15, 0, -6.39489e-15, 0.625, 0, 0, 2.89907)
 
-[node name="shaft" parent="GameStompersUp/GameStomper2/stomper/square__stomper/head" index="2"]
+[node name="shaft" parent="GameStompersUp/GameStomper2/stomper/square__stomper/head" parent_id_path=PackedInt32Array(88469783, 1578475206) index="2" unique_id=417486818]
 transform = Transform3D(1, 0, 0, 0, 1, 5.68434e-14, 0, -1.06581e-14, 6.05, 0, 0, 6.00659)
 
-[node name="shaft_collisions" parent="GameStompersUp/GameStomper2/stomper/square__stomper/head/shaft" index="2"]
+[node name="shaft_collisions" parent="GameStompersUp/GameStomper2/stomper/square__stomper/head/shaft" index="2" unique_id=1055613967]
 visible = false
 
-[node name="head_collisions" parent="GameStompersUp/GameStomper2/stomper/square__stomper/head" index="3"]
+[node name="head_collisions" parent="GameStompersUp/GameStomper2/stomper/square__stomper/head" parent_id_path=PackedInt32Array(88469783, 1578475206) index="3" unique_id=270612879]
 visible = false
 
-[node name="HeadCollision" type="StaticBody3D" parent="GameStompersUp/GameStomper2/stomper" index="1"]
+[node name="HeadCollision" type="StaticBody3D" parent="GameStompersUp/GameStomper2/stomper" index="1" unique_id=656873787]
 transform = Transform3D(0.044, 0, 0, 0, -1.31134e-09, 0.021, 0, -0.03, -9.17939e-10, 0, 0, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersUp/GameStomper2/stomper/HeadCollision" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersUp/GameStomper2/stomper/HeadCollision" index="0" unique_id=1788840826]
 shape = SubResource("ConcavePolygonShape3D_y4hh3")
 
-[node name="ShaftCollision" type="StaticBody3D" parent="GameStompersUp/GameStomper2/stomper" index="2"]
+[node name="ShaftCollision" type="StaticBody3D" parent="GameStompersUp/GameStomper2/stomper" index="2" unique_id=1130045823]
 transform = Transform3D(0.137931, 0, 0, 0, 0.137931, 0, 0, 0, 0.137931, 0, 0.570041, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersUp/GameStomper2/stomper/ShaftCollision" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersUp/GameStomper2/stomper/ShaftCollision" index="0" unique_id=770751511]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.722046, 0)
 shape = SubResource("CylinderShape3D_fbu62")
 
-[node name="PlayerDetection" type="Area3D" parent="GameStompersUp/GameStomper2/stomper" index="3"]
+[node name="PlayerDetection" type="Area3D" parent="GameStompersUp/GameStomper2/stomper" index="3" unique_id=898896885]
 collision_mask = 2
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersUp/GameStomper2/stomper/PlayerDetection" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersUp/GameStomper2/stomper/PlayerDetection" index="0" unique_id=576270697]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00112915, -0.00119627, 0.000608981)
 shape = SubResource("BoxShape3D_ewebg")
 
-[node name="ObjectDetection" type="Area3D" parent="GameStompersUp/GameStomper2/stomper" index="4"]
+[node name="ObjectDetection" type="Area3D" parent="GameStompersUp/GameStomper2/stomper" index="4" unique_id=1742390863]
 collision_layer = 32768
 collision_mask = 0
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersUp/GameStomper2/stomper/ObjectDetection" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersUp/GameStomper2/stomper/ObjectDetection" index="0" unique_id=162158298]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00112915, -0.00119627, 0.000608981)
 shape = SubResource("BoxShape3D_ewebg")
 
-[node name="GameStomper3" parent="GameStompersUp" index="2" node_paths=PackedStringArray("model", "collisions", "player_detection") instance=ExtResource("11_ai0uy")]
+[node name="GameStomper3" parent="GameStompersUp" index="2" unique_id=2076219703 node_paths=PackedStringArray("model", "collisions", "player_detection") instance=ExtResource("11_ai0uy")]
 transform = Transform3D(9.5, 0, 0, 0, 9.5, 0, 0, 0, 9.5, -0.309616, 0.157278, -3.57238)
 automatic = false
 model = NodePath("stomper")
@@ -558,52 +559,52 @@ player_detection = NodePath("stomper/PlayerDetection")
 raise_position = 1.1
 raise_time = 2.0
 
-[node name="stomper" parent="GameStompersUp/GameStomper3" index="0" instance=ExtResource("12_6hi6f")]
+[node name="stomper" parent="GameStompersUp/GameStomper3" index="0" unique_id=1409787254 instance=ExtResource("12_6hi6f")]
 
-[node name="square__stomper" parent="GameStompersUp/GameStomper3/stomper" index="0"]
+[node name="square__stomper" parent="GameStompersUp/GameStomper3/stomper" index="0" unique_id=21717009]
 transform = Transform3D(0.0328084, 0, 0, 0, -1.4341e-09, 0.0328084, 0, -0.0328084, -1.4341e-09, 0, 0, 0)
 
-[node name="head2" parent="GameStompersUp/GameStomper3/stomper/square__stomper/head" index="1"]
+[node name="head2" parent="GameStompersUp/GameStomper3/stomper/square__stomper/head" parent_id_path=PackedInt32Array(1409787254, 1578475206) index="1" unique_id=1308469585]
 transform = Transform3D(1.34, 0, 0, 0, 0.9, 4.44089e-15, 0, -6.39489e-15, 0.625, 0, 0, 2.89907)
 
-[node name="shaft" parent="GameStompersUp/GameStomper3/stomper/square__stomper/head" index="2"]
+[node name="shaft" parent="GameStompersUp/GameStomper3/stomper/square__stomper/head" parent_id_path=PackedInt32Array(1409787254, 1578475206) index="2" unique_id=417486818]
 transform = Transform3D(1, 0, 0, 0, 1, 5.68434e-14, 0, -1.06581e-14, 6.05, 0, 0, 6.00659)
 
-[node name="shaft_collisions" parent="GameStompersUp/GameStomper3/stomper/square__stomper/head/shaft" index="2"]
+[node name="shaft_collisions" parent="GameStompersUp/GameStomper3/stomper/square__stomper/head/shaft" index="2" unique_id=1055613967]
 visible = false
 
-[node name="head_collisions" parent="GameStompersUp/GameStomper3/stomper/square__stomper/head" index="3"]
+[node name="head_collisions" parent="GameStompersUp/GameStomper3/stomper/square__stomper/head" parent_id_path=PackedInt32Array(1409787254, 1578475206) index="3" unique_id=270612879]
 visible = false
 
-[node name="HeadCollision" type="StaticBody3D" parent="GameStompersUp/GameStomper3/stomper" index="1"]
+[node name="HeadCollision" type="StaticBody3D" parent="GameStompersUp/GameStomper3/stomper" index="1" unique_id=515916352]
 transform = Transform3D(0.044, 0, 0, 0, -1.31134e-09, 0.021, 0, -0.03, -9.17939e-10, 0, 0, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersUp/GameStomper3/stomper/HeadCollision" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersUp/GameStomper3/stomper/HeadCollision" index="0" unique_id=2107592903]
 shape = SubResource("ConcavePolygonShape3D_y4hh3")
 
-[node name="ShaftCollision" type="StaticBody3D" parent="GameStompersUp/GameStomper3/stomper" index="2"]
+[node name="ShaftCollision" type="StaticBody3D" parent="GameStompersUp/GameStomper3/stomper" index="2" unique_id=665790521]
 transform = Transform3D(0.137931, 0, 0, 0, 0.137931, 0, 0, 0, 0.137931, 0, 0.570041, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersUp/GameStomper3/stomper/ShaftCollision" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersUp/GameStomper3/stomper/ShaftCollision" index="0" unique_id=209012633]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.722046, 0)
 shape = SubResource("CylinderShape3D_fbu62")
 
-[node name="PlayerDetection" type="Area3D" parent="GameStompersUp/GameStomper3/stomper" index="3"]
+[node name="PlayerDetection" type="Area3D" parent="GameStompersUp/GameStomper3/stomper" index="3" unique_id=2098303140]
 collision_mask = 2
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersUp/GameStomper3/stomper/PlayerDetection" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersUp/GameStomper3/stomper/PlayerDetection" index="0" unique_id=1678002696]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00112915, -0.00119627, 0.000608981)
 shape = SubResource("BoxShape3D_ewebg")
 
-[node name="ObjectDetection" type="Area3D" parent="GameStompersUp/GameStomper3/stomper" index="4"]
+[node name="ObjectDetection" type="Area3D" parent="GameStompersUp/GameStomper3/stomper" index="4" unique_id=872517281]
 collision_layer = 32768
 collision_mask = 0
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersUp/GameStomper3/stomper/ObjectDetection" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersUp/GameStomper3/stomper/ObjectDetection" index="0" unique_id=1678135517]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00112915, -0.00119627, 0.000608981)
 shape = SubResource("BoxShape3D_ewebg")
 
-[node name="GameStomper4" parent="GameStompersUp" index="3" node_paths=PackedStringArray("model", "collisions", "player_detection") instance=ExtResource("11_ai0uy")]
+[node name="GameStomper4" parent="GameStompersUp" index="3" unique_id=1041164018 node_paths=PackedStringArray("model", "collisions", "player_detection") instance=ExtResource("11_ai0uy")]
 transform = Transform3D(9.5, 0, 0, 0, 9.5, 0, 0, 0, 9.5, 7.80203, 0.157278, -3.57238)
 automatic = false
 model = NodePath("stomper")
@@ -612,52 +613,52 @@ player_detection = NodePath("stomper/PlayerDetection")
 raise_position = 1.1
 raise_time = 2.0
 
-[node name="stomper" parent="GameStompersUp/GameStomper4" index="0" instance=ExtResource("12_6hi6f")]
+[node name="stomper" parent="GameStompersUp/GameStomper4" index="0" unique_id=1638662562 instance=ExtResource("12_6hi6f")]
 
-[node name="square__stomper" parent="GameStompersUp/GameStomper4/stomper" index="0"]
+[node name="square__stomper" parent="GameStompersUp/GameStomper4/stomper" index="0" unique_id=21717009]
 transform = Transform3D(0.0328084, 0, 0, 0, -1.4341e-09, 0.0328084, 0, -0.0328084, -1.4341e-09, 0, 0, 0)
 
-[node name="head2" parent="GameStompersUp/GameStomper4/stomper/square__stomper/head" index="1"]
+[node name="head2" parent="GameStompersUp/GameStomper4/stomper/square__stomper/head" parent_id_path=PackedInt32Array(1638662562, 1578475206) index="1" unique_id=1308469585]
 transform = Transform3D(1.34, 0, 0, 0, 0.9, 4.44089e-15, 0, -6.39489e-15, 0.625, 0, 0, 2.89907)
 
-[node name="shaft" parent="GameStompersUp/GameStomper4/stomper/square__stomper/head" index="2"]
+[node name="shaft" parent="GameStompersUp/GameStomper4/stomper/square__stomper/head" parent_id_path=PackedInt32Array(1638662562, 1578475206) index="2" unique_id=417486818]
 transform = Transform3D(1, 0, 0, 0, 1, 5.68434e-14, 0, -1.06581e-14, 6.05, 0, 0, 6.00659)
 
-[node name="shaft_collisions" parent="GameStompersUp/GameStomper4/stomper/square__stomper/head/shaft" index="2"]
+[node name="shaft_collisions" parent="GameStompersUp/GameStomper4/stomper/square__stomper/head/shaft" index="2" unique_id=1055613967]
 visible = false
 
-[node name="head_collisions" parent="GameStompersUp/GameStomper4/stomper/square__stomper/head" index="3"]
+[node name="head_collisions" parent="GameStompersUp/GameStomper4/stomper/square__stomper/head" parent_id_path=PackedInt32Array(1638662562, 1578475206) index="3" unique_id=270612879]
 visible = false
 
-[node name="HeadCollision" type="StaticBody3D" parent="GameStompersUp/GameStomper4/stomper" index="1"]
+[node name="HeadCollision" type="StaticBody3D" parent="GameStompersUp/GameStomper4/stomper" index="1" unique_id=1397294437]
 transform = Transform3D(0.044, 0, 0, 0, -1.31134e-09, 0.021, 0, -0.03, -9.17939e-10, 0, 0, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersUp/GameStomper4/stomper/HeadCollision" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersUp/GameStomper4/stomper/HeadCollision" index="0" unique_id=706032380]
 shape = SubResource("ConcavePolygonShape3D_y4hh3")
 
-[node name="ShaftCollision" type="StaticBody3D" parent="GameStompersUp/GameStomper4/stomper" index="2"]
+[node name="ShaftCollision" type="StaticBody3D" parent="GameStompersUp/GameStomper4/stomper" index="2" unique_id=425773824]
 transform = Transform3D(0.137931, 0, 0, 0, 0.137931, 0, 0, 0, 0.137931, 0, 0.570041, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersUp/GameStomper4/stomper/ShaftCollision" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersUp/GameStomper4/stomper/ShaftCollision" index="0" unique_id=633644847]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.722046, 0)
 shape = SubResource("CylinderShape3D_fbu62")
 
-[node name="PlayerDetection" type="Area3D" parent="GameStompersUp/GameStomper4/stomper" index="3"]
+[node name="PlayerDetection" type="Area3D" parent="GameStompersUp/GameStomper4/stomper" index="3" unique_id=1091118986]
 collision_mask = 2
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersUp/GameStomper4/stomper/PlayerDetection" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersUp/GameStomper4/stomper/PlayerDetection" index="0" unique_id=1454012480]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00112915, -0.00119627, 0.000608981)
 shape = SubResource("BoxShape3D_ewebg")
 
-[node name="ObjectDetection" type="Area3D" parent="GameStompersUp/GameStomper4/stomper" index="4"]
+[node name="ObjectDetection" type="Area3D" parent="GameStompersUp/GameStomper4/stomper" index="4" unique_id=358109455]
 collision_layer = 32768
 collision_mask = 0
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersUp/GameStomper4/stomper/ObjectDetection" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersUp/GameStomper4/stomper/ObjectDetection" index="0" unique_id=513758460]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00112915, -0.00119627, 0.000608981)
 shape = SubResource("BoxShape3D_ewebg")
 
-[node name="GameStomper5" parent="GameStompersUp" index="4" node_paths=PackedStringArray("model", "collisions", "player_detection") instance=ExtResource("11_ai0uy")]
+[node name="GameStomper5" parent="GameStompersUp" index="4" unique_id=670356618 node_paths=PackedStringArray("model", "collisions", "player_detection") instance=ExtResource("11_ai0uy")]
 transform = Transform3D(9.5, 0, 0, 0, 9.5, 0, 0, 0, 9.5, 16.5037, 0.157278, -3.57238)
 automatic = false
 model = NodePath("stomper")
@@ -666,56 +667,56 @@ player_detection = NodePath("stomper/PlayerDetection")
 raise_position = 1.1
 raise_time = 2.0
 
-[node name="stomper" parent="GameStompersUp/GameStomper5" index="0" instance=ExtResource("12_6hi6f")]
+[node name="stomper" parent="GameStompersUp/GameStomper5" index="0" unique_id=1733320567 instance=ExtResource("12_6hi6f")]
 
-[node name="square__stomper" parent="GameStompersUp/GameStomper5/stomper" index="0"]
+[node name="square__stomper" parent="GameStompersUp/GameStomper5/stomper" index="0" unique_id=21717009]
 transform = Transform3D(0.0328084, 0, 0, 0, -1.4341e-09, 0.0328084, 0, -0.0328084, -1.4341e-09, 0, 0, 0)
 
-[node name="head2" parent="GameStompersUp/GameStomper5/stomper/square__stomper/head" index="1"]
+[node name="head2" parent="GameStompersUp/GameStomper5/stomper/square__stomper/head" parent_id_path=PackedInt32Array(1733320567, 1578475206) index="1" unique_id=1308469585]
 transform = Transform3D(1.34, 0, 0, 0, 0.9, 4.44089e-15, 0, -6.39489e-15, 0.625, 0, 0, 2.89907)
 
-[node name="shaft" parent="GameStompersUp/GameStomper5/stomper/square__stomper/head" index="2"]
+[node name="shaft" parent="GameStompersUp/GameStomper5/stomper/square__stomper/head" parent_id_path=PackedInt32Array(1733320567, 1578475206) index="2" unique_id=417486818]
 transform = Transform3D(1, 0, 0, 0, 1, 5.68434e-14, 0, -1.06581e-14, 6.05, 0, 0, 6.00659)
 
-[node name="shaft_collisions" parent="GameStompersUp/GameStomper5/stomper/square__stomper/head/shaft" index="2"]
+[node name="shaft_collisions" parent="GameStompersUp/GameStomper5/stomper/square__stomper/head/shaft" index="2" unique_id=1055613967]
 visible = false
 
-[node name="head_collisions" parent="GameStompersUp/GameStomper5/stomper/square__stomper/head" index="3"]
+[node name="head_collisions" parent="GameStompersUp/GameStomper5/stomper/square__stomper/head" parent_id_path=PackedInt32Array(1733320567, 1578475206) index="3" unique_id=270612879]
 visible = false
 
-[node name="HeadCollision" type="StaticBody3D" parent="GameStompersUp/GameStomper5/stomper" index="1"]
+[node name="HeadCollision" type="StaticBody3D" parent="GameStompersUp/GameStomper5/stomper" index="1" unique_id=1665102224]
 transform = Transform3D(0.044, 0, 0, 0, -1.31134e-09, 0.021, 0, -0.03, -9.17939e-10, 0, 0, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersUp/GameStomper5/stomper/HeadCollision" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersUp/GameStomper5/stomper/HeadCollision" index="0" unique_id=236100015]
 shape = SubResource("ConcavePolygonShape3D_y4hh3")
 
-[node name="ShaftCollision" type="StaticBody3D" parent="GameStompersUp/GameStomper5/stomper" index="2"]
+[node name="ShaftCollision" type="StaticBody3D" parent="GameStompersUp/GameStomper5/stomper" index="2" unique_id=1127071800]
 transform = Transform3D(0.137931, 0, 0, 0, 0.137931, 0, 0, 0, 0.137931, 0, 0.570041, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersUp/GameStomper5/stomper/ShaftCollision" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersUp/GameStomper5/stomper/ShaftCollision" index="0" unique_id=1378976055]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.722046, 0)
 shape = SubResource("CylinderShape3D_fbu62")
 
-[node name="PlayerDetection" type="Area3D" parent="GameStompersUp/GameStomper5/stomper" index="3"]
+[node name="PlayerDetection" type="Area3D" parent="GameStompersUp/GameStomper5/stomper" index="3" unique_id=436731995]
 collision_mask = 2
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersUp/GameStomper5/stomper/PlayerDetection" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersUp/GameStomper5/stomper/PlayerDetection" index="0" unique_id=1501259014]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00112915, -0.00119627, 0.000608981)
 shape = SubResource("BoxShape3D_ewebg")
 
-[node name="ObjectDetection" type="Area3D" parent="GameStompersUp/GameStomper5/stomper" index="4"]
+[node name="ObjectDetection" type="Area3D" parent="GameStompersUp/GameStomper5/stomper" index="4" unique_id=2063190018]
 collision_layer = 32768
 collision_mask = 0
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersUp/GameStomper5/stomper/ObjectDetection" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersUp/GameStomper5/stomper/ObjectDetection" index="0" unique_id=139298887]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00112915, -0.00119627, 0.000608981)
 shape = SubResource("BoxShape3D_ewebg")
 
-[node name="GameStompersDown" type="Node3D" parent="." index="24"]
+[node name="GameStompersDown" type="Node3D" parent="." index="24" unique_id=1016278330]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5.30731)
 
-[node name="GameStomper1" parent="GameStompersDown" index="0" node_paths=PackedStringArray("model", "collisions", "player_detection") instance=ExtResource("11_ai0uy")]
+[node name="GameStomper1" parent="GameStompersDown" index="0" unique_id=901169422 node_paths=PackedStringArray("model", "collisions", "player_detection") instance=ExtResource("11_ai0uy")]
 transform = Transform3D(9.5, 0, 0, 0, 9.5, 0, 0, 0, 9.5, -16.2532, 0.157278, -3.57238)
 automatic = false
 model = NodePath("stomper")
@@ -724,52 +725,52 @@ player_detection = NodePath("stomper/PlayerDetection")
 raise_position = 1.1
 raise_time = 2.0
 
-[node name="stomper" parent="GameStompersDown/GameStomper1" index="0" instance=ExtResource("12_6hi6f")]
+[node name="stomper" parent="GameStompersDown/GameStomper1" index="0" unique_id=413843428 instance=ExtResource("12_6hi6f")]
 
-[node name="square__stomper" parent="GameStompersDown/GameStomper1/stomper" index="0"]
+[node name="square__stomper" parent="GameStompersDown/GameStomper1/stomper" index="0" unique_id=21717009]
 transform = Transform3D(0.0328084, 0, 0, 0, -1.4341e-09, 0.0328084, 0, -0.0328084, -1.4341e-09, 0, 0, 0)
 
-[node name="head2" parent="GameStompersDown/GameStomper1/stomper/square__stomper/head" index="1"]
+[node name="head2" parent="GameStompersDown/GameStomper1/stomper/square__stomper/head" parent_id_path=PackedInt32Array(413843428, 1578475206) index="1" unique_id=1308469585]
 transform = Transform3D(1.34, 0, 0, 0, 0.9, 4.44089e-15, 0, -6.39489e-15, 0.625, 0, 0, 2.89907)
 
-[node name="shaft" parent="GameStompersDown/GameStomper1/stomper/square__stomper/head" index="2"]
+[node name="shaft" parent="GameStompersDown/GameStomper1/stomper/square__stomper/head" parent_id_path=PackedInt32Array(413843428, 1578475206) index="2" unique_id=417486818]
 transform = Transform3D(1, 0, 0, 0, 1, 5.68434e-14, 0, -1.06581e-14, 6.05, 0, 0, 6.00659)
 
-[node name="shaft_collisions" parent="GameStompersDown/GameStomper1/stomper/square__stomper/head/shaft" index="2"]
+[node name="shaft_collisions" parent="GameStompersDown/GameStomper1/stomper/square__stomper/head/shaft" index="2" unique_id=1055613967]
 visible = false
 
-[node name="head_collisions" parent="GameStompersDown/GameStomper1/stomper/square__stomper/head" index="3"]
+[node name="head_collisions" parent="GameStompersDown/GameStomper1/stomper/square__stomper/head" parent_id_path=PackedInt32Array(413843428, 1578475206) index="3" unique_id=270612879]
 visible = false
 
-[node name="HeadCollision" type="StaticBody3D" parent="GameStompersDown/GameStomper1/stomper" index="1"]
+[node name="HeadCollision" type="StaticBody3D" parent="GameStompersDown/GameStomper1/stomper" index="1" unique_id=1798391678]
 transform = Transform3D(0.044, 0, 0, 0, -1.31134e-09, 0.021, 0, -0.03, -9.17939e-10, 0, 0, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersDown/GameStomper1/stomper/HeadCollision" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersDown/GameStomper1/stomper/HeadCollision" index="0" unique_id=1993935002]
 shape = SubResource("ConcavePolygonShape3D_y4hh3")
 
-[node name="ShaftCollision" type="StaticBody3D" parent="GameStompersDown/GameStomper1/stomper" index="2"]
+[node name="ShaftCollision" type="StaticBody3D" parent="GameStompersDown/GameStomper1/stomper" index="2" unique_id=1090290994]
 transform = Transform3D(0.137931, 0, 0, 0, 0.137931, 0, 0, 0, 0.137931, 0, 0.570041, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersDown/GameStomper1/stomper/ShaftCollision" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersDown/GameStomper1/stomper/ShaftCollision" index="0" unique_id=282929664]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.722046, 0)
 shape = SubResource("CylinderShape3D_fbu62")
 
-[node name="PlayerDetection" type="Area3D" parent="GameStompersDown/GameStomper1/stomper" index="3"]
+[node name="PlayerDetection" type="Area3D" parent="GameStompersDown/GameStomper1/stomper" index="3" unique_id=669236805]
 collision_mask = 2
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersDown/GameStomper1/stomper/PlayerDetection" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersDown/GameStomper1/stomper/PlayerDetection" index="0" unique_id=2016894507]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00112915, -0.00119627, 0.000608981)
 shape = SubResource("BoxShape3D_ewebg")
 
-[node name="ObjectDetection" type="Area3D" parent="GameStompersDown/GameStomper1/stomper" index="4"]
+[node name="ObjectDetection" type="Area3D" parent="GameStompersDown/GameStomper1/stomper" index="4" unique_id=1201913898]
 collision_layer = 32768
 collision_mask = 0
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersDown/GameStomper1/stomper/ObjectDetection" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersDown/GameStomper1/stomper/ObjectDetection" index="0" unique_id=1131126576]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00112915, -0.00119627, 0.000608981)
 shape = SubResource("BoxShape3D_ewebg")
 
-[node name="GameStomper2" parent="GameStompersDown" index="1" node_paths=PackedStringArray("model", "collisions", "player_detection") instance=ExtResource("11_ai0uy")]
+[node name="GameStomper2" parent="GameStompersDown" index="1" unique_id=1173366365 node_paths=PackedStringArray("model", "collisions", "player_detection") instance=ExtResource("11_ai0uy")]
 transform = Transform3D(9.5, 0, 0, 0, 9.5, 0, 0, 0, 9.5, -8.30441, 0.157278, -3.57238)
 automatic = false
 model = NodePath("stomper")
@@ -778,52 +779,52 @@ player_detection = NodePath("stomper/PlayerDetection")
 raise_position = 1.1
 raise_time = 2.0
 
-[node name="stomper" parent="GameStompersDown/GameStomper2" index="0" instance=ExtResource("12_6hi6f")]
+[node name="stomper" parent="GameStompersDown/GameStomper2" index="0" unique_id=2144020030 instance=ExtResource("12_6hi6f")]
 
-[node name="square__stomper" parent="GameStompersDown/GameStomper2/stomper" index="0"]
+[node name="square__stomper" parent="GameStompersDown/GameStomper2/stomper" index="0" unique_id=21717009]
 transform = Transform3D(0.0328084, 0, 0, 0, -1.4341e-09, 0.0328084, 0, -0.0328084, -1.4341e-09, 0, 0, 0)
 
-[node name="head2" parent="GameStompersDown/GameStomper2/stomper/square__stomper/head" index="1"]
+[node name="head2" parent="GameStompersDown/GameStomper2/stomper/square__stomper/head" parent_id_path=PackedInt32Array(2144020030, 1578475206) index="1" unique_id=1308469585]
 transform = Transform3D(1.34, 0, 0, 0, 0.9, 4.44089e-15, 0, -6.39489e-15, 0.625, 0, 0, 2.89907)
 
-[node name="shaft" parent="GameStompersDown/GameStomper2/stomper/square__stomper/head" index="2"]
+[node name="shaft" parent="GameStompersDown/GameStomper2/stomper/square__stomper/head" parent_id_path=PackedInt32Array(2144020030, 1578475206) index="2" unique_id=417486818]
 transform = Transform3D(1, 0, 0, 0, 1, 5.68434e-14, 0, -1.06581e-14, 6.05, 0, 0, 6.00659)
 
-[node name="shaft_collisions" parent="GameStompersDown/GameStomper2/stomper/square__stomper/head/shaft" index="2"]
+[node name="shaft_collisions" parent="GameStompersDown/GameStomper2/stomper/square__stomper/head/shaft" index="2" unique_id=1055613967]
 visible = false
 
-[node name="head_collisions" parent="GameStompersDown/GameStomper2/stomper/square__stomper/head" index="3"]
+[node name="head_collisions" parent="GameStompersDown/GameStomper2/stomper/square__stomper/head" parent_id_path=PackedInt32Array(2144020030, 1578475206) index="3" unique_id=270612879]
 visible = false
 
-[node name="HeadCollision" type="StaticBody3D" parent="GameStompersDown/GameStomper2/stomper" index="1"]
+[node name="HeadCollision" type="StaticBody3D" parent="GameStompersDown/GameStomper2/stomper" index="1" unique_id=2024564754]
 transform = Transform3D(0.044, 0, 0, 0, -1.31134e-09, 0.021, 0, -0.03, -9.17939e-10, 0, 0, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersDown/GameStomper2/stomper/HeadCollision" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersDown/GameStomper2/stomper/HeadCollision" index="0" unique_id=100240601]
 shape = SubResource("ConcavePolygonShape3D_y4hh3")
 
-[node name="ShaftCollision" type="StaticBody3D" parent="GameStompersDown/GameStomper2/stomper" index="2"]
+[node name="ShaftCollision" type="StaticBody3D" parent="GameStompersDown/GameStomper2/stomper" index="2" unique_id=411074057]
 transform = Transform3D(0.137931, 0, 0, 0, 0.137931, 0, 0, 0, 0.137931, 0, 0.570041, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersDown/GameStomper2/stomper/ShaftCollision" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersDown/GameStomper2/stomper/ShaftCollision" index="0" unique_id=2109829979]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.722046, 0)
 shape = SubResource("CylinderShape3D_fbu62")
 
-[node name="PlayerDetection" type="Area3D" parent="GameStompersDown/GameStomper2/stomper" index="3"]
+[node name="PlayerDetection" type="Area3D" parent="GameStompersDown/GameStomper2/stomper" index="3" unique_id=267288128]
 collision_mask = 2
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersDown/GameStomper2/stomper/PlayerDetection" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersDown/GameStomper2/stomper/PlayerDetection" index="0" unique_id=1936254794]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00112915, -0.00119627, 0.000608981)
 shape = SubResource("BoxShape3D_ewebg")
 
-[node name="ObjectDetection" type="Area3D" parent="GameStompersDown/GameStomper2/stomper" index="4"]
+[node name="ObjectDetection" type="Area3D" parent="GameStompersDown/GameStomper2/stomper" index="4" unique_id=1688122555]
 collision_layer = 32768
 collision_mask = 0
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersDown/GameStomper2/stomper/ObjectDetection" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersDown/GameStomper2/stomper/ObjectDetection" index="0" unique_id=584792484]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00112915, -0.00119627, 0.000608981)
 shape = SubResource("BoxShape3D_ewebg")
 
-[node name="GameStomper3" parent="GameStompersDown" index="2" node_paths=PackedStringArray("model", "collisions", "player_detection") instance=ExtResource("11_ai0uy")]
+[node name="GameStomper3" parent="GameStompersDown" index="2" unique_id=275320138 node_paths=PackedStringArray("model", "collisions", "player_detection") instance=ExtResource("11_ai0uy")]
 transform = Transform3D(9.5, 0, 0, 0, 9.5, 0, 0, 0, 9.5, -0.309616, 0.157278, -3.57238)
 automatic = false
 model = NodePath("stomper")
@@ -832,52 +833,52 @@ player_detection = NodePath("stomper/PlayerDetection")
 raise_position = 1.1
 raise_time = 2.0
 
-[node name="stomper" parent="GameStompersDown/GameStomper3" index="0" instance=ExtResource("12_6hi6f")]
+[node name="stomper" parent="GameStompersDown/GameStomper3" index="0" unique_id=1277233238 instance=ExtResource("12_6hi6f")]
 
-[node name="square__stomper" parent="GameStompersDown/GameStomper3/stomper" index="0"]
+[node name="square__stomper" parent="GameStompersDown/GameStomper3/stomper" index="0" unique_id=21717009]
 transform = Transform3D(0.0328084, 0, 0, 0, -1.4341e-09, 0.0328084, 0, -0.0328084, -1.4341e-09, 0, 0, 0)
 
-[node name="head2" parent="GameStompersDown/GameStomper3/stomper/square__stomper/head" index="1"]
+[node name="head2" parent="GameStompersDown/GameStomper3/stomper/square__stomper/head" parent_id_path=PackedInt32Array(1277233238, 1578475206) index="1" unique_id=1308469585]
 transform = Transform3D(1.34, 0, 0, 0, 0.9, 4.44089e-15, 0, -6.39489e-15, 0.625, 0, 0, 2.89907)
 
-[node name="shaft" parent="GameStompersDown/GameStomper3/stomper/square__stomper/head" index="2"]
+[node name="shaft" parent="GameStompersDown/GameStomper3/stomper/square__stomper/head" parent_id_path=PackedInt32Array(1277233238, 1578475206) index="2" unique_id=417486818]
 transform = Transform3D(1, 0, 0, 0, 1, 5.68434e-14, 0, -1.06581e-14, 6.05, 0, 0, 6.00659)
 
-[node name="shaft_collisions" parent="GameStompersDown/GameStomper3/stomper/square__stomper/head/shaft" index="2"]
+[node name="shaft_collisions" parent="GameStompersDown/GameStomper3/stomper/square__stomper/head/shaft" index="2" unique_id=1055613967]
 visible = false
 
-[node name="head_collisions" parent="GameStompersDown/GameStomper3/stomper/square__stomper/head" index="3"]
+[node name="head_collisions" parent="GameStompersDown/GameStomper3/stomper/square__stomper/head" parent_id_path=PackedInt32Array(1277233238, 1578475206) index="3" unique_id=270612879]
 visible = false
 
-[node name="HeadCollision" type="StaticBody3D" parent="GameStompersDown/GameStomper3/stomper" index="1"]
+[node name="HeadCollision" type="StaticBody3D" parent="GameStompersDown/GameStomper3/stomper" index="1" unique_id=1302906451]
 transform = Transform3D(0.044, 0, 0, 0, -1.31134e-09, 0.021, 0, -0.03, -9.17939e-10, 0, 0, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersDown/GameStomper3/stomper/HeadCollision" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersDown/GameStomper3/stomper/HeadCollision" index="0" unique_id=37753257]
 shape = SubResource("ConcavePolygonShape3D_y4hh3")
 
-[node name="ShaftCollision" type="StaticBody3D" parent="GameStompersDown/GameStomper3/stomper" index="2"]
+[node name="ShaftCollision" type="StaticBody3D" parent="GameStompersDown/GameStomper3/stomper" index="2" unique_id=437081572]
 transform = Transform3D(0.137931, 0, 0, 0, 0.137931, 0, 0, 0, 0.137931, 0, 0.570041, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersDown/GameStomper3/stomper/ShaftCollision" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersDown/GameStomper3/stomper/ShaftCollision" index="0" unique_id=1652565075]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.722046, 0)
 shape = SubResource("CylinderShape3D_fbu62")
 
-[node name="PlayerDetection" type="Area3D" parent="GameStompersDown/GameStomper3/stomper" index="3"]
+[node name="PlayerDetection" type="Area3D" parent="GameStompersDown/GameStomper3/stomper" index="3" unique_id=1950386436]
 collision_mask = 2
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersDown/GameStomper3/stomper/PlayerDetection" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersDown/GameStomper3/stomper/PlayerDetection" index="0" unique_id=2132108997]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00112915, -0.00119627, 0.000608981)
 shape = SubResource("BoxShape3D_ewebg")
 
-[node name="ObjectDetection" type="Area3D" parent="GameStompersDown/GameStomper3/stomper" index="4"]
+[node name="ObjectDetection" type="Area3D" parent="GameStompersDown/GameStomper3/stomper" index="4" unique_id=1433483125]
 collision_layer = 32768
 collision_mask = 0
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersDown/GameStomper3/stomper/ObjectDetection" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersDown/GameStomper3/stomper/ObjectDetection" index="0" unique_id=22162672]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00112915, -0.00119627, 0.000608981)
 shape = SubResource("BoxShape3D_ewebg")
 
-[node name="GameStomper4" parent="GameStompersDown" index="3" node_paths=PackedStringArray("model", "collisions", "player_detection") instance=ExtResource("11_ai0uy")]
+[node name="GameStomper4" parent="GameStompersDown" index="3" unique_id=1918732676 node_paths=PackedStringArray("model", "collisions", "player_detection") instance=ExtResource("11_ai0uy")]
 transform = Transform3D(9.5, 0, 0, 0, 9.5, 0, 0, 0, 9.5, 7.80203, 0.157278, -3.57238)
 automatic = false
 model = NodePath("stomper")
@@ -886,52 +887,52 @@ player_detection = NodePath("stomper/PlayerDetection")
 raise_position = 1.1
 raise_time = 2.0
 
-[node name="stomper" parent="GameStompersDown/GameStomper4" index="0" instance=ExtResource("12_6hi6f")]
+[node name="stomper" parent="GameStompersDown/GameStomper4" index="0" unique_id=381523644 instance=ExtResource("12_6hi6f")]
 
-[node name="square__stomper" parent="GameStompersDown/GameStomper4/stomper" index="0"]
+[node name="square__stomper" parent="GameStompersDown/GameStomper4/stomper" index="0" unique_id=21717009]
 transform = Transform3D(0.0328084, 0, 0, 0, -1.4341e-09, 0.0328084, 0, -0.0328084, -1.4341e-09, 0, 0, 0)
 
-[node name="head2" parent="GameStompersDown/GameStomper4/stomper/square__stomper/head" index="1"]
+[node name="head2" parent="GameStompersDown/GameStomper4/stomper/square__stomper/head" parent_id_path=PackedInt32Array(381523644, 1578475206) index="1" unique_id=1308469585]
 transform = Transform3D(1.34, 0, 0, 0, 0.9, 4.44089e-15, 0, -6.39489e-15, 0.625, 0, 0, 2.89907)
 
-[node name="shaft" parent="GameStompersDown/GameStomper4/stomper/square__stomper/head" index="2"]
+[node name="shaft" parent="GameStompersDown/GameStomper4/stomper/square__stomper/head" parent_id_path=PackedInt32Array(381523644, 1578475206) index="2" unique_id=417486818]
 transform = Transform3D(1, 0, 0, 0, 1, 5.68434e-14, 0, -1.06581e-14, 6.05, 0, 0, 6.00659)
 
-[node name="shaft_collisions" parent="GameStompersDown/GameStomper4/stomper/square__stomper/head/shaft" index="2"]
+[node name="shaft_collisions" parent="GameStompersDown/GameStomper4/stomper/square__stomper/head/shaft" index="2" unique_id=1055613967]
 visible = false
 
-[node name="head_collisions" parent="GameStompersDown/GameStomper4/stomper/square__stomper/head" index="3"]
+[node name="head_collisions" parent="GameStompersDown/GameStomper4/stomper/square__stomper/head" parent_id_path=PackedInt32Array(381523644, 1578475206) index="3" unique_id=270612879]
 visible = false
 
-[node name="HeadCollision" type="StaticBody3D" parent="GameStompersDown/GameStomper4/stomper" index="1"]
+[node name="HeadCollision" type="StaticBody3D" parent="GameStompersDown/GameStomper4/stomper" index="1" unique_id=1305778873]
 transform = Transform3D(0.044, 0, 0, 0, -1.31134e-09, 0.021, 0, -0.03, -9.17939e-10, 0, 0, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersDown/GameStomper4/stomper/HeadCollision" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersDown/GameStomper4/stomper/HeadCollision" index="0" unique_id=337328004]
 shape = SubResource("ConcavePolygonShape3D_y4hh3")
 
-[node name="ShaftCollision" type="StaticBody3D" parent="GameStompersDown/GameStomper4/stomper" index="2"]
+[node name="ShaftCollision" type="StaticBody3D" parent="GameStompersDown/GameStomper4/stomper" index="2" unique_id=174982232]
 transform = Transform3D(0.137931, 0, 0, 0, 0.137931, 0, 0, 0, 0.137931, 0, 0.570041, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersDown/GameStomper4/stomper/ShaftCollision" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersDown/GameStomper4/stomper/ShaftCollision" index="0" unique_id=1250535084]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.722046, 0)
 shape = SubResource("CylinderShape3D_fbu62")
 
-[node name="PlayerDetection" type="Area3D" parent="GameStompersDown/GameStomper4/stomper" index="3"]
+[node name="PlayerDetection" type="Area3D" parent="GameStompersDown/GameStomper4/stomper" index="3" unique_id=1350055079]
 collision_mask = 2
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersDown/GameStomper4/stomper/PlayerDetection" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersDown/GameStomper4/stomper/PlayerDetection" index="0" unique_id=219967026]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00112915, -0.00119627, 0.000608981)
 shape = SubResource("BoxShape3D_ewebg")
 
-[node name="ObjectDetection" type="Area3D" parent="GameStompersDown/GameStomper4/stomper" index="4"]
+[node name="ObjectDetection" type="Area3D" parent="GameStompersDown/GameStomper4/stomper" index="4" unique_id=1575043797]
 collision_layer = 32768
 collision_mask = 0
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersDown/GameStomper4/stomper/ObjectDetection" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersDown/GameStomper4/stomper/ObjectDetection" index="0" unique_id=1499396152]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00112915, -0.00119627, 0.000608981)
 shape = SubResource("BoxShape3D_ewebg")
 
-[node name="GameStomper5" parent="GameStompersDown" index="4" node_paths=PackedStringArray("model", "collisions", "player_detection") instance=ExtResource("11_ai0uy")]
+[node name="GameStomper5" parent="GameStompersDown" index="4" unique_id=748119423 node_paths=PackedStringArray("model", "collisions", "player_detection") instance=ExtResource("11_ai0uy")]
 transform = Transform3D(9.5, 0, 0, 0, 9.5, 0, 0, 0, 9.5, 16.5037, 0.157278, -3.57238)
 automatic = false
 model = NodePath("stomper")
@@ -940,79 +941,79 @@ player_detection = NodePath("stomper/PlayerDetection")
 raise_position = 1.1
 raise_time = 2.0
 
-[node name="stomper" parent="GameStompersDown/GameStomper5" index="0" instance=ExtResource("12_6hi6f")]
+[node name="stomper" parent="GameStompersDown/GameStomper5" index="0" unique_id=101994534 instance=ExtResource("12_6hi6f")]
 
-[node name="square__stomper" parent="GameStompersDown/GameStomper5/stomper" index="0"]
+[node name="square__stomper" parent="GameStompersDown/GameStomper5/stomper" index="0" unique_id=21717009]
 transform = Transform3D(0.0328084, 0, 0, 0, -1.4341e-09, 0.0328084, 0, -0.0328084, -1.4341e-09, 0, 0, 0)
 
-[node name="head2" parent="GameStompersDown/GameStomper5/stomper/square__stomper/head" index="1"]
+[node name="head2" parent="GameStompersDown/GameStomper5/stomper/square__stomper/head" parent_id_path=PackedInt32Array(101994534, 1578475206) index="1" unique_id=1308469585]
 transform = Transform3D(1.34, 0, 0, 0, 0.9, 4.44089e-15, 0, -6.39489e-15, 0.625, 0, 0, 2.89907)
 
-[node name="shaft" parent="GameStompersDown/GameStomper5/stomper/square__stomper/head" index="2"]
+[node name="shaft" parent="GameStompersDown/GameStomper5/stomper/square__stomper/head" parent_id_path=PackedInt32Array(101994534, 1578475206) index="2" unique_id=417486818]
 transform = Transform3D(1, 0, 0, 0, 1, 5.68434e-14, 0, -1.06581e-14, 6.05, 0, 0, 6.00659)
 
-[node name="shaft_collisions" parent="GameStompersDown/GameStomper5/stomper/square__stomper/head/shaft" index="2"]
+[node name="shaft_collisions" parent="GameStompersDown/GameStomper5/stomper/square__stomper/head/shaft" index="2" unique_id=1055613967]
 visible = false
 
-[node name="head_collisions" parent="GameStompersDown/GameStomper5/stomper/square__stomper/head" index="3"]
+[node name="head_collisions" parent="GameStompersDown/GameStomper5/stomper/square__stomper/head" parent_id_path=PackedInt32Array(101994534, 1578475206) index="3" unique_id=270612879]
 visible = false
 
-[node name="HeadCollision" type="StaticBody3D" parent="GameStompersDown/GameStomper5/stomper" index="1"]
+[node name="HeadCollision" type="StaticBody3D" parent="GameStompersDown/GameStomper5/stomper" index="1" unique_id=520779097]
 transform = Transform3D(0.044, 0, 0, 0, -1.31134e-09, 0.021, 0, -0.03, -9.17939e-10, 0, 0, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersDown/GameStomper5/stomper/HeadCollision" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersDown/GameStomper5/stomper/HeadCollision" index="0" unique_id=310451651]
 shape = SubResource("ConcavePolygonShape3D_y4hh3")
 
-[node name="ShaftCollision" type="StaticBody3D" parent="GameStompersDown/GameStomper5/stomper" index="2"]
+[node name="ShaftCollision" type="StaticBody3D" parent="GameStompersDown/GameStomper5/stomper" index="2" unique_id=786519235]
 transform = Transform3D(0.137931, 0, 0, 0, 0.137931, 0, 0, 0, 0.137931, 0, 0.570041, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersDown/GameStomper5/stomper/ShaftCollision" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersDown/GameStomper5/stomper/ShaftCollision" index="0" unique_id=979825082]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.722046, 0)
 shape = SubResource("CylinderShape3D_fbu62")
 
-[node name="PlayerDetection" type="Area3D" parent="GameStompersDown/GameStomper5/stomper" index="3"]
+[node name="PlayerDetection" type="Area3D" parent="GameStompersDown/GameStomper5/stomper" index="3" unique_id=1412041579]
 collision_mask = 2
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersDown/GameStomper5/stomper/PlayerDetection" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersDown/GameStomper5/stomper/PlayerDetection" index="0" unique_id=1041606751]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00112915, -0.00119627, 0.000608981)
 shape = SubResource("BoxShape3D_ewebg")
 
-[node name="ObjectDetection" type="Area3D" parent="GameStompersDown/GameStomper5/stomper" index="4"]
+[node name="ObjectDetection" type="Area3D" parent="GameStompersDown/GameStomper5/stomper" index="4" unique_id=1635636700]
 collision_layer = 32768
 collision_mask = 0
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersDown/GameStomper5/stomper/ObjectDetection" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameStompersDown/GameStomper5/stomper/ObjectDetection" index="0" unique_id=908032469]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00112915, -0.00119627, 0.000608981)
 shape = SubResource("BoxShape3D_ewebg")
 
-[node name="DropShadowTemplate" parent="." index="25" instance=ExtResource("16_sfeen")]
+[node name="DropShadowTemplate" parent="." index="25" unique_id=742166113 instance=ExtResource("16_sfeen")]
 unique_name_in_owner = true
 transform = Transform3D(10.57, 0, 0, 0, 1, 0, 0, 0, 6.24, 0, 0.145993, 1.58669)
 visible = false
 
-[node name="SpawnPointA" type="Node3D" parent="." index="26"]
+[node name="SpawnPointA" type="Node3D" parent="." index="26" unique_id=1558452216]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 0.157, -3.395)
 
-[node name="SpawnPointA2" type="Node3D" parent="." index="27"]
+[node name="SpawnPointA2" type="Node3D" parent="." index="27" unique_id=499171171]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0.157, -3.395)
 
-[node name="SpawnPointB" type="Node3D" parent="." index="28"]
+[node name="SpawnPointB" type="Node3D" parent="." index="28" unique_id=561140088]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0.157, 1.551)
 
-[node name="SpawnPointB2" type="Node3D" parent="." index="29"]
+[node name="SpawnPointB2" type="Node3D" parent="." index="29" unique_id=137530657]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 0.157, 1.551)
 
-[node name="ObjsA" type="Node3D" parent="." index="30"]
+[node name="ObjsA" type="Node3D" parent="." index="30" unique_id=1231125063]
 unique_name_in_owner = true
 
-[node name="ObjsB" type="Node3D" parent="." index="31"]
+[node name="ObjsB" type="Node3D" parent="." index="31" unique_id=1263213755]
 unique_name_in_owner = true
 
-[node name="WallReset" parent="." index="32" node_paths=PackedStringArray("default_spawn_point") instance=ExtResource("18_wcv2t")]
+[node name="WallReset" parent="." index="32" unique_id=659313082 node_paths=PackedStringArray("default_spawn_point") instance=ExtResource("18_wcv2t")]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.0363, 0.384232, -1.02397)
 tick_delay = 3.0
@@ -1020,30 +1021,31 @@ base_damage = -4
 damage_name = "Manufacturing Error"
 default_spawn_point = NodePath("../SPAWNPOINT")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="WallReset" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WallReset" index="0" unique_id=1981938637]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0723, 2.90119, 0.0990415)
 shape = SubResource("BoxShape3D_52o88")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="WallReset" index="1"]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="WallReset" index="1" unique_id=1933358180]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43.3443, 2.90119, 0.0990415)
 shape = SubResource("BoxShape3D_52o88")
 
-[node name="BossChestGroup" parent="." index="33" instance=ExtResource("18_qqvjc")]
+[node name="BossChestGroup" parent="." index="33" unique_id=453181924 instance=ExtResource("18_qqvjc")]
 unique_name_in_owner = true
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.60062, -5.69168e-07, -16.673)
 automatic = false
 
-[node name="DeadGoose" parent="." index="34" instance=ExtResource("9_7uhhq")]
+[node name="DeadGoose" parent="." index="34" unique_id=1001992746 instance=ExtResource("9_7uhhq")]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 0.015, 0, 0, 0, 1, 0, 0.001, -10.916)
 visible = false
+level_range_offset = 2
 dna = ExtResource("10_obb3n")
 skelecog_chance = 0
 
-[node name="DropShadow" parent="DeadGoose/Body" index="0"]
+[node name="DropShadow" parent="DeadGoose/Body" parent_id_path=PackedInt32Array(1001992746, 1754564583) index="0" unique_id=627621486]
 force_hide = true
 
-[node name="SkipButton" parent="." index="35" instance=ExtResource("21_bn64l")]
+[node name="SkipButton" parent="." index="35" unique_id=98338654 instance=ExtResource("21_bn64l")]
 unique_name_in_owner = true
 visible = false
 anchors_preset = 3
@@ -1064,9 +1066,9 @@ font_size = 36.0
 text = "Skip"
 label_settings = SubResource("LabelSettings_jsk7n")
 
-[node name="DebugPlayerPositionMarker" parent="." index="36" instance=ExtResource("21_jkjqs")]
+[node name="DebugPlayerPositionMarker" parent="." index="36" unique_id=476112014 instance=ExtResource("21_jkjqs")]
 
-[node name="TextSprawl" parent="." index="37" instance=ExtResource("22_bn64l")]
+[node name="TextSprawl" parent="." index="37" unique_id=1373794581 instance=ExtResource("22_bn64l")]
 unique_name_in_owner = true
 visible = false
 offset_top = 153.0

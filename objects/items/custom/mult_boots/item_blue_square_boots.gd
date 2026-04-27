@@ -1,7 +1,7 @@
 extends ItemScript
 
 const BOOST_STATS :={
-	'defense': 0.2
+	'defense': 0.25
 }
 var multipliers: Array[StatMultiplier]
 

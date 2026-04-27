@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://vxv6u1wubi8"]
 
 [ext_resource type="Script" uid="uid://cocerctap73uk" path="res://objects/items/resources/accessories/shoes/shoe_model.gd" id="1_x3bpn"]
-[ext_resource type="Texture2D" uid="uid://dibtqnksk163v" path="res://models/accessories/shoe_textures/shoes/tt_t_chr_avt_acc_sho_converseStyleBlack.png" id="2_pdghn"]
+[ext_resource type="Texture2D" uid="uid://qjinojp6r8jt" path="res://models/accessories/shoe_textures/shoes/tt_t_chr_avt_acc_sho_maryJaneShoesRed.png" id="2_pdghn"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lncwb"]
 resource_name = "tt_t_chr_avt_acc_sho_docMartinBootsGreenShader"

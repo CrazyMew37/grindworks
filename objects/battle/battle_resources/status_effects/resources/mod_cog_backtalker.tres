@@ -9,7 +9,7 @@ quality = 0
 rounds = -1
 icon = ExtResource("1_h6old")
 description = "Gains +1 move for every time they are targeted in the round
-0.7x Damage multiplier"
+0.66x Damage multiplier"
 status_name = "Back-Talker"
 id = 49
 metadata/_custom_type_script = "uid://df7irk63ikx4k"

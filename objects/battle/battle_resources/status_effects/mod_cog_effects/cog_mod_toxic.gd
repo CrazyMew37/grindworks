@@ -43,6 +43,8 @@ func apply_effect(effect_tag: String) -> void:
 		"budget_cuts": 
 			effect.track_name = get_random_track().track_name
 			if player.gags_cost_beans: effect.penalty = 1
+		"aftershock": effect.amount = randi_range(ceili(Util.get_player().stats.max_hp * 0.04),ceili(Util.get_player().stats.max_hp * 0.08))
+		"poison": effect.amount = randi_range(ceili(Util.get_player().stats.max_hp * 0.03),ceili(Util.get_player().stats.max_hp * 0.06))
 	
 	manager.add_status_effect(effect)
 

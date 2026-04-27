@@ -6,7 +6,7 @@ var turns_added := 0
 func apply() -> void:
 	manager.s_round_started.connect(on_round_start)
 	manager.s_round_ended.connect(on_round_end)
-	manager.battle_stats[target].damage *= 0.7
+	manager.battle_stats[target].damage *= 0.66
 
 func on_round_start(actions: Array[BattleAction]) -> void:
 	var insert_index := 0

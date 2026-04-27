@@ -18,6 +18,6 @@ func _physics_process(delta: float) -> void:
 		queue_free()
 
 func try_stomp(area: Area3D) -> void:
-	if area.name == "ObjectDetection":
+	if area.name == "ObjectDetection" and is_button() == false:
 		s_stomped.emit(self, area.get_parent().get_parent())
 		queue_free()

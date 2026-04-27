@@ -29,4 +29,3 @@ func randomize_action(action: ToonAttack) -> void:
 		action.targets = [BattleService.ongoing_battle.cogs.pick_random()]
 		if not action.targets[0] == prev_targets[0]:
 			Util.get_player().boost_queue.queue_text("Spaced out!", Color(0.0, 0.602, 0.186))
-	action.special_action_exclude = true
