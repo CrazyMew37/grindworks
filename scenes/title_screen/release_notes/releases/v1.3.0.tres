@@ -27,5 +27,13 @@ More Battle Speeds have been added (From Endless, but added in a smaller amount)
 Added 13 new items (All but one are shoes), 16 new achievements (Half involving Endless), and 3 Pocket Pranks.
 Fixed a bug with the health colors
 [TITLE] End Note
-This may not be the perfect fork, but I hope I can at least leave the game on a high note. Cheers! <3"
+This may not be the perfect fork, but I hope I can at least leave the game on a high note. Cheers! <3
+[TITLE] Hotfix #1
+Fixed Yellow Moles not being able to be hit while invincible
+Fixed Partner Toons clipping through the floor during the Ground Floor Investor Fight
+Fixed Partner Toons' Teleport Holes being wonky
+Made a secret achievement 4 times more likely
+[TITLE] Hotfix #2
+Made the 2D Plane Cog larger (Scale of 5.25 -> 7) and made its filtering Nearest for pixel art
+Removed a debug log involving a secret achievement. Sorry about flooding your logs!"
 metadata/_custom_type_script = "uid://d1j0hh6tsgy0r"

@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://ci1am4p7axbxy" path="res://objects/modules/facility_room.gd" id="5_u4jwt"]
 [ext_resource type="Script" uid="uid://brjywdpat6vxg" path="res://scenes/game_floor/department_floors/department_floor.gd" id="6_28woh"]
 [ext_resource type="Script" uid="uid://cxvrtrods5hgg" path="res://scenes/game_floor/floor_variants/floor_variant.gd" id="7_lbbwb"]
+[ext_resource type="Script" uid="uid://nt3ensnu8x74" path="res://mods-unpacked/CrazyMew37-CrazyCrossovers/extensions/scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_yoyle_metal.gd" id="7_xy8px"]
 
 [sub_resource type="Resource" id="Resource_iq66s"]
 script = ExtResource("5_u4jwt")
@@ -102,7 +103,7 @@ room = "res://objects/modules/office/variants/office_skull_finder_room.tscn"
 
 [sub_resource type="Resource" id="Resource_j433n"]
 script = ExtResource("6_28woh")
-entrances = PackedStringArray("res://objects/modules/office/variants/office_skull_finder_room.tscn")
+entrances = PackedStringArray("res://objects/modules/office/base_rooms/office_entrance.tscn")
 battle_rooms = Array[ExtResource("5_u4jwt")]([SubResource("Resource_iq66s"), SubResource("Resource_ivha5"), SubResource("Resource_cjt6j"), SubResource("Resource_c6aj3"), SubResource("Resource_algo1"), SubResource("Resource_tqiyo"), SubResource("Resource_t3rv6")])
 obstacle_rooms = Array[ExtResource("5_u4jwt")]([SubResource("Resource_c5lr0"), SubResource("Resource_27xfg"), SubResource("Resource_ivaqa"), SubResource("Resource_k7aay"), SubResource("Resource_fi4us"), SubResource("Resource_s0utw"), SubResource("Resource_ls1nk"), SubResource("Resource_sk6r2")])
 connectors = PackedStringArray("res://objects/modules/office/base_rooms/connector1.tscn", "res://objects/modules/office/base_rooms/connector2.tscn", "res://objects/modules/office/base_rooms/office_connector_buried.tscn", "res://objects/modules/office/base_rooms/office_connector_foyer.tscn", "res://objects/modules/office/base_rooms/office_connector_stairs.tscn")
@@ -117,6 +118,7 @@ script = ExtResource("7_lbbwb")
 floor_type = SubResource("Resource_j433n")
 floor_name = "D.A. Office"
 cog_pool = ExtResource("3_xy8px")
+modifiers = Array[Script]([ExtResource("7_xy8px")])
 alt_floor = ExtResource("2_sq3fq")
 is_alt_floor = true
 floor_icons = Array[Texture2D]([ExtResource("4_2ew23")])

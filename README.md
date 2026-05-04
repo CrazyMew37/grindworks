@@ -1,11 +1,11 @@
-# Toontown: The Grindworks
+# Toontown: The Grindworks (CrazyMew37 Edition)
 
 
-This is a single-player game based on Disney's Toontown Online developed with the Godot Engine.
+This was a single-player game based on Disney's Toontown Online developed with the Godot Engine. This repository has been forked and given updates to make a final/definitive version of the game.
 
 ## Requirements
 
-- Godot v4.5.1
+- Godot v4.6.2
 
 ## Disclaimer
 - We are under no obligation to:
@@ -22,22 +22,16 @@ Enjoy!
 ## Credits
 - Evan
   - Project Lead, Programmer & Designer
-- Sketched
-  - Programmer & Game Designer
 - squiddy
   - Programmer, 3D & Texture Artist
 - TheRandomDog
   - Programmer
-- Bludoo
-  - Programmer & Game Designer
 - Kel'Block
   - 3D Artist, Animator & Texture Artist
 - Elisei
   - 3D Artist & Texture Artist
 - neoNote
   - 3D Artist & Texture Artist, Sound & Game Designer
-- Treetop Legend
-  - 3D Artist, Animator & Rigging
 - ROTTIEBONES
   - 3D Artist
 - Inso
@@ -80,10 +74,10 @@ Enjoy!
   - Quality Assurance
 - Stripey
   - Marketing & Quality Assurance
-- Greetings
-  - Consultant
 - Lappy
   - Lappy?
+- CrazyMew37
+  - Mod Creator, Maintainer, & Idiot
 - Toontown: Event Horizon
   - Cog Rigs
 - Godot Mod Loader
@@ -91,13 +85,9 @@ Enjoy!
 ### Special Thanks
 - Alder (Beastnode)
 - AlexLH
-- Daisy
-- DoggoMafia
 - Erin (Cosmic)
-- Evelyn (Velvet Petunia)
 - Goatcanon
 - Jackyland
-- Just a BLU Toon
 - Niji
 - Princess Sandy
 - You! Yes, really.

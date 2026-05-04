@@ -551,7 +551,7 @@ _data = {
 &"zstart": ExtResource("114_nadfj")
 }
 
-[node name="tt_a_chr_dgm_shorts_legs_1000" node_paths=PackedStringArray("animator", "skeleton", "legs", "feet", "boots_short", "boots_long", "shoes", "hip_bone", "shadow_bone") instance=ExtResource("1_xnekt")]
+[node name="tt_a_chr_dgm_shorts_legs_1000" unique_id=1327834495 node_paths=PackedStringArray("animator", "skeleton", "legs", "feet", "boots_short", "boots_long", "shoes", "hip_bone", "shadow_bone") instance=ExtResource("1_xnekt")]
 script = ExtResource("2_ci782")
 animator = NodePath("AnimationPlayer")
 skeleton = NodePath("dog_legs_m/Skeleton3D")
@@ -563,42 +563,40 @@ shoes = NodePath("dog_legs_m/Skeleton3D/shoes")
 hip_bone = NodePath("dog_legs_m/Skeleton3D/HipBone")
 shadow_bone = NodePath("dog_legs_m/Skeleton3D/ShadowBone")
 
-[node name="Skeleton3D" parent="dog_legs_m" index="3"]
+[node name="Skeleton3D" parent="dog_legs_m" parent_id_path=PackedInt32Array(1976579674) index="3" unique_id=667472078]
 transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
 motion_scale = 125.0
-bones/0/position = Vector3(-0.263031, 2.31196, 0.239798)
-bones/0/rotation = Quaternion(0.578527, 0.406399, 0.579026, 0.406049)
+bones/0/position = Vector3(-0.26303124, 2.3119624, 0.2397975)
+bones/0/rotation = Quaternion(0.57852685, 0.40639892, 0.57902586, 0.40604892)
 bones/0/scale = Vector3(1, 1, 1)
-bones/1/position = Vector3(-1.12418, -2.173e-08, -8.89501e-09)
-bones/1/rotation = Quaternion(3.98164e-10, -0.000823165, -0.277713, 0.960664)
+bones/1/position = Vector3(-1.1241788, -2.173e-08, -8.895013e-09)
+bones/1/rotation = Quaternion(3.9816386e-10, -0.00082316477, -0.27771294, 0.96066374)
 bones/1/scale = Vector3(1, 1, 1)
-bones/2/position = Vector3(-1.13603, -5.79985e-09, 6.3271e-09)
-bones/2/rotation = Quaternion(0.000333344, 0.000265991, 0.779201, 0.626774)
+bones/2/position = Vector3(-1.1360275, -5.7998504e-09, 6.3270997e-09)
+bones/2/rotation = Quaternion(0.00033334398, 0.00026599102, 0.779201, 0.626774)
 bones/2/scale = Vector3(1, 1, 1)
-bones/3/position = Vector3(-0.517829, 3.97717e-07, 3.95117e-07)
+bones/3/position = Vector3(-0.51782876, 3.9771749e-07, 3.951175e-07)
 bones/3/rotation = Quaternion(-3.12363e-28, -2.64698e-23, 0, 1)
-bones/4/position = Vector3(0.263031, 2.31196, 0.239798)
-bones/4/rotation = Quaternion(-0.406049, 0.579026, -0.406399, 0.578527)
+bones/4/position = Vector3(0.26303124, 2.3119624, 0.2397975)
+bones/4/rotation = Quaternion(-0.4060489, 0.57902586, -0.40639892, 0.57852685)
 bones/4/scale = Vector3(1, 1, 1)
-bones/5/position = Vector3(1.12418, 2.173e-08, 8.89501e-09)
-bones/5/rotation = Quaternion(3.98164e-10, -0.000823165, -0.277713, 0.960664)
+bones/5/position = Vector3(1.1241788, 2.173e-08, 8.895013e-09)
+bones/5/rotation = Quaternion(3.9816386e-10, -0.00082316477, -0.27771294, 0.96066374)
 bones/5/scale = Vector3(1, 1, 1)
-bones/6/position = Vector3(1.13603, 5.79985e-09, -6.3271e-09)
-bones/6/rotation = Quaternion(0.000333344, 0.000265991, 0.779201, 0.626774)
+bones/6/position = Vector3(1.1360275, 5.7998504e-09, -6.3270997e-09)
+bones/6/rotation = Quaternion(0.00033334398, 0.00026599102, 0.779201, 0.626774)
 bones/6/scale = Vector3(1, 1, 1)
-bones/7/position = Vector3(0.517829, -3.97717e-07, -3.95117e-07)
+bones/7/position = Vector3(0.51782876, -3.9771749e-07, -3.951175e-07)
 bones/7/rotation = Quaternion(-3.12363e-28, -5.87747e-39, 9.86076e-32, 1)
 
-[node name="HipBone" type="BoneAttachment3D" parent="dog_legs_m/Skeleton3D" index="5"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.3119, 0.077985)
+[node name="HipBone" type="BoneAttachment3D" parent="dog_legs_m/Skeleton3D" index="5" unique_id=2133429828]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.3119001, 0.077985)
 bone_name = "joint_hips1"
 bone_idx = 8
 
-[node name="ShadowBone" type="BoneAttachment3D" parent="dog_legs_m/Skeleton3D" index="6"]
+[node name="ShadowBone" type="BoneAttachment3D" parent="dog_legs_m/Skeleton3D" index="6" unique_id=998196350]
 bone_name = "joint_shadow1"
 bone_idx = 10
 
-[node name="AnimationPlayer" parent="." index="1"]
-libraries = {
-&"": SubResource("AnimationLibrary_mquqc")
-}
+[node name="AnimationPlayer" parent="." index="1" unique_id=1702889876]
+libraries/ = SubResource("AnimationLibrary_mquqc")

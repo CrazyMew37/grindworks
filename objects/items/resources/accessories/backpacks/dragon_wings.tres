@@ -37,7 +37,7 @@ ui_cam_offset = 0.15
 item_name = "Dragon Wings"
 item_description = "Your wealth is your power"
 big_description = "Shops have less items
-Every 5 jellybeans in your bank gives:
+Every 10 jellybeans in your bank gives:
 + 1% Damage
 + 1% Defense
 + 1% Evasiveness

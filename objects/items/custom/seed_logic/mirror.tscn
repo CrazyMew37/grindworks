@@ -7,12 +7,12 @@
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_bxp52"]
 shader = ExtResource("1_akdso")
 
-[node name="Mirror" type="CanvasLayer"]
+[node name="Mirror" type="CanvasLayer" unique_id=586884087]
 process_mode = 3
 layer = 128
 script = ExtResource("1_bxp52")
 
-[node name="FakeMouse" type="TextureRect" parent="."]
+[node name="FakeMouse" type="TextureRect" parent="." unique_id=1068302817]
 unique_name_in_owner = true
 texture_filter = 3
 offset_right = 22.0
@@ -21,7 +21,7 @@ mouse_filter = 2
 texture = ExtResource("2_ly27x")
 expand_mode = 1
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=95176516]
 material = SubResource("ShaderMaterial_bxp52")
 anchors_preset = 15
 anchor_right = 1.0

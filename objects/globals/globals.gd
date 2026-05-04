@@ -631,63 +631,101 @@ signal s_quest_completed
 ## Custom Seeds
 ## Input one of these to get a wacky effect
 var custom_seeds: Dictionary[String, Variant] = {
-	# Guaranteed Motorcycle Boots (hi boots)
+	# Guaranteed Motorcycle Boots (hi boots) - 1
 	"boots": "res://objects/items/resources/custom_seeds/seed_boots.tres",
 	
-	# Start with 1 laff, terrible stats
+	# Start with 1 laff, terrible stats - 2
 	"maxtoon": "res://objects/items/resources/custom_seeds/seed_maxtoon.tres",
 	
-	# Start with +3 Anomaly Boost
+	# Start with +3 Anomaly Boost - 3
 	"anomalous": "res://objects/items/resources/custom_seeds/seed_anomalous.tres",
 	
-	# Start with a 50% Defense Mult & 200% Evasiveness Mult
+	# Start with a 50% Defense Mult & 200% Evasiveness Mult - 4
 	"fedora": "res://objects/items/resources/custom_seeds/seed_fedora.tres",
 	
-	# Play with a mirrored camera
+	# Play with a mirrored camera - 5
 	"mirror": "res://objects/items/resources/custom_seeds/seed_mirror.tres",
 	
-	# Fake "Connecting..." screen
+	# Fake "Connecting..." screen - 6
 	"multiplayer": "res://objects/items/resources/custom_seeds/seed_multiplayer.tres",
 	
-	# All grunt Cogs are proxies
+	# All grunt Cogs are proxies - 7
 	"proxy": "res://objects/items/resources/custom_seeds/seed_proxy.tres",
 	
-	# Haunted by the phrase: "I'm neoNote."
+	# Haunted by the phrase: "I'm neoNote." - 8
 	"neonote": "res://objects/items/resources/custom_seeds/seed_neonote.tres",
 	
-	# Mouse shopkeeper every floor :)
+	# Mouse shopkeeper every floor :) - 9
 	"mouse": "res://objects/items/resources/custom_seeds/seed_mouse.tres",
 	
-	# All floors have the blackout effect
+	# All floors have the blackout effect - 10
 	"blackout": "res://objects/items/resources/custom_seeds/seed_blackout.tres",
 	
-	# All floors have the low gravity effect
+	# All floors have the low gravity effect - 11
 	"zerog": "res://objects/items/resources/custom_seeds/seed_zerog.tres",
 	
-	# Resistance Ranger Ripley is your shopkeeper
+	# Resistance Ranger Ripley is your shopkeeper - 12
 	"ooowo": "res://objects/items/resources/custom_seeds/seed_ooowo.tres",
 	
-	# Collision Blunder Counter
+	# Collision Blunder Counter - 13
 	"kelblock": "res://objects/items/resources/custom_seeds/seed_kelblock.tres",
 	
-	# Sends you to heaven
-	"sketched": "res://objects/items/resources/custom_seeds/seed_sketched.tres",
+	# Sends you to heaven - 14
+	"2014": "res://objects/items/resources/custom_seeds/seed_sketched.tres",
 	
-	# Purple filter, Toon emits a purple glow
+	# Purple filter, Toon emits a purple glow - 15
 	"lavender": "res://objects/items/resources/custom_seeds/seed_lavender.tres",
 	
-	# Golden Goose is added as a grunt Cog
+	# Golden Goose is added as a grunt Cog - 16
 	"misty": "res://objects/items/resources/custom_seeds/seed_misty.tres",
 	
-	# Mirrored AND Blackout (we hate you)
+	# Mirrored AND Blackout (we hate you) - 17
 	"blackmirror": [
 		"res://objects/items/resources/custom_seeds/seed_blackout.tres",
 		"res://objects/items/resources/custom_seeds/seed_mirror.tres"
 	],
 	
-	# Mirrored AND Sketched (we love you)
+	# Mirrored AND 2014 (we love you) - 18
 	"whitemirror": [
 		"res://objects/items/resources/custom_seeds/seed_sketched.tres",
 		"res://objects/items/resources/custom_seeds/seed_mirror.tres"
-	]
+	],
+	
+	# Applies the fog from the frozen D.A. Office - 19
+	"fog": "res://objects/items/resources/custom_seeds/seed_whiteout.tres",
+	
+	# Immediately start with 0 HP - 20
+	"sad": "res://objects/items/resources/custom_seeds/seed_green.tres",
+	
+	# Turns your into a horse + horse shopkeeper every floor :D - 21
+	"neigh": "res://objects/items/resources/custom_seeds/seed_horse.tres",
+	
+	# Start with 1,000,000 Jellybeans. You can't obtain dragon wings tho. - 22
+	"jellybeans": "res://objects/items/resources/custom_seeds/seed_money.tres",
+	
+	# Solicitor is added as a grunt cog - 23
+	"solicitor": "res://objects/items/resources/custom_seeds/seed_solicitor.tres",
+	
+	# it's me - 24
+	"1987": "res://objects/items/resources/custom_seeds/seed_goldenfreddy.tres",
+	
+	# I think the seed's name explains everything here. - 25
+	"help": [
+		"res://objects/items/resources/custom_seeds/seed_boots.tres",
+		"res://objects/items/resources/custom_seeds/seed_anomalous.tres",
+		"res://objects/items/resources/custom_seeds/seed_fedora.tres",
+		"res://objects/items/resources/custom_seeds/seed_mirror.tres",
+		"res://objects/items/resources/custom_seeds/seed_proxy.tres",
+		"res://objects/items/resources/custom_seeds/seed_neonote.tres",
+		"res://objects/items/resources/custom_seeds/seed_blackout.tres",
+		"res://objects/items/resources/custom_seeds/seed_zerog.tres",
+		"res://objects/items/resources/custom_seeds/seed_sketched.tres",
+		"res://objects/items/resources/custom_seeds/seed_kelblock.tres",
+		"res://objects/items/resources/custom_seeds/seed_lavender.tres",
+		"res://objects/items/resources/custom_seeds/seed_misty.tres",
+		"res://objects/items/resources/custom_seeds/seed_horse.tres",
+		"res://objects/items/resources/custom_seeds/seed_money.tres",
+		"res://objects/items/resources/custom_seeds/seed_solicitor.tres",
+		"res://objects/items/resources/custom_seeds/seed_help.tres",
+	],
 }

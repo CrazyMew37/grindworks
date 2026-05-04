@@ -13,7 +13,8 @@
 [ext_resource type="Resource" uid="uid://ba7yjm7wpt1fu" path="res://objects/cog/presets/bossbot/union_buster.tres" id="11_hankr"]
 [ext_resource type="Resource" uid="uid://cfgq4sxagf8fo" path="res://objects/cog/presets/misc/slender_cog.tres" id="11_n4c13"]
 [ext_resource type="Resource" uid="uid://c4f4cuaxtbd46" path="res://objects/cog/presets/cashbot/golden_goose.tres" id="12_6e5qs"]
+[ext_resource type="Resource" uid="uid://cd3qkjat0f3g5" path="res://objects/cog/presets/lawbot/solicitor.tres" id="13_o28uy"]
 
 [resource]
 script = ExtResource("2_jyne8")
-cogs = Array[ExtResource("1_j6060")]([ExtResource("4_k6h68"), ExtResource("6_dk2r6"), ExtResource("7_0uabd"), ExtResource("10_drieb"), ExtResource("11_n4c13"), ExtResource("7_lltse"), ExtResource("8_gbbjp"), ExtResource("9_cyp07"), ExtResource("10_s5jla"), ExtResource("11_hankr"), ExtResource("12_6e5qs")])
+cogs = Array[ExtResource("1_j6060")]([ExtResource("4_k6h68"), ExtResource("6_dk2r6"), ExtResource("7_0uabd"), ExtResource("10_drieb"), ExtResource("11_n4c13"), ExtResource("7_lltse"), ExtResource("8_gbbjp"), ExtResource("9_cyp07"), ExtResource("10_s5jla"), ExtResource("11_hankr"), ExtResource("12_6e5qs"), ExtResource("13_o28uy")])

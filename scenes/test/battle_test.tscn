@@ -3,16 +3,20 @@
 [ext_resource type="PackedScene" uid="uid://cv2afui5p28af" path="res://objects/modules/mint/base_rooms/mint_diamond_room.tscn" id="1_h2rqk"]
 [ext_resource type="PackedScene" uid="uid://direah3lbjuu5" path="res://objects/battle/battle_node/battle_node.tscn" id="2_alx7d"]
 [ext_resource type="PackedScene" uid="uid://dflwjcy6fj0av" path="res://objects/cog/cog.tscn" id="3_okjj0"]
-[ext_resource type="Resource" uid="uid://q8ev1hag3yvy" path="res://objects/cog/presets/sellbot/mr_hollywood.tres" id="4_16xtn"]
 [ext_resource type="PackedScene" uid="uid://wpoc3xs1yy0" path="res://objects/player/player.tscn" id="4_fefq8"]
 [ext_resource type="Resource" uid="uid://bkkkabh3sre13" path="res://objects/cog/presets/cashbot/bookkeeper.tres" id="4_ouruu"]
 [ext_resource type="Resource" uid="uid://bkkauwbcsnukc" path="res://objects/cog/presets/sellbot/traffic_manager.tres" id="5_4p2an"]
 [ext_resource type="Script" uid="uid://o2fe7ud1faj6" path="res://objects/battle/battle_resources/stats.gd" id="5_wgpvb"]
 [ext_resource type="Script" uid="uid://5uwfsntxdag6" path="res://objects/items/classes/item_active.gd" id="6_1xuw6"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="6_c5wpy"]
 [ext_resource type="Script" uid="uid://c8kas2j4io1jh" path="res://objects/toon/clothing/toon_bottoms.gd" id="6_sp5d7"]
+[ext_resource type="Resource" uid="uid://dimhdaxn1tyey" path="res://objects/battle/battle_resources/cog_attacks/resources/tee_off.tres" id="7_8oksl"]
 [ext_resource type="Script" uid="uid://yg7gxug4rab" path="res://objects/toon/toon_dna.gd" id="7_42kli"]
+[ext_resource type="Resource" uid="uid://c24yy1wqmg24o" path="res://objects/battle/battle_resources/cog_attacks/resources/razzle_dazzle.tres" id="8_pnjbe"]
 [ext_resource type="Script" uid="uid://dfqwh4jmdy0iw" path="res://objects/toon/clothing/toon_shirt.gd" id="8_suqae"]
 [ext_resource type="Script" uid="uid://b6b6pfoqyolr" path="res://objects/battle/battle_resources/gag_loadouts/track.gd" id="9_4i7n6"]
+[ext_resource type="Resource" uid="uid://wwf1notai2f8" path="res://objects/battle/battle_resources/cog_attacks/resources/power_trip.tres" id="9_bbsip"]
+[ext_resource type="Script" uid="uid://yc46vrmyfql1" path="res://objects/cog/cog_dna.gd" id="10_rkuo8"]
 [ext_resource type="Resource" uid="uid://5dld88ul3rb5" path="res://objects/battle/battle_resources/gag_loadouts/gag_tracks/trap.tres" id="11_hy8sk"]
 [ext_resource type="Resource" uid="uid://dqldfsmn7g606" path="res://objects/battle/battle_resources/gag_loadouts/gag_tracks/lure.tres" id="12_ex1ui"]
 [ext_resource type="Script" uid="uid://ts8xpgftpmty" path="res://objects/player/character.gd" id="13_d0tkq"]
@@ -34,6 +38,23 @@
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5pfdn"]
 size = Vector3(14.6639, 5.65576, 10.2309)
+
+[sub_resource type="Resource" id="Resource_xg5w3"]
+script = ExtResource("10_rkuo8")
+cog_name = "Mr. Hollywood"
+head = "res://models/cogs/heads/yesman.glb"
+scale = 7.0
+head_textures = PackedStringArray("res://models/cogs/heads/yesman_tt_t_ene_hed_yesMan.png")
+hand_color = Color(0.960784, 0.960784, 0.960784, 1)
+attacks = Array[ExtResource("6_c5wpy")]([ExtResource("7_8oksl"), ExtResource("8_pnjbe"), ExtResource("9_bbsip")])
+level_low = 8
+level_high = 20
+baked_status_effects = PackedStringArray("res://objects/battle/battle_resources/status_effects/resources/mod_cog_undercutter.tres", "res://objects/battle/battle_resources/status_effects/resources/mod_cog_copycat_brand.tres", "res://objects/battle/battle_resources/status_effects/resources/mod_cog_creditor.tres")
+battle_phrases = Array[String](["I'm ready to rock and roll your end credits.", "Today the role of defeated Toon will be played by - YOU!", "Lights, camera, action!", "I told you not to call me.", "Are you ready for your final scene?", "I hope you don't forget your lines.", "This scene will go on the cutting room floor.", "There's no business like it!", "Let's start rolling."])
+external_assets = {
+&"head_model": "",
+&"head_textures": []
+}
 
 [sub_resource type="Resource" id="Resource_4yraj"]
 script = ExtResource("5_wgpvb")
@@ -189,7 +210,7 @@ cogs = [NodePath("Cog")]
 
 [node name="Cog" parent="Root Scene/BattleNode2" unique_id=416790592 instance=ExtResource("3_okjj0")]
 use_floor_pool = false
-dna = ExtResource("4_16xtn")
+dna = SubResource("Resource_xg5w3")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Root Scene/BattleNode2" unique_id=554348015]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13974, 2.82789, 1.11899)

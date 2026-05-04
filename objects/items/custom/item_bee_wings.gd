@@ -21,7 +21,7 @@ func on_item_removed() -> void:
 
 ## Sync multipliers to current speed amount
 func on_speed_changed(speed: float) -> void:
-	multiplier.amount = maxf(0.0, (speed - 1.0) * 0.5)
+	multiplier.amount = maxf(0.0, (speed - 1.0) * 0.25)
 
 func create_multiplier() -> void:
 	multiplier = StatMultiplier.new()

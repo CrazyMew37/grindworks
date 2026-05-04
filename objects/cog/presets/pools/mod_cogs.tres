@@ -32,8 +32,8 @@
 [ext_resource type="Resource" uid="uid://dtwykqoi2e6nc" path="res://objects/cog/presets/lawbot/back_burner.tres" id="29_u2d4l"]
 [ext_resource type="Resource" uid="uid://b7vilbdjl61gg" path="res://objects/cog/presets/lawbot/propagandist.tres" id="30_kh2ax"]
 [ext_resource type="Resource" uid="uid://bk2e5qycs3c46" path="res://objects/cog/presets/bossbot/stickler.tres" id="31_8yp2a"]
-[ext_resource type="Resource" uid="uid://cigwiwiur1bho" path="res://objects/cog/presets/sellbot/live_wire.tres" id="32_ddr5j"]
-[ext_resource type="Resource" uid="uid://cr7ich07ytdmu" path="res://objects/cog/presets/cashbot/cash_cow.tres" id="33_u8g5k"]
+[ext_resource type="Resource" uid="uid://cigwiwiur1bho" path="res://objects/cog/presets/sellbot/cross_seller.tres" id="32_ddr5j"]
+[ext_resource type="Resource" uid="uid://cr7ich07ytdmu" path="res://objects/cog/presets/cashbot/stockholder.tres" id="33_u8g5k"]
 
 [resource]
 script = ExtResource("2_ysh36")

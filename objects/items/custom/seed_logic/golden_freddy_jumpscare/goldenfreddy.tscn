@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://lbu5ab1j31vv"]
+
+[ext_resource type="Script" uid="uid://rfi471mywg5r" path="res://objects/items/custom/seed_logic/golden_freddy_jumpscare/goldenfreddy.gd" id="1_5ricy"]
+[ext_resource type="PackedScene" uid="uid://d1qs8nf0s0y85" path="res://objects/general_ui/ui_panel/ui_panel.tscn" id="2_rskq5"]
+[ext_resource type="Texture2D" uid="uid://detdlge3yai68" path="res://objects/items/custom/seed_logic/golden_freddy_jumpscare/goldenfreddyjumpscare.png" id="3_2u4ln"]
+
+[node name="Authenticating" type="Control" unique_id=71168325]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5ricy")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=933241026]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.1882353, 0.1882353, 0.1882353, 1)
+
+[node name="ConnectingPanel" parent="." unique_id=2138766392 instance=ExtResource("2_rskq5")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+script = null
+
+[node name="Panel" parent="ConnectingPanel" index="0"]
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+pivot_offset = Vector2(154.25, 132)
+texture = ExtResource("3_2u4ln")
+region_rect = Rect2(0, 0, 1000, 563)
+
+[node name="Title" parent="ConnectingPanel/Panel" index="0"]
+text = ""
+
+[node name="Body" parent="ConnectingPanel/Panel" index="1"]
+offset_top = -139.0
+offset_bottom = 123.0
+text = ""
+
+[node name="CancelButton" parent="ConnectingPanel/Panel" index="2"]
+visible = false
+font_size = 36.0
+
+[editable path="ConnectingPanel"]

@@ -4,9 +4,9 @@
 [ext_resource type="PackedScene" uid="uid://dflwjcy6fj0av" path="res://objects/cog/cog.tscn" id="2_gqgwy"]
 [ext_resource type="Script" uid="uid://dsfdyywdrayhv" path="res://scenes/test/cog_tester.gd" id="2_rxi8i"]
 [ext_resource type="PackedScene" uid="uid://wpoc3xs1yy0" path="res://objects/player/player.tscn" id="4_5lgf2"]
-[ext_resource type="Resource" uid="uid://cigwiwiur1bho" path="res://objects/cog/presets/sellbot/live_wire.tres" id="4_ws0mt"]
+[ext_resource type="Resource" uid="uid://cigwiwiur1bho" path="res://objects/cog/presets/sellbot/cross_seller.tres" id="4_ws0mt"]
 [ext_resource type="Resource" uid="uid://canccpjghjae7" path="res://objects/cog/presets/sellbot/glad_hander.tres" id="5_3el4x"]
-[ext_resource type="Resource" uid="uid://cr7ich07ytdmu" path="res://objects/cog/presets/cashbot/cash_cow.tres" id="6_ws0mt"]
+[ext_resource type="Resource" uid="uid://cr7ich07ytdmu" path="res://objects/cog/presets/cashbot/stockholder.tres" id="6_ws0mt"]
 [ext_resource type="Resource" uid="uid://b0iiauyxvm2su" path="res://objects/cog/presets/sellbot/mover_shaker.tres" id="7_rh7iq"]
 
 [node name="OfficeEntrance" instance=ExtResource("1_pqm5n")]

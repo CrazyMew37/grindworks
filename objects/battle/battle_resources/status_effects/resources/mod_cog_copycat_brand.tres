@@ -1,0 +1,14 @@
+[gd_resource type="Resource" format=3 uid="uid://gx3mvhadhq4x"]
+
+[ext_resource type="Texture2D" uid="uid://crnpshv73psep" path="res://ui_assets/battle/statuses/copycat.png" id="1_68r1f"]
+[ext_resource type="Script" uid="uid://cddas82fmdsgv" path="res://objects/battle/battle_resources/status_effects/mod_cog_effects/cog_mod_copycat_brand.gd" id="1_gi5cg"]
+
+[resource]
+script = ExtResource("1_gi5cg")
+quality = 0
+rounds = -1
+icon = ExtResource("1_68r1f")
+description = "This cog mimics your initial damage stat, therefore gaining a x1.0 damage multiplier."
+status_name = "Copycat"
+id = 103
+metadata/_custom_type_script = "uid://df7irk63ikx4k"

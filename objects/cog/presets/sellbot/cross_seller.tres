@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="CogDNA" format=3 uid="uid://cigwiwiur1bho"]
+
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_1mv6n"]
+[ext_resource type="Resource" uid="uid://c24yy1wqmg24o" path="res://objects/battle/battle_resources/cog_attacks/resources/razzle_dazzle.tres" id="2_ai5b4"]
+[ext_resource type="Resource" uid="uid://bhl72hd7pn8s2" path="res://objects/battle/battle_resources/cog_attacks/resources/workout.tres" id="3_ai5b4"]
+[ext_resource type="Resource" uid="uid://erbbarg5bxm8" path="res://objects/battle/battle_resources/cog_attacks/resources/rolodex.tres" id="3_ix7ad"]
+[ext_resource type="Resource" uid="uid://doowiij7lpxy1" path="res://objects/battle/battle_resources/cog_attacks/resources/rubber_stamp.tres" id="4_48w2b"]
+[ext_resource type="Script" uid="uid://yc46vrmyfql1" path="res://objects/cog/cog_dna.gd" id="4_ix7ad"]
+
+[resource]
+script = ExtResource("4_ix7ad")
+custom_blazer_tex = "res://models/cogs/textures/misc/blazer_1.png"
+custom_arm_tex = "res://models/cogs/textures/misc/sleeve_2.png"
+custom_leg_tex = "res://models/cogs/textures/misc/leg_4.png"
+cog_name = "Cross Seller"
+head = "res://models/cogs/heads/yesman.glb"
+scale = 5.5
+head_textures = PackedStringArray("res://models/cogs/heads/mover_and_happier.png")
+hand_color = Color(1, 0.8666667, 0.8, 1)
+attacks = Array[ExtResource("1_1mv6n")]([ExtResource("2_ai5b4"), ExtResource("3_ix7ad"), ExtResource("4_48w2b"), ExtResource("3_ai5b4")])
+level_low = 5
+level_high = 20
+baked_status_effects = PackedStringArray("res://objects/battle/battle_resources/status_effects/resources/status_effect_mod_cog.tres")
+is_mod_cog = true
+battle_phrases = Array[String](["You've crossed the line a while ago.", "I disapprove your gags.", "Time to cross you out.", "It's time to X-it, Toon.", "Look on the plus side, it'll all be over soon.", "You've crossed the wrong Cog.", "This victory of mine will make it across the town.", "You're a cross between frustrating and irritating, Toon."])
+external_assets = {
+&"head_model": "",
+&"head_textures": []
+}

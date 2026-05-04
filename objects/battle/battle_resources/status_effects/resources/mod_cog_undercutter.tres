@@ -1,0 +1,15 @@
+[gd_resource type="Resource" format=3 uid="uid://dje2t2sy8imqu"]
+
+[ext_resource type="Script" uid="uid://cilaeeecksegw" path="res://objects/battle/battle_resources/status_effects/mod_cog_effects/cog_mod_undercutter.gd" id="1_4d37o"]
+[ext_resource type="Texture2D" uid="uid://bh5yswy5hlff7" path="res://ui_assets/battle/statuses/undercutter.png" id="1_e1lc6"]
+
+[resource]
+script = ExtResource("1_4d37o")
+quality = 0
+rounds = -1
+icon = ExtResource("1_e1lc6")
+description = "x2.0 damage multiplier
+x0.5 defense multiplier"
+status_name = "Undercutter"
+id = 101
+metadata/_custom_type_script = "uid://df7irk63ikx4k"

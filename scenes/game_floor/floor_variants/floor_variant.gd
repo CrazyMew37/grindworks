@@ -162,8 +162,8 @@ func randomize_details(roll_anomalies := true) -> void:
 	# Add onto the room count for the difficulty
 	room_count += DIFFICULTY_ROOM_ADDITION * floor_difficulty
 	
-	if room_count > 29:
-		room_count = 29
+	if room_count > 25:
+		room_count = 25
 	
 	# Slightly vary the facility lengths
 	var room_diff_roll := RNG.channel(RNG.ChannelRoomDiffRolls).randi_range(-2, 2)

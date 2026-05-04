@@ -32,7 +32,7 @@ func setup() -> void:
 func on_money_changed(money: int) -> void:
 	for mult: StatMultiplier in multipliers:
 		if mult.stat in BOOST_STATS.keys():
-			mult.amount = floori(money / 5) * BOOST_STATS[mult.stat]
+			mult.amount = floori(money / 10) * BOOST_STATS[mult.stat]
 
 func create_multipliers() -> void:
 	for stat in BOOST_STATS.keys():

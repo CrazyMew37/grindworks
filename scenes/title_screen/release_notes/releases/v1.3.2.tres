@@ -6,21 +6,22 @@
 script = ExtResource("1_qd8f6")
 release_version = "v1.3.2 (CM37E)"
 notes = "[TITLE]Facilities
-  Increased the size of the grid in the Solicitor's maze from 13x75 to 15x90
-  The skulls in the Solicitor's maze were made slower too
-  The Golden Goose and Solicitor now both have a proper level offset.
-  The Golden Goose can finally no longer crush buttons!
+Increased the size of the grid in the Solicitor's maze from 13x75 to 15x90
+  The maze was shrunk slightly to compensate.
+The skulls in the Solicitor's maze were made slower too
+The Golden Goose and Solicitor now both have a proper level offset.
+The Golden Goose can finally no longer crush buttons!
 [TITLE]Items
-  Blue Square Boots: 1.2x Defense -> 1.25x Defense
-  Hi Top Sneakers: 1.2x Evasiveness -> 1.25x Evasiveness
-  Swapped the functionality of Fancy Shoes and Sneakers (Fancy Shoes is now Throw and Sneakers is now Lure)
-  Retextured Fancy Shoes to be its red version instead of its purple version
+Blue Square Boots: 1.2x Defense -> 1.25x Defense
+Hi Top Sneakers: 1.2x Evasiveness -> 1.25x Evasiveness
+Swapped the functionality of Fancy Shoes and Sneakers (Fancy Shoes is now Throw and Sneakers is now Lure)
+Retextured Fancy Shoes to be its red version instead of its purple version
 [TITLE]Proxy Effects
-  Backtalker: 0.7x Damage -> 0.66x Damage
-  Banker: +8% Damage Every Round -> +10% Damage Every Round
-  Diverse Portfolio: 0.7x Damage -> 0.75x Damage
-  Toxic: Nerfed the damage that Poison/Aftershock can do by about 40%/60% Respectively.
+Backtalker: 0.7x Damage -> 0.66x Damage
+Banker: +8% Damage Every Round -> +10% Damage Every Round
+Diverse Portfolio: 0.7x Damage -> 0.75x Damage
+Toxic: Nerfed the damage that Poison/Aftershock can do by about 40%/60% Respectively.
 [TITLE]Other
-  Partner Toons will no longer trigger the Traffic Manager or Bookkeeper's punishments.
-    Adjusted a niche interaction with Alien Glasses because of this change."
+Partner Toons will no longer trigger the Traffic Manager or Bookkeeper's punishments.
+  Adjusted a niche interaction with Alien Glasses because of this change."
 metadata/_custom_type_script = "uid://d1j0hh6tsgy0r"

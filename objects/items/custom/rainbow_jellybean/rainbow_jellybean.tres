@@ -14,8 +14,8 @@ item_name = "Rainbow Jellybean"
 item_description = "Double jellybeans!"
 big_description = "Doubles all jellybean profits."
 model = ExtResource("2_7mwmg")
-stats_multiply = {
-"money_mult": 2.0
+stats_add = {
+"money_mult": 1.0
 }
 icon = ExtResource("1_7mwmg")
 icon_material = ExtResource("1_4wqh5")

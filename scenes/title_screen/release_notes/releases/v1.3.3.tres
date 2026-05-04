@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="ReleaseNote" format=3 uid="uid://dirnnnd8ufkkw"]
+
+[ext_resource type="Script" uid="uid://d1j0hh6tsgy0r" path="res://scenes/title_screen/release_notes/release_note.gd" id="1_y1hes"]
+
+[resource]
+script = ExtResource("1_y1hes")
+release_version = "v1.3.3 (CM37E)"
+notes = "[TITLE]Proxies
+Added three new proxies: Stockholder and Cross Seller.
+  These two are meant to be replacements for the now-removed Cash Cow and Live Wire.
+Added three new proxy effects: Undercutter, Creditor, and Copycat
+[TITLE]Balance Changes
+A couple changes were made to make Endless Mode a bit harder.
+  Reduced the Room Count cap from 29 to 25
+  Increased cog damage by a tiny smidge. (Approx. 3-15% Higher)
+  Administrator health multiplier will now scale every five floors. Now they'll (mostly) have more HP than proxies!
+On top of that, a few overpowered items were nerfed.
+  Bee Wings: 50% of Base Speed -> 25% of Base Speed
+  Rainbow Jellybean: Now scales additively (2, 3, 4, etc.) instead of multiplicatively (2, 4, 8, etc.)
+  Dragon Wings: 5 Jellybeans per 1% boost -> 10 Jellybeans per 1% boost
+  Roman Helmet: Four Stars/Q4 -> Four Stars/Q5
+  Dragon Wings and Roman Helmet were removed from the Golden Chest pool.
+  Roman Helmet was added to the Special Chest pool.
+[TITLE]Other
+Properly applied a few missing commits from the project. Sorry about that!
+  Because of this, the Cash Cow, Live Wire, and a few credits were removed.
+Hotfixes for 1.3.0 and onward have been properly added.
+Patch notes for 1.3.1 and onward have been formatted correctly, too.
+Added seven new secret seeds. If you want to try them out, then here is the list:
+  'fog', 'sad', 'neigh', 'jellybeans', 'solicitor', '1987', 'help'"
+metadata/_custom_type_script = "uid://d1j0hh6tsgy0r"

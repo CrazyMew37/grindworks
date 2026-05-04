@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="ToonDNA" format=3 uid="uid://c3xfl1eg6flll"]
+
+[ext_resource type="Script" uid="uid://c8kas2j4io1jh" path="res://objects/toon/clothing/toon_bottoms.gd" id="1_enmej"]
+[ext_resource type="Texture2D" uid="uid://bc47fggqh8gbp" path="res://models/toon/textures/clothes/shorts/desat_shorts_2.png" id="2_enmej"]
+[ext_resource type="Script" uid="uid://yg7gxug4rab" path="res://objects/toon/toon_dna.gd" id="3_mdbol"]
+[ext_resource type="Script" uid="uid://dfqwh4jmdy0iw" path="res://objects/toon/clothing/toon_shirt.gd" id="4_go88b"]
+[ext_resource type="Texture2D" uid="uid://ds50fd26knqlk" path="res://models/toon/textures/clothes/shirts/desat_shirt_11.png" id="5_enmej"]
+[ext_resource type="Texture2D" uid="uid://8htjbnuyu1lf" path="res://models/toon/textures/clothes/shirts/desat_sleeve_20.png" id="6_iu1vb"]
+
+[sub_resource type="Resource" id="Resource_y068v"]
+script = ExtResource("1_enmej")
+texture = ExtResource("2_enmej")
+base_color = Color(0.5686275, 0.44705883, 0.16078432, 1)
+
+[sub_resource type="Resource" id="Resource_oixc7"]
+script = ExtResource("4_go88b")
+shirt_texture = ExtResource("5_enmej")
+sleeve_texture = ExtResource("6_iu1vb")
+base_color = Color(0.83137256, 0.49803922, 0.29803923, 1)
+sleeve_color = Color(0.83137256, 0.49803922, 0.29803923, 1)
+
+[resource]
+script = ExtResource("3_mdbol")
+body_type = 2
+leg_type = 2
+species = 4
+head_index = 1
+eyelashes = false
+head_color = Color(0.70980394, 0.23137255, 0.43529412, 1)
+torso_color = Color(0.70980394, 0.23137255, 0.43529412, 1)
+leg_color = Color(0.70980394, 0.23137255, 0.43529412, 1)
+shirt = SubResource("Resource_oixc7")
+bottoms = SubResource("Resource_y068v")
+metadata/_custom_type_script = "uid://yg7gxug4rab"

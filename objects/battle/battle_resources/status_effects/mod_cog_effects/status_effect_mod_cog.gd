@@ -20,6 +20,9 @@ static var MOD_EFFECTS: Array[StatusEffect] = [
 	preload("res://objects/battle/battle_resources/status_effects/resources/mod_cog_witness_protection.tres"),
 	preload("res://objects/battle/battle_resources/status_effects/resources/mod_cog_backtalker.tres"),
 	preload("res://objects/battle/battle_resources/status_effects/resources/mod_cog_toxic.tres"),
+	preload("res://objects/battle/battle_resources/status_effects/resources/mod_cog_copycat_brand.tres"),
+	preload("res://objects/battle/battle_resources/status_effects/resources/mod_cog_creditor.tres"),
+	preload("res://objects/battle/battle_resources/status_effects/resources/mod_cog_undercutter.tres"),
 ]
 
 func apply() -> void:
