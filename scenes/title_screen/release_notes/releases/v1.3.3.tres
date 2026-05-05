@@ -27,5 +27,7 @@ Properly applied a few missing commits from the project. Sorry about that!
 Hotfixes for 1.3.0 and onward have been properly added.
 Patch notes for 1.3.1 and onward have been formatted correctly, too.
 Added seven new secret seeds. If you want to try them out, then here is the list:
-  'fog', 'sad', 'neigh', 'jellybeans', 'solicitor', '1987', 'help'"
+  'fog', 'sad', 'neigh', 'jellybeans', 'solicitor', '1987', 'help'
+[TITLE]Hotfix #1
+Adjusted an aspect of the 'jellybeans' seed."
 metadata/_custom_type_script = "uid://d1j0hh6tsgy0r"

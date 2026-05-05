@@ -489,7 +489,7 @@ size = Vector2(0.4, 0.4)
 [node name="StrangerShop" unique_id=573056619 instance=ExtResource("1_nxxi2")]
 script = ExtResource("2_qxodn")
 
-[node name="Big Vent Covering" parent="." index="0"]
+[node name="Big Vent Covering" parent="." index="0" unique_id=1691864707]
 surface_material_override/0 = SubResource("StandardMaterial3D_l4gs0")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Big Vent Covering" index="0" unique_id=1391066508]
@@ -497,16 +497,16 @@ surface_material_override/0 = SubResource("StandardMaterial3D_l4gs0")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Big Vent Covering/StaticBody3D" index="0" unique_id=1472107052]
 shape = SubResource("ConcavePolygonShape3D_vomp0")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Bucket2" index="0" unique_id=1352195387]
+[node name="StaticBody3D" type="StaticBody3D" parent="Bucket2" parent_id_path=PackedInt32Array(1635518278) index="0" unique_id=1352195387]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Bucket2/StaticBody3D" index="0" unique_id=1054287023]
 shape = SubResource("ConcavePolygonShape3D_0x82r")
 
-[node name="Cobwebs" parent="." index="2"]
+[node name="Cobwebs" parent="." index="2" unique_id=1104924164]
 surface_material_override/0 = SubResource("StandardMaterial3D_3lvyb")
 surface_material_override/1 = SubResource("StandardMaterial3D_qncen")
 
-[node name="Collision" parent="." index="3"]
+[node name="Collision" parent="." index="3" unique_id=269180661]
 visible = false
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Collision" index="0" unique_id=181247396]
@@ -514,7 +514,7 @@ visible = false
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Collision/StaticBody3D" index="0" unique_id=388112593]
 shape = SubResource("ConcavePolygonShape3D_m718k")
 
-[node name="Cube" parent="." index="4"]
+[node name="Cube" parent="." index="4" unique_id=357134516]
 surface_material_override/0 = SubResource("StandardMaterial3D_nx42x")
 surface_material_override/1 = SubResource("StandardMaterial3D_kpyfh")
 surface_material_override/2 = SubResource("StandardMaterial3D_x7pa6")
@@ -525,7 +525,7 @@ surface_material_override/3 = SubResource("StandardMaterial3D_2oba7")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Cube/StaticBody3D" index="0" unique_id=903534288]
 shape = SubResource("ConcavePolygonShape3D_45ad1")
 
-[node name="Floor" parent="." index="5"]
+[node name="Floor" parent="." index="5" unique_id=977980343]
 surface_material_override/0 = SubResource("StandardMaterial3D_leqsn")
 surface_material_override/1 = SubResource("StandardMaterial3D_7alu4")
 surface_material_override/2 = SubResource("StandardMaterial3D_f6jt3")
@@ -555,18 +555,18 @@ transform = Transform3D(-12.028, -3.29296e-06, -1.70026e-06, 1.05152e-06, -37.66
 mesh = SubResource("QuadMesh_kqdy5")
 color = Color(0.586274, 0.730752, 0.77447, 1)
 
-[node name="JunkBarrier" parent="." index="10"]
+[node name="JunkBarrier" parent="." index="10" unique_id=815288787]
 surface_material_override/0 = SubResource("StandardMaterial3D_qqvpb")
 surface_material_override/1 = SubResource("StandardMaterial3D_fjsci")
 
-[node name="Lights" parent="." index="11"]
+[node name="Lights" parent="." index="11" unique_id=1662933851]
 surface_material_override/0 = SubResource("StandardMaterial3D_3yema")
 
-[node name="Lights_Beaming" parent="." index="12"]
+[node name="Lights_Beaming" parent="." index="12" unique_id=1309349090]
 transform = Transform3D(7.54979e-06, 100, 4.37114e-06, 0, -4.37114e-06, 100, 100, -7.54979e-06, -3.30012e-13, -2.89944, 7.00922, -0.291767)
 surface_material_override/0 = SubResource("ShaderMaterial_2oba7")
 
-[node name="Pallet" parent="." index="13"]
+[node name="Pallet" parent="." index="13" unique_id=747175513]
 surface_material_override/0 = SubResource("StandardMaterial3D_7mhyt")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Pallet" index="0" unique_id=1024393284]
@@ -574,7 +574,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_7mhyt")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Pallet/StaticBody3D" index="0" unique_id=142461727]
 shape = SubResource("ConvexPolygonShape3D_vomp0")
 
-[node name="Pallet_001" parent="." index="14"]
+[node name="Pallet_001" parent="." index="14" unique_id=863092090]
 surface_material_override/0 = SubResource("StandardMaterial3D_4oqkk")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Pallet_001" index="0" unique_id=1301910150]
@@ -582,27 +582,27 @@ surface_material_override/0 = SubResource("StandardMaterial3D_4oqkk")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Pallet_001/StaticBody3D" index="0" unique_id=993250600]
 shape = SubResource("ConvexPolygonShape3D_2oba7")
 
-[node name="Pipes" parent="." index="15"]
+[node name="Pipes" parent="." index="15" unique_id=1645761639]
 surface_material_override/0 = SubResource("StandardMaterial3D_fcphk")
 surface_material_override/1 = SubResource("StandardMaterial3D_8fgkl")
 
-[node name="Shadows" parent="." index="16"]
+[node name="Shadows" parent="." index="16" unique_id=1661463616]
 surface_material_override/0 = SubResource("StandardMaterial3D_2ci3j")
 surface_material_override/1 = SubResource("StandardMaterial3D_m718k")
 
-[node name="Shelf Objects" parent="." index="17"]
+[node name="Shelf Objects" parent="." index="17" unique_id=284782288]
 surface_material_override/0 = SubResource("StandardMaterial3D_qykws")
 surface_material_override/1 = SubResource("StandardMaterial3D_ku4s8")
 surface_material_override/2 = SubResource("StandardMaterial3D_ixya4")
 surface_material_override/3 = SubResource("StandardMaterial3D_sol81")
 surface_material_override/4 = SubResource("StandardMaterial3D_dp7as")
 
-[node name="Shelving Unit" parent="." index="18"]
+[node name="Shelving Unit" parent="." index="18" unique_id=1194830761]
 surface_material_override/1 = SubResource("StandardMaterial3D_5g6fo")
 surface_material_override/2 = SubResource("StandardMaterial3D_3e174")
 surface_material_override/3 = SubResource("StandardMaterial3D_8lijk")
 
-[node name="Vent Covering" parent="." index="21"]
+[node name="Vent Covering" parent="." index="21" unique_id=167888024]
 surface_material_override/0 = SubResource("StandardMaterial3D_qxodn")
 surface_material_override/1 = SubResource("StandardMaterial3D_7j8re")
 
@@ -611,10 +611,10 @@ surface_material_override/1 = SubResource("StandardMaterial3D_7j8re")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Vent Covering/StaticBody3D" index="0" unique_id=1235815224]
 shape = SubResource("ConcavePolygonShape3D_qbmpx")
 
-[node name="Vent Pipes" parent="." index="22"]
+[node name="Vent Pipes" parent="." index="22" unique_id=1234499442]
 surface_material_override/0 = SubResource("StandardMaterial3D_58gd2")
 
-[node name="Walls" parent="." index="23"]
+[node name="Walls" parent="." index="23" unique_id=1875825139]
 surface_material_override/0 = SubResource("StandardMaterial3D_qbmpx")
 surface_material_override/1 = SubResource("StandardMaterial3D_jeci0")
 
@@ -623,7 +623,7 @@ surface_material_override/1 = SubResource("StandardMaterial3D_jeci0")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/StaticBody3D" index="0" unique_id=353247914]
 shape = SubResource("ConcavePolygonShape3D_2ci3j")
 
-[node name="Walls Grime" parent="." index="24"]
+[node name="Walls Grime" parent="." index="24" unique_id=108214557]
 surface_material_override/0 = SubResource("StandardMaterial3D_6i1rn")
 
 [node name="StrangerShop" type="Node3D" parent="." index="26" unique_id=1859487420]
