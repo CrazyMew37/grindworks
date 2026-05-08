@@ -84,12 +84,12 @@ func _ready() -> void:
 	boss_cog_2.stats.damage = 1.8
 	
 	boss_cog.health_mod = 1.0
-	boss_cog.stats.max_hp = ceili(8 * (boss_cog.level * boss_cog.level))
-	boss_cog.stats.hp = ceili(8 * (boss_cog.level * boss_cog.level))
+	boss_cog.stats.max_hp = ceili(10 * (boss_cog.level * boss_cog.level) * (ceili(Util.floor_number / 5) * 0.75))
+	boss_cog.stats.hp = ceili(10 * (boss_cog.level * boss_cog.level) * (ceili(Util.floor_number / 5) * 0.75))
 
 	boss_cog_2.health_mod = 1.0
-	boss_cog_2.stats.max_hp = ceili(8 * (boss_cog_2.level * boss_cog.level))
-	boss_cog_2.stats.hp = ceili(8 * (boss_cog_2.level * boss_cog.level))
+	boss_cog_2.stats.max_hp = ceili(10 * (boss_cog.level * boss_cog.level) * (ceili(Util.floor_number / 5) * 0.75))
+	boss_cog_2.stats.hp = ceili(10 * (boss_cog.level * boss_cog.level) * (ceili(Util.floor_number / 5) * 0.75))
 
 	# Start the battle
 	Util.get_player().state = Player.PlayerState.WALK
