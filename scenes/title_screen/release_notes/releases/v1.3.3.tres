@@ -32,5 +32,6 @@ Added seven new secret seeds. If you want to try them out, then here is the list
 Adjusted an aspect of the 'jellybeans' seed.
 [TITLE]Hotfix #2
 Did a second adjustment of the directors' health formula for more extreme scaling.
-Boss Health Scaling now properly works."
+[TITLE]Hotfix #3
+Boss Health Scaling was adjusted and now properly works."
 metadata/_custom_type_script = "uid://d1j0hh6tsgy0r"
