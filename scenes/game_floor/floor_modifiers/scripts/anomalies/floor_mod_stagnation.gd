@@ -34,4 +34,4 @@ func get_description() -> String:
 
 ## Override this for other objects to tell what type of mod it is
 func get_mod_quality() -> ModType:
-	return ModType.POSITIVE
+	return ModType.NEGATIVE

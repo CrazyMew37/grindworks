@@ -5,7 +5,7 @@ This was a single-player game based on Disney's Toontown Online developed with t
 
 ## Requirements
 
-- Godot v4.6.2
+- Godot v4.6.3
 
 ## Disclaimer
 - We are under no obligation to:

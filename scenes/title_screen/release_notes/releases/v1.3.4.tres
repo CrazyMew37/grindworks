@@ -6,7 +6,7 @@
 script = ExtResource("1_iwomq")
 release_version = "v1.3.4 (CM37E)"
 notes = "[TITLE]Items
-Added 15 new accessories: Pink Stars Boots (Three Stars), Plush Cat Pack (Two Stars), Plush Dog Pack (Two Stars), Polka Dot Backpack (One Star), Rainbow Wings (Five Stars), Firefighter Helmet (Two Stars), Bee Headband (Two Stars), Sailor Hat (Two Stars), Dad Cap (Two Stars), Toonosaur Tail (Four Stars), Sun Hat (One Star), Antenna Thingy (Three Stars), Winter Hat (Three Stars), Sandbag Hat (Three Stars), and Bandana (Three Stars)
+Added 15 new accessories: Pink Stars Boots (Three Stars), Plush Cat Pack (Two Stars), Plush Dog Pack (Two Stars), Polka Dot Backpack (One Star), Rainbow Wings (Five Stars), Firefighter Helmet (Two Stars), Bee Headband (Two Stars), Sailor Hat (Two Stars), Dad Cap (Two Stars), Toonosaur Tail (Four Stars), Sun Hat (One Star), Antenna Thingy (Three Stars), Winter Hat (Three Stars), Sandbag Hat (Three Stars), and Bandana (Two Stars)
 Added 2 new passive items: Golf Club (Three Stars) and Crazy Daisy (Four Stars)
 Added 3 new Pocket Pranks: Joke Sheet (Two Stars), Potted Plant (Three Stars), and Super Hypno Goggles (This item was unused but is now in the game!) (Four Stars)
 Rebalanced the Jellybeans. Instead of six different types, there is now nine. Some prices were adjusted to compensate.
@@ -25,5 +25,8 @@ Undercutter's Stat Multipliers were changed from 2x Damage, 0.5x Defense to 2x D
 Fixed Regeneration and Gag Immunity being broken in the Cog Creator. Though, do note that this was fixed by making a unique variant of these status effects. Please adjust your custom cogs if you added this to them and do note that they might not work on other forks if you add these.
   A variant of Payraise was added too, by the way!
 Tax Write-Off's jellybean effect will now no longer diminish like Embezzled.
-The specific CrazyMew37 Edition version will now be displayed."
+The specific CrazyMew37 Edition version will now be displayed.
+[TITLE] Hotfix #1
+Updated the engine to Godot 4.6.3.
+Fixed Stangation being a positive anomaly"
 metadata/_custom_type_script = "uid://d1j0hh6tsgy0r"
