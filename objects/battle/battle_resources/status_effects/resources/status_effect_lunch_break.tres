@@ -1,0 +1,13 @@
+[gd_resource type="Resource" format=3 uid="uid://chorm0au8wcvw"]
+
+[ext_resource type="Texture2D" uid="uid://dyrqw2p4lgg47" path="res://ui_assets/player_ui/pause/lunchbreak.png" id="1_i0vxj"]
+[ext_resource type="Script" uid="uid://c13ppni535gs1" path="res://objects/battle/battle_resources/status_effects/status_effect_lunch_break.gd" id="2_i0vxj"]
+
+[resource]
+script = ExtResource("2_i0vxj")
+quality = 1
+rounds = -1
+icon = ExtResource("1_i0vxj")
+description = "25% chance for this cog to skip their turn."
+status_name = "Lunch Break"
+id = 112

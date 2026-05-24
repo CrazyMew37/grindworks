@@ -193,6 +193,8 @@ func get_hazard_damage(damage := 0) -> int:
 	if is_instance_valid(floor_manager):
 		if floor_manager.floor_tags.has('extra_hazard_damage') and floor_manager.floor_tags['extra_hazard_damage'] == true:
 			true_damage = floori(1.25 * true_damage)
+		if floor_manager.floor_tags.has('less_hazard_damage') and floor_manager.floor_tags['less_hazard_damage'] == true:
+			true_damage = floori(0.75 * true_damage)
 	if is_instance_valid(player):
 		true_damage = floori(true_damage / player.stats.get_stat('defense'))
 	return true_damage

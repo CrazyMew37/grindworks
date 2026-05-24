@@ -18,7 +18,7 @@ func setup(resource: Item):
 	elif 'luck' in item.stats_add:
 		candy_type = CandyType.SUPER_LUCK if 'super' in item.arbitrary_data else CandyType.LUCK
 	elif 'speed' in item.stats_add:
-		candy_type = CandyType.SPEED
+		candy_type = CandyType.SUPER_SPEED if 'super' in item.arbitrary_data else CandyType.SPEED
 	elif 'active_charge' in item.stats_add:
 		candy_type = CandyType.BATTERY
 		run_battery_check()
@@ -32,13 +32,13 @@ func modify(ui: Node3D) -> void:
 
 enum CandyType {
 	DAMAGE, DEFENSE, EVASIVENESS, LUCK, SPEED,
-	SUPER_DAMAGE, SUPER_DEFENSE, SUPER_EVASIVENESS, SUPER_LUCK,
+	SUPER_DAMAGE, SUPER_DEFENSE, SUPER_EVASIVENESS, SUPER_LUCK, SUPER_SPEED,
 	BATTERY
 }
 
 const SuperTypes = [
 	CandyType.SUPER_DAMAGE, CandyType.SUPER_DEFENSE, CandyType.SUPER_EVASIVENESS,
-	CandyType.SUPER_LUCK,
+	CandyType.SUPER_LUCK, CandyType.SUPER_SPEED
 ]
 
 const CandyColors: Dictionary = {
@@ -51,7 +51,8 @@ const CandyColors: Dictionary = {
 	CandyType.LUCK: Color(0, 0.798, 0.384),
 	CandyType.SUPER_LUCK: Color(0, 0.748, 0.85),
 	CandyType.SPEED: Color(1, 0.304, 0.313),
-	CandyType.BATTERY: Color(0.212, 0.212, 0.252),
+	CandyType.SUPER_SPEED: Color(0.603, 0.976, 0.244),
+	CandyType.BATTERY: Color(0.212, 0.212, 0.252)
 }
 
 const ParticleColors: Dictionary = {
@@ -59,6 +60,7 @@ const ParticleColors: Dictionary = {
 	CandyType.SUPER_DEFENSE: Color("b3faff"),
 	CandyType.SUPER_EVASIVENESS: Color("b3faff"),
 	CandyType.SUPER_LUCK: Color("ff988c"),
+	CandyType.SUPER_SPEED: Color("b38cff")
 }
 
 const CandyMaterials: Dictionary = {
@@ -71,6 +73,7 @@ const CandyMaterials: Dictionary = {
 	CandyType.SUPER_DEFENSE: preload("res://models/props/pickups/candy/candy_overlay_bubbles.tres"),
 	CandyType.SUPER_EVASIVENESS: preload("res://models/props/pickups/candy/candy_overlay_target.tres"),
 	CandyType.SUPER_LUCK: preload("res://models/props/pickups/candy/candy_overlay_stars.tres"),
+	CandyType.SUPER_SPEED: preload("res://models/props/pickups/candy/candy_overlay_stripes.tres"),
 	CandyType.BATTERY: preload("res://models/props/pickups/candy/candy_overlay_lightning.tres")
 }
 

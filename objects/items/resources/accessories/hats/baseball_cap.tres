@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="ItemAccessory" format=3 uid="uid://b5ncaw2q6vlk8"]
+[gd_resource type="Resource" script_class="ItemAccessory" format=3 uid="uid://vrdgpmxe05pj"]
 
 [ext_resource type="Script" uid="uid://fb0tqfojo57q" path="res://objects/items/classes/accessory_placement.gd" id="1_i5lwg"]
 [ext_resource type="Script" uid="uid://c4eyu1xvv7h2l" path="res://objects/items/classes/head_placement.gd" id="2_jv74l"]
@@ -16,8 +16,8 @@ scale = Vector3(0.37, 0.37, 0.37)
 [sub_resource type="Resource" id="Resource_a7loe"]
 script = ExtResource("2_jv74l")
 species = 2
-position = Vector3(0, 0.7, 0.16)
-rotation = Vector3(-9.92, 0, 0)
+position = Vector3(0, 0.67, 0.08)
+rotation = Vector3(-8.82, 0, 0)
 scale = Vector3(0.35, 0.35, 0.35)
 
 [sub_resource type="Resource" id="Resource_6ng26"]
@@ -195,7 +195,7 @@ scale = Vector3(0.35, 0.35, 0.35)
 script = ExtResource("2_jv74l")
 species = 2
 head_index = 2
-position = Vector3(0, 0.7, 0.16)
+position = Vector3(0, 0.68, 0)
 rotation = Vector3(-9.92, 0, 0)
 scale = Vector3(0.35, 0.35, 0.35)
 

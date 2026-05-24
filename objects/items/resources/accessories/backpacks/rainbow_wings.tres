@@ -1,0 +1,56 @@
+[gd_resource type="Resource" script_class="ItemAccessory" format=3 uid="uid://b4edavofpswg7"]
+
+[ext_resource type="Script" uid="uid://fb0tqfojo57q" path="res://objects/items/classes/accessory_placement.gd" id="1_500vg"]
+[ext_resource type="Script" uid="uid://duxq3xtgnln43" path="res://objects/items/classes/body_placement.gd" id="2_1wk37"]
+[ext_resource type="Texture2D" uid="uid://gpnu3mxunu8p" path="res://models/accessories/backpacks/angel_wings/rainbow_wings-pix-4.png" id="3_500vg"]
+[ext_resource type="PackedScene" uid="uid://bouxtwx0dmw30" path="res://models/accessories/backpacks/angel_wings/rainbow_wings.tscn" id="4_1wk37"]
+[ext_resource type="Script" uid="uid://cvec0fxxs525t" path="res://objects/items/custom/item_rainbow_wings.gd" id="4_sks2r"]
+[ext_resource type="AudioStream" uid="uid://bjioeo4lep22p" path="res://audio/sfx/items/Holy_Mackerel.ogg" id="5_1h6n2"]
+[ext_resource type="Script" uid="uid://dvu24b3o8i3sj" path="res://objects/items/classes/item_accessory.gd" id="6_3uecu"]
+
+[sub_resource type="Resource" id="Resource_xqi40"]
+script = ExtResource("2_1wk37")
+position = Vector3(0.01, 0.56, 1.08)
+rotation = Vector3(0, 180, 0)
+scale = Vector3(0.4, 0.4, 0.4)
+
+[sub_resource type="Resource" id="Resource_bsqs6"]
+script = ExtResource("2_1wk37")
+body_type = 1
+position = Vector3(0.01, 0.56, 0.89)
+rotation = Vector3(0, 180, 0)
+scale = Vector3(0.4, 0.4, 0.4)
+
+[sub_resource type="Resource" id="Resource_n1he7"]
+script = ExtResource("2_1wk37")
+body_type = 2
+position = Vector3(0.01, 0.78, 0.84)
+rotation = Vector3(0, 180, 0)
+scale = Vector3(0.4, 0.4, 0.4)
+
+[resource]
+script = ExtResource("6_3uecu")
+accessory_placements = Array[ExtResource("1_500vg")]([SubResource("Resource_xqi40"), SubResource("Resource_bsqs6"), SubResource("Resource_n1he7")])
+qualitoon = 4
+rarity = 7
+slot = 3
+world_scale = 0.15
+ui_cam_offset = 0.4
+item_name = "Rainbow Wings"
+item_description = "A colorful, powerful cacophony!"
+big_description = "+ 8 max Laff
+Applies the following stat multipliers:
+- 1.08x Damage
+- 1.08x Defense
+- 1.08x Evasiveness
+- 1.08x Luck
+- 1.08x Speed"
+model = ExtResource("4_1wk37")
+pickup_sfx = ExtResource("5_1h6n2")
+stats_add = {
+"hp": 8,
+"max_hp": 8
+}
+item_script = ExtResource("4_sks2r")
+icon = ExtResource("3_500vg")
+shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)

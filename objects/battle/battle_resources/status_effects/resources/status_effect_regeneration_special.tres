@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="StatEffectRegenerationSpecial" format=3 uid="uid://2bdpo64kwsq2"]
+
+[ext_resource type="Texture2D" uid="uid://dnfba8vhmj5uv" path="res://ui_assets/battle/statuses/investment_cog_heal.png" id="1_ra15k"]
+[ext_resource type="Script" uid="uid://cdyoj3scuf3cu" path="res://objects/battle/battle_resources/status_effects/status_effect_regeneration_special.gd" id="2_ra15k"]
+
+[resource]
+script = ExtResource("2_ra15k")
+instant_effect = false
+quality = 0
+rounds = -1
+icon = ExtResource("1_ra15k")
+description = ""
+status_name = "Regeneration"
+id = 109

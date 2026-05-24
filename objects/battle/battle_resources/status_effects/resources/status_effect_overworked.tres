@@ -1,0 +1,13 @@
+[gd_resource type="Resource" format=3 uid="uid://sni85p22wms7"]
+
+[ext_resource type="Texture2D" uid="uid://ccs7wejhs6nyr" path="res://ui_assets/player_ui/pause/overworked.png" id="1_q3ykm"]
+[ext_resource type="Script" uid="uid://dy4g786ko4bf" path="res://objects/battle/battle_resources/status_effects/status_effect_overworked.gd" id="2_q3ykm"]
+
+[resource]
+script = ExtResource("2_q3ykm")
+quality = 0
+rounds = -1
+icon = ExtResource("1_q3ykm")
+description = "25% chance to gain +1 move for the round."
+status_name = "Overworked"
+id = 113

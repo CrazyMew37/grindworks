@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://d1bldu5xxmn2v"]
+
+[ext_resource type="Texture2D" uid="uid://dplexvmbvavhm" path="res://models/props/cog_props/golf/golf_club_item-pix-2.png" id="1_jivel"]
+[ext_resource type="PackedScene" uid="uid://jwhg3pbkflh7" path="res://models/props/cog_props/golf/golf_club_item.tscn" id="2_fq2tg"]
+[ext_resource type="AudioStream" uid="uid://vp8d5a6ameun" path="res://audio/sfx/battle/cogs/attacks/SA_tee_off.ogg" id="3_3yop0"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="4_8tjip"]
+
+[resource]
+script = ExtResource("4_8tjip")
+qualitoon = 2
+world_scale = 0.15
+world_y_offset = 0.1
+ui_cam_offset = -0.25
+item_name = "Golf Club"
+item_description = "Mass layoffs"
+big_description = "+ 10% damage and defense to all cog departments."
+model = ExtResource("2_fq2tg")
+pickup_sfx = ExtResource("3_3yop0")
+stats_add = {
+"bossbot_boost": 0.1,
+"cashbot_boost": 0.1,
+"lawbot_boost": 0.1,
+"sellbot_boost": 0.1
+}
+icon = ExtResource("1_jivel")
+shop_category_title = "Special Item"
+shop_category_color = Color(0.6, 0.2, 1, 1)
+force_show_shop_category = true

@@ -8,8 +8,8 @@ script = ExtResource("1_4d37o")
 quality = 0
 rounds = -1
 icon = ExtResource("1_e1lc6")
-description = "x2.0 damage multiplier
-x0.5 defense multiplier"
+description = "x2 damage multiplier
+x0.75 defense multiplier"
 status_name = "Undercutter"
 id = 101
 metadata/_custom_type_script = "uid://df7irk63ikx4k"

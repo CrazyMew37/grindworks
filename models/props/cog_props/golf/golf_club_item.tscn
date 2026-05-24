@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://jwhg3pbkflh7"]
+
+[ext_resource type="PackedScene" uid="uid://c3x8mxt3ia342" path="res://models/props/cog_props/golf/golf_club.glb" id="1_lg58j"]
+
+[node name="golf_club2" unique_id=2091280658 instance=ExtResource("1_lg58j")]
+transform = Transform3D(0.8103383, -0.5859623, 0, 0.5859623, 0.8103383, 0, 0, 0, 1, -0.11654067, 1.6759193, 0)
+
+[node name="golf_club" parent="." index="0" unique_id=1970148934]
+transform = Transform3D(0.01, 0, 0, 0, 0, -0.01, 0, 0.01, 0, 0, 0, -0.5841572)
+
+[node name="null8" parent="golf_club" index="1" unique_id=2044963507]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -89.570656, 0, 131.12311)

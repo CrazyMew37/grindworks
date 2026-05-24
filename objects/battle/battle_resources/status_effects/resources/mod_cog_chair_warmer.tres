@@ -1,0 +1,13 @@
+[gd_resource type="Resource" format=3 uid="uid://bcbcjpplftpv"]
+
+[ext_resource type="Texture2D" uid="uid://b27f0b88vep5s" path="res://ui_assets/battle/statuses/chairwarmer.png" id="1_fpixt"]
+[ext_resource type="Script" uid="uid://b8ywn18g5472o" path="res://objects/battle/battle_resources/status_effects/mod_cog_effects/cog_mod_chair_warmer.gd" id="2_fpixt"]
+
+[resource]
+script = ExtResource("2_fpixt")
+quality = 0
+rounds = -1
+icon = ExtResource("1_fpixt")
+description = "+2 moves on odd rounds, cannot attack on even rounds."
+status_name = "Chair Warmer"
+id = 108

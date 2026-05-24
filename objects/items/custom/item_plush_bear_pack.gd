@@ -21,7 +21,7 @@ func on_round_start(actions: Array[BattleAction]) -> void:
 func apply_boost() -> void:
 	var boost: StatBoost = load(STAT_BOOST).duplicate(true)
 	boost.boost = BOOST_AMT
-	boost.rounds = 2
+	boost.rounds = 1
 	boost.stat = 'damage'
 	boost.quality = StatusEffect.EffectQuality.POSITIVE
 	boost.target = Util.get_player()

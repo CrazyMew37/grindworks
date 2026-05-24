@@ -6,7 +6,10 @@ enum BeanColor {
 	LIGHT_BLUE,
 	YELLOW,
 	BLUE,
-	PINK
+	PINK,
+	ORANGE,
+	MAGENTA,
+	SILVER
 }
 @export var bean_color: BeanColor
 
@@ -25,16 +28,22 @@ var colors = {
 	BeanColor.LIGHT_BLUE: Color(0.5, 1.0, 1.0),
 	BeanColor.YELLOW: Color(1.0, 1.0, 0.4),
 	BeanColor.BLUE: Color(0.4, 0.4, 1.0),
-	BeanColor.PINK: Color(1.0, 0.5, 1.0)
+	BeanColor.PINK: Color(0.7, 0.5, 1.0),
+	BeanColor.ORANGE: Color(1.0, 0.7, 0.4),
+	BeanColor.MAGENTA: Color(1.0, 0.8, 0.9),
+	BeanColor.SILVER: Color(0.8, 0.8, 0.8)
 }
 ## Bean Values
 var values := {
 	BeanColor.RED: 3,
-	BeanColor.YELLOW: 5,
-	BeanColor.GREEN: 7,
-	BeanColor.LIGHT_BLUE: 10,
+	BeanColor.YELLOW: 7,
+	BeanColor.GREEN: 10,
+	BeanColor.LIGHT_BLUE: 12,
 	BeanColor.BLUE: 15,
-	BeanColor.PINK: 20
+	BeanColor.PINK: 18,
+	BeanColor.ORANGE: 5,
+	BeanColor.MAGENTA: 20,
+	BeanColor.SILVER: 25
 }
 
 func _ready() -> void:

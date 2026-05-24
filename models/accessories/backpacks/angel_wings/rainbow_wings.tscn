@@ -1,0 +1,60 @@
+[gd_scene format=4 uid="uid://bouxtwx0dmw30"]
+
+[ext_resource type="PackedScene" uid="uid://drlk3eytql54k" path="res://models/accessories/backpacks/angel_wings/tt_m_chr_avt_acc_pac_angelWings.glb" id="1_tf36u"]
+[ext_resource type="Texture2D" uid="uid://cx6152ytd81xs" path="res://models/accessories/backpacks/angel_wings/tt_t_chr_avt_acc_pac_angelWingsMultiColor.png" id="2_hvlsp"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tf36u"]
+load_path = "res://.godot/imported/tt_t_chr_avt_acc_pac_angelWingsMultiColor.png-008a49cdba0c15012544f2d91f713657.ctex"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hn6mm"]
+resource_name = "default.280"
+vertex_color_use_as_albedo = true
+albedo_texture = SubResource("CompressedTexture2D_tf36u")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tf36u"]
+albedo_texture = ExtResource("2_hvlsp")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_juwn3"]
+_surfaces = [{
+"aabb": AABB(-2.36006, -1.50482, -2.96264, 4.72012, 5.3878, 4.03507),
+"format": 34896613377,
+"index_count": 102,
+"index_data": PackedByteArray("AAABAAIAAgABAAMAAQAEAAMAAAAFAAEABQAGAAEABQAHAAYABwAIAAYABgAIAAkACgAGAAkACgAJAAsADAAKAAsADAALAA0ADgAMAA0ADgANAA8AEAAOAA8AEAAPABEAEgAQABEAEwAUABUAFAAWABUAFgAXABUAEwAVABgAGQATABgAGgAZABgAGwAaABgAGwAYABwAHQAbABwAHQAcAB4AHwAdAB4AHwAeACAAIQAfACAAIQAgACIAIwAhACIAIwAiACQAJQAjACQA"),
+"material": SubResource("StandardMaterial3D_tf36u"),
+"name": "default.280",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 38,
+"vertex_data": PackedByteArray("//8YvwAAAAAh4ffnP00AAPv+LeaKAgAAyvr//wANAACe6sX9dzUAAOf9hYk7BQAAw9iJyi9iAACq9gtnWRcAAInqmki0NQAAYt+cNJ1RAACdw+asHJcAAErN2iXlfgAA9riiqsaxAADlxHoP6JMAAPCqPafe1AAA4LAAAALGAACEna+KdPYAALSZ/yX//wAAtJl1aP//AAAAABi/AAAAAAMBLeaKAgAA3R735z9NAAA0Bf//AA0AAGAVxf13NQAAOyeJyi9iAAAXAoWJOwUAAFQJC2dZFwAAdRWaSLQ1AABhPOasHJcAAJwgnDSdUQAACEeiqsaxAAC0Mtol5X4AAA5VPafe1AAAGTt6D+iTAAB6Yq+KdPYAAB5PAAACxgAASmZ1aP//AABKZv8l//8AAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_icnnt"]
+resource_name = "tt_m_chr_avt_acc_pac_angelWings_tt_m_chr_avt_acc_pac_angelWingswithWhiteFeathers"
+_surfaces = [{
+"aabb": AABB(-2.36006, -1.50482, -2.96264, 4.72012, 5.3878, 4.03507),
+"attribute_data": PackedByteArray("/////yj4/l3/////w8ADJ/////+F/jU2/////2/7SRr/////S9lCFf////8u6PWS//////ao3kD/////odFosv/////HsZfL/////zmWs9r/////gnYzVf////9ZbXPh/////9VfslL/////BVct9P/////oQdJP//////wpxPr/////xh+HZv/////+ASLK/////2kQQof/////KPj+Xf////+F/jU2/////8PAAyf/////b/tJGv////9L2UIV//////ao3kD/////Luj1kv////+h0Wiy/////8exl8v/////gnYzVf////85lrPa/////9VfslL/////WW1z4f/////oQdJP/////wVXLfT/////xh+HZv/////8KcT6/////2kQQof//////gEiyg=="),
+"format": 34896613407,
+"index_count": 102,
+"index_data": PackedByteArray("AAABAAIAAgABAAMAAQAEAAMAAAAFAAEABQAGAAEABQAHAAYABwAIAAYABgAIAAkACgAGAAkACgAJAAsADAAKAAsADAALAA0ADgAMAA0ADgANAA8AEAAOAA8AEAAPABEAEgAQABEAEwAUABUAFAAWABUAFgAXABUAEwAVABgAGQATABgAGgAZABgAGwAaABgAGwAYABwAHQAbABwAHQAcAB4AHwAdAB4AHwAeACAAIQAfACAAIQAgACIAIwAhACIAIwAiACQAJQAjACQA"),
+"material": SubResource("StandardMaterial3D_hn6mm"),
+"name": "default.280",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 38,
+"vertex_data": PackedByteArray("//8YvwAA5q4h4ffnP03mrvv+LeaKAuauyvr//wAN5a6e6sX9dzXlruf9hYk7Beauw9iJyi9i5q6q9gtnWRfmronqmki0NeauYt+cNJ1R5a6dw+asHJfmrkrN2iXlfueu9riiqsax5q7lxHoP6JPmrvCqPafe1Oau4LAAAALG5q6Ena+KdPbmrrSZ/yX//+autJl1aP//5q4AABi/AABLBwMBLeaKAkoH3R735z9NSgc0Bf//AA1IB2AVxf13NUsHOyeJyi9iSwcXAoWJOwVLB1QJC2dZF0sHdRWaSLQ1SwdhPOasHJdLB5wgnDSdUUkHCEeiqsaxSwe0Mtol5X5NBw5VPafe1EsHGTt6D+iTTgd6Yq+KdPZLBx5PAAACxksHSmZ1aP//SwdKZv8l//9LB3dktQp7ZLEKf2SuCohkpwqCZKgKd2S1CndktQp3ZLUKd2S1Cn5ksgp4ZLQKbGS5CnZktQpvZLgKd2S1CndktQp3ZLUKd2S1CndktQrm+jLQ6vow0Oj6MdDt+i/Q7fow0Ob6MtDm+jLQ5voy0Ob6MtDm+jLQ6Pox0Of6MtDl+jLQ5voy0OT6MtDm+jLQ5voy0Ob6MtDm+jLQ")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_juwn3")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h8vlf"]
+resource_name = "default.280"
+cull_mode = 2
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("2_hvlsp")
+
+[node name="tt_m_chr_avt_acc_pac_angelWings" unique_id=541337993 instance=ExtResource("1_tf36u")]
+
+[node name="tt_m_chr_avt_acc_pac_angelWingswithWhiteFeathers" parent="." index="0" unique_id=992878565]
+mesh = SubResource("ArrayMesh_icnnt")
+surface_material_override/0 = SubResource("StandardMaterial3D_h8vlf")

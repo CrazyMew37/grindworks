@@ -1,0 +1,14 @@
+[gd_resource type="Resource" format=3 uid="uid://dgpmnvcnlogms"]
+
+[ext_resource type="Texture2D" uid="uid://fqps4xjvr6y4" path="res://ui_assets/battle/statuses/monopolisteffect.png" id="1_jopvo"]
+[ext_resource type="Script" uid="uid://c8cnn4pcotlvs" path="res://objects/battle/battle_resources/status_effects/mod_cog_effects/cog_mod_monopolist.gd" id="2_jopvo"]
+
+[resource]
+script = ExtResource("2_jopvo")
+quality = 0
+rounds = -1
+icon = ExtResource("1_jopvo")
+description = "+100% damage, defense, and accuracy if this cog is the only one in the battle."
+status_name = "Monopolist"
+id = 106
+metadata/_custom_type_script = "uid://df7irk63ikx4k"

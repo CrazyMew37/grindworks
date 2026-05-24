@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://bvaididoxakve"]
+
+[ext_resource type="PackedScene" uid="uid://c87x8jvkrkdex" path="res://objects/items/custom/jellybean/silver_jellybean.tscn" id="1_vorjm"]
+[ext_resource type="AudioStream" uid="uid://b8pshap2d5xwv" path="res://audio/sfx/ui/tick_counter.ogg" id="2_2a1xj"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="3_ltxku"]
+
+[resource]
+script = ExtResource("3_ltxku")
+qualitoon = 2
+evergreen = true
+world_scale = 0.25
+item_name = "Silver Jellybean"
+item_description = "Sweet, sweet profit"
+model = ExtResource("1_vorjm")
+pickup_sfx = ExtResource("2_2a1xj")
+remember_item = false
+shop_category_color = Color(1, 0.54902, 0, 1)

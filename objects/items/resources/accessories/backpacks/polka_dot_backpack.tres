@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="ItemAccessory" format=3 uid="uid://cjkmiu3yrt2j"]
+
+[ext_resource type="Script" uid="uid://fb0tqfojo57q" path="res://objects/items/classes/accessory_placement.gd" id="1_gw4xm"]
+[ext_resource type="Script" uid="uid://duxq3xtgnln43" path="res://objects/items/classes/body_placement.gd" id="2_xnwcx"]
+[ext_resource type="Texture2D" uid="uid://cjmg4qawiw476" path="res://models/accessories/backpacks/standard_backpack/polka_dot_backpack-pix-2.png" id="3_gw4xm"]
+[ext_resource type="PackedScene" uid="uid://canbvc0orwhop" path="res://models/accessories/backpacks/standard_backpack/polka_dot_backpack.tscn" id="4_xnwcx"]
+[ext_resource type="Script" uid="uid://dvu24b3o8i3sj" path="res://objects/items/classes/item_accessory.gd" id="5_fw7jf"]
+
+[sub_resource type="Resource" id="Resource_6vjhu"]
+script = ExtResource("2_xnwcx")
+body_type = 2
+position = Vector3(0.01, 0.72, 0.8)
+rotation = Vector3(-8.28, 180, 0)
+scale = Vector3(0.4, 0.4, 0.4)
+
+[sub_resource type="Resource" id="Resource_4scxt"]
+script = ExtResource("2_xnwcx")
+body_type = 1
+position = Vector3(0.01, 0.35, 0.78)
+rotation = Vector3(0, 180, 0)
+scale = Vector3(0.4, 0.4, 0.4)
+
+[sub_resource type="Resource" id="Resource_pj1q4"]
+script = ExtResource("2_xnwcx")
+position = Vector3(0.11, 0.46, 1.08)
+rotation = Vector3(8.28, 180, 0)
+scale = Vector3(0.4, 0.4, 0.4)
+
+[resource]
+script = ExtResource("5_fw7jf")
+accessory_placements = Array[ExtResource("1_gw4xm")]([SubResource("Resource_6vjhu"), SubResource("Resource_4scxt"), SubResource("Resource_pj1q4")])
+slot = 3
+world_scale = 0.15
+item_name = "Polka Dot Backpack"
+item_description = "Such a heavy bag..."
+big_description = "+ 10% Defense
++ 5% Luck
+- 20% Evasiveness"
+model = ExtResource("4_xnwcx")
+stats_add = {
+"defense": 0.1,
+"evasiveness": -0.2,
+"luck": 0.05
+}
+icon = ExtResource("3_gw4xm")
+shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)

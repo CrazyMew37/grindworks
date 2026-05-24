@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://5n1vjs7uhjl3"]
+
+[ext_resource type="PackedScene" uid="uid://bk666b030qvok" path="res://models/accessories/hats/baseball_cap/tt_m_chr_avt_acc_hat_baseball.glb" id="1_xoj8k"]
+[ext_resource type="Texture2D" uid="uid://cbubp2y2liefp" path="res://models/accessories/hats/baseball_cap/tt_t_chr_avt_acc_hat_baseballRed.png" id="2_68lcv"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hsv3c"]
+albedo_texture = ExtResource("2_68lcv")
+
+[node name="tt_m_chr_avt_acc_hat_baseball" unique_id=2122589211 instance=ExtResource("1_xoj8k")]
+
+[node name="baseballHat" parent="." index="0" unique_id=1777653298]
+surface_material_override/0 = SubResource("StandardMaterial3D_hsv3c")

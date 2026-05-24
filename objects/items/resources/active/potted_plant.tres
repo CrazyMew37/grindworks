@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="ItemActive" format=3 uid="uid://dhq7pmfegoua1"]
+
+[ext_resource type="Texture2D" uid="uid://b10e61r50b3dx" path="res://ui_assets/player_ui/pocket_prank_icons/pottedplant.png" id="1_7lmwf"]
+[ext_resource type="Script" uid="uid://dp81783rxe6qv" path="res://objects/items/custom/item_potted_plant.gd" id="2_7lmwf"]
+[ext_resource type="PackedScene" uid="uid://qlc2pp3wp5ph" path="res://models/props/facility_objects/da_office/plant/potted_plant.tscn" id="3_7lmwf"]
+[ext_resource type="AudioStream" uid="uid://blyhe56l6dfkn" path="res://audio/sfx/battle/gags/drop/AA_drop_flowerpot_miss.ogg" id="4_7lmwf"]
+[ext_resource type="Script" uid="uid://5uwfsntxdag6" path="res://objects/items/classes/item_active.gd" id="5_xmlqf"]
+
+[resource]
+script = ExtResource("5_xmlqf")
+active_type = 2
+charge_count = 3
+current_charge = 3
+tags = Array[int]([2])
+qualitoon = 2
+world_scale = 2.5
+world_y_offset = -0.1
+item_name = "Potted Plant"
+item_description = "Growing big"
+big_description = "Increases your damage, defense, evasiveness, luck, and speed by 1% on use."
+model = ExtResource("3_7lmwf")
+pickup_sfx = ExtResource("4_7lmwf")
+item_script = ExtResource("2_7lmwf")
+icon = ExtResource("1_7lmwf")
+shop_category_title = "Pocket Prank"
+shop_category_color = Color(0.929412, 0.262745, 0.278431, 1)
+metadata/_custom_type_script = "uid://5uwfsntxdag6"

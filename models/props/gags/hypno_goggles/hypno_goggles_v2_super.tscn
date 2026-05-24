@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://b24rytkce7rw8"]
+
+[ext_resource type="PackedScene" uid="uid://dhtjj36hm6wa1" path="res://models/props/gags/hypno_goggles/HypnoGoggles.glb" id="1_vrd06"]
+[ext_resource type="Texture2D" uid="uid://bjtkoov2ci062" path="res://models/props/gags/hypno_goggles/HypnoGoggles_hypno_glasess_texture.png" id="2_e5nul"]
+[ext_resource type="Texture2D" uid="uid://boualdsndqgn" path="res://models/props/gags/hypno_goggles/HypnoGoggles_HypnoGoggles_Frames.png" id="3_jq44g"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qyedy"]
+albedo_color = Color(0.8117647, 0.23137255, 1, 1)
+albedo_texture = ExtResource("2_e5nul")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fvtye"]
+albedo_color = Color(0.8, 0.2, 1, 1)
+albedo_texture = ExtResource("3_jq44g")
+
+[sub_resource type="BoxMesh" id="BoxMesh_v45yt"]
+size = Vector3(5, 1, 5)
+
+[node name="HypnoGoggles" unique_id=2052089908 instance=ExtResource("1_vrd06")]
+
+[node name="Swirls" parent="." index="0" unique_id=1441479835]
+transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 1.27723, 0, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_qyedy")
+
+[node name="Frame" parent="." index="1" unique_id=689387114]
+transform = Transform3D(1, 0, 0, 0, 0.278796, -0.96035, 0, 0.96035, 0.278796, 1.27723, 0.417034, 2.03238)
+surface_material_override/0 = SubResource("StandardMaterial3D_fvtye")
+
+[node name="UIHelper" type="MeshInstance3D" parent="." index="2" unique_id=1328843639]
+visible = false
+mesh = SubResource("BoxMesh_v45yt")

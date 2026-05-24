@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://c87x8jvkrkdex"]
+
+[ext_resource type="PackedScene" uid="uid://biosycr5f2tcv" path="res://models/props/pickups/jellybean/jellybean.glb" id="1_ggyqf"]
+[ext_resource type="Script" uid="uid://bswkfahdn7nkg" path="res://objects/items/custom/jellybean/jellybean.gd" id="2_its1q"]
+
+[node name="jellybean2" unique_id=47296804 instance=ExtResource("1_ggyqf")]
+script = ExtResource("2_its1q")
+bean_color = 8
+
+[node name="Jellybean_all" parent="." index="0" unique_id=457017175]
+transform = Transform3D(0.1, 0, 0, 0, -4.37114e-09, -0.1, 0, 0.1, -4.37114e-09, 0, 0, 0)

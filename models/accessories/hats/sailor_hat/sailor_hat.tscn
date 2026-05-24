@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://c5l2quooy6yuk"]
+
+[ext_resource type="PackedScene" uid="uid://bo0t5idgr5yr1" path="res://models/accessories/hats/sailor_hat/tt_m_chr_avt_acc_hat_sailorHat.glb" id="1_pem1p"]
+[ext_resource type="Texture2D" uid="uid://xiypqwc0cpws" path="res://models/accessories/hats/sailor_hat/tt_m_chr_avt_acc_hat_sailorHat_tt_t_chr_avt_acc_hat_sailorHat.png" id="2_n6fen"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lakaa"]
+cull_mode = 2
+albedo_texture = ExtResource("2_n6fen")
+
+[node name="tt_m_chr_avt_acc_hat_sailorHat2" unique_id=787909980 instance=ExtResource("1_pem1p")]
+
+[node name="tt_m_chr_avt_acc_hat_sailorHat" parent="." index="0" unique_id=399432655]
+surface_material_override/0 = SubResource("StandardMaterial3D_lakaa")

@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://canbvc0orwhop"]
+
+[ext_resource type="PackedScene" uid="uid://bdoi572ics05w" path="res://models/accessories/backpacks/standard_backpack/tt_m_chr_avt_acc_pac_backpack.glb" id="1_wvwwq"]
+[ext_resource type="Texture2D" uid="uid://bqj5x1stvh4vt" path="res://models/accessories/backpacks/standard_backpack/tt_t_chr_avt_acc_pac_backpackPolkaDotRed.png" id="2_wvwwq"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hxuu3"]
+resource_local_to_scene = true
+resource_name = "default.281"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("2_wvwwq")
+
+[node name="tt_m_chr_avt_acc_pac_backpack" unique_id=460432018 instance=ExtResource("1_wvwwq")]
+
+[node name="backpack" parent="." index="0" unique_id=45231195]
+unique_name_in_owner = true
+surface_material_override/0 = SubResource("StandardMaterial3D_hxuu3")

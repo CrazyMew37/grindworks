@@ -117,6 +117,10 @@ func generate_floor() -> void:
 	Util.floor_type = floor_rooms
 	# Randomly decide 40% - 60% battle rooms 
 	battle_ratio = 0.4 + (0.1 * float(RNG.channel(RNG.ChannelBattleRatio).randi() % 3))
+	if floor_tags.has('less_battle_rooms') and floor_tags['less_battle_rooms'] == true:
+		battle_ratio -= 0.3
+	if floor_tags.has('more_battle_rooms') and floor_tags['more_battle_rooms'] == true:
+		battle_ratio += 0.25
 	var total_rooms = int((room_count - 2) / 2)
 	var total_battles := int(total_rooms * battle_ratio)
 	rooms_remaining = [total_battles, total_rooms - total_battles]

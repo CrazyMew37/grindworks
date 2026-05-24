@@ -33,5 +33,7 @@ Adjusted an aspect of the 'jellybeans' seed.
 [TITLE]Hotfix #2
 Did a second adjustment of the directors' health formula for more extreme scaling.
 [TITLE]Hotfix #3
-Boss Health Scaling was adjusted and now properly works."
+Boss Health Scaling was adjusted and now properly works.
+[TITLE]Hotfix #4
+Fixed 2D Plane Cogs clipping through some textures."
 metadata/_custom_type_script = "uid://d1j0hh6tsgy0r"

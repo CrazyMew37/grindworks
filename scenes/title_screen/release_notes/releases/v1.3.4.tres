@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="ReleaseNote" format=3 uid="uid://ca1o5awkl1lrb"]
+
+[ext_resource type="Script" uid="uid://d1j0hh6tsgy0r" path="res://scenes/title_screen/release_notes/release_note.gd" id="1_iwomq"]
+
+[resource]
+script = ExtResource("1_iwomq")
+release_version = "v1.3.4 (CM37E)"
+notes = "[TITLE]Items
+Added 15 new accessories: Pink Stars Boots (Three Stars), Plush Cat Pack (Two Stars), Plush Dog Pack (Two Stars), Polka Dot Backpack (One Star), Rainbow Wings (Five Stars), Firefighter Helmet (Two Stars), Bee Headband (Two Stars), Sailor Hat (Two Stars), Dad Cap (Two Stars), Toonosaur Tail (Four Stars), Sun Hat (One Star), Antenna Thingy (Three Stars), Winter Hat (Three Stars), Sandbag Hat (Three Stars), and Bandana (Three Stars)
+Added 2 new passive items: Golf Club (Three Stars) and Crazy Daisy (Four Stars)
+Added 3 new Pocket Pranks: Joke Sheet (Two Stars), Potted Plant (Three Stars), and Super Hypno Goggles (This item was unused but is now in the game!) (Four Stars)
+Rebalanced the Jellybeans. Instead of six different types, there is now nine. Some prices were adjusted to compensate.
+Added Super Zippy Zap. It will spawn at a lower rate then the other Super Candies, however.
+Angel Wings: Five Stars/Q7 -> Five Stars/Q5
+Jellybean Jar: One Star/Q1 -> Two Stars/Q1
+Bee Wings: Three Stars/Q3 -> Three Stars/Q4
+Fixed Plush Bear Pack giving an extra round of Damage Boost
+[TITLE] Anomalies
+Added 9 new anomalies: Tax Return, Secured Equipment, Lunch Break, Shortcut, Blue Collar Work, White Collar Work, Price Hike, Stagnation, and Overworked
+Inspiration has been buffed from 20% to 30% due to Stagnation's inclusion.
+[TITLE] Proxies
+Added 5 new proxy effects: Risk-Adverse, Group Fund, Monopolist, Tolerant, and Chair Warmer
+Undercutter's Stat Multipliers were changed from 2x Damage, 0.5x Defense to 2x Damage, 0.75x Defense
+[TITLE] Misc.
+Fixed Regeneration and Gag Immunity being broken in the Cog Creator. Though, do note that this was fixed by making a unique variant of these status effects. Please adjust your custom cogs if you added this to them and do note that they might not work on other forks if you add these.
+  A variant of Payraise was added too, by the way!
+Tax Write-Off's jellybean effect will now no longer diminish like Embezzled.
+The specific CrazyMew37 Edition version will now be displayed."
+metadata/_custom_type_script = "uid://d1j0hh6tsgy0r"

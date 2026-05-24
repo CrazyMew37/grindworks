@@ -5,14 +5,14 @@
 [sub_resource type="BoxMesh" id="BoxMesh_v45yt"]
 size = Vector3(5, 1, 5)
 
-[node name="HypnoGoggles" instance=ExtResource("1_v45yt")]
+[node name="HypnoGoggles" unique_id=2052089908 instance=ExtResource("1_v45yt")]
 
-[node name="Swirls" parent="." index="0"]
+[node name="Swirls" parent="." index="0" unique_id=1441479835]
 transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 1.27723, 0, 0)
 
-[node name="Frame" parent="." index="1"]
+[node name="Frame" parent="." index="1" unique_id=689387114]
 transform = Transform3D(1, 0, 0, 0, 0.278796, -0.96035, 0, 0.96035, 0.278796, 1.27723, 0.417034, 2.03238)
 
-[node name="UIHelper" type="MeshInstance3D" parent="." index="2"]
+[node name="UIHelper" type="MeshInstance3D" parent="." index="2" unique_id=1328843639]
 visible = false
 mesh = SubResource("BoxMesh_v45yt")

@@ -4,4 +4,4 @@
 
 [resource]
 script = ExtResource("2_uusho")
-items = PackedStringArray("res://objects/items/resources/passive/red_jellybean.tres", "res://objects/items/resources/passive/blue_jellybean.tres", "res://objects/items/resources/passive/green_jellybean.tres", "res://objects/items/resources/passive/light_blue_jellybean.tres", "res://objects/items/resources/passive/pink_jellybean.tres", "res://objects/items/resources/passive/yellow_jellybean.tres")
+items = PackedStringArray("res://objects/items/resources/passive/red_jellybean.tres", "res://objects/items/resources/passive/blue_jellybean.tres", "res://objects/items/resources/passive/green_jellybean.tres", "res://objects/items/resources/passive/light_blue_jellybean.tres", "res://objects/items/resources/passive/pink_jellybean.tres", "res://objects/items/resources/passive/yellow_jellybean.tres", "res://objects/items/resources/passive/orange_jellybean.tres", "res://objects/items/resources/passive/magenta_jellybean.tres", "res://objects/items/resources/passive/silver_jellybean.tres")

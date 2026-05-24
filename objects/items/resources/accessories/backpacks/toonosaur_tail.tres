@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="ItemAccessory" format=3 uid="uid://clx1ws8848ln"]
+
+[ext_resource type="Script" uid="uid://fb0tqfojo57q" path="res://objects/items/classes/accessory_placement.gd" id="1_u33a5"]
+[ext_resource type="Script" uid="uid://duxq3xtgnln43" path="res://objects/items/classes/body_placement.gd" id="2_cmnwb"]
+[ext_resource type="Texture2D" uid="uid://brwmwsgmbjcfr" path="res://models/accessories/backpacks/dinosaur_tail/tt_m_chr_avt_acc_pac_dinosaurTail.glb-pix-1.png" id="3_u33a5"]
+[ext_resource type="Script" uid="uid://lx0sloa20qql" path="res://objects/items/custom/item_toonosaur_tail.gd" id="4_2pvif"]
+[ext_resource type="PackedScene" uid="uid://6npjey31jkbh" path="res://models/accessories/backpacks/dinosaur_tail/toonosaur_tail.tscn" id="5_cmnwb"]
+[ext_resource type="Script" uid="uid://dvu24b3o8i3sj" path="res://objects/items/classes/item_accessory.gd" id="5_o22u4"]
+
+[sub_resource type="Resource" id="Resource_3frid"]
+script = ExtResource("2_cmnwb")
+body_type = 2
+position = Vector3(0.01, 0.3, 0.5)
+rotation = Vector3(5, 180, 0)
+scale = Vector3(0.3, 0.3, 0.3)
+
+[sub_resource type="Resource" id="Resource_3jk26"]
+script = ExtResource("2_cmnwb")
+body_type = 1
+position = Vector3(0.01, 0.15, 0.45)
+rotation = Vector3(10, 180, 0)
+scale = Vector3(0.3, 0.3, 0.3)
+
+[sub_resource type="Resource" id="Resource_cixyy"]
+script = ExtResource("2_cmnwb")
+position = Vector3(0, 0.3, 0.6)
+rotation = Vector3(15, 180, 0)
+scale = Vector3(0.3, 0.3, 0.3)
+
+[resource]
+script = ExtResource("5_o22u4")
+accessory_placements = Array[ExtResource("1_u33a5")]([SubResource("Resource_3frid"), SubResource("Resource_3jk26"), SubResource("Resource_cixyy")])
+qualitoon = 3
+slot = 3
+world_scale = 0.07
+world_y_offset = 0.4
+ui_cam_offset = 0.5
+item_name = "Toonosaur Tail"
+item_description = "Dinosaur might!"
+big_description = "Your gags will deal extra damage equal to twice the cog's level."
+model = ExtResource("5_cmnwb")
+item_script = ExtResource("4_2pvif")
+icon = ExtResource("3_u33a5")
+shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)

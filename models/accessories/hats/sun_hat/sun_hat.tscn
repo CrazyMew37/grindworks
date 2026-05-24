@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bgeum8xu5m3kl"]
+
+[ext_resource type="PackedScene" uid="uid://cs2me6a5s7shc" path="res://models/accessories/hats/sun_hat/sun_hat.fbx" id="1_ityy7"]
+[ext_resource type="Material" uid="uid://blwirl6m6xw54" path="res://models/accessories/hats/sun_hat/tt_t_chr_avt_acc_hat_sunHatShader.tres" id="2_jtkug"]
+
+[node name="sun_hat" unique_id=1717484264 instance=ExtResource("1_ityy7")]
+
+[node name="tt_m_chr_avt_acc_hat_sunHat" parent="." index="0" unique_id=1364965971]
+surface_material_override/0 = ExtResource("2_jtkug")

@@ -28,7 +28,7 @@ func cutscene(battle: BattleManager) -> void:
 		if cog.lured: cogs.erase(cog)
 	
 	var prop: Node3D
-	prop = load("res://models/props/gags/hypno_goggles/hypno_goggles_v2.tscn").instantiate()
+	prop = load("res://models/props/gags/hypno_goggles/hypno_goggles_v2_super.tscn").instantiate()
 	player.toon.glasses_node.add_child(prop)
 	
 	# Place accessory
@@ -94,7 +94,7 @@ func apply_lure(cog: Cog) -> void:
 	lure.target = cog
 	lure.knockback_effect = get_knockback()
 	lure.quality = StatusEffect.EffectQuality.NEGATIVE
-	lure.icon = load('res://ui_assets/battle/gags/inventory_hypno_goggles.png')
+	lure.icon = load('res://ui_assets/player_ui/pocket_prank_icons/superhypnogoggles.png')
 	BattleService.ongoing_battle.add_status_effect(lure)
 
 ## Should return the knockback of the highest unlocked Lure Gag

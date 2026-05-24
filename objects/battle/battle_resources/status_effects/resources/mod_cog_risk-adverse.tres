@@ -1,0 +1,15 @@
+[gd_resource type="Resource" format=3 uid="uid://bcee0blxktngs"]
+
+[ext_resource type="Texture2D" uid="uid://gnp0mpgh4w6n" path="res://ui_assets/battle/statuses/riskadverse.png" id="1_7w26o"]
+[ext_resource type="Script" uid="uid://ka1qbqeopxhd" path="res://objects/battle/battle_resources/status_effects/mod_cog_effects/cog_mod_risk-adverse.gd" id="2_x0ctf"]
+
+[resource]
+script = ExtResource("2_x0ctf")
+quality = 0
+rounds = -1
+icon = ExtResource("1_7w26o")
+description = "x0.75 damage multiplier
+x2 defense multiplier"
+status_name = "Risk-Adverse"
+id = 104
+metadata/_custom_type_script = "uid://df7irk63ikx4k"

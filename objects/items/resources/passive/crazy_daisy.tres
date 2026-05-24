@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://w587q8elmhvb"]
+
+[ext_resource type="Texture2D" uid="uid://ci20e6vajf70d" path="res://models/props/toon_props/flowers/daisy/crazy_daisy-pix-4.png" id="1_r2g30"]
+[ext_resource type="PackedScene" uid="uid://db5mtp2ha7lhk" path="res://models/props/toon_props/flowers/daisy/crazy_daisy.tscn" id="2_0fuam"]
+[ext_resource type="Script" uid="uid://d20fkrvafeity" path="res://objects/items/custom/item_crazy_daisy.gd" id="2_17325"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="4_hx3fu"]
+
+[resource]
+script = ExtResource("4_hx3fu")
+qualitoon = 3
+world_y_offset = -0.3
+item_name = "Crazy Daisy"
+item_description = "You're crazy lucky!"
+big_description = "20% of base Luck over 100% is added onto Damage"
+model = ExtResource("2_0fuam")
+item_script = ExtResource("2_17325")
+icon = ExtResource("1_r2g30")
+shop_category_title = "Special Item"
+shop_category_color = Color(0.6, 0.2, 1, 1)
+force_show_shop_category = true

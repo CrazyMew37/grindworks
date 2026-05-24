@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://qlc2pp3wp5ph"]
+
+[ext_resource type="PackedScene" uid="uid://dhhqh31svadc4" path="res://models/props/facility_objects/da_office/plant/potted_plant.fbx" id="1_plgmq"]
+
+[node name="potted_plant" unique_id=106993912 instance=ExtResource("1_plgmq")]
+
+[node name="GeometryTransformHelper4" parent="plantA/collisison/collision" parent_id_path=PackedInt32Array(1038979457) index="0" unique_id=80925314]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.07852141, -1.7204714, -7.225707e-08)
+
+[node name="bench_shadow" parent="plantA/plantA2" parent_id_path=PackedInt32Array(569615225) index="14" unique_id=1440772229]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0.83621097, 0)

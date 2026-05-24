@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://b0m68kqq3wmwj"]
+
+[ext_resource type="PackedScene" uid="uid://lmvr43ie7o73" path="res://objects/items/custom/jellybean/orange_jellybean.tscn" id="1_6n2xi"]
+[ext_resource type="AudioStream" uid="uid://b8pshap2d5xwv" path="res://audio/sfx/ui/tick_counter.ogg" id="2_yv5tv"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="3_ypltu"]
+
+[resource]
+script = ExtResource("3_ypltu")
+qualitoon = 1
+rarity = 1
+evergreen = true
+world_scale = 0.25
+item_name = "Orange Jellybean"
+item_description = "Sweet, sweet profit"
+model = ExtResource("1_6n2xi")
+pickup_sfx = ExtResource("2_yv5tv")
+remember_item = false
+shop_category_color = Color(1, 0.54902, 0, 1)

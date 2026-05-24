@@ -7,6 +7,7 @@ var ICONS := {
 	'defense': load("res://ui_assets/battle/statuses/defense.png"),
 	'evasiveness': load("res://ui_assets/battle/statuses/evasiveness.png"),
 	'luck': load("res://ui_assets/battle/statuses/luck_crit.png"),
+	'accuracy': load("res://ui_assets/battle/statuses/accuracy.png"),
 }
 
 @export var stat: String = 'defense'

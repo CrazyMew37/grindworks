@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="ItemActive" format=3 uid="uid://c8sxiuvkm7e6i"]
+
+[ext_resource type="Texture2D" uid="uid://dfcpcvcib2q3x" path="res://ui_assets/player_ui/pocket_prank_icons/jokesheet.png" id="1_oir5l"]
+[ext_resource type="Script" uid="uid://2wykbu7yi2v" path="res://objects/items/custom/item_joke_sheet.gd" id="2_5nlry"]
+[ext_resource type="PackedScene" uid="uid://b3vg0cgu4thcr" path="res://models/props/facility_objects/memo/joke_sheet.tscn" id="3_5nlry"]
+[ext_resource type="AudioStream" uid="uid://bnttu3i1ab1w1" path="res://audio/sfx/items/clock10.ogg" id="4_oir5l"]
+[ext_resource type="Script" uid="uid://5uwfsntxdag6" path="res://objects/items/classes/item_active.gd" id="4_xrsfl"]
+
+[resource]
+script = ExtResource("4_xrsfl")
+active_type = 2
+charge_count = 4
+current_charge = 4
+tags = Array[int]([2])
+qualitoon = 1
+world_scale = 0.8
+item_name = "Joke Sheet"
+item_description = "Joyous jokes!"
+big_description = "Increases your max Laff by 5 upon use."
+model = ExtResource("3_5nlry")
+pickup_sfx = ExtResource("4_oir5l")
+item_script = ExtResource("2_5nlry")
+icon = ExtResource("1_oir5l")
+shop_category_title = "Pocket Prank"
+shop_category_color = Color(0.929412, 0.262745, 0.278431, 1)
+metadata/_custom_type_script = "uid://5uwfsntxdag6"

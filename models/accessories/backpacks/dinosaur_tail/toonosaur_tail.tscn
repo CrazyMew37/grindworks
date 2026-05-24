@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://6npjey31jkbh"]
+
+[ext_resource type="PackedScene" uid="uid://bg6ocqx3y4pgs" path="res://models/accessories/backpacks/dinosaur_tail/tt_m_chr_avt_acc_pac_dinosaurTail.glb" id="1_aj54d"]
+[ext_resource type="Texture2D" uid="uid://di0c7w3xf5jtl" path="res://models/accessories/backpacks/dinosaur_tail/tt_m_chr_avt_acc_pac_dinosaurTail_tt_t_chr_avt_acc_pac_dinosaur.png" id="2_v4xg5"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_txcgt"]
+cull_mode = 2
+albedo_texture = ExtResource("2_v4xg5")
+
+[node name="tt_m_chr_avt_acc_pac_dinosaurTail" unique_id=1783687754 instance=ExtResource("1_aj54d")]
+
+[node name="dinosaurTail" parent="." index="0" unique_id=53968473]
+surface_material_override/0 = SubResource("StandardMaterial3D_txcgt")

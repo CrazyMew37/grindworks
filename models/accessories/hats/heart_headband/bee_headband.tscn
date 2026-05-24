@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://c7yhhyclqa0qe"]
+
+[ext_resource type="PackedScene" uid="uid://byl3r4wrysbai" path="res://models/accessories/hats/heart_headband/tt_m_chr_avt_acc_hat_heart.glb" id="1_dqhlj"]
+[ext_resource type="Texture2D" uid="uid://bx7t1lnhv62f1" path="res://models/accessories/hats/heart_headband/tt_t_chr_avt_acc_hat_heartYellow.png" id="2_8hrdl"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_li303"]
+albedo_texture = ExtResource("2_8hrdl")
+
+[node name="tt_m_chr_avt_acc_hat_heart" unique_id=233683881 instance=ExtResource("1_dqhlj")]
+
+[node name="heartHat" parent="." index="0" unique_id=708885078]
+surface_material_override/0 = SubResource("StandardMaterial3D_li303")

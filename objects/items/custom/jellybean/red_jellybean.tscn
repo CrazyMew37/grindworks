@@ -3,8 +3,8 @@
 [ext_resource type="Script" uid="uid://bswkfahdn7nkg" path="res://objects/items/custom/jellybean/jellybean.gd" id="1_8gld8"]
 [ext_resource type="PackedScene" uid="uid://biosycr5f2tcv" path="res://models/props/pickups/jellybean/jellybean.glb" id="1_y0o4u"]
 
-[node name="jellybean2" instance=ExtResource("1_y0o4u")]
+[node name="jellybean2" unique_id=47296804 instance=ExtResource("1_y0o4u")]
 script = ExtResource("1_8gld8")
 
-[node name="Jellybean_all" parent="." index="0"]
+[node name="Jellybean_all" parent="." index="0" unique_id=457017175]
 transform = Transform3D(0.1, 0, 0, 0, -4.37114e-09, -0.1, 0, 0.1, -4.37114e-09, 0, 0, 0)

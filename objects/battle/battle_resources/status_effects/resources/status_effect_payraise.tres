@@ -5,7 +5,8 @@
 
 [resource]
 script = ExtResource("1_0m1qb")
-quality = 1
+diminish_factor = 1.0
+quality = 0
 rounds = -1
 icon = ExtResource("1_42ukf")
 status_name = "Payraise"

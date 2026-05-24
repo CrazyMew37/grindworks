@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://b3vg0cgu4thcr"]
+
+[ext_resource type="PackedScene" uid="uid://dgqurwn1l3pdg" path="res://models/props/facility_objects/memo/memo.fbx" id="1_qj0yf"]
+[ext_resource type="Texture2D" uid="uid://cgs7wao7thc4f" path="res://models/props/facility_objects/memo/memo_0.png" id="2_dsm77"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dhl67"]
+albedo_texture = ExtResource("2_dsm77")
+
+[node name="memo" unique_id=1635711308 instance=ExtResource("1_qj0yf")]
+
+[node name="GeometryTransformHelper" parent="memo" parent_id_path=PackedInt32Array(1369192723) index="0" unique_id=651625650]
+surface_material_override/0 = SubResource("StandardMaterial3D_dhl67")

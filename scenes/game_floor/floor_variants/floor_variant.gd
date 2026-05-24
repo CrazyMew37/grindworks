@@ -16,6 +16,9 @@ static var ANOMALIES_POSITIVE: Array[String] = [
 	"res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_inspiration.gd",
 	"res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_victory_cry.gd",
 	"res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_overstock.gd",
+	"res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_tax_return.gd",
+	"res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_secured_equipment.gd",
+	"res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_lunch_break.gd",
 ]
 static var ANOMALIES_NEUTRAL: Array[String] = [
 	"res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_marathon.gd",
@@ -25,6 +28,9 @@ static var ANOMALIES_NEUTRAL: Array[String] = [
 	"res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_status_report.gd",
 	"res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_stagnant_air.gd",
 	"res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_silly_waves.gd",
+	"res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_shortcut.gd",
+	"res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_blue_collar_work.gd",
+	"res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_white_collar_work.gd",
 ]
 static var ANOMALIES_NEGATIVE: Array[String] = [
 	"res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_level_up.gd",
@@ -34,6 +40,9 @@ static var ANOMALIES_NEGATIVE: Array[String] = [
 	"res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_inflation.gd",
 	"res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_double_trouble.gd",
 	"res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_bad_luck.gd",
+	"res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_surtax.gd",
+	"res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_stagnation.gd",
+	"res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_overworked.gd",
 ]
 
 static var LEVEL_RANGES: Dictionary[int, Array] = {
@@ -217,11 +226,14 @@ func clear() -> void:
 ## You will crash if marathon is added mid-floor
 static var NEW_ANOMALY_BLOCKLIST := [
 	"res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_marathon.gd",
+	"res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_shortcut.gd",
 	"res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_volatile_market.gd",
 	"res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_overstock.gd",
 	"res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_level_up.gd",
 	"res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_level_down.gd",
 	"res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_inflation.gd",
+	"res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_blue_collar_work.gd",
+	"res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_white_collar_work.gd",
 ]
 ## Returns a new, compatible anomaly during a game floor
 func get_new_anomaly() -> Script:

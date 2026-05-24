@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="ItemAccessory" format=3 uid="uid://cxghd25euobpj"]
+
+[ext_resource type="Script" uid="uid://fb0tqfojo57q" path="res://objects/items/classes/accessory_placement.gd" id="1_ndv82"]
+[ext_resource type="Script" uid="uid://duxq3xtgnln43" path="res://objects/items/classes/body_placement.gd" id="2_a7mqg"]
+[ext_resource type="Texture2D" uid="uid://biofeba1xogx4" path="res://models/accessories/backpacks/stuffed_cat_backpack/tt_m_chr_avt_acc_pac_stuffedAnimalBackpackCat.glb-pix-1.png" id="3_ndv82"]
+[ext_resource type="Script" uid="uid://dt2in7s41ldg2" path="res://objects/items/custom/item_plush_cat_pack.gd" id="4_ndv82"]
+[ext_resource type="PackedScene" uid="uid://bs7q74d8bm4fu" path="res://models/accessories/backpacks/stuffed_cat_backpack/tt_m_chr_avt_acc_pac_stuffedAnimalBackpackCat.glb" id="5_a7mqg"]
+[ext_resource type="Script" uid="uid://dvu24b3o8i3sj" path="res://objects/items/classes/item_accessory.gd" id="6_g3pq4"]
+
+[sub_resource type="Resource" id="Resource_c0jjl"]
+script = ExtResource("2_a7mqg")
+position = Vector3(0, 0.85, 1)
+rotation = Vector3(2, 180, 0)
+scale = Vector3(0.4, 0.4, 0.4)
+
+[sub_resource type="Resource" id="Resource_lfmi6"]
+script = ExtResource("2_a7mqg")
+body_type = 1
+position = Vector3(0, 0.8, 0.8)
+rotation = Vector3(2, 180, 0)
+scale = Vector3(0.4, 0.4, 0.4)
+
+[sub_resource type="Resource" id="Resource_ct0kg"]
+script = ExtResource("2_a7mqg")
+body_type = 2
+position = Vector3(0, 1.05, 0.85)
+rotation = Vector3(-2, 180, 0)
+scale = Vector3(0.4, 0.4, 0.4)
+
+[resource]
+script = ExtResource("6_g3pq4")
+accessory_placements = Array[ExtResource("1_ndv82")]([SubResource("Resource_c0jjl"), SubResource("Resource_lfmi6"), SubResource("Resource_ct0kg")])
+qualitoon = 1
+slot = 3
+world_scale = 0.17
+world_y_offset = -0.25
+item_name = "Plush Cat Pack"
+item_description = "A claws for alarm!"
+big_description = "+ 5% Damage
+Using no moves during a turn will grant a 30% Luck boost for 2 rounds"
+model = ExtResource("5_a7mqg")
+stats_add = {
+"damage": 0.05
+}
+item_script = ExtResource("4_ndv82")
+icon = ExtResource("3_ndv82")
+shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)
+metadata/_custom_type_script = "uid://dvu24b3o8i3sj"

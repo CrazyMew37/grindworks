@@ -1,0 +1,14 @@
+[gd_resource type="Resource" format=3 uid="uid://ba3djane0rmfg"]
+
+[ext_resource type="Texture2D" uid="uid://daqtjsonx5fgh" path="res://ui_assets/battle/statuses/tolerant.png" id="1_vswkh"]
+[ext_resource type="Script" uid="uid://bxvtj5tv0co7a" path="res://objects/battle/battle_resources/status_effects/mod_cog_effects/cog_mod_tolerant.gd" id="2_vswkh"]
+
+[resource]
+script = ExtResource("2_vswkh")
+quality = 0
+rounds = -1
+icon = ExtResource("1_vswkh")
+description = "After being hit by a gag, this cog will become immune to gags of the same track for the rest of the round."
+status_name = "Tolerant"
+id = 107
+metadata/_custom_type_script = "uid://df7irk63ikx4k"

@@ -26,6 +26,6 @@ func on_speed_changed(speed: float) -> void:
 func create_multiplier() -> void:
 	multiplier = StatMultiplier.new()
 	multiplier.stat = 'crit_mult'
-	multiplier.amount = 0.0
+	multiplier.amount = maxf(0.0, (Util.get_player().stats.speed - 1.0) * 0.25)
 	multiplier.additive = true
 	Util.get_player().stats.multipliers.append(multiplier)

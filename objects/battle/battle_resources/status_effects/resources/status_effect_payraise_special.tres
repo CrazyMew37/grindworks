@@ -1,0 +1,17 @@
+[gd_resource type="Resource" format=3 uid="uid://2bu0tcxxs1fn"]
+
+[ext_resource type="Texture2D" uid="uid://nwdfih0dmi80" path="res://ui_assets/battle/statuses/pay_raise.png" id="1_en4se"]
+[ext_resource type="Script" uid="uid://bluqkhvq43fug" path="res://objects/battle/battle_resources/status_effects/status_effect_payraise_special.gd" id="2_en4se"]
+
+[resource]
+script = ExtResource("2_en4se")
+bean_count = 5
+diminish_factor = 1.0
+quality = 0
+rounds = -1
+icon = ExtResource("1_en4se")
+description = "x1.5 damage and defense
+Defeat this cog to gain 5 jellybeans"
+status_name = "Payraise"
+id = 111
+metadata/_custom_type_script = "uid://df7irk63ikx4k"

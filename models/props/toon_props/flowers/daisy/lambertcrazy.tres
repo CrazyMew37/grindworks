@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://deo6tr5uy22tk"]
+
+[ext_resource type="Texture2D" uid="uid://dadktmck4daeg" path="res://models/props/toon_props/flowers/daisy/daisy_2.png" id="1_ugagy"]
+
+[resource]
+resource_name = "lambert3"
+transparency = 4
+cull_mode = 2
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.49019608, 0.7921569, 0.49019608, 1)
+albedo_texture = ExtResource("1_ugagy")
+emission_enabled = true

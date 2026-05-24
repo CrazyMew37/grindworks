@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://dwpbd67dmd8pb"]
+
+[ext_resource type="PackedScene" uid="uid://bp85n6hjpnf11" path="res://models/props/pickups/candy/candy.tscn" id="1_v3l1w"]
+[ext_resource type="AudioStream" uid="uid://7ma308jln3fn" path="res://audio/sfx/items/big_chomp.ogg" id="2_jvqcc"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="3_6r5b3"]
+
+[resource]
+script = ExtResource("3_6r5b3")
+qualitoon = 3
+rarity = 3
+evergreen = true
+world_scale = 0.11
+item_name = "Super Zippy Zap"
+item_description = "Speed up!"
+big_description = "+ 12% speed"
+model = ExtResource("1_v3l1w")
+pickup_sfx = ExtResource("2_jvqcc")
+stats_add = {
+"speed": 0.12
+}
+arbitrary_data = {
+"super": true
+}
+remember_item = false
+shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)
+force_show_shop_category = true

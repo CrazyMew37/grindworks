@@ -30,7 +30,6 @@
 [ext_resource type="Script" uid="uid://b68uqtpqs73wk" path="res://objects/player/player_stats.gd" id="17_8fcps"]
 [ext_resource type="Script" uid="uid://ckypnf7t805p3" path="res://objects/battle/battle_resources/gag_loadouts/gag_loadout.gd" id="17_aepo7"]
 [ext_resource type="PackedScene" uid="uid://dxyq5lb5oineo" path="res://objects/interactables/treasure_chest/treasure_chest.tscn" id="23_16xtn"]
-[ext_resource type="Resource" uid="uid://klobdj40hb36" path="res://objects/items/resources/accessories/backpacks/medium_pouch.tres" id="25_1xuw6"]
 [ext_resource type="Resource" uid="uid://cxpgtsw50t5s3" path="res://objects/partnertoon/roaming_toon/partner_toon.tres" id="25_66vty"]
 [ext_resource type="Resource" uid="uid://b73ax0fohafiu" path="res://objects/items/resources/accessories/hats/toonosaur_hat.tres" id="26_16xtn"]
 [ext_resource type="Resource" uid="uid://c3sjb3vivkvux" path="res://objects/items/resources/passive/laff_boost.tres" id="27_4p2an"]
@@ -49,7 +48,7 @@ hand_color = Color(0.960784, 0.960784, 0.960784, 1)
 attacks = Array[ExtResource("6_c5wpy")]([ExtResource("7_8oksl"), ExtResource("8_pnjbe"), ExtResource("9_bbsip")])
 level_low = 8
 level_high = 20
-baked_status_effects = PackedStringArray("res://objects/battle/battle_resources/status_effects/resources/mod_cog_undercutter.tres", "res://objects/battle/battle_resources/status_effects/resources/mod_cog_copycat_brand.tres", "res://objects/battle/battle_resources/status_effects/resources/mod_cog_creditor.tres")
+baked_status_effects = PackedStringArray("res://objects/battle/battle_resources/status_effects/resources/status_effect_payraise_special.tres")
 battle_phrases = Array[String](["I'm ready to rock and roll your end credits.", "Today the role of defeated Toon will be played by - YOU!", "Lights, camera, action!", "I told you not to call me.", "Are you ready for your final scene?", "I hope you don't forget your lines.", "This scene will go on the cutting room floor.", "There's no business like it!", "Let's start rolling."])
 external_assets = {
 &"head_model": "",
@@ -227,7 +226,6 @@ override_item = ExtResource("25_66vty")
 
 [node name="treasure_chest2" parent="." unique_id=499844087 instance=ExtResource("23_16xtn")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.9695, 0, -5.41882)
-override_item = ExtResource("25_1xuw6")
 
 [node name="treasure_chest3" parent="." unique_id=1383960643 instance=ExtResource("23_16xtn")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5301, 0, -5.41882)

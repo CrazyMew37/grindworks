@@ -1,0 +1,14 @@
+[gd_resource type="Resource" format=3 uid="uid://bq6p6ru07bncq"]
+
+[ext_resource type="Texture2D" uid="uid://4ameeqgy1wyi" path="res://ui_assets/battle/statuses/groupfund.png" id="1_etdsq"]
+[ext_resource type="Script" uid="uid://3aasv1je01rk" path="res://objects/battle/battle_resources/status_effects/mod_cog_effects/cog_mod_group_fund.gd" id="2_etdsq"]
+
+[resource]
+script = ExtResource("2_etdsq")
+quality = 0
+rounds = -1
+icon = ExtResource("1_etdsq")
+description = "Gains +10% damage and defense for every cog in the battle."
+status_name = "Group Fund"
+id = 105
+metadata/_custom_type_script = "uid://df7irk63ikx4k"
