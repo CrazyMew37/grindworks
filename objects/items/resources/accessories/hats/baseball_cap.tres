@@ -268,19 +268,19 @@ scale = Vector3(0.4, 0.4, 0.4)
 [resource]
 script = ExtResource("5_ckxva")
 accessory_placements = Array[ExtResource("1_i5lwg")]([SubResource("Resource_bc1ca"), SubResource("Resource_a7loe"), SubResource("Resource_6ng26"), SubResource("Resource_683x7"), SubResource("Resource_mp1qg"), SubResource("Resource_0efvx"), SubResource("Resource_6vut8"), SubResource("Resource_8uit7"), SubResource("Resource_ln0sb"), SubResource("Resource_pg1g4"), SubResource("Resource_cdau8"), SubResource("Resource_ydlwi"), SubResource("Resource_snjuc"), SubResource("Resource_btdc1"), SubResource("Resource_e4le2"), SubResource("Resource_1qee6"), SubResource("Resource_h8b4b"), SubResource("Resource_f73wm"), SubResource("Resource_wnrct"), SubResource("Resource_gl383"), SubResource("Resource_akbxi"), SubResource("Resource_bakhg"), SubResource("Resource_ybg8g"), SubResource("Resource_p2hya"), SubResource("Resource_jtahe"), SubResource("Resource_jnlip"), SubResource("Resource_x1q33"), SubResource("Resource_j5b2n"), SubResource("Resource_m4tnr"), SubResource("Resource_py6ra"), SubResource("Resource_1u1pd"), SubResource("Resource_3kgqx"), SubResource("Resource_1dj05"), SubResource("Resource_lumed")])
-qualitoon = 1
-rarity = 3
+qualitoon = 2
+rarity = 4
 slot = 1
 world_scale = 0.15
 ui_cam_offset = 0.6
 item_name = "Baseball Cap"
 item_description = "Haphazard hucking"
 big_description = "+ 20% Throw damage
-- 7% Throw self heal"
+- 5% Throw self heal"
 model = ExtResource("4_7ew81")
 stats_add = {
 "gag_boost:Throw": 0.2,
-"throw_heal_boost": -0.07
+"throw_heal_boost": -0.05
 }
 icon = ExtResource("3_uxv0q")
 shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)

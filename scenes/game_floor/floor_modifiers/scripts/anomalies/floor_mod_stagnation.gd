@@ -6,7 +6,7 @@ var multiplier := StatMultiplier.new()
 
 func modify_floor() -> void:
 	if Util.floor_number > 5:
-		floor_mod = 0.2 * (1 + (floor((Util.floor_number - 1) / 5) * 0.5))
+		floor_mod = -0.2 * (1 + (floor((Util.floor_number - 1) / 5) * 0.5))
 	multiplier.stat = get_highest_stat()
 	multiplier.additive = true
 	multiplier.amount = floor_mod

@@ -1,7 +1,7 @@
 extends ItemScriptActive
 
 const BOOST_AMT := 0.5
-const BOOST_TIME := 8.0
+const BOOST_TIME := 10.0
 
 const SFX := preload("res://audio/sfx/misc/KART_turboStart.ogg")
 

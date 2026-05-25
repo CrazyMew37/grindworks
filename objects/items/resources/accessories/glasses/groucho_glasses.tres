@@ -251,8 +251,12 @@ world_scale = 0.15
 ui_cam_offset = 0.15
 item_name = "Groucho Glasses"
 item_description = "Incognito?"
-big_description = "Immune to damage from light-based obstacles."
+big_description = "+ 5% Evasiveness
+Immune to damage from light-based obstacles."
 model = ExtResource("5_stdgc")
+stats_add = {
+"evasiveness": 0.05
+}
 player_values = {
 "immune_to_light_damage": true
 }

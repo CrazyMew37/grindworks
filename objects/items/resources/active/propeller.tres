@@ -11,12 +11,12 @@ script = ExtResource("5_go73h")
 active_type = 2
 charge_count = 1
 current_charge = 1
-custom_discharge_time = 8.0
+custom_discharge_time = 10.0
 qualitoon = 2
 world_scale = 0.5
 item_name = "Propeller"
 item_description = "Up, up, and away!"
-big_description = "Gives the following effects for 8 seconds:
+big_description = "Gives the following effects for 10 seconds:
 + 20% Jump Height
 + 1 Mid-air jump"
 model = ExtResource("3_2vilp")

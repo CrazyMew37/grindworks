@@ -1,6 +1,6 @@
 extends ItemScriptActive
 
-const BOOST_TIME := 8.0
+const BOOST_TIME := 10.0
 
 const SFX := preload("res://audio/sfx/battle/cogs/misc/ENC_propeller_out.ogg")
 

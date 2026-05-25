@@ -269,8 +269,12 @@ slot = 1
 world_scale = 0.12
 item_name = "Fruit Hat"
 item_description = "Bountiful Battles"
-big_description = "Winning a battle within two rounds grants an item from a better pool."
+big_description = "+ 3% Luck
+Winning a battle within two rounds grants an item from a better pool."
 model = ExtResource("2_yples")
+stats_add = {
+"luck": 0.03
+}
 player_values = {
 "better_battle_rewards": true
 }

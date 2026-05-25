@@ -60,6 +60,7 @@ var debug_gag_points := false
 @export var squirt_defense_boost := -0.2
 @export var drop_aftershock_round_boost := 0
 @export var trap_knockback_percent := 0.0
+@export var sound_knockback_percent := 0.0
 @export var lure_fish_round_boost := 0
 
 @export var anomaly_boost := 0

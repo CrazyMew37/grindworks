@@ -10,7 +10,7 @@ var unpause_tree := false
 
 
 func _ready() -> void:
-	console_print("Toontown: The Grindworks CrazyMew37 Edition 1.3.4")
+	console_print("Toontown: The Grindworks CrazyMew37 Edition 1.3.5")
 	input.grab_focus()
 
 func on_input_sent(text: String) -> void:
@@ -381,6 +381,7 @@ class PlayerStatsSetterCommand extends SetterCommand:
 			"squirt_defense_boost",
 			"drop_aftershock_round_bonus",
 			"trap_knockback_percent",
+			"sound_knockback_percent",
 			"lure_fish_round_boost",
 			"anomaly_boost",
 			"laff_boost_boost",

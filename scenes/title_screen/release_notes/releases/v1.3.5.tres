@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="ReleaseNote" format=3 uid="uid://byhrsbrplmkcy"]
+
+[ext_resource type="Script" uid="uid://d1j0hh6tsgy0r" path="res://scenes/title_screen/release_notes/release_note.gd" id="1_7a2mi"]
+
+[resource]
+script = ExtResource("1_7a2mi")
+release_version = "v1.3.5 (CM37E)"
+notes = "[TITLE] Items
+Decided to buff a few underused items.
+  Airplane Wings: 5% boost -> 10% boost
+  Jamboree Pack will now stack with itself.
+  Super Toon Cape: +5% Speed -> +10% Speed
+  Bug-Eye Glasses: +15% Evasiveness -> +20% Evasiveness
+  Groucho Glasses: Now gives +5% Evasiveness
+  Heart Glasses: Now gives +3% Luck
+  Monocle: Now gives +5% Evasiveness
+  Baseball Cap: -7% Throw Heal -> -5% Throw Heal (at the cost of its rarity going from 2 Stars/Q3 to 3 Stars/Q4.)
+  Big Weight Hat: Now gives +5% Defense
+  Detective Hat: Now gives +3% Damage
+  Fruit Hat: Now gives +3% Luck
+  Party Hat: +3% Damage, +3 Max Laff -> +5% Damage, +5 Max Laff (At the cost of it's rarity going from 4 Stars/Q4 to 4 Stars/Q5)
+  Princess Hat: -15% Speed -> -10% Speed
+  Sombrero: Now gives +5% damage.
+  Accessory Trunk: 2-4 Accessories -> 3-4 Accessories (At the cost of its rarity going from Four Stars/Q4 to Four Stars/Q5)
+  Book of Laws: 4 Charges -> 3 Charges
+  Goon Foot: 8 Seconds -> 10 Seconds
+  Jellybean Jar: 2-5 Jellybeans -> 3-6 Jellybeans (At the cost of its rarity going from 2 Stars/Q1 to 2 Stars/Q2.)
+  Propeller: 8 Seconds -> 10 Seconds
+  Spinach Can: Now gives an additional +25% Crit Mult
+  Toy Hammer: Reduces cog levels by 3 -> Reduces cog levels by 33%, rounded up.
+  Unstoppable Gobstopper: 10 Seconds -> 15 Seconds
+Fixed Mini Blinds leveling up your gags 100% of the time.
+Angel Wings' rarity is now 5 Stars/Q6 instead of 5 Stars/Q5.
+[TITLE] Misc.
+Buffed the time score you gain per floor past 5 from 900 (15 Minutes) to 1200 (20 Minutes)"
+metadata/_custom_type_script = "uid://d1j0hh6tsgy0r"

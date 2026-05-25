@@ -23,7 +23,7 @@ func use() -> void:
 	if raycast_check:
 		rel_pos = raycast_check.position - (rel_basis * Vector3(0,0,.5))
 	
-	var item_count = RNG.channel(RNG.ChannelAccessoryTrunkItems).randi_range(2, 4)
+	var item_count = RNG.channel(RNG.ChannelAccessoryTrunkItems).randi_range(3, 4)
 	var offset_amount = 2.5
 	if item_count % 2 != 0:
 		offset_amount = 2

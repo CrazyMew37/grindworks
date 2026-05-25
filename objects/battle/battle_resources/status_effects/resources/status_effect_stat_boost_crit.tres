@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="StatBoostCrit" format=3 uid="uid://cdjru8q0gckod"]
+
+[ext_resource type="Texture2D" uid="uid://dlual7epnlqpm" path="res://ui_assets/battle/statuses/critmultiplier.png" id="1_v048e"]
+[ext_resource type="Script" uid="uid://bvc6vnojrbqj3" path="res://objects/battle/battle_resources/status_effects/stat_boost_crit.gd" id="2_ol4kr"]
+
+[resource]
+script = ExtResource("2_ol4kr")
+icon = ExtResource("1_v048e")
+id = 114

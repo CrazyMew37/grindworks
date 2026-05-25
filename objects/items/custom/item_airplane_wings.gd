@@ -16,4 +16,4 @@ func setup() -> void:
 func on_round_ended(battle: BattleManager) -> void:
 	var player := Util.get_player()
 	var stat: String = BATTLE_STATS.pick_random()
-	battle.battle_stats[player].set(stat, battle.battle_stats[player].get(stat) + 0.05)
+	battle.battle_stats[player].set(stat, battle.battle_stats[player].get(stat) + 0.1)

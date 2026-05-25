@@ -53,7 +53,7 @@ func _ready():
 		ItemService.seen_items.clear()
 	
 	if Util.floor_number > 5:
-		ScoreTally.modify_score(ScoreTally.ChannelTimeBonus, 900)
+		ScoreTally.modify_score(ScoreTally.ChannelTimeBonus, 1200)
 		ScoreTally.modify_score(ScoreTally.ChannelEndless, (ScoreTally.ENDLESS_BONUS * Util.floor_number))
 	
 	# cheevo schenanigans

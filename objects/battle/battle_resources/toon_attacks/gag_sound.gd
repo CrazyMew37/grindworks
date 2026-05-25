@@ -51,8 +51,18 @@ func action():
 	if hit:
 		# If we're doing knockback and any of our targets are lured,
 		# give the funny special text
-		if do_knockback and targets.filter(func(x: Cog): return x.lured and not get_immunity(x)).size() > 0:
-			store_boost_text("Rude Awakening!", Color(0.328, 0.4, 0.96))
+		if targets.filter(func(x: Cog): return x.lured and not get_immunity(x)).size() > 0:
+			if (not Util.get_player()) or Util.get_player().stats.sound_knockback_percent > 0.0:
+				store_boost_text("Rude Awakening!", Color(0.328, 0.4, 0.96))
+				for cog in targets.filter(func(x: Cog): return x.lured):
+					var boost_percent: float = Util.get_player().stats.sound_knockback_percent
+					var activating_lure: GagLure = null
+					var lure_effect: StatusLured = manager.find_cog_lure(targets[0])
+					if not lure_effect:
+						return
+					activating_lure = GagLure.new()
+					activating_lure.lure_effect = lure_effect
+					manager.do_standalone_knockback_damage(cog, roundi(activating_lure.get_lure_effect().get_true_knockback() * boost_percent))
 
 		var animator_target: Cog = null
 		for target: Cog in targets:

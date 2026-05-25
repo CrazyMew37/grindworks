@@ -102,7 +102,7 @@ func lower_cog_level(cog: Cog) -> void:
 		cog.health_mod /= Util.get_mod_cog_health_mod()
 	var cog_is_fusion := cog.fusion
 	cog.fusion = false
-	cog.level = maxi(1, cog.level - 3)
+	cog.level = maxi(1, ceili(cog.level / 1.5))
 	cog.set_dna(cog.dna, false)
 	if cog_is_fusion:
 		cog.fusion = true

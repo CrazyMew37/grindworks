@@ -8,8 +8,8 @@
 [resource]
 script = ExtResource("1_olj8p")
 active_type = 1
-charge_count = 4
-current_charge = 4
+charge_count = 3
+current_charge = 3
 qualitoon = 2
 world_scale = 0.5
 item_name = "Book of Laws"
