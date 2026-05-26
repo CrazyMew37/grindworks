@@ -13,7 +13,6 @@ enum ActiveMovie {
 }
 @export var animation := ActiveMovie.BANANA
 @export var toss_sfx : AudioStream
-
 # Locals
 var path : Path3D
 var prop : Node3D

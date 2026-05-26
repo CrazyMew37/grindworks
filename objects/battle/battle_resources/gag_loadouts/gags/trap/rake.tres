@@ -10,6 +10,7 @@ script = ExtResource("3_s65tu")
 model = ExtResource("2_mrucr")
 animation = 1
 toss_sfx = ExtResource("4_64h54")
+lure_id = 1
 icon = ExtResource("1_gnm0c")
 damage = 30
 action_name = "Rake"

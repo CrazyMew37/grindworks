@@ -46,9 +46,8 @@ scale = 7.0
 head_textures = PackedStringArray("res://models/cogs/heads/yesman_tt_t_ene_hed_yesMan.png")
 hand_color = Color(0.960784, 0.960784, 0.960784, 1)
 attacks = Array[ExtResource("6_c5wpy")]([ExtResource("7_8oksl"), ExtResource("8_pnjbe"), ExtResource("9_bbsip")])
-level_low = 8
+level_low = 20
 level_high = 20
-baked_status_effects = PackedStringArray("res://objects/battle/battle_resources/status_effects/resources/status_effect_payraise_special.tres")
 battle_phrases = Array[String](["I'm ready to rock and roll your end credits.", "Today the role of defeated Toon will be played by - YOU!", "Lights, camera, action!", "I told you not to call me.", "Are you ready for your final scene?", "I hope you don't forget your lines.", "This scene will go on the cutting room floor.", "There's no business like it!", "Let's start rolling."])
 external_assets = {
 &"head_model": "",

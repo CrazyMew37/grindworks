@@ -118,8 +118,9 @@ func activate():
 		activating_lure.current_activating_trap = self
 	
 	if not get_immunity(target):
-		manager.affect_target(target, damage)
+		manager.affect_target(target, damage, true)
 		apply_extra_knockback(target)
+
 	else:
 		manager.battle_text(target, "IMMUNE")
 	

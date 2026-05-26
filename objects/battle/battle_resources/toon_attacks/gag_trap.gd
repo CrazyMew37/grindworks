@@ -3,6 +3,8 @@ class_name GagTrap
 
 const TRAP_EFFECT := preload("res://objects/battle/battle_resources/status_effects/resources/status_effect_trapped.tres")
 
+@export var lure_id := 0
+
 # Signals when trap movie is over
 signal s_trap
 signal s_activate
@@ -19,7 +21,10 @@ func get_trap_effect() -> StatusTrapped:
 	var new_effect := TRAP_EFFECT.duplicate(true)
 	new_effect.quality = StatusEffect.EffectQuality.NEGATIVE
 	new_effect.gag = self
-	new_effect.rounds = -1
+	if Util.get_player().trap_needs_lure:
+		new_effect.rounds = -1
+	else:
+		new_effect.rounds = 0
 	s_activate.connect(manager.expire_status_effect.bind(new_effect))
 	
 	return new_effect

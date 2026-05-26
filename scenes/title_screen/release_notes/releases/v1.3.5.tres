@@ -32,5 +32,8 @@ Decided to buff a few underused items.
 Fixed Mini Blinds leveling up your gags 100% of the time.
 Angel Wings' rarity is now 5 Stars/Q6 instead of 5 Stars/Q5.
 [TITLE] Misc.
-Buffed the time score you gain per floor past 5 from 900 (15 Minutes) to 1200 (20 Minutes)"
+Buffed the time score you gain per floor past 5 from 900 (15 Minutes) to 1200 (20 Minutes)
+[TITLE] Hotfix 1
+Fixed the scaling and positioning of Plush Dog Pack and Plush Cat Pack in chests.
+Detective Hat was reworked; it can now let you use Trap without Lure! At the cost of the trap activating at the end of the round and being unable to crit, that is."
 metadata/_custom_type_script = "uid://d1j0hh6tsgy0r"
