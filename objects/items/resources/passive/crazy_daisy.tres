@@ -7,7 +7,7 @@
 
 [resource]
 script = ExtResource("4_hx3fu")
-qualitoon = 3
+qualitoon = 2
 world_y_offset = -0.3
 item_name = "Crazy Daisy"
 item_description = "You're crazy lucky!"

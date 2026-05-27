@@ -10,7 +10,7 @@ var unpause_tree := false
 
 
 func _ready() -> void:
-	console_print("Toontown: The Grindworks CrazyMew37 Edition 1.3.5")
+	console_print("Toontown: The Grindworks CrazyMew37 Edition 1.3.6")
 	input.grab_focus()
 
 func on_input_sent(text: String) -> void:

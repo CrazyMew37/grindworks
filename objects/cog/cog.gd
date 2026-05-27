@@ -351,15 +351,13 @@ func construct_cog():
 			sleeve.visible = false
 			hands.visible = false
 			department_emblem.visible = false
-			hp_light.visible = false
 
 func animation_end(_anim):
 	set_animation('neutral')
 
 func battle_start():
 	department_emblem.hide()
-	if dna.suit_visible == true:
-		hp_light.show()
+	hp_light.show()
 
 func update_health_light():
 	var health_ratio: float = float(stats.hp) / float(stats.max_hp)

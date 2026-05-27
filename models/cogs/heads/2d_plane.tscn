@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://bpbvadoromjvp" path="res://models/cogs/heads/theface.png" id="1_2h40k"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ybat3"]
-render_priority = 127
+render_priority = 100
 transparency = 1
 cull_mode = 2
 albedo_texture = ExtResource("1_2h40k")

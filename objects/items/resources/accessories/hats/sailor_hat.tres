@@ -270,7 +270,6 @@ scale = Vector3(0.47, 0.47, 0.47)
 script = ExtResource("6_cybdj")
 accessory_placements = Array[ExtResource("1_fxvmp")]([SubResource("Resource_gkc4w"), SubResource("Resource_vnvew"), SubResource("Resource_yuhym"), SubResource("Resource_2atv0"), SubResource("Resource_0nnaq"), SubResource("Resource_8lg4c"), SubResource("Resource_qep5b"), SubResource("Resource_gk67f"), SubResource("Resource_fcut0"), SubResource("Resource_h2rto"), SubResource("Resource_pr783"), SubResource("Resource_xklpw"), SubResource("Resource_kkw07"), SubResource("Resource_dbbti"), SubResource("Resource_881ts"), SubResource("Resource_necie"), SubResource("Resource_oro1h"), SubResource("Resource_p7exs"), SubResource("Resource_skmrc"), SubResource("Resource_1saws"), SubResource("Resource_35sm1"), SubResource("Resource_nfrh8"), SubResource("Resource_yw25q"), SubResource("Resource_kyhc1"), SubResource("Resource_oyyej"), SubResource("Resource_bfe8c"), SubResource("Resource_6n2fv"), SubResource("Resource_h5aky"), SubResource("Resource_u77of"), SubResource("Resource_daf5a"), SubResource("Resource_n0kr3"), SubResource("Resource_554mk"), SubResource("Resource_ndsda"), SubResource("Resource_6df7u")])
 qualitoon = 1
-rarity = 3
 slot = 1
 world_scale = 0.1
 item_name = "Sailor Hat"

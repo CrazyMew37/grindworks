@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ReleaseNote" format=3 uid="uid://cbcbhaugdg7y1"]
+
+[ext_resource type="Script" uid="uid://d1j0hh6tsgy0r" path="res://scenes/title_screen/release_notes/release_note.gd" id="1_fvlo5"]
+
+[resource]
+script = ExtResource("1_fvlo5")
+release_version = "v1.3.6 (CM37E)"
+notes = "[TITLE] Items
+Adjusted the rarities for a few items.
+  Bandana: 2 Stars -> 3 Stars
+  Bee Headband: 2 Stars/Q3 -> 2 Stars/Q2
+  Detective Hat: 4 Stars/Q5 -> 4 Stars/Q4
+  Sailor Hat: 2 Stars/Q3 -> 2 Stars/Q2
+  Crazy Daisy: 4 Stars -> 3 Stars
+[TITLE] Misc.
+Cogs with invisible suits will now display HP lights. (This also applies in their skelecog form, sorry about that)
+Nerfed Launch's base accuracy from 90% to 75%."
+metadata/_custom_type_script = "uid://d1j0hh6tsgy0r"

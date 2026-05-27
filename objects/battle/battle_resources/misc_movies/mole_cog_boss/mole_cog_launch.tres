@@ -4,7 +4,6 @@
 
 [resource]
 script = ExtResource("1_58wf1")
-accuracy = 90
 damage = 5
 attack_lines = Array[String](["See you next fall!", "Going up?", "Don't let me down, now."])
 action_name = "Launch"
