@@ -17,6 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://ds050pq3gfubn" path="res://objects/props/mint/pipes/kit/large_straight_pipe_1.tscn" id="13_p8lu0"]
 [ext_resource type="PackedScene" uid="uid://7q6wova01fov" path="res://objects/props/mint/pipes/kit/elbow_pipe.tscn" id="14_5xrpb"]
 [ext_resource type="PackedScene" uid="uid://csdrrw6xiokuy" path="res://objects/props/mint/pipes/kit/pipe_shadow.tscn" id="15_14ub7"]
+[ext_resource type="PackedScene" uid="uid://dxyq5lb5oineo" path="res://objects/interactables/treasure_chest/treasure_chest.tscn" id="16_umldw"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o1f2j"]
 resource_name = "textures:ZONE04aT:BoilerRoomT_CementFloorx4"
@@ -52,16 +53,16 @@ point_count = 5
 [sub_resource type="BoxShape3D" id="BoxShape3D_sl5iq"]
 size = Vector3(1.44629, 2.72864, 2.65918)
 
-[node name="Root Scene" instance=ExtResource("1_72t12")]
+[node name="Root Scene" unique_id=1447343198 instance=ExtResource("1_72t12")]
 
-[node name="GeometryTransformHelper6" parent="Z15_ALL/Z15/ductroom/room/geometry_ductroom/floor" index="0"]
+[node name="GeometryTransformHelper6" parent="Z15_ALL/Z15/ductroom/room/geometry_ductroom/floor" parent_id_path=PackedInt32Array(166615189) index="0" unique_id=242458419]
 surface_material_override/0 = SubResource("StandardMaterial3D_o1f2j")
 
-[node name="GeometryTransformHelper7" parent="Z15_ALL/Z15/ductroom/room/geometry_ductroom/wall" index="0"]
+[node name="GeometryTransformHelper7" parent="Z15_ALL/Z15/ductroom/room/geometry_ductroom/wall" parent_id_path=PackedInt32Array(1204095952) index="0" unique_id=237577827]
 surface_material_override/0 = SubResource("StandardMaterial3D_l7qfu")
 surface_material_override/1 = SubResource("StandardMaterial3D_pain1")
 
-[node name="Lights" parent="Z15_ALL/Z15/ductroom/room/geometry_ductroom" index="3"]
+[node name="Lights" parent="Z15_ALL/Z15/ductroom/room/geometry_ductroom" parent_id_path=PackedInt32Array(1321665915) index="3" unique_id=247462908]
 visible = false
 
 [node name="ENTRANCE" parent="." index="6"]
@@ -70,109 +71,112 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13.71
 [node name="EXIT" parent="." index="7"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 13.716, 0.01, 0.096)
 
-[node name="Props" type="Node3D" parent="." index="10"]
+[node name="Props" type="Node3D" parent="." index="10" unique_id=503865215]
 
-[node name="JumpCrate" parent="Props" index="0" instance=ExtResource("2_wtfq4")]
+[node name="JumpCrate" parent="Props" index="0" unique_id=1244967040 instance=ExtResource("2_wtfq4")]
 transform = Transform3D(2.3, 0, 0, 0, 2, 0, 0, 0, 2.755, 2.84492, 0, 0.0890777)
 
-[node name="JumpCrate2" parent="Props" index="1" instance=ExtResource("2_wtfq4")]
+[node name="JumpCrate2" parent="Props" index="1" unique_id=469513421 instance=ExtResource("2_wtfq4")]
 transform = Transform3D(1.555, 0, 0, 0, 1.352, 0, 0, 0, 1.862, 6.2755, 0, 1.87709)
 
-[node name="JumpCrate3" parent="Props" index="2" instance=ExtResource("2_wtfq4")]
+[node name="JumpCrate3" parent="Props" index="2" unique_id=1971623170 instance=ExtResource("2_wtfq4")]
 transform = Transform3D(1.63, 0, 0, 0, 0.8, 0, 0, 0, 1.102, 6.2755, 0, -0.816699)
 
-[node name="shelf2" parent="Props" index="3" instance=ExtResource("3_p38q2")]
+[node name="shelf2" parent="Props" index="3" unique_id=117136092 instance=ExtResource("3_p38q2")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.40846, 0, -4.48523)
 
-[node name="shelf3" parent="Props" index="4" instance=ExtResource("3_p38q2")]
+[node name="shelf3" parent="Props" index="4" unique_id=1884482592 instance=ExtResource("3_p38q2")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.40846, 0, 4.54274)
 
-[node name="boiler_a1" parent="Props" index="5" instance=ExtResource("7_0326v")]
+[node name="boiler_a1" parent="Props" index="5" unique_id=1214477479 instance=ExtResource("7_0326v")]
 transform = Transform3D(0.258819, 0, 0.965926, 0, 1, 0, -0.965926, 0, 0.258819, -12.5424, 0, 5.41728)
 
-[node name="boiler_a2" parent="Props" index="6" instance=ExtResource("7_0326v")]
+[node name="boiler_a2" parent="Props" index="6" unique_id=1229700976 instance=ExtResource("7_0326v")]
 transform = Transform3D(0.258819, 0, 0.965926, 0, 1, 0, -0.965926, 0, 0.258819, -12.5424, 0, -5.60436)
 
-[node name="boiler_a3" parent="Props" index="7" instance=ExtResource("7_0326v")]
+[node name="boiler_a3" parent="Props" index="7" unique_id=593540035 instance=ExtResource("7_0326v")]
 transform = Transform3D(-0.965926, 0, 0.258819, 0, 1, 0, -0.258819, 0, -0.965926, 3.62933, 0, 5.72486)
 
-[node name="boiler_a4" parent="Props" index="8" instance=ExtResource("7_0326v")]
+[node name="boiler_a4" parent="Props" index="8" unique_id=1326350341 instance=ExtResource("7_0326v")]
 transform = Transform3D(0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, 4.00941, 0, -5.53562)
 
-[node name="wood_crate" parent="Props" index="9" instance=ExtResource("8_yug0n")]
+[node name="wood_crate" parent="Props" index="9" unique_id=567086467 instance=ExtResource("8_yug0n")]
 transform = Transform3D(1.06349, 0, 0.806973, 0, 1.335, 0, -0.806973, 0, 1.06349, 11.9735, 0.00834405, 5.22806)
 
-[node name="wood_crate2" parent="Props" index="10" instance=ExtResource("8_yug0n")]
+[node name="wood_crate2" parent="Props" index="10" unique_id=1839800909 instance=ExtResource("8_yug0n")]
 transform = Transform3D(0.394329, 0, 0.281081, 0, 1.335, 0, -0.299215, 0, 0.37043, 13.1261, 0.00834405, 6.34667)
 
-[node name="WallLamp" parent="Props" index="11" instance=ExtResource("9_5t6t3")]
+[node name="WallLamp" parent="Props" index="11" unique_id=2056466628 instance=ExtResource("9_5t6t3")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 13.7168, 6.81466, -4.51242)
 
-[node name="WallLamp2" parent="Props" index="12" instance=ExtResource("9_5t6t3")]
+[node name="WallLamp2" parent="Props" index="12" unique_id=866210481 instance=ExtResource("9_5t6t3")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 13.7168, 6.81466, 4.68544)
 
-[node name="WallLamp3" parent="Props" index="13" instance=ExtResource("9_5t6t3")]
+[node name="WallLamp3" parent="Props" index="13" unique_id=741910046 instance=ExtResource("9_5t6t3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.7163, 6.81466, 4.70024)
 
-[node name="WallLamp4" parent="Props" index="14" instance=ExtResource("9_5t6t3")]
+[node name="WallLamp4" parent="Props" index="14" unique_id=1311077429 instance=ExtResource("9_5t6t3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.7163, 6.81466, -4.49763)
 
-[node name="SmallGear" parent="Props" index="15" instance=ExtResource("10_ykqu8")]
+[node name="SmallGear" parent="Props" index="15" unique_id=1169515390 instance=ExtResource("10_ykqu8")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 8.0147, 0.0302277, -5.34461)
 
-[node name="SmallGear2" parent="Props" index="16" instance=ExtResource("10_ykqu8")]
+[node name="SmallGear2" parent="Props" index="16" unique_id=1761151868 instance=ExtResource("10_ykqu8")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 11.1537, 0.0302277, -5.34461)
 
-[node name="SmallGear3" parent="Props" index="17" instance=ExtResource("10_ykqu8")]
+[node name="SmallGear3" parent="Props" index="17" unique_id=296537348 instance=ExtResource("10_ykqu8")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 9.59189, 1.33113, -5.34461)
 
-[node name="pipes_E" parent="Props" index="18" instance=ExtResource("11_fisrv")]
+[node name="pipes_E" parent="Props" index="18" unique_id=582999731 instance=ExtResource("11_fisrv")]
 transform = Transform3D(-0.0239611, 0, 0.999713, 0, 1, 0, -0.999713, 0, -0.0239611, -6.57752, 0, -6.12037)
 
-[node name="PipesSet" type="Node3D" parent="Props" index="19"]
+[node name="PipesSet" type="Node3D" parent="Props" index="19" unique_id=461280990]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.11242, -0.502901, -0.359037)
 
-[node name="PipeConnector" parent="Props/PipesSet" index="0" instance=ExtResource("12_i6eoc")]
+[node name="PipeConnector" parent="Props/PipesSet" index="0" unique_id=378630378 instance=ExtResource("12_i6eoc")]
 transform = Transform3D(-3.27835e-08, 0.75, 0, -0.75, -3.27835e-08, 0, 0, 0, 0.75, 4.92178, 0.820925, 4.72089)
 
-[node name="PipeConnector2" parent="Props/PipesSet" index="1" instance=ExtResource("12_i6eoc")]
+[node name="PipeConnector2" parent="Props/PipesSet" index="1" unique_id=1103285574 instance=ExtResource("12_i6eoc")]
 transform = Transform3D(-3.51877e-08, 0.805, 0, -0.805, -3.51877e-08, 0, 0, 0, 0.805, 4.87879, 4.88266, 4.72089)
 
-[node name="PipeConnector3" parent="Props/PipesSet" index="2" instance=ExtResource("12_i6eoc")]
+[node name="PipeConnector3" parent="Props/PipesSet" index="2" unique_id=533010070 instance=ExtResource("12_i6eoc")]
 transform = Transform3D(-0.8, -1.20797e-07, 9.86865e-16, 1.20488e-07, -0.797956, 0.0571562, -8.63034e-09, 0.0571562, 0.797956, -6.13353, 8.20804, 4.70428)
 
-[node name="LargeStraightPipe1" parent="Props/PipesSet" index="3" instance=ExtResource("13_p8lu0")]
+[node name="LargeStraightPipe1" parent="Props/PipesSet" index="3" unique_id=513828731 instance=ExtResource("13_p8lu0")]
 transform = Transform3D(2.5282e-08, 0.421739, -0.558692, 0.96, -3.0598e-08, 0, -3.34919e-08, -0.558692, -0.421739, 4.92293, 2.54759, 4.70993)
 
-[node name="ElbowPipe" parent="Props/PipesSet" index="4" instance=ExtResource("14_5xrpb")]
+[node name="ElbowPipe" parent="Props/PipesSet" index="4" unique_id=85173832 instance=ExtResource("14_5xrpb")]
 transform = Transform3D(3.93403e-08, 0.9, 1.35896e-07, 0.9, -3.93403e-08, 0, 5.94021e-15, 1.35896e-07, -0.9, -0.490114, 7.02934, 4.7313)
 
-[node name="PipeShadow" parent="Props/PipesSet" index="5" instance=ExtResource("15_14ub7")]
+[node name="PipeShadow" parent="Props/PipesSet" index="5" unique_id=495659031 instance=ExtResource("15_14ub7")]
 transform = Transform3D(0.65, 0, 0, 0, 0.65, 0, 0, 0, 0.65, 4.9106, 0.519446, 4.72592)
 
-[node name="PipeShadow2" parent="Props/PipesSet" index="6" instance=ExtResource("15_14ub7")]
+[node name="PipeShadow2" parent="Props/PipesSet" index="6" unique_id=1401268980 instance=ExtResource("15_14ub7")]
 transform = Transform3D(-2.84124e-08, 0.65, 0, -0.65, -2.84124e-08, 0, 0, 0, 0.65, -6.39314, 8.12406, 4.72592)
 
-[node name="PipeShadow" parent="Props" index="20" instance=ExtResource("15_14ub7")]
+[node name="PipeShadow" parent="Props" index="20" unique_id=945589119 instance=ExtResource("15_14ub7")]
 transform = Transform3D(0.95, 0, 0, 0, 0.95, 0, 0, 0, 0.95, 11.2041, 0.02, -5.42595)
 
-[node name="PipeShadow2" parent="Props" index="21" instance=ExtResource("15_14ub7")]
+[node name="PipeShadow2" parent="Props" index="21" unique_id=1517900953 instance=ExtResource("15_14ub7")]
 transform = Transform3D(0.95, 0, 0, 0, 0.95, 0, 0, 0, 0.95, 8.0863, 0.02, -5.42595)
 
-[node name="Goon" type="Node3D" parent="." index="11"]
+[node name="treasure_chest" parent="Props" index="22" unique_id=1594490406 instance=ExtResource("16_umldw")]
+transform = Transform3D(0.70710677, 0, -0.70710677, 0, 1, 0, 0.70710677, 0, 0.70710677, 12.839184, 0.0027594566, -3.86217)
+
+[node name="Goon" type="Node3D" parent="." index="11" unique_id=1732964673]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.434197, 0.0261118, 2.01229)
 
-[node name="goon" parent="Goon" index="0" node_paths=PackedStringArray("path") instance=ExtResource("4_i0pk8")]
+[node name="goon" parent="Goon" index="0" unique_id=1705470072 node_paths=PackedStringArray("path") instance=ExtResource("4_i0pk8")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0)
 path = NodePath("../Path3D")
 
-[node name="Path3D" type="Path3D" parent="Goon" index="1"]
+[node name="Path3D" type="Path3D" parent="Goon" index="1" unique_id=1579379774]
 curve = SubResource("Curve3D_qdd4p")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="." index="12"]
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="12" unique_id=952035799]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0" unique_id=1368943444]
 transform = Transform3D(0.6154, 0, -0.788215, 0, 1, 0, 0.788215, 0, 0.6154, 12.9045, 0.864319, 6.71292)
 shape = SubResource("BoxShape3D_sl5iq")
 
-[node name="factory_goontutorial_building" parent="." index="13" instance=ExtResource("10_cykra")]
+[node name="factory_goontutorial_building" parent="." index="13" unique_id=1093319710 instance=ExtResource("10_cykra")]

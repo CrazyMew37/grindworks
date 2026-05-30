@@ -81,7 +81,7 @@ func apply_transform() -> void:
 	model.rotation_degrees = placement.rotation
 	model.scale = placement.scale
 
-func menu_apply_vec3(vec3 : Vector3,min_value : float = -2.0,max_value : float = 2.0) -> void:
+func menu_apply_vec3(vec3 : Vector3,min_value : float = -3.0,max_value : float = 3.0) -> void:
 	slide_x.value = vec3.x
 	slide_x.min_value = min_value
 	slide_x.max_value = max_value

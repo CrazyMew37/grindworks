@@ -14,5 +14,10 @@ Adjusted the rarities for a few items.
   Crazy Daisy: 4 Stars -> 3 Stars
 [TITLE] Misc.
 Cogs with invisible suits will now display HP lights. (This also applies in their skelecog form, sorry about that)
-Nerfed Launch's base accuracy from 90% to 75%."
+Nerfed Launch's base accuracy from 90% to 75%.
+[TITLE] Hotfix 1
+Fixed Golf Club's positioning
+Added some chests to a few rooms
+Adjusted a couple of CGC hitboxes.
+Changed Armchair Manager's Level logic."
 metadata/_custom_type_script = "uid://d1j0hh6tsgy0r"

@@ -57,7 +57,7 @@ func set_arm_level() -> void:
 	var ArmchairMan = $/root/SceneLoader/GameFloor/Rooms/FairwayPrison/Navigation/Props/desk/Cog
 	var ArmchairManDNA: CogDNA = load("res://objects/cog/presets/misc/armchair_manager.tres")
 	if Util.floor_number > 5:
-		ArmchairMan.level = 20 * ceili(Util.floor_number * 0.2)
+		ArmchairMan.level = 25 * (ceili(Util.floor_number * 0.2) ^ 2)
 	else:
-		ArmchairMan.level = 20
+		ArmchairMan.level = 25
 	ArmchairMan.set_dna(ArmchairManDNA, false)

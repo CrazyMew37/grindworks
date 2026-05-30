@@ -9,7 +9,7 @@
 script = ExtResource("4_8tjip")
 qualitoon = 2
 world_scale = 0.15
-world_y_offset = 0.1
+world_y_offset = 0.4
 ui_cam_offset = -0.25
 item_name = "Golf Club"
 item_description = "Mass layoffs"

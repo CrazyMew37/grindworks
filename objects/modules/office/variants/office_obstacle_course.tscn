@@ -22,8 +22,11 @@
 [ext_resource type="PackedScene" uid="uid://dn6p7pcjhawfb" path="res://objects/props/office/chair.tscn" id="18_q4opw"]
 [ext_resource type="PackedScene" uid="uid://bolaea3btm1ae" path="res://objects/props/office/da_crate.tscn" id="20_nq70y"]
 [ext_resource type="Script" uid="uid://cxnd2ovpbxl8i" path="res://objects/misc/prank_charger.gd" id="22_uwkub"]
+[ext_resource type="PackedScene" uid="uid://dxyq5lb5oineo" path="res://objects/interactables/treasure_chest/treasure_chest.tscn" id="23_yfym2"]
+[ext_resource type="PackedScene" uid="uid://c1g5f6yxujvef" path="res://addons/toonlike_tools/injectors/player/debug_player_position_marker.tscn" id="24_qd2aa"]
+[ext_resource type="Script" uid="uid://dax7hby88nkbu" path="res://addons/toonlike_tools/injectors/player/debug_player_position_marker.gd" id="25_2j6a3"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uwkub"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qdeqy"]
 resource_name = "ConveyerBeltV3SHD"
 cull_mode = 2
 albedo_texture = ExtResource("4_4b5mt")
@@ -65,23 +68,23 @@ point_count = 5
 [sub_resource type="BoxShape3D" id="BoxShape3D_pufwd"]
 size = Vector3(4.948, 3.81323, 1.03754)
 
-[node name="Root Scene" instance=ExtResource("1_iqppd")]
+[node name="Root Scene" unique_id=65691576 instance=ExtResource("1_iqppd")]
 
-[node name="Game" type="Node3D" parent="." index="5"]
+[node name="Game" type="Node3D" parent="." index="5" unique_id=1683023584]
 
-[node name="GameObstacles" type="Node3D" parent="Game" index="0"]
+[node name="GameObstacles" type="Node3D" parent="Game" index="0" unique_id=281972114]
 
-[node name="ConveyerObstacle" type="Node3D" parent="Game/GameObstacles" index="0"]
+[node name="ConveyerObstacle" type="Node3D" parent="Game/GameObstacles" index="0" unique_id=1883149712]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.75429, 0, 0)
 
-[node name="ConveyerBelt" parent="Game/GameObstacles/ConveyerObstacle" index="0" instance=ExtResource("3_2cxjn")]
+[node name="ConveyerBelt" parent="Game/GameObstacles/ConveyerObstacle" index="0" unique_id=497499939 instance=ExtResource("3_2cxjn")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.66932, 2.99828, -0.439946)
 constant_linear_velocity = Vector3(0, 0, -5)
 size = Vector3(1, 1, 9)
-platform_mat = SubResource("StandardMaterial3D_uwkub")
+platform_mat = SubResource("StandardMaterial3D_qdeqy")
 speed = -5.0
 
-[node name="Stomper" parent="Game/GameObstacles/ConveyerObstacle" index="1" node_paths=PackedStringArray("model", "collisions", "player_detection") instance=ExtResource("7_rv7pp")]
+[node name="Stomper" parent="Game/GameObstacles/ConveyerObstacle" index="1" unique_id=41766114 node_paths=PackedStringArray("model", "collisions", "player_detection") instance=ExtResource("7_rv7pp")]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -9.669, 3.168, -7.78678)
 model = NodePath("law_stomper")
 collisions = [NodePath("law_stomper/StaticBody3D/CollisionShape3D"), NodePath("law_stomper/ShaftCol/CollisionShape3D")]
@@ -90,40 +93,40 @@ raise_position = 0.5
 raise_time = 3.0
 stomp_sfx = ExtResource("5_yj4eq")
 
-[node name="law_stomper" parent="Game/GameObstacles/ConveyerObstacle/Stomper" index="1" instance=ExtResource("8_xg4s3")]
+[node name="law_stomper" parent="Game/GameObstacles/ConveyerObstacle/Stomper" index="1" unique_id=162982018 instance=ExtResource("8_xg4s3")]
 
-[node name="square__stomper" parent="Game/GameObstacles/ConveyerObstacle/Stomper/law_stomper" index="0"]
+[node name="square__stomper" parent="Game/GameObstacles/ConveyerObstacle/Stomper/law_stomper" index="0" unique_id=26855343]
 transform = Transform3D(0.0328084, 0, 0, 0, -1.4341e-09, 0.0328084, 0, -0.0328084, -1.4341e-09, 0, 0, 0)
 
-[node name="shaft" parent="Game/GameObstacles/ConveyerObstacle/Stomper/law_stomper/square__stomper/head" index="2"]
+[node name="shaft" parent="Game/GameObstacles/ConveyerObstacle/Stomper/law_stomper/square__stomper/head" parent_id_path=PackedInt32Array(162982018, 697323758) index="2" unique_id=1174390215]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 6, 0, 2.16573e-15, 9.23369)
 
-[node name="shaft_collisions" parent="Game/GameObstacles/ConveyerObstacle/Stomper/law_stomper/square__stomper/head/shaft" index="2"]
+[node name="shaft_collisions" parent="Game/GameObstacles/ConveyerObstacle/Stomper/law_stomper/square__stomper/head/shaft" index="2" unique_id=1651209961]
 visible = false
 
-[node name="head_collisions" parent="Game/GameObstacles/ConveyerObstacle/Stomper/law_stomper/square__stomper/head" index="3"]
+[node name="head_collisions" parent="Game/GameObstacles/ConveyerObstacle/Stomper/law_stomper/square__stomper/head" parent_id_path=PackedInt32Array(162982018, 697323758) index="3" unique_id=599413128]
 visible = false
 
-[node name="PlayerDetection" type="Area3D" parent="Game/GameObstacles/ConveyerObstacle/Stomper/law_stomper" index="1"]
+[node name="PlayerDetection" type="Area3D" parent="Game/GameObstacles/ConveyerObstacle/Stomper/law_stomper" index="1" unique_id=1136769540]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Game/GameObstacles/ConveyerObstacle/Stomper/law_stomper/PlayerDetection" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Game/GameObstacles/ConveyerObstacle/Stomper/law_stomper/PlayerDetection" index="0" unique_id=304347417]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00379944, -0.00180054, 0.00321198)
 shape = SubResource("BoxShape3D_221y2")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Game/GameObstacles/ConveyerObstacle/Stomper/law_stomper" index="2"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Game/GameObstacles/ConveyerObstacle/Stomper/law_stomper" index="2" unique_id=1673952620]
 transform = Transform3D(0.0328084, 0, 0, 0, -1.4341e-09, 0.0328084, 0, -0.0328084, -1.4341e-09, 0, 0, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Game/GameObstacles/ConveyerObstacle/Stomper/law_stomper/StaticBody3D" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Game/GameObstacles/ConveyerObstacle/Stomper/law_stomper/StaticBody3D" index="0" unique_id=804035765]
 shape = SubResource("ConcavePolygonShape3D_3kuhq")
 
-[node name="ShaftCol" type="StaticBody3D" parent="Game/GameObstacles/ConveyerObstacle/Stomper/law_stomper" index="3"]
+[node name="ShaftCol" type="StaticBody3D" parent="Game/GameObstacles/ConveyerObstacle/Stomper/law_stomper" index="3" unique_id=1033750482]
 transform = Transform3D(0.0328084, 0, 0, 0, -1.4341e-09, 0.0328084, 0, -0.0328084, -1.4341e-09, 0, 1.07234, -3.72529e-08)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Game/GameObstacles/ConveyerObstacle/Stomper/law_stomper/ShaftCol" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Game/GameObstacles/ConveyerObstacle/Stomper/law_stomper/ShaftCol" index="0" unique_id=123568645]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
 shape = SubResource("CylinderShape3D_rdlfw")
 
-[node name="Stomper2" parent="Game/GameObstacles/ConveyerObstacle" index="2" node_paths=PackedStringArray("model", "collisions", "player_detection") instance=ExtResource("7_rv7pp")]
+[node name="Stomper2" parent="Game/GameObstacles/ConveyerObstacle" index="2" unique_id=1608499760 node_paths=PackedStringArray("model", "collisions", "player_detection") instance=ExtResource("7_rv7pp")]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -9.669, 3.168, 1.67414)
 model = NodePath("law_stomper")
 collisions = [NodePath("law_stomper/StaticBody3D/CollisionShape3D"), NodePath("law_stomper/ShaftCol/CollisionShape3D")]
@@ -132,40 +135,40 @@ raise_position = 0.5
 raise_time = 2.5
 stomp_sfx = ExtResource("5_yj4eq")
 
-[node name="law_stomper" parent="Game/GameObstacles/ConveyerObstacle/Stomper2" index="1" instance=ExtResource("8_xg4s3")]
+[node name="law_stomper" parent="Game/GameObstacles/ConveyerObstacle/Stomper2" index="1" unique_id=1249142912 instance=ExtResource("8_xg4s3")]
 
-[node name="square__stomper" parent="Game/GameObstacles/ConveyerObstacle/Stomper2/law_stomper" index="0"]
+[node name="square__stomper" parent="Game/GameObstacles/ConveyerObstacle/Stomper2/law_stomper" index="0" unique_id=26855343]
 transform = Transform3D(0.0328084, 0, 0, 0, -1.4341e-09, 0.0328084, 0, -0.0328084, -1.4341e-09, 0, 0, 0)
 
-[node name="shaft" parent="Game/GameObstacles/ConveyerObstacle/Stomper2/law_stomper/square__stomper/head" index="2"]
+[node name="shaft" parent="Game/GameObstacles/ConveyerObstacle/Stomper2/law_stomper/square__stomper/head" parent_id_path=PackedInt32Array(1249142912, 697323758) index="2" unique_id=1174390215]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 6, 0, 2.16573e-15, 9.23369)
 
-[node name="shaft_collisions" parent="Game/GameObstacles/ConveyerObstacle/Stomper2/law_stomper/square__stomper/head/shaft" index="2"]
+[node name="shaft_collisions" parent="Game/GameObstacles/ConveyerObstacle/Stomper2/law_stomper/square__stomper/head/shaft" index="2" unique_id=1651209961]
 visible = false
 
-[node name="head_collisions" parent="Game/GameObstacles/ConveyerObstacle/Stomper2/law_stomper/square__stomper/head" index="3"]
+[node name="head_collisions" parent="Game/GameObstacles/ConveyerObstacle/Stomper2/law_stomper/square__stomper/head" parent_id_path=PackedInt32Array(1249142912, 697323758) index="3" unique_id=599413128]
 visible = false
 
-[node name="PlayerDetection" type="Area3D" parent="Game/GameObstacles/ConveyerObstacle/Stomper2/law_stomper" index="1"]
+[node name="PlayerDetection" type="Area3D" parent="Game/GameObstacles/ConveyerObstacle/Stomper2/law_stomper" index="1" unique_id=593264373]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Game/GameObstacles/ConveyerObstacle/Stomper2/law_stomper/PlayerDetection" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Game/GameObstacles/ConveyerObstacle/Stomper2/law_stomper/PlayerDetection" index="0" unique_id=585180113]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00379944, -0.00180054, 0.00321198)
 shape = SubResource("BoxShape3D_221y2")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Game/GameObstacles/ConveyerObstacle/Stomper2/law_stomper" index="2"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Game/GameObstacles/ConveyerObstacle/Stomper2/law_stomper" index="2" unique_id=296050933]
 transform = Transform3D(0.0328084, 0, 0, 0, -1.4341e-09, 0.0328084, 0, -0.0328084, -1.4341e-09, 0, 0, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Game/GameObstacles/ConveyerObstacle/Stomper2/law_stomper/StaticBody3D" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Game/GameObstacles/ConveyerObstacle/Stomper2/law_stomper/StaticBody3D" index="0" unique_id=1874477334]
 shape = SubResource("ConcavePolygonShape3D_3kuhq")
 
-[node name="ShaftCol" type="StaticBody3D" parent="Game/GameObstacles/ConveyerObstacle/Stomper2/law_stomper" index="3"]
+[node name="ShaftCol" type="StaticBody3D" parent="Game/GameObstacles/ConveyerObstacle/Stomper2/law_stomper" index="3" unique_id=1378034630]
 transform = Transform3D(0.0328084, 0, 0, 0, -1.4341e-09, 0.0328084, 0, -0.0328084, -1.4341e-09, 0, 1.07234, -3.72529e-08)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Game/GameObstacles/ConveyerObstacle/Stomper2/law_stomper/ShaftCol" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Game/GameObstacles/ConveyerObstacle/Stomper2/law_stomper/ShaftCol" index="0" unique_id=735602523]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
 shape = SubResource("CylinderShape3D_rdlfw")
 
-[node name="Stomper3" parent="Game/GameObstacles/ConveyerObstacle" index="3" node_paths=PackedStringArray("model", "collisions", "player_detection") instance=ExtResource("7_rv7pp")]
+[node name="Stomper3" parent="Game/GameObstacles/ConveyerObstacle" index="3" unique_id=464145832 node_paths=PackedStringArray("model", "collisions", "player_detection") instance=ExtResource("7_rv7pp")]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -9.669, 3.168, 10.9673)
 model = NodePath("law_stomper")
 collisions = [NodePath("law_stomper/StaticBody3D/CollisionShape3D"), NodePath("law_stomper/ShaftCol/CollisionShape3D")]
@@ -174,199 +177,199 @@ raise_position = 0.5
 raise_time = 2.0
 stomp_sfx = ExtResource("5_yj4eq")
 
-[node name="law_stomper" parent="Game/GameObstacles/ConveyerObstacle/Stomper3" index="1" instance=ExtResource("8_xg4s3")]
+[node name="law_stomper" parent="Game/GameObstacles/ConveyerObstacle/Stomper3" index="1" unique_id=691351853 instance=ExtResource("8_xg4s3")]
 
-[node name="square__stomper" parent="Game/GameObstacles/ConveyerObstacle/Stomper3/law_stomper" index="0"]
+[node name="square__stomper" parent="Game/GameObstacles/ConveyerObstacle/Stomper3/law_stomper" index="0" unique_id=26855343]
 transform = Transform3D(0.0328084, 0, 0, 0, -1.4341e-09, 0.0328084, 0, -0.0328084, -1.4341e-09, 0, 0, 0)
 
-[node name="shaft" parent="Game/GameObstacles/ConveyerObstacle/Stomper3/law_stomper/square__stomper/head" index="2"]
+[node name="shaft" parent="Game/GameObstacles/ConveyerObstacle/Stomper3/law_stomper/square__stomper/head" parent_id_path=PackedInt32Array(691351853, 697323758) index="2" unique_id=1174390215]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 6, 0, 2.16573e-15, 9.23369)
 
-[node name="shaft_collisions" parent="Game/GameObstacles/ConveyerObstacle/Stomper3/law_stomper/square__stomper/head/shaft" index="2"]
+[node name="shaft_collisions" parent="Game/GameObstacles/ConveyerObstacle/Stomper3/law_stomper/square__stomper/head/shaft" index="2" unique_id=1651209961]
 visible = false
 
-[node name="head_collisions" parent="Game/GameObstacles/ConveyerObstacle/Stomper3/law_stomper/square__stomper/head" index="3"]
+[node name="head_collisions" parent="Game/GameObstacles/ConveyerObstacle/Stomper3/law_stomper/square__stomper/head" parent_id_path=PackedInt32Array(691351853, 697323758) index="3" unique_id=599413128]
 visible = false
 
-[node name="PlayerDetection" type="Area3D" parent="Game/GameObstacles/ConveyerObstacle/Stomper3/law_stomper" index="1"]
+[node name="PlayerDetection" type="Area3D" parent="Game/GameObstacles/ConveyerObstacle/Stomper3/law_stomper" index="1" unique_id=1023925318]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Game/GameObstacles/ConveyerObstacle/Stomper3/law_stomper/PlayerDetection" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Game/GameObstacles/ConveyerObstacle/Stomper3/law_stomper/PlayerDetection" index="0" unique_id=880997329]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00379944, -0.0114288, 0.00321198)
 shape = SubResource("BoxShape3D_221y2")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Game/GameObstacles/ConveyerObstacle/Stomper3/law_stomper" index="2"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Game/GameObstacles/ConveyerObstacle/Stomper3/law_stomper" index="2" unique_id=322340449]
 transform = Transform3D(0.0328084, 0, 0, 0, -1.4341e-09, 0.0328084, 0, -0.0328084, -1.4341e-09, 0, 0, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Game/GameObstacles/ConveyerObstacle/Stomper3/law_stomper/StaticBody3D" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Game/GameObstacles/ConveyerObstacle/Stomper3/law_stomper/StaticBody3D" index="0" unique_id=808717449]
 shape = SubResource("ConcavePolygonShape3D_3kuhq")
 
-[node name="ShaftCol" type="StaticBody3D" parent="Game/GameObstacles/ConveyerObstacle/Stomper3/law_stomper" index="3"]
+[node name="ShaftCol" type="StaticBody3D" parent="Game/GameObstacles/ConveyerObstacle/Stomper3/law_stomper" index="3" unique_id=2048120252]
 transform = Transform3D(0.0328084, 0, 0, 0, -1.4341e-09, 0.0328084, 0, -0.0328084, -1.4341e-09, 0, 1.07234, -3.72529e-08)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Game/GameObstacles/ConveyerObstacle/Stomper3/law_stomper/ShaftCol" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Game/GameObstacles/ConveyerObstacle/Stomper3/law_stomper/ShaftCol" index="0" unique_id=306481997]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
 shape = SubResource("CylinderShape3D_rdlfw")
 
-[node name="cardboard_box" parent="Game/GameObstacles/ConveyerObstacle" index="4" instance=ExtResource("3_digb8")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -15.071, 0.01, 10.816)
+[node name="cardboard_box" parent="Game/GameObstacles/ConveyerObstacle" index="4" unique_id=1917282912 instance=ExtResource("3_digb8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -15.070999, 0.01, 11.406125)
 
-[node name="CogButton" parent="Game/GameObstacles/ConveyerObstacle/cardboard_box" index="1" node_paths=PackedStringArray("connected_objects") instance=ExtResource("5_i2c8c")]
+[node name="CogButton" parent="Game/GameObstacles/ConveyerObstacle/cardboard_box" index="1" unique_id=1881443814 node_paths=PackedStringArray("connected_objects") instance=ExtResource("5_i2c8c")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.00555944, 1.6746, -0.00365019)
 connected_objects = [NodePath("../../../../CogDoor")]
 
-[node name="PlatformObstacle" type="Node3D" parent="Game/GameObstacles" index="1"]
+[node name="PlatformObstacle" type="Node3D" parent="Game/GameObstacles" index="1" unique_id=292510456]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.297, 1.99806, -10.4668)
 
-[node name="cardboard_box" parent="Game/GameObstacles/PlatformObstacle" index="0" instance=ExtResource("3_digb8")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 5.3975, -1.99351, 22.2523)
+[node name="cardboard_box" parent="Game/GameObstacles/PlatformObstacle" index="0" unique_id=951608424 instance=ExtResource("3_digb8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 5.3975, -1.99351, 22.679329)
 
-[node name="CogButton" parent="Game/GameObstacles/PlatformObstacle/cardboard_box" index="1" node_paths=PackedStringArray("connected_objects") instance=ExtResource("5_i2c8c")]
+[node name="CogButton" parent="Game/GameObstacles/PlatformObstacle/cardboard_box" index="1" unique_id=1700113034 node_paths=PackedStringArray("connected_objects") instance=ExtResource("5_i2c8c")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.00555944, 1.6746, -0.00365019)
 connected_objects = [NodePath("../../../../CogDoor")]
 
-[node name="Platform1" type="Node3D" parent="Game/GameObstacles/PlatformObstacle" index="1"]
+[node name="Platform1" type="Node3D" parent="Game/GameObstacles/PlatformObstacle" index="1" unique_id=1543946773]
 
-[node name="ElevatingPlatform" parent="Game/GameObstacles/PlatformObstacle/Platform1" index="0" node_paths=PackedStringArray("path") instance=ExtResource("4_r1te2")]
+[node name="ElevatingPlatform" parent="Game/GameObstacles/PlatformObstacle/Platform1" index="0" unique_id=1259030378 node_paths=PackedStringArray("path") instance=ExtResource("4_r1te2")]
 path = NodePath("Path3D")
 
-[node name="Path3D" type="Path3D" parent="Game/GameObstacles/PlatformObstacle/Platform1/ElevatingPlatform" index="2"]
+[node name="Path3D" type="Path3D" parent="Game/GameObstacles/PlatformObstacle/Platform1/ElevatingPlatform" index="2" unique_id=1604950234]
 curve = SubResource("Curve3D_h3vfp")
 
-[node name="Platform2" type="Node3D" parent="Game/GameObstacles/PlatformObstacle" index="2"]
+[node name="Platform2" type="Node3D" parent="Game/GameObstacles/PlatformObstacle" index="2" unique_id=734121150]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5)
 
-[node name="ElevatingPlatform2" parent="Game/GameObstacles/PlatformObstacle/Platform2" index="0" node_paths=PackedStringArray("path") instance=ExtResource("4_r1te2")]
+[node name="ElevatingPlatform2" parent="Game/GameObstacles/PlatformObstacle/Platform2" index="0" unique_id=1933272707 node_paths=PackedStringArray("path") instance=ExtResource("4_r1te2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
 path = NodePath("Path3D")
 
-[node name="Path3D" type="Path3D" parent="Game/GameObstacles/PlatformObstacle/Platform2/ElevatingPlatform2" index="2"]
+[node name="Path3D" type="Path3D" parent="Game/GameObstacles/PlatformObstacle/Platform2/ElevatingPlatform2" index="2" unique_id=746416994]
 curve = SubResource("Curve3D_0tmjp")
 
-[node name="Platform3" type="Node3D" parent="Game/GameObstacles/PlatformObstacle" index="3"]
+[node name="Platform3" type="Node3D" parent="Game/GameObstacles/PlatformObstacle" index="3" unique_id=470841759]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10)
 
-[node name="ElevatingPlatform3" parent="Game/GameObstacles/PlatformObstacle/Platform3" index="0" node_paths=PackedStringArray("path") instance=ExtResource("4_r1te2")]
+[node name="ElevatingPlatform3" parent="Game/GameObstacles/PlatformObstacle/Platform3" index="0" unique_id=1176924267 node_paths=PackedStringArray("path") instance=ExtResource("4_r1te2")]
 path = NodePath("Path3D")
 
-[node name="Path3D" type="Path3D" parent="Game/GameObstacles/PlatformObstacle/Platform3/ElevatingPlatform3" index="2"]
+[node name="Path3D" type="Path3D" parent="Game/GameObstacles/PlatformObstacle/Platform3/ElevatingPlatform3" index="2" unique_id=226886405]
 curve = SubResource("Curve3D_h3vfp")
 
-[node name="Platform4" type="Node3D" parent="Game/GameObstacles/PlatformObstacle" index="4"]
+[node name="Platform4" type="Node3D" parent="Game/GameObstacles/PlatformObstacle" index="4" unique_id=1456319988]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 15)
 
-[node name="ElevatingPlatform4" parent="Game/GameObstacles/PlatformObstacle/Platform4" index="0" node_paths=PackedStringArray("path") instance=ExtResource("4_r1te2")]
+[node name="ElevatingPlatform4" parent="Game/GameObstacles/PlatformObstacle/Platform4" index="0" unique_id=1771392120 node_paths=PackedStringArray("path") instance=ExtResource("4_r1te2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
 path = NodePath("Path3D")
 
-[node name="Path3D" type="Path3D" parent="Game/GameObstacles/PlatformObstacle/Platform4/ElevatingPlatform4" index="2"]
+[node name="Path3D" type="Path3D" parent="Game/GameObstacles/PlatformObstacle/Platform4/ElevatingPlatform4" index="2" unique_id=1382353842]
 curve = SubResource("Curve3D_0tmjp")
 
-[node name="Platform5" type="Node3D" parent="Game/GameObstacles/PlatformObstacle" index="5"]
+[node name="Platform5" type="Node3D" parent="Game/GameObstacles/PlatformObstacle" index="5" unique_id=1950428306]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 20)
 
-[node name="ElevatingPlatform5" parent="Game/GameObstacles/PlatformObstacle/Platform5" index="0" node_paths=PackedStringArray("path") instance=ExtResource("4_r1te2")]
+[node name="ElevatingPlatform5" parent="Game/GameObstacles/PlatformObstacle/Platform5" index="0" unique_id=811459558 node_paths=PackedStringArray("path") instance=ExtResource("4_r1te2")]
 path = NodePath("Path3D")
 
-[node name="Path3D" type="Path3D" parent="Game/GameObstacles/PlatformObstacle/Platform5/ElevatingPlatform5" index="2"]
+[node name="Path3D" type="Path3D" parent="Game/GameObstacles/PlatformObstacle/Platform5/ElevatingPlatform5" index="2" unique_id=329078648]
 curve = SubResource("Curve3D_h3vfp")
 
-[node name="LowerLights" type="Node3D" parent="Game/GameObstacles" index="2"]
+[node name="LowerLights" type="Node3D" parent="Game/GameObstacles" index="2" unique_id=783799248]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.476, 9.054, -5.835)
 
-[node name="Spotlight" parent="Game/GameObstacles/LowerLights" index="0" node_paths=PackedStringArray("light_path") instance=ExtResource("10_77gj2")]
+[node name="Spotlight" parent="Game/GameObstacles/LowerLights" index="0" unique_id=953584548 node_paths=PackedStringArray("light_path") instance=ExtResource("10_77gj2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.55, -4.39)
 light_path = NodePath("Path3D")
 
-[node name="Path3D" type="Path3D" parent="Game/GameObstacles/LowerLights/Spotlight" index="5"]
+[node name="Path3D" type="Path3D" parent="Game/GameObstacles/LowerLights/Spotlight" index="5" unique_id=78970843]
 curve = SubResource("Curve3D_g76qd")
 
-[node name="Spotlight2" parent="Game/GameObstacles/LowerLights" index="1" node_paths=PackedStringArray("light_path") instance=ExtResource("10_77gj2")]
+[node name="Spotlight2" parent="Game/GameObstacles/LowerLights" index="1" unique_id=1221821803 node_paths=PackedStringArray("light_path") instance=ExtResource("10_77gj2")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, -0.55, 15.631)
 light_path = NodePath("Path3D")
 
-[node name="Path3D" type="Path3D" parent="Game/GameObstacles/LowerLights/Spotlight2" index="5"]
+[node name="Path3D" type="Path3D" parent="Game/GameObstacles/LowerLights/Spotlight2" index="5" unique_id=596523248]
 curve = SubResource("Curve3D_g76qd")
 
-[node name="CogDoor" parent="Game" index="1" instance=ExtResource("3_osrpo")]
+[node name="CogDoor" parent="Game" index="1" unique_id=315196206 instance=ExtResource("3_osrpo")]
 transform = Transform3D(-0.0610486, 0, 2.04618, 0, 1, 0, -0.998135, 0, -0.12515, 20.038, 0.011, -3.237)
 
-[node name="PlayerDetection" type="Area3D" parent="Game" index="2"]
+[node name="PlayerDetection" type="Area3D" parent="Game" index="2" unique_id=180512210]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.640958, 3.3123, -27.3084)
 collision_mask = 2
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Game/PlayerDetection" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Game/PlayerDetection" index="0" unique_id=544896055]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0897217, 1.94934, 0.555023)
 shape = SubResource("BoxShape3D_pufwd")
 
-[node name="RoomTimer" type="Node" parent="Game" index="3"]
+[node name="RoomTimer" type="Node" parent="Game" index="3" unique_id=2106636154]
 script = ExtResource("12_7rcdk")
 game_time = 45.0
 base_damage = -3
 heal_amount = 5
 
-[node name="Props" type="Node3D" parent="." index="6"]
+[node name="Props" type="Node3D" parent="." index="6" unique_id=809973905]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0175938, 0)
 
-[node name="law_bookshelf" parent="Props" index="0" instance=ExtResource("12_rljhm")]
+[node name="law_bookshelf" parent="Props" index="0" unique_id=1254381774 instance=ExtResource("12_rljhm")]
 transform = Transform3D(-1.5, 0, -2.26494e-07, 0, 1.5, 0, 2.26494e-07, 0, -1.5, -19.0404, 0.000431061, 12.7185)
 
-[node name="desk" parent="Props" index="1" instance=ExtResource("13_xwf1e")]
+[node name="desk" parent="Props" index="1" unique_id=2054969855 instance=ExtResource("13_xwf1e")]
 transform = Transform3D(-0.957556, 0, 0.803485, 0, 1.25, 0, -0.803485, 0, -0.957556, 10.7965, 3.23045, -20.7125)
 
-[node name="paper_twist_stacks" parent="Props/desk" index="1" instance=ExtResource("14_3ooxg")]
+[node name="paper_twist_stacks" parent="Props/desk" index="1" unique_id=288727386 instance=ExtResource("14_3ooxg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.172088, 0.971342, -0.0511322)
 
-[node name="lamp_small" parent="Props/desk" index="2" instance=ExtResource("15_o6vpq")]
+[node name="lamp_small" parent="Props/desk" index="2" unique_id=1789330702 instance=ExtResource("15_o6vpq")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.647418, 0.9761, -0.00817108)
 
-[node name="filing_cabinet_open" parent="Props/desk" index="4" instance=ExtResource("16_uck22")]
+[node name="filing_cabinet_open" parent="Props/desk" index="4" unique_id=400912512 instance=ExtResource("16_uck22")]
 transform = Transform3D(-1.24985, 0, -0.0192412, 0, 1.25, 0, 0.0192412, 0, -1.24985, -1.8618, 2.38419e-07, 0.141655)
 
-[node name="desk2" parent="Props" index="2" instance=ExtResource("13_xwf1e")]
+[node name="desk2" parent="Props" index="2" unique_id=848480401 instance=ExtResource("13_xwf1e")]
 transform = Transform3D(-0.108945, 0, 1.24524, 0, 1.25, 0, -1.24524, 0, -0.108945, 19.085, -0.024976, -11.703)
 
-[node name="paper_twist_stacks" parent="Props/desk2" index="1" instance=ExtResource("14_3ooxg")]
+[node name="paper_twist_stacks" parent="Props/desk2" index="1" unique_id=456221892 instance=ExtResource("14_3ooxg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.172088, 0.971342, -0.0511322)
 
-[node name="lamp_small" parent="Props/desk2" index="2" instance=ExtResource("15_o6vpq")]
+[node name="lamp_small" parent="Props/desk2" index="2" unique_id=898423255 instance=ExtResource("15_o6vpq")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.647418, 0.9761, -0.00817108)
 
-[node name="filing_cabinet_open" parent="Props/desk2" index="4" instance=ExtResource("16_uck22")]
+[node name="filing_cabinet_open" parent="Props/desk2" index="4" unique_id=924332102 instance=ExtResource("16_uck22")]
 transform = Transform3D(-1.24985, 0, -0.0192412, 0, 1.25, 0, 0.0192412, 0, -1.24985, -1.8618, 2.38419e-07, 0.141655)
 
-[node name="couch" parent="Props" index="3" instance=ExtResource("16_eesew")]
+[node name="couch" parent="Props" index="3" unique_id=4409229 instance=ExtResource("16_eesew")]
 transform = Transform3D(0.962098, 0, 0.79804, 0, 1.25, 0, -0.79804, 0, 0.962098, -9.895, 3.27073, -22.692)
 
-[node name="lamp_big" parent="Props/couch" index="1" instance=ExtResource("17_g4iiy")]
+[node name="lamp_big" parent="Props/couch" index="1" unique_id=2134963825 instance=ExtResource("17_g4iiy")]
 transform = Transform3D(0.75, 0, 2.98023e-08, 0, 0.75, 0, -2.98023e-08, 0, 0.75, -2.25013, -0.0312624, 0.239405)
 
-[node name="lamp_big2" parent="Props/couch" index="2" instance=ExtResource("17_g4iiy")]
+[node name="lamp_big2" parent="Props/couch" index="2" unique_id=1167685157 instance=ExtResource("17_g4iiy")]
 transform = Transform3D(0.75, 0, 2.98023e-08, 0, 0.75, 0, -2.98023e-08, 0, 0.75, 2.38359, 0.00821495, 0.122257)
 
-[node name="Crates" type="Node3D" parent="Props" index="4"]
+[node name="Crates" type="Node3D" parent="Props" index="4" unique_id=1620931768]
 
-[node name="da_crate" parent="Props/Crates" index="0" instance=ExtResource("20_nq70y")]
+[node name="da_crate" parent="Props/Crates" index="0" unique_id=509627433 instance=ExtResource("20_nq70y")]
 transform = Transform3D(1.645, 0, 0, 0, 1.79, 0, 0, 0, 1.79, -6.89445, 0, -12.0776)
 
-[node name="da_crate2" parent="Props/Crates" index="1" instance=ExtResource("20_nq70y")]
+[node name="da_crate2" parent="Props/Crates" index="1" unique_id=1349943657 instance=ExtResource("20_nq70y")]
 transform = Transform3D(1.645, 0, 0, 0, 1.79, 0, 0, 0, 1.79, -6.89445, 0, -8.83623)
 
-[node name="da_crate3" parent="Props/Crates" index="2" instance=ExtResource("20_nq70y")]
+[node name="da_crate3" parent="Props/Crates" index="2" unique_id=1429087961 instance=ExtResource("20_nq70y")]
 transform = Transform3D(1.645, 0, 0, 0, 1.79, 0, 0, 0, 1.79, -6.89445, 0, -5.58783)
 
-[node name="da_crate4" parent="Props/Crates" index="3" instance=ExtResource("20_nq70y")]
+[node name="da_crate4" parent="Props/Crates" index="3" unique_id=354436591 instance=ExtResource("20_nq70y")]
 transform = Transform3D(1.645, 0, 0, 0, 1.79, 0, 0, 0, 1.79, -6.89445, 0, 11.7223)
 
-[node name="da_crate5" parent="Props/Crates" index="4" instance=ExtResource("20_nq70y")]
+[node name="da_crate5" parent="Props/Crates" index="4" unique_id=1687567578 instance=ExtResource("20_nq70y")]
 transform = Transform3D(1.645, 0, 0, 0, 1.79, 0, 0, 0, 1.79, -6.89445, 0, 8.47828)
 
-[node name="da_crate6" parent="Props/Crates" index="5" instance=ExtResource("20_nq70y")]
+[node name="da_crate6" parent="Props/Crates" index="5" unique_id=471369327 instance=ExtResource("20_nq70y")]
 transform = Transform3D(1.645, 0, 0, 0, 1.79, 0, 0, 0, 1.79, -6.89445, 0, 5.24475)
 
-[node name="da_crate7" parent="Props/Crates" index="6" instance=ExtResource("20_nq70y")]
+[node name="da_crate7" parent="Props/Crates" index="6" unique_id=109633561 instance=ExtResource("20_nq70y")]
 transform = Transform3D(-1.645, 0, -1.56487e-07, 0, 1.79, 0, 1.4381e-07, 0, -1.79, -6.89445, 0, 2.02968)
 
-[node name="chair" parent="." index="7" instance=ExtResource("18_q4opw")]
+[node name="chair" parent="." index="7" unique_id=225345719 instance=ExtResource("18_q4opw")]
 transform = Transform3D(-0.776388, 0, 0.630256, 0, 1, 0, -0.630256, 0, -0.776388, 9.58673, 3.27865, -19.4095)
 
 [node name="EXIT" parent="." index="10"]
@@ -375,12 +378,18 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 20.314
 [node name="ENTRANCE" parent="." index="11"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.540825, 3.33218, -27.3164)
 
-[node name="PrankCharger" type="Node" parent="." index="13" node_paths=PackedStringArray("signals")]
+[node name="PrankCharger" type="Node" parent="." index="13" unique_id=1009372943 node_paths=PackedStringArray("signals")]
 script = ExtResource("22_uwkub")
 signals = {
 NodePath("../Game/CogDoor"): "s_unlocked"
 }
 metadata/_custom_type_script = "uid://cxnd2ovpbxl8i"
+
+[node name="treasure_chest" parent="." index="14" unique_id=203164765 instance=ExtResource("23_yfym2")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -9.463474, 0, 12.486358)
+
+[node name="DebugPlayerPositionMarker" type="Marker3D" parent="." index="15" unique_id=1132063166 instance=ExtResource("24_qd2aa")]
+script = ExtResource("25_2j6a3")
 
 [connection signal="s_unlocked" from="Game/CogDoor" to="Game/RoomTimer" method="game_won"]
 [connection signal="body_entered" from="Game/PlayerDetection" to="Game/RoomTimer" method="detect_player"]

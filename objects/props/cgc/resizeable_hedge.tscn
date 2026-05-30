@@ -22,19 +22,19 @@ uv1_triplanar = true
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_colah"]
 resource_local_to_scene = true
-size = Vector3(1.05, 4.9, 0.1)
+size = Vector3(1.05, 3.021289, 0.1)
 
-[node name="ResizeableHedge" type="Node3D"]
+[node name="ResizeableHedge" type="Node3D" unique_id=1573195864]
 script = ExtResource("1_kxuuw")
 
-[node name="Mesh" type="MeshInstance3D" parent="."]
+[node name="Mesh" type="MeshInstance3D" parent="." unique_id=264939554]
 unique_name_in_owner = true
 mesh = SubResource("QuadMesh_i3ebp")
 surface_material_override/0 = SubResource("StandardMaterial3D_ogrmc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="."]
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=768735276]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1219509612]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0087738, 2.4493, 0.00476074)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0087738, 1.5099446, 0.00476074)
 shape = SubResource("BoxShape3D_colah")

@@ -23,6 +23,8 @@
 [ext_resource type="PackedScene" uid="uid://bq3wl1fldsmib" path="res://models/props/cog_props/pencil/pencil.glb" id="21_ytob3"]
 [ext_resource type="PackedScene" uid="uid://dm86vgodo58fx" path="res://objects/props/office/potted_plant.tscn" id="22_atu1q"]
 [ext_resource type="PackedScene" uid="uid://dn6p7pcjhawfb" path="res://objects/props/office/chair.tscn" id="22_nuoiq"]
+[ext_resource type="PackedScene" uid="uid://c1g5f6yxujvef" path="res://addons/toonlike_tools/injectors/player/debug_player_position_marker.tscn" id="26_8ftow"]
+[ext_resource type="Script" uid="uid://dax7hby88nkbu" path="res://addons/toonlike_tools/injectors/player/debug_player_position_marker.gd" id="27_tic3w"]
 [ext_resource type="Resource" uid="uid://kcxno616hkgc" path="res://objects/items/pools/special_items.tres" id="28_xwwx3"]
 [ext_resource type="PackedScene" uid="uid://c1rus4vu8jrlg" path="res://objects/battle/battle_node/dynamic/battle_node_dynamic.tscn" id="30_xwwx3"]
 
@@ -285,7 +287,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0605006, 0, -1.4499)
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -0.0287375, 0, -0.73829)
 script = ExtResource("16_7loyr")
 level = 20
-custom_level_range = Vector2i(20, 20)
+custom_level_range = Vector2i(25, 25)
 dna = ExtResource("17_mfxbm")
 skelecog_chance = 0
 
@@ -407,6 +409,10 @@ force_launch_node = NodePath("../SecretMole2ForceLand")
 grid_size = Vector2i(3, 3)
 launch_cam = NodePath("../LaunchCam")
 want_instructions = false
+
+[node name="DebugPlayerPositionMarker" type="Marker3D" parent="." index="44" unique_id=1794498452 instance=ExtResource("26_8ftow")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 11.572546)
+script = ExtResource("27_tic3w")
 
 [connection signal="body_entered" from="Navigation/Props/desk/Cog/BrushOff" to="Navigation/Props/desk/Cog" method="_on_brush_off_body_entered"]
 [connection signal="s_endless_hit" from="MoleStompGame" to="Navigation/Props/desk/Cog" method="_on_mole_stomp_game_failed"]
