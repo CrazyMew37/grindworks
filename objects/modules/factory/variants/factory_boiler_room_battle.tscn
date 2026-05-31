@@ -12,6 +12,7 @@ size = Vector3(9.44312, 4.83142, 10.2761)
 [node name="FactoryBoilerRoom" unique_id=469055524 instance=ExtResource("1_bug0g")]
 
 [node name="ceiling23" parent="Model/ZONE08/boiler_room/room9/geometry_boiler_room/ceiling8" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1662.96, -46.451557, 1811.61)
 surface_material_override/0 = null
 
 [node name="GeometryTransformHelper624" parent="Model/ZONE08/boiler_room/props4/Rail/RailFace" index="0"]
@@ -23,15 +24,15 @@ cog_dist = 1.75
 cogs = [NodePath("Cogs/Cog4"), NodePath("Cogs/Cog5"), NodePath("Cogs/Cog6"), NodePath("Cogs/Cog7")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BattleNodeDynamic" index="4" unique_id=315871607]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.271362, 2.46356, -0.939575)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2713623, 2.46356, -0.9395752)
 shape = SubResource("BoxShape3D_6w5ec")
 
 [node name="treasure_chest" parent="." index="7" unique_id=1985454100 instance=ExtResource("3_carpg")]
 transform = Transform3D(-4.371138e-08, 0, -0.9999998, 0, 1, 0, 0.9999998, 0, -4.371138e-08, -51.6056, 1.5300889, -80.51184)
 
-[node name="DebugPlayerPositionMarker" type="Marker3D" parent="." index="8" unique_id=501355842 instance=ExtResource("4_lp7w4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.722473, 1.7464831, -72.83021)
-script = ExtResource("5_pugag")
-
-[node name="treasure_chest2" parent="." index="9" unique_id=593035078 instance=ExtResource("3_carpg")]
+[node name="treasure_chest2" parent="." index="8" unique_id=593035078 instance=ExtResource("3_carpg")]
 transform = Transform3D(-4.371138e-08, 0, -0.9999998, 0, 1, 0, 0.9999998, 0, -4.371138e-08, -24.995132, 4.605653, -89.33343)
+
+[node name="DebugPlayerPositionMarker" type="Marker3D" parent="." index="9" unique_id=674704832 instance=ExtResource("4_lp7w4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.67013, 1.8538233, -73.551605)
+script = ExtResource("5_pugag")
