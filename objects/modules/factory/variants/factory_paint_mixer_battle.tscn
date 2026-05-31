@@ -28,7 +28,7 @@ radial_segments = 6
 data = PackedVector3Array(0, 1, 0.5, 0.433, 1, 0.25, 0, 0.6, 0.5, 0.433, 1, 0.25, 0.433, 0.6, 0.25, 0, 0.6, 0.5, 0.433, 1, 0.25, 0.433, 1, -0.25, 0.433, 0.6, 0.25, 0.433, 1, -0.25, 0.433, 0.6, -0.25, 0.433, 0.6, 0.25, 0.433, 1, -0.25, 0, 1, -0.5, 0.433, 0.6, -0.25, 0, 1, -0.5, 0, 0.6, -0.5, 0.433, 0.6, -0.25, 0, 1, -0.5, -0.433, 1, -0.25, 0, 0.6, -0.5, -0.433, 1, -0.25, -0.433, 0.6, -0.25, 0, 0.6, -0.5, -0.433, 1, -0.25, -0.433, 1, 0.25, -0.433, 0.6, -0.25, -0.433, 1, 0.25, -0.433, 0.6, 0.25, -0.433, 0.6, -0.25, -0.433, 1, 0.25, 0, 1, 0.5, -0.433, 0.6, 0.25, 0, 1, 0.5, 0, 0.6, 0.5, -0.433, 0.6, 0.25, 0, 0.6, 0.5, 0.433, 0.6, 0.25, 0, 0.2, 0.5, 0.433, 0.6, 0.25, 0.433, 0.2, 0.25, 0, 0.2, 0.5, 0.433, 0.6, 0.25, 0.433, 0.6, -0.25, 0.433, 0.2, 0.25, 0.433, 0.6, -0.25, 0.433, 0.2, -0.25, 0.433, 0.2, 0.25, 0.433, 0.6, -0.25, 0, 0.6, -0.5, 0.433, 0.2, -0.25, 0, 0.6, -0.5, 0, 0.2, -0.5, 0.433, 0.2, -0.25, 0, 0.6, -0.5, -0.433, 0.6, -0.25, 0, 0.2, -0.5, -0.433, 0.6, -0.25, -0.433, 0.2, -0.25, 0, 0.2, -0.5, -0.433, 0.6, -0.25, -0.433, 0.6, 0.25, -0.433, 0.2, -0.25, -0.433, 0.6, 0.25, -0.433, 0.2, 0.25, -0.433, 0.2, -0.25, -0.433, 0.6, 0.25, 0, 0.6, 0.5, -0.433, 0.2, 0.25, 0, 0.6, 0.5, 0, 0.2, 0.5, -0.433, 0.2, 0.25, 0, 0.2, 0.5, 0.433, 0.2, 0.25, 0, -0.2, 0.5, 0.433, 0.2, 0.25, 0.433, -0.2, 0.25, 0, -0.2, 0.5, 0.433, 0.2, 0.25, 0.433, 0.2, -0.25, 0.433, -0.2, 0.25, 0.433, 0.2, -0.25, 0.433, -0.2, -0.25, 0.433, -0.2, 0.25, 0.433, 0.2, -0.25, 0, 0.2, -0.5, 0.433, -0.2, -0.25, 0, 0.2, -0.5, 0, -0.2, -0.5, 0.433, -0.2, -0.25, 0, 0.2, -0.5, -0.433, 0.2, -0.25, 0, -0.2, -0.5, -0.433, 0.2, -0.25, -0.433, -0.2, -0.25, 0, -0.2, -0.5, -0.433, 0.2, -0.25, -0.433, 0.2, 0.25, -0.433, -0.2, -0.25, -0.433, 0.2, 0.25, -0.433, -0.2, 0.25, -0.433, -0.2, -0.25, -0.433, 0.2, 0.25, 0, 0.2, 0.5, -0.433, -0.2, 0.25, 0, 0.2, 0.5, 0, -0.2, 0.5, -0.433, -0.2, 0.25, 0, -0.2, 0.5, 0.433, -0.2, 0.25, 0, -0.6, 0.5, 0.433, -0.2, 0.25, 0.433, -0.6, 0.25, 0, -0.6, 0.5, 0.433, -0.2, 0.25, 0.433, -0.2, -0.25, 0.433, -0.6, 0.25, 0.433, -0.2, -0.25, 0.433, -0.6, -0.25, 0.433, -0.6, 0.25, 0.433, -0.2, -0.25, 0, -0.2, -0.5, 0.433, -0.6, -0.25, 0, -0.2, -0.5, 0, -0.6, -0.5, 0.433, -0.6, -0.25, 0, -0.2, -0.5, -0.433, -0.2, -0.25, 0, -0.6, -0.5, -0.433, -0.2, -0.25, -0.433, -0.6, -0.25, 0, -0.6, -0.5, -0.433, -0.2, -0.25, -0.433, -0.2, 0.25, -0.433, -0.6, -0.25, -0.433, -0.2, 0.25, -0.433, -0.6, 0.25, -0.433, -0.6, -0.25, -0.433, -0.2, 0.25, 0, -0.2, 0.5, -0.433, -0.6, 0.25, 0, -0.2, 0.5, 0, -0.6, 0.5, -0.433, -0.6, 0.25, 0, -0.6, 0.5, 0.433, -0.6, 0.25, 0, -1, 0.5, 0.433, -0.6, 0.25, 0.433, -1, 0.25, 0, -1, 0.5, 0.433, -0.6, 0.25, 0.433, -0.6, -0.25, 0.433, -1, 0.25, 0.433, -0.6, -0.25, 0.433, -1, -0.25, 0.433, -1, 0.25, 0.433, -0.6, -0.25, 0, -0.6, -0.5, 0.433, -1, -0.25, 0, -0.6, -0.5, 0, -1, -0.5, 0.433, -1, -0.25, 0, -0.6, -0.5, -0.433, -0.6, -0.25, 0, -1, -0.5, -0.433, -0.6, -0.25, -0.433, -1, -0.25, 0, -1, -0.5, -0.433, -0.6, -0.25, -0.433, -0.6, 0.25, -0.433, -1, -0.25, -0.433, -0.6, 0.25, -0.433, -1, 0.25, -0.433, -1, -0.25, -0.433, -0.6, 0.25, 0, -0.6, 0.5, -0.433, -1, 0.25, 0, -0.6, 0.5, 0, -1, 0.5, -0.433, -1, 0.25, 0, 1, 0, 0.433, 1, 0.25, 0, 1, 0.5, 0, 1, 0, 0.433, 1, -0.25, 0.433, 1, 0.25, 0, 1, 0, 0, 1, -0.5, 0.433, 1, -0.25, 0, 1, 0, -0.433, 1, -0.25, 0, 1, -0.5, 0, 1, 0, -0.433, 1, 0.25, -0.433, 1, -0.25, 0, 1, 0, 0, 1, 0.5, -0.433, 1, 0.25, 0, -1, 0, 0, -1, 0.5, 0.433, -1, 0.25, 0, -1, 0, 0.433, -1, 0.25, 0.433, -1, -0.25, 0, -1, 0, 0.433, -1, -0.25, 0, -1, -0.5, 0, -1, 0, 0, -1, -0.5, -0.433, -1, -0.25, 0, -1, 0, -0.433, -1, -0.25, -0.433, -1, 0.25, 0, -1, 0, -0.433, -1, 0.25, 0, -1, 0.5)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_eu61w"]
-size = Vector3(22.549805, 14.819336, 7.347046)
+size = Vector3(12.797443, 5.1727295, 6.391693)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1nlv5"]
 resource_name = "MetalPlateLargeRivets"
@@ -80,7 +80,7 @@ size = Vector3(0.27626872, 0.15423584, 0.526001)
 height = 2.18952
 radius = 11.2593
 
-[node name="FactoryPaintMixer" node_paths=PackedStringArray("paint_streams") instance=ExtResource("1_jvvjw")]
+[node name="FactoryPaintMixer" unique_id=176424350 node_paths=PackedStringArray("paint_streams") instance=ExtResource("1_jvvjw")]
 script = ExtResource("2_v158n")
 paint_streams = [NodePath("PaintStreams/PaintStream"), NodePath("PaintStreams/PaintStream2"), NodePath("PaintStreams/PaintStream3"), NodePath("PaintStreams/PaintStream4")]
 paint_mat = SubResource("StandardMaterial3D_ad0cc")
@@ -92,145 +92,145 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 86.5
 [node name="EXIT" parent="." index="2"]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 64.382, 4.6, -103.42782)
 
-[node name="EntrancePlacer" parent="EXIT" index="0" instance_placeholder="res://scenes/tool_scenes/entrance_placer/entrance_placer.tscn"]
+[node name="EntrancePlacer" parent="EXIT" index="0" unique_id=1213916601 instance_placeholder="res://scenes/tool_scenes/entrance_placer/entrance_placer.tscn"]
 
-[node name="PaintStreams" type="Node3D" parent="." index="7"]
+[node name="PaintStreams" type="Node3D" parent="." index="7" unique_id=2082977963]
 
-[node name="PaintStream" type="Node3D" parent="PaintStreams" index="0"]
+[node name="PaintStream" type="Node3D" parent="PaintStreams" index="0" unique_id=1660892575]
 transform = Transform3D(0.79999995, 0, -1.3856407, 0, 4.5, 0, 1.3856407, 0, 0.79999995, 77.687355, 9.574223, -93.99973)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="PaintStreams/PaintStream" index="0"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="PaintStreams/PaintStream" index="0" unique_id=745939366]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
 mesh = SubResource("CylinderMesh_4ibxf")
 skeleton = NodePath("../../../..")
 
-[node name="Area3D" type="Area3D" parent="PaintStreams/PaintStream/MeshInstance3D" index="0"]
+[node name="Area3D" type="Area3D" parent="PaintStreams/PaintStream/MeshInstance3D" index="0" unique_id=1609737787]
 collision_mask = 4
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="PaintStreams/PaintStream/MeshInstance3D/Area3D" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PaintStreams/PaintStream/MeshInstance3D/Area3D" index="0" unique_id=183829046]
 transform = Transform3D(1, -3.23359e-13, 0, -5.35671e-06, 1, -4.66152e-05, 0, -2.46084e-13, 1, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_emot2")
 
-[node name="WaterSFX" type="AudioStreamPlayer3D" parent="PaintStreams/PaintStream" index="1"]
+[node name="WaterSFX" type="AudioStreamPlayer3D" parent="PaintStreams/PaintStream" index="1" unique_id=1056185128]
 transform = Transform3D(0.139713, 4.57127e-10, 0.24199, 7.62939e-06, 1731.61, 1.51507e-06, -0.24378, -3.9461e-10, 0.140746, -0.925533, 6838.2, -0.635452)
 stream = ExtResource("3_v158n")
 bus = &"Ambient"
 
-[node name="PaintStream3" type="Node3D" parent="PaintStreams" index="1"]
+[node name="PaintStream3" type="Node3D" parent="PaintStreams" index="1" unique_id=2025917471]
 transform = Transform3D(0.79999995, 0, -1.3856407, 0, 4.5, 0, 1.3856407, 0, 0.79999995, 77.93274, 9.574223, -108.39342)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="PaintStreams/PaintStream3" index="0"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="PaintStreams/PaintStream3" index="0" unique_id=1053820833]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
 mesh = SubResource("CylinderMesh_4ibxf")
 skeleton = NodePath("../../../..")
 
-[node name="Area3D" type="Area3D" parent="PaintStreams/PaintStream3/MeshInstance3D" index="0"]
+[node name="Area3D" type="Area3D" parent="PaintStreams/PaintStream3/MeshInstance3D" index="0" unique_id=529620067]
 collision_mask = 4
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="PaintStreams/PaintStream3/MeshInstance3D/Area3D" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PaintStreams/PaintStream3/MeshInstance3D/Area3D" index="0" unique_id=1575529550]
 transform = Transform3D(1, -3.23359e-13, 0, -5.35671e-06, 1, -4.66152e-05, 0, -2.46084e-13, 1, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_emot2")
 
-[node name="WaterSFX" type="AudioStreamPlayer3D" parent="PaintStreams/PaintStream3" index="1"]
+[node name="WaterSFX" type="AudioStreamPlayer3D" parent="PaintStreams/PaintStream3" index="1" unique_id=47978310]
 transform = Transform3D(0.139713, 4.57127e-10, 0.24199, 7.62939e-06, 1731.61, 1.51507e-06, -0.24378, -3.9461e-10, 0.140746, -0.925533, 6838.2, -0.635452)
 stream = ExtResource("3_v158n")
 bus = &"Ambient"
 
-[node name="PaintStream4" type="Node3D" parent="PaintStreams" index="2"]
+[node name="PaintStream4" type="Node3D" parent="PaintStreams" index="2" unique_id=1279692474]
 transform = Transform3D(0.79999995, 0, -1.3856407, 0, 4.5, 0, 1.3856407, 0, 0.79999995, 73.10067, 9.574223, -108.39342)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="PaintStreams/PaintStream4" index="0"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="PaintStreams/PaintStream4" index="0" unique_id=1465364259]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
 mesh = SubResource("CylinderMesh_4ibxf")
 skeleton = NodePath("../../../..")
 
-[node name="Area3D" type="Area3D" parent="PaintStreams/PaintStream4/MeshInstance3D" index="0"]
+[node name="Area3D" type="Area3D" parent="PaintStreams/PaintStream4/MeshInstance3D" index="0" unique_id=1070940199]
 collision_mask = 4
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="PaintStreams/PaintStream4/MeshInstance3D/Area3D" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PaintStreams/PaintStream4/MeshInstance3D/Area3D" index="0" unique_id=736877930]
 transform = Transform3D(1, -3.23359e-13, 0, -5.35671e-06, 1, -4.66152e-05, 0, -2.46084e-13, 1, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_emot2")
 
-[node name="WaterSFX" type="AudioStreamPlayer3D" parent="PaintStreams/PaintStream4" index="1"]
+[node name="WaterSFX" type="AudioStreamPlayer3D" parent="PaintStreams/PaintStream4" index="1" unique_id=809493843]
 transform = Transform3D(0.139713, 4.57127e-10, 0.24199, 7.62939e-06, 1731.61, 1.51507e-06, -0.24378, -3.9461e-10, 0.140746, -0.925533, 6838.2, -0.635452)
 stream = ExtResource("3_v158n")
 bus = &"Ambient"
 
-[node name="PaintStream2" type="Node3D" parent="PaintStreams" index="3"]
+[node name="PaintStream2" type="Node3D" parent="PaintStreams" index="3" unique_id=963687730]
 transform = Transform3D(0.79999995, 0, -1.3856407, 0, 4.5, 0, 1.3856407, 0, 0.79999995, 72.61765, 9.574223, -93.99973)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="PaintStreams/PaintStream2" index="0"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="PaintStreams/PaintStream2" index="0" unique_id=1739074017]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
 mesh = SubResource("CylinderMesh_4ibxf")
 skeleton = NodePath("../../../..")
 
-[node name="Area3D" type="Area3D" parent="PaintStreams/PaintStream2/MeshInstance3D" index="0"]
+[node name="Area3D" type="Area3D" parent="PaintStreams/PaintStream2/MeshInstance3D" index="0" unique_id=877509638]
 collision_mask = 4
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="PaintStreams/PaintStream2/MeshInstance3D/Area3D" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PaintStreams/PaintStream2/MeshInstance3D/Area3D" index="0" unique_id=1505121652]
 transform = Transform3D(1, -3.23359e-13, 0, -5.35671e-06, 1, -4.66152e-05, 0, -2.46084e-13, 1, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_emot2")
 
-[node name="WaterSFX" type="AudioStreamPlayer3D" parent="PaintStreams/PaintStream2" index="1"]
+[node name="WaterSFX" type="AudioStreamPlayer3D" parent="PaintStreams/PaintStream2" index="1" unique_id=223240459]
 transform = Transform3D(0.139713, 4.57127e-10, 0.24199, 7.62939e-06, 1731.61, 1.51507e-06, -0.24378, -3.9461e-10, 0.140746, -0.925533, 6838.2, -0.635452)
 stream = ExtResource("3_v158n")
 bus = &"Ambient"
 
-[node name="MainPlatform" type="Node3D" parent="." index="8"]
+[node name="MainPlatform" type="Node3D" parent="." index="8" unique_id=2116891809]
 transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 76.20985, 4.2395587, -101.006256)
 
-[node name="PaintPlatform" parent="MainPlatform" index="0" instance=ExtResource("5_4ibxf")]
+[node name="PaintPlatform" parent="MainPlatform" index="0" unique_id=878548664 instance=ExtResource("5_4ibxf")]
 transform = Transform3D(2.7999997, 0, -1.1920929e-07, 0, 1.9999999, 0, 1.1920929e-07, 0, 2.7999997, 0, 0, 0)
 sync_to_physics = false
 
-[node name="BattleNodeDynamic" parent="." index="9" node_paths=PackedStringArray("cogs") instance=ExtResource("6_emot2")]
+[node name="BattleNodeDynamic" parent="." index="9" unique_id=1097209353 node_paths=PackedStringArray("cogs") instance=ExtResource("6_emot2")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 76.444435, 4.2359095, -100.72716)
 cogs = [NodePath("Cogs/Cog4"), NodePath("Cogs/Cog5"), NodePath("Cogs/Cog6"), NodePath("Cogs/Cog7")]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="BattleNodeDynamic" index="4"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.57250977, 6.909668, -2.567688)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BattleNodeDynamic" index="4" unique_id=947706122]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3944626, 2.0863647, -2.0900116)
 shape = SubResource("BoxShape3D_eu61w")
 
-[node name="MixerHolder" type="Node3D" parent="." index="10"]
+[node name="MixerHolder" type="Node3D" parent="." index="10" unique_id=783241270]
 transform = Transform3D(0.9659258, 0, 0.25881904, 0, 1, 0, -0.25881904, 0, 0.9659258, 68.93205, 4.6172805, -95.60709)
 
-[node name="PaintPlatform2" parent="MixerHolder" index="0" instance=ExtResource("5_4ibxf")]
+[node name="PaintPlatform2" parent="MixerHolder" index="0" unique_id=8012063 instance=ExtResource("5_4ibxf")]
 transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, 0, -0.8844156, 0)
 sync_to_physics = false
 
-[node name="treasure_chest" parent="MixerHolder/PaintPlatform2" index="4" instance=ExtResource("7_eu61w")]
+[node name="treasure_chest" parent="MixerHolder/PaintPlatform2" index="4" unique_id=1779643863 instance=ExtResource("7_eu61w")]
 transform = Transform3D(-0.5000001, 0, 0.86602545, 0, 1, 0, -0.86602545, 0, -0.5000001, -1.2498293, 0, 0.72158945)
 
-[node name="Stairs" type="Node3D" parent="." index="11"]
+[node name="Stairs" type="Node3D" parent="." index="11" unique_id=932909648]
 transform = Transform3D(-0.033, 0, 2.8849516e-09, 0, 0.033, 0, -2.8849516e-09, 0, -0.033, 85.216, 3.06, -101.825)
 
-[node name="GeometryTransformHelper198" type="MeshInstance3D" parent="Stairs" index="0"]
+[node name="GeometryTransformHelper198" type="MeshInstance3D" parent="Stairs" index="0" unique_id=1399030752]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1992.43, -92.9031, 2081.62)
 mesh = SubResource("ArrayMesh_gi4ya")
 skeleton = NodePath("")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Stairs" index="1"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Stairs" index="1" unique_id=487105635]
 transform = Transform3D(300, 0, 0, 0, 300, 0, 0, 0, 300, 0, 0, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Stairs/StaticBody3D" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stairs/StaticBody3D" index="0" unique_id=2099683495]
 transform = Transform3D(1, 0, -4.2632564e-14, 0, 1, 0, 4.2632564e-14, 0, 1, 0.00096416473, 0.07803345, -0.27923584)
 shape = SubResource("BoxShape3D_b08to")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="Stairs/StaticBody3D" index="1"]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Stairs/StaticBody3D" index="1" unique_id=554798936]
 transform = Transform3D(1, -2.1316282e-14, -3.6920882e-14, 0, 0.8660254, -0.5, 4.2632564e-14, 0.5, 0.8660254, 0.00096416473, -0.043314826, 0.17310669)
 shape = SubResource("BoxShape3D_37hsi")
 
-[node name="RespawnPoint" type="Node3D" parent="." index="12"]
+[node name="RespawnPoint" type="Node3D" parent="." index="12" unique_id=1488345924]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 85.28962, 4.59873, -98.953545)
 
-[node name="LavaFloor" type="Area3D" parent="." index="13" node_paths=PackedStringArray("default_spawn_point")]
+[node name="LavaFloor" type="Area3D" parent="." index="13" unique_id=697187734 node_paths=PackedStringArray("default_spawn_point")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75.763, 2.001, -101.057)
 collision_mask = 2
 script = ExtResource("9_b08to")
 damage_name = "Goopy Paint"
 default_spawn_point = NodePath("../RespawnPoint")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="LavaFloor" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LavaFloor" index="0" unique_id=955807609]
 shape = SubResource("CylinderShape3D_37hsi")
 
 [connection signal="body_entered" from="LavaFloor" to="LavaFloor" method="body_entered"]

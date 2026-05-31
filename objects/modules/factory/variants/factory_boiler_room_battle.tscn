@@ -1,17 +1,37 @@
 [gd_scene format=3 uid="uid://cfye5nnqbgqn4"]
 
 [ext_resource type="PackedScene" uid="uid://c4p1j50tw4qi6" path="res://objects/modules/factory/base_rooms/factory_boiler_room.tscn" id="1_bug0g"]
+[ext_resource type="PackedScene" uid="uid://dxyq5lb5oineo" path="res://objects/interactables/treasure_chest/treasure_chest.tscn" id="3_carpg"]
 [ext_resource type="PackedScene" uid="uid://c1rus4vu8jrlg" path="res://objects/battle/battle_node/dynamic/battle_node_dynamic.tscn" id="4_34ko4"]
+[ext_resource type="PackedScene" uid="uid://c1g5f6yxujvef" path="res://addons/toonlike_tools/injectors/player/debug_player_position_marker.tscn" id="4_lp7w4"]
+[ext_resource type="Script" uid="uid://dax7hby88nkbu" path="res://addons/toonlike_tools/injectors/player/debug_player_position_marker.gd" id="5_pugag"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6w5ec"]
 size = Vector3(9.44312, 4.83142, 10.2761)
 
-[node name="FactoryBoilerRoom" instance=ExtResource("1_bug0g")]
+[node name="FactoryBoilerRoom" unique_id=469055524 instance=ExtResource("1_bug0g")]
 
-[node name="BattleNodeDynamic" parent="." index="4" instance=ExtResource("4_34ko4")]
+[node name="ceiling23" parent="Model/ZONE08/boiler_room/room9/geometry_boiler_room/ceiling8" index="1"]
+surface_material_override/0 = null
+
+[node name="GeometryTransformHelper624" parent="Model/ZONE08/boiler_room/props4/Rail/RailFace" index="0"]
+surface_material_override/0 = null
+
+[node name="BattleNodeDynamic" parent="." index="4" unique_id=650607575 node_paths=PackedStringArray("cogs") instance=ExtResource("4_34ko4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.0572, 4.5952, -94.9644)
 cog_dist = 1.75
+cogs = [NodePath("Cogs/Cog4"), NodePath("Cogs/Cog5"), NodePath("Cogs/Cog6"), NodePath("Cogs/Cog7")]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="BattleNodeDynamic" index="4"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BattleNodeDynamic" index="4" unique_id=315871607]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.271362, 2.46356, -0.939575)
 shape = SubResource("BoxShape3D_6w5ec")
+
+[node name="treasure_chest" parent="." index="7" unique_id=1985454100 instance=ExtResource("3_carpg")]
+transform = Transform3D(-4.371138e-08, 0, -0.9999998, 0, 1, 0, 0.9999998, 0, -4.371138e-08, -51.6056, 1.5300889, -80.51184)
+
+[node name="DebugPlayerPositionMarker" type="Marker3D" parent="." index="8" unique_id=501355842 instance=ExtResource("4_lp7w4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.722473, 1.7464831, -72.83021)
+script = ExtResource("5_pugag")
+
+[node name="treasure_chest2" parent="." index="9" unique_id=593035078 instance=ExtResource("3_carpg")]
+transform = Transform3D(-4.371138e-08, 0, -0.9999998, 0, 1, 0, 0.9999998, 0, -4.371138e-08, -24.995132, 4.605653, -89.33343)

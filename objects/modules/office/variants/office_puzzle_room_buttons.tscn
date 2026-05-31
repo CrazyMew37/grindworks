@@ -19,6 +19,8 @@
 [ext_resource type="PackedScene" uid="uid://dxyq5lb5oineo" path="res://objects/interactables/treasure_chest/treasure_chest.tscn" id="17_ai4cd"]
 [ext_resource type="Resource" uid="uid://kcxno616hkgc" path="res://objects/items/pools/special_items.tres" id="18_awjot"]
 [ext_resource type="Script" uid="uid://cxnd2ovpbxl8i" path="res://objects/misc/prank_charger.gd" id="19_2np8l"]
+[ext_resource type="PackedScene" uid="uid://c1g5f6yxujvef" path="res://addons/toonlike_tools/injectors/player/debug_player_position_marker.tscn" id="20_b11bf"]
+[ext_resource type="Script" uid="uid://dax7hby88nkbu" path="res://addons/toonlike_tools/injectors/player/debug_player_position_marker.gd" id="21_oce31"]
 
 [sub_resource type="Resource" id="Resource_5vlwh"]
 script = ExtResource("15_1dafp")
@@ -40,7 +42,7 @@ point_count = 3
 [node name="OfficePuzzleRoomButtons" unique_id=2146795663 instance=ExtResource("1_2ybtt")]
 script = ExtResource("2_da5ke")
 
-[node name="Lights" parent="Z04a_ALL/Z04/lobby/room/geometry_lobby" index="4"]
+[node name="Lights" parent="Z04a_ALL/Z04/lobby/room/geometry_lobby" parent_id_path=PackedInt32Array(1890515450) index="4" unique_id=1318020768]
 visible = false
 
 [node name="Props" type="Node3D" parent="." index="6" unique_id=745005897]
@@ -49,7 +51,7 @@ visible = false
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 2.66349, 0, -16.9572)
 
 [node name="ExitShelves" type="Node3D" parent="Props/BookShelves" index="0" unique_id=1328102966]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -1.33175, 0, 8.47861)
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -1.33175, -0.5350349, 8.47861)
 
 [node name="ShelfRight" parent="Props/BookShelves/ExitShelves" index="0" unique_id=2020781701 instance=ExtResource("2_n2axc")]
 unique_name_in_owner = true
@@ -337,6 +339,9 @@ signals = {
 NodePath(".."): "s_door_unlocked"
 }
 metadata/_custom_type_script = "uid://cxnd2ovpbxl8i"
+
+[node name="DebugPlayerPositionMarker" type="Marker3D" parent="." index="14" unique_id=965751230 instance=ExtResource("20_b11bf")]
+script = ExtResource("21_oce31")
 
 [editable path="Props/BookShelves/ExitShelves/ShelfRight/ShelfRight"]
 [editable path="Props/BookShelves/ExitShelves/ShelfLeft/ShelfLeft"]

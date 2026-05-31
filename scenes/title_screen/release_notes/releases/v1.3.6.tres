@@ -19,5 +19,9 @@ Nerfed Launch's base accuracy from 90% to 75%.
 Fixed Golf Club's positioning
 Added some chests to a few rooms
 Adjusted a couple of CGC hitboxes.
-Changed Armchair Manager's Level logic."
+Changed Armchair Manager's Level logic.
+[TITLE] Hotfix 2
+Gave even more rooms some chests.
+Made some battles skippable for late-game endless.
+Added the ten custom attacks from CrazyMew37's Custom Cogs to be built-in and usuable in this fork. (I will probably still leave out the suits and emblems, but they can be easily imported into the game via the cog creator if need be)"
 metadata/_custom_type_script = "uid://d1j0hh6tsgy0r"
