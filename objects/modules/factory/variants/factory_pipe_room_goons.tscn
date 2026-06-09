@@ -32,90 +32,90 @@ _data = {
 }
 point_count = 5
 
-[node name="FactoryPipeRoom" instance=ExtResource("1_l7mvp")]
+[node name="FactoryPipeRoom" unique_id=1987449565 instance=ExtResource("1_l7mvp")]
 
-[node name="Goons" type="Node3D" parent="." index="5"]
+[node name="Goons" type="Node3D" parent="." index="5" unique_id=1778967146]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -97.1098, 4.59871, -112.297)
 
-[node name="Goon1" type="Node3D" parent="Goons" index="0"]
+[node name="Goon1" type="Node3D" parent="Goons" index="0" unique_id=2112825779]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.6801, 9.53674e-07, 4.55485)
 
-[node name="goon" parent="Goons/Goon1" index="0" node_paths=PackedStringArray("path") instance=ExtResource("2_73nx6")]
+[node name="goon" parent="Goons/Goon1" index="0" unique_id=1738171035 node_paths=PackedStringArray("path") instance=ExtResource("2_73nx6")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0)
 path = NodePath("../Path3D")
 
-[node name="Path3D" type="Path3D" parent="Goons/Goon1" index="1"]
+[node name="Path3D" type="Path3D" parent="Goons/Goon1" index="1" unique_id=5559813]
 curve = SubResource("Curve3D_1cedy")
 
-[node name="Goon2" type="Node3D" parent="Goons" index="1"]
+[node name="Goon2" type="Node3D" parent="Goons" index="1" unique_id=366816249]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 16.881, 9.53674e-07, -5.6733)
 
-[node name="goon" parent="Goons/Goon2" index="0" node_paths=PackedStringArray("path") instance=ExtResource("2_73nx6")]
+[node name="goon" parent="Goons/Goon2" index="0" unique_id=1918594751 node_paths=PackedStringArray("path") instance=ExtResource("2_73nx6")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0)
 path = NodePath("../Path3D")
 
-[node name="Path3D" type="Path3D" parent="Goons/Goon2" index="1"]
+[node name="Path3D" type="Path3D" parent="Goons/Goon2" index="1" unique_id=654105234]
 curve = SubResource("Curve3D_uhpvw")
 
-[node name="Goon3" type="Node3D" parent="Goons" index="2"]
+[node name="Goon3" type="Node3D" parent="Goons" index="2" unique_id=1597183099]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.844, 0, -3.705)
 
-[node name="goon" parent="Goons/Goon3" index="0" node_paths=PackedStringArray("path") instance=ExtResource("2_73nx6")]
+[node name="goon" parent="Goons/Goon3" index="0" unique_id=196287092 node_paths=PackedStringArray("path") instance=ExtResource("2_73nx6")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0)
 path = NodePath("../Path3D")
 
-[node name="Path3D" type="Path3D" parent="Goons/Goon3" index="1"]
+[node name="Path3D" type="Path3D" parent="Goons/Goon3" index="1" unique_id=1347142580]
 curve = SubResource("Curve3D_imxrc")
 
-[node name="Goon6" type="Node3D" parent="Goons" index="3"]
+[node name="Goon6" type="Node3D" parent="Goons" index="3" unique_id=2014309514]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 31.843, 0, 2.292)
 
-[node name="goon" parent="Goons/Goon6" index="0" node_paths=PackedStringArray("path") instance=ExtResource("2_73nx6")]
+[node name="goon" parent="Goons/Goon6" index="0" unique_id=1932173042 node_paths=PackedStringArray("path") instance=ExtResource("2_73nx6")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0)
 path = NodePath("../Path3D")
 
-[node name="Path3D" type="Path3D" parent="Goons/Goon6" index="1"]
+[node name="Path3D" type="Path3D" parent="Goons/Goon6" index="1" unique_id=55103872]
 curve = SubResource("Curve3D_imxrc")
 
-[node name="Goon4" type="Node3D" parent="Goons" index="4"]
+[node name="Goon4" type="Node3D" parent="Goons" index="4" unique_id=1513406673]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -37.8719, 0, 2.73107)
 
-[node name="goon" parent="Goons/Goon4" index="0" node_paths=PackedStringArray("path") instance=ExtResource("2_73nx6")]
+[node name="goon" parent="Goons/Goon4" index="0" unique_id=1716229612 node_paths=PackedStringArray("path") instance=ExtResource("2_73nx6")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0)
 path = NodePath("../Path3D")
 
-[node name="Path3D" type="Path3D" parent="Goons/Goon4" index="1"]
+[node name="Path3D" type="Path3D" parent="Goons/Goon4" index="1" unique_id=1033438175]
 curve = SubResource("Curve3D_imxrc")
 
-[node name="Goon5" type="Node3D" parent="Goons" index="5"]
+[node name="Goon5" type="Node3D" parent="Goons" index="5" unique_id=1940856861]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.881, 0, -3.258)
 
-[node name="goon" parent="Goons/Goon5" index="0" node_paths=PackedStringArray("path") instance=ExtResource("2_73nx6")]
+[node name="goon" parent="Goons/Goon5" index="0" unique_id=319473163 node_paths=PackedStringArray("path") instance=ExtResource("2_73nx6")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0)
 path = NodePath("../Path3D")
 
-[node name="Path3D" type="Path3D" parent="Goons/Goon5" index="1"]
+[node name="Path3D" type="Path3D" parent="Goons/Goon5" index="1" unique_id=171478228]
 curve = SubResource("Curve3D_imxrc")
 
-[node name="Goon7" type="Node3D" parent="Goons" index="6"]
+[node name="Goon7" type="Node3D" parent="Goons" index="6" unique_id=1072456390]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.1027, 9.53674e-07, -5.67953)
 
-[node name="goon" parent="Goons/Goon7" index="0" node_paths=PackedStringArray("path") instance=ExtResource("2_73nx6")]
+[node name="goon" parent="Goons/Goon7" index="0" unique_id=808380606 node_paths=PackedStringArray("path") instance=ExtResource("2_73nx6")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0)
 path = NodePath("../Path3D")
 
-[node name="Path3D" type="Path3D" parent="Goons/Goon7" index="1"]
+[node name="Path3D" type="Path3D" parent="Goons/Goon7" index="1" unique_id=32250998]
 curve = SubResource("Curve3D_hld6n")
 
-[node name="Goon8" type="Node3D" parent="Goons" index="7"]
+[node name="Goon8" type="Node3D" parent="Goons" index="7" unique_id=109780265]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 17.2926, 9.53674e-07, 4.56641)
 
-[node name="goon" parent="Goons/Goon8" index="0" node_paths=PackedStringArray("path") instance=ExtResource("2_73nx6")]
+[node name="goon" parent="Goons/Goon8" index="0" unique_id=2110962830 node_paths=PackedStringArray("path") instance=ExtResource("2_73nx6")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0)
 path = NodePath("../Path3D")
 
-[node name="Path3D" type="Path3D" parent="Goons/Goon8" index="1"]
+[node name="Path3D" type="Path3D" parent="Goons/Goon8" index="1" unique_id=78102272]
 curve = SubResource("Curve3D_hld6n")
 
-[node name="treasure_chest" parent="." index="6" instance=ExtResource("3_wnx7c")]
+[node name="treasure_chest" parent="." index="6" unique_id=1662864927 instance=ExtResource("3_wnx7c")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -114.815, 4.60023, -111.857)

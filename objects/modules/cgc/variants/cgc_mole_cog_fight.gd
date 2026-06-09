@@ -17,6 +17,8 @@ func bring_in_reinforcements() -> void:
 	var action := REINFORCEMENTS.duplicate(true)
 	action.user = mole_cog
 	action.cog_amount = 3
+	if Util.on_hard_floor():
+		action.cog_amount = 4
 	action.targets = [mole_cog]
 	BattleService.ongoing_battle.round_end_actions.append(action)
 

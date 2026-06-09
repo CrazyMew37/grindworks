@@ -18,7 +18,7 @@ override_music = ExtResource("4_tl5sg")
 [sub_resource type="BoxShape3D" id="BoxShape3D_6ws4t"]
 size = Vector3(16.0215, 3.93054, 10.3685)
 
-[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_4en6f"]
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_en0v8"]
 resource_local_to_scene = true
 emission_shape = 1
 emission_sphere_radius = 0.05
@@ -26,65 +26,65 @@ direction = Vector3(0, 1, 0)
 initial_velocity_min = 5.0
 initial_velocity_max = 10.0
 
-[node name="cgc_kart_boarding_room" instance=ExtResource("1_6f8n4")]
+[node name="cgc_kart_boarding_room" unique_id=1916898953 instance=ExtResource("1_6f8n4")]
 script = ExtResource("2_voars")
 
-[node name="BattleNode" parent="." index="29" node_paths=PackedStringArray("cogs") instance=ExtResource("2_e72f8")]
+[node name="BattleNode" parent="." index="22" unique_id=870994868 node_paths=PackedStringArray("cogs") instance=ExtResource("2_e72f8")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.540187, 0, 0)
 tags = Array[int]([0, 2])
 cogs = [NodePath("MoleCog")]
 override_intro = SubResource("Resource_8dvvi")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="BattleNode" index="3"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BattleNode" index="3" unique_id=2113743796]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.273437, 2.00091, 3.87165)
 shape = SubResource("BoxShape3D_6ws4t")
 
-[node name="MoleCog" parent="BattleNode" index="4" instance=ExtResource("3_mmpwg")]
+[node name="MoleCog" parent="BattleNode" index="4" unique_id=1093784538 instance=ExtResource("3_mmpwg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.01, -2, 3.354)
 visible = false
 level_range_offset = 2
 dna = ExtResource("5_k3qvb")
 skelecog_chance = 0
 
-[node name="mole_hole" parent="." index="30" instance=ExtResource("3_roimw")]
+[node name="mole_hole" parent="." index="23" unique_id=877286838 instance=ExtResource("3_roimw")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.78581, 0, 0)
 
-[node name="mole_norm" parent="mole_hole/Moles" index="1"]
+[node name="mole_norm" parent="mole_hole/Moles" parent_id_path=PackedInt32Array(877286838, 1589528006) index="1" unique_id=2077266710]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
 
-[node name="mole_hit" parent="mole_hole/Moles" index="2"]
+[node name="mole_hit" parent="mole_hole/Moles" parent_id_path=PackedInt32Array(877286838, 1589528006) index="2" unique_id=999892620]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 1, 0)
 
-[node name="CogGears" parent="mole_hole" index="5"]
-process_material = SubResource("ParticleProcessMaterial_4en6f")
+[node name="CogGears" parent="mole_hole" index="5" unique_id=983174610]
+process_material = SubResource("ParticleProcessMaterial_en0v8")
 
-[node name="CameraAngles" type="Node3D" parent="." index="31"]
+[node name="CameraAngles" type="Node3D" parent="." index="24" unique_id=2010050640]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.540187, 0, 0)
 
-[node name="IntroCam" type="Camera3D" parent="CameraAngles" index="0"]
+[node name="IntroCam" type="Camera3D" parent="CameraAngles" index="0" unique_id=1223612673]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 2.58, 0)
 fov = 52.0
 
-[node name="MoleFocus" type="Camera3D" parent="CameraAngles" index="1"]
+[node name="MoleFocus" type="Camera3D" parent="CameraAngles" index="1" unique_id=1656346637]
 transform = Transform3D(-4.37114e-08, 0.5, -0.866025, 0, 0.866025, 0.5, 1, 2.18557e-08, -3.78552e-08, -5.175, 1.5, 0)
 fov = 52.0
 
-[node name="StompCam" type="Camera3D" parent="CameraAngles" index="2"]
+[node name="StompCam" type="Camera3D" parent="CameraAngles" index="2" unique_id=2102706959]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.205, 1.28, 3.67)
 fov = 52.0
 
-[node name="CharPositions" type="Node3D" parent="." index="32"]
+[node name="CharPositions" type="Node3D" parent="." index="25" unique_id=1159610640]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.540187, 0, 0)
 
-[node name="WalkInPos" type="Node3D" parent="CharPositions" index="0"]
+[node name="WalkInPos" type="Node3D" parent="CharPositions" index="0" unique_id=1086307206]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.35738, 0, 0)
 
-[node name="StompPos" type="Node3D" parent="CharPositions" index="1"]
+[node name="StompPos" type="Node3D" parent="CharPositions" index="1" unique_id=866080957]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.29891, 0, 0)
 
-[node name="FlyAwayPos" type="Node3D" parent="CharPositions" index="2"]
+[node name="FlyAwayPos" type="Node3D" parent="CharPositions" index="2" unique_id=1473802580]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.5921, 3.74627, 0)
 
-[node name="DebugPlayerPositionMarker" parent="." index="33" instance=ExtResource("9_q4nkj")]
+[node name="DebugPlayerPositionMarker" parent="." index="26" unique_id=1749688184 instance=ExtResource("9_q4nkj")]
 
 [editable path="mole_hole"]

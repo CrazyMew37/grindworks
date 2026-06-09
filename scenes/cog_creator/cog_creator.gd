@@ -700,11 +700,8 @@ func proxy_toggled(yes: bool) -> void:
 		set_ability_count(1)
 	else:
 		cog.dna.is_mod_cog = false
-		if cog.dna.external_assets.has('status_effects'):
-			while PROXY_EFFECT in cog.dna.external_assets['status_effects']:
-				cog.dna.external_assets['status_effects'].erase(PROXY_EFFECT)
+		set_ability_count(0)
 	_refresh_cog()
-	ability_count_element.visible = yes
 
 func set_ability_count(new_count : float) -> void:
 	if not cog.dna.external_assets.has('status_effects'):

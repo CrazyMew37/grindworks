@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://dodolram1owpd"]
+
+[ext_resource type="PackedScene" uid="uid://dmapsp85ra1fb" path="res://objects/modules/factory/base_rooms/factory_lobby.tscn" id="1_m54ht"]
+[ext_resource type="PackedScene" uid="uid://c1rus4vu8jrlg" path="res://objects/battle/battle_node/dynamic/battle_node_dynamic.tscn" id="2_1r525"]
+[ext_resource type="PackedScene" uid="uid://dxyq5lb5oineo" path="res://objects/interactables/treasure_chest/treasure_chest.tscn" id="3_j2n6p"]
+[ext_resource type="Resource" uid="uid://kcxno616hkgc" path="res://objects/items/pools/special_items.tres" id="4_q6ltl"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_amdc7"]
+size = Vector3(29.397537, 9.530516, 14.6855)
+
+[node name="FactoryLobby" unique_id=764608203 instance=ExtResource("1_m54ht")]
+
+[node name="DeskShadow" parent="Model/ZONE04/lobby/props2/DeskAll" index="1"]
+transform = Transform3D(1.04682, 0, 0, 0, 1, 0, 0, 0, 1, -217.272, -293.98618, -42.629272)
+
+[node name="DeskCollision1" parent="Model/ZONE04/lobby/props2/DeskAll" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -210.85397, -374.73264, -61.759033)
+
+[node name="Tubes" parent="Model/ZONE04/lobby/props2/DeskAll" index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -423.293, -535.2796, 1082.47)
+
+[node name="DeskBase" parent="Model/ZONE04/lobby/props2/DeskAll" index="4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -210.59099, -244.89325, -61.759033)
+
+[node name="BattleNodeDynamic" parent="." index="4" unique_id=339126751 node_paths=PackedStringArray("cogs") instance=ExtResource("2_1r525")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.978, 0, -40)
+cog_range = Vector2i(7, 7)
+cog_dist = 1.75
+cogs = [NodePath("Cogs/Cog6"), NodePath("Cogs/Cog7"), NodePath("Cogs/Cog8"), NodePath("Cogs/Cog10"), NodePath("Cogs/Cog11"), NodePath("Cogs/Cog12"), NodePath("Cogs/Cog13")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BattleNodeDynamic" index="4" unique_id=1436994494]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0212636, 4.7652626, -4.747181)
+shape = SubResource("BoxShape3D_amdc7")
+
+[node name="FanBlade1" parent="factory_lobby" index="1" unique_id=630291617]
+transform = Transform3D(-19.129435, -3.0435446e-12, 1.5374151e-05, 0, 19.129435, 7.385184e-07, -3.481415e-05, 1.6723454e-06, -8.44768, 24.7621, 2.51024, -60.6563)
+
+[node name="FanBlade2" parent="factory_lobby" index="2" unique_id=1885093325]
+transform = Transform3D(-19.129301, -3.0435283e-12, 1.5374151e-05, 0, 19.129301, 7.3851965e-07, -3.481391e-05, 1.6723365e-06, -8.44768, 28.4435, 2.51024, -60.6563)
+
+[node name="treasure_chest" parent="." index="8" unique_id=785138495 instance=ExtResource("3_j2n6p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -49)
+item_pool = ExtResource("4_q6ltl")
+
+[node name="treasure_chest2" parent="." index="9" unique_id=340131545 instance=ExtResource("3_j2n6p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.333, 0, -49)
+item_pool = ExtResource("4_q6ltl")
+
+[editable path="factory_lobby"]

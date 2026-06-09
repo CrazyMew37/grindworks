@@ -79,10 +79,12 @@ var stomper_tweens: Dictionary = {}
 var base_speed : float:
 	get:
 		if Util.on_easy_floor(): return 7.25
+		if Util.on_hard_floor(): return 13.0
 		return 10.0
 var speed_mult : float:
 	get:
 		if Util.on_easy_floor(): return 2.5
+		if Util.on_hard_floor(): return 3.5
 		return 3.0
 
 var button_quota := 0
@@ -342,4 +344,6 @@ func make_explosion(pos: Vector3) -> void:
 func get_random_object() -> PackedScene:
 	if Util.on_easy_floor() or randi() % 3 > 0:
 		return REGULAR_OBJS[0]
+	if Util.on_hard_floor():
+		return REGULAR_OBJS[1]
 	return RNG.channel(RNG.ChannelGoldenGoose).pick_random(REGULAR_OBJS)

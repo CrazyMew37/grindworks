@@ -174,6 +174,9 @@ func get_ortho_model_tex(model : Variant) -> Texture2D:
 
 func on_easy_floor() -> bool:
 	return floor_number < 3
+	
+func on_hard_floor() -> bool:
+	return floor_number > 7
 
 ## Creates a timer
 func run_timer(time := 5.0, anchor := Control.PRESET_BOTTOM_RIGHT) -> GameTimer:
@@ -190,6 +193,8 @@ func run_timer(time := 5.0, anchor := Control.PRESET_BOTTOM_RIGHT) -> GameTimer:
 
 func get_hazard_damage(damage := 0) -> int:
 	var true_damage := damage + (-(floor_number + 1) * 2)
+	if Util.floor_number > 5:
+		true_damage = (-(floor_number + 1) * (2 + (floor_number / 5)))
 	if is_instance_valid(floor_manager):
 		if floor_manager.floor_tags.has('extra_hazard_damage') and floor_manager.floor_tags['extra_hazard_damage'] == true:
 			true_damage = floori(1.25 * true_damage)

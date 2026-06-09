@@ -21,24 +21,20 @@ albedo_color = Color(1, 1, 1, 0.196078)
 albedo_texture = ExtResource("4_kchoq")
 roughness = 0.552786
 
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_icvd6"]
-data = PackedVector3Array(-152.4, 152.4, -15.24, 152.4, -152.4, -15.24, 152.4, 152.4, -15.24, -152.4, 152.4, -15.24, -152.4, -152.4, -15.24, 152.4, -152.4, -15.24)
-backface_collision = true
+[sub_resource type="BoxShape3D" id="BoxShape3D_0s1v5"]
+size = Vector3(3.05, 0.15, 3.05)
 
-[node name="activated_platform" instance=ExtResource("1_7h0d3")]
+[node name="activated_platform" unique_id=1002338618 instance=ExtResource("1_7h0d3")]
 script = ExtResource("2_65cwc")
 
-[node name="platform" parent="." index="0"]
+[node name="group1_platformcollision#StaticBody3D" type="StaticBody3D" parent="." index="0" unique_id=887646912]
+
+[node name="platform" parent="." index="1" unique_id=1111954674]
 unique_name_in_owner = true
 surface_material_override/0 = SubResource("StandardMaterial3D_7x80d")
 surface_material_override/1 = SubResource("StandardMaterial3D_cbxne")
-surface_material_override/2 = SubResource("StandardMaterial3D_cbxne")
 
-[node name="platformcollision" parent="group1" index="0"]
-visible = false
-
-[node name="StaticBody3D" type="StaticBody3D" parent="group1/platformcollision" index="0"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="group1/platformcollision/StaticBody3D" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="2" unique_id=1348364827]
 unique_name_in_owner = true
-shape = SubResource("ConcavePolygonShape3D_icvd6")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.075973, 0)
+shape = SubResource("BoxShape3D_0s1v5")

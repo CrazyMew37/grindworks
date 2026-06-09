@@ -1,0 +1,127 @@
+[gd_scene format=3 uid="uid://b4hwolesw2eul"]
+
+[ext_resource type="PackedScene" uid="uid://ch3xs1d1lu117" path="res://objects/modules/cgc/base_rooms/golfcourse_fairway.tscn" id="1_px8l3"]
+[ext_resource type="PackedScene" uid="uid://c1rus4vu8jrlg" path="res://objects/battle/battle_node/dynamic/battle_node_dynamic.tscn" id="4_upkt1"]
+[ext_resource type="PackedScene" uid="uid://5m1a0suouie8" path="res://objects/props/cgc/fence_with_end.tscn" id="5_sm5u1"]
+[ext_resource type="Resource" uid="uid://kcxno616hkgc" path="res://objects/items/pools/special_items.tres" id="7_pp40d"]
+[ext_resource type="PackedScene" uid="uid://dxyq5lb5oineo" path="res://objects/interactables/treasure_chest/treasure_chest.tscn" id="7_tmw07"]
+[ext_resource type="PackedScene" uid="uid://pn7r3ut085aw" path="res://objects/props/cgc/hedge_pillar.tscn" id="8_6dmsq"]
+[ext_resource type="PackedScene" uid="uid://bwu5l3d7uncro" path="res://objects/props/cgc/hedge_pillar_spiked.tscn" id="10_qnr7e"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_or7n3"]
+size = Vector3(47.287342, 24.953472, 7.2356253)
+
+[node name="golfcourse_fairway" unique_id=1327787080 instance=ExtResource("1_px8l3")]
+
+[node name="Fences" type="Node3D" parent="." index="29" unique_id=1174299781]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 13.406523, 0, 0)
+
+[node name="fence3" parent="Fences" index="0" unique_id=623576371 instance=ExtResource("5_sm5u1")]
+transform = Transform3D(1, 0, 1.7484561e-07, 0, 1, 0, -1.7484561e-07, 0, 1, 10.662689, 0, -18.808388)
+
+[node name="fence4" parent="Fences" index="1" unique_id=1696736106 instance=ExtResource("5_sm5u1")]
+transform = Transform3D(1, 0, 1.7484561e-07, 0, 1, 0, -1.7484561e-07, 0, 1, 10.662682, 0, -26.80843)
+
+[node name="fence5" parent="Fences" index="2" unique_id=398911218 instance=ExtResource("5_sm5u1")]
+transform = Transform3D(1, 0, 1.7484561e-07, 0, 1, 0, -1.7484561e-07, 0, 1, 10.662689, 0, -34.808426)
+
+[node name="fence6" parent="Fences" index="3" unique_id=678547918 instance=ExtResource("5_sm5u1")]
+transform = Transform3D(1, 0, 1.7484561e-07, 0, 1, 0, -1.7484561e-07, 0, 1, 10.662689, 0, -42.808426)
+
+[node name="fence7" parent="Fences" index="4" unique_id=1712004996 instance=ExtResource("5_sm5u1")]
+transform = Transform3D(-1, 0, -8.742283e-08, 0, 1, 0, 8.742283e-08, 0, -1, 10.662689, 0, 18.40007)
+
+[node name="fence8" parent="Fences" index="5" unique_id=1059453776 instance=ExtResource("5_sm5u1")]
+transform = Transform3D(-1, 0, -8.742283e-08, 0, 1, 0, 8.742283e-08, 0, -1, 10.662689, 0, 26.40007)
+
+[node name="fence9" parent="Fences" index="6" unique_id=1418959442 instance=ExtResource("5_sm5u1")]
+transform = Transform3D(-1, 0, -8.742283e-08, 0, 1, 0, 8.742283e-08, 0, -1, 10.662689, 0, 34.40007)
+
+[node name="fence10" parent="Fences" index="7" unique_id=813150380 instance=ExtResource("5_sm5u1")]
+transform = Transform3D(-1, 0, -8.742283e-08, 0, 1, 0, 8.742283e-08, 0, -1, 10.662689, 0, 42.40007)
+
+[node name="HedgePillar" parent="." index="30" unique_id=1811168531 instance=ExtResource("8_6dmsq")]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 30.1301, 0, 21.3)
+
+[node name="HedgePillar2" parent="." index="31" unique_id=1278201862 instance=ExtResource("8_6dmsq")]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 29.5852, 0, -25.5823)
+
+[node name="FenceGate" type="Node3D" parent="." index="32" unique_id=1206301241]
+transform = Transform3D(0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, 0.258819, 18.727283, 0, -0.078793)
+
+[node name="FenceCam" type="Camera3D" parent="FenceGate" index="0" unique_id=1407345963]
+transform = Transform3D(0.574877, 0, -0.81824, 0, 1, 0, 0.81824, 0, 0.574877, -7.61444, 2.66901, 4.38047)
+fov = 50.0
+
+[node name="PillarSpiked" parent="FenceGate" index="1" unique_id=1672200380 instance=ExtResource("10_qnr7e")]
+transform = Transform3D(0.957168, 0, -0.289533, 0, 1, 0, 0.289533, 0, 0.957168, 5.8539, 0, 2.02803)
+
+[node name="PillarSpiked2" parent="FenceGate" index="2" unique_id=1175171845 instance=ExtResource("10_qnr7e")]
+transform = Transform3D(0.957168, 0, -0.289533, 0, 1, 0, 0.289533, 0, 0.957168, -6.11954, 0, -1.5938)
+
+[node name="PillarSpiked3" parent="FenceGate" index="3" unique_id=905495686 instance=ExtResource("10_qnr7e")]
+transform = Transform3D(0.957168, 0, -0.289533, 0, 1, 0, 0.289533, 0, 0.957168, -23.0185, 0, -6.12187)
+
+[node name="PillarSpiked4" parent="FenceGate" index="4" unique_id=1129253896 instance=ExtResource("10_qnr7e")]
+transform = Transform3D(0.957168, 0, -0.289533, 0, 1, 0, 0.289533, 0, 0.957168, 22.3447, 0, 6.03318)
+
+[node name="treasure_chest" parent="." index="34" unique_id=270471735 instance=ExtResource("7_tmw07")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 15.77, 0, -6)
+item_pool = ExtResource("7_pp40d")
+
+[node name="treasure_chest2" parent="." index="35" unique_id=2110963597 instance=ExtResource("7_tmw07")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 15.769888, 0, 5.5)
+item_pool = ExtResource("7_pp40d")
+
+[node name="BattleNodeDynamic" parent="." index="36" unique_id=105205542 node_paths=PackedStringArray("cogs") instance=ExtResource("4_upkt1")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -4, 0, -0.5)
+cog_range = Vector2i(7, 7)
+cogs = [NodePath("Cogs/Cog14"), NodePath("Cogs/Cog15"), NodePath("Cogs/Cog16"), NodePath("Cogs/Cog17"), NodePath("Cogs/Cog18"), NodePath("Cogs/Cog19"), NodePath("Cogs/Cog20")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BattleNodeDynamic" index="4" unique_id=1187493827]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.097243756, 11.976726, -0.34523064)
+shape = SubResource("BoxShape3D_or7n3")
+
+[node name="GiantTower" type="Node3D" parent="." index="37" unique_id=377088611]
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 2, -20, 15, 12)
+
+[node name="PillarSpiked" parent="GiantTower" index="0" unique_id=2122722948 instance=ExtResource("10_qnr7e")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, -15, 0)
+
+[node name="PillarSpiked2" parent="GiantTower" index="1" unique_id=1899287197 instance=ExtResource("10_qnr7e")]
+
+[node name="PillarSpiked3" parent="GiantTower" index="2" unique_id=1941927615 instance=ExtResource("10_qnr7e")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 10, 0)
+
+[node name="GiantTower2" type="Node3D" parent="." index="38" unique_id=295681949]
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 2, -20, 15, -12.5)
+
+[node name="PillarSpiked" parent="GiantTower2" index="0" unique_id=1068222075 instance=ExtResource("10_qnr7e")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, -15, 0)
+
+[node name="PillarSpiked2" parent="GiantTower2" index="1" unique_id=13444989 instance=ExtResource("10_qnr7e")]
+
+[node name="PillarSpiked3" parent="GiantTower2" index="2" unique_id=712573487 instance=ExtResource("10_qnr7e")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 10, 0)
+
+[node name="GiantTower3" type="Node3D" parent="." index="39" unique_id=597273020]
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 2, 8, 15, 12)
+
+[node name="PillarSpiked" parent="GiantTower3" index="0" unique_id=937028527 instance=ExtResource("10_qnr7e")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, -15, 0)
+
+[node name="PillarSpiked2" parent="GiantTower3" index="1" unique_id=1449721777 instance=ExtResource("10_qnr7e")]
+
+[node name="PillarSpiked3" parent="GiantTower3" index="2" unique_id=1994899273 instance=ExtResource("10_qnr7e")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 10, 0)
+
+[node name="GiantTower4" type="Node3D" parent="." index="40" unique_id=1312299648]
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 2, 8, 15, -12.5)
+
+[node name="PillarSpiked" parent="GiantTower4" index="0" unique_id=1189196310 instance=ExtResource("10_qnr7e")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, -15, 0)
+
+[node name="PillarSpiked2" parent="GiantTower4" index="1" unique_id=902688257 instance=ExtResource("10_qnr7e")]
+
+[node name="PillarSpiked3" parent="GiantTower4" index="2" unique_id=1360713945 instance=ExtResource("10_qnr7e")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 10, 0)

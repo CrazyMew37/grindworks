@@ -125,7 +125,7 @@ func _ready() -> void:
 	logo_tween.tween_property(%LogoScaler, 'scale', Vector2(1.25, 1.25), 0.5)
 	logo_tween.finished.connect(logo_tween.kill)
 
-	%VersionLabel.set_text("CrazyMew37 Edition 1.3.6")
+	%VersionLabel.set_text("CrazyMew37 Edition 1.3.7")
 	
 	var title_theme: AudioStream = load("res://audio/music/main_theme.ogg")
 	if not AudioManager.current_music == title_theme:

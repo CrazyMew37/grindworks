@@ -20,68 +20,68 @@ size = Vector3(21.3082, 12.5377, 22.357)
 vertices = PackedVector3Array(-10.416202, 4.6898603, -16.095829, -10.416202, 4.4398603, -10.595829, -8.666202, 4.6898603, -10.595829, -8.666202, 4.6898603, -16.095829, -10.416202, 0.43986046, -11.345829, -10.416202, 0.43986046, -10.595829, -8.916202, 0.43986046, -10.595829, -8.916202, 0.43986046, -11.345829, -7.6662016, 0.43986046, -11.345829, -7.6662016, 0.43986046, -10.595829, 12.083798, 0.43986046, -10.845829, 12.083798, 0.43986046, -11.345829, 11.333798, 0.43986046, 8.904171, -7.6662016, 0.43986046, 9.154171, 11.833798, 0.43986046, 9.404171, 11.833798, 0.43986046, -9.595829, 4.5837984, 0.43986046, -9.595829, 11.083798, 0.43986046, -9.345829, 11.583798, 0.43986046, -3.595829, 11.083798, 0.43986046, -3.345829, 3.3337984, 0.43986046, -8.095829, -7.4162016, 0.43986046, -7.845829, -7.9162016, 0.43986046, -3.345829, -7.6662016, 0.43986046, 4.404171, 12.083798, 0.43986046, -3.345829, 12.083798, 0.43986046, 2.904171, 11.583798, 0.43986046, 3.154171, 10.083798, 0.43986046, -3.595829, 10.083798, 0.43986046, -8.095829, 10.333798, 0.43986046, 3.154171, 10.333798, 0.43986046, 7.654171, -7.6662016, 0.43986046, 7.654171, -10.416202, 0.43986046, -3.095829, -10.416202, 0.43986046, 4.154171, 11.083798, 4.1898603, -8.595829, 11.083798, 4.1898603, -4.345829, 11.583798, 4.1898603, -4.345829, 11.583798, 4.1898603, -9.595829, -7.6662016, 4.1898603, -9.345829, -7.6662016, 4.1898603, -8.845829, 10.583798, 4.1898603, -9.095829, -10.416202, 4.4398603, -4.095829, -8.916202, 4.4398603, -4.095829, -8.666202, 4.6898603, -6.595829, -8.916202, 4.4398603, -9.345829, -10.416202, 4.4398603, -9.345829, -9.416202, 0.43986046, -8.595829, -8.916202, 0.43986046, -9.345829, -10.166202, 0.43986046, -9.345829, -10.166202, 0.43986046, -4.345829, -9.166202, 0.43986046, -4.345829, -8.916202, 0.43986046, -6.595829, 11.833798, 4.1898603, 3.904171, 11.333798, 4.1898603, 3.904171, 11.083798, 4.1898603, 8.654171, 11.833798, 4.1898603, 9.404171, -7.6662016, 4.1898603, 9.154171, -7.6662016, 4.1898603, 8.654171, -10.416202, 4.4398603, 5.154171, -10.416202, 4.4398603, 8.904171, -8.666202, 4.4398603, 8.904171, -8.666202, 4.4398603, 5.154171, -9.916202, 0.43986046, 8.904171, -9.166202, 0.43986046, 8.904171, -9.416202, 0.43986046, 7.904171, -8.916202, 0.43986046, 7.654171, -8.916202, 0.43986046, 5.404171, -9.916202, 0.43986046, 5.404171, -10.416202, 0.43986046, 10.154171, -10.416202, 0.43986046, 11.404171, -8.916202, 0.43986046, 11.404171, -8.916202, 0.43986046, 10.154171, -8.666202, 4.6898603, 10.904171, -8.916202, 4.4398603, 10.154171, -10.416202, 4.4398603, 10.154171, -10.416202, 4.6898603, 17.154171, -8.416202, 4.6898603, 17.154171, -7.6662016, 0.43986046, 11.404171, 12.083798, 0.43986046, 11.404171, 11.833798, 0.43986046, 10.654171, -7.6662016, 0.43986046, 10.404171)
 polygons = [PackedInt32Array(3, 2, 0), PackedInt32Array(0, 2, 1), PackedInt32Array(7, 6, 4), PackedInt32Array(4, 6, 5), PackedInt32Array(11, 10, 8), PackedInt32Array(8, 10, 9), PackedInt32Array(14, 13, 12), PackedInt32Array(17, 16, 15), PackedInt32Array(19, 17, 18), PackedInt32Array(18, 17, 15), PackedInt32Array(22, 21, 23), PackedInt32Array(23, 21, 20), PackedInt32Array(18, 24, 19), PackedInt32Array(19, 24, 25), PackedInt32Array(26, 25, 12), PackedInt32Array(12, 25, 14), PackedInt32Array(20, 28, 27), PackedInt32Array(26, 29, 25), PackedInt32Array(25, 29, 19), PackedInt32Array(19, 29, 27), PackedInt32Array(29, 30, 27), PackedInt32Array(27, 30, 20), PackedInt32Array(20, 30, 23), PackedInt32Array(23, 30, 31), PackedInt32Array(32, 22, 33), PackedInt32Array(33, 22, 23), PackedInt32Array(35, 34, 36), PackedInt32Array(36, 34, 37), PackedInt32Array(39, 38, 40), PackedInt32Array(40, 38, 37), PackedInt32Array(37, 34, 40), PackedInt32Array(42, 41, 43), PackedInt32Array(43, 41, 44), PackedInt32Array(44, 41, 45), PackedInt32Array(47, 46, 48), PackedInt32Array(50, 49, 51), PackedInt32Array(51, 49, 46), PackedInt32Array(46, 49, 48), PackedInt32Array(53, 52, 54), PackedInt32Array(54, 52, 55), PackedInt32Array(57, 54, 56), PackedInt32Array(56, 54, 55), PackedInt32Array(61, 60, 58), PackedInt32Array(58, 60, 59), PackedInt32Array(64, 63, 62), PackedInt32Array(65, 64, 66), PackedInt32Array(66, 64, 67), PackedInt32Array(62, 67, 64), PackedInt32Array(71, 70, 68), PackedInt32Array(68, 70, 69), PackedInt32Array(73, 72, 74), PackedInt32Array(74, 72, 75), PackedInt32Array(75, 72, 76), PackedInt32Array(80, 79, 77), PackedInt32Array(77, 79, 78)]
 
-[node name="cgc_kart_boarding_room" instance=ExtResource("1_dv1qd")]
+[node name="cgc_kart_boarding_room" unique_id=1141856142 instance=ExtResource("1_dv1qd")]
 
-[node name="ENTRANCE" parent="." index="0"]
+[node name="ENTRANCE" parent="." index="0" unique_id=1731260494]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -10.769857, 0, -0.010798961)
 
-[node name="EXIT" parent="." index="1"]
+[node name="EXIT" parent="." index="1" unique_id=1476241296]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.176012, 0, -0.26036957)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Ground" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Ground" parent_id_path=PackedInt32Array(1788849575) index="0" unique_id=1942326075]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground/StaticBody3D" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground/StaticBody3D" index="0" unique_id=1923653550]
 shape = SubResource("ConcavePolygonShape3D_e3rlw")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Hedges" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Hedges" parent_id_path=PackedInt32Array(110145108) index="0" unique_id=170113104]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Hedges/StaticBody3D" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hedges/StaticBody3D" index="0" unique_id=489945831]
 shape = SubResource("ConcavePolygonShape3D_ndvhc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="StoneWalls" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="StoneWalls" parent_id_path=PackedInt32Array(1465005554) index="0" unique_id=882351999]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StoneWalls/StaticBody3D" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StoneWalls/StaticBody3D" index="0" unique_id=2105968457]
 shape = SubResource("ConcavePolygonShape3D_x6sg4")
 
-[node name="RoomArea" type="Area3D" parent="." index="8"]
+[node name="RoomArea" type="Area3D" parent="." index="8" unique_id=318076298]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoomArea" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoomArea" index="0" unique_id=1848029890]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.142273, 5.76886, 0.732147)
 shape = SubResource("BoxShape3D_4fv85")
 
-[node name="Navigation" type="NavigationRegion3D" parent="." index="9"]
+[node name="Navigation" type="NavigationRegion3D" parent="." index="9" unique_id=1550931508]
 navigation_mesh = SubResource("NavigationMesh_e3rlw")
 
-[node name="CGCKartDoor" parent="." index="10" instance=ExtResource("2_e3rlw")]
+[node name="CGCKartDoor" parent="." index="10" unique_id=1724795849 instance=ExtResource("2_e3rlw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.373414, 0, -0.23793793)
 
-[node name="cgc_tree" parent="." index="11" instance=ExtResource("3_ndvhc")]
+[node name="cgc_tree" parent="." index="11" unique_id=1639714801 instance=ExtResource("3_ndvhc")]
 transform = Transform3D(0.36183637, 0, -0.3739865, 0, 0.39028054, 0, 0.3739865, 0, 0.36183637, 11.139668, 0, -16.231432)
 
-[node name="cgc_tree2" parent="." index="12" instance=ExtResource("3_ndvhc")]
+[node name="cgc_tree2" parent="." index="12" unique_id=1057693235 instance=ExtResource("3_ndvhc")]
 transform = Transform3D(-0.45780015, 0, -0.24740773, 0, 0.52448034, 0, 0.24740773, 0, -0.45780015, 6.345376, 1.9073486e-06, -13.416718)
 
-[node name="cgc_tree3" parent="." index="13" instance=ExtResource("3_ndvhc")]
+[node name="cgc_tree3" parent="." index="13" unique_id=1269049382 instance=ExtResource("3_ndvhc")]
 transform = Transform3D(0.13339363, 0, -0.38058558, 0, 0.52448034, 0, 0.53592896, 0, 0.0947284, -5.140452, 1.9073486e-06, -15.322268)
 
-[node name="cgc_tree4" parent="." index="14" instance=ExtResource("3_ndvhc")]
+[node name="cgc_tree4" parent="." index="14" unique_id=174016402 instance=ExtResource("3_ndvhc")]
 transform = Transform3D(0.33759713, 0, -0.048606098, 0, 0.21280915, 0, 0.06844563, 0, 0.23974186, -2.5958302, 1.9073486e-06, -12.413103)
 
-[node name="cgc_tree5" parent="." index="15" instance=ExtResource("3_ndvhc")]
+[node name="cgc_tree5" parent="." index="15" unique_id=1845598426 instance=ExtResource("3_ndvhc")]
 transform = Transform3D(-0.26610386, 0, -0.15533343, 0, 0.34522197, 0, 0.21873578, 0, -0.18897149, 1.0025609, 1.9073486e-06, -15.185267)
 
-[node name="cgc_tree6" parent="." index="16" instance=ExtResource("3_ndvhc")]
+[node name="cgc_tree6" parent="." index="16" unique_id=85711623 instance=ExtResource("3_ndvhc")]
 transform = Transform3D(-0.21920246, 0, -0.18864009, 0, 0.34522197, 0, 0.18018311, 0, -0.22949085, 9.580424, 3.8146973e-06, 14.158093)
 
-[node name="cgc_tree7" parent="." index="17" instance=ExtResource("3_ndvhc")]
+[node name="cgc_tree7" parent="." index="17" unique_id=780808395 instance=ExtResource("3_ndvhc")]
 transform = Transform3D(-0.15548106, 0, -0.2721146, 0, 0.48809013, 0, 0.34520355, 0, -0.1225616, 4.8540516, 3.8146973e-06, 11.804894)
 
-[node name="cgc_tree8" parent="." index="18" instance=ExtResource("3_ndvhc")]
+[node name="cgc_tree8" parent="." index="18" unique_id=1005534669 instance=ExtResource("3_ndvhc")]
 transform = Transform3D(0.3539344, 0, -0.1059643, 0, 0.6057623, 0, 0.13442579, 0, 0.2789969, -5.1584435, 5.722046e-06, 15.297142)
 
-[node name="cgc_tree9" parent="." index="19" instance=ExtResource("3_ndvhc")]
+[node name="cgc_tree9" parent="." index="19" unique_id=1847364901 instance=ExtResource("3_ndvhc")]
 transform = Transform3D(0.23168239, 0, -0.06936331, 0, 0.39652675, 0, 0.08799396, 0, 0.18262896, -2.2135468, 5.722046e-06, 12.429977)
 
-[node name="cgc_tree10" parent="." index="20" instance=ExtResource("3_ndvhc")]
+[node name="cgc_tree10" parent="." index="20" unique_id=743882189 instance=ExtResource("3_ndvhc")]
 transform = Transform3D(0.4136734, 0, -0.048669215, 0, 0.46338946, 0, 0.15711491, 0, 0.12814279, 1.9712691, 3.8146973e-06, 15.330315)

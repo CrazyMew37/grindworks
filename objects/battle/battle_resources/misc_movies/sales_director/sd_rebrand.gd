@@ -61,7 +61,10 @@ func action() -> void:
 	splash.restart()
 	target.body.set_color(Color("674d78"))
 	var old_max_hp: int = target.stats.max_hp
-	target.stats.max_hp = ceili(target.stats.max_hp * 1.5)
+	if Util.on_hard_floor():
+		target.stats.max_hp = ceili(target.stats.max_hp * 2.0)
+	else:
+		target.stats.max_hp = ceili(target.stats.max_hp * 1.5)
 	var max_hp_diff: int = target.stats.max_hp - old_max_hp
 	target.stats.hp += max_hp_diff
 	manager.battle_text(target, "Max HP Up!", BattleText.colors.orange[0], BattleText.colors.orange[1])
@@ -70,6 +73,8 @@ func action() -> void:
 	if lure_immunity.id not in manager.get_status_ids_for_target(target):
 		lure_immunity.set_track(load("res://objects/battle/battle_resources/gag_loadouts/gag_tracks/lure.tres"))
 		lure_immunity.rounds = 1
+		if Util.on_hard_floor():
+			lure_immunity.rounds = 2
 		lure_immunity.target = target
 		manager.add_status_effect(lure_immunity)
 		manager.battle_text(target, "Lure Immunity!", BattleText.colors.orange[0], BattleText.colors.orange[1])

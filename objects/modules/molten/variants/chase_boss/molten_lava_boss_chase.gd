@@ -5,6 +5,7 @@ const FIREBALL_XPOS := [6.0, -6.0]
 var ROOM_COUNT: int:
 	get:
 		if Util.on_easy_floor(): return 8
+		if Util.on_hard_floor(): return 12
 		return 10
 const CAMERA_VELOCITY := 4.0
 const EXIT_ROOM := "res://objects/modules/molten/variants/chase_boss/stage_pieces/molten_hall_final.tscn"

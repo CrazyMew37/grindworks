@@ -265,4 +265,6 @@ func remove_ball_speak() -> void:
 func get_spd_increment() -> float:
 	if Util.on_easy_floor():
 		return 0.009
+	if Util.on_hard_floor():
+		return 0.02
 	return 0.014

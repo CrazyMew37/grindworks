@@ -1,0 +1,99 @@
+[gd_scene format=3 uid="uid://wpj687cqyjwe"]
+
+[ext_resource type="PackedScene" uid="uid://461ajltncxsc" path="res://objects/modules/cgc/base_rooms/cgc_mole_room.tscn" id="1_ktheq"]
+[ext_resource type="PackedScene" uid="uid://b35wcbrb3kc82" path="res://objects/obstacles/golf_door/golf_door.tscn" id="2_86asp"]
+[ext_resource type="PackedScene" uid="uid://c1rus4vu8jrlg" path="res://objects/battle/battle_node/dynamic/battle_node_dynamic.tscn" id="3_ktheq"]
+[ext_resource type="PackedScene" uid="uid://dxyq5lb5oineo" path="res://objects/interactables/treasure_chest/treasure_chest.tscn" id="3_nx05r"]
+[ext_resource type="PackedScene" uid="uid://c1g5f6yxujvef" path="res://addons/toonlike_tools/injectors/player/debug_player_position_marker.tscn" id="4_nx05r"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_86asp"]
+size = Vector3(29.9342, 9.191414, 9.914611)
+
+[node name="GolfBallRoom" unique_id=796972831 instance=ExtResource("1_ktheq")]
+
+[node name="ENTRANCE" parent="." index="0" unique_id=772199935]
+transform = Transform3D(-1.4341e-09, 0, 0.0328084, 0, 0.0328084, 0, -0.0328084, 0, -1.4341e-09, -21.973, 0.039, -0.36)
+
+[node name="EXIT" parent="." index="1" unique_id=1754212332]
+transform = Transform3D(0, 0, -0.0328084, 0, 0.0328084, 0, 0.0328084, 0, 0, 18.832, -0.011, -0.672)
+
+[node name="CollisionShape3D" parent="RoomArea" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3543243, 2.9895, -0.259216)
+
+[node name="Navigation" parent="." index="3"]
+transform = Transform3D(1.5, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="Ground" parent="." index="4" unique_id=509331761]
+transform = Transform3D(1.5, 5.960463e-08, -1.6292068e-07, -8.940695e-08, 1, -4.371139e-08, 2.4438103e-07, 4.37114e-08, 1, -1.2781286, -0.052672256, -0.18278503)
+
+[node name="Hedge" parent="." index="5" unique_id=2050547183]
+transform = Transform3D(1.5, 5.960463e-08, -1.6292068e-07, -8.940695e-08, 1, -4.371139e-08, 2.4438103e-07, 4.37114e-08, 1, -1.079, 3.5, -0.718)
+
+[node name="SpikedPillar" parent="." index="6" unique_id=1040002192]
+transform = Transform3D(7.549788e-08, 2.4438106e-07, 1.5, -1.192093e-07, 1.5, -2.4438103e-07, -1, -1.7881393e-07, 1.13246855e-07, -1.0035367, 6.547967, -0.7870801)
+
+[node name="cgc_tree" parent="." index="7"]
+transform = Transform3D(0.64177483, 4.6662997e-08, 0.48405275, -5.7756893e-08, 0.6460643, -2.8240368e-08, -0.72600687, -1.0148014e-08, 0.42789248, 5.0391283, 0.0029525757, 19.30778)
+
+[node name="cgc_tree2" parent="." index="8"]
+transform = Transform3D(0.969, 3.0367985e-08, -8.300652e-08, -5.7756893e-08, 0.5094904, -2.2270532e-08, 1.5787015e-07, 2.2270537e-08, 0.5094904, -1.6043605, 3.0338345, 20.583757)
+
+[node name="cgc_tree3" parent="." index="9"]
+transform = Transform3D(0.3906949, -1.5968705e-08, -0.9151146, -5.7756893e-08, 1, -4.371139e-08, 0.886746, 7.2169236e-08, 0.4031939, -12.619442, 3.0338364, 29.218933)
+
+[node name="cgc_tree6" parent="." index="10"]
+transform = Transform3D(0.969, 5.960463e-08, -1.6292068e-07, -5.7756893e-08, 1, -4.371139e-08, 1.5787015e-07, 4.37114e-08, 1, 1.3757148, 3.0338364, 25.175308)
+
+[node name="cgc_tree7" parent="." index="11"]
+transform = Transform3D(0.3911126, -1.2268997e-08, -0.51391035, -5.7756893e-08, 0.7699543, -2.4552559e-08, 0.8865618, 5.5572805e-08, 0.22671494, 11.259913, 0.19226551, 24.398926)
+
+[node name="cgc_tree9" parent="." index="12"]
+transform = Transform3D(-0.29951805, -3.945592e-08, -0.6254517, -5.77569e-08, 0.65765756, -2.8747126e-08, 0.92154753, 2.8394087e-08, -0.20328203, -3.007965, 3.0338316, -24.483856)
+
+[node name="cgc_tree12" parent="." index="13"]
+transform = Transform3D(0.8221437, 1.756682e-08, -0.4042837, -5.7756896e-08, 0.640293, -3.3388208e-08, 0.512875, 4.394616e-08, 0.6480707, 12.117442, 0.002948761, -31.098366)
+
+[node name="cgc_tree13" parent="." index="14"]
+transform = Transform3D(0.4638376, 3.869078e-08, 0.71648574, -5.77569e-08, 0.5782547, -3.5670734e-08, -0.8507736, -1.816225e-08, 0.39062455, 5.9995604, 0.0029506683, -22.766968)
+
+[node name="cgc_tree15" parent="." index="15"]
+transform = Transform3D(-0.64599586, -2.6728775e-09, 0.3564358, -5.775689e-08, 0.37354413, -2.0903068e-08, -0.7222536, -2.748076e-08, -0.3188022, -6.457086, 3.0338306, -20.271126)
+
+[node name="cgc_tree14" parent="." index="16"]
+transform = Transform3D(0.969, 4.6491788e-08, -1.7739393e-07, -5.775689e-08, 0.780003, -4.759454e-08, 1.5787013e-07, 3.4095024e-08, 1.0888362, -11.820663, 1.3654375, -22.65792)
+
+[node name="GolfDoors" type="Node3D" parent="." index="17" unique_id=1206093430]
+
+[node name="GolfDoor1" parent="GolfDoors" index="0" unique_id=493068457 instance=ExtResource("2_86asp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, -0.196, -0.077)
+speed = 0.5
+
+[node name="GolfDoor2" parent="GolfDoors" index="1" unique_id=1520069071 instance=ExtResource("2_86asp")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8, -0.196, -2.727)
+
+[node name="cgc_tree16" parent="." index="18"]
+transform = Transform3D(-0.36237442, 1.810358e-08, 0.9703802, -8.940695e-08, 0.6461594, -4.3711392e-08, -1.4555702, -4.4196714e-08, -0.24158294, 11.133245, 0.19226265, -24.26804)
+
+[node name="cgc_tree17" parent="." index="19"]
+transform = Transform3D(0.6780218, 5.390557e-08, 0.89201057, -8.940695e-08, 0.81757873, -4.3711395e-08, -1.3380158, -2.7315123e-08, 0.45201454, 3.6635985, 3.0338306, -28.693289)
+
+[node name="cgc_tree18" parent="." index="20"]
+transform = Transform3D(-0.17334163, 2.4484711e-08, 0.48040876, -8.940695e-08, 0.67025286, -2.1140968e-08, -1.4899505, -4.30682e-08, -0.055891007, -5.578468, 3.0338335, 17.890833)
+
+[node name="cgc_tree20" parent="." index="21"]
+transform = Transform3D(0.47426826, -1.729005e-08, -0.9486996, -8.940695e-08, 0.7642602, -4.371139e-08, 1.4230494, 5.3779086e-08, 0.31617883, -12.224817, 1.1449747, 17.778429)
+
+[node name="BattleNodeDynamic" parent="." index="22" unique_id=1638470551 node_paths=PackedStringArray("cogs") instance=ExtResource("3_ktheq")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.5, 0, 0)
+cog_dist = 1.75
+cogs = [NodePath("Cogs/Cog4"), NodePath("Cogs/Cog5"), NodePath("Cogs/Cog6"), NodePath("Cogs/Cog7")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BattleNodeDynamic" index="4" unique_id=941086444]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8574372, 4.095687, 0.63129026)
+shape = SubResource("BoxShape3D_86asp")
+
+[node name="DebugPlayerPositionMarker" parent="." index="23" unique_id=2000021560 instance=ExtResource("4_nx05r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.712751, 0, 0)
+
+[node name="treasure_chest" parent="." index="24" unique_id=426548082 instance=ExtResource("3_nx05r")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17.466, -0.037, -7)

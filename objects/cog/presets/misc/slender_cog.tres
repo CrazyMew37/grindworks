@@ -26,6 +26,7 @@ can_speak = false
 attacks = Array[ExtResource("1_rm1bc")]([SubResource("Resource_cgq1u")])
 level_high = 20
 baked_status_effects = PackedStringArray("res://objects/battle/battle_resources/status_effects/resources/attentive.tres")
+is_admin = true
 health_mod = 2.0
 battle_phrases = Array[String](["..."])
 external_assets = {

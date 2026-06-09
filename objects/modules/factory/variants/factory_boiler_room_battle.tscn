@@ -1,22 +1,78 @@
-[gd_scene format=3 uid="uid://cfye5nnqbgqn4"]
+[gd_scene format=4 uid="uid://cfye5nnqbgqn4"]
 
 [ext_resource type="PackedScene" uid="uid://c4p1j50tw4qi6" path="res://objects/modules/factory/base_rooms/factory_boiler_room.tscn" id="1_bug0g"]
+[ext_resource type="Texture2D" uid="uid://4d8qdd4icuiu" path="res://models/facilities/factory/FINALFACTORY_64.png" id="2_lp7w4"]
 [ext_resource type="PackedScene" uid="uid://dxyq5lb5oineo" path="res://objects/interactables/treasure_chest/treasure_chest.tscn" id="3_carpg"]
 [ext_resource type="PackedScene" uid="uid://c1rus4vu8jrlg" path="res://objects/battle/battle_node/dynamic/battle_node_dynamic.tscn" id="4_34ko4"]
 [ext_resource type="PackedScene" uid="uid://c1g5f6yxujvef" path="res://addons/toonlike_tools/injectors/player/debug_player_position_marker.tscn" id="4_lp7w4"]
-[ext_resource type="Script" uid="uid://dax7hby88nkbu" path="res://addons/toonlike_tools/injectors/player/debug_player_position_marker.gd" id="5_pugag"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a721t"]
+resource_name = "RAIL___BOILERROOM_newfixes_v1s4_BoilerRoomT_CrossBeamQuarter2SHD1"
+transparency = 4
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.906332, 0.906332, 0.906332, 0.8)
+albedo_texture = ExtResource("2_lp7w4")
+emission_enabled = true
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_fiamg"]
+_surfaces = [{
+"aabb": AABB(-1519.23, 147.395, -2651.35, 1101.74, 56.9144, 0.00463867),
+"format": 34359742465,
+"index_count": 192,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAMAAwACAAQABgAHAAAAAAADAAYABgADAAUABQAIAAYACQAKAAsACwAMAAkAAQAAAAwADAALAAEADQAOAAkACQAMAA0ADQAMAAAAAAAHAA0ADwAQABEAEQASAA8ACgAJABIAEgARAAoAEwAUAA8ADwASABMAEwASAAkACQAOABMAFQAWABcAFwAYABUAEAAPABgAGAAXABAAGQAaABUAFQAYABkAGQAYAA8ADwAUABkAGwAcAB0AHQAeABsAFgAVAB4AHgAdABYAHwAgABsAGwAeAB8AHwAeABUAFQAaAB8AIQAiACMAIwAkACEAHAAbACEAIQAkABwAJQAmACIAIgAhACUAJQAhABsAGwAgACUAJwAoACkAKQAqACcAKwAsACoAKgApACsALQAuACcAJwAqAC0ALQAqACwALAAvAC0ABQAEADAAMAAxAAUAKAAnADEAMQAwACgAMgAIAAUABQAxADIAMgAxACcAJwAuADIA"),
+"name": "RAIL___BOILERROOM_newfixes_v1s4_BoilerRoomT_CrossBeamQuarter2SHD1",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 51,
+"vertex_data": PackedByteArray("K7RQxAJWK0ODtSXFLbRQxCNPTEOEtSXFsFA/xCZPTEOHtSXFsFA/xARWK0OFtSXFM+0txCZPTEOHtSXFMO0txANWK0OFtSXFsFA/xBllE0OFtSXFK7RQxBhlE0ODtSXFMO0txBllE0OFtSXFJntzxABWK0OBtSXFKHtzxCNPTEOCtSXFqxdixCNPTEOEtSXFqxdixAJWK0ODtSXFqxdixBhlE0ODtSXFJntzxBdlE0OBtSXFECGLxP9VK0N+tSXFESGLxCFPTEN/tSXFU2+CxCNPTEOCtSXFU2+CxAJWK0OBtSXFU2+CxBdlE0OBtSXFECGLxBZlE0N+tSXFjoScxP5VK0N8tSXFj4ScxCFPTEN9tSXF0NKTxCFPTEN/tSXF0NKTxP9VK0N+tSXF0NKTxBZlE0N+tSXFjoScxBVlE0N8tSXFDOitxP1VK0N5tSXFDeitxB5PTEN6tSXFTjalxCFPTEN9tSXFTjalxP9VK0N8tSXFTjalxBVlE0N8tSXFDOitxBNlE0N5tSXFy5m2xP1VK0N5tSXFZOe9xPpVK0N4tSXFZOe9xB5PTEN4tSXFy5m2xB5PTEN6tSXFy5m2xBNlE0N5tSXFZOe9xBJlE0N4tSXFNiYLxARWK0OItSXFOCYLxCZPTEOJtSXFdYXzwyhPTEOLtSXFdYXzwwZWK0OKtSXFe77QwyhPTEOLtSXFcb7QwwZWK0OKtSXFdYXzwxxlE0OKtSXFNiYLxBtlE0OItSXFcb7QwxxlE0OKtSXFtYkcxCZPTEOJtSXFtYkcxARWK0OItSXFtYkcxBtlE0OItSXF")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_pugag"]
+resource_name = "GeometryTransformHelper226"
+_surfaces = [{
+"aabb": AABB(-1519.23, 147.395, -2651.35, 1101.74, 56.9144, 0.00463867),
+"attribute_data": PackedByteArray("/////9sF1zs+MgE/pKSk/9sF1zv0UX4/pKSk/7Bnfj/0UX4//////8TNfj8+MgE/pKSk/9sF1zv0UX4//////9sF1zs+MgE//////8TNfj8+MgE/pKSk/7Bnfj/0UX4//////9kzfz94pdY9/////9sF1zt4pdY9/////9sF1zs+MgE//////8TNfj8+MgE//////9kzfz94pdY9/////8TNfj8+MgE//////9sF1zs+MgE//////9sF1zt4pdY9/////9sF1zs+MgE/pKSk/9sF1zv0UX4/pKSk/7Bnfj/0UX4//////8TNfj8+MgE/pKSk/9sF1zv0UX4//////9sF1zs+MgE//////8TNfj8+MgE/pKSk/7Bnfj/0UX4//////9kzfz94pdY9/////9sF1zt4pdY9/////9sF1zs+MgE//////8TNfj8+MgE//////9kzfz94pdY9/////8TNfj8+MgE//////9sF1zs+MgE//////9sF1zt4pdY9/////9sF1zs+MgE/pKSk/9sF1zv0UX4/pKSk/7Bnfj/0UX4//////8TNfj8+MgE/pKSk/9sF1zv0UX4//////9sF1zs+MgE//////8TNfj8+MgE/pKSk/7Bnfj/0UX4//////9kzfz94pdY9/////9sF1zt4pdY9/////9sF1zs+MgE//////8TNfj8+MgE//////9kzfz94pdY9/////8TNfj8+MgE//////9sF1zs+MgE//////9sF1zt4pdY9/////9sF1zs+MgE/pKSk/9sF1zv0UX4/pKSk/7Bnfj/0UX4//////8TNfj8+MgE/pKSk/9sF1zv0UX4//////9sF1zs+MgE//////8TNfj8+MgE/pKSk/7Bnfj/0UX4//////9kzfz94pdY9/////9sF1zt4pdY9/////9sF1zs+MgE//////8TNfj8+MgE//////9kzfz94pdY9/////8TNfj8+MgE//////9sF1zs+MgE//////9sF1zt4pdY9/////9sF1zs+MgE/pKSk/9sF1zv0UX4/pKSk/7Bnfj/0UX4//////8TNfj8+MgE/pKSk/9sF1zv0UX4//////9sF1zs+MgE//////8TNfj8+MgE/pKSk/7Bnfj/0UX4//////9kzfz94pdY9/////9sF1zt4pdY9/////9sF1zs+MgE//////8TNfj8+MgE//////9kzfz94pdY9/////8TNfj8+MgE//////9sF1zs+MgE//////9sF1zt4pdY9pKSk/8TNfj8+MgE/pKSk/9sF1zs+MgE/pKSk/9sF1zv0UX4/pKSk/7Bnfj/0UX4/pKSk/9sF1zv0UX4//////9sF1zs+MgE/pKSk/8TNfj8+MgE/pKSk/7Bnfj/0UX4/pKSk/9kzfz94pdY9pKSk/9sF1zt4pdY9pKSk/9sF1zs+MgE/pKSk/8TNfj8+MgE/pKSk/9kzfz94pdY9pKSk/8TNfj8+MgE//////9sF1zs+MgE//////9sF1zt4pdY9/////9sF1zs+MgE/pKSk/9sF1zv0UX4/pKSk/7Bnfj/0UX4/tra2/8TNfj8+MgE/pKSk/9sF1zv0UX4/h4eH/9sF1zs+MgE/tra2/8TNfj8+MgE/pKSk/7Bnfj/0UX4/tra2/9kzfz94pdY9tra2/9sF1zt4pdY9/////9sF1zs+MgE/tra2/8TNfj8+MgE/tra2/9kzfz94pdY9tra2/8TNfj8+MgE/h4eH/9sF1zs+MgE/h4eH/9sF1zt4pdY9/////9sF1zs+MgE/pKSk/9sF1zv0UX4/pKSk/7Bnfj/0UX4/tra2/8TNfj8+MgE/pKSk/9sF1zv0UX4//////9sF1zs+MgE/tra2/8TNfj8+MgE/pKSk/7Bnfj/0UX4/tra2/9kzfz94pdY9/////9sF1zt4pdY9/////9sF1zs+MgE/tra2/8TNfj8+MgE/tra2/9kzfz94pdY9tra2/8TNfj8+MgE//////9sF1zs+MgE/tra2/9sF1zt4pdY9"),
+"format": 34359742495,
+"index_count": 192,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQAGAAZABoAGgAbABgAHAAdAB4AHgAfABwAIAAhACIAIgAjACAAJAAlACYAJgAnACQAKAApACoAKgArACgALAAtAC4ALgAvACwAMAAxADIAMgAzADAANAA1ADYANgA3ADQAOAA5ADoAOgA7ADgAPAA9AD4APgA/ADwAQABBAEIAQgBDAEAARABFAEYARgBHAEQASABJAEoASgBLAEgATABNAE4ATgBPAEwAUABRAFIAUgBTAFAAVABVAFYAVgBXAFQAWABZAFoAWgBbAFgAXABdAF4AXgBfAFwAYABhAGIAYgBjAGAAZABlAGYAZgBnAGQAaABpAGoAagBrAGgAbABtAG4AbgBvAGwAcABxAHIAcgBzAHAAdAB1AHYAdgB3AHQAeAB5AHoAegB7AHgAfAB9AH4AfgB/AHwA"),
+"material": SubResource("StandardMaterial3D_a721t"),
+"name": "RAIL___BOILERROOM_newfixes_v1s4_BoilerRoomT_CrossBeamQuarter2SHD1",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 128,
+"vertex_data": PackedByteArray("K7RQxAJWK0ODtSXFLbRQxCNPTEOEtSXFsFA/xCZPTEOHtSXFsFA/xARWK0OFtSXFM+0txCZPTEOHtSXFMO0txANWK0OFtSXFsFA/xARWK0OFtSXFsFA/xCZPTEOHtSXFsFA/xBllE0OFtSXFK7RQxBhlE0ODtSXFK7RQxAJWK0ODtSXFsFA/xARWK0OFtSXFsFA/xBllE0OFtSXFsFA/xARWK0OFtSXFMO0txANWK0OFtSXFMO0txBllE0OFtSXFJntzxABWK0OBtSXFKHtzxCNPTEOCtSXFqxdixCNPTEOEtSXFqxdixAJWK0ODtSXFLbRQxCNPTEOEtSXFK7RQxAJWK0ODtSXFqxdixAJWK0ODtSXFqxdixCNPTEOEtSXFqxdixBhlE0ODtSXFJntzxBdlE0OBtSXFJntzxABWK0OBtSXFqxdixAJWK0ODtSXFqxdixBhlE0ODtSXFqxdixAJWK0ODtSXFK7RQxAJWK0ODtSXFK7RQxBhlE0ODtSXFECGLxP9VK0N+tSXFESGLxCFPTEN/tSXFU2+CxCNPTEOCtSXFU2+CxAJWK0OBtSXFKHtzxCNPTEOCtSXFJntzxABWK0OBtSXFU2+CxAJWK0OBtSXFU2+CxCNPTEOCtSXFU2+CxBdlE0OBtSXFECGLxBZlE0N+tSXFECGLxP9VK0N+tSXFU2+CxAJWK0OBtSXFU2+CxBdlE0OBtSXFU2+CxAJWK0OBtSXFJntzxABWK0OBtSXFJntzxBdlE0OBtSXFjoScxP5VK0N8tSXFj4ScxCFPTEN9tSXF0NKTxCFPTEN/tSXF0NKTxP9VK0N+tSXFESGLxCFPTEN/tSXFECGLxP9VK0N+tSXF0NKTxP9VK0N+tSXF0NKTxCFPTEN/tSXF0NKTxBZlE0N+tSXFjoScxBVlE0N8tSXFjoScxP5VK0N8tSXF0NKTxP9VK0N+tSXF0NKTxBZlE0N+tSXF0NKTxP9VK0N+tSXFECGLxP9VK0N+tSXFECGLxBZlE0N+tSXFDOitxP1VK0N5tSXFDeitxB5PTEN6tSXFTjalxCFPTEN9tSXFTjalxP9VK0N8tSXFj4ScxCFPTEN9tSXFjoScxP5VK0N8tSXFTjalxP9VK0N8tSXFTjalxCFPTEN9tSXFTjalxBVlE0N8tSXFDOitxBNlE0N5tSXFDOitxP1VK0N5tSXFTjalxP9VK0N8tSXFTjalxBVlE0N8tSXFTjalxP9VK0N8tSXFjoScxP5VK0N8tSXFjoScxBVlE0N8tSXFy5m2xP1VK0N5tSXFZOe9xPpVK0N4tSXFZOe9xB5PTEN4tSXFy5m2xB5PTEN6tSXFDeitxB5PTEN6tSXFDOitxP1VK0N5tSXFy5m2xP1VK0N5tSXFy5m2xB5PTEN6tSXFy5m2xBNlE0N5tSXFZOe9xBJlE0N4tSXFZOe9xPpVK0N4tSXFy5m2xP1VK0N5tSXFy5m2xBNlE0N5tSXFy5m2xP1VK0N5tSXFDOitxP1VK0N5tSXFDOitxBNlE0N5tSXFNiYLxARWK0OItSXFOCYLxCZPTEOJtSXFdYXzwyhPTEOLtSXFdYXzwwZWK0OKtSXFe77QwyhPTEOLtSXFcb7QwwZWK0OKtSXFdYXzwwZWK0OKtSXFdYXzwyhPTEOLtSXFdYXzwxxlE0OKtSXFNiYLxBtlE0OItSXFNiYLxARWK0OItSXFdYXzwwZWK0OKtSXFdYXzwxxlE0OKtSXFdYXzwwZWK0OKtSXFcb7QwwZWK0OKtSXFcb7QwxxlE0OKtSXFMO0txANWK0OFtSXFM+0txCZPTEOHtSXFtYkcxCZPTEOJtSXFtYkcxARWK0OItSXFOCYLxCZPTEOJtSXFNiYLxARWK0OItSXFtYkcxARWK0OItSXFtYkcxCZPTEOJtSXFtYkcxBtlE0OItSXFMO0txBllE0OFtSXFMO0txANWK0OFtSXFtYkcxARWK0OItSXFtYkcxBtlE0OItSXFtYkcxARWK0OItSXFNiYLxARWK0OItSXFNiYLxBtlE0OItSXF/3//f/7//z//f/9//v//P/9//3/+//8//3//f/7//z//f/9/AAD/v/9//38AAP+//3//fwAA/7//f/9/AAD/v/9//3/+//8//3//f/7//z//f/9//v//P/9//3/+//8//3//fwAA/7//f/9/AAD/v/9//38AAP+//3//fwAA/7//f/9//v//P/9//3////8//3//f/7//z//f/9//v//P/9//38AAP+//3//fwAA/7//f/9/AAD/v/9//38AAP+//3//f/7//z//f/9//v//P/9//3/+//8//3//f/7//z//f/9/AAD/v/9//38AAP+//3//fwAA/7//f/9/AAD/v/9//3/+//8//3//f/7//z//f/9//v//P/9//3/+//8//3//fwAA/7//f/9/AAD/v/9//38AAP+//3//fwAA/7//f/9//v//P/9//3/+//8//3//f/7//z//f/9//v//P/9//38AAP+//3//fwAA/7//f/9/AAD/v/9//38AAP+//3//f////z//f/9/////P/9//3/+//8//3//f/7//z//f/9/AAD/v/9//38AAP+//3//fwAA/7//f/9/AAD/v/9//3/+//8//3//f/7//z//f/9//v//P/9//3/+//8//3//fwAA/7//f/9/AAD/v/9//38AAP+//3//fwAA/7//f/9//v//P/9//3/+//8//3//f/7//z//f/9//v//P/9//38AAP+//3//fwAA/7//f/9/AAD/v/9//38AAP+//3//f/7//z//f/9//v//P/9//3/+//8//3//f/7//z//f/9/AAD/v/9//38AAP+//3//fwAA/7//f/9/AAD/v/9//3/+//8//3//f/7//z//f/9//v//P/9//3////8//3//fwAA/7//f/9/AAD/v/9//38AAP+//3//fwAA/7//f/9//v//P/9//3/+//8//3//f/7//z//f/9//v//P/9//38AAP+//3//fwAA/7//f/9/AAD/v/9//38AAP+//3//f/7//z//f/9//v//P/9//3/+//8//3//f/7//z//f/9/AAD/v/9//38AAP+//3//fwAA/7//f/9/AAD/v/9//3/+//8//3//f/7//z//f/9//v//P/9//3/+//8//3//fwAA/7//f/9/AAD/v/9//38AAP+//3//fwAA/7//f/9/////P/9//3////8//3//f/7//z//f/9//v//P/9//38AAP+//3//fwAA/7//f/9/AAD/v/9//38AAP+//3//f/7//z//f/9//v//P/9//3/+//8//3//f/7//z//f/9/AAD/v/9//38AAP+//3//fwAA/7//f/9/AAD/vw==")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_fiamg")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_67ax8"]
+resource_name = "RAIL___BOILERROOM_newfixes_v1s4_BoilerRoomT_CrossBeamQuarter2SHD1"
+transparency = 1
+cull_mode = 2
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.905882, 0.905882, 0.905882, 1)
+albedo_texture = ExtResource("2_lp7w4")
+emission_enabled = true
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6w5ec"]
 size = Vector3(9.44312, 4.83142, 10.2761)
 
 [node name="FactoryBoilerRoom" unique_id=469055524 instance=ExtResource("1_bug0g")]
 
-[node name="ceiling23" parent="Model/ZONE08/boiler_room/room9/geometry_boiler_room/ceiling8" index="1"]
+[node name="ceiling23" parent="Model/ZONE08/boiler_room/room9/geometry_boiler_room/ceiling8" parent_id_path=PackedInt32Array(319856056) index="1" unique_id=482697057]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1662.96, -46.451557, 1811.61)
 surface_material_override/0 = null
 
-[node name="GeometryTransformHelper624" parent="Model/ZONE08/boiler_room/props4/Rail/RailFace" index="0"]
+[node name="GeometryTransformHelper624" parent="Model/ZONE08/boiler_room/props4/Rail/RailFace" parent_id_path=PackedInt32Array(961502665) index="0" unique_id=1802857101]
+visible = false
 surface_material_override/0 = null
+
+[node name="GeometryTransformHelper625" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Rail/RailFace" parent_id_path=PackedInt32Array(961502665) index="1" unique_id=971865223]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 968.359, -175.852, 2651.34)
+mesh = SubResource("ArrayMesh_pugag")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_67ax8")
 
 [node name="BattleNodeDynamic" parent="." index="4" unique_id=650607575 node_paths=PackedStringArray("cogs") instance=ExtResource("4_34ko4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.0572, 4.5952, -94.9644)
@@ -28,11 +84,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2713623, 2.46356, -0.939575
 shape = SubResource("BoxShape3D_6w5ec")
 
 [node name="treasure_chest" parent="." index="7" unique_id=1985454100 instance=ExtResource("3_carpg")]
-transform = Transform3D(-4.371138e-08, 0, -0.9999998, 0, 1, 0, 0.9999998, 0, -4.371138e-08, -51.6056, 1.5300889, -80.51184)
+transform = Transform3D(-4.371138e-08, 0, 0.9999998, 0, 1, 0, -0.9999998, 0, -4.371138e-08, -54.40546, 1.5300889, -71.88435)
 
 [node name="treasure_chest2" parent="." index="8" unique_id=593035078 instance=ExtResource("3_carpg")]
 transform = Transform3D(-4.371138e-08, 0, -0.9999998, 0, 1, 0, 0.9999998, 0, -4.371138e-08, -24.995132, 4.605653, -89.33343)
 
-[node name="DebugPlayerPositionMarker" type="Marker3D" parent="." index="9" unique_id=674704832 instance=ExtResource("4_lp7w4")]
+[node name="DebugPlayerPositionMarker" parent="." index="9" unique_id=674704832 instance=ExtResource("4_lp7w4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.67013, 1.8538233, -73.551605)
-script = ExtResource("5_pugag")

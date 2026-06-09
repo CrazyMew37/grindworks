@@ -1,20 +1,41 @@
 [gd_scene format=3 uid="uid://c81lrwygbqosa"]
 
 [ext_resource type="PackedScene" uid="uid://bs24a1pbm1pba" path="res://objects/modules/factory/base_rooms/factory_paint_l_room.tscn" id="1_qhxj5"]
+[ext_resource type="PackedScene" uid="uid://celxj5u1aay0l" path="res://objects/props/etc/wood_crate.tscn" id="7_jjpve"]
+[ext_resource type="PackedScene" uid="uid://dxyq5lb5oineo" path="res://objects/interactables/treasure_chest/treasure_chest.tscn" id="8_4a4d5"]
+[ext_resource type="PackedScene" uid="uid://kw24drhs7u34" path="res://objects/obstacles/stomper/old_stomper.tscn" id="9_ylc84"]
+[ext_resource type="PackedScene" uid="uid://bj5amoerd44or" path="res://models/props/facility_objects/stomper/stomper.fbx" id="10_cmjlv"]
 [ext_resource type="PackedScene" uid="uid://p33fqws4qewy" path="res://objects/obstacles/conveyer_belt/conveyer_belt.tscn" id="17_udttr"]
 [ext_resource type="Texture2D" uid="uid://bj0ye0oxq1fea" path="res://models/props/facility_objects/conveyor_platform/platform_CVBelt1.png" id="18_lythf"]
 [ext_resource type="PackedScene" uid="uid://06fotrmiu7r5" path="res://objects/obstacles/pusher/pusher.tscn" id="19_lythf"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ngj0b"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4a4d5"]
 resource_name = "ConveyerBeltV3SHD"
 cull_mode = 2
 albedo_texture = ExtResource("18_lythf")
 roughness = 0.552786
 uv1_scale = Vector3(1, 5, 1)
 
-[node name="factory_paint_l_room" instance=ExtResource("1_qhxj5")]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1u7he"]
+resource_name = "ConveyerBeltV3SHD"
+cull_mode = 2
+albedo_texture = ExtResource("18_lythf")
+roughness = 0.552786
+uv1_scale = Vector3(1, 5, 1)
 
-[node name="Bridge" parent="." index="0"]
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_56gdk"]
+height = 6.37183
+radius = 1.28955
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_feaf0"]
+data = PackedVector3Array(9.2647, -9.2647, 0.0191, -9.2647, -9.2647, 0.0191, -9.2647, -9.2647, 9.2792, -9.2647, -9.2647, 9.2792, 9.2647, -9.2647, 9.2792, 9.2647, -9.2647, 0.0191, 9.2647, 9.2647, 9.2792, -9.2647, 9.2647, 9.2792, -9.2647, 9.2647, 0.0191, -9.2647, 9.2647, 0.0191, 9.2647, 9.2647, 0.0191, 9.2647, 9.2647, 9.2792, 6.2624, -6.2624, 11.8353, -6.2624, -6.2624, 11.8353, -6.2624, 6.2624, 11.8353, -6.2624, 6.2624, 11.8353, 6.2624, 6.2624, 11.8353, 6.2624, -6.2624, 11.8353, -7.4652, -7.4652, 10.3864, -9.2647, -9.2647, 9.2792, -9.2647, 9.2647, 9.2792, -9.2647, 9.2647, 9.2792, -7.4652, 7.4652, 10.3864, -7.4652, -7.4652, 10.3864, -9.2647, -9.2647, 9.2792, -7.4652, -7.4652, 10.3864, 7.4652, -7.4652, 10.3864, 7.4652, -7.4652, 10.3864, 9.2647, -9.2647, 9.2792, -9.2647, -9.2647, 9.2792, 7.4652, -7.4652, 10.3864, 7.4652, 7.4652, 10.3864, 9.2647, 9.2647, 9.2792, 9.2647, 9.2647, 9.2792, 9.2647, -9.2647, 9.2792, 7.4652, -7.4652, 10.3864, -7.4652, 7.4652, 10.3864, -9.2647, 9.2647, 9.2792, 9.2647, 9.2647, 9.2792, 9.2647, 9.2647, 9.2792, 7.4652, 7.4652, 10.3864, -7.4652, 7.4652, 10.3864, -6.2624, -6.2624, 11.8353, -7.4652, -7.4652, 10.3864, -7.4652, 7.4652, 10.3864, -7.4652, 7.4652, 10.3864, -6.2624, 6.2624, 11.8353, -6.2624, -6.2624, 11.8353, 6.2624, -6.2624, 11.8353, 7.4652, -7.4652, 10.3864, -7.4652, -7.4652, 10.3864, -7.4652, -7.4652, 10.3864, -6.2624, -6.2624, 11.8353, 6.2624, -6.2624, 11.8353, 6.2624, -6.2624, 11.8353, 6.2624, 6.2624, 11.8353, 7.4652, 7.4652, 10.3864, 7.4652, 7.4652, 10.3864, 7.4652, -7.4652, 10.3864, 6.2624, -6.2624, 11.8353, -6.2624, 6.2624, 11.8353, -7.4652, 7.4652, 10.3864, 7.4652, 7.4652, 10.3864, 7.4652, 7.4652, 10.3864, 6.2624, 6.2624, 11.8353, -6.2624, 6.2624, 11.8353, 9.2647, 9.2647, 0.0191, -9.2647, 9.2647, 0.0191, -9.2647, -9.2647, 0.0191, -9.2647, -9.2647, 0.0191, 9.2647, -9.2647, 0.0191, 9.2647, 9.2647, 0.0191, 9.2647, 9.2647, 0.0191, 9.2647, -9.2647, 0.0191, 9.2647, -9.2647, 9.2792, 9.2647, -9.2647, 9.2792, 9.2647, 9.2647, 9.2792, 9.2647, 9.2647, 0.0191, -9.2647, -9.2647, 9.2792, -9.2647, -9.2647, 0.0191, -9.2647, 9.2647, 0.0191, -9.2647, 9.2647, 0.0191, -9.2647, 9.2647, 9.2792, -9.2647, -9.2647, 9.2792)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mtept"]
+size = Vector3(0.609924, 0.0248394, 0.610602)
+
+[node name="factory_paint_l_room" unique_id=45788793 instance=ExtResource("1_qhxj5")]
+
+[node name="Bridge" parent="." index="0" unique_id=1363890320]
 visible = false
 
 [node name="CollisionShape3D" parent="Bridge/StaticBody3D" index="0"]
@@ -24,46 +45,201 @@ disabled = true
 [node name="NavigationRegion3D" parent="." index="16"]
 visible = false
 
-[node name="ConveyerBelt3" parent="." index="23" instance=ExtResource("17_udttr")]
+[node name="ConveyerBelt3" parent="." index="23" unique_id=788170957 instance=ExtResource("17_udttr")]
 transform = Transform3D(-4.44112e-08, 0.00315905, 0.999995, -7.79017e-09, 0.999995, -0.00315902, -1, -7.93043e-09, -4.43863e-08, 4.71243, 10.1597, 1.60665)
-constant_linear_velocity = Vector3(5, 0, -2.18557e-07)
+constant_linear_velocity = Vector3(5, 0, -2.1855695e-07)
 size = Vector3(1.3, 1, 5)
-platform_mat = SubResource("StandardMaterial3D_ngj0b")
+platform_mat = SubResource("StandardMaterial3D_4a4d5")
 speed = 5.0
 
-[node name="pusher" parent="." index="24" instance=ExtResource("19_lythf")]
+[node name="pusher" parent="." index="24" unique_id=1394001712 instance=ExtResource("19_lythf")]
 transform = Transform3D(5.55, 0, 0, 0, 5.55, 0, 0, 0, 5.55, 10.4529, 12.0645, -0.793843)
-push_speed = 3.0
+push_speed = 0.5
 push_distance = 4.505
-push_delay = 0.3
 graceful_push = false
-stop_duration = 0.3
+stop_duration = 0.0
 
-[node name="shaft" parent="pusher/square__stomper/head" index="2"]
+[node name="shaft" parent="pusher/square__stomper/head" parent_id_path=PackedInt32Array(1394001712, 1578475206) index="2" unique_id=417486818]
 transform = Transform3D(1.33, 0, 0, 0, 0.85, 0, 0, 0, 6.2, 0, 2.16573e-15, 9.23369)
 
-[node name="pusher3" parent="." index="25" instance=ExtResource("19_lythf")]
+[node name="pusher3" parent="." index="25" unique_id=775383271 instance=ExtResource("19_lythf")]
 transform = Transform3D(5.55, 0, 0, 0, 5.55, 0, 0, 0, 5.55, 2.98383, 12.0645, -0.793843)
-push_speed = 3.0
+push_speed = 1.5
 push_distance = 4.505
-push_delay = 0.3
 graceful_push = false
-stop_duration = 0.3
+stop_duration = 0.0
 
-[node name="shaft" parent="pusher3/square__stomper/head" index="2"]
+[node name="shaft" parent="pusher3/square__stomper/head" parent_id_path=PackedInt32Array(775383271, 1578475206) index="2" unique_id=417486818]
 transform = Transform3D(1.33, 0, 0, 0, 0.85, 0, 0, 0, 6.2, 0, 2.16573e-15, 9.23369)
 
-[node name="pusher2" parent="." index="26" instance=ExtResource("19_lythf")]
-transform = Transform3D(-5.55, 0, -4.85196e-07, 0, 5.55, 0, 4.85196e-07, 0, -5.55, 6.6915, 12.0645, -0.0392277)
-push_speed = 3.0
+[node name="pusher2" parent="." index="26" unique_id=2069913366 instance=ExtResource("19_lythf")]
+transform = Transform3D(-6.5, 0, -9.814727e-07, 0, 6.5, 0, 9.814727e-07, 0, -6.5, 6.6915, 12.0645, -0.0392277)
 push_distance = 4.505
-push_delay = 0.3
 graceful_push = false
-stop_duration = 0.3
+stop_duration = 0.0
 
-[node name="shaft" parent="pusher2/square__stomper/head" index="2"]
+[node name="shaft" parent="pusher2/square__stomper/head" parent_id_path=PackedInt32Array(2069913366, 1578475206) index="2" unique_id=417486818]
 transform = Transform3D(1.33, 0, 0, 0, 0.85, 0, 0, 0, 6.2, 0, 2.16573e-15, 9.23369)
+
+[node name="wood_crate" parent="." index="27" unique_id=805767021 instance=ExtResource("7_jjpve")]
+transform = Transform3D(2.4996915, 0, -0.039268225, 0, 2.5, 0, 0.039268225, 0, 2.4996915, -7.6920047, 1.1602651, 1.4360037)
+
+[node name="wood_crate2" parent="." index="28" unique_id=2082812738 instance=ExtResource("7_jjpve")]
+transform = Transform3D(1.64426, 0, -1.883191, 0, 2.5000002, 0, 1.883191, 0, 1.64426, -7.6920047, 5.283141, 1.4360037)
+
+[node name="ConveyerBelt4" parent="." index="29" unique_id=533390572 instance=ExtResource("17_udttr")]
+transform = Transform3D(1, 0, 0, 0, 0.99999386, -0.0034906513, 0, 0.0034906513, 0.99999386, -7.753804, 9.955439, -9.5212965)
+constant_linear_velocity = Vector3(0, 0, 5)
+size = Vector3(1.3, 1, 5)
+platform_mat = SubResource("StandardMaterial3D_1u7he")
+speed = 5.0
+
+[node name="treasure_chest" parent="." index="30" unique_id=766145971 instance=ExtResource("8_4a4d5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.297334, 10.13989, -23.622408)
+
+[node name="treasure_chest2" parent="." index="31" unique_id=605438998 instance=ExtResource("8_4a4d5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.188594, 10.13989, -23.622408)
+
+[node name="Stomper" parent="." index="32" unique_id=1546921637 node_paths=PackedStringArray("model", "collisions", "player_detection") instance=ExtResource("9_ylc84")]
+transform = Transform3D(6.5, 0, 0, 0, 6.5, 0, 0, 0, 6.5, -7.730303, 10.069593, -4.6924677)
+model = NodePath("stomper")
+collisions = [NodePath("stomper/ShaftCollision/CollisionShape3D"), NodePath("stomper/HeadCollision/CollisionShape3D")]
+player_detection = NodePath("stomper/PlayerDetection")
+raise_position = 1.5
+raise_time = 3.0
+
+[node name="stomper" parent="Stomper" index="0" unique_id=1029549476 instance=ExtResource("10_cmjlv")]
+
+[node name="square__stomper" parent="Stomper/stomper" index="0" unique_id=21717009]
+transform = Transform3D(0.0328084, 0, 0, 0, -1.4341e-09, 0.0328084, 0, -0.0328084, -1.4341e-09, 0, 0, 0)
+
+[node name="shaft" parent="Stomper/stomper/square__stomper/head" parent_id_path=PackedInt32Array(1029549476, 1578475206) index="2" unique_id=417486818]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 4.85, 0, 2.16573e-15, 9.23369)
+
+[node name="shaft_collisions" parent="Stomper/stomper/square__stomper/head/shaft" index="2" unique_id=1055613967]
+visible = false
+
+[node name="head_collisions" parent="Stomper/stomper/square__stomper/head" parent_id_path=PackedInt32Array(1029549476, 1578475206) index="3" unique_id=270612879]
+visible = false
+
+[node name="ShaftCollision" type="StaticBody3D" parent="Stomper/stomper" index="1" unique_id=448730600]
+transform = Transform3D(0.137931, 0, 0, 0, 0.137931, 0, 0, 0, 0.137931, 0, 0.718944, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stomper/stomper/ShaftCollision" index="0" unique_id=1849121386]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.722046, 0)
+shape = SubResource("CylinderShape3D_56gdk")
+
+[node name="HeadCollision" type="StaticBody3D" parent="Stomper/stomper" index="2" unique_id=299093910]
+transform = Transform3D(0.0328084, 0, 0, 0, -1.4341e-09, 0.0328084, 0, -0.0328084, -1.4341e-09, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stomper/stomper/HeadCollision" index="0" unique_id=1015449396]
+shape = SubResource("ConcavePolygonShape3D_feaf0")
+
+[node name="PlayerDetection" type="Area3D" parent="Stomper/stomper" index="3" unique_id=112368542]
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stomper/stomper/PlayerDetection" index="0" unique_id=795538290]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00112915, -0.00110185, 0.000608981)
+shape = SubResource("BoxShape3D_mtept")
+
+[node name="Stomper2" parent="." index="33" unique_id=1067572770 node_paths=PackedStringArray("model", "collisions", "player_detection") instance=ExtResource("9_ylc84")]
+transform = Transform3D(6.5, 0, 0, 0, 6.5, 0, 0, 0, 6.5, -7.730303, 10.069593, -9.621366)
+model = NodePath("stomper")
+collisions = [NodePath("stomper/ShaftCollision/CollisionShape3D"), NodePath("stomper/HeadCollision/CollisionShape3D")]
+player_detection = NodePath("stomper/PlayerDetection")
+raise_position = 1.5
+raise_time = 3.0
+raise_time_offset = 1.0
+
+[node name="stomper" parent="Stomper2" index="0" unique_id=1221975610 instance=ExtResource("10_cmjlv")]
+
+[node name="square__stomper" parent="Stomper2/stomper" index="0" unique_id=21717009]
+transform = Transform3D(0.0328084, 0, 0, 0, -1.4341e-09, 0.0328084, 0, -0.0328084, -1.4341e-09, 0, 0, 0)
+
+[node name="shaft" parent="Stomper2/stomper/square__stomper/head" parent_id_path=PackedInt32Array(1221975610, 1578475206) index="2" unique_id=417486818]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 4.85, 0, 2.16573e-15, 9.23369)
+
+[node name="shaft_collisions" parent="Stomper2/stomper/square__stomper/head/shaft" index="2" unique_id=1055613967]
+visible = false
+
+[node name="head_collisions" parent="Stomper2/stomper/square__stomper/head" parent_id_path=PackedInt32Array(1221975610, 1578475206) index="3" unique_id=270612879]
+visible = false
+
+[node name="ShaftCollision" type="StaticBody3D" parent="Stomper2/stomper" index="1" unique_id=945402294]
+transform = Transform3D(0.137931, 0, 0, 0, 0.137931, 0, 0, 0, 0.137931, 0, 0.718944, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stomper2/stomper/ShaftCollision" index="0" unique_id=687337693]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.722046, 0)
+shape = SubResource("CylinderShape3D_56gdk")
+
+[node name="HeadCollision" type="StaticBody3D" parent="Stomper2/stomper" index="2" unique_id=1485500784]
+transform = Transform3D(0.0328084, 0, 0, 0, -1.4341e-09, 0.0328084, 0, -0.0328084, -1.4341e-09, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stomper2/stomper/HeadCollision" index="0" unique_id=24303957]
+shape = SubResource("ConcavePolygonShape3D_feaf0")
+
+[node name="PlayerDetection" type="Area3D" parent="Stomper2/stomper" index="3" unique_id=873426589]
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stomper2/stomper/PlayerDetection" index="0" unique_id=247996920]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00112915, -0.00110185, 0.000608981)
+shape = SubResource("BoxShape3D_mtept")
+
+[node name="Stomper3" parent="." index="34" unique_id=1269325539 node_paths=PackedStringArray("model", "collisions", "player_detection") instance=ExtResource("9_ylc84")]
+transform = Transform3D(6.5, 0, 0, 0, 6.5, 0, 0, 0, 6.5, -7.730303, 10.069593, -14.751481)
+model = NodePath("stomper")
+collisions = [NodePath("stomper/ShaftCollision/CollisionShape3D"), NodePath("stomper/HeadCollision/CollisionShape3D")]
+player_detection = NodePath("stomper/PlayerDetection")
+raise_position = 1.5
+raise_time = 3.0
+raise_time_offset = 2.0
+
+[node name="stomper" parent="Stomper3" index="0" unique_id=153649217 instance=ExtResource("10_cmjlv")]
+
+[node name="square__stomper" parent="Stomper3/stomper" index="0" unique_id=21717009]
+transform = Transform3D(0.0328084, 0, 0, 0, -1.4341e-09, 0.0328084, 0, -0.0328084, -1.4341e-09, 0, 0, 0)
+
+[node name="shaft" parent="Stomper3/stomper/square__stomper/head" parent_id_path=PackedInt32Array(153649217, 1578475206) index="2" unique_id=417486818]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 4.85, 0, 2.16573e-15, 9.23369)
+
+[node name="shaft_collisions" parent="Stomper3/stomper/square__stomper/head/shaft" index="2" unique_id=1055613967]
+visible = false
+
+[node name="head_collisions" parent="Stomper3/stomper/square__stomper/head" parent_id_path=PackedInt32Array(153649217, 1578475206) index="3" unique_id=270612879]
+visible = false
+
+[node name="ShaftCollision" type="StaticBody3D" parent="Stomper3/stomper" index="1" unique_id=2033232085]
+transform = Transform3D(0.137931, 0, 0, 0, 0.137931, 0, 0, 0, 0.137931, 0, 0.718944, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stomper3/stomper/ShaftCollision" index="0" unique_id=426669745]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.722046, 0)
+shape = SubResource("CylinderShape3D_56gdk")
+
+[node name="HeadCollision" type="StaticBody3D" parent="Stomper3/stomper" index="2" unique_id=292766011]
+transform = Transform3D(0.0328084, 0, 0, 0, -1.4341e-09, 0.0328084, 0, -0.0328084, -1.4341e-09, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stomper3/stomper/HeadCollision" index="0" unique_id=1147391004]
+shape = SubResource("ConcavePolygonShape3D_feaf0")
+
+[node name="PlayerDetection" type="Area3D" parent="Stomper3/stomper" index="3" unique_id=1687676664]
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stomper3/stomper/PlayerDetection" index="0" unique_id=1654298833]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00112915, -0.00110185, 0.000608981)
+shape = SubResource("BoxShape3D_mtept")
+
+[node name="wood_crate3" parent="." index="35" unique_id=727791691 instance=ExtResource("7_jjpve")]
+transform = Transform3D(2.4996915, 0, -0.039268225, 0, 2.5, 0, 0.039268225, 0, 2.4996915, 27.221832, 10.087565, 8.938503)
+
+[node name="wood_crate4" parent="." index="36" unique_id=830283552 instance=ExtResource("7_jjpve")]
+transform = Transform3D(1.499815, 0, -0.023560934, 0, 1.5, 0, 0.023560934, 0, 1.499815, 23.493738, 10.087565, 9.768819)
+
+[node name="wood_crate5" parent="." index="37" unique_id=1740621358 instance=ExtResource("7_jjpve")]
+transform = Transform3D(1.9997532, 0, -0.031414576, 0, 2, 0, 0.031414576, 0, 1.9997532, 16.04492, 10.098628, -6.129418)
 
 [editable path="pusher"]
 [editable path="pusher3"]
 [editable path="pusher2"]
+[editable path="Stomper/stomper"]
+[editable path="Stomper2/stomper"]
+[editable path="Stomper3/stomper"]

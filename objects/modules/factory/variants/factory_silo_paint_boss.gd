@@ -2,8 +2,9 @@ extends Node3D
 
 var RISE_SPEED : float:
 	get:
-		if not Util.on_easy_floor(): return 18.0
-		return 15.0
+		if Util.on_easy_floor(): return 15.0
+		if Util.on_hard_floor(): return 21.0
+		return 18.0
 const PAINT_SCROLL_SPEED := -3.0
 const PAINT_START_POS := 0.0
 const PAINT_FINAL_POS := 1800.0

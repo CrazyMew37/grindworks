@@ -1392,8 +1392,10 @@ func on_round_begin(_round_actions : Array[BattleAction]):
 		var reinforcements_movie : CogAttack = GameLoader.load(REINFORCEMENTS_MOVIE).duplicate(true)
 		reinforcements_movie.user = battle.focus_cog
 		reinforcements_movie.targets = [self]
-		if not Util.on_easy_floor():
+		if not Util.on_easy_floor() and not Util.on_hard_floor():
 			reinforcements_movie.cog_amount = min(2, 4 - battle.cogs.size())
+		if Util.on_hard_floor():
+			reinforcements_movie.cog_amount = min(3, 5 - battle.cogs.size())
 		reinforcement_count += reinforcements_movie.cog_amount
 		reinforcements_movie.spawn_proxies = reinforcement_count >= Globals.REINFORCEMENT_ABUSE_QUOTA
 		BattleService.ongoing_battle.round_end_actions.append(reinforcements_movie)

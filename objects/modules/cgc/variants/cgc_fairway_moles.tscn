@@ -1,0 +1,102 @@
+[gd_scene format=3 uid="uid://diuywpdxujijf"]
+
+[ext_resource type="PackedScene" uid="uid://ch3xs1d1lu117" path="res://objects/modules/cgc/base_rooms/golfcourse_fairway.tscn" id="1_7dg1w"]
+[ext_resource type="PackedScene" uid="uid://5m1a0suouie8" path="res://objects/props/cgc/fence_with_end.tscn" id="5_i2vuw"]
+[ext_resource type="Script" uid="uid://dyt7mhhg2lwrv" path="res://objects/interactables/mole_stomp/mole_stomp.gd" id="6_hp0mr"]
+[ext_resource type="PackedScene" uid="uid://dxyq5lb5oineo" path="res://objects/interactables/treasure_chest/treasure_chest.tscn" id="7_pnun8"]
+[ext_resource type="PackedScene" uid="uid://pn7r3ut085aw" path="res://objects/props/cgc/hedge_pillar.tscn" id="8_rij83"]
+[ext_resource type="Script" uid="uid://h0b48xrci8d6" path="res://objects/modules/cgc/variants/cgc_fence_gate.gd" id="9_ub3m5"]
+[ext_resource type="PackedScene" uid="uid://bwu5l3d7uncro" path="res://objects/props/cgc/hedge_pillar_spiked.tscn" id="10_3sq6a"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_aw53h"]
+size = Vector3(43.674088, 9.69043, 49.06006)
+
+[node name="golfcourse_fairway" unique_id=1327787080 instance=ExtResource("1_7dg1w")]
+
+[node name="Fences" type="Node3D" parent="." index="29" unique_id=1174299781]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 13.406523, 0, 0)
+
+[node name="fence3" parent="Fences" index="0" unique_id=623576371 instance=ExtResource("5_i2vuw")]
+transform = Transform3D(1, 0, 1.7484561e-07, 0, 1, 0, -1.7484561e-07, 0, 1, 10.662689, 0, -18.808388)
+
+[node name="fence4" parent="Fences" index="1" unique_id=1696736106 instance=ExtResource("5_i2vuw")]
+transform = Transform3D(1, 0, 1.7484561e-07, 0, 1, 0, -1.7484561e-07, 0, 1, 10.662682, 0, -26.80843)
+
+[node name="fence5" parent="Fences" index="2" unique_id=398911218 instance=ExtResource("5_i2vuw")]
+transform = Transform3D(1, 0, 1.7484561e-07, 0, 1, 0, -1.7484561e-07, 0, 1, 10.662689, 0, -34.808426)
+
+[node name="fence6" parent="Fences" index="3" unique_id=678547918 instance=ExtResource("5_i2vuw")]
+transform = Transform3D(1, 0, 1.7484561e-07, 0, 1, 0, -1.7484561e-07, 0, 1, 10.662689, 0, -42.808426)
+
+[node name="fence7" parent="Fences" index="4" unique_id=1712004996 instance=ExtResource("5_i2vuw")]
+transform = Transform3D(-1, 0, -8.742283e-08, 0, 1, 0, 8.742283e-08, 0, -1, 10.662689, 0, 18.40007)
+
+[node name="fence8" parent="Fences" index="5" unique_id=1059453776 instance=ExtResource("5_i2vuw")]
+transform = Transform3D(-1, 0, -8.742283e-08, 0, 1, 0, 8.742283e-08, 0, -1, 10.662689, 0, 26.40007)
+
+[node name="fence9" parent="Fences" index="6" unique_id=1418959442 instance=ExtResource("5_i2vuw")]
+transform = Transform3D(-1, 0, -8.742283e-08, 0, 1, 0, 8.742283e-08, 0, -1, 10.662689, 0, 34.40007)
+
+[node name="fence10" parent="Fences" index="7" unique_id=813150380 instance=ExtResource("5_i2vuw")]
+transform = Transform3D(-1, 0, -8.742283e-08, 0, 1, 0, 8.742283e-08, 0, -1, 10.662689, 0, 42.40007)
+
+[node name="HedgePillar" parent="." index="30" unique_id=1811168531 instance=ExtResource("8_rij83")]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 30.1301, 0, 21.3)
+
+[node name="HedgePillar2" parent="." index="31" unique_id=1278201862 instance=ExtResource("8_rij83")]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 29.5852, 0, -25.5823)
+
+[node name="FenceGate" type="Node3D" parent="." index="32" unique_id=1206301241 node_paths=PackedStringArray("left_pivot", "right_pivot", "fence_cam")]
+transform = Transform3D(0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, 0.258819, 18.727283, 0, -0.078793)
+script = ExtResource("9_ub3m5")
+left_pivot = NodePath("leftpivot")
+right_pivot = NodePath("rightpivot")
+fence_cam = NodePath("FenceCam")
+
+[node name="rightpivot" type="Node3D" parent="FenceGate" index="0" unique_id=1382580597]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.69078, 0, 1.64899)
+
+[node name="fence" parent="FenceGate/rightpivot" index="0" unique_id=813255333 instance=ExtResource("5_i2vuw")]
+transform = Transform3D(0.188196, 0, 0.603016, 0, 0.65, 0, -0.622159, 0, 0.182406, -2.14315, 0, -0.63177)
+
+[node name="leftpivot" type="Node3D" parent="FenceGate" index="1" unique_id=256832809]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.01855, 0, -1.28507)
+
+[node name="fence2" parent="FenceGate/leftpivot" index="0" unique_id=1722170223 instance=ExtResource("5_i2vuw")]
+transform = Transform3D(-0.188196, 0, -0.603016, 0, 0.65, 0, 0.622159, 0, -0.182406, 2.2051, 0, 0.674932)
+
+[node name="FenceCam" type="Camera3D" parent="FenceGate" index="2" unique_id=1407345963]
+transform = Transform3D(0.574877, 0, -0.81824, 0, 1, 0, 0.81824, 0, 0.574877, -7.61444, 2.66901, 4.38047)
+fov = 50.0
+
+[node name="PillarSpiked" parent="FenceGate" index="3" unique_id=1672200380 instance=ExtResource("10_3sq6a")]
+transform = Transform3D(0.957168, 0, -0.289533, 0, 1, 0, 0.289533, 0, 0.957168, 5.8539, 0, 2.02803)
+
+[node name="PillarSpiked2" parent="FenceGate" index="4" unique_id=1175171845 instance=ExtResource("10_3sq6a")]
+transform = Transform3D(0.957168, 0, -0.289533, 0, 1, 0, 0.289533, 0, 0.957168, -6.11954, 0, -1.5938)
+
+[node name="PillarSpiked3" parent="FenceGate" index="5" unique_id=905495686 instance=ExtResource("10_3sq6a")]
+transform = Transform3D(0.957168, 0, -0.289533, 0, 1, 0, 0.289533, 0, 0.957168, -23.0185, 0, -6.12187)
+
+[node name="PillarSpiked4" parent="FenceGate" index="6" unique_id=1129253896 instance=ExtResource("10_3sq6a")]
+transform = Transform3D(0.957168, 0, -0.289533, 0, 1, 0, 0.289533, 0, 0.957168, 22.3447, 0, 6.03318)
+
+[node name="MoleStompGame" type="Area3D" parent="." index="34" unique_id=1736872177]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 14, 0, -21.25)
+script = ExtResource("6_hp0mr")
+difficulty = 20.0
+grid_size = Vector2i(25, 25)
+quota = 100
+hole_separation = 1.75
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MoleStompGame" index="0" unique_id=1371274614]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.437407, 4.34521, 24.0353)
+shape = SubResource("BoxShape3D_aw53h")
+
+[node name="treasure_chest" parent="." index="35" unique_id=270471735 instance=ExtResource("7_pnun8")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 28, 0, -6)
+
+[node name="treasure_chest2" parent="." index="36" unique_id=2110963597 instance=ExtResource("7_pnun8")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 28, 0, 5.5)
+
+[connection signal="s_normal_finished" from="MoleStompGame" to="FenceGate" method="open"]

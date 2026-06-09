@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://cyai35bfek33x" path="res://objects/modules/office/base_rooms/office_puzzle_room1.tscn" id="1_kmlvh"]
 [ext_resource type="PackedScene" uid="uid://b8786m8c0wm1o" path="res://objects/obstacles/spotlight/spotlight.tscn" id="3_s57y1"]
 [ext_resource type="PackedScene" uid="uid://dxyq5lb5oineo" path="res://objects/interactables/treasure_chest/treasure_chest.tscn" id="4_6nsaf"]
+[ext_resource type="Resource" uid="uid://kcxno616hkgc" path="res://objects/items/pools/special_items.tres" id="4_coowc"]
 [ext_resource type="PackedScene" uid="uid://b4kk4sdrhkn2g" path="res://objects/props/office/cardboard_box.tscn" id="6_c5nsa"]
 
 [sub_resource type="Curve3D" id="Curve3D_albjn"]
@@ -89,136 +90,146 @@ _data = {
 }
 point_count = 7
 
-[node name="OfficePuzzleRoom1" instance=ExtResource("1_kmlvh")]
+[node name="OfficePuzzleRoom1" unique_id=516280872 instance=ExtResource("1_kmlvh")]
 
-[node name="Spotlights" type="Node3D" parent="." index="6"]
+[node name="Spotlights" type="Node3D" parent="." index="6" unique_id=1363775743]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 9.84085)
 
-[node name="Spotlight" parent="Spotlights" index="0" node_paths=PackedStringArray("light_path") instance=ExtResource("3_s57y1")]
+[node name="Spotlight" parent="Spotlights" index="0" unique_id=192230298 node_paths=PackedStringArray("light_path") instance=ExtResource("3_s57y1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 8.605, -10)
 light_path = NodePath("Path3D")
 light_spd = 0.15
 wait_range = Vector2(0, 8)
 
-[node name="Path3D" type="Path3D" parent="Spotlights/Spotlight" index="6"]
+[node name="Path3D" type="Path3D" parent="Spotlights/Spotlight" index="6" unique_id=2087323429]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0234184, 0.066164, 0.0219003)
 curve = SubResource("Curve3D_albjn")
 
-[node name="Spotlight2" parent="Spotlights" index="1" node_paths=PackedStringArray("light_path") instance=ExtResource("3_s57y1")]
+[node name="Spotlight2" parent="Spotlights" index="1" unique_id=1826093131 node_paths=PackedStringArray("light_path") instance=ExtResource("3_s57y1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 8.66, -5)
 light_path = NodePath("Path3D")
 light_spd = 0.15
 wait_range = Vector2(0, 8)
 
-[node name="Path3D" type="Path3D" parent="Spotlights/Spotlight2" index="6"]
+[node name="Path3D" type="Path3D" parent="Spotlights/Spotlight2" index="6" unique_id=1718383034]
 curve = SubResource("Curve3D_lv65w")
 
-[node name="Spotlight3" parent="Spotlights" index="2" node_paths=PackedStringArray("light_path") instance=ExtResource("3_s57y1")]
+[node name="Spotlight3" parent="Spotlights" index="2" unique_id=952124489 node_paths=PackedStringArray("light_path") instance=ExtResource("3_s57y1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 8.66, -15)
 light_path = NodePath("Path3D")
 light_spd = 0.15
 wait_range = Vector2(0, 8)
 
-[node name="Path3D" type="Path3D" parent="Spotlights/Spotlight3" index="6"]
+[node name="Path3D" type="Path3D" parent="Spotlights/Spotlight3" index="6" unique_id=1537365420]
 curve = SubResource("Curve3D_6nsaf")
 
-[node name="Spotlight4" parent="Spotlights" index="3" node_paths=PackedStringArray("light_path") instance=ExtResource("3_s57y1")]
+[node name="Spotlight4" parent="Spotlights" index="3" unique_id=77892170 node_paths=PackedStringArray("light_path") instance=ExtResource("3_s57y1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 8.66, -30)
 light_path = NodePath("Path3D")
 light_spd = 0.15
 wait_range = Vector2(0, 8)
 
-[node name="Path3D" type="Path3D" parent="Spotlights/Spotlight4" index="6"]
+[node name="Path3D" type="Path3D" parent="Spotlights/Spotlight4" index="6" unique_id=1896378452]
 curve = SubResource("Curve3D_hf1ub")
 
-[node name="Spotlight5" parent="Spotlights" index="4" node_paths=PackedStringArray("light_path") instance=ExtResource("3_s57y1")]
+[node name="Spotlight5" parent="Spotlights" index="4" unique_id=372127667 node_paths=PackedStringArray("light_path") instance=ExtResource("3_s57y1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8.66, -30)
 light_path = NodePath("Path3D")
 light_spd = 0.15
 wait_range = Vector2(0, 8)
 
-[node name="Path3D" type="Path3D" parent="Spotlights/Spotlight5" index="6"]
+[node name="Path3D" type="Path3D" parent="Spotlights/Spotlight5" index="6" unique_id=1045210686]
 curve = SubResource("Curve3D_c5nsa")
 
-[node name="Spotlight6" parent="Spotlights" index="5" node_paths=PackedStringArray("light_path") instance=ExtResource("3_s57y1")]
+[node name="Spotlight6" parent="Spotlights" index="5" unique_id=1397444009 node_paths=PackedStringArray("light_path") instance=ExtResource("3_s57y1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 8.66, -30)
 light_path = NodePath("Path3D")
 light_spd = 0.15
 wait_range = Vector2(0, 8)
 
-[node name="Path3D" type="Path3D" parent="Spotlights/Spotlight6" index="6"]
+[node name="Path3D" type="Path3D" parent="Spotlights/Spotlight6" index="6" unique_id=728038814]
 curve = SubResource("Curve3D_coowc")
 
-[node name="Spotlight7" parent="Spotlights" index="6" node_paths=PackedStringArray("light_path") instance=ExtResource("3_s57y1")]
+[node name="Spotlight7" parent="Spotlights" index="6" unique_id=985893981 node_paths=PackedStringArray("light_path") instance=ExtResource("3_s57y1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 8.66, -15)
 light_path = NodePath("Path3D")
 light_spd = 0.15
 wait_range = Vector2(0, 8)
 
-[node name="Path3D" type="Path3D" parent="Spotlights/Spotlight7" index="6"]
+[node name="Path3D" type="Path3D" parent="Spotlights/Spotlight7" index="6" unique_id=2053191321]
 curve = SubResource("Curve3D_oyg33")
 
-[node name="Spotlight8" parent="Spotlights" index="7" node_paths=PackedStringArray("light_path") instance=ExtResource("3_s57y1")]
+[node name="Spotlight8" parent="Spotlights" index="7" unique_id=1295435735 node_paths=PackedStringArray("light_path") instance=ExtResource("3_s57y1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 8.66, -10)
 light_path = NodePath("Path3D")
 light_spd = 0.15
 wait_range = Vector2(0, 8)
 
-[node name="Path3D" type="Path3D" parent="Spotlights/Spotlight8" index="6"]
+[node name="Path3D" type="Path3D" parent="Spotlights/Spotlight8" index="6" unique_id=358571180]
 curve = SubResource("Curve3D_5wmjq")
 
-[node name="Spotlight9" parent="Spotlights" index="8" node_paths=PackedStringArray("light_path") instance=ExtResource("3_s57y1")]
+[node name="Spotlight9" parent="Spotlights" index="8" unique_id=155008742 node_paths=PackedStringArray("light_path") instance=ExtResource("3_s57y1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 8.66, -5)
 light_path = NodePath("Path3D")
 light_spd = 0.15
 wait_range = Vector2(0, 8)
 
-[node name="Path3D" type="Path3D" parent="Spotlights/Spotlight9" index="6"]
+[node name="Path3D" type="Path3D" parent="Spotlights/Spotlight9" index="6" unique_id=394986388]
 curve = SubResource("Curve3D_wlsmp")
 
-[node name="Spotlight10" parent="Spotlights" index="9" node_paths=PackedStringArray("light_path") instance=ExtResource("3_s57y1")]
+[node name="Spotlight10" parent="Spotlights" index="9" unique_id=1076276338 node_paths=PackedStringArray("light_path") instance=ExtResource("3_s57y1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 8.66, 0)
 light_path = NodePath("Path3D")
 light_spd = 0.15
 wait_range = Vector2(0, 8)
 
-[node name="Path3D" type="Path3D" parent="Spotlights/Spotlight10" index="6"]
+[node name="Path3D" type="Path3D" parent="Spotlights/Spotlight10" index="6" unique_id=1822990629]
 curve = SubResource("Curve3D_p5rln")
 
-[node name="Spotlight11" parent="Spotlights" index="10" node_paths=PackedStringArray("light_path") instance=ExtResource("3_s57y1")]
+[node name="Spotlight11" parent="Spotlights" index="10" unique_id=342471439 node_paths=PackedStringArray("light_path") instance=ExtResource("3_s57y1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8.66, 0)
 light_path = NodePath("Path3D")
 light_spd = 0.15
 wait_range = Vector2(0, 8)
 
-[node name="Path3D" type="Path3D" parent="Spotlights/Spotlight11" index="6"]
+[node name="Path3D" type="Path3D" parent="Spotlights/Spotlight11" index="6" unique_id=51187515]
 curve = SubResource("Curve3D_oss47")
 
-[node name="Spotlight12" parent="Spotlights" index="11" node_paths=PackedStringArray("light_path") instance=ExtResource("3_s57y1")]
+[node name="Spotlight12" parent="Spotlights" index="11" unique_id=698178505 node_paths=PackedStringArray("light_path") instance=ExtResource("3_s57y1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 8.66, 0)
 light_path = NodePath("Path3D")
 light_spd = 0.15
 wait_range = Vector2(0, 8)
 
-[node name="Path3D" type="Path3D" parent="Spotlights/Spotlight12" index="6"]
+[node name="Path3D" type="Path3D" parent="Spotlights/Spotlight12" index="6" unique_id=630946358]
 curve = SubResource("Curve3D_v1s7d")
 
-[node name="treasure_chest" parent="." index="7" instance=ExtResource("4_6nsaf")]
+[node name="treasure_chest" parent="." index="7" unique_id=556794282 instance=ExtResource("4_6nsaf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.8)
+item_pool = ExtResource("4_coowc")
 
-[node name="Props" type="Node3D" parent="." index="8"]
+[node name="Props" type="Node3D" parent="." index="8" unique_id=121317690]
 
-[node name="Bookshelves" type="Node3D" parent="Props" index="0"]
+[node name="Bookshelves" type="Node3D" parent="Props" index="0" unique_id=1424079994]
 
-[node name="Boxes" type="Node3D" parent="Props" index="1"]
+[node name="Boxes" type="Node3D" parent="Props" index="1" unique_id=1627283342]
 
-[node name="cardboard_box" parent="Props/Boxes" index="0" instance=ExtResource("6_c5nsa")]
+[node name="cardboard_box" parent="Props/Boxes" index="0" unique_id=570333434 instance=ExtResource("6_c5nsa")]
 transform = Transform3D(2.115, 0, 0, 0, 2.115, 0, 0, 0, 2.115, -18.5254, 0, 0)
 
-[node name="cardboard_box2" parent="Props/Boxes" index="1" instance=ExtResource("6_c5nsa")]
+[node name="cardboard_box2" parent="Props/Boxes" index="1" unique_id=116969272 instance=ExtResource("6_c5nsa")]
 transform = Transform3D(2.115, 0, 0, 0, 2.115, 0, 0, 0, 2.115, -18.5254, 0, -5.61812)
 
-[node name="cardboard_box3" parent="Props/Boxes" index="2" instance=ExtResource("6_c5nsa")]
+[node name="cardboard_box3" parent="Props/Boxes" index="2" unique_id=1053747140 instance=ExtResource("6_c5nsa")]
 transform = Transform3D(2.115, 0, 0, 0, 2.115, 0, 0, 0, 2.115, 18.5255, 0, -5.61812)
 
-[node name="cardboard_box4" parent="Props/Boxes" index="3" instance=ExtResource("6_c5nsa")]
+[node name="cardboard_box4" parent="Props/Boxes" index="3" unique_id=1664292272 instance=ExtResource("6_c5nsa")]
 transform = Transform3D(2.115, 0, 0, 0, 2.115, 0, 0, 0, 2.115, 18.5255, 0, -0.0849477)
+
+[node name="treasure_chest2" parent="." index="9" unique_id=1706835689 instance=ExtResource("4_6nsaf")]
+transform = Transform3D(-0.50000006, 0, 0.8660254, 0, 1, 0, -0.8660254, 0, -0.50000006, 0.9, 0, -0.6)
+item_pool = ExtResource("4_coowc")
+
+[node name="treasure_chest3" parent="." index="10" unique_id=359672902 instance=ExtResource("4_6nsaf")]
+transform = Transform3D(-0.4999999, 0, -0.86602545, 0, 1, 0, 0.86602545, 0, -0.4999999, -0.9, 0, -0.6)
+item_pool = ExtResource("4_coowc")

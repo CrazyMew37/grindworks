@@ -15,6 +15,8 @@ func action() -> void:
 	var cog_count := 4
 	if Util.on_easy_floor():
 		cog_count -= 1
+	if Util.on_hard_floor():
+		cog_count += 1
 	
 	for i in cog_count:
 		var cog := COG.instantiate()

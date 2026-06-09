@@ -90,6 +90,7 @@ func lose_game(iframe_time := 1.0) -> void:
 		return
 	explode_player(iframe_time)
 	if Util.on_easy_floor(): explosion_damage -= 1
+	elif Util.on_hard_floor(): explosion_damage -= 3
 	else: explosion_damage -= 2
 
 #endregion
@@ -251,12 +252,13 @@ var drag_remaining_shapes: Array[PuzzlePanel.PanelShape] = [
 	PuzzlePanel.PanelShape.TRIANGLE
 ]
 var drag_player_panel: PuzzlePanel
-var drag_skull_chance := 14
+var drag_skull_chance := 12
 var drag_shape_placements := [1, 4, 7]
 var immovables: Array[PuzzlePanel] = []
 
 func drag_initialize() -> void:
-	if not Util.on_easy_floor(): drag_skull_chance = 12
+	if Util.on_easy_floor(): drag_skull_chance = 14
+	if Util.on_hard_floor(): drag_skull_chance = 10
 	
 	# Randomize Initial Shape Placements
 	drag_shape_placements.shuffle()
@@ -416,7 +418,9 @@ var match_time := 40.0
 var match_cog2_spawn_time: float:
 	get:
 		if Util.on_easy_floor():
-			return 20.0
+			return 5.0
+		if Util.on_hard_floor():
+			return 30.0
 		return 10.0
 var match_cog_tweens: Array[Tween] = []
 const COG_PATH := "res://objects/interactables/lawbot_puzzles/puzzle_boss_objects/puzzle_cog.tscn"
@@ -562,11 +566,13 @@ func match_end() -> void:
 var avoid_timer: Timer
 var avoid_safe_panels: Array[PuzzlePanel] = []
 var avoid_rounds := 6
-var avoid_wait_time := 5.0
+var avoid_wait_time := 4.0
 
 func avoid_initialize() -> void:
-	if not Util.on_easy_floor():
-		avoid_wait_time = 4.0
+	if Util.on_easy_floor():
+		avoid_wait_time = 5.0
+	if Util.on_hard_floor():
+		avoid_wait_time = 3.0
 	set_all_panel_shapes(PuzzlePanel.PanelShape.NOTHING)
 	avoid_timer = Timer.new()
 	avoid_timer.set_one_shot(true)
@@ -678,6 +684,8 @@ signal s_finder_row_reached(row_num: int)
 func finder_initialize() -> void:
 	if Util.on_easy_floor():
 		finder_bomb_count = 24
+	if Util.on_hard_floor():
+		finder_bomb_count = 32
 	
 	while finder_bomb_count > 0:
 		var pos_check := Vector2i(RNG.channel(RNG.ChannelPuzzles).randi() % grid_width, (RNG.channel(RNG.ChannelPuzzles).randi() % (grid_height - 2)) + 1)

@@ -46,13 +46,13 @@ point_count = 2
 
 [node name="fairway" unique_id=1456558773 instance=ExtResource("1_gobg4")]
 
-[node name="GeometryTransformHelper31" parent="BBFairway/Geometry/trees2/pPlane422" index="0"]
+[node name="GeometryTransformHelper31" parent="BBFairway/Geometry/trees2/pPlane422" parent_id_path=PackedInt32Array(981319781) index="0" unique_id=929081721]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 533.9733, -0.19721965, -245.55278)
 
-[node name="GeometryTransformHelper32" parent="BBFairway/Geometry/trees2/pPlane423" index="0"]
+[node name="GeometryTransformHelper32" parent="BBFairway/Geometry/trees2/pPlane423" parent_id_path=PackedInt32Array(1553979494) index="0" unique_id=1263369738]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1335.4246, -99.97321, 38.339294)
 
-[node name="GeometryTransformHelper33" parent="BBFairway/Geometry/trees2/pPlane424" index="0"]
+[node name="GeometryTransformHelper33" parent="BBFairway/Geometry/trees2/pPlane424" parent_id_path=PackedInt32Array(376798612) index="0" unique_id=824304442]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 344.17014, -0.19721965, -440.59616)
 
 [node name="ENTRANCE" parent="." index="26"]
@@ -252,7 +252,7 @@ transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 8.723776, 0.00670790
 
 [node name="GolfDoor1" parent="." index="29" unique_id=1329670714 instance=ExtResource("2_8t80u")]
 transform = Transform3D(0.584335, 0, 0.811513, 0, 1, 0, -0.811513, 0, 0.584335, -0.349, -0.1, -0.631)
-speed = 0.41
+speed = 0.36
 
 [node name="RollingGolfBall" parent="GolfDoor1" index="0"]
 transform = Transform3D(35, 0, 0, 0, 35, 0, 0, 0, 35, 0, 2.745, 7.18)

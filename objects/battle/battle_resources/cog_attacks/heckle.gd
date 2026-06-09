@@ -49,7 +49,10 @@ func action() -> void:
 func create_debuff(player : Player) -> StatBoost:
 	var effect := STAT_BOOST.duplicate(true)
 	effect.quality = StatusEffect.EffectQuality.NEGATIVE
-	effect.boost = -0.2
+	if Util.floor_number < 6:
+		effect.boost = -0.2
+	else:
+		effect.boost = (-0.2 * (1.0 + (floorf(Util.floor_number / 5) * 0.5)))
 	effect.stat = 'defense'
 	effect.target = player
 	return effect

@@ -17,179 +17,179 @@ size = Vector3(11.741, 6.05652, 10.3316)
 [sub_resource type="BoxShape3D" id="BoxShape3D_vc8ur"]
 size = Vector3(20.6291, 6.05652, 10.3316)
 
-[node name="golfcourse_fairway" instance=ExtResource("1_1hppd")]
+[node name="golfcourse_fairway" unique_id=1327787080 instance=ExtResource("1_1hppd")]
 
-[node name="Battles" type="Node3D" parent="." index="29"]
+[node name="Battles" type="Node3D" parent="." index="29" unique_id=344165949]
 
-[node name="BattleFinal" parent="Battles" index="0" node_paths=PackedStringArray("cogs") instance=ExtResource("2_han7l")]
+[node name="BattleFinal" parent="Battles" index="0" unique_id=1928538759 node_paths=PackedStringArray("cogs") instance=ExtResource("2_han7l")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24.0414, 0, 0)
 cogs = [NodePath("Cog"), NodePath("Cog2"), NodePath("Cog3")]
 
-[node name="Cog" parent="Battles/BattleFinal" index="3" instance=ExtResource("3_w0l22")]
+[node name="Cog" parent="Battles/BattleFinal" index="3" unique_id=830259921 instance=ExtResource("3_w0l22")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3139, 0, 0)
 
-[node name="Cog2" parent="Battles/BattleFinal" index="4" instance=ExtResource("3_w0l22")]
+[node name="Cog2" parent="Battles/BattleFinal" index="4" unique_id=956141573 instance=ExtResource("3_w0l22")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000977516, 0, 0)
 
-[node name="Cog3" parent="Battles/BattleFinal" index="5" instance=ExtResource("3_w0l22")]
+[node name="Cog3" parent="Battles/BattleFinal" index="5" unique_id=185844099 instance=ExtResource("3_w0l22")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.43742, 0, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Battles/BattleFinal" index="6"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Battles/BattleFinal" index="6" unique_id=594530398]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.301361, 3.02826, -0.130524)
 shape = SubResource("BoxShape3D_x8c6u")
 
-[node name="BattleLeft" parent="Battles" index="1" node_paths=PackedStringArray("cogs") instance=ExtResource("2_han7l")]
+[node name="BattleLeft" parent="Battles" index="1" unique_id=609648002 node_paths=PackedStringArray("cogs") instance=ExtResource("2_han7l")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -20.8189, 4.76837e-07, -13.8446)
 cogs = [NodePath("Cog"), NodePath("Cog2"), NodePath("Cog3"), NodePath("Cog4")]
 
-[node name="Cog" parent="Battles/BattleLeft" index="3" instance=ExtResource("3_w0l22")]
+[node name="Cog" parent="Battles/BattleLeft" index="3" unique_id=400684727 instance=ExtResource("3_w0l22")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.39769, 0, 0)
 
-[node name="Cog2" parent="Battles/BattleLeft" index="4" instance=ExtResource("3_w0l22")]
+[node name="Cog2" parent="Battles/BattleLeft" index="4" unique_id=214981762 instance=ExtResource("3_w0l22")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0828, 0, 0)
 
-[node name="Cog3" parent="Battles/BattleLeft" index="5" instance=ExtResource("3_w0l22")]
+[node name="Cog3" parent="Battles/BattleLeft" index="5" unique_id=1369441074 instance=ExtResource("3_w0l22")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.35364, 0, 0)
 
-[node name="Cog4" parent="Battles/BattleLeft" index="6" instance=ExtResource("3_w0l22")]
+[node name="Cog4" parent="Battles/BattleLeft" index="6" unique_id=1475822224 instance=ExtResource("3_w0l22")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.62602, 0, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Battles/BattleLeft" index="7"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Battles/BattleLeft" index="7" unique_id=1354694283]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.36249, 3.02826, -0.130524)
 shape = SubResource("BoxShape3D_vc8ur")
 
-[node name="BattleRight" parent="Battles" index="2" node_paths=PackedStringArray("cogs") instance=ExtResource("4_7tvhk")]
+[node name="BattleRight" parent="Battles" index="2" unique_id=2099749070 node_paths=PackedStringArray("cogs") instance=ExtResource("4_7tvhk")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -20.8189, 4.76837e-07, 14.0307)
 cog_range = Vector2i(2, 3)
 cog_dist = 1.12
 cogs = [NodePath("Cogs/Cog6"), NodePath("Cogs/Cog7"), NodePath("Cogs/Cog8")]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Battles/BattleRight" index="4"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Battles/BattleRight" index="4" unique_id=1025604673]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.63598, 3.02826, -0.130524)
 shape = SubResource("BoxShape3D_vc8ur")
 
-[node name="Fences" type="Node3D" parent="." index="30"]
+[node name="Fences" type="Node3D" parent="." index="30" unique_id=1174299781]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 
-[node name="FenceLeft" parent="Fences" index="0" instance=ExtResource("4_e0ejp")]
+[node name="FenceLeft" parent="Fences" index="0" unique_id=334723497 instance=ExtResource("4_e0ejp")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -59.3264, 0, -6.26342)
 
-[node name="fence2" parent="Fences/FenceLeft" index="2" instance=ExtResource("4_e0ejp")]
+[node name="fence2" parent="Fences/FenceLeft" index="2" unique_id=763805931 instance=ExtResource("4_e0ejp")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.43051e-06, 0, 7.09009)
 
-[node name="fence2" parent="Fences/FenceLeft/fence2" index="2" instance=ExtResource("4_e0ejp")]
+[node name="fence2" parent="Fences/FenceLeft/fence2" index="2" unique_id=1192604611 instance=ExtResource("4_e0ejp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -15.222)
 
-[node name="fence2" parent="Fences/FenceLeft/fence2/fence2" index="2" instance=ExtResource("4_e0ejp")]
+[node name="fence2" parent="Fences/FenceLeft/fence2/fence2" index="2" unique_id=2043793028 instance=ExtResource("4_e0ejp")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.43051e-06, 0, 7.09009)
 
-[node name="fence3" parent="Fences/FenceLeft/fence2/fence2" index="3" instance=ExtResource("4_e0ejp")]
+[node name="fence3" parent="Fences/FenceLeft/fence2/fence2" index="3" unique_id=1291231388 instance=ExtResource("4_e0ejp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -15.222)
 
-[node name="fence2" parent="Fences/FenceLeft/fence2/fence2/fence3" index="2" instance=ExtResource("4_e0ejp")]
+[node name="fence2" parent="Fences/FenceLeft/fence2/fence2/fence3" index="2" unique_id=2034457618 instance=ExtResource("4_e0ejp")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.43051e-06, 0, 7.09009)
 
-[node name="fence3" parent="Fences/FenceLeft/fence2/fence2/fence3" index="3" instance=ExtResource("4_e0ejp")]
+[node name="fence3" parent="Fences/FenceLeft/fence2/fence2/fence3" index="3" unique_id=841436240 instance=ExtResource("4_e0ejp")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4.139, 0, -4.1)
 
-[node name="fence2" parent="Fences/FenceLeft/fence2/fence2/fence3/fence3" index="2" instance=ExtResource("4_e0ejp")]
+[node name="fence2" parent="Fences/FenceLeft/fence2/fence2/fence3/fence3" index="2" unique_id=2098548986 instance=ExtResource("4_e0ejp")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.43051e-06, 0, 7.09009)
 
-[node name="fence3" parent="Fences/FenceLeft/fence2/fence2/fence3/fence3" index="3" instance=ExtResource("4_e0ejp")]
+[node name="fence3" parent="Fences/FenceLeft/fence2/fence2/fence3/fence3" index="3" unique_id=623576371 instance=ExtResource("4_e0ejp")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -28.355, 0, 8.40596)
 
-[node name="fence4" parent="Fences/FenceLeft/fence2/fence2/fence3/fence3" index="4" instance=ExtResource("4_e0ejp")]
+[node name="fence4" parent="Fences/FenceLeft/fence2/fence2/fence3/fence3" index="4" unique_id=1696736106 instance=ExtResource("4_e0ejp")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -28.355, 0, 16.406)
 
-[node name="fence5" parent="Fences/FenceLeft/fence2/fence2/fence3/fence3" index="5" instance=ExtResource("4_e0ejp")]
+[node name="fence5" parent="Fences/FenceLeft/fence2/fence2/fence3/fence3" index="5" unique_id=398911218 instance=ExtResource("4_e0ejp")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -28.355, 0, 24.406)
 
-[node name="fence6" parent="Fences/FenceLeft/fence2/fence2/fence3/fence3" index="6" instance=ExtResource("4_e0ejp")]
+[node name="fence6" parent="Fences/FenceLeft/fence2/fence2/fence3/fence3" index="6" unique_id=678547918 instance=ExtResource("4_e0ejp")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -28.355, 0, 32.406)
 
-[node name="fence7" parent="Fences/FenceLeft/fence2/fence2/fence3/fence3" index="7" instance=ExtResource("4_e0ejp")]
+[node name="fence7" parent="Fences/FenceLeft/fence2/fence2/fence3/fence3" index="7" unique_id=1712004996 instance=ExtResource("4_e0ejp")]
 transform = Transform3D(1, 0, 2.84217e-14, 0, 1, 0, -2.84217e-14, 0, 1, -28.355, 0, -28.8025)
 
-[node name="fence8" parent="Fences/FenceLeft/fence2/fence2/fence3/fence3" index="8" instance=ExtResource("4_e0ejp")]
+[node name="fence8" parent="Fences/FenceLeft/fence2/fence2/fence3/fence3" index="8" unique_id=1059453776 instance=ExtResource("4_e0ejp")]
 transform = Transform3D(1, 0, 2.84217e-14, 0, 1, 0, -2.84217e-14, 0, 1, -28.355, 0, -36.8025)
 
-[node name="fence9" parent="Fences/FenceLeft/fence2/fence2/fence3/fence3" index="9" instance=ExtResource("4_e0ejp")]
+[node name="fence9" parent="Fences/FenceLeft/fence2/fence2/fence3/fence3" index="9" unique_id=1418959442 instance=ExtResource("4_e0ejp")]
 transform = Transform3D(1, 0, 2.84217e-14, 0, 1, 0, -2.84217e-14, 0, 1, -28.355, 0, -44.8025)
 
-[node name="fence10" parent="Fences/FenceLeft/fence2/fence2/fence3/fence3" index="10" instance=ExtResource("4_e0ejp")]
+[node name="fence10" parent="Fences/FenceLeft/fence2/fence2/fence3/fence3" index="10" unique_id=813150380 instance=ExtResource("4_e0ejp")]
 transform = Transform3D(1, 0, 2.84217e-14, 0, 1, 0, -2.84217e-14, 0, 1, -28.355, 0, -52.8025)
 
-[node name="FenceRight" parent="Fences" index="1" instance=ExtResource("4_e0ejp")]
+[node name="FenceRight" parent="Fences" index="1" unique_id=235999190 instance=ExtResource("4_e0ejp")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -59.3264, 0, 5.5862)
 
-[node name="fence2" parent="Fences/FenceRight" index="2" instance=ExtResource("4_e0ejp")]
+[node name="fence2" parent="Fences/FenceRight" index="2" unique_id=1030069988 instance=ExtResource("4_e0ejp")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.43051e-06, 0, 7.09009)
 
-[node name="fence2" parent="Fences/FenceRight/fence2" index="2" instance=ExtResource("4_e0ejp")]
+[node name="fence2" parent="Fences/FenceRight/fence2" index="2" unique_id=732565465 instance=ExtResource("4_e0ejp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -15.222)
 
-[node name="fence2" parent="Fences/FenceRight/fence2/fence2" index="2" instance=ExtResource("4_e0ejp")]
+[node name="fence2" parent="Fences/FenceRight/fence2/fence2" index="2" unique_id=1660449096 instance=ExtResource("4_e0ejp")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.43051e-06, 0, 7.09009)
 
-[node name="fence3" parent="Fences/FenceRight/fence2/fence2" index="3" instance=ExtResource("4_e0ejp")]
+[node name="fence3" parent="Fences/FenceRight/fence2/fence2" index="3" unique_id=171102526 instance=ExtResource("4_e0ejp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -15.222)
 
-[node name="fence2" parent="Fences/FenceRight/fence2/fence2/fence3" index="2" instance=ExtResource("4_e0ejp")]
+[node name="fence2" parent="Fences/FenceRight/fence2/fence2/fence3" index="2" unique_id=1247946372 instance=ExtResource("4_e0ejp")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.43051e-06, 0, 7.09009)
 
-[node name="fence3" parent="Fences/FenceRight/fence2/fence2/fence3" index="3" instance=ExtResource("4_e0ejp")]
+[node name="fence3" parent="Fences/FenceRight/fence2/fence2/fence3" index="3" unique_id=1202838875 instance=ExtResource("4_e0ejp")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.139, 0, -4.1)
 
-[node name="fence2" parent="Fences/FenceRight/fence2/fence2/fence3/fence3" index="2" instance=ExtResource("4_e0ejp")]
+[node name="fence2" parent="Fences/FenceRight/fence2/fence2/fence3/fence3" index="2" unique_id=993743293 instance=ExtResource("4_e0ejp")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.43051e-06, 0, 7.09009)
 
-[node name="CogButton" parent="." index="31" node_paths=PackedStringArray("connected_objects") instance=ExtResource("6_gkpxy")]
+[node name="CogButton" parent="." index="31" unique_id=1968531123 node_paths=PackedStringArray("connected_objects") instance=ExtResource("6_gkpxy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.1795, 0, 14.1258)
 connected_objects = [NodePath("../FenceGate")]
 
-[node name="treasure_chest" parent="." index="32" instance=ExtResource("7_ea5jh")]
+[node name="treasure_chest" parent="." index="32" unique_id=44195797 instance=ExtResource("7_ea5jh")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -27.5787, -9.53674e-07, -12.9216)
 
-[node name="treasure_chest2" parent="." index="33" instance=ExtResource("7_ea5jh")]
+[node name="treasure_chest2" parent="." index="33" unique_id=1189403747 instance=ExtResource("7_ea5jh")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -27.5787, -9.53674e-07, -15.0237)
 
-[node name="HedgePillar" parent="." index="34" instance=ExtResource("9_sbr13")]
+[node name="HedgePillar" parent="." index="34" unique_id=1811168531 instance=ExtResource("9_sbr13")]
 transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 30.1301, 0, 21.3)
 
-[node name="HedgePillar2" parent="." index="35" instance=ExtResource("9_sbr13")]
+[node name="HedgePillar2" parent="." index="35" unique_id=1278201862 instance=ExtResource("9_sbr13")]
 transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 29.5852, 0, -25.5823)
 
-[node name="FenceGate" type="Node3D" parent="." index="36" node_paths=PackedStringArray("left_pivot", "right_pivot", "fence_cam")]
+[node name="FenceGate" type="Node3D" parent="." index="36" unique_id=1206301241 node_paths=PackedStringArray("left_pivot", "right_pivot", "fence_cam")]
 transform = Transform3D(0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, 0.258819, 5.32076, 0, -0.078793)
 script = ExtResource("9_37dxp")
 left_pivot = NodePath("leftpivot")
 right_pivot = NodePath("rightpivot")
 fence_cam = NodePath("FenceCam")
 
-[node name="rightpivot" type="Node3D" parent="FenceGate" index="0"]
+[node name="rightpivot" type="Node3D" parent="FenceGate" index="0" unique_id=1382580597]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.69078, 0, 1.64899)
 
-[node name="fence" parent="FenceGate/rightpivot" index="0" instance=ExtResource("4_e0ejp")]
+[node name="fence" parent="FenceGate/rightpivot" index="0" unique_id=813255333 instance=ExtResource("4_e0ejp")]
 transform = Transform3D(0.188196, 0, 0.603016, 0, 0.65, 0, -0.622159, 0, 0.182406, -2.14315, 0, -0.63177)
 
-[node name="leftpivot" type="Node3D" parent="FenceGate" index="1"]
+[node name="leftpivot" type="Node3D" parent="FenceGate" index="1" unique_id=256832809]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.01855, 0, -1.28507)
 
-[node name="fence2" parent="FenceGate/leftpivot" index="0" instance=ExtResource("4_e0ejp")]
+[node name="fence2" parent="FenceGate/leftpivot" index="0" unique_id=1722170223 instance=ExtResource("4_e0ejp")]
 transform = Transform3D(-0.188196, 0, -0.603016, 0, 0.65, 0, 0.622159, 0, -0.182406, 2.2051, 0, 0.674932)
 
-[node name="FenceCam" type="Camera3D" parent="FenceGate" index="2"]
+[node name="FenceCam" type="Camera3D" parent="FenceGate" index="2" unique_id=1407345963]
 transform = Transform3D(0.574877, 0, -0.81824, 0, 1, 0, 0.81824, 0, 0.574877, -7.61444, 2.66901, 4.38047)
 fov = 50.0
 
-[node name="PillarSpiked" parent="FenceGate" index="3" instance=ExtResource("10_gp8wa")]
+[node name="PillarSpiked" parent="FenceGate" index="3" unique_id=1672200380 instance=ExtResource("10_gp8wa")]
 transform = Transform3D(0.957168, 0, -0.289533, 0, 1, 0, 0.289533, 0, 0.957168, 5.8539, 0, 2.02803)
 
-[node name="PillarSpiked2" parent="FenceGate" index="4" instance=ExtResource("10_gp8wa")]
+[node name="PillarSpiked2" parent="FenceGate" index="4" unique_id=1175171845 instance=ExtResource("10_gp8wa")]
 transform = Transform3D(0.957168, 0, -0.289533, 0, 1, 0, 0.289533, 0, 0.957168, -6.11954, 0, -1.5938)
 
-[node name="PillarSpiked3" parent="FenceGate" index="5" instance=ExtResource("10_gp8wa")]
+[node name="PillarSpiked3" parent="FenceGate" index="5" unique_id=905495686 instance=ExtResource("10_gp8wa")]
 transform = Transform3D(0.957168, 0, -0.289533, 0, 1, 0, 0.289533, 0, 0.957168, -23.0185, 0, -6.12187)
 
-[node name="PillarSpiked4" parent="FenceGate" index="6" instance=ExtResource("10_gp8wa")]
+[node name="PillarSpiked4" parent="FenceGate" index="6" unique_id=1129253896 instance=ExtResource("10_gp8wa")]
 transform = Transform3D(0.957168, 0, -0.289533, 0, 1, 0, 0.289533, 0, 0.957168, 22.3447, 0, 6.03318)

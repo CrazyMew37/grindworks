@@ -3237,7 +3237,7 @@ shadow_mesh = SubResource("ArrayMesh_fiamg")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jlrqh"]
 resource_name = "RAIL___BOILERROOM_newfixes_v1s4_BoilerRoomT_CrossBeamQuarter2SHD1"
-transparency = 4
+transparency = 1
 cull_mode = 2
 vertex_color_use_as_albedo = true
 albedo_color = Color(0.905882, 0.905882, 0.905882, 1)
@@ -3290,597 +3290,597 @@ size = Vector3(41.3506, 9.06149, 40.6288)
 vertices = PackedVector3Array(-54.6842, 5.03288, -87.4214, -54.6842, 3.03288, -82.4214, -50.9342, 3.03288, -82.6714, -50.6842, 5.03288, -87.6714, -54.6842, 4.78288, -86.1714, -14.6842, 5.03288, -87.9214, -27.4342, 5.03288, -100.671, -41.4342, 5.03288, -100.671, -50.9342, 2.28288, -81.1714, -54.6842, 2.03288, -60.1714, -54.6842, 2.03288, -79.4548, -54.6842, 2.03288, -86.9214, -54.6842, 2.03288, -84.6714, -49.9342, 2.03288, -84.4214, -14.1842, 2.03288, -86.9214, -49.9342, 2.03288, -81.1714, -14.1842, 2.03288, -60.1714)
 polygons = [PackedInt32Array(0, 3, 4), PackedInt32Array(4, 3, 2), PackedInt32Array(4, 2, 1), PackedInt32Array(7, 6, 3), PackedInt32Array(3, 6, 5), PackedInt32Array(3, 0, 7), PackedInt32Array(2, 8, 1), PackedInt32Array(1, 8, 10), PackedInt32Array(10, 8, 9), PackedInt32Array(12, 11, 13), PackedInt32Array(13, 11, 14), PackedInt32Array(15, 13, 14), PackedInt32Array(9, 8, 15), PackedInt32Array(9, 15, 16), PackedInt32Array(16, 15, 14)]
 
-[node name="FactoryBoilerRoom" type="Node3D"]
+[node name="FactoryBoilerRoom" type="Node3D" unique_id=10128063]
 
-[node name="Model" type="Node3D" parent="."]
+[node name="Model" type="Node3D" parent="." unique_id=452437059]
 transform = Transform3D(0.033, 0, 0, 0, 0.033, 0, 0, 0, 0.033, 0, 0, 0)
 
-[node name="ZONE08" type="Node3D" parent="Model"]
+[node name="ZONE08" type="Node3D" parent="Model" unique_id=901151367]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1033.39, 46.4515, -2229.67)
 
-[node name="GeometryTransformHelper7" type="Node3D" parent="Model/ZONE08"]
+[node name="GeometryTransformHelper7" type="Node3D" parent="Model/ZONE08" unique_id=1971290906]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1033.39, -46.4515, 2229.67)
 
-[node name="boiler_room" type="Node3D" parent="Model/ZONE08"]
+[node name="boiler_room" type="Node3D" parent="Model/ZONE08" unique_id=999582611]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 615.331, 4.19964e-06, 9.30176e-06)
 
-[node name="GeometryTransformHelper44" type="Node3D" parent="Model/ZONE08/boiler_room"]
+[node name="GeometryTransformHelper44" type="Node3D" parent="Model/ZONE08/boiler_room" unique_id=259501356]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 418.064, -46.4515, 2229.67)
 
-[node name="room9" type="Node3D" parent="Model/ZONE08/boiler_room"]
+[node name="room9" type="Node3D" parent="Model/ZONE08/boiler_room" unique_id=636986692]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 418.064, -46.4515, 2229.67)
 
-[node name="geometry_boiler_room" type="Node3D" parent="Model/ZONE08/boiler_room/room9"]
+[node name="geometry_boiler_room" type="Node3D" parent="Model/ZONE08/boiler_room/room9" unique_id=693804328]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1662.96, 46.4515, -1811.61)
 
-[node name="GeometryTransformHelper147" type="Node3D" parent="Model/ZONE08/boiler_room/room9/geometry_boiler_room"]
+[node name="GeometryTransformHelper147" type="Node3D" parent="Model/ZONE08/boiler_room/room9/geometry_boiler_room" unique_id=1782175802]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1662.96, -46.4515, 1811.61)
 
-[node name="stairwall" type="Node3D" parent="Model/ZONE08/boiler_room/room9/geometry_boiler_room"]
+[node name="stairwall" type="Node3D" parent="Model/ZONE08/boiler_room/room9/geometry_boiler_room" unique_id=764532790]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 150.384, 46.4515, -743.225)
 
-[node name="GeometryTransformHelper590" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/room9/geometry_boiler_room/stairwall"]
+[node name="GeometryTransformHelper590" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/room9/geometry_boiler_room/stairwall" unique_id=1823524877]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 557.419, -92.903, 2554.83)
 mesh = SubResource("ArrayMesh_c87vt")
 skeleton = NodePath("")
 
-[node name="ceiling8" type="Node3D" parent="Model/ZONE08/boiler_room/room9/geometry_boiler_room"]
+[node name="ceiling8" type="Node3D" parent="Model/ZONE08/boiler_room/room9/geometry_boiler_room" unique_id=319856056]
 
-[node name="GeometryTransformHelper591" type="Node3D" parent="Model/ZONE08/boiler_room/room9/geometry_boiler_room/ceiling8"]
+[node name="GeometryTransformHelper591" type="Node3D" parent="Model/ZONE08/boiler_room/room9/geometry_boiler_room/ceiling8" unique_id=1695226387]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1662.96, -46.4515, 1811.61)
 
-[node name="ceiling23" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/room9/geometry_boiler_room/ceiling8"]
+[node name="ceiling23" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/room9/geometry_boiler_room/ceiling8" unique_id=482697057]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1662.96, -46.4515, 1811.61)
 mesh = SubResource("ArrayMesh_71lou")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_mntma")
 
-[node name="TopCeiling" type="Node3D" parent="Model/ZONE08/boiler_room/room9/geometry_boiler_room/ceiling8"]
+[node name="TopCeiling" type="Node3D" parent="Model/ZONE08/boiler_room/room9/geometry_boiler_room/ceiling8" unique_id=1537009508]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 548.128, 342.087, -278.709)
 
-[node name="GeometryTransformHelper1322" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/room9/geometry_boiler_room/ceiling8/TopCeiling"]
+[node name="GeometryTransformHelper1322" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/room9/geometry_boiler_room/ceiling8/TopCeiling" unique_id=1287126598]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1114.84, -388.538, 2090.32)
 mesh = SubResource("ArrayMesh_xne46")
 skeleton = NodePath("")
 
-[node name="floor10" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/room9/geometry_boiler_room"]
+[node name="floor10" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/room9/geometry_boiler_room" unique_id=473267825]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1662.96, -46.4515, 1811.61)
 mesh = SubResource("ArrayMesh_c2w80")
 skeleton = NodePath("")
 
-[node name="floor25" type="Node3D" parent="Model/ZONE08/boiler_room/room9/geometry_boiler_room"]
+[node name="floor25" type="Node3D" parent="Model/ZONE08/boiler_room/room9/geometry_boiler_room" unique_id=1576072113]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 617.805, 92.903, -1045.16)
 
-[node name="GeometryTransformHelper592" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/room9/geometry_boiler_room/floor25"]
+[node name="GeometryTransformHelper592" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/room9/geometry_boiler_room/floor25" unique_id=501070378]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1045.16, -139.355, 2856.77)
 mesh = SubResource("ArrayMesh_m3nrh")
 skeleton = NodePath("")
 
-[node name="platform_wall2" type="Node3D" parent="Model/ZONE08/boiler_room/room9/geometry_boiler_room"]
+[node name="platform_wall2" type="Node3D" parent="Model/ZONE08/boiler_room/room9/geometry_boiler_room" unique_id=792134233]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 617.805, 46.4515, -1045.16)
 
-[node name="GeometryTransformHelper593" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/room9/geometry_boiler_room/platform_wall2"]
+[node name="GeometryTransformHelper593" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/room9/geometry_boiler_room/platform_wall2" unique_id=1335516679]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1045.16, -92.903, 2856.77)
 mesh = SubResource("ArrayMesh_jidui")
 skeleton = NodePath("")
 
-[node name="stairs2" type="Node3D" parent="Model/ZONE08/boiler_room/room9/geometry_boiler_room"]
+[node name="stairs2" type="Node3D" parent="Model/ZONE08/boiler_room/room9/geometry_boiler_room" unique_id=901260645]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 131.262, 92.903, -836.127)
 
-[node name="GeometryTransformHelper594" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/room9/geometry_boiler_room/stairs2"]
+[node name="GeometryTransformHelper594" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/room9/geometry_boiler_room/stairs2" unique_id=172291822]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1672.25, -139.355, 2787.09)
 mesh = SubResource("ArrayMesh_lvn3f")
 skeleton = NodePath("")
 
-[node name="walls3" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/room9/geometry_boiler_room"]
+[node name="walls3" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/room9/geometry_boiler_room" unique_id=161076178]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1662.96, -46.4515, 1811.61)
 mesh = SubResource("ArrayMesh_8arli")
 skeleton = NodePath("")
 
-[node name="collsion_boiler_room" type="Node3D" parent="Model/ZONE08/boiler_room/room9"]
+[node name="collsion_boiler_room" type="Node3D" parent="Model/ZONE08/boiler_room/room9" unique_id=1653407669]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1662.96, 46.4515, -1811.61)
 visible = false
 
-[node name="GeometryTransformHelper148" type="Node3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room"]
+[node name="GeometryTransformHelper148" type="Node3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room" unique_id=1886159132]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1662.96, -46.4515, 1811.61)
 
-[node name="stairwall2" type="Node3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room"]
+[node name="stairwall2" type="Node3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room" unique_id=890730508]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 150.384, 46.4515, -743.225)
 
-[node name="GeometryTransformHelper595" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/stairwall2"]
+[node name="GeometryTransformHelper595" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/stairwall2" unique_id=595647725]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1512.58, -92.903, 2554.83)
 mesh = SubResource("ArrayMesh_e6ohk")
 skeleton = NodePath("")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/stairwall2/GeometryTransformHelper595"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/stairwall2/GeometryTransformHelper595" unique_id=1341041757]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/stairwall2/GeometryTransformHelper595/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/stairwall2/GeometryTransformHelper595/StaticBody3D" unique_id=1857114845]
 shape = SubResource("ConcavePolygonShape3D_bf23l")
 
-[node name="ceiling12" type="Node3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room"]
+[node name="ceiling12" type="Node3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room" unique_id=519516282]
 
-[node name="GeometryTransformHelper596" type="Node3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/ceiling12"]
+[node name="GeometryTransformHelper596" type="Node3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/ceiling12" unique_id=1249433643]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1662.96, -46.4515, 1811.61)
 
-[node name="ceiling24" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/ceiling12"]
+[node name="ceiling24" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/ceiling12" unique_id=2025078117]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1662.96, -46.4515, 1811.61)
 mesh = SubResource("ArrayMesh_mt6nv")
 skeleton = NodePath("")
 
-[node name="TopCeiling2" type="Node3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/ceiling12"]
+[node name="TopCeiling2" type="Node3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/ceiling12" unique_id=1655266595]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 548.128, 342.087, -278.709)
 
-[node name="GeometryTransformHelper1323" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/ceiling12/TopCeiling2"]
+[node name="GeometryTransformHelper1323" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/ceiling12/TopCeiling2" unique_id=28219122]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1114.84, -388.538, 2090.32)
 mesh = SubResource("ArrayMesh_spk2f")
 skeleton = NodePath("")
 
-[node name="floor222" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room"]
+[node name="floor222" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room" unique_id=1953828953]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1662.96, -46.4515, 1811.61)
 mesh = SubResource("ArrayMesh_sa15s")
 skeleton = NodePath("")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/floor222"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/floor222" unique_id=1874170729]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/floor222/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/floor222/StaticBody3D" unique_id=1512360632]
 shape = SubResource("ConcavePolygonShape3D_i5br4")
 
-[node name="floor232" type="Node3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room"]
+[node name="floor232" type="Node3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room" unique_id=1670115624]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 617.805, 92.903, -1045.16)
 
-[node name="GeometryTransformHelper597" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/floor232"]
+[node name="GeometryTransformHelper597" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/floor232" unique_id=468337407]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1045.16, -139.355, 2856.77)
 mesh = SubResource("ArrayMesh_7cqm1")
 skeleton = NodePath("")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/floor232/GeometryTransformHelper597"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/floor232/GeometryTransformHelper597" unique_id=472743742]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/floor232/GeometryTransformHelper597/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/floor232/GeometryTransformHelper597/StaticBody3D" unique_id=96050059]
 shape = SubResource("ConcavePolygonShape3D_55glv")
 
-[node name="platform_wall6" type="Node3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room"]
+[node name="platform_wall6" type="Node3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room" unique_id=2023654693]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 617.805, 46.4515, -1045.16)
 
-[node name="GeometryTransformHelper598" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/platform_wall6"]
+[node name="GeometryTransformHelper598" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/platform_wall6" unique_id=1977285421]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1045.16, -92.903, 2856.77)
 mesh = SubResource("ArrayMesh_k7udp")
 skeleton = NodePath("")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/platform_wall6/GeometryTransformHelper598"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/platform_wall6/GeometryTransformHelper598" unique_id=1191789269]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/platform_wall6/GeometryTransformHelper598/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/platform_wall6/GeometryTransformHelper598/StaticBody3D" unique_id=562698628]
 shape = SubResource("ConcavePolygonShape3D_x8i6t")
 
-[node name="walls1" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room"]
+[node name="walls1" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room" unique_id=360334559]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1662.96, -46.4515, 1811.61)
 mesh = SubResource("ArrayMesh_uxgt6")
 skeleton = NodePath("")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/walls1"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/walls1" unique_id=1722919939]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/walls1/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/walls1/StaticBody3D" unique_id=272911653]
 shape = SubResource("ConcavePolygonShape3D_c26yh")
 
-[node name="walls22" type="Node3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room"]
+[node name="walls22" type="Node3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room" unique_id=582570450]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 826.837, 92.903, -1254.19)
 
-[node name="GeometryTransformHelper599" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/walls22"]
+[node name="GeometryTransformHelper599" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/walls22" unique_id=218670703]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 836.127, -137.201, 3065.8)
 mesh = SubResource("ArrayMesh_s0b37")
 skeleton = NodePath("")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/walls22/GeometryTransformHelper599"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/walls22/GeometryTransformHelper599" unique_id=955240404]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/walls22/GeometryTransformHelper599/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/walls22/GeometryTransformHelper599/StaticBody3D" unique_id=63741493]
 shape = SubResource("ConcavePolygonShape3D_ve5y7")
 
-[node name="stairs33" type="Node3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room"]
+[node name="stairs33" type="Node3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room" unique_id=1729650786]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 131.262, 92.903, -836.127)
 
-[node name="GeometryTransformHelper600" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/stairs33"]
+[node name="GeometryTransformHelper600" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/stairs33" unique_id=662540356]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1672.25, -139.355, 2787.09)
 mesh = SubResource("ArrayMesh_hpatv")
 skeleton = NodePath("")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/stairs33/GeometryTransformHelper600"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/stairs33/GeometryTransformHelper600" unique_id=635032551]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/stairs33/GeometryTransformHelper600/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/stairs33/GeometryTransformHelper600/StaticBody3D" unique_id=761455630]
 shape = SubResource("ConcavePolygonShape3D_k4uwe")
 
-[node name="PipeCollision9" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room"]
+[node name="PipeCollision9" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room" unique_id=1203193784]
 transform = Transform3D(-0.717693, -1.22461e-16, 2.31124, 8.78892e-17, -1, -2.83036e-16, 0.69636, 0, 2.38205, 926.473, 161.404, -989.702)
 mesh = SubResource("ArrayMesh_m7wff")
 skeleton = NodePath("")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/PipeCollision9"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/PipeCollision9" unique_id=231416269]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/PipeCollision9/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/PipeCollision9/StaticBody3D" unique_id=1727041100]
 shape = SubResource("ConcavePolygonShape3D_mk0lp")
 
-[node name="PipeCollision4" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room"]
+[node name="PipeCollision4" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room" unique_id=556618847]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1662.96, -46.4515, 1811.61)
 mesh = SubResource("ArrayMesh_5hrwl")
 skeleton = NodePath("")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/PipeCollision4"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/PipeCollision4" unique_id=1611991241]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/PipeCollision4/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/PipeCollision4/StaticBody3D" unique_id=471417666]
 shape = SubResource("ConcavePolygonShape3D_ttkn1")
 
-[node name="PipeCollision11" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room"]
+[node name="PipeCollision11" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room" unique_id=415624149]
 transform = Transform3D(0.830837, -6.81513e-17, 1.8471, -3.30872e-24, -1, -4.06451e-16, 0.556516, 1.01745e-16, -2.75758, 315.911, 159.627, -1054.69)
 mesh = SubResource("ArrayMesh_78ogj")
 skeleton = NodePath("")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/PipeCollision11"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/PipeCollision11" unique_id=802577370]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/PipeCollision11/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE08/boiler_room/room9/collsion_boiler_room/PipeCollision11/StaticBody3D" unique_id=91863601]
 shape = SubResource("ConcavePolygonShape3D_kwp7b")
 
-[node name="props4" type="Node3D" parent="Model/ZONE08/boiler_room"]
+[node name="props4" type="Node3D" parent="Model/ZONE08/boiler_room" unique_id=2107443292]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -628.204, 3.43581, 29.9402)
 
-[node name="GeometryTransformHelper70" type="Node3D" parent="Model/ZONE08/boiler_room/props4"]
+[node name="GeometryTransformHelper70" type="Node3D" parent="Model/ZONE08/boiler_room/props4" unique_id=1753763621]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1046.27, -49.8873, 2199.73)
 
-[node name="Pipes2" type="Node3D" parent="Model/ZONE08/boiler_room/props4"]
+[node name="Pipes2" type="Node3D" parent="Model/ZONE08/boiler_room/props4" unique_id=1966113675]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.33365, -6.97917, 0)
 
-[node name="GeometryTransformHelper149" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2"]
+[node name="GeometryTransformHelper149" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2" unique_id=979118293]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1052.6, -42.9082, 2199.73)
 
-[node name="Pipeline2" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2"]
+[node name="Pipeline2" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2" unique_id=1054124588]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 239.691, 69.1787, 224.822)
 
-[node name="GeometryTransformHelper601" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/Pipeline2"]
+[node name="GeometryTransformHelper601" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/Pipeline2" unique_id=247658473]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 812.911, -112.087, 1974.91)
 mesh = SubResource("ArrayMesh_lnmmk")
 skeleton = NodePath("")
 
-[node name="PipeLine3" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2"]
+[node name="PipeLine3" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2" unique_id=1873589615]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 252.27, 55.7034, 285.342)
 
-[node name="GeometryTransformHelper602" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/PipeLine3"]
+[node name="GeometryTransformHelper602" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/PipeLine3" unique_id=2086256962]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 800.332, -98.6116, 1914.39)
 mesh = SubResource("ArrayMesh_oq2y2")
 skeleton = NodePath("")
 
-[node name="Pipeline11" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2"]
+[node name="Pipeline11" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2" unique_id=622462764]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.472, 194.714, -154.536)
 
-[node name="GeometryTransformHelper603" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/Pipeline11"]
+[node name="GeometryTransformHelper603" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/Pipeline11" unique_id=376121720]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1040.13, -237.623, 2354.27)
 mesh = SubResource("ArrayMesh_vapdx")
 skeleton = NodePath("")
 
-[node name="Pipeline4" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2"]
+[node name="Pipeline4" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2" unique_id=1453923394]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.4246, 123.155, 224.822)
 
-[node name="GeometryTransformHelper604" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/Pipeline4"]
+[node name="GeometryTransformHelper604" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/Pipeline4" unique_id=1047437968]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1025.18, -166.063, 1974.91)
 mesh = SubResource("ArrayMesh_oahal")
 skeleton = NodePath("")
 
-[node name="Pipeline15" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2"]
+[node name="Pipeline15" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2" unique_id=1047029876]
 transform = Transform3D(0.983992, 0, -0.178211, 0, 1, 0, 0.178211, 0, 0.983992, -462.39, 123.155, -159.547)
 
-[node name="GeometryTransformHelper605" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/Pipeline15"]
+[node name="GeometryTransformHelper605" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/Pipeline15" unique_id=2131704238]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1025.18, -166.063, 1974.91)
 mesh = SubResource("ArrayMesh_rpcuu")
 skeleton = NodePath("")
 
-[node name="PipeCollision10" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2"]
+[node name="PipeCollision10" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2" unique_id=1439120774]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.55813, 63.2712, 50.1114)
 visible = false
 
-[node name="GeometryTransformHelper606" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/PipeCollision10"]
+[node name="GeometryTransformHelper606" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/PipeCollision10" unique_id=989366541]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1050.04, -106.179, 2149.62)
 mesh = SubResource("ArrayMesh_oujn4")
 skeleton = NodePath("")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/PipeCollision10/GeometryTransformHelper606"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/PipeCollision10/GeometryTransformHelper606" unique_id=2100194722]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/PipeCollision10/GeometryTransformHelper606/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/PipeCollision10/GeometryTransformHelper606/StaticBody3D" unique_id=1986896926]
 shape = SubResource("ConcavePolygonShape3D_ptt03")
 
-[node name="Pipeline14" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2"]
+[node name="Pipeline14" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2" unique_id=1428528630]
 transform = Transform3D(-0.934311, 0.0305313, 0.817463, 0.0197342, 1.24143, -0.0238111, -0.817794, -0.00492427, -0.934506, 638.474, 78.086, -3331.27)
 mesh = SubResource("ArrayMesh_hwwkl")
 skeleton = NodePath("")
 
-[node name="Pipeline13" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2"]
+[node name="Pipeline13" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2" unique_id=529302924]
 transform = Transform3D(0.694541, 0, -0.719453, 0, 1, 0, 0.719453, 0, 0.694541, -422.364, 148.473, -626.547)
 
-[node name="GeometryTransformHelper607" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/Pipeline13"]
+[node name="GeometryTransformHelper607" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/Pipeline13" unique_id=1290533984]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 812.911, -112.087, 1974.91)
 mesh = SubResource("ArrayMesh_siw1e")
 skeleton = NodePath("")
 
-[node name="bigPipe1" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2"]
+[node name="bigPipe1" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2" unique_id=321310726]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 345.041, 173.264, -643.526)
 
-[node name="GeometryTransformHelper608" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/bigPipe1"]
+[node name="GeometryTransformHelper608" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/bigPipe1" unique_id=256013580]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 723.004, -246.696, 2873.85)
 
-[node name="Pipeline12" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/bigPipe1"]
+[node name="Pipeline12" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/bigPipe1" unique_id=1351935612]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.2473, 5.48137, 5.29964)
 
-[node name="GeometryTransformHelper1324" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/bigPipe1/Pipeline12"]
+[node name="GeometryTransformHelper1324" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/bigPipe1/Pipeline12" unique_id=1117841097]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 749.251, -252.177, 2868.55)
 mesh = SubResource("ArrayMesh_hckev")
 skeleton = NodePath("")
 
-[node name="new_End1" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/bigPipe1"]
+[node name="new_End1" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/bigPipe1" unique_id=288498684]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.5322, 27.8081, 89.2797)
 
-[node name="GeometryTransformHelper1325" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/bigPipe1/new_End1"]
+[node name="GeometryTransformHelper1325" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/bigPipe1/new_End1" unique_id=252125094]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 681.472, -274.504, 2784.57)
 mesh = SubResource("ArrayMesh_v0s2x")
 skeleton = NodePath("")
 
-[node name="new_End2" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/bigPipe1"]
+[node name="new_End2" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/bigPipe1" unique_id=565087748]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -108.896, 17.1533, -96.7181)
 
-[node name="GeometryTransformHelper1326" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/bigPipe1/new_End2"]
+[node name="GeometryTransformHelper1326" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/bigPipe1/new_End2" unique_id=516987229]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 831.9, -263.849, 2970.57)
 mesh = SubResource("ArrayMesh_kgrtv")
 skeleton = NodePath("")
 
-[node name="new_End3" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/bigPipe1"]
+[node name="new_End3" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/bigPipe1" unique_id=1846098621]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 126.381, -63.7836, 149.156)
 
-[node name="GeometryTransformHelper1327" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/bigPipe1/new_End3"]
+[node name="GeometryTransformHelper1327" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/bigPipe1/new_End3" unique_id=364584327]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 596.623, -182.912, 2724.7)
 mesh = SubResource("ArrayMesh_bkpe3")
 skeleton = NodePath("")
 
-[node name="bigPipe2" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2"]
+[node name="bigPipe2" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2" unique_id=704557461]
 transform = Transform3D(0.267684, -0.0865009, -0.616988, -0.00941673, -0.672011, 0.0901296, -0.622951, -0.0270114, -0.266484, -1248.41, 559.333, -1871.67)
 
-[node name="Pipeline122" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/bigPipe2"]
+[node name="Pipeline122" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/bigPipe2" unique_id=1587036733]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -749.251, 252.177, -2868.55)
 
-[node name="GeometryTransformHelper1328" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/bigPipe2/Pipeline122"]
+[node name="GeometryTransformHelper1328" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/bigPipe2/Pipeline122" unique_id=357477198]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 749.251, -252.177, 2868.55)
 mesh = SubResource("ArrayMesh_dtl06")
 skeleton = NodePath("")
 
-[node name="new_End12" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/bigPipe2"]
+[node name="new_End12" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/bigPipe2" unique_id=229814048]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -681.472, 274.504, -2784.57)
 
-[node name="GeometryTransformHelper1329" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/bigPipe2/new_End12"]
+[node name="GeometryTransformHelper1329" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/bigPipe2/new_End12" unique_id=843235851]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 681.472, -274.504, 2784.57)
 mesh = SubResource("ArrayMesh_mrikf")
 skeleton = NodePath("")
 
-[node name="new_End22" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/bigPipe2"]
+[node name="new_End22" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/bigPipe2" unique_id=1439360815]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -831.9, 263.849, -2970.57)
 
-[node name="GeometryTransformHelper1330" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/bigPipe2/new_End22"]
+[node name="GeometryTransformHelper1330" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/bigPipe2/new_End22" unique_id=1627815874]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 831.9, -263.849, 2970.57)
 mesh = SubResource("ArrayMesh_b21j8")
 skeleton = NodePath("")
 
-[node name="Pipeline18" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/bigPipe2"]
+[node name="Pipeline18" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/bigPipe2" unique_id=339020440]
 transform = Transform3D(0.582161, -0.0204795, -1.3548, -0.188123, -1.46149, -0.0587445, -1.34183, 0.196014, -0.579551, -4164.03, 218.136, -5565.19)
 mesh = SubResource("ArrayMesh_1xqcb")
 skeleton = NodePath("")
 
-[node name="Pipeline1" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2"]
+[node name="Pipeline1" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2" unique_id=1958619648]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -382.032, 132.438, -6.60677)
 
-[node name="GeometryTransformHelper609" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/Pipeline1"]
+[node name="GeometryTransformHelper609" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/Pipeline1" unique_id=217613647]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1434.63, -175.346, 2206.34)
 mesh = SubResource("ArrayMesh_4k52t")
 skeleton = NodePath("")
 
-[node name="PipeLine7" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2"]
+[node name="PipeLine7" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2" unique_id=774969268]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -171.149, 96.0626, -384.581)
 
-[node name="GeometryTransformHelper610" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/PipeLine7"]
+[node name="GeometryTransformHelper610" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/PipeLine7" unique_id=157533074]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1223.75, -138.971, 2584.31)
 mesh = SubResource("ArrayMesh_5lb4v")
 skeleton = NodePath("")
 
-[node name="PipeLine8" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2"]
+[node name="PipeLine8" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2" unique_id=55479961]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -439.837, 62.6422, 111.543)
 
-[node name="GeometryTransformHelper611" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/PipeLine8"]
+[node name="GeometryTransformHelper611" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/PipeLine8" unique_id=437423353]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1492.44, -105.55, 2088.19)
 mesh = SubResource("ArrayMesh_aqv8y")
 skeleton = NodePath("")
 
-[node name="PipeLine10" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2"]
+[node name="PipeLine10" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2" unique_id=91195320]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 311.981, 33.0212, 116.966)
 
-[node name="GeometryTransformHelper612" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/PipeLine10"]
+[node name="GeometryTransformHelper612" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/PipeLine10" unique_id=652398485]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 740.621, -75.9294, 2082.77)
 mesh = SubResource("ArrayMesh_rq1yd")
 skeleton = NodePath("")
 
-[node name="PipeLine11" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2"]
+[node name="PipeLine11" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2" unique_id=1493004818]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 67.9275, 29.31, 327.454)
 
-[node name="GeometryTransformHelper613" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/PipeLine11"]
+[node name="GeometryTransformHelper613" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/PipeLine11" unique_id=2110904968]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 984.674, -72.2181, 1872.28)
 mesh = SubResource("ArrayMesh_tygja")
 skeleton = NodePath("")
 
-[node name="Pipeline17" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2"]
+[node name="Pipeline17" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2" unique_id=38430413]
 transform = Transform3D(0.596296, 0.0277073, 0.0319555, -0.0341291, 0.0484479, 0.594849, 0.024981, -0.595183, 0.0499084, 470.302, 1396.84, -58.7901)
 mesh = SubResource("ArrayMesh_c5jrd")
 skeleton = NodePath("")
 
-[node name="Pipeline19" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2"]
+[node name="Pipeline19" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2" unique_id=1916961576]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -382.032, 132.438, -6.60677)
 
-[node name="GeometryTransformHelper614" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/Pipeline19"]
+[node name="GeometryTransformHelper614" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/Pipeline19" unique_id=845330988]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1434.63, -175.345, 2206.34)
 mesh = SubResource("ArrayMesh_43sns")
 skeleton = NodePath("")
 
-[node name="PipeLine37" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2"]
+[node name="PipeLine37" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2" unique_id=2085071394]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -171.149, 96.0626, -384.581)
 
-[node name="GeometryTransformHelper615" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/PipeLine37"]
+[node name="GeometryTransformHelper615" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/PipeLine37" unique_id=1072170501]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1223.75, -138.971, 2584.31)
 mesh = SubResource("ArrayMesh_5fqgg")
 skeleton = NodePath("")
 
-[node name="PipeLine38" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2"]
+[node name="PipeLine38" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2" unique_id=844891478]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -439.837, 62.6422, 111.543)
 
-[node name="GeometryTransformHelper616" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/PipeLine38"]
+[node name="GeometryTransformHelper616" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/PipeLine38" unique_id=730067550]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1492.44, -105.55, 2088.19)
 mesh = SubResource("ArrayMesh_wcohb")
 skeleton = NodePath("")
 
-[node name="PipeLine39" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2"]
+[node name="PipeLine39" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Pipes2" unique_id=590764085]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 311.981, 33.0212, 116.966)
 
-[node name="GeometryTransformHelper617" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/PipeLine39"]
+[node name="GeometryTransformHelper617" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2/PipeLine39" unique_id=628483590]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 740.621, -75.9294, 2082.77)
 mesh = SubResource("ArrayMesh_bro0h")
 skeleton = NodePath("")
 
-[node name="PipeLine12" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2"]
+[node name="PipeLine12" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2" unique_id=476219721]
 transform = Transform3D(1.34761, 0, 0, 0, 1.34761, 0, 0, 0, 1.34761, 1564.51, -61.445, 3039.61)
 mesh = SubResource("ArrayMesh_m1asd")
 skeleton = NodePath("")
 
-[node name="PipeLine13" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2"]
+[node name="PipeLine13" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2" unique_id=179382873]
 transform = Transform3D(1.45536, 0, 0, 0, 1.45536, 0, 0, 0, 1.45536, 1746.8, -66.1413, 3383.77)
 mesh = SubResource("ArrayMesh_ob3uv")
 skeleton = NodePath("")
 
-[node name="Pipeline20" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2"]
+[node name="Pipeline20" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Pipes2" unique_id=284552316]
 transform = Transform3D(0.596296, 0.0277073, 0.0319555, -0.0341291, 0.0484479, 0.594849, 0.024981, -0.595183, 0.0499084, 470.302, 1396.84, -58.7901)
 mesh = SubResource("ArrayMesh_pvu23")
 skeleton = NodePath("")
 
-[node name="Boilers" type="Node3D" parent="Model/ZONE08/boiler_room/props4"]
+[node name="Boilers" type="Node3D" parent="Model/ZONE08/boiler_room/props4" unique_id=230677103]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 125.356, 182.009, -3.30696)
 
-[node name="GeometryTransformHelper150" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Boilers"]
+[node name="GeometryTransformHelper150" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Boilers" unique_id=1062546692]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 920.912, -231.896, 2203.04)
 
-[node name="LargeBoiler2" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Boilers"]
+[node name="LargeBoiler2" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Boilers" unique_id=1876631966]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -276.543, 8.49768, 125.146)
 
-[node name="GeometryTransformHelper618" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Boilers/LargeBoiler2"]
+[node name="GeometryTransformHelper618" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Boilers/LargeBoiler2" unique_id=1414965457]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1197.45, -240.394, 2077.89)
 mesh = SubResource("ArrayMesh_h154h")
 skeleton = NodePath("")
 
-[node name="SmallBoiler5" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Boilers"]
+[node name="SmallBoiler5" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Boilers" unique_id=112897049]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 920.912, -231.896, 2203.04)
 mesh = SubResource("ArrayMesh_327uo")
 skeleton = NodePath("")
 
-[node name="SmallBoiler7" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Boilers"]
+[node name="SmallBoiler7" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Boilers" unique_id=225749680]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 401.542, -46.1728, -283.501)
 
-[node name="GeometryTransformHelper619" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Boilers/SmallBoiler7"]
+[node name="GeometryTransformHelper619" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Boilers/SmallBoiler7" unique_id=959322054]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 519.37, -185.723, 2400.25)
 mesh = SubResource("ArrayMesh_uqm0i")
 skeleton = NodePath("")
 
-[node name="SmallBoiler6" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Boilers"]
+[node name="SmallBoiler6" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Boilers" unique_id=1039373310]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82.1553, -50.6856, -189.784)
 
-[node name="GeometryTransformHelper620" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Boilers/SmallBoiler6"]
+[node name="GeometryTransformHelper620" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Boilers/SmallBoiler6" unique_id=705077813]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1003.07, -181.21, 2392.82)
 mesh = SubResource("ArrayMesh_lr5aa")
 skeleton = NodePath("")
 
-[node name="SmallBoiler2" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Boilers"]
+[node name="SmallBoiler2" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Boilers" unique_id=645528804]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -216.48, -51.5112, -148.685)
 
-[node name="GeometryTransformHelper621" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Boilers/SmallBoiler2"]
+[node name="GeometryTransformHelper621" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Boilers/SmallBoiler2" unique_id=531326554]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1137.39, -180.385, 2351.72)
 mesh = SubResource("ArrayMesh_nkeot")
 skeleton = NodePath("")
 
-[node name="SmallBoiler3" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Boilers"]
+[node name="SmallBoiler3" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Boilers" unique_id=559341862]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -392.074, -20.2313, -124.714)
 
-[node name="GeometryTransformHelper622" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Boilers/SmallBoiler3"]
+[node name="GeometryTransformHelper622" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Boilers/SmallBoiler3" unique_id=206281333]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1312.99, -211.665, 2327.75)
 mesh = SubResource("ArrayMesh_7ntl0")
 skeleton = NodePath("")
 
-[node name="SmallBoiler4" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Boilers"]
+[node name="SmallBoiler4" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Boilers" unique_id=1516271938]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 87.8262, -26.2537, -179.582)
 
-[node name="GeometryTransformHelper623" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Boilers/SmallBoiler4"]
+[node name="GeometryTransformHelper623" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Boilers/SmallBoiler4" unique_id=1292716412]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 833.086, -205.642, 2382.62)
 mesh = SubResource("ArrayMesh_ny66a")
 skeleton = NodePath("")
 
-[node name="Rail" type="Node3D" parent="Model/ZONE08/boiler_room/props4"]
+[node name="Rail" type="Node3D" parent="Model/ZONE08/boiler_room/props4" unique_id=1395833480]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75.062, 178.723, -458.663)
 
-[node name="GeometryTransformHelper151" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Rail"]
+[node name="GeometryTransformHelper151" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Rail" unique_id=1904814267]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 971.206, -237.642, 2647.64)
 
-[node name="RailCollision" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Rail"]
+[node name="RailCollision" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Rail" unique_id=1739762952]
 transform = Transform3D(0, 0, 2.80448, 0, 2.80448, 0, -2.80448, 0, 0, 353.998, 95.1393, -12.0989)
 visible = false
 mesh = SubResource("ArrayMesh_c1r3n")
 skeleton = NodePath("")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE08/boiler_room/props4/Rail/RailCollision"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Model/ZONE08/boiler_room/props4/Rail/RailCollision" unique_id=291201321]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE08/boiler_room/props4/Rail/RailCollision/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/ZONE08/boiler_room/props4/Rail/RailCollision/StaticBody3D" unique_id=1426020977]
 shape = SubResource("ConcavePolygonShape3D_qd247")
 
-[node name="RailFace" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Rail"]
+[node name="RailFace" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Rail" unique_id=961502665]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.306921, -60.798, 10.1881)
 
-[node name="GeometryTransformHelper624" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Rail/RailFace"]
+[node name="GeometryTransformHelper624" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Rail/RailFace" unique_id=1802857101]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 968.359, -175.852, 2651.34)
 mesh = SubResource("ArrayMesh_nufxj")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_jlrqh")
 
-[node name="RailTop" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Rail"]
+[node name="RailTop" type="Node3D" parent="Model/ZONE08/boiler_room/props4/Rail" unique_id=296255870]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.78103, -56.5574, 9.70503)
 
-[node name="GeometryTransformHelper625" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Rail/RailTop"]
+[node name="GeometryTransformHelper625" type="MeshInstance3D" parent="Model/ZONE08/boiler_room/props4/Rail/RailTop" unique_id=1350082081]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 978.987, -181.085, 2648.22)
 mesh = SubResource("ArrayMesh_82s8v")
 skeleton = NodePath("")
 
-[node name="ENTRANCE" type="Node3D" parent="."]
+[node name="ENTRANCE" type="Node3D" parent="." unique_id=2091127094]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -13.885, 1.533, -75.863)
 
-[node name="EXIT" type="Node3D" parent="."]
+[node name="EXIT" type="Node3D" parent="." unique_id=800024336]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.491, 4.6, -101.022)
 
-[node name="RoomArea" type="Area3D" parent="."]
+[node name="RoomArea" type="Area3D" parent="." unique_id=822122862]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.0419, 9.53674e-07, -75.4197)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoomArea"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoomArea" unique_id=1617415791]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5395, 6.06096, -5.19733)
 shape = SubResource("BoxShape3D_lgslu")
 
-[node name="Navigation" type="NavigationRegion3D" parent="."]
+[node name="Navigation" type="NavigationRegion3D" parent="." unique_id=963260922]
 visible = false
 navigation_mesh = SubResource("NavigationMesh_4hob2")
 
-[node name="GeometryTransformHelper600" type="MeshInstance3D" parent="Navigation"]
+[node name="GeometryTransformHelper600" type="MeshInstance3D" parent="Navigation" unique_id=371698713]
 transform = Transform3D(0.033, 0, 0, 0, 0.033, 0, 0, 0, 0.033, -105.73, -1.62125e-05, 4.59866)
 mesh = SubResource("ArrayMesh_hpatv")
 skeleton = NodePath("")
 
-[node name="GeometryTransformHelper597" type="MeshInstance3D" parent="Navigation"]
+[node name="GeometryTransformHelper597" type="MeshInstance3D" parent="Navigation" unique_id=1162925551]
 transform = Transform3D(0.033, 0, 0, 0, 0.033, 0, 0, 0, 0.033, 0.000328064, -1.62125e-05, 0)
 mesh = SubResource("ArrayMesh_7cqm1")
 skeleton = NodePath("")
 
-[node name="floor223" type="MeshInstance3D" parent="Navigation"]
+[node name="floor223" type="MeshInstance3D" parent="Navigation" unique_id=348110852]
 transform = Transform3D(0.033, 0, 0, 0, 0.033, 0, 0, 0, 0.033, 0.000164032, 1.19209e-07, 0)
 mesh = SubResource("ArrayMesh_sa15s")
 skeleton = NodePath("")
 
-[node name="factory_boiler_room_exterior" parent="." instance=ExtResource("32_h0toi")]
+[node name="factory_boiler_room_exterior" parent="." unique_id=2098687497 instance=ExtResource("32_h0toi")]

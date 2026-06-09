@@ -10,6 +10,13 @@ var ICONS := {
 	'accuracy': load("res://ui_assets/battle/statuses/accuracy.png"),
 }
 
+var RANDOM_ICONS := {
+	'damage': load("res://ui_assets/battle/statuses/damage.png"),
+	'defense': load("res://ui_assets/battle/statuses/defense.png"),
+	'evasiveness': load("res://ui_assets/battle/statuses/evasiveness.png"),
+	'luck': load("res://ui_assets/battle/statuses/luck_crit.png"),
+}
+
 @export var stat: String = 'defense'
 @export var boost: float = 1.0
 
@@ -55,7 +62,7 @@ func get_quality() -> EffectQuality:
 	return EffectQuality.NEGATIVE
 
 func randomize_effect() -> void:
-	stat = ICONS.keys().pick_random()
+	stat = RANDOM_ICONS.keys().pick_random()
 	rounds = randi_range(1, 3)
 	boost = randf_range(-0.25, 0.25)
 	if boost > 0.0:

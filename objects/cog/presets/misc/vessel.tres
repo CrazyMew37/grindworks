@@ -20,6 +20,7 @@ scale = 4.125
 head_textures = PackedStringArray("res://models/cogs/heads/no_more_face_man.png")
 can_speak = false
 attacks = Array[ExtResource("1_dwl5n")]([SubResource("Resource_1evcu")])
+is_admin = true
 health_mod = 1.3
 external_assets = {
 &"head_model": "",

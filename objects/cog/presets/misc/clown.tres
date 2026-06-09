@@ -22,6 +22,7 @@ head_textures = PackedStringArray("res://models/cogs/heads/clown1_faceClown.png"
 attacks = Array[ExtResource("1_u8onf")]([ExtResource("2_tmyoo"), ExtResource("3_udsor"), ExtResource("5_7gsud")])
 level_high = 20
 baked_status_effects = PackedStringArray("res://objects/battle/battle_resources/status_effects/resources/attentive.tres", "res://objects/battle/battle_resources/status_effects/resources/boss_logic_clown.tres")
+is_admin = true
 health_mod = 1.3
 battle_phrases = Array[String](["My business is funny business."])
 external_assets = {

@@ -1244,9 +1244,9 @@ label_settings = SubResource("LabelSettings_w0kd7")
 [node name="HSlider" type="HSlider" parent="Menus/AtrributeSelectors/VBoxContainer/LevelMaximum" unique_id=555594136]
 layout_mode = 2
 theme = ExtResource("206_3yxei")
-min_value = 1.0
+min_value = 15.0
 max_value = 15.0
-value = 1.0
+value = 15.0
 
 [node name="ProxyToggle" type="HBoxContainer" parent="Menus/AtrributeSelectors/VBoxContainer" unique_id=860231901]
 layout_mode = 2
@@ -1262,7 +1262,6 @@ layout_mode = 2
 focus_mode = 0
 
 [node name="AbilityCountSlider" type="VBoxContainer" parent="Menus/AtrributeSelectors/VBoxContainer" unique_id=223152292]
-visible = false
 layout_mode = 2
 
 [node name="Label" type="Label" parent="Menus/AtrributeSelectors/VBoxContainer/AbilityCountSlider" unique_id=1334676342]
@@ -1274,7 +1273,6 @@ label_settings = SubResource("LabelSettings_w0kd7")
 layout_mode = 2
 theme = ExtResource("206_3yxei")
 max_value = 10.0
-value = 1.0
 
 [node name="AtrributeSelectorsPart2" type="Control" parent="Menus" unique_id=282610892]
 visible = false

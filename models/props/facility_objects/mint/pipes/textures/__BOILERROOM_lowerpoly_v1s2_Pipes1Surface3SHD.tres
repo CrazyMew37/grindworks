@@ -4,6 +4,8 @@
 
 [resource]
 resource_name = "__BOILERROOM_lowerpoly_v1s2_Pipes1Surface3SHD"
+transparency = 1
+cull_mode = 2
 vertex_color_use_as_albedo = true
 vertex_color_is_srgb = true
 albedo_color = Color(0.906332, 0.906332, 0.906332, 0.8)

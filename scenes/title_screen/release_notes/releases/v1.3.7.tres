@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="ReleaseNote" format=3 uid="uid://lcu6a46ylo4q"]
+
+[ext_resource type="Script" uid="uid://d1j0hh6tsgy0r" path="res://scenes/title_screen/release_notes/release_note.gd" id="1_lsmo2"]
+
+[resource]
+script = ExtResource("1_lsmo2")
+release_version = "v1.3.7 (CM37E)"
+notes = "[TITLE] Facilties
+Various unused rooms were added to the game! (Albeit adjusted and some are original) The following was added:
+  4 New Rooms added to the Factory (Two original)
+  3 New Rooms added to the Mint (All original)
+  5 New Rooms added to the D.A. Office (Two original)
+  3 New Rooms added to the Cog Golf Course (Two original)
+  4 New Rooms added to the Molten Mint (One original)
+Every facility now has special MEGA Cog battles! These rooms have 7 cogs in one fight! Beating this tough battle will let you access some special chests.
+The Goontorial Room can now appear multiple times
+The Mole Game Sand Trap room is now a special room with special chests due to how hard it is compared to normal Mole Stomp.
+Fixed the Boiler Room's textures
+Cog bosses will now be even harder starting Floor 8
+[TITLE] Cog Creator
+You can now give non-proxies proxy abilities. Just remember to adjust the slider if need be!
+[TITLE] Misc.
+Heckle's effects now increase every 5 floors.
+Hazard Damage now scales every 5 floors.
+Partner Toon damage will now scale with your damage.
+The Clowns, Slendercog, and his Vessels are now Administrators (Their HP will now scale in endless)
+Fixed the randomize effects of stat boost being able to affect accuracy."
+metadata/_custom_type_script = "uid://d1j0hh6tsgy0r"

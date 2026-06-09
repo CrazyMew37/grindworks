@@ -86,6 +86,26 @@ script = ExtResource("1_0sqxl")
 room = "res://objects/modules/factory/variants/factory_long_paint_obstacle.tscn"
 metadata/_custom_type_script = "uid://ci1am4p7axbxy"
 
+[sub_resource type="Resource" id="Resource_x2jwy"]
+script = ExtResource("1_0sqxl")
+room = "res://objects/modules/factory/variants/factory_goontorial.tscn"
+metadata/_custom_type_script = "uid://ci1am4p7axbxy"
+
+[sub_resource type="Resource" id="Resource_3x6g4"]
+script = ExtResource("1_0sqxl")
+room = "res://objects/modules/factory/variants/factory_paint_l_conveyors.tscn"
+metadata/_custom_type_script = "uid://ci1am4p7axbxy"
+
+[sub_resource type="Resource" id="Resource_18nv5"]
+script = ExtResource("1_0sqxl")
+room = "res://objects/modules/factory/variants/factory_paint_mixer_sinking_platforms.tscn"
+metadata/_custom_type_script = "uid://ci1am4p7axbxy"
+
+[sub_resource type="Resource" id="Resource_nd683"]
+script = ExtResource("1_0sqxl")
+room = "res://objects/modules/factory/variants/factory_catwalk_goons.tscn"
+metadata/_custom_type_script = "uid://ci1am4p7axbxy"
+
 [sub_resource type="Resource" id="Resource_fyijm"]
 script = ExtResource("1_0sqxl")
 room = "res://objects/modules/factory/variants/factory_shop.tscn"
@@ -94,15 +114,20 @@ room = "res://objects/modules/factory/variants/factory_shop.tscn"
 script = ExtResource("1_0sqxl")
 room = "res://objects/modules/factory/variants/factory_warehouse_conveyors.tscn"
 
+[sub_resource type="Resource" id="Resource_a7y36"]
+script = ExtResource("1_0sqxl")
+room = "res://objects/modules/factory/variants/factory_lobby_mega_battle.tscn"
+rarity_weight = 0.8
+metadata/_custom_type_script = "uid://ci1am4p7axbxy"
+
 [resource]
 script = ExtResource("2_pk8mt")
 entrances = PackedStringArray("res://objects/modules/factory/base_rooms/factory_entrance.tscn")
 battle_rooms = Array[ExtResource("1_0sqxl")]([SubResource("Resource_l7op8"), SubResource("Resource_saks8"), SubResource("Resource_vwlyh"), SubResource("Resource_p5yx7"), SubResource("Resource_8nxu8"), SubResource("Resource_0baxo"), SubResource("Resource_jwktu"), SubResource("Resource_0sqxl"), SubResource("Resource_le1d0")])
-obstacle_rooms = Array[ExtResource("1_0sqxl")]([SubResource("Resource_x2dqo"), SubResource("Resource_n0tym"), SubResource("Resource_eaopf"), SubResource("Resource_4d0qs"), SubResource("Resource_cbv6q"), SubResource("Resource_r7f44"), SubResource("Resource_jgawv"), SubResource("Resource_pk8mt")])
+obstacle_rooms = Array[ExtResource("1_0sqxl")]([SubResource("Resource_x2dqo"), SubResource("Resource_n0tym"), SubResource("Resource_eaopf"), SubResource("Resource_4d0qs"), SubResource("Resource_cbv6q"), SubResource("Resource_r7f44"), SubResource("Resource_jgawv"), SubResource("Resource_pk8mt"), SubResource("Resource_x2jwy"), SubResource("Resource_3x6g4"), SubResource("Resource_18nv5"), SubResource("Resource_nd683")])
 connectors = PackedStringArray("res://objects/modules/factory/base_rooms/factory_connector1.tscn", "res://objects/modules/factory/variants/factory_connector_2.tscn", "res://objects/modules/factory/variants/factory_connector_snake.tscn", "res://objects/modules/factory/variants/factory_connector_snake_2.tscn")
 pre_final_rooms = Array[ExtResource("1_0sqxl")]([SubResource("Resource_fyijm")])
 final_rooms = Array[ExtResource("1_0sqxl")]([SubResource("Resource_xklq2"), SubResource("Resource_jn3e5")])
-one_time_rooms = PackedStringArray("res://objects/modules/factory/variants/factory_goontorial.tscn")
-special_rooms = Array[ExtResource("1_0sqxl")]([SubResource("Resource_lh4p2")])
+special_rooms = Array[ExtResource("1_0sqxl")]([SubResource("Resource_lh4p2"), SubResource("Resource_a7y36")])
 background_music = PackedStringArray("res://audio/music/CHQ_FACT_bg.ogg")
 battle_music = "res://audio/music/seize_the_means.ogg"

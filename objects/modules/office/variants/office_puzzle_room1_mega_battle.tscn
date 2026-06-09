@@ -1,0 +1,355 @@
+[gd_scene format=4 uid="uid://b6yaujdllc152"]
+
+[ext_resource type="PackedScene" uid="uid://cyai35bfek33x" path="res://objects/modules/office/base_rooms/office_puzzle_room1.tscn" id="1_2iy66"]
+[ext_resource type="PackedScene" uid="uid://btajacdw0exth" path="res://objects/props/office/partition.tscn" id="3_ocjj7"]
+[ext_resource type="PackedScene" uid="uid://cng3jffjmwdv8" path="res://objects/props/office/couch.tscn" id="4_8pr8n"]
+[ext_resource type="PackedScene" uid="uid://dimw8665cqqxw" path="res://objects/props/office/desk.tscn" id="5_g1nnp"]
+[ext_resource type="PackedScene" uid="uid://dn6p7pcjhawfb" path="res://objects/props/office/chair.tscn" id="6_63iim"]
+[ext_resource type="PackedScene" uid="uid://b1cl5gdttc2ps" path="res://objects/props/office/lamp_small.tscn" id="7_qqp38"]
+[ext_resource type="PackedScene" uid="uid://ceghombqxco7o" path="res://objects/props/office/bookshelf.tscn" id="8_c5xe7"]
+[ext_resource type="PackedScene" uid="uid://d0bnakgqatchq" path="res://objects/props/office/lamp_big.tscn" id="9_it075"]
+[ext_resource type="PackedScene" uid="uid://dxyq5lb5oineo" path="res://objects/interactables/treasure_chest/treasure_chest.tscn" id="10_peh0w"]
+[ext_resource type="Resource" uid="uid://kcxno616hkgc" path="res://objects/items/pools/special_items.tres" id="10_x5o00"]
+[ext_resource type="PackedScene" uid="uid://c1rus4vu8jrlg" path="res://objects/battle/battle_node/dynamic/battle_node_dynamic.tscn" id="12_45ogl"]
+[ext_resource type="PackedScene" uid="uid://c6mq4831rc0uj" path="res://objects/props/office/portrait_backstabber.tscn" id="12_uhxa3"]
+[ext_resource type="Texture2D" uid="uid://bsyw18ph00mex" path="res://models/facilities/office/textures/Legal_Eagle_Front_Edit.png" id="13_q67kt"]
+[ext_resource type="Texture2D" uid="uid://d2p822f7gqx3y" path="res://models/facilities/office/textures/LB_squarewindows_1.png" id="14_x5o00"]
+[ext_resource type="Texture2D" uid="uid://cwsb163k5ij6d" path="res://models/facilities/office/textures/CBStationLightTubes.png" id="15_2iy66"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uhxa3"]
+size = Vector3(41.238235, 13.04, 7.2356253)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qp303"]
+resource_name = "Legal_Eagle_Front"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("13_q67kt")
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 0.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qi5l2"]
+resource_name = "LB_squarewindows_1"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("14_x5o00")
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 0.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7vnlf"]
+resource_name = "CBStationLightTubes.001"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("15_2iy66")
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 0.0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_mc886"]
+_surfaces = [{
+"aabb": AABB(7.3394775e-05, -0.021320548, -0.02692707, 0.00039499285, 0.042637743, 0.053855456),
+"format": 34359742465,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAgADAAAA"),
+"name": "Legal_Eagle_Front",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("7JH1OfFVrjwuXdy8mplWOW6orrwplty8heuZOPtcrrzsX9w8AMCwOWWhrjzsmNw8")
+}, {
+"aabb": AABB(-0.00046836853, -0.021320548, -0.026928391, 0.00093675614, 0.042641096, 0.05385678),
+"format": 34359742465,
+"index_count": 48,
+"index_data": PackedByteArray("AAABAAIAAgABAAMAAwAEAAIAAgAFAAAABgAEAAMABQAGAAcAAwAHAAYABwAAAAUAAwABAAgACAABAAAACAAJAAMAAAAKAAgAAwAJAAsACwAKAAAACwAHAAMAAAAHAAsA"),
+"name": "LB_squarewindows_1",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("XI/1ufFVrrwpXdw8e5RWuW6orjwpltw8AMCwOWWhrjzsmNw8SOGZuPtcrjzxX9y87JH1OfFVrjwuXdy8heuZOPtcrrzsX9w8mplWOW6orrwplty8cb2wuWahrrzumNy8FnFduU1coDwWSs48WnG5uL0VoDyIGM68V6vtubMOoLzAFc48I0+tuUVVoLzbTM68")
+}, {
+"aabb": AABB(-0.0004533182, -0.01957191, -0.025183132, 0.00036489218, 0.039147172, 0.05036494),
+"format": 34359742465,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAgADAAAA"),
+"name": "CBStationLightTubes.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("V6vtubMOoLzAFc48I0+tuUVVoLzbTM68WnG5uL0VoDyIGM68FnFduU1coDwWSs48")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ghq27"]
+resource_name = "Mesh_97_002"
+_surfaces = [{
+"aabb": AABB(7.3394775e-05, -0.021320548, -0.02692707, 0.00039499285, 0.042637743, 0.053855456),
+"attribute_data": PackedByteArray("/////+HSJD+IVs0+/////xUhsT6IVs0+/////xUhsT5oR9M9/////+HSJD9oR9M9"),
+"format": 34359742495,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAgADAAAA"),
+"material": SubResource("StandardMaterial3D_qp303"),
+"name": "Legal_Eagle_Front",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("7JH1OfFVrjwuXdy8mplWOW6orrwplty8heuZOPtcrrzsX9w8AMCwOWWhrjzsmNw85v42f8iAj//m/jZ/yICP/+b+Nn/IgI//5v42f8iAj/8=")
+}, {
+"aabb": AABB(-0.00046836853, -0.021320548, -0.026928391, 0.00093675614, 0.042641096, 0.05385678),
+"attribute_data": PackedByteArray("/////0hVjj0AAAAA/////0ZVjj3//38//////7szoDsAAIA//////1UzoDsAAAAA/////1UzoDsAAAAA/////0hVjj0AAAAA/////0ZVjj3//38//////7szoDsAAIA//////0tVjj0AAAA0/////0ZVjj0AAIA//////zQzoDsAAIA///////ozoDsAAAA0/////0hVjj0AAAAA/////0ZVjj3//38//////7szoDsAAIA//////1UzoDsAAAAA//////bWQT6GPIU+//////DWQT69YT0/9QYS/yaMXz7kqyc/9QYS/yiMXz46qLA+//////bWQT6GPIU+9QYS/yiMXz46qLA+9QYS/+45uD46qLA+/////4oUxz6IPIU+/////4gUxz69YT0/9QYS/+05uD7kqyc/9QYS/yaMXz7kqyc///////DWQT69YT0//////4gUxz69YT0//////4oUxz6IPIU+9QYS/+45uD46qLA+9QYS/+05uD7kqyc/"),
+"format": 34359742495,
+"index_count": 48,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQAGAAZABoAGgAbABgAHAAdAB4AHgAfABwA"),
+"material": SubResource("StandardMaterial3D_qi5l2"),
+"name": "LB_squarewindows_1",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 32,
+"vertex_data": PackedByteArray("XI/1ufFVrrwpXdw8e5RWuW6orjwpltw8AMCwOWWhrjzsmNw8heuZOPtcrrzsX9w8AMCwOWWhrjzsmNw8e5RWuW6orjwpltw8SOGZuPtcrjzxX9y87JH1OfFVrjwuXdy8cb2wuWahrrzumNy8XI/1ufFVrrwpXdw8heuZOPtcrrzsX9w8mplWOW6orrwplty8SOGZuPtcrjzxX9y8cb2wuWahrrzumNy8mplWOW6orrwplty87JH1OfFVrjwuXdy8SOGZuPtcrjzxX9y8e5RWuW6orjwpltw8FnFduU1coDwWSs48WnG5uL0VoDyIGM68SOGZuPtcrjzxX9y8WnG5uL0VoDyIGM68I0+tuUVVoLzbTM68cb2wuWahrrzumNy8XI/1ufFVrrwpXdw8V6vtubMOoLzAFc48FnFduU1coDwWSs48e5RWuW6orjwpltw8XI/1ufFVrrwpXdw8cb2wuWahrrzumNy8I0+tuUVVoLzbTM68V6vtubMOoLzAFc48r3/rf8kAi8Cvf+t/yQCLwK9/63/JAIvAr3/rf8kAi8DegDX/yQCLwN6ANf/JAIvA3oA1/8kAi8DegDX/yQCLwDV/3gDJAIvANX/eAMkAi8A1f94AyQCLwDV/3gDJAIvA6v+v/8kAi8Dq/6//yACLwOr/r//IAIvA6v+v/8kAi8DJABiBHu7rf8kAGIGZf6lLyQAYgZh/5EvJABiBv+/pf8kAGIEhf5p/yQAYgSF/mn/JABiBIX+af8kAGIEhf5p/yQAYgSF/mn/JABiBIX+af8kAGIEhf5p/yQAYgSF/mn/JABiBHu7rf8kAGIGZf6lLyQAYgZh/5EvJABiBv+/pfw==")
+}, {
+"aabb": AABB(-0.0004533182, -0.01957191, -0.025183132, 0.00036489218, 0.039147172, 0.05036494),
+"attribute_data": PackedByteArray("9QYS//OEdT98tHc/9QYS//CEdT/gtwQ99QYS/6GwJz0QuAQ99QYS/8SwJz1/tHc/"),
+"format": 34359742495,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAgADAAAA"),
+"material": SubResource("StandardMaterial3D_7vnlf"),
+"name": "CBStationLightTubes.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("V6vtubMOoLzAFc48I0+tuUVVoLzbTM68WnG5uL0VoDyIGM68FnFduU1coDwWSs48yQAYgSF/mn/JABiBIX+af8kAGIEhf5p/yQAYgSF/mn8=")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_mc886")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ocjj7"]
+resource_local_to_scene = true
+resource_name = "CBStationLightTubes.001"
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.321728, 0.321728, 0.321728, 1)
+albedo_texture = ExtResource("15_2iy66")
+emission = Color(1, 0, 0, 1)
+emission_energy_multiplier = 0.25
+
+[node name="OfficePuzzleRoom1" unique_id=1676501018 instance=ExtResource("1_2iy66")]
+
+[node name="Props" type="Node3D" parent="." index="4" unique_id=1470079424]
+
+[node name="LeftPuzzleWalls" type="Node3D" parent="Props" index="0" unique_id=70360175]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.80013, -9.53674e-07, -2.26569)
+
+[node name="WallLeft" type="Node3D" parent="Props/LeftPuzzleWalls" index="0" unique_id=1998405512]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, -6.83758)
+
+[node name="Partition" parent="Props/LeftPuzzleWalls/WallLeft" index="0" unique_id=1294961413 instance=ExtResource("3_ocjj7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.38887, -0.075999, 0.108309)
+
+[node name="Partition2" parent="Props/LeftPuzzleWalls/WallLeft" index="1" unique_id=2135467477 instance=ExtResource("3_ocjj7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.63745, -0.075999, 0.108309)
+
+[node name="Partition3" parent="Props/LeftPuzzleWalls/WallLeft" index="2" unique_id=1535612598 instance=ExtResource("3_ocjj7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.995342, -0.075999, 0.108309)
+
+[node name="WallRight" type="Node3D" parent="Props/LeftPuzzleWalls" index="1" unique_id=1846810713]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 6.528)
+
+[node name="Partition" parent="Props/LeftPuzzleWalls/WallRight" index="0" unique_id=39904982 instance=ExtResource("3_ocjj7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.38887, -0.075999, 0.108309)
+
+[node name="Partition2" parent="Props/LeftPuzzleWalls/WallRight" index="1" unique_id=651697816 instance=ExtResource("3_ocjj7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.63745, -0.075999, 0.108309)
+
+[node name="Partition3" parent="Props/LeftPuzzleWalls/WallRight" index="2" unique_id=1711159427 instance=ExtResource("3_ocjj7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.995342, -0.075999, 0.108309)
+
+[node name="RightPuzzleWalls" type="Node3D" parent="Props" index="1" unique_id=1911111937]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.299, 0, -2.266)
+
+[node name="WallLeft" type="Node3D" parent="Props/RightPuzzleWalls" index="0" unique_id=1250994801]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, -6.83758)
+
+[node name="Partition2" parent="Props/RightPuzzleWalls/WallLeft" index="0" unique_id=1801931860 instance=ExtResource("3_ocjj7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.63745, -0.075999, 0.108309)
+
+[node name="Partition3" parent="Props/RightPuzzleWalls/WallLeft" index="1" unique_id=687077982 instance=ExtResource("3_ocjj7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.995342, -0.075999, 0.108309)
+
+[node name="Partition4" parent="Props/RightPuzzleWalls/WallLeft" index="2" unique_id=500413379 instance=ExtResource("3_ocjj7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.63581, -0.075999, 0.108309)
+
+[node name="WallRight" type="Node3D" parent="Props/RightPuzzleWalls" index="1" unique_id=974062699]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 6.528)
+
+[node name="Partition2" parent="Props/RightPuzzleWalls/WallRight" index="0" unique_id=2104282493 instance=ExtResource("3_ocjj7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.63745, -0.075999, 0.108309)
+
+[node name="Partition3" parent="Props/RightPuzzleWalls/WallRight" index="1" unique_id=1857089807 instance=ExtResource("3_ocjj7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.995342, -0.075999, 0.108309)
+
+[node name="Partition4" parent="Props/RightPuzzleWalls/WallRight" index="2" unique_id=34900435 instance=ExtResource("3_ocjj7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.63581, -0.075999, 0.108309)
+
+[node name="EntranceWalls" type="Node3D" parent="Props" index="2" unique_id=1897720367]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 18.0803)
+
+[node name="BackArea" type="Node3D" parent="Props" index="3" unique_id=313377679]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -16.2152)
+
+[node name="couch" parent="Props/BackArea" index="0" unique_id=2087300448 instance=ExtResource("4_8pr8n")]
+transform = Transform3D(0.0035562518, 0, -1.249995, 0, 1.25, 0, 1.249995, 0, 0.0035562518, 19.831825, 0.01, 15.916009)
+
+[node name="couch2" parent="Props/BackArea" index="1" unique_id=1928778141 instance=ExtResource("4_8pr8n")]
+transform = Transform3D(0.0035562518, 0, -1.249995, 0, 1.25, 0, 1.249995, 0, 0.0035562518, 19.820488, 0.01, 11.931435)
+
+[node name="couch3" parent="Props/BackArea" index="2" unique_id=309714737 instance=ExtResource("4_8pr8n")]
+transform = Transform3D(0.0002180189, 0, 1.25, 0, 1.25, 0, -1.25, 0, 0.0002180189, -19.722483, 0.01, 12.007656)
+
+[node name="couch4" parent="Props/BackArea" index="3" unique_id=1037602297 instance=ExtResource("4_8pr8n")]
+transform = Transform3D(0.0002180189, 0, 1.25, 0, 1.25, 0, -1.25, 0, 0.0002180189, -19.723177, 0.01, 15.992247)
+
+[node name="desk" parent="Props" index="4" unique_id=745200025 instance=ExtResource("5_g1nnp")]
+transform = Transform3D(-1.2500005, 0, -1.0927851e-07, 0, 1.25, 0, 1.0927851e-07, 0, -1.2500005, 13.0762, 0, 5.207322)
+
+[node name="chair" parent="Props/desk" index="2" unique_id=1307308061 instance=ExtResource("6_63iim")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0971216, 0, -1.35655)
+
+[node name="lamp_small" parent="Props/desk" index="3" unique_id=191200863 instance=ExtResource("7_qqp38")]
+transform = Transform3D(1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, -0.722792, 0.973985, 0.176489)
+
+[node name="law_bookshelf3" parent="Props" index="5" unique_id=299078821 instance=ExtResource("8_c5xe7")]
+transform = Transform3D(-1.12983, 0, 0.986654, 0, 1.5, 0, -0.986654, 0, -1.12983, -9.12063, 0.01, 14.3679)
+
+[node name="law_bookshelf4" parent="Props" index="6" unique_id=1121224567 instance=ExtResource("8_c5xe7")]
+transform = Transform3D(-1.12983, 0, 0.986654, 0, 1.5, 0, -0.986654, 0, -1.12983, -12.1403, 0.01, 11.7309)
+
+[node name="law_bookshelf5" parent="Props" index="7" unique_id=1041659304 instance=ExtResource("8_c5xe7")]
+transform = Transform3D(-1.12983, 0, 0.986654, 0, 1.5, 0, -0.986654, 0, -1.12983, -15.1674, 0.01, 9.08737)
+
+[node name="lamp_big" parent="Props" index="8" unique_id=11495493 instance=ExtResource("9_it075")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.81149, 0, -9.85803)
+
+[node name="lamp_big2" parent="Props" index="9" unique_id=992849213 instance=ExtResource("9_it075")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.00578, 0, -9.85803)
+
+[node name="lamp_big3" parent="Props" index="10" unique_id=196593785 instance=ExtResource("9_it075")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.81149, 0, 5.05013)
+
+[node name="lamp_big4" parent="Props" index="11" unique_id=373777756 instance=ExtResource("9_it075")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.00578, 0, 5.05013)
+
+[node name="treasure_chest" parent="Props" index="12" unique_id=1985746082 instance=ExtResource("10_peh0w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -21)
+item_pool = ExtResource("10_x5o00")
+
+[node name="desk2" parent="Props" index="13" unique_id=1671004738 instance=ExtResource("5_g1nnp")]
+transform = Transform3D(-1.2500005, 0, -1.0927851e-07, 0, 1.25, 0, 1.0927851e-07, 0, -1.2500005, 9.644034, 0, 5.207322)
+
+[node name="chair" parent="Props/desk2" index="2" unique_id=829999643 instance=ExtResource("6_63iim")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0971216, 0, -1.35655)
+
+[node name="lamp_small" parent="Props/desk2" index="3" unique_id=469563861 instance=ExtResource("7_qqp38")]
+transform = Transform3D(1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, -0.722792, 0.973985, 0.176489)
+
+[node name="desk3" parent="Props" index="14" unique_id=465747427 instance=ExtResource("5_g1nnp")]
+transform = Transform3D(-1.2500005, 0, -1.0927851e-07, 0, 1.25, 0, 1.0927851e-07, 0, -1.2500005, -8.818554, 0, 5.207322)
+
+[node name="chair" parent="Props/desk3" index="2" unique_id=922282447 instance=ExtResource("6_63iim")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0971216, 0, -1.35655)
+
+[node name="lamp_small" parent="Props/desk3" index="3" unique_id=957339590 instance=ExtResource("7_qqp38")]
+transform = Transform3D(1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, -0.722792, 0.973985, 0.176489)
+
+[node name="desk4" parent="Props" index="15" unique_id=815726852 instance=ExtResource("5_g1nnp")]
+transform = Transform3D(-1.2500005, 0, -1.0927851e-07, 0, 1.25, 0, 1.0927851e-07, 0, -1.2500005, -12.250719, 0, 5.207322)
+
+[node name="chair" parent="Props/desk4" index="2" unique_id=18304927 instance=ExtResource("6_63iim")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0971216, 0, -1.35655)
+
+[node name="lamp_small" parent="Props/desk4" index="3" unique_id=152515299 instance=ExtResource("7_qqp38")]
+transform = Transform3D(1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, -0.722792, 0.973985, 0.176489)
+
+[node name="law_bookshelf6" parent="Props" index="16" unique_id=1319976216 instance=ExtResource("8_c5xe7")]
+transform = Transform3D(-1.1303455, 0, -0.9860633, 0, 1.4999998, 0, 0.9860633, 0, -1.1303455, 9.121, 0.01, 14.368)
+
+[node name="law_bookshelf7" parent="Props" index="17" unique_id=1434917210 instance=ExtResource("8_c5xe7")]
+transform = Transform3D(-1.1303455, 0, -0.9860633, 0, 1.5, 0, 0.9860633, 0, -1.1303455, 12.14, 0.01, 11.731)
+
+[node name="law_bookshelf8" parent="Props" index="18" unique_id=339153828 instance=ExtResource("8_c5xe7")]
+transform = Transform3D(-1.1303455, 0, -0.9860633, 0, 1.5, 0, 0.9860633, 0, -1.1303455, 15.167, 0.01, 9.087)
+
+[node name="treasure_chest2" parent="Props" index="19" unique_id=2008987003 instance=ExtResource("10_peh0w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -21)
+item_pool = ExtResource("10_x5o00")
+
+[node name="law_bookshelf9" parent="Props" index="20" unique_id=488379268 instance=ExtResource("8_c5xe7")]
+transform = Transform3D(0.96418184, 0, -1.1490672, 0, 1.4999999, 0, 1.1490672, 0, 0.96418184, 10.030895, 0.01, -20.152313)
+
+[node name="law_bookshelf10" parent="Props" index="21" unique_id=999031258 instance=ExtResource("8_c5xe7")]
+transform = Transform3D(0.96418184, 0, -1.1490672, 0, 1.4999999, 0, 1.1490672, 0, 0.96418184, 12.594917, 0.01, -17.089462)
+
+[node name="law_bookshelf11" parent="Props" index="22" unique_id=62184586 instance=ExtResource("8_c5xe7")]
+transform = Transform3D(0.96418184, 0, -1.1490672, 0, 1.4999999, 0, 1.1490672, 0, 0.96418184, 15.166183, 0.01, -14.034543)
+
+[node name="law_bookshelf12" parent="Props" index="23" unique_id=125250157 instance=ExtResource("8_c5xe7")]
+transform = Transform3D(0.96418184, 0, 1.1490672, 0, 1.4999996, 0, -1.1490672, 0, 0.96418184, -10.003682, 0.01, -20.174816)
+
+[node name="law_bookshelf13" parent="Props" index="24" unique_id=1352424703 instance=ExtResource("8_c5xe7")]
+transform = Transform3D(0.9641818, 0, 1.149067, 0, 1.4999998, 0, -1.149067, 0, 0.9641818, -12.586181, 0.01, -17.11049)
+
+[node name="law_bookshelf14" parent="Props" index="25" unique_id=324087601 instance=ExtResource("8_c5xe7")]
+transform = Transform3D(0.9641818, 0, 1.149067, 0, 1.4999998, 0, -1.149067, 0, 0.9641818, -15.168215, 0.01, -14.046878)
+
+[node name="desk5" parent="Props" index="26" unique_id=1872946142 instance=ExtResource("5_g1nnp")]
+transform = Transform3D(1.2499937, 0, -0.004166847, 0, 1.2500001, 0, 0.004166847, 0, 1.2499937, -12.250649, 0, -9.968603)
+
+[node name="chair" parent="Props/desk5" index="2" unique_id=1665671307 instance=ExtResource("6_63iim")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0971216, 0, -1.35655)
+
+[node name="lamp_small" parent="Props/desk5" index="3" unique_id=526948905 instance=ExtResource("7_qqp38")]
+transform = Transform3D(1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, -0.722792, 0.973985, 0.176489)
+
+[node name="desk6" parent="Props" index="27" unique_id=607985659 instance=ExtResource("5_g1nnp")]
+transform = Transform3D(1.2499937, 0, -0.004166847, 0, 1.2500001, 0, 0.004166847, 0, 1.2499937, -8.818503, 0, -9.957163)
+
+[node name="chair" parent="Props/desk6" index="2" unique_id=461974180 instance=ExtResource("6_63iim")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0971216, 0, -1.35655)
+
+[node name="lamp_small" parent="Props/desk6" index="3" unique_id=2025992786 instance=ExtResource("7_qqp38")]
+transform = Transform3D(1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, -0.722792, 0.973985, 0.176489)
+
+[node name="desk7" parent="Props" index="28" unique_id=355281943 instance=ExtResource("5_g1nnp")]
+transform = Transform3D(1.2499937, 0, -0.004166847, 0, 1.2500001, 0, 0.004166847, 0, 1.2499937, 9.643983, 0, -9.895617)
+
+[node name="chair" parent="Props/desk7" index="2" unique_id=1813075360 instance=ExtResource("6_63iim")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0971216, 0, -1.35655)
+
+[node name="lamp_small" parent="Props/desk7" index="3" unique_id=2017263745 instance=ExtResource("7_qqp38")]
+transform = Transform3D(1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, -0.722792, 0.973985, 0.176489)
+
+[node name="desk8" parent="Props" index="29" unique_id=1555347803 instance=ExtResource("5_g1nnp")]
+transform = Transform3D(1.2499937, 0, -0.004166847, 0, 1.2500001, 0, 0.004166847, 0, 1.2499937, 13.076129, 0, -9.884174)
+
+[node name="chair" parent="Props/desk8" index="2" unique_id=332308303 instance=ExtResource("6_63iim")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0971216, 0, -1.35655)
+
+[node name="lamp_small" parent="Props/desk8" index="3" unique_id=1074768859 instance=ExtResource("7_qqp38")]
+transform = Transform3D(1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, -0.722792, 0.973985, 0.176489)
+
+[node name="BattleNodeDynamic" parent="." index="7" unique_id=798474164 node_paths=PackedStringArray("cogs") instance=ExtResource("12_45ogl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.2915864)
+cog_range = Vector2i(7, 7)
+cogs = [NodePath("Cogs/Cog21"), NodePath("Cogs/Cog22"), NodePath("Cogs/Cog23"), NodePath("Cogs/Cog24"), NodePath("Cogs/Cog25"), NodePath("Cogs/Cog26"), NodePath("Cogs/Cog27")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BattleNodeDynamic" index="4" unique_id=161904258]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.019723415, 6.01999, -0.34523058)
+shape = SubResource("BoxShape3D_uhxa3")
+
+[node name="PortraitBackstabber" parent="." index="8" unique_id=1774958112 instance=ExtResource("12_uhxa3")]
+transform = Transform3D(-6.119594e-08, 0, 1.4, 0, 1.4, 0, -1.4, 0, -6.119594e-08, 20.319, 3.5, -2.211)
+
+[node name="PortraitBackstabber2" parent="." index="9" unique_id=266966762 instance=ExtResource("12_uhxa3")]
+transform = Transform3D(-6.119594e-08, 0, -1.4, 0, 1.4, 0, 1.4, 0, -6.119594e-08, -20.319, 3.5, -2.211)
+
+[node name="LB_LightPanel" type="MeshInstance3D" parent="." index="10" unique_id=2131232004]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, -2.420387e-06, 58.473, 0, -55.372, -2.555936e-06, -20.3, 5.553, -2.211)
+mesh = SubResource("ArrayMesh_ghq27")
+skeleton = NodePath("")
+surface_material_override/2 = SubResource("StandardMaterial3D_ocjj7")

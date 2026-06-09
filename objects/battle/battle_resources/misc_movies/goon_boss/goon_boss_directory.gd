@@ -16,7 +16,11 @@ func _ready() -> void:
 	
 	# Remove a Cog from the fight on earlier floors
 	if Util.on_easy_floor():
-		var kill_this_man : Cog = battle_node.cogs[-1]
+		var kill_this_man : Cog = battle_node.cogs[4]
+		battle_node.cogs.erase(kill_this_man)
+		kill_this_man.queue_free()
+	if not Util.on_hard_floor():
+		var kill_this_man : Cog = battle_node.cogs[3]
 		battle_node.cogs.erase(kill_this_man)
 		kill_this_man.queue_free()
 	

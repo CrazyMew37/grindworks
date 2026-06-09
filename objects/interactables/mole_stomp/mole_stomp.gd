@@ -11,7 +11,7 @@ const WAIT_TIME := Vector2(0.25,1.0)
 const MOLE_SCENE := preload('res://objects/interactables/mole_stomp/mole_hole.tscn')
 const UI_SCENE := preload('res://objects/interactables/mole_stomp/mole_display.tscn')
 const MG_LOSE = preload("res://audio/sfx/misc/MG_lose.ogg")
-const INSTRUCTION_TEXT := "MOLE STOMP!\nStomp the moles!\nYellow = 1 point, Red = 2 points"
+const INSTRUCTION_TEXT := "MOLE STOMP!\nStomp on the moles!\nYellow = 1 point, Red = 2 points"
 var LABEL: PackedScene
 
 
@@ -22,7 +22,7 @@ enum GameMode { NORMAL, ENDLESS, MANAGED }
 @export var endless_stop_moles := true
 @export var want_launch := true
 @export var force_launch_node: Node3D
-@export_range(0.01, 8.0, 0.01) var difficulty: float = 1.0
+@export_range(0.01, 20.0, 0.01) var difficulty: float = 1.0
 @export var grid_size := Vector2i(6,6)
 @export var game_time := 60.0
 @export var max_tries := 3
