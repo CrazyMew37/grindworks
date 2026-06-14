@@ -24,5 +24,11 @@ Heckle's effects now increase every 5 floors.
 Hazard Damage now scales every 5 floors.
 Partner Toon damage will now scale with your damage.
 The Clowns, Slendercog, and his Vessels are now Administrators (Their HP will now scale in endless)
-Fixed the randomize effects of stat boost being able to affect accuracy."
+Fixed the randomize effects of stat boost being able to affect accuracy.
+[TITLE] Hotfix 1
+Made several sliders in the Cog Creator be able to go beyond their limits.
+  A couple sliders were adjusted, too.
+Somewhat fixed quirk with Custom Cogs being able to have a maximum level below their minimum, letting them spawn with lower than usual levels.
+  Do note that you'll have to manually change your max level if your cog's minimum level is above 20 for whatever reason.
+Napoleon Hat will now properly work with cog scales below 2.5 and above 8.0, with a newly adjusted formula."
 metadata/_custom_type_script = "uid://d1j0hh6tsgy0r"

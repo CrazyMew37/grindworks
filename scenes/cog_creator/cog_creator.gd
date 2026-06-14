@@ -637,7 +637,7 @@ func set_hand_color(color : Color) -> void:
 
 func _ready_attribute() -> void:
 	name_editor.set_text(cog.dna.cog_name)
-	level_max_slider.set_value(cog.dna.level_high)
+	level_max_slider.set_value(20)
 	level_min_slider.set_value(cog.dna.level_low)
 	name_prefix_editor.set_text(cog.dna.name_prefix)
 	name_suffix_editor.set_text(cog.dna.name_suffix)

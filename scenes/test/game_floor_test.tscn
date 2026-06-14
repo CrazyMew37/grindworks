@@ -40,7 +40,7 @@ room = "res://objects/modules/office/variants/office_diamond_room_battle.tscn"
 
 [sub_resource type="Resource" id="Resource_xy8px"]
 script = ExtResource("5_u4jwt")
-room = "res://objects/modules/factory/variants/factory_boiler_room_battle.tscn"
+room = "res://objects/modules/office/variants/office_goon_boss.tscn"
 metadata/_custom_type_script = "uid://ci1am4p7axbxy"
 
 [sub_resource type="Resource" id="Resource_c5lr0"]

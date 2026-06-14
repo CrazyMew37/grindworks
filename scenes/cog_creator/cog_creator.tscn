@@ -510,9 +510,10 @@ layout_mode = 2
 layout_mode = 2
 theme = ExtResource("206_3yxei")
 min_value = 0.1
-max_value = 12.0
+max_value = 20.0
 step = 0.005
 value = 2.5
+allow_greater = true
 
 [node name="ScaleLabel" type="Label" parent="Menus/BodySelector/OptionContainer/Scaler" unique_id=92699691]
 layout_mode = 2
@@ -560,10 +561,7 @@ grow_horizontal = 0
 save_dir = "user://save/custom_cogs/"
 allowed_types = Array[String](["png", "jpg"])
 
-[node name="OpenButton" parent="Menus/HeadTextureSelector/HeadTexDirectory/FooterButtons" index="0"]
-font_size = 20.0
-
-[node name="GeneralButton" parent="Menus/HeadTextureSelector/HeadTexDirectory/FooterButtons" index="1" unique_id=51894623 instance=ExtResource("209_oe7sq")]
+[node name="GeneralButton" parent="Menus/HeadTextureSelector/HeadTexDirectory/FooterButtons" parent_id_path=PackedInt32Array(1183442183, 1219424052) index="1" unique_id=51894623 instance=ExtResource("209_oe7sq")]
 custom_minimum_size = Vector2(180, 60)
 layout_mode = 2
 texture_normal = ExtResource("210_s2eh6")
@@ -576,9 +574,6 @@ font_size = 24.0
 [node name="Label" parent="Menus/HeadTextureSelector/HeadTexDirectory/FooterButtons/GeneralButton" index="0"]
 text = "Use Default"
 label_settings = SubResource("LabelSettings_pw51w")
-
-[node name="CancelButton" parent="Menus/HeadTextureSelector/HeadTexDirectory/LoadPanel" index="1"]
-font_size = 20.0
 
 [node name="HeadModifiers" type="Control" parent="Menus" unique_id=1109122707]
 visible = false
@@ -616,6 +611,8 @@ layout_mode = 2
 theme = ExtResource("206_3yxei")
 max_value = 20.0
 step = 0.1
+allow_greater = true
+allow_lesser = true
 
 [node name="NametagOffset2" type="VBoxContainer" parent="Menus/HeadModifiers/OptionContainer" unique_id=1761966729]
 layout_mode = 2
@@ -632,6 +629,7 @@ min_value = 0.05
 max_value = 5.0
 step = 0.01
 value = 1.0
+allow_greater = true
 
 [node name="HeadXPosition" type="VBoxContainer" parent="Menus/HeadModifiers/OptionContainer" unique_id=1197799964]
 layout_mode = 2
@@ -647,6 +645,8 @@ theme = ExtResource("206_3yxei")
 min_value = -10.0
 max_value = 10.0
 step = 0.01
+allow_greater = true
+allow_lesser = true
 
 [node name="HeadYPosition" type="VBoxContainer" parent="Menus/HeadModifiers/OptionContainer" unique_id=1358343508]
 layout_mode = 2
@@ -662,6 +662,8 @@ theme = ExtResource("206_3yxei")
 min_value = -10.0
 max_value = 10.0
 step = 0.01
+allow_greater = true
+allow_lesser = true
 
 [node name="HeadZPosition" type="VBoxContainer" parent="Menus/HeadModifiers/OptionContainer" unique_id=871762341]
 layout_mode = 2
@@ -677,6 +679,8 @@ theme = ExtResource("206_3yxei")
 min_value = -10.0
 max_value = 10.0
 step = 0.01
+allow_greater = true
+allow_lesser = true
 
 [node name="SuitSelector" type="Control" parent="Menus" unique_id=820910219]
 visible = false
@@ -699,18 +703,18 @@ grow_horizontal = 0
 save_dir = "user://save/custom_cogs/custom_blazers/"
 allowed_types = Array[String](["png", "jpg"])
 
-[node name="WindowTitle" parent="Menus/SuitSelector/BlazerTexDirectory" index="0"]
+[node name="WindowTitle" parent="Menus/SuitSelector/BlazerTexDirectory" index="0" unique_id=1557771341]
 text = "Select a
 Blazer:"
 
-[node name="ScrollContainer" parent="Menus/SuitSelector/BlazerTexDirectory" index="1"]
+[node name="ScrollContainer" parent="Menus/SuitSelector/BlazerTexDirectory" index="1" unique_id=192534630]
 anchor_top = 0.278481
 anchor_right = 0.897727
 
-[node name="GridContainer" parent="Menus/SuitSelector/BlazerTexDirectory/ScrollContainer" index="0"]
+[node name="GridContainer" parent="Menus/SuitSelector/BlazerTexDirectory/ScrollContainer" index="0" unique_id=1195713493]
 columns = 1
 
-[node name="FooterButtons" parent="Menus/SuitSelector/BlazerTexDirectory" index="2"]
+[node name="FooterButtons" parent="Menus/SuitSelector/BlazerTexDirectory" index="2" unique_id=1219424052]
 offset_left = 13.0
 offset_top = -85.0
 offset_right = -13.0
@@ -731,7 +735,7 @@ text = "Use
 Default"
 label_settings = SubResource("LabelSettings_elknu")
 
-[node name="OpenButton" parent="Menus/SuitSelector/BlazerTexDirectory/FooterButtons" index="1"]
+[node name="OpenButton" parent="Menus/SuitSelector/BlazerTexDirectory/FooterButtons" index="1" unique_id=1724989076]
 custom_minimum_size = Vector2(72, 60)
 text = "Load
 Custom"
@@ -742,15 +746,15 @@ text = "Load
 Custom"
 label_settings = SubResource("LabelSettings_bsylr")
 
-[node name="LoadPanel" parent="Menus/SuitSelector/BlazerTexDirectory" index="3"]
+[node name="LoadPanel" parent="Menus/SuitSelector/BlazerTexDirectory" index="3" unique_id=1366668581]
 offset_left = 28.0
 offset_right = -28.0
 
-[node name="WindowTitle" parent="Menus/SuitSelector/BlazerTexDirectory/LoadPanel" index="0"]
+[node name="WindowTitle" parent="Menus/SuitSelector/BlazerTexDirectory/LoadPanel" index="0" unique_id=262484280]
 offset_bottom = 111.0
 label_settings = SubResource("LabelSettings_d5nwh")
 
-[node name="CancelButton" parent="Menus/SuitSelector/BlazerTexDirectory/LoadPanel" index="1"]
+[node name="CancelButton" parent="Menus/SuitSelector/BlazerTexDirectory/LoadPanel" index="1" unique_id=1633508425]
 custom_minimum_size = Vector2(80, 60)
 offset_left = -40.0
 offset_right = 40.0
@@ -759,7 +763,7 @@ font_size = 20.0
 [node name="Label" parent="Menus/SuitSelector/BlazerTexDirectory/LoadPanel/CancelButton" index="0"]
 label_settings = SubResource("LabelSettings_ahtoe")
 
-[node name="AllowedTypes" parent="Menus/SuitSelector/BlazerTexDirectory/LoadPanel" index="2"]
+[node name="AllowedTypes" parent="Menus/SuitSelector/BlazerTexDirectory/LoadPanel" index="2" unique_id=1421908133]
 offset_left = 10.0
 offset_top = -12.0
 offset_right = -10.0
@@ -806,24 +810,24 @@ grow_horizontal = 0
 save_dir = "user://save/custom_cogs/custom_sleeves/"
 allowed_types = Array[String](["png", "jpg"])
 
-[node name="WindowTitle" parent="Menus/SuitSelector/SleeveTexDirectory" index="0"]
+[node name="WindowTitle" parent="Menus/SuitSelector/SleeveTexDirectory" index="0" unique_id=1557771341]
 text = "Select a
 Sleeve:"
 
-[node name="ScrollContainer" parent="Menus/SuitSelector/SleeveTexDirectory" index="1"]
+[node name="ScrollContainer" parent="Menus/SuitSelector/SleeveTexDirectory" index="1" unique_id=192534630]
 anchor_top = 0.278481
 anchor_right = 0.897727
 
-[node name="GridContainer" parent="Menus/SuitSelector/SleeveTexDirectory/ScrollContainer" index="0"]
+[node name="GridContainer" parent="Menus/SuitSelector/SleeveTexDirectory/ScrollContainer" index="0" unique_id=1195713493]
 columns = 1
 
-[node name="FooterButtons" parent="Menus/SuitSelector/SleeveTexDirectory" index="2"]
+[node name="FooterButtons" parent="Menus/SuitSelector/SleeveTexDirectory" index="2" unique_id=1219424052]
 visible = false
 offset_left = 13.0
 offset_top = -85.0
 offset_right = -13.0
 
-[node name="OpenButton" parent="Menus/SuitSelector/SleeveTexDirectory/FooterButtons" index="0"]
+[node name="OpenButton" parent="Menus/SuitSelector/SleeveTexDirectory/FooterButtons" index="0" unique_id=1724989076]
 custom_minimum_size = Vector2(72, 60)
 text = "Use
 Default"
@@ -850,15 +854,15 @@ text = "Load
 Custom"
 label_settings = SubResource("LabelSettings_bsylr")
 
-[node name="LoadPanel" parent="Menus/SuitSelector/SleeveTexDirectory" index="3"]
+[node name="LoadPanel" parent="Menus/SuitSelector/SleeveTexDirectory" index="3" unique_id=1366668581]
 offset_left = 28.0
 offset_right = -28.0
 
-[node name="WindowTitle" parent="Menus/SuitSelector/SleeveTexDirectory/LoadPanel" index="0"]
+[node name="WindowTitle" parent="Menus/SuitSelector/SleeveTexDirectory/LoadPanel" index="0" unique_id=262484280]
 offset_bottom = 111.0
 label_settings = SubResource("LabelSettings_d5nwh")
 
-[node name="CancelButton" parent="Menus/SuitSelector/SleeveTexDirectory/LoadPanel" index="1"]
+[node name="CancelButton" parent="Menus/SuitSelector/SleeveTexDirectory/LoadPanel" index="1" unique_id=1633508425]
 custom_minimum_size = Vector2(80, 60)
 offset_left = -40.0
 offset_right = 40.0
@@ -867,7 +871,7 @@ font_size = 20.0
 [node name="Label" parent="Menus/SuitSelector/SleeveTexDirectory/LoadPanel/CancelButton" index="0"]
 label_settings = SubResource("LabelSettings_ahtoe")
 
-[node name="AllowedTypes" parent="Menus/SuitSelector/SleeveTexDirectory/LoadPanel" index="2"]
+[node name="AllowedTypes" parent="Menus/SuitSelector/SleeveTexDirectory/LoadPanel" index="2" unique_id=1421908133]
 offset_left = 10.0
 offset_top = -12.0
 offset_right = -10.0
@@ -931,24 +935,24 @@ grow_horizontal = 0
 save_dir = "user://save/custom_cogs/custom_legs/"
 allowed_types = Array[String](["png", "jpg"])
 
-[node name="WindowTitle" parent="Menus/SuitSelector/LegTexDirectory" index="0"]
+[node name="WindowTitle" parent="Menus/SuitSelector/LegTexDirectory" index="0" unique_id=1557771341]
 text = "Select a
 Leg:"
 
-[node name="ScrollContainer" parent="Menus/SuitSelector/LegTexDirectory" index="1"]
+[node name="ScrollContainer" parent="Menus/SuitSelector/LegTexDirectory" index="1" unique_id=192534630]
 anchor_top = 0.278481
 anchor_right = 0.897727
 
-[node name="GridContainer" parent="Menus/SuitSelector/LegTexDirectory/ScrollContainer" index="0"]
+[node name="GridContainer" parent="Menus/SuitSelector/LegTexDirectory/ScrollContainer" index="0" unique_id=1195713493]
 columns = 1
 
-[node name="FooterButtons" parent="Menus/SuitSelector/LegTexDirectory" index="2"]
+[node name="FooterButtons" parent="Menus/SuitSelector/LegTexDirectory" index="2" unique_id=1219424052]
 visible = false
 offset_left = 13.0
 offset_top = -85.0
 offset_right = -13.0
 
-[node name="OpenButton" parent="Menus/SuitSelector/LegTexDirectory/FooterButtons" index="0"]
+[node name="OpenButton" parent="Menus/SuitSelector/LegTexDirectory/FooterButtons" index="0" unique_id=1724989076]
 custom_minimum_size = Vector2(72, 60)
 text = "Use
 Default"
@@ -975,15 +979,15 @@ text = "Load
 Custom"
 label_settings = SubResource("LabelSettings_bsylr")
 
-[node name="LoadPanel" parent="Menus/SuitSelector/LegTexDirectory" index="3"]
+[node name="LoadPanel" parent="Menus/SuitSelector/LegTexDirectory" index="3" unique_id=1366668581]
 offset_left = 28.0
 offset_right = -28.0
 
-[node name="WindowTitle" parent="Menus/SuitSelector/LegTexDirectory/LoadPanel" index="0"]
+[node name="WindowTitle" parent="Menus/SuitSelector/LegTexDirectory/LoadPanel" index="0" unique_id=262484280]
 offset_bottom = 111.0
 label_settings = SubResource("LabelSettings_d5nwh")
 
-[node name="CancelButton" parent="Menus/SuitSelector/LegTexDirectory/LoadPanel" index="1"]
+[node name="CancelButton" parent="Menus/SuitSelector/LegTexDirectory/LoadPanel" index="1" unique_id=1633508425]
 custom_minimum_size = Vector2(80, 60)
 offset_left = -40.0
 offset_right = 40.0
@@ -992,7 +996,7 @@ font_size = 20.0
 [node name="Label" parent="Menus/SuitSelector/LegTexDirectory/LoadPanel/CancelButton" index="0"]
 label_settings = SubResource("LabelSettings_ahtoe")
 
-[node name="AllowedTypes" parent="Menus/SuitSelector/LegTexDirectory/LoadPanel" index="2"]
+[node name="AllowedTypes" parent="Menus/SuitSelector/LegTexDirectory/LoadPanel" index="2" unique_id=1421908133]
 offset_left = 10.0
 offset_top = -12.0
 offset_right = -10.0
@@ -1065,13 +1069,10 @@ grow_horizontal = 0
 save_dir = "user://save/custom_cogs/custom_emblems/"
 allowed_types = Array[String](["png", "jpg"])
 
-[node name="WindowTitle" parent="Menus/EmblemTextureSelector/EmblemTexDirectory" index="0"]
+[node name="WindowTitle" parent="Menus/EmblemTextureSelector/EmblemTexDirectory" index="0" unique_id=1557771341]
 text = "Select an Emblem Texture:"
 
-[node name="OpenButton" parent="Menus/EmblemTextureSelector/EmblemTexDirectory/FooterButtons" index="0"]
-font_size = 20.0
-
-[node name="GeneralButton" parent="Menus/EmblemTextureSelector/EmblemTexDirectory/FooterButtons" index="1" unique_id=46207594 instance=ExtResource("209_oe7sq")]
+[node name="GeneralButton" parent="Menus/EmblemTextureSelector/EmblemTexDirectory/FooterButtons" parent_id_path=PackedInt32Array(1076194251, 1219424052) index="1" unique_id=46207594 instance=ExtResource("209_oe7sq")]
 custom_minimum_size = Vector2(180, 60)
 layout_mode = 2
 texture_normal = ExtResource("210_s2eh6")
@@ -1084,9 +1085,6 @@ font_size = 24.0
 [node name="Label" parent="Menus/EmblemTextureSelector/EmblemTexDirectory/FooterButtons/GeneralButton" index="0"]
 text = "Use Default"
 label_settings = SubResource("LabelSettings_pw51w")
-
-[node name="CancelButton" parent="Menus/EmblemTextureSelector/EmblemTexDirectory/LoadPanel" index="1"]
-font_size = 20.0
 
 [node name="BodyColors" type="Control" parent="Menus" unique_id=448029230]
 visible = false
@@ -1231,6 +1229,7 @@ theme = ExtResource("206_3yxei")
 min_value = 1.0
 max_value = 15.0
 value = 1.0
+allow_greater = true
 
 [node name="LevelMaximum" type="VBoxContainer" parent="Menus/AtrributeSelectors/VBoxContainer" unique_id=1100193878]
 visible = false
@@ -1247,6 +1246,7 @@ theme = ExtResource("206_3yxei")
 min_value = 15.0
 max_value = 15.0
 value = 15.0
+allow_greater = true
 
 [node name="ProxyToggle" type="HBoxContainer" parent="Menus/AtrributeSelectors/VBoxContainer" unique_id=860231901]
 layout_mode = 2
@@ -1273,6 +1273,7 @@ label_settings = SubResource("LabelSettings_w0kd7")
 layout_mode = 2
 theme = ExtResource("206_3yxei")
 max_value = 10.0
+allow_greater = true
 
 [node name="AtrributeSelectorsPart2" type="Control" parent="Menus" unique_id=282610892]
 visible = false
@@ -1326,9 +1327,10 @@ label_settings = SubResource("LabelSettings_w0kd7")
 layout_mode = 2
 theme = ExtResource("206_3yxei")
 min_value = 0.1
-max_value = 5.0
+max_value = 10.0
 step = 0.01
 value = 1.0
+allow_greater = true
 
 [node name="Spacer2" type="Control" parent="Menus/AtrributeSelectorsPart2/VBoxContainer" unique_id=888439036]
 custom_minimum_size = Vector2(0, 24)

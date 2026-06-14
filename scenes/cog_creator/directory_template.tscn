@@ -28,7 +28,7 @@ font = ExtResource("2_ekq46")
 font_size = 18
 font_color = Color(0, 0, 0, 1)
 
-[node name="DirectoryTemplate" type="TextureRect"]
+[node name="DirectoryTemplate" type="TextureRect" unique_id=2095953122]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -44,7 +44,7 @@ texture = ExtResource("1_vimnd")
 expand_mode = 1
 script = ExtResource("2_0hv1k")
 
-[node name="WindowTitle" type="Label" parent="."]
+[node name="WindowTitle" type="Label" parent="." unique_id=1557771341]
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
@@ -55,7 +55,7 @@ text = "Select a File:"
 label_settings = SubResource("LabelSettings_usm56")
 horizontal_alignment = 1
 
-[node name="ScrollContainer" type="ScrollContainer" parent="."]
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=192534630]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.0795455
@@ -66,11 +66,11 @@ grow_horizontal = 2
 grow_vertical = 2
 metadata/_edit_use_anchors_ = true
 
-[node name="GridContainer" type="GridContainer" parent="ScrollContainer"]
+[node name="GridContainer" type="GridContainer" parent="ScrollContainer" unique_id=1195713493]
 layout_mode = 2
 columns = 3
 
-[node name="FooterButtons" type="HBoxContainer" parent="."]
+[node name="FooterButtons" type="HBoxContainer" parent="." unique_id=1219424052]
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
@@ -84,38 +84,37 @@ grow_horizontal = 2
 grow_vertical = 0
 alignment = 2
 
-[node name="OpenButton" parent="FooterButtons" instance=ExtResource("5_pr71t")]
+[node name="OpenButton" parent="FooterButtons" unique_id=1724989076 instance=ExtResource("5_pr71t")]
 custom_minimum_size = Vector2(180, 60)
 layout_mode = 2
 texture_normal = ExtResource("6_c3pty")
 texture_pressed = ExtResource("7_45tr8")
 texture_hover = ExtResource("8_kbhdn")
 texture_disabled = null
-hover_db_offset = 6.0
-press_db_offset = 0.0
 text = "Load Custom"
+font_size = 24.0
 
 [node name="Label" parent="FooterButtons/OpenButton" index="0"]
 text = "Load Custom"
 label_settings = SubResource("LabelSettings_ujs02")
 
-[node name="LoadPanel" type="TextureRect" parent="."]
+[node name="LoadPanel" type="TextureRect" parent="." unique_id=1366668581]
 visible = false
 layout_mode = 1
 anchors_preset = 14
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = 128.0
-offset_top = -89.0
-offset_right = -128.0
-offset_bottom = 135.0
+offset_left = 108.0
+offset_top = -109.0
+offset_right = -108.0
+offset_bottom = 115.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_vimnd")
 expand_mode = 1
 
-[node name="WindowTitle" type="Label" parent="LoadPanel"]
+[node name="WindowTitle" type="Label" parent="LoadPanel" unique_id=262484280]
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
@@ -130,7 +129,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
-[node name="CancelButton" parent="LoadPanel" instance=ExtResource("5_pr71t")]
+[node name="CancelButton" parent="LoadPanel" unique_id=1633508425 instance=ExtResource("5_pr71t")]
 custom_minimum_size = Vector2(120, 60)
 layout_mode = 1
 anchors_preset = 7
@@ -148,15 +147,14 @@ texture_normal = ExtResource("6_c3pty")
 texture_pressed = ExtResource("7_45tr8")
 texture_hover = ExtResource("8_kbhdn")
 texture_disabled = null
-hover_db_offset = 6.0
-press_db_offset = 0.0
 text = "Cancel"
+font_size = 24.0
 
 [node name="Label" parent="LoadPanel/CancelButton" index="0"]
 text = "Cancel"
 label_settings = SubResource("LabelSettings_ujs02")
 
-[node name="AllowedTypes" type="Label" parent="LoadPanel"]
+[node name="AllowedTypes" type="Label" parent="LoadPanel" unique_id=1421908133]
 layout_mode = 1
 anchors_preset = 14
 anchor_top = 0.5
