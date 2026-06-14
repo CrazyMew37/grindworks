@@ -561,6 +561,9 @@ grow_horizontal = 0
 save_dir = "user://save/custom_cogs/"
 allowed_types = Array[String](["png", "jpg"])
 
+[node name="OpenButton" parent="Menus/HeadTextureSelector/HeadTexDirectory/FooterButtons" parent_id_path=PackedInt32Array(1183442183, 1219424052) index="0" unique_id=1724989076]
+font_size = 20.0
+
 [node name="GeneralButton" parent="Menus/HeadTextureSelector/HeadTexDirectory/FooterButtons" parent_id_path=PackedInt32Array(1183442183, 1219424052) index="1" unique_id=51894623 instance=ExtResource("209_oe7sq")]
 custom_minimum_size = Vector2(180, 60)
 layout_mode = 2
@@ -574,6 +577,9 @@ font_size = 24.0
 [node name="Label" parent="Menus/HeadTextureSelector/HeadTexDirectory/FooterButtons/GeneralButton" index="0"]
 text = "Use Default"
 label_settings = SubResource("LabelSettings_pw51w")
+
+[node name="CancelButton" parent="Menus/HeadTextureSelector/HeadTexDirectory/LoadPanel" parent_id_path=PackedInt32Array(1183442183, 1366668581) index="1" unique_id=1633508425]
+font_size = 20.0
 
 [node name="HeadModifiers" type="Control" parent="Menus" unique_id=1109122707]
 visible = false
@@ -1072,6 +1078,9 @@ allowed_types = Array[String](["png", "jpg"])
 [node name="WindowTitle" parent="Menus/EmblemTextureSelector/EmblemTexDirectory" index="0" unique_id=1557771341]
 text = "Select an Emblem Texture:"
 
+[node name="OpenButton" parent="Menus/EmblemTextureSelector/EmblemTexDirectory/FooterButtons" parent_id_path=PackedInt32Array(1076194251, 1219424052) index="0" unique_id=1724989076]
+font_size = 20.0
+
 [node name="GeneralButton" parent="Menus/EmblemTextureSelector/EmblemTexDirectory/FooterButtons" parent_id_path=PackedInt32Array(1076194251, 1219424052) index="1" unique_id=46207594 instance=ExtResource("209_oe7sq")]
 custom_minimum_size = Vector2(180, 60)
 layout_mode = 2
@@ -1085,6 +1094,9 @@ font_size = 24.0
 [node name="Label" parent="Menus/EmblemTextureSelector/EmblemTexDirectory/FooterButtons/GeneralButton" index="0"]
 text = "Use Default"
 label_settings = SubResource("LabelSettings_pw51w")
+
+[node name="CancelButton" parent="Menus/EmblemTextureSelector/EmblemTexDirectory/LoadPanel" parent_id_path=PackedInt32Array(1076194251, 1366668581) index="1" unique_id=1633508425]
+font_size = 20.0
 
 [node name="BodyColors" type="Control" parent="Menus" unique_id=448029230]
 visible = false

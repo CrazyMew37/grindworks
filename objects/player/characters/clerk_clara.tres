@@ -17,7 +17,6 @@ script = ExtResource("1_i8qkq")
 damage = 0.9
 defense = 0.85
 evasiveness = 0.8
-accuracy = 0.75
 speed = 0.9
 max_hp = 100
 turns = 2

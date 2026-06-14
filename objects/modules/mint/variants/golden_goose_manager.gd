@@ -342,7 +342,9 @@ func make_explosion(pos: Vector3) -> void:
 	new_explosion.queue_free()
 
 func get_random_object() -> PackedScene:
-	if Util.on_easy_floor() or randi() % 3 > 0:
+	if Util.on_easy_floor():
+		return REGULAR_OBJS[0]
+	if not Util.on_hard_floor() and randi() % 3 > 0:
 		return REGULAR_OBJS[0]
 	if Util.on_hard_floor():
 		return REGULAR_OBJS[1]

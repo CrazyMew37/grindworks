@@ -30,5 +30,8 @@ Made several sliders in the Cog Creator be able to go beyond their limits.
   A couple sliders were adjusted, too.
 Somewhat fixed quirk with Custom Cogs being able to have a maximum level below their minimum, letting them spawn with lower than usual levels.
   Do note that you'll have to manually change your max level if your cog's minimum level is above 20 for whatever reason.
-Napoleon Hat will now properly work with cog scales below 2.5 and above 8.0, with a newly adjusted formula."
+Napoleon Hat will now properly work with cog scales below 2.5 and above 8.0, with a newly adjusted formula.
+[TITLE] Hotfix 2
+Fixed Clerk Clara having an accuracy of 0.75.
+Fixed Golden Goose being able to spawn single safes past Floor 7."
 metadata/_custom_type_script = "uid://d1j0hh6tsgy0r"
