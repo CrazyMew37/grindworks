@@ -270,7 +270,6 @@
 [ext_resource type="Texture2D" uid="uid://c2h3c1ya6tw30" path="res://models/cogs/textures/statue_gray/statue_leg.png" id="215_wuxm8"]
 [ext_resource type="Texture2D" uid="uid://ctnar4np8tsb3" path="res://ui_assets/battle/queued_gags/PartyPlanner_CancelButtonRollover.png" id="216_xl1q7"]
 [ext_resource type="Texture2D" uid="uid://bfpjolatqbe1" path="res://ui_assets/general/tt_t_gui_mat_nextUp.png" id="217_m5o6s"]
-[ext_resource type="Texture2D" uid="uid://bhaprym64jt7l" path="res://models/goon/goon_1.png" id="217_vhyp1"]
 [ext_resource type="Texture2D" uid="uid://tryb4agh6c0r" path="res://models/facilities/alt_icons/faulty_factory_icon.png" id="217_wsnyn"]
 [ext_resource type="Texture2D" uid="uid://h860bhtvuq18" path="res://ui_assets/general/tt_t_gui_mat_nextDown.png" id="218_5bu4m"]
 [ext_resource type="Texture2D" uid="uid://dxstu60hrbf67" path="res://models/facilities/alt_icons/molten_cash/molten_mint_alt.png" id="218_mws6p"]
@@ -281,6 +280,7 @@
 [ext_resource type="Texture2D" uid="uid://ddlydc15tuxe3" path="res://ui_assets/general/tt_t_gui_mat_closeUp.png" id="221_ojop1"]
 [ext_resource type="Texture2D" uid="uid://0vc0mgc4md0d" path="res://models/facilities/factory/LocomotiveLight1.png" id="222_rlciq"]
 [ext_resource type="Texture2D" uid="uid://dkuel6g6u2cat" path="res://ui_assets/general/tt_t_gui_mat_closeDown.png" id="222_u7wiv"]
+[ext_resource type="Texture2D" uid="uid://11p6af61d6" path="res://models/cogs/misc/hp_light/null.png" id="259_m80q8"]
 
 [sub_resource type="Resource" id="Resource_neob3"]
 script = ExtResource("31_3tp1m")
@@ -397,7 +397,7 @@ head_texture_files = Array[Texture2D]([ExtResource("101_umv2m"), ExtResource("10
 blazer_texture_files = Array[Texture2D]([ExtResource("186_npo2t"), ExtResource("180_2mp1q"), ExtResource("189_1ki5l"), ExtResource("183_4lrjk"), ExtResource("194_pwcys"), ExtResource("177_1wpoh"), ExtResource("197_rrgpc"), ExtResource("191_jmsvh"), ExtResource("200_xpfdn"), ExtResource("191_frv6j"), ExtResource("192_6qptg"), ExtResource("193_dcm4t")])
 sleeve_texture_files = Array[Texture2D]([ExtResource("185_8nh8p"), ExtResource("179_d6ptp"), ExtResource("188_ucsjk"), ExtResource("182_0m4gl"), ExtResource("193_q4md2"), ExtResource("176_tj510"), ExtResource("196_ykibo"), ExtResource("201_y1ub6"), ExtResource("190_bbn4o"), ExtResource("203_hqfvb"), ExtResource("204_wuxm8"), ExtResource("199_4hpf1")])
 leg_texture_files = Array[Texture2D]([ExtResource("187_57dvm"), ExtResource("181_nkh30"), ExtResource("188_ucsjk"), ExtResource("184_gsx4t"), ExtResource("195_kldqf"), ExtResource("178_ypwd7"), ExtResource("198_ajjie"), ExtResource("212_y1ub6"), ExtResource("192_0u74k"), ExtResource("214_hqfvb"), ExtResource("215_wuxm8"), ExtResource("201_wr314")])
-emblem_texture_files = Array[Texture2D]([ExtResource("212_o7oq4"), ExtResource("213_ucq8c"), ExtResource("214_81k1f"), ExtResource("215_j8npl"), ExtResource("217_wsnyn"), ExtResource("218_mws6p"), ExtResource("219_cqy24"), ExtResource("220_4in0i"), ExtResource("217_vhyp1"), ExtResource("222_rlciq")])
+emblem_texture_files = Array[Texture2D]([ExtResource("212_o7oq4"), ExtResource("213_ucq8c"), ExtResource("214_81k1f"), ExtResource("215_j8npl"), ExtResource("217_wsnyn"), ExtResource("218_mws6p"), ExtResource("219_cqy24"), ExtResource("220_4in0i"), ExtResource("259_m80q8"), ExtResource("222_rlciq")])
 suits = Array[Dictionary]([{
 "custom_arm_tex": null,
 "custom_blazer_tex": null,
@@ -499,7 +499,7 @@ default_center_text = "Body"
 
 [node name="DepartmentScroller" parent="Menus/BodySelector/OptionContainer" unique_id=1066561315 instance=ExtResource("205_da0oi")]
 layout_mode = 2
-options = Array[String](["Sellbot", "Cashbot", "Lawbot", "Bossbot"])
+options = Array[String](["Sellbot", "Cashbot", "Lawbot", "Bossbot", "Null"])
 wrap_around = false
 default_center_text = "Department"
 

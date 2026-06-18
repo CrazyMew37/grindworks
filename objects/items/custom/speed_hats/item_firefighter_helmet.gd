@@ -21,11 +21,11 @@ func on_item_removed() -> void:
 
 ## Sync multipliers to current speed amount
 func on_speed_changed(speed: float) -> void:
-	multiplier.amount = maxf(0.0, (speed) * 0.05)
+	multiplier.amount = 0.05 * ((speed) ** 0.5)
 
 func create_multiplier() -> void:
 	multiplier = StatMultiplier.new()
 	multiplier.stat = 'evasiveness'
-	multiplier.amount = maxf(0.0, (Util.get_player().stats.speed) * 0.05)
+	multiplier.amount = 0.05 * ((Util.get_player().stats.speed) ** 0.5)
 	multiplier.additive = true
 	Util.get_player().stats.multipliers.append(multiplier)

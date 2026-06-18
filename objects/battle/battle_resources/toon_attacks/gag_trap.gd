@@ -21,7 +21,7 @@ func get_trap_effect() -> StatusTrapped:
 	var new_effect := TRAP_EFFECT.duplicate(true)
 	new_effect.quality = StatusEffect.EffectQuality.NEGATIVE
 	new_effect.gag = self
-	if Util.get_player().trap_needs_lure:
+	if not Util.get_player().trap_needs_lure:
 		new_effect.rounds = -1
 	else:
 		new_effect.rounds = 0

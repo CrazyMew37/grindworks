@@ -1,6 +1,6 @@
 extends ItemScript
 
-const CRIT_BONUS := 0.04
+const CRIT_BONUS := 0.05
 
 var crit_sum := 0.0
 

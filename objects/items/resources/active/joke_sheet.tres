@@ -9,8 +9,8 @@
 [resource]
 script = ExtResource("4_xrsfl")
 active_type = 2
-charge_count = 4
-current_charge = 4
+charge_count = 6
+current_charge = 6
 tags = Array[int]([2])
 qualitoon = 1
 world_scale = 0.8

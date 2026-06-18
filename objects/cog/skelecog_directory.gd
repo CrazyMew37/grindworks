@@ -55,6 +55,7 @@ func set_dna(dna: CogDNA) -> void:
 				CogDNA.CogDept.CASH: tie_mat.albedo_texture = load("res://models/cogs/textures/cash/cog_robot_tie_money.png")
 				CogDNA.CogDept.LAW: tie_mat.albedo_texture = load("res://models/cogs/textures/law/cog_robot_tie_legal.png")
 				CogDNA.CogDept.BOSS: tie_mat.albedo_texture = load("res://models/cogs/textures/boss/cog_robot_tie_boss.png")
+				CogDNA.CogDept.NULL: tie_mat.albedo_texture = load("res://models/cogs/textures/statue_gray/cog_robot_tie_null.png")
 
 	if department_emblem:
 		if get_custom_texture(dna, 'custom_emblem_tex'):
@@ -108,5 +109,5 @@ static func get_custom_texture(dna : CogDNA, value : StringName) -> Texture2D:
 static func get_department_emblem(dept: CogDNA.CogDept) -> Texture2D:
 	# Return bossbot as failsafe
 	if dept == CogDNA.CogDept.NULL:
-		return load("res://models/cogs/misc/hp_light/boss.png")
+		return load("res://models/cogs/misc/hp_light/null.png")
 	return load("res://models/cogs/misc/hp_light/" + Cog.get_department_name(dept) + ".png")

@@ -409,7 +409,7 @@ func get_special_room_chance() -> float:
 	var base_chance := 0.12
 	if is_instance_valid(Util.get_player()):
 		luck = Util.get_player().stats.luck
-	return base_chance + (luck - 1.0)
+	return base_chance + maxf(0.0, (0.88 - (0.88 / luck)))
 
 func _capture_debug_message(message: String, data: Array) -> bool:
 	if message == 'game_floor:add_floor_mods':

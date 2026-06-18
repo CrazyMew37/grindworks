@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="ReleaseNote" format=3 uid="uid://b2ahssvlnis7y"]
+
+[ext_resource type="Script" uid="uid://d1j0hh6tsgy0r" path="res://scenes/title_screen/release_notes/release_note.gd" id="1_wafx8"]
+
+[resource]
+script = ExtResource("1_wafx8")
+release_version = "v1.3.8 (CM37E)"
+notes = "This update is intended to address some recent power creep that was introduced to the game, especially with Endless Mode.
+[TITLE] General
+Luck now uses a formula when calculating crits. 200% Luck will not always mean a guaranteed Crit now, since the formula is made where the chances for a crit will never be 100%.
+  For reference, 200% Luck is equivalent to 150% Luck, 300% Luck is equivalent to 167% Luck, 400% Luck is equivalent to 175% Luck, and so on.
+  This formula also applies to Special Room spawning, shop discounts, and luck scaling.
+  Because of this, Chance-Chew, Super Chance-Chew, Heart Glasses, Square Frame Glasses, Archer Hat, Crown, Fruit Hat, and Sun Hat had their luck stats increased (3% -> 5%, 4% - 5%, 8% -> 12%, 10% -> 15%, and 15% -> 20%)
+Items will now refresh every 10 floors instead of every 5 floors.
+[TITLE] Items
+Jellybean values were decreased across the board, that being from 3/5/7/10/12/15/18/20/25 to 2/4/6/8/10/12/14/16/20.
+Sour Shocker now only gives 4 charges instead of 6.
+Dragon Wings' rarity was increased from Five Stars/Q5 to Five Stars/Q6.
+Rainbow Wings now only does 1.07x to stats and no longer gives laff.
+Bee Wings now scales logarithmically, at a rate of 20% instead of it's previous 25%.
+  This was also applied to Bee Headband, Firefighter Helmet, Dad Cap, Sailor Hat, and Sandbag Hat.
+Mask now gives +25% Evasiveness instead of +20%.
+Antenna Thingy and Winter Hat were reduced from 15% to 10%.
+Pilot Cap was reworked. Now it increases your speed and damage and decreaess your defense and evasiveness. (Speed and Defense were swapped) Pilot Cap's stats were also changed from 0.85x and 1.15x to 0.9x and 1.1x.
+  Pilot Cap's Rarity is now Three Stars/Q4 from Three Stars/Q5
+Roman Helmet no longer stacks, but it now gives +5% Damage and has a death threshold of 10% instead of 8%.
+Square Frame Glasses' Rarity was decreased from Five Stars to Four Stars due to the Luck nerf.
+Athletic Shoes, Blue Square Boots, Cowboy Boots and Hi-Top Sneakers, all had their multipliers decreased by 5%. (20% -> 15% for Athletic and Cowboy. 25% -> 20% for Blue Square and Hi-Top.)
+  Rain Boots was untouched due to the Luck Nerf.
+Jellybean Jar now gives 2-6 Jellybeans instead of 3-6.
+Golf Ball now requires 4 charges instead of 3. It will also increase department damage/defense by 4% instead of 5%.
+Joke Sheet now requires 6 charges instead of 4.
+Potted Plant now requires 4 charges instead of 3. It's rarity is now Three Stars/Q4 instead of Three Stars/Q3.
+Rubber Stamp will now start at 0 charges instead of 6. Because of this, it's rarity is now Four Stars instead of Five Stars.
+Crazy Daisy now only adds 10% of your luck above 100% to damage instead of 20%. Despite this, it's rarity has gone from Three Stars/Q3 to Three Stars/Q4.
+The price for Partner Toons was slightly increased. (45 -> 50)
+[TITLE] Misc.
+The Null Department is now in the Cog Creator! They use the semi-unused statue suits and a custom Department Icon.
+Made Bad Luck's chance to crit slightly higher (14.29% -> 15%)
+Fixed Detective Hat being disabled when you have an even amount of them. (Do note that the way I fixed this might make trap a bit weird in runs upgrading to this version)"
+metadata/_custom_type_script = "uid://d1j0hh6tsgy0r"

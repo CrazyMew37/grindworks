@@ -275,7 +275,8 @@ world_scale = 0.1
 ui_cam_offset = 0.05
 item_name = "Firefighter Helmet"
 item_description = "Turn down the heat!"
-big_description = "5% of your base speed will contribute to your evasiveness."
+big_description = "5% of your base speed will contribute to your evasiveness.
+This is added logarithmically, but equals +5% at 100% Speed."
 model = ExtResource("5_vnbco")
 item_script = ExtResource("4_8k2ni")
 icon = ExtResource("3_8k2ni")

@@ -49,7 +49,7 @@ func _ready():
 	AudioManager.stop_music()
 	AudioManager.set_default_music(load('res://audio/music/beta_installer.ogg'))
 	
-	if Util.floor_number > 4 && Util.floor_number % 5 == 0:
+	if Util.floor_number > 4 && Util.floor_number % 10 == 0:
 		ItemService.seen_items.clear()
 	
 	if Util.floor_number > 5:

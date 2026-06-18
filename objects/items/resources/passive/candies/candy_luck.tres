@@ -11,11 +11,11 @@ evergreen = true
 world_scale = 0.11
 item_name = "Chance-Chew"
 item_description = "Luck up!"
-big_description = "+ 3% luck"
+big_description = "+ 5% luck"
 model = ExtResource("1_fiq5e")
 pickup_sfx = ExtResource("2_3hyy0")
 stats_add = {
-"luck": 0.03
+"luck": 0.05
 }
 remember_item = false
 shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)

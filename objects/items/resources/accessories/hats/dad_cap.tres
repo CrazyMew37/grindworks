@@ -274,7 +274,8 @@ slot = 1
 world_scale = 0.15
 item_name = "Dad Cap"
 item_description = "Play ball!"
-big_description = "5% of your base speed will contribute to your defense."
+big_description = "5% of your base speed will contribute to your defense.
+This is added logarithmically, but equals +5% at 100% Speed."
 model = ExtResource("5_nxpa8")
 item_script = ExtResource("4_ty5y4")
 icon = ExtResource("3_3se75")

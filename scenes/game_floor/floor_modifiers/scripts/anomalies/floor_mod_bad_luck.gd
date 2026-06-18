@@ -1,6 +1,6 @@
 extends FloorModifier
 
-const CRIT_CHANCE := 1.0 / 7.0
+const CRIT_CHANCE := 0.15
 
 func modify_floor() -> void:
 	BattleService.s_action_started.connect(on_action_started)

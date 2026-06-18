@@ -9,13 +9,13 @@
 [resource]
 script = ExtResource("5_4ciij")
 active_type = 2
-charge_count = 3
-current_charge = 3
+charge_count = 4
+current_charge = 4
 qualitoon = 1
 world_scale = 1.5
 item_name = "Golf Ball"
 item_description = "Hole in one!"
-big_description = "Boosts your damage and defense against a random Cog Department by +5% on every use."
+big_description = "Boosts your damage and defense against a random Cog Department by +4% on every use."
 model = ExtResource("3_a5uro")
 pickup_sfx = ExtResource("4_0uoi8")
 item_script = ExtResource("2_a5uro")

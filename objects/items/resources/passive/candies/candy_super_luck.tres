@@ -12,11 +12,11 @@ evergreen = true
 world_scale = 0.11
 item_name = "Super Chance-Chew"
 item_description = "Luck up!"
-big_description = "+ 8% luck"
+big_description = "+ 12% luck"
 model = ExtResource("1_c5m1i")
 pickup_sfx = ExtResource("2_bnmo8")
 stats_add = {
-"luck": 0.08
+"luck": 0.12
 }
 arbitrary_data = {
 "super": true

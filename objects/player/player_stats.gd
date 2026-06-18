@@ -87,9 +87,6 @@ signal s_agility_changed(new_agility: float)
 
 @export var extra_jumps := 0
 
-# How low do cogs HP need to be to die?
-@export var cog_hp_death_threshold := 0.0
-
 ## Weird Stuff
 @export var stranger_chance := 0.0:
 	set(x): stranger_chance = maxf(0.0, x)
@@ -282,7 +279,8 @@ func drop_active(active: ItemActive) -> void:
 
 ## Returns a chance value influenced by luck
 func get_luck_weighted_chance(start_chance: float, end_chance: float, max_luck: float) -> float:
-	var _luck: float = clampf(luck, 1.0, max_luck)
+	var weight_check: float = 1.0 - ((max_luck / 2.0) / (luck + ((max_luck / 2.0) - 1.0)))
+	var _luck: float = clampf(weight_check, 1.0, max_luck)
 	return lerpf(start_chance, end_chance, inverse_lerp(1.0, max_luck, _luck))
 
 #region STRANGER TRACKING

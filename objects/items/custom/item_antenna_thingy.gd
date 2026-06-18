@@ -26,6 +26,6 @@ func on_defense_changed(defense: float) -> void:
 func create_multiplier() -> void:
 	multiplier = StatMultiplier.new()
 	multiplier.stat = 'evasiveness'
-	multiplier.amount = maxf(0.0, (Util.get_player().stats.defense) * 0.15)
+	multiplier.amount = maxf(0.0, (Util.get_player().stats.defense) * 0.1)
 	multiplier.additive = true
 	Util.get_player().stats.multipliers.append(multiplier)

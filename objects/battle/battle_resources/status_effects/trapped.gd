@@ -17,7 +17,7 @@ func renew() -> void:
 	if not is_instance_valid(target) or target.stats.hp <= 0:
 		return
 	
-	if not Util.get_player().trap_needs_lure and not target.lured:
+	if Util.get_player().trap_needs_lure and not target.lured:
 		manager.battle_node.focus_character(target)
 		gag.damage = manager.get_damage(gag.damage, gag, target)
 		gag.activate()

@@ -35,15 +35,15 @@ var colors = {
 }
 ## Bean Values
 var values := {
-	BeanColor.RED: 3,
-	BeanColor.YELLOW: 7,
-	BeanColor.GREEN: 10,
-	BeanColor.LIGHT_BLUE: 12,
-	BeanColor.BLUE: 15,
-	BeanColor.PINK: 18,
-	BeanColor.ORANGE: 5,
-	BeanColor.MAGENTA: 20,
-	BeanColor.SILVER: 25
+	BeanColor.RED: 2,
+	BeanColor.YELLOW: 6,
+	BeanColor.GREEN: 8,
+	BeanColor.LIGHT_BLUE: 10,
+	BeanColor.BLUE: 12,
+	BeanColor.PINK: 14,
+	BeanColor.ORANGE: 4,
+	BeanColor.MAGENTA: 16,
+	BeanColor.SILVER: 20
 }
 
 func _ready() -> void:

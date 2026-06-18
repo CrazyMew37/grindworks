@@ -11,11 +11,11 @@ evergreen = true
 world_scale = 0.11
 item_name = "Sour Shocker"
 item_description = "Prank charge up!"
-big_description = "Adds up to 6 charges to your current Pocket Prank"
+big_description = "Adds up to 4 charges to your current Pocket Prank"
 model = ExtResource("1_0wl0l")
 pickup_sfx = ExtResource("2_b8h22")
 stats_add = {
-"active_charge": 6
+"active_charge": 4
 }
 remember_item = false
 shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)

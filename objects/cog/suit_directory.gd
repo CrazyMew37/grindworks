@@ -79,6 +79,10 @@ func set_dna(dna: CogDNA):
 		torso_tex = load("res://models/cogs/textures/" + dept + "/blazer.png")
 		sleeve_tex = load("res://models/cogs/textures/" + dept + "/sleeve.png")
 		leg_tex = load("res://models/cogs/textures/" + dept + "/leg.png")
+	if dna.department == CogDNA.CogDept.NULL:
+		torso_tex = load("res://models/cogs/textures/statue_gray/statue_blazer.png")
+		sleeve_tex = load("res://models/cogs/textures/statue_gray/statue_sleeve.png")
+		leg_tex = load("res://models/cogs/textures/statue_gray/statue_leg.png")
 	
 	# Allow for custom textures
 	if get_custom_texture(dna, 'custom_arm_tex'):
@@ -192,5 +196,5 @@ static func get_custom_texture(dna : CogDNA, value : StringName) -> Texture2D:
 static func get_department_emblem(dept: CogDNA.CogDept) -> Texture2D:
 	# Return bossbot as failsafe
 	if dept == CogDNA.CogDept.NULL:
-		return load("res://models/cogs/misc/hp_light/boss.png")
+		return load("res://models/cogs/misc/hp_light/null.png")
 	return load("res://models/cogs/misc/hp_light/" + Cog.get_department_name(dept) + ".png")

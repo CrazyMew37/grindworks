@@ -180,7 +180,7 @@ func should_disable(gag : ToonAttack, price : int) -> bool:
 	
 	if (gag is GagLure) and all_cogs_lured():
 		return true
-	elif (gag is GagTrap) and ((all_cogs_lured() and Util.get_player().trap_needs_lure) or all_cogs_trapped()):
+	elif (gag is GagTrap) and ((all_cogs_lured() and not Util.get_player().trap_needs_lure) or all_cogs_trapped()):
 		return true
 	return false
 

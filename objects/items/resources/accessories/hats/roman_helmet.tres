@@ -274,10 +274,14 @@ slot = 1
 world_scale = 0.17
 item_name = "Roman Helmet"
 item_description = "Show 'em no mercy!"
-big_description = "Cogs are instantly defeated when below 8% HP"
+big_description = "+ 5% damage
+Cogs are instantly defeated when below 10% HP"
 model = ExtResource("4_qj4qk")
 stats_add = {
-"cog_hp_death_threshold": 0.08
+"damage": 0.05
+}
+player_values = {
+"cog_hp_death_threshold": true
 }
 item_script = ExtResource("4_7yjio")
 icon = ExtResource("3_qqo28")

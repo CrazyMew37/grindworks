@@ -284,8 +284,8 @@ func spawn_reward() -> void:
 func is_target_dead(target: Node3D) -> bool:
 	var health_ratio: float = float(target.stats.hp) / float(target.stats.max_hp)
 
-	if target is Cog and Util.get_player() and not is_equal_approx(Util.get_player().stats.cog_hp_death_threshold, 0.0):
-		if target.stats.hp > 0 and health_ratio <= Util.get_player().stats.cog_hp_death_threshold:
+	if target is Cog and Util.get_player() and Util.get_player().cog_hp_death_threshold > 0:
+		if target.stats.hp > 0 and health_ratio <= 0.1:
 			# Need to force the hp to 0 with this condition or there are PROBLEMS!!
 			target.stats.hp = 0
 			BattleService.s_cog_died_early.emit(target)
@@ -554,7 +554,9 @@ func get_crit_chance(action: BattleAction) -> float:
 		print("Lure retrieving baked crit chance from trap: %s" % action.current_activating_trap.baked_crit_chance)
 		return action.current_activating_trap.baked_crit_chance
 	# Crit scales from 1.0 to 2.0
-	var crit_chance: float = (battle_stats[action.user].get_stat('luck') - 1.0) * action.crit_chance_mod
+	# Well, not anymore. It now scales infinitely because of division :p
+	var luck: float = battle_stats[action.user].get_stat('luck')
+	var crit_chance: float = (1 - (1.0 / luck)) * action.crit_chance_mod
 	return crit_chance
 
 func show_action_name(action_name : String, action_summary := "", action_color := Color.RED, action_shadow := Color.DARK_RED, summary_color := Color('ff6d00'), summary_shadow := Color('5c2200')):

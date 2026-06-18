@@ -255,10 +255,10 @@ slot = 2
 world_scale = 0.1
 item_name = "Mask"
 item_description = "Stealth mode!"
-big_description = "+ 20% Evasiveness"
+big_description = "+ 25% Evasiveness"
 model = ExtResource("2_yrdo0")
 stats_add = {
-"evasiveness": 0.2
+"evasiveness": 0.25
 }
 icon = ExtResource("3_22ouo")
 shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)

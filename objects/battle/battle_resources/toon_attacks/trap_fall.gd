@@ -17,7 +17,7 @@ func action():
 	var target = targets[0]
 	user = Util.get_player()
 	
-	if target.trap or (target.lured and user.trap_needs_lure):
+	if target.trap or (target.lured and not user.trap_needs_lure):
 		return
 	
 	manager.s_focus_char.emit(user)
@@ -66,7 +66,7 @@ func action():
 	apply_trap_effect(target)
 
 	# For detective hat item
-	if not user.trap_needs_lure and target.lured:
+	if user.trap_needs_lure and target.lured:
 		await activate()
 		manager.force_unlure(target)
 

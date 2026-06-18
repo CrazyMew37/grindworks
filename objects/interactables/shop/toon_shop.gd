@@ -111,7 +111,8 @@ func get_price(world_item: WorldItem) -> int:
 	base_price = max(0, (base_price * mult) - Util.get_player().stats.shop_discount)
 	var price_with_discount := base_price
 	# 20% chance of discount per 1.0 luck stat
-	if RNG.channel(RNG.ChannelShopItemRandom).randf() < Util.get_player().stats.get_stat('luck') * 0.2:
+	var luck = Util.get_player().stats.get_stat('luck')
+	if RNG.channel(RNG.ChannelShopItemRandom).randf() < (1.0 - (1.0 / ((0.25 * luck) + 0.75))):
 		price_with_discount *= SHOP_SALE_MULT
 		discounted_items[world_items.find(world_item)] = true
 	price_with_discount *= get_inflation_rate()

@@ -10,7 +10,7 @@ var unpause_tree := false
 
 
 func _ready() -> void:
-	console_print("Toontown: The Grindworks CrazyMew37 Edition 1.3.7")
+	console_print("Toontown: The Grindworks CrazyMew37 Edition 1.3.8")
 	input.grab_focus()
 
 func on_input_sent(text: String) -> void:
@@ -341,6 +341,7 @@ class PlayerSetterCommand extends SetterCommand:
 			"use_accuracy",
 			"ignore_battles",
 			"alt_gag_hotswap",
+			"cog_hp_death_threshold",
 		]
 
 class PlayerStatsSetterCommand extends SetterCommand:

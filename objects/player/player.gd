@@ -98,8 +98,10 @@ var less_shop_items := 0
 var better_battle_rewards := 0
 var no_negative_anomalies := 0
 var throw_heals := 1
-var trap_needs_lure := 1
+var trap_needs_lure := 0
 var inverted_sound_damage := 0
+# How low do cogs HP need to be to die?
+var cog_hp_death_threshold := 0
 var obscured_anomalies := 0
 ## Damage immunity from light-based obstacles, such as spotlights and goon beams.
 var immune_to_light_damage := 0

@@ -33,7 +33,7 @@ func reposition_buttons(cogs: int):
 		if gag is LureFish and cog.lured:
 			newbutton.disabled = true
 		elif gag is GagTrap:
-			if (Util.get_player().trap_needs_lure and cog.lured) or cog.trap:
+			if (not Util.get_player().trap_needs_lure and cog.lured) or cog.trap:
 				newbutton.disabled = true
 			else:
 				newbutton.disabled = false

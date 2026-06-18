@@ -19,4 +19,4 @@ item_script = ExtResource("1_q1m1f")
 shop_category_title = "Special Hire"
 shop_category_color = Color(0.60162, 0.201089, 1, 1)
 force_show_shop_category = true
-custom_shop_price = 45
+custom_shop_price = 50

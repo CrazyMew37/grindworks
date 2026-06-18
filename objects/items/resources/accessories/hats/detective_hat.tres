@@ -282,7 +282,7 @@ stats_add = {
 "damage": 0.05
 }
 player_values = {
-"trap_needs_lure": false
+"trap_needs_lure": true
 }
 icon = ExtResource("3_0f4eh")
 shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)

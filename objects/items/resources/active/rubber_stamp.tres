@@ -10,8 +10,7 @@
 script = ExtResource("4_tkxoh")
 active_type = 2
 charge_count = 6
-current_charge = 6
-qualitoon = 4
+qualitoon = 3
 world_scale = 1.5
 item_name = "Rubber Stamp"
 item_description = "Stamp of Approval."

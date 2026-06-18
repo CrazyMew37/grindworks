@@ -8,10 +8,11 @@
 [resource]
 script = ExtResource("4_hx3fu")
 qualitoon = 2
+rarity = 4
 world_y_offset = -0.3
 item_name = "Crazy Daisy"
 item_description = "You're crazy lucky!"
-big_description = "20% of base Luck over 100% is added onto Damage"
+big_description = "10% of base Luck over 100% is added onto Damage"
 model = ExtResource("2_0fuam")
 item_script = ExtResource("2_17325")
 icon = ExtResource("1_r2g30")

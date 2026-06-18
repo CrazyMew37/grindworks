@@ -21,11 +21,11 @@ func on_item_removed() -> void:
 
 ## Sync multipliers to current speed amount
 func on_luck_changed(luck: float) -> void:
-	multiplier.amount = maxf(0.0, (luck - 1.0) * 0.2)
+	multiplier.amount = maxf(0.0, (luck - 1.0) * 0.1)
 
 func create_multiplier() -> void:
 	multiplier = StatMultiplier.new()
 	multiplier.stat = 'damage'
-	multiplier.amount = maxf(0.0, (Util.get_player().stats.luck - 1.0) * 0.2)
+	multiplier.amount = maxf(0.0, (Util.get_player().stats.luck - 1.0) * 0.1)
 	multiplier.additive = true
 	Util.get_player().stats.multipliers.append(multiplier)

@@ -276,7 +276,8 @@ world_scale = 0.15
 world_y_offset = -0.2
 item_name = "Sandbag Hat"
 item_description = "Extra potent crits!"
-big_description = "20% of your base Luck above 100% will contribute to your Crit damage multiplier."
+big_description = "20% of your base Luck above 100% will contribute to your Crit damage multiplier.
+This is added logarithmically, but equals +20% at 200% Luck."
 model = ExtResource("4_fqftt")
 item_script = ExtResource("4_xxee3")
 icon = ExtResource("3_og5ix")

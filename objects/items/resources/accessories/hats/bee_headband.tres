@@ -274,7 +274,8 @@ slot = 1
 world_scale = 0.15
 item_name = "Bee Headband"
 item_description = "Sweet as honey"
-big_description = "5% of your base speed will contribute to your damage."
+big_description = "5% of your base speed will contribute to your damage.
+This is added logarithmically, but equals +5% at 100% Speed."
 model = ExtResource("4_htnpy")
 item_script = ExtResource("4_onogu")
 icon = ExtResource("3_35ac8")
