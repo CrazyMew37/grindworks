@@ -21,7 +21,7 @@ func on_item_removed() -> void:
 
 ## Sync multipliers to current speed amount
 func on_luck_changed(luck: float) -> void:
-	if luck < 1.0:
+	if luck > 1.0:
 		multiplier.amount = 0.2 * ((luck - 1.0) ** 0.5)
 	else:
 		multiplier.amount = 0.0
@@ -29,7 +29,7 @@ func on_luck_changed(luck: float) -> void:
 func create_multiplier() -> void:
 	multiplier = StatMultiplier.new()
 	multiplier.stat = 'crit_mult'
-	if Util.get_player().stats.luck < 1.0:
+	if Util.get_player().stats.luck > 1.0:
 		multiplier.amount = 0.2 * ((Util.get_player().stats.luck - 1.0) ** 0.5)
 	else:
 		multiplier.amount = 0.0

@@ -22,18 +22,20 @@ func on_item_removed() -> void:
 ## Sync multipliers to current speed amount
 func on_speed_changed(speed: float) -> void:
 	# to avoid some divide by zero schenanigans
-	if speed < 1.0:
+	if speed > 1.0:
 		multiplier.amount = 0.2 * ((speed - 1.0) ** 0.5)
 	else:
 		multiplier.amount = 0.0
+	print(multiplier.amount)
 
 func create_multiplier() -> void:
 	multiplier = StatMultiplier.new()
 	multiplier.stat = 'crit_mult'
 	# to avoid some divide by zero schenanigans
-	if Util.get_player().stats.speed < 1.0:
+	if Util.get_player().stats.speed > 1.0:
 		multiplier.amount = 0.2 * ((Util.get_player().stats.speed - 1.0) ** 0.5)
 	else:
 		multiplier.amount = 0.0
+	print(multiplier.amount)
 	multiplier.additive = true
 	Util.get_player().stats.multipliers.append(multiplier)

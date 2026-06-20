@@ -37,5 +37,7 @@ The price for Partner Toons was slightly increased. (45 -> 50)
 [TITLE] Misc.
 The Null Department is now in the Cog Creator! They use the semi-unused statue suits and a custom Department Icon.
 Made Bad Luck's chance to crit slightly higher (14.29% -> 15%)
-Fixed Detective Hat being disabled when you have an even amount of them. (Do note that the way I fixed this might make trap a bit weird in runs upgrading to this version)"
+Fixed Detective Hat being disabled when you have an even amount of them. (Do note that the way I fixed this might make trap a bit weird in runs upgrading to this version)
+[TITLE] Hotfix 1
+Fixed Bee Wings and Sandbag Hat not properly working."
 metadata/_custom_type_script = "uid://d1j0hh6tsgy0r"
